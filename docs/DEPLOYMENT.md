@@ -25,7 +25,9 @@ python3 -m http.server 8080                          # serve the terminal → #/
 15 15 * * *  /path/to/repo/pipeline/run_daily.sh  >> /var/log/nq_daily.log 2>&1
 # weekly retrain + promotion + validation + tests
 40 9 * * 1   /path/to/repo/pipeline/run_weekly.sh >> /var/log/nq_weekly.log 2>&1
-# optional odds refresh every 10 min on game days (needs ODDS_API_KEY; mind the quota)
+# Polymarket US quotes every 10 min on game days (free public gateway, no key)
+*/10 16-23 * * *  /path/to/repo/.venv/bin/python /path/to/repo/ml/polymarket.py --tier 1
+# optional sportsbook odds every 10 min (needs ODDS_API_KEY; mind the quota)
 */10 16-23 * * *  ODDS_API_KEY=... /path/to/repo/.venv/bin/python /path/to/repo/ml/odds.py
 ```
 Training (expensive) is kept separate from inference (`ml/predict.py`, seconds).

@@ -183,7 +183,8 @@ def main():
     slate = {"generated_at": datetime.now(timezone.utc).isoformat(), "model_version": report["version"], "data_through": data_through,
              "games": assemble("upcoming", with_outcome=False), "params": params, "dist": dists, "lower": lower_tables(report),
              "champions": {tid: t["champion"] for tid, t in report["targets"].items()},
-             "coverage": {tid: {k: v["coverage"]["rate"] for k, v in t["thresholds"].items()} for tid, t in report["targets"].items() if "thresholds" in t},
+             "coverage": {**{tid: {k: v["coverage"]["rate"] for k, v in t["thresholds"].items()} for tid, t in report["targets"].items() if "thresholds" in t},
+                          **{tid: {"p": t["binary"]["coverage"]["rate"]} for tid, t in report["targets"].items() if "binary" in t}},
              "testN": {tid: t["n"]["test"] for tid, t in report["targets"].items()},
              "beatsBaseline": {tid: t["champion"] != "baseline" and t["leaderboard"][t["champion"]]["select"] < t["leaderboard"]["baseline"]["select"] for tid, t in report["targets"].items()}}
     # model comparison per player for the slate (xgb / ag / baseline means)
@@ -196,6 +197,15 @@ def main():
             key = f"{r.game_id}:{r.player_id}"
             comp.setdefault(key, {})[k] = {m: float(getattr(r, "mu_" + m)) for m in ("baseline", "xgboost", "autogluon", "blend") if hasattr(r, "mu_" + m)}
     slate["models"] = comp
+    # team moneyline: t_win champion is trained on HOME rows → P(home wins incl. OT/SO)
+    tw = _read("upcoming", "t_win")
+    if tw is not None:
+        home = tw[tw.home == 1]
+        by = {int(r.game_id): r for r in home.itertuples()}
+        for g in slate["games"]:
+            r = by.get(g["game_id"])
+            if r is not None:
+                g["teamWin"] = {"pHome": float(r.mu), "models": {m: float(getattr(r, "mu_" + m)) for m in ("baseline", "xgboost", "autogluon", "blend") if hasattr(r, "mu_" + m)}}
     # last-10 real game lines for every slate player (player-intelligence links)
     sg = pd.read_parquet(os.path.join(BUILD, "skater_games.parquet"), columns=["player_id", "start_utc", "opp", "home", "toi", "goals", "assists", "sog", "blocks", "hits", "ppp"])
     ids = {p["id"] for g in slate["games"] for s in ("home", "away") for p in g[s]["players"]}

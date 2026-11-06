@@ -28,7 +28,7 @@
   function ctx() {
     const S = SL(), games = {}, players = {};
     for (const g of S.games) {
-      games[g.game_id] = { start_utc: g.start_utc };
+      games[g.game_id] = { start_utc: g.start_utc, home: g.home.abbr, away: g.away.abbr };
       for (const s of ['home', 'away']) { for (const p of g[s].players) players[p.id] = { game_id: g.game_id }; for (const k of g[s].goalies) players[k.id] = { game_id: g.game_id }; }
     }
     return { games, players, now: Date.now() };
@@ -98,6 +98,7 @@
       : `<div class="why">No valid sportsbook quotes for this game yet, so <b>no CV% can be computed</b> (CV% requires an actual offered price). Add quotes in the <a href="#/cv/odds">Odds Desk</a> or run <span class="mono">ml/odds.py</span> with an authorised provider key. The research table below shows calibrated probabilities, conservative bounds and the fair / break-even prices you would need.</div>`;
     const research = rows.slice().sort((a, b) => (b.pLower ?? -1) - (a.pLower ?? -1));
     return `${header('cv')}<div class="grid">
+      ${teamMLPanel()}
       ${c.panel('Single-Prop Case Value', 'CV% = 100 × [p_lower × D − 1] · push markets use p_win_lower × (D − 1) − p_loss_upper', `
         <div class="ctrl" style="margin-bottom:8px">${gameSel(g.game_id)}${c.tabs('cvmode', [{ k: 'cv', n: 'Highest CV%' }, { k: 'odds', n: 'Highest qualified + odds' }, { k: 'front', n: 'Odds–probability frontier' }], state.mode)}
           ${c.select('cv-stat', [{ v: 'ALL', n: 'All markets' }, ...Object.keys(STAT_T).map((k) => ({ v: k, n: STAT_N[k] }))], state.stat, { label: 'Market' })}</div>${lb}
@@ -106,6 +107,32 @@
         ${research.slice(0, 400).map((r) => `<tr><td><a class="plink" href="#/cv/player/${r.p.id}">${u.esc(r.p.name)}</a> <span class="muted mono">${r.team}</span></td><td>${STAT_N[r.stat]} o${r.line}</td><td class="num">${u.fx(r.mu, 2)}</td><td class="num">${u.pct(r.pOver)}</td><td class="num">${r.pLower === null ? '<span class="muted">no table</span>' : u.pct(r.pLower)}</td><td class="num">${fmtA(NQ.cv.fair(r.pOver))}</td><td class="num">${r.pLower ? fmtA(NQ.cv.fair(r.pLower)) : '—'}</td><td class="num">${r.agree === undefined ? '—' : u.fx(r.agree, 3)}</td><td>${grade(r.conf)}</td></tr>`).join('')}</tbody></table></div>
         <div class="note">“Need (CV≥0)” = minimum American price at which the conservative probability breaks even. Over side shown; unders are evaluated when a quote exists.</div>`)}
     </div>`;
+  }
+
+  // ------------------------------------------------------------ team moneylines (Polymarket US)
+  function teamMLPanel() {
+    const S = SL(), O = globalThis.NQ_ODDS, cx = ctx();
+    const tbl = (S.lower.t_win || {}).p;
+    const quotes = NQ.odds.best(NQ.odds.load(), cx).filter((q) => q.market === 'team_ml');
+    const age = (Date.now() - Date.parse(S.data_through)) / 3600000;
+    const rows = [];
+    for (const q of quotes) {
+      const g = S.games.find((x) => String(x.game_id) === String(q.game_id));
+      if (!g || !g.teamWin) continue;
+      const D = q.decimal || NQ.cv.toDecimal(q.american);
+      const r = NQ.cv.evalTeamML({ pHome: g.teamWin.pHome, table: tbl, side: q.side, decimal: D });
+      const m = g.teamWin.models;
+      const conf = NQ.cv.confidence({ coverage: (S.coverage.t_win || {}).p, sampleN: S.testN.t_win, agreement: m.xgboost !== undefined && m.autogluon !== undefined ? Math.abs(m.xgboost - m.autogluon) : undefined, gpPrior: 99, ageHours: age, beatsBaseline: S.beatsBaseline.t_win });
+      rows.push({ q, g, r, conf, D });
+    }
+    rows.sort((a, b) => (b.r.cv ?? -1e9) - (a.r.cv ?? -1e9));
+    const meta = O && O.polymarket ? `${O.polymarket.markets_open} open NHL game markets · Θ = ${O.polymarket.theta} (tier ${O.polymarket.tier}) · fetched ${u.esc(String(O.fetched_at).slice(5, 16))}Z` : 'feed not run';
+    const stale = quotes.length === 0 && O && O.quotes && O.quotes.some((q) => q.provider === 'polymarket_us');
+    const body = rows.length ? `<div class="tscroll"><table class="tbl"><thead><tr><th>#</th><th>Game</th><th>Team</th><th class="num">Buy price</th><th class="num">Spread</th><th class="num">Depth @ price</th><th class="num">Gross</th><th class="num">Net of fee</th><th class="num">Model P(win)</th><th class="num">p lower</th><th class="num">Break-even</th><th class="num">CV%</th><th class="num">EV% (raw)</th><th>Confidence</th></tr></thead><tbody>
+      ${rows.map((x, i) => `<tr><td class="num">${i + 1}</td><td>${x.g.away.abbr} @ ${x.g.home.abbr} <span class="muted mono">${new Date(x.g.start_utc).toLocaleString([], { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })}</span></td><td><b>${u.esc(x.q.team)}</b> <span class="muted">${x.q.side}</span></td><td class="num">${u.fx(x.q.price * 100, 0)}¢</td><td class="num">${u.fx((x.q.spread || 0) * 100, 0)}¢</td><td class="num ${x.q.depth_contracts < 500 ? 'warn' : ''}">${Math.round(x.q.depth_contracts || 0).toLocaleString()}</td><td class="num">${fmtA(NQ.cv.toAmerican(x.q.decimal_gross))}</td><td class="num"><b>${fmtA(x.q.american)}</b></td>
+        <td class="num">${x.r.supported ? u.pct(x.r.pWin) : '—'}</td><td class="num">${x.r.supported ? u.pct(x.r.pWinLower) : '—'}</td><td class="num">${u.pct(1 / x.D)}</td><td class="num ${x.r.cv > 0 ? 'pos' : 'neg'}">${x.r.supported ? '<b>' + u.sgn(x.r.cv, 1) + '</b>' : u.esc(x.r.reason)}</td><td class="num muted">${x.r.supported ? u.sgn(x.r.ev, 1) : ''}</td><td>${grade(x.conf)}</td></tr>`).join('')}</tbody></table></div>`
+      : `<div class="why">${stale ? 'Polymarket quotes on file are older than ' + NQ.odds.MAX_AGE_MIN + ' minutes and are rejected as stale — re-run the feed.' : 'No Polymarket US quotes loaded.'} Refresh: <span class="mono">.venv/bin/python ml/polymarket.py</span></div>`;
+    return c.panel('Team Moneylines — Polymarket US (live)', meta, body + `<div class="note">Real executable prices from the public Polymarket US gateway (no key; read-only). Net odds include the taker fee Θ·p·(1−p) per contract. Settlement matches the model target exactly: full game incl. OT and shootout. Polymarket US lists no NHL player props or totals, so it cannot price player-prop SGPs. Depth < 500 contracts flagged.</div>`, { demo: false });
   }
 
   function grade(cf) {

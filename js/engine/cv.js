@@ -154,3 +154,18 @@
     return { pmf, ge, mean: mu, family: nb ? 'nb' : 'poisson', alpha: nb ? alpha : 0 };
   };
 })(globalThis.NQ = globalThis.NQ || {});
+
+/* Team moneyline (full game incl. OT/SO → no push). The validated table is fit on
+ * P(home win); the away bound is the complement of the home UPPER bound so the
+ * two sides' bounds are jointly valid (p_home_lower + p_away_lower ≤ 1). */
+(function (NQ) {
+  'use strict';
+  NQ.cv.evalTeamML = ({ pHome, table, side, decimal }) => {
+    const lo = NQ.cv.applyTable(pHome, table);
+    if (lo === null) return { supported: false, reason: 'No validated calibration table for team moneyline' };
+    const hi = Math.min(1, pHome + (pHome - lo));
+    const pWin = side === 'home' ? pHome : 1 - pHome;
+    const pWinLower = side === 'home' ? lo : Math.max(0, 1 - hi);
+    return { supported: true, push: false, pWin, pWinLower, pLossUpper: 1 - pWinLower, cv: NQ.cv.noPush(pWinLower, decimal), ev: NQ.cv.rawEV(pWin, decimal), breakEven: 1 / decimal };
+  };
+})(globalThis.NQ = globalThis.NQ || {});

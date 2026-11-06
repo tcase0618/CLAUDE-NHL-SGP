@@ -21,12 +21,13 @@
     player_blocks: { target: 'sk_blocks', label: 'Blocked shots', entity: 'skater', stat: 'BLK' },
     player_hits: { target: 'sk_hits', label: 'Hits', entity: 'skater', stat: 'HIT' },
     player_ppp: { target: 'sk_ppp', label: 'Power-play points', entity: 'skater', stat: 'PPP' },
-    goalie_saves: { target: 'g_saves', label: 'Saves', entity: 'goalie', stat: 'SV' }
+    goalie_saves: { target: 'g_saves', label: 'Saves', entity: 'goalie', stat: 'SV' },
+    team_ml: { target: 't_win', label: 'Moneyline (incl. OT/SO)', entity: 'team', stat: 'WIN' }
   };
   odds.MAX_AGE_MIN = 30;
   const KEY = 'nq:quotes:v1';
 
-  odds.legKey = (l) => `${l.market}|${l.player_id}|${l.line}|${l.side}`;
+  odds.legKey = (l) => (l.market === 'team_ml' ? `team_ml|${l.team}|${l.side}` : `${l.market}|${l.player_id}|${l.line}|${l.side}`);
   odds.sgpKey = (game, legs) => game + '#' + legs.map(odds.legKey).sort().join('&');
 
   /** Validate structure only (not freshness / matching). Returns error list. */
@@ -40,6 +41,12 @@
     const legs = q.market === 'sgp' ? q.legs : [q];
     if (q.market === 'sgp' && (!Array.isArray(q.legs) || ![3, 5, 8].includes(q.legs.length))) e.push('sgp requires exactly 3, 5 or 8 legs');
     (legs || []).forEach((l, i) => {
+      if (l.market === 'team_ml') {
+        if (q.market === 'sgp') e.push(`leg ${i}: team_ml not supported inside player-prop SGPs`);
+        if (!l.team || typeof l.team !== 'string') e.push('team_ml: team abbreviation required');
+        if (!['home', 'away'].includes(l.side)) e.push('team_ml: side must be home|away');
+        return;
+      }
       if (!odds.MARKETS[l.market]) e.push(`leg ${i}: unsupported market ${l.market}`);
       if (!(l.player_id > 0)) e.push(`leg ${i}: player_id required`);
       if (!(typeof l.line === 'number' && isFinite(l.line) && l.line >= 0)) e.push(`leg ${i}: numeric line required`);
@@ -68,6 +75,10 @@
     if (age < -5) r.push('timestamp in the future');
     const legs = q.market === 'sgp' ? q.legs || [] : [q];
     for (const l of legs) {
+      if (l.market === 'team_ml') {
+        if (g && g.home && l.team !== (l.side === 'home' ? g.home : g.away)) r.push(`team ${l.team} is not the ${l.side} team of game ${q.game_id}`);
+        continue;
+      }
       const p = ctx.players[l.player_id];
       if (!p) r.push(`player ${l.player_id} not in projected lineup`);
       else if (String(p.game_id) !== String(q.game_id)) r.push(`player ${l.player_id} not in game ${q.game_id}`);

@@ -17,6 +17,11 @@ Stated plainly so that nothing in the terminal is mistaken for something it isn'
 - **Empty-net goals** count toward team SOG but not goalie shots against. The joint simulator does not model EN situations, which biases simulated saves slightly.
 
 ## Markets & prices
+- **Polymarket US (live, free):** `ml/polymarket.py` reads the public gateway (`gateway.polymarket.us/v1`, no key; the authenticated trading API is never used).
+  - It lists **only NHL full-game winner markets and futures**: no player props, no totals. So it prices the `t_win` target and cannot price player-prop SGPs.
+  - Its Combos/RFQ product sits behind the authenticated trading API and is not used.
+  - Net odds use the documented taker fee Θ·p·(1−p) (Tier 1 Θ = 0.095 by default; set `--tier`). Per-fill $0.01 banker's rounding is ignored, which is slightly optimistic for very small orders.
+  - Futures are fetched but not modelled.
 - **No odds are bundled and none are fabricated.** CV% exists only next to a real quote, from `ml/odds.py` (needs `ODDS_API_KEY`) or entered manually.
 - **The Odds API does not provide combined SGP prices.** SGP CV% therefore requires the user to type in the sportsbook's quoted combined price for the exact combination.
 - **No historical sportsbook prices.** Historical single-prop and SGP **returns are not reported**. Backtests measure probability calibration only.

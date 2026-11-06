@@ -169,3 +169,22 @@ test('without a joint-calibration table an SGP is unverified', () => {
   const lo = NQ.sgp.lower({ p: 0.2, wilsonLower: 0.18, precisionOK: true }, 5, null);
   assert.strictEqual(lo.verified, false); assert.strictEqual(lo.pLower, null);
 });
+
+test('team moneyline CV: jointly valid home/away bounds and fee-adjusted price', () => {
+  const table = [{ hi: 0.5, adj: -0.03 }, { hi: 1, adj: -0.04 }];
+  const D = 1 / (0.40 * (1 + 0.095 * 0.60));       // Polymarket US buy at 40¢, Θ = 0.095
+  near(D, 2.3652, 1e-4);
+  const h = NQ.cv.evalTeamML({ pHome: 0.6, table, side: 'home', decimal: 1.58 });
+  const a = NQ.cv.evalTeamML({ pHome: 0.6, table, side: 'away', decimal: D });
+  assert.ok(h.pWinLower + a.pWinLower <= 1 + 1e-12, 'bounds jointly valid');
+  near(h.pWinLower, 0.56); near(a.pWinLower, 0.36);
+  near(a.cv, 100 * (0.36 * D - 1));
+  assert.strictEqual(NQ.cv.evalTeamML({ pHome: 0.6, table: null, side: 'home', decimal: 2 }).supported, false);
+});
+test('team_ml quotes validate and must match the game\'s home/away team', () => {
+  const c2 = { now, games: { 77: { start_utc: '2026-11-07T00:00:00Z', home: 'BUF', away: 'CBJ' } }, players: {} };
+  const base = { book: 'polymarket_us', game_id: 77, market: 'team_ml', team: 'CBJ', side: 'away', american: 137, ts: '2026-11-06T21:55:00Z', status: 'open' };
+  assert.ok(NQ.odds.match(base, c2).ok);
+  assert.ok(!NQ.odds.match({ ...base, side: 'home' }, c2).ok, 'CBJ is not home');
+  assert.ok(!NQ.odds.match({ ...base, team: undefined }, c2).ok);
+});
