@@ -188,3 +188,8 @@ test('team_ml quotes validate and must match the game\'s home/away team', () => 
   assert.ok(!NQ.odds.match({ ...base, side: 'home' }, c2).ok, 'CBJ is not home');
   assert.ok(!NQ.odds.match({ ...base, team: undefined }, c2).ok);
 });
+test('best() keeps one quote per game — a team playing several games keeps all its quotes', () => {
+  const c2 = { now, games: { 77: { start_utc: '2026-11-07T00:00:00Z', home: 'TOR', away: 'MTL' }, 78: { start_utc: '2026-11-08T00:00:00Z', home: 'TOR', away: 'NJD' } }, players: {} };
+  const mk = (g) => ({ book: 'polymarket_us', game_id: g, market: 'team_ml', team: 'TOR', side: 'home', american: -110, ts: '2026-11-06T21:55:00Z', status: 'open' });
+  assert.strictEqual(NQ.odds.best([mk(77), mk(78)], c2).length, 2);
+});

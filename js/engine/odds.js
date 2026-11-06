@@ -111,7 +111,7 @@
     for (const q of quotes) {
       const m = odds.match(q, ctx);
       if (!m.ok) continue;
-      const key = q.book + '|' + (q.market === 'sgp' ? odds.sgpKey(q.game_id, q.legs) : odds.legKey(q));
+      const key = q.book + '|' + (q.market === 'sgp' ? odds.sgpKey(q.game_id, q.legs) : q.game_id + '|' + odds.legKey(q)); // game is part of identity
       if (!out[key] || Date.parse(q.ts) > Date.parse(out[key].ts)) out[key] = q;
     }
     return Object.values(out);

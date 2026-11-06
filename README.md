@@ -1,4 +1,35 @@
-# NHL Quant Intelligence Platform
+# Case Capital NHL Quant Intelligence Platform
+
+Two systems in one terminal:
+
+1. **Case Value — real NHL** (`#/cv`). Built on real NHL box scores (2024-25 → today):
+   - per-target baseline / XGBoost / AutoGluon models with chronological validation;
+   - calibrated prop distributions and conservative bounds;
+   - a correlation-aware joint game simulator and a 3/5/8-leg SGP research engine;
+   - **live Polymarket US team-moneyline prices** (free public API, fee-adjusted), all ranked by **Case Value (CV%)**.
+2. **Synthetic research terminal** (all other pages, labelled DEMO): a simulated universe used for method development.
+
+## Case Value quick start
+```bash
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+.venv/bin/python ml/build_all.py           # ingest + schedule + point-in-time features
+.venv/bin/python ml/train.py               # ~47 min on 4 vCPU (or use the committed champion)
+.venv/bin/python ml/promote.py && .venv/bin/python ml/export.py
+.venv/bin/python ml/polymarket.py          # live Polymarket US NHL moneylines (no key)
+node pipeline/validate_sgp.js              # historical 3/5/8-leg joint validation
+python3 -m http.server 8080                # open http://localhost:8080/#/cv
+```
+- **Exact formulas:**
+  - CV% = 100 × [p_lower × D − 1]
+  - push markets: 100 × [p_win_lower × (D − 1) − p_loss_upper]
+  - SGP: 100 × [P_joint_lower × D_SGP − 1], **only with an actual combined quote**.
+- **Docs:** `docs/AUDIT.md`, `docs/BENCHMARKS.md` (measured results), `docs/DEPLOYMENT.md`, `docs/LIMITATIONS.md`.
+- **Contracts:** `contracts/targets.json`, `contracts/features.json`, `contracts/odds_schema.json`.
+- **Tests:** `node --test tests/engine.test.js tests/cv_sgp.test.js` and `.venv/bin/python -m pytest ml/tests -q`.
+
+---
+
+# Synthetic research terminal
 
 An institutional-style hockey analytics and prediction terminal. It has no dependencies and no build step: plain HTML, CSS and JavaScript, with every chart drawn as hand-written SVG.
 

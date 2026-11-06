@@ -13,12 +13,15 @@
  * ========================================================================== */
 (function (NQ) {
   'use strict';
-  const u = NQ.u, c = NQ.c, ch = NQ.ch;
+  const u = NQ.u, ch = NQ.ch;
+  let c = NQ.c;
   const SL = () => globalThis.NQ_SLATE, ML = () => globalThis.NQ_ML, VAL = () => globalThis.NQ_SGPVAL;
   const STAT_T = { SOG: 'sk_sog', G: 'sk_goals', A: 'sk_assists', PTS: 'sk_points', BLK: 'sk_blocks', HIT: 'sk_hits', PPP: 'sk_ppp' };
   const STAT_N = { SOG: 'Shots on goal', G: 'Goals', A: 'Assists', PTS: 'Points', BLK: 'Blocked shots', HIT: 'Hits', PPP: 'PP points', SV: 'Saves' };
   const MARKET = { SOG: 'player_sog', G: 'player_goals', A: 'player_assists', PTS: 'player_points', BLK: 'player_blocks', HIT: 'player_hits', PPP: 'player_ppp', SV: 'goalie_saves' };
   const state = { game: null, mode: 'cv', stat: 'ALL', sims: 20000, cache: {} };
+  // real-data panels: never carry the synthetic DEMO badge
+  c = Object.assign({}, c, { panel: (t, sub, b, o) => NQ.c.panel(t, sub, b, Object.assign({ demo: false }, o)) });
   const fmtA = (o) => (o === null || o === undefined ? '—' : o > 0 ? '+' + o : String(o));
 
   function missing() {
@@ -171,7 +174,12 @@
     const res = run.res[size];
     const items = res.items.slice();
     const quoted = items.filter((x) => x.best).sort((a, b) => b.best.cv - a.best.cv);
-    const unq = items.filter((x) => !x.best).sort((a, b) => (b.lower.pLower ?? 0) - (a.lower.pLower ?? 0));
+    // diversity: round-robin across ideology families, each family ordered by conservative joint P
+    const byFam = {};
+    items.filter((x) => !x.best).forEach((x) => { (byFam[x.family.id] = byFam[x.family.id] || []).push(x); });
+    Object.values(byFam).forEach((a) => a.sort((p, q) => (q.lower.pLower ?? 0) - (p.lower.pLower ?? 0)));
+    const unq = [];
+    for (let k = 0; Object.values(byFam).some((a) => a.length > k); k++) Object.keys(byFam).sort().forEach((f) => { if (byFam[f][k]) unq.push(byFam[f][k]); });
     const row = (x, i) => `<tr data-sgp="${items.indexOf(x)}" style="cursor:pointer"><td class="num">${i + 1}</td><td><span class="badge b-arch">${x.family.id}</span> ${u.esc(x.family.n)}</td><td style="white-space:normal;min-width:260px">${x.legs.map((l) => `<a class="plink" href="#/cv/player/${l.player_id}">${u.esc(l.name)}</a> ${l.stat === 'SV' ? 'saves' : l.stat} o${l.line} <span class="muted">(${u.pct(l.p, 0)})</span>`).join('<br>')}</td>
       <td class="num">${u.pct(x.ev.p, 2)}</td><td class="num">${x.lower.pLower === null ? '—' : u.pct(x.lower.pLower, 2)}</td><td class="num">${u.pct(x.ev.indep, 2)}</td><td class="num">${u.fx(x.ev.lift, 2)}×</td>
       <td class="num">${fmtA(x.breakEven)}</td><td class="num">${x.best ? `${u.esc(x.best.book)} ${fmtA(x.best.american)}` : '<span class="muted">no quote</span>'}</td><td class="num ${x.best ? (x.best.cv > 0 ? 'pos' : 'neg') : ''}">${x.best ? '<b>' + u.sgn(x.best.cv, 1) + '</b>' : '—'}</td>
@@ -180,7 +188,7 @@
     return `<div class="stats">${c.stat('Candidates evaluated', res.evaluated.toLocaleString(), { sub: 'beam search (not exhaustive)' })}${c.stat('Prop pool', res.poolSize)}${c.stat('Finalists', items.length)}${c.stat('Quoted', quoted.length)}${c.stat('Sim time', (run.ms / 1000).toFixed(1) + ' s', { sub: `${(2 * state.sims).toLocaleString()} games` })}${c.stat('Reconciliation', u.fx(run.R.recon[run.R.recon.length - 1], 3), { sub: 'mean |sim − model|' })}</div>
       <div class="sect">SGP leaderboard — ranked by SGP CV% (actual combined quotes only)</div>
       ${quoted.length ? `<div class="tscroll"><table class="tbl">${head}<tbody>${quoted.map(row).join('')}</tbody></table></div>` : '<div class="why">No combined SGP quotes entered for these combinations — <b>no SGP CV% is computed</b>. Click a candidate below and enter the sportsbook\'s quoted price for that exact combination.</div>'}
-      <div class="sect">Research candidates (unquoted) — sorted by conservative joint probability</div>
+      <div class="sect">Research candidates (unquoted) — best of each ideology first, then by conservative joint probability</div>
       <div class="tscroll"><table class="tbl">${head}<tbody>${unq.map(row).join('')}</tbody></table></div>
       <div id="sgp-detail" style="margin-top:10px"></div>
       <div class="note">Joint probabilities come from the correlation-aware game simulator. Finalists are re-scored on an independent simulation (seed ≠ search seed). Conservative = min(Wilson lower bound, joint-calibration haircut for ${size}-leg from historical validation). Lift = joint ÷ product of marginals; high correlation is <b>not</b> automatically value — books may already price it.</div>`;
