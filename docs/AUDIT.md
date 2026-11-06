@@ -24,7 +24,7 @@ Audit performed before this phase's changes. "Verified" means checked by running
 | 18 | Security / dependencies | No runtime dependencies. Google Fonts CSS only. | Python deps pinned in `requirements.txt`; venv is git-ignored. No secrets in the repo; the API key is read from the environment only. |
 
 ## Verified versions
-Python 3.13.18 · XGBoost 3.4.1 · AutoGluon 1.6.3 (tabular: LightGBM, XGBoost, RandomForest, ExtraTrees, linear) · LightGBM 4.7.0 · scikit-learn 1.9.1 · pandas / pyarrow · Node 22.
+Python 3.13.18 · XGBoost 3.3.0 (xgboost-cpu build installed by AutoGluon's extra; a separately installed 3.4.1 was shadowed) · AutoGluon 1.6.3 (tabular: LightGBM, XGBoost, RandomForest, ExtraTrees, linear) · LightGBM 4.7.0 · scikit-learn 1.9.1 · pandas / pyarrow · Node 22.
 
 ## Two worlds, clearly separated
 - **Synthetic research terminal** (all pre-existing pages). Labelled DEMO. Used for method development and as a sandbox where the true talent is known.

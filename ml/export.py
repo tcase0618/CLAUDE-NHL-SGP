@@ -76,7 +76,9 @@ def assemble(prefix: str, with_outcome: bool) -> list[dict]:
             team = t.team.iloc[0]
             goalies = []
             if gs is not None:
-                c = gs[(gs.game_id == gid) & (gs.team == team)].merge(gfeat, on=["game_id", "team", "player_id"], how="left")
+                c = gs[(gs.game_id == gid) & (gs.team == team)]
+                if "name" not in c.columns:
+                    c = c.merge(gfeat, on=["game_id", "team", "player_id"], how="left")
                 tot = c.mu.sum()
                 for r in c.itertuples():
                     g = {"id": int(r.player_id), "name": r.name, "pStart": float(r.mu / tot) if tot > 0 else 0.0}

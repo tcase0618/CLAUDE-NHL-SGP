@@ -1,0 +1,18 @@
+{
+ "at": "2026-11-06T23:16:24.343Z",
+ "node": "v22.23.4",
+ "joint.simulate n=5000 (ms)": 416.803102,
+ "sims/sec n=5000": 11996,
+ "joint.simulate n=20000 (ms)": 682.622829,
+ "sims/sec n=20000": 29299,
+ "sgp.research 3-leg (ms)": 786.666142,
+ "sgp 3-leg evaluations": 12965,
+ "sgp.research 5-leg (ms)": 586.593628,
+ "sgp 5-leg evaluations": 17571,
+ "sgp.research 8-leg (ms)": 731.975423,
+ "sgp 8-leg evaluations": 19199,
+ "joint.simulate n=50000 (ms)": 1499.933047,
+ "sims/sec n=50000": 33335,
+ "1e6 CV% calculations (ms)": 10.484242,
+ "memoryMB": 243
+}

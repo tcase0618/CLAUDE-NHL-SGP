@@ -9,4 +9,4 @@ pyarrow==24.0.0
 pytest==9.2.0
 scikit-learn==1.9.1
 scipy==1.18.1
-xgboost==3.4.1
+xgboost-cpu==3.3.0   # runtime build pulled in by autogluon.tabular[xgboost]; models were trained with this

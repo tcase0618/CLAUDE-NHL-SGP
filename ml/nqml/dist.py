@@ -90,7 +90,15 @@ def reliability(p: np.ndarray, y: np.ndarray, bins: int = 10) -> list[dict]:
     return out
 
 
-def lower_bound_table(p_val: np.ndarray, y_val: np.ndarray, bins: int = 10) -> list[dict]:
+MIN_BIN = 60  # minimum calibration rows per bin; fewer bins when evidence is thin
+
+
+def adaptive_bins(n: int, max_bins: int = 10) -> int:
+    return int(max(2, min(max_bins, n // MIN_BIN)))
+
+
+def lower_bound_table(p_val: np.ndarray, y_val: np.ndarray, bins: int | None = None) -> list[dict]:
+    bins = bins or adaptive_bins(len(p_val))
     rel = reliability(p_val, y_val, bins)
     for r in rel:
         r["adj"] = min(0.0, r["obs"] - r["pred"]) - Z_LOWER * r["se"]

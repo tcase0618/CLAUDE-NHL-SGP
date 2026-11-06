@@ -1,0 +1,95 @@
+{
+ "versions": [
+  {
+   "version": "v20261106-224110",
+   "trained_at": "2026-11-06T22:41:10.427095+00:00",
+   "data_hash": "6c2544e6cd1d",
+   "status": "champion",
+   "targets": {
+    "sk_sog": {
+     "champion_model": "xgboost",
+     "select": 1.2511190584864225,
+     "test": 1.2164726417041245
+    },
+    "sk_goals": {
+     "champion_model": "xgboost",
+     "select": 0.5976365349174413,
+     "test": 0.5938276405075338
+    },
+    "sk_assists": {
+     "champion_model": "autogluon",
+     "select": 0.7700135965439451,
+     "test": 0.7744840544151798
+    },
+    "sk_points": {
+     "champion_model": "blend",
+     "select": 0.917904258866381,
+     "test": 0.9201630147050179
+    },
+    "sk_blocks": {
+     "champion_model": "xgboost",
+     "select": 1.0824787918773944,
+     "test": 1.0911221925147379
+    },
+    "sk_hits": {
+     "champion_model": "xgboost",
+     "select": 1.1624590147503606,
+     "test": 1.1880696086250586
+    },
+    "sk_ppp": {
+     "champion_model": "xgboost",
+     "select": 0.3641645752405832,
+     "test": 0.37547182602822177
+    },
+    "sk_toi": {
+     "champion_model": "xgboost",
+     "select": 2.4660664882550223,
+     "test": 2.460360694802793
+    },
+    "g_saves": {
+     "champion_model": "autogluon",
+     "select": 1.9268810344134468,
+     "test": 1.9787013549870194
+    },
+    "g_shots_against": {
+     "champion_model": "autogluon",
+     "select": 1.695560559874517,
+     "test": 1.7528380891977955
+    },
+    "g_goals_against": {
+     "champion_model": "autogluon",
+     "select": 0.8791701074299049,
+     "test": 0.9528443429151366
+    },
+    "g_start": {
+     "champion_model": "blend",
+     "select": 0.4632936977535024,
+     "test": 0.4465699541758847
+    },
+    "t_goals": {
+     "champion_model": "baseline",
+     "select": 0.9586696494169754,
+     "test": 1.0362991254835983
+    },
+    "t_shots": {
+     "champion_model": "blend",
+     "select": 1.3004987267254315,
+     "test": 1.3355805268288652
+    },
+    "t_win": {
+     "champion_model": "baseline",
+     "select": 0.6824105945010429,
+     "test": 0.6743187310341664
+    }
+   }
+  }
+ ],
+ "champion": "v20261106-224110",
+ "history": [
+  {
+   "ts": "2026-11-06T23:14:50.227220+00:00",
+   "action": "promote",
+   "version": "v20261106-224110"
+  }
+ ]
+}
