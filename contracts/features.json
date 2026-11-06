@@ -1,0 +1,1527 @@
+{
+ "version": "1.0.0",
+ "point_in_time_rule": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+ "features": [
+  {
+   "name": "home",
+   "entity": "skater",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "binary",
+   "definition": "1 if home team"
+  },
+  {
+   "name": "is_d",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore roster group",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "binary",
+   "definition": "1 if defenseman"
+  },
+  {
+   "name": "pos_c",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "binary",
+   "definition": "1 if center"
+  },
+  {
+   "name": "pos_w",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "binary",
+   "definition": "1 if winger"
+  },
+  {
+   "name": "gp_prior",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "count",
+   "definition": "player games in dataset before this game"
+  },
+  {
+   "name": "fo_prior",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "ratio",
+   "definition": "expanding mean faceoff win % before this game"
+  },
+  {
+   "name": "toi_rank",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "rank",
+   "definition": "rank of prior l20 TOI/GP within the game's team lineup"
+  },
+  {
+   "name": "ppp_share_rank",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "rank",
+   "definition": "rank of prior l82 PPP/GP within team lineup"
+  },
+  {
+   "name": "rest_days",
+   "entity": "skater",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "days",
+   "definition": "days since team's previous game (capped 5)"
+  },
+  {
+   "name": "b2b",
+   "entity": "skater",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "binary",
+   "definition": "1 if team played the previous day"
+  },
+  {
+   "name": "team_gp_prior",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "count",
+   "definition": "team games this season before this game"
+  },
+  {
+   "name": "opp_rest",
+   "entity": "skater",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "days",
+   "definition": "opponent rest days"
+  },
+  {
+   "name": "opp_b2b",
+   "entity": "skater",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "binary",
+   "definition": "opponent back-to-back"
+  },
+  {
+   "name": "toi_pg_l5",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player time on ice (min) per game, last 5 games"
+  },
+  {
+   "name": "toi_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player time on ice (min) per game, last 20 games"
+  },
+  {
+   "name": "toi_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player time on ice (min) per game, last 82 games"
+  },
+  {
+   "name": "goals_pg_l5",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player goals per game, last 5 games"
+  },
+  {
+   "name": "goals_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player goals per game, last 20 games"
+  },
+  {
+   "name": "goals_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player goals per game, last 82 games"
+  },
+  {
+   "name": "goals_p60_l5",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player goals per 60 minutes TOI, last 5 games"
+  },
+  {
+   "name": "goals_p60_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player goals per 60 minutes TOI, last 20 games"
+  },
+  {
+   "name": "goals_p60_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player goals per 60 minutes TOI, last 82 games"
+  },
+  {
+   "name": "assists_pg_l5",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player assists per game, last 5 games"
+  },
+  {
+   "name": "assists_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player assists per game, last 20 games"
+  },
+  {
+   "name": "assists_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player assists per game, last 82 games"
+  },
+  {
+   "name": "assists_p60_l5",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player assists per 60 minutes TOI, last 5 games"
+  },
+  {
+   "name": "assists_p60_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player assists per 60 minutes TOI, last 20 games"
+  },
+  {
+   "name": "assists_p60_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player assists per 60 minutes TOI, last 82 games"
+  },
+  {
+   "name": "points_pg_l5",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player points per game, last 5 games"
+  },
+  {
+   "name": "points_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player points per game, last 20 games"
+  },
+  {
+   "name": "points_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player points per game, last 82 games"
+  },
+  {
+   "name": "points_p60_l5",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player points per 60 minutes TOI, last 5 games"
+  },
+  {
+   "name": "points_p60_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player points per 60 minutes TOI, last 20 games"
+  },
+  {
+   "name": "points_p60_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player points per 60 minutes TOI, last 82 games"
+  },
+  {
+   "name": "sog_pg_l5",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player shots on goal per game, last 5 games"
+  },
+  {
+   "name": "sog_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player shots on goal per game, last 20 games"
+  },
+  {
+   "name": "sog_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player shots on goal per game, last 82 games"
+  },
+  {
+   "name": "sog_p60_l5",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player shots on goal per 60 minutes TOI, last 5 games"
+  },
+  {
+   "name": "sog_p60_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player shots on goal per 60 minutes TOI, last 20 games"
+  },
+  {
+   "name": "sog_p60_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player shots on goal per 60 minutes TOI, last 82 games"
+  },
+  {
+   "name": "hits_pg_l5",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player hits per game, last 5 games"
+  },
+  {
+   "name": "hits_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player hits per game, last 20 games"
+  },
+  {
+   "name": "hits_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player hits per game, last 82 games"
+  },
+  {
+   "name": "hits_p60_l5",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player hits per 60 minutes TOI, last 5 games"
+  },
+  {
+   "name": "hits_p60_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player hits per 60 minutes TOI, last 20 games"
+  },
+  {
+   "name": "hits_p60_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player hits per 60 minutes TOI, last 82 games"
+  },
+  {
+   "name": "blocks_pg_l5",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player blocked shots per game, last 5 games"
+  },
+  {
+   "name": "blocks_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player blocked shots per game, last 20 games"
+  },
+  {
+   "name": "blocks_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player blocked shots per game, last 82 games"
+  },
+  {
+   "name": "blocks_p60_l5",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player blocked shots per 60 minutes TOI, last 5 games"
+  },
+  {
+   "name": "blocks_p60_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player blocked shots per 60 minutes TOI, last 20 games"
+  },
+  {
+   "name": "blocks_p60_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player blocked shots per 60 minutes TOI, last 82 games"
+  },
+  {
+   "name": "ppp_pg_l5",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player power-play points per game, last 5 games"
+  },
+  {
+   "name": "ppp_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player power-play points per game, last 20 games"
+  },
+  {
+   "name": "ppp_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player power-play points per game, last 82 games"
+  },
+  {
+   "name": "ppp_p60_l5",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player power-play points per 60 minutes TOI, last 5 games"
+  },
+  {
+   "name": "ppp_p60_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player power-play points per 60 minutes TOI, last 20 games"
+  },
+  {
+   "name": "ppp_p60_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "p60",
+   "definition": "player power-play points per 60 minutes TOI, last 82 games"
+  },
+  {
+   "name": "t_gf_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team goals for per game, last 20 games"
+  },
+  {
+   "name": "t_gf_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team goals for per game, last 82 games"
+  },
+  {
+   "name": "t_ga_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team goals against per game, last 20 games"
+  },
+  {
+   "name": "t_ga_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team goals against per game, last 82 games"
+  },
+  {
+   "name": "t_sf_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team shots for per game, last 20 games"
+  },
+  {
+   "name": "t_sf_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team shots for per game, last 82 games"
+  },
+  {
+   "name": "t_sa_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team shots against per game, last 20 games"
+  },
+  {
+   "name": "t_sa_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team shots against per game, last 82 games"
+  },
+  {
+   "name": "t_pen_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team penalties taken per game, last 20 games"
+  },
+  {
+   "name": "t_pen_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team penalties taken per game, last 82 games"
+  },
+  {
+   "name": "t_pen_drawn_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team penalties drawn (opponent penalties) per game, last 20 games"
+  },
+  {
+   "name": "t_pen_drawn_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team penalties drawn (opponent penalties) per game, last 82 games"
+  },
+  {
+   "name": "t_win_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team wins per game, last 20 games"
+  },
+  {
+   "name": "t_win_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team wins per game, last 82 games"
+  },
+  {
+   "name": "ot_gf_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team goals for per game, last 20 games"
+  },
+  {
+   "name": "ot_gf_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team goals for per game, last 82 games"
+  },
+  {
+   "name": "ot_ga_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team goals against per game, last 20 games"
+  },
+  {
+   "name": "ot_ga_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team goals against per game, last 82 games"
+  },
+  {
+   "name": "ot_sf_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team shots for per game, last 20 games"
+  },
+  {
+   "name": "ot_sf_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team shots for per game, last 82 games"
+  },
+  {
+   "name": "ot_sa_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team shots against per game, last 20 games"
+  },
+  {
+   "name": "ot_sa_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team shots against per game, last 82 games"
+  },
+  {
+   "name": "ot_pen_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent penalties taken per game, last 20 games"
+  },
+  {
+   "name": "ot_pen_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent penalties taken per game, last 82 games"
+  },
+  {
+   "name": "ot_pen_drawn_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent penalties drawn (opponent penalties) per game, last 20 games"
+  },
+  {
+   "name": "ot_pen_drawn_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent penalties drawn (opponent penalties) per game, last 82 games"
+  },
+  {
+   "name": "ot_win_pg_l20",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent wins per game, last 20 games"
+  },
+  {
+   "name": "ot_win_pg_l82",
+   "entity": "skater",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent wins per game, last 82 games"
+  },
+  {
+   "name": "home",
+   "entity": "goalie",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "binary",
+   "definition": "1 if home team"
+  },
+  {
+   "name": "g_gp_prior",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "count",
+   "definition": "goalie appearances before this game"
+  },
+  {
+   "name": "g_svpct_l10",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "ratio",
+   "definition": "goalie save percentage, last 10 appearances"
+  },
+  {
+   "name": "g_svpct_l30",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "ratio",
+   "definition": "goalie save percentage, last 30 appearances"
+  },
+  {
+   "name": "g_sa_pg_l10",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player g_sa per game, last 10 games"
+  },
+  {
+   "name": "g_sa_pg_l30",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "pg",
+   "definition": "player g_sa per game, last 30 games"
+  },
+  {
+   "name": "starter_l10",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "count",
+   "definition": "starts in goalie's last 10 appearances"
+  },
+  {
+   "name": "rest_days",
+   "entity": "goalie",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "days",
+   "definition": "days since team's previous game (capped 5)"
+  },
+  {
+   "name": "b2b",
+   "entity": "goalie",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "binary",
+   "definition": "1 if team played the previous day"
+  },
+  {
+   "name": "opp_rest",
+   "entity": "goalie",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "days",
+   "definition": "opponent rest days"
+  },
+  {
+   "name": "opp_b2b",
+   "entity": "goalie",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "binary",
+   "definition": "opponent back-to-back"
+  },
+  {
+   "name": "t_gf_pg_l20",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team goals for per game, last 20 games"
+  },
+  {
+   "name": "t_gf_pg_l82",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team goals for per game, last 82 games"
+  },
+  {
+   "name": "t_ga_pg_l20",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team goals against per game, last 20 games"
+  },
+  {
+   "name": "t_ga_pg_l82",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team goals against per game, last 82 games"
+  },
+  {
+   "name": "t_sf_pg_l20",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team shots for per game, last 20 games"
+  },
+  {
+   "name": "t_sf_pg_l82",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team shots for per game, last 82 games"
+  },
+  {
+   "name": "t_sa_pg_l20",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team shots against per game, last 20 games"
+  },
+  {
+   "name": "t_sa_pg_l82",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team shots against per game, last 82 games"
+  },
+  {
+   "name": "t_pen_pg_l20",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team penalties taken per game, last 20 games"
+  },
+  {
+   "name": "t_pen_pg_l82",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team penalties taken per game, last 82 games"
+  },
+  {
+   "name": "t_pen_drawn_pg_l20",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team penalties drawn (opponent penalties) per game, last 20 games"
+  },
+  {
+   "name": "t_pen_drawn_pg_l82",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team penalties drawn (opponent penalties) per game, last 82 games"
+  },
+  {
+   "name": "t_win_pg_l20",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team wins per game, last 20 games"
+  },
+  {
+   "name": "t_win_pg_l82",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team wins per game, last 82 games"
+  },
+  {
+   "name": "ot_gf_pg_l20",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team goals for per game, last 20 games"
+  },
+  {
+   "name": "ot_gf_pg_l82",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team goals for per game, last 82 games"
+  },
+  {
+   "name": "ot_ga_pg_l20",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team goals against per game, last 20 games"
+  },
+  {
+   "name": "ot_ga_pg_l82",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team goals against per game, last 82 games"
+  },
+  {
+   "name": "ot_sf_pg_l20",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team shots for per game, last 20 games"
+  },
+  {
+   "name": "ot_sf_pg_l82",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team shots for per game, last 82 games"
+  },
+  {
+   "name": "ot_sa_pg_l20",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team shots against per game, last 20 games"
+  },
+  {
+   "name": "ot_sa_pg_l82",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team shots against per game, last 82 games"
+  },
+  {
+   "name": "ot_pen_pg_l20",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent penalties taken per game, last 20 games"
+  },
+  {
+   "name": "ot_pen_pg_l82",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent penalties taken per game, last 82 games"
+  },
+  {
+   "name": "ot_pen_drawn_pg_l20",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent penalties drawn (opponent penalties) per game, last 20 games"
+  },
+  {
+   "name": "ot_pen_drawn_pg_l82",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent penalties drawn (opponent penalties) per game, last 82 games"
+  },
+  {
+   "name": "ot_win_pg_l20",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent wins per game, last 20 games"
+  },
+  {
+   "name": "ot_win_pg_l82",
+   "entity": "goalie",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent wins per game, last 82 games"
+  },
+  {
+   "name": "home",
+   "entity": "team",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "binary",
+   "definition": "1 if home team"
+  },
+  {
+   "name": "rest_days",
+   "entity": "team",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "days",
+   "definition": "days since team's previous game (capped 5)"
+  },
+  {
+   "name": "b2b",
+   "entity": "team",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "binary",
+   "definition": "1 if team played the previous day"
+  },
+  {
+   "name": "opp_rest",
+   "entity": "team",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "days",
+   "definition": "opponent rest days"
+  },
+  {
+   "name": "opp_b2b",
+   "entity": "team",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "binary",
+   "definition": "opponent back-to-back"
+  },
+  {
+   "name": "team_gp_prior",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "count",
+   "definition": "team games this season before this game"
+  },
+  {
+   "name": "opp_gp_prior",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "count",
+   "definition": "opponent games this season before this game"
+  },
+  {
+   "name": "t_gf_pg_l20",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team goals for per game, last 20 games"
+  },
+  {
+   "name": "t_gf_pg_l82",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team goals for per game, last 82 games"
+  },
+  {
+   "name": "t_ga_pg_l20",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team goals against per game, last 20 games"
+  },
+  {
+   "name": "t_ga_pg_l82",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team goals against per game, last 82 games"
+  },
+  {
+   "name": "t_sf_pg_l20",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team shots for per game, last 20 games"
+  },
+  {
+   "name": "t_sf_pg_l82",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team shots for per game, last 82 games"
+  },
+  {
+   "name": "t_sa_pg_l20",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team shots against per game, last 20 games"
+  },
+  {
+   "name": "t_sa_pg_l82",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team team shots against per game, last 82 games"
+  },
+  {
+   "name": "t_pen_pg_l20",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team penalties taken per game, last 20 games"
+  },
+  {
+   "name": "t_pen_pg_l82",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team penalties taken per game, last 82 games"
+  },
+  {
+   "name": "t_pen_drawn_pg_l20",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team penalties drawn (opponent penalties) per game, last 20 games"
+  },
+  {
+   "name": "t_pen_drawn_pg_l82",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team penalties drawn (opponent penalties) per game, last 82 games"
+  },
+  {
+   "name": "t_win_pg_l20",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team wins per game, last 20 games"
+  },
+  {
+   "name": "t_win_pg_l82",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "own team wins per game, last 82 games"
+  },
+  {
+   "name": "ot_gf_pg_l20",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team goals for per game, last 20 games"
+  },
+  {
+   "name": "ot_gf_pg_l82",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team goals for per game, last 82 games"
+  },
+  {
+   "name": "ot_ga_pg_l20",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team goals against per game, last 20 games"
+  },
+  {
+   "name": "ot_ga_pg_l82",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team goals against per game, last 82 games"
+  },
+  {
+   "name": "ot_sf_pg_l20",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team shots for per game, last 20 games"
+  },
+  {
+   "name": "ot_sf_pg_l82",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team shots for per game, last 82 games"
+  },
+  {
+   "name": "ot_sa_pg_l20",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team shots against per game, last 20 games"
+  },
+  {
+   "name": "ot_sa_pg_l82",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent team shots against per game, last 82 games"
+  },
+  {
+   "name": "ot_pen_pg_l20",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent penalties taken per game, last 20 games"
+  },
+  {
+   "name": "ot_pen_pg_l82",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent penalties taken per game, last 82 games"
+  },
+  {
+   "name": "ot_pen_drawn_pg_l20",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent penalties drawn (opponent penalties) per game, last 20 games"
+  },
+  {
+   "name": "ot_pen_drawn_pg_l82",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent penalties drawn (opponent penalties) per game, last 82 games"
+  },
+  {
+   "name": "ot_win_pg_l20",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent wins per game, last 20 games"
+  },
+  {
+   "name": "ot_win_pg_l82",
+   "entity": "team",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "per game",
+   "definition": "opponent wins per game, last 82 games"
+  },
+  {
+   "name": "home",
+   "entity": "goalie_candidate",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "binary",
+   "definition": "1 if home team"
+  },
+  {
+   "name": "b2b",
+   "entity": "goalie_candidate",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "binary",
+   "definition": "1 if team played the previous day"
+  },
+  {
+   "name": "rest_days",
+   "entity": "goalie_candidate",
+   "source": "api-web.nhle.com schedule",
+   "availability": "Known from the published schedule before the game.",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "days",
+   "definition": "days since team's previous game (capped 5)"
+  },
+  {
+   "name": "share_l10",
+   "entity": "goalie_candidate",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "ratio",
+   "definition": "share of team's last 10 games started by this goalie"
+  },
+  {
+   "name": "days_since_start",
+   "entity": "goalie_candidate",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "days",
+   "definition": "days since goalie's last start (cap 30)"
+  },
+  {
+   "name": "started_prev",
+   "entity": "goalie_candidate",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "binary",
+   "definition": "1 if goalie started team's previous game"
+  },
+  {
+   "name": "g_gp_prior",
+   "entity": "goalie_candidate",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "count",
+   "definition": "goalie appearances before this game"
+  },
+  {
+   "name": "g_svpct_l30",
+   "entity": "goalie_candidate",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "ratio",
+   "definition": "goalie save percentage, last 30 appearances"
+  },
+  {
+   "name": "team_gp_prior",
+   "entity": "goalie_candidate",
+   "source": "api-web.nhle.com boxscore + landing",
+   "availability": "Aggregates only games whose scheduled start is strictly before this game's start (groupby().shift(1) before rolling).",
+   "missing": "NaN passed to model (native missing handling); rows with < 5 prior games excluded from training (skaters).",
+   "unit": "count",
+   "definition": "team games this season before this game"
+  }
+ ]
+}

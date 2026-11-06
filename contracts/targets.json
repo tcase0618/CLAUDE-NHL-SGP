@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "context": "NHL regular season (gameType=2). Playoff contexts are registered separately and DISABLED: different OT rules (no shootout, continuous 5v5 OT) and too few games to validate.",
+  "horizon": "Pregame: features frozen at the scheduled start time; only games that started earlier are used.",
+  "validation": "Chronological split: train < 2025-12-01, tune 2025-12-01..2026-01-15 (early stopping / AutoGluon tuning_data), select 2026-01-16..2026-02-28 (champion selection, distribution fit, conservative-bound tables; spans the Olympic pause), test >= 2026-03-01 (held out, reported only).",
+  "settlement": {
+    "skater": "Stat counts as recorded by the NHL for regulation + overtime. Shootout goals do not count. Player must dress and record a shift (otherwise void).",
+    "goalie": "Saves = shots on goal against - goals against for the goalie's own time on ice. Props are evaluated conditional on starting (non-start = void at most books).",
+    "team": "Goals include overtime. The shootout winner's +1 counts toward the final score but is not attributed to any skater."
+  },
+  "targets": [
+    {"id": "sk_sog", "entity": "skater", "column": "sog", "family": "count", "objective": "count:poisson", "thresholds": [1, 2, 3, 4, 5, 6], "status": "enabled"},
+    {"id": "sk_goals", "entity": "skater", "column": "goals", "family": "count", "objective": "count:poisson", "thresholds": [1, 2, 3], "status": "enabled"},
+    {"id": "sk_assists", "entity": "skater", "column": "assists", "family": "count", "objective": "count:poisson", "thresholds": [1, 2, 3], "status": "enabled"},
+    {"id": "sk_points", "entity": "skater", "column": "points", "family": "count", "objective": "count:poisson", "thresholds": [1, 2, 3, 4], "status": "enabled"},
+    {"id": "sk_blocks", "entity": "skater", "column": "blocks", "family": "count", "objective": "count:poisson", "thresholds": [1, 2, 3, 4], "status": "enabled"},
+    {"id": "sk_hits", "entity": "skater", "column": "hits", "family": "count", "objective": "count:poisson", "thresholds": [1, 2, 3, 4, 5], "status": "enabled"},
+    {"id": "sk_ppp", "entity": "skater", "column": "ppp", "family": "count", "objective": "count:poisson", "thresholds": [1, 2], "status": "enabled"},
+    {"id": "sk_toi", "entity": "skater", "column": "toi_min", "family": "continuous", "objective": "reg:squarederror", "thresholds": [], "status": "enabled"},
+    {"id": "sk_shot_attempts", "entity": "skater", "column": null, "family": "count", "objective": null, "thresholds": [], "status": "disabled", "reason": "Shot attempts (Corsi) are not in the public boxscore; requires play-by-play ingestion (not yet built)."},
+    {"id": "sk_pp_toi", "entity": "skater", "column": null, "family": "continuous", "objective": null, "thresholds": [], "status": "disabled", "reason": "PP time on ice is not in the boxscore; requires shift charts."},
+    {"id": "g_saves", "entity": "goalie", "column": "saves", "family": "count", "objective": "count:poisson", "thresholds": [20, 22, 25, 28, 30, 32, 35], "status": "enabled", "conditional": "starter"},
+    {"id": "g_shots_against", "entity": "goalie", "column": "shots_against", "family": "count", "objective": "count:poisson", "thresholds": [25, 28, 30, 32, 35], "status": "enabled", "conditional": "starter"},
+    {"id": "g_goals_against", "entity": "goalie", "column": "goals_against", "family": "count", "objective": "count:poisson", "thresholds": [1, 2, 3, 4], "status": "enabled", "conditional": "starter"},
+    {"id": "g_start", "entity": "goalie_candidate", "column": "started", "family": "binary", "objective": "binary:logistic", "thresholds": [], "status": "enabled"},
+    {"id": "t_goals", "entity": "team", "column": "gf", "family": "count", "objective": "count:poisson", "thresholds": [1, 2, 3, 4, 5], "status": "enabled"},
+    {"id": "t_shots", "entity": "team", "column": "sf", "family": "count", "objective": "count:poisson", "thresholds": [25, 28, 30, 32, 35], "status": "enabled"},
+    {"id": "t_win", "entity": "team", "column": "win", "family": "binary", "objective": "binary:logistic", "thresholds": [], "status": "enabled", "note": "Full game incl. OT/SO, home-team rows only to avoid duplicate pairs."},
+    {"id": "t_regulation", "entity": "team", "column": null, "family": "multiclass", "objective": null, "thresholds": [], "status": "disabled", "reason": "Regulation 3-way outcome registered; derived from the joint game simulator, not yet separately validated."},
+    {"id": "playoff_any", "entity": "any", "column": null, "family": null, "objective": null, "thresholds": [], "status": "disabled", "reason": "Playoff context: separate data-generating process; insufficient games."}
+  ]
+}

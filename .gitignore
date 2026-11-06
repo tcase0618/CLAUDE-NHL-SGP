@@ -1,3 +1,11 @@
 node_modules/
 .DS_Store
 *.log
+.venv/
+data/raw/
+data/build/
+models/**/artifacts/
+__pycache__/
+*.pyc
+AutogluonModels/
+data/ingest.log

@@ -321,3 +321,5 @@ table { border-collapse: collapse; width: 100%; }
   .mt td.pc { width: 84px; }
   .pbar { width: 48px; }
 }
+a.tab { text-decoration: none; display: inline-block; }
+a.tab:hover { text-decoration: none; color: var(--txt); }

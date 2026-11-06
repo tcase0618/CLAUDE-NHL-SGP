@@ -64,11 +64,12 @@
   const NAV = [
     ['home', '#/home', '<svg width="16" height="16" viewBox="0 0 24 24" aria-label="Home"><path fill="currentColor" d="M12 3 2 12h3v8h5v-6h4v6h5v-8h3z"/></svg>'],
     ['player', '#/player', 'Player Intelligence'], ['goalie', '#/goalie', 'Goalie Intelligence'], ['team', '#/team', 'Team Intelligence'],
-    ['lines', '#/lines', 'Lines & Pairings'], ['matchup', '#/matchup', 'Matchup Lab'], ['predict', '#/predict', 'Prediction Engine'], ['audit', '#/audit', 'Model Audit']
+    ['lines', '#/lines', 'Lines & Pairings'], ['matchup', '#/matchup', 'Matchup Lab'], ['predict', '#/predict', 'Prediction Engine'], ['audit', '#/audit', 'Model Audit'], ['cv', '#/cv', 'Case Value · SGP']
   ];
   const SIDE = [
     ['Research Workspace', [['player', '#/player', 'Player Intelligence'], ['goalie', '#/goalie', 'Goalie Intelligence'], ['team', '#/team', 'Team Intelligence'], ['lines', '#/lines', 'Lines & Pairings'], ['matchup', '#/matchup', 'Matchup Lab'], ['predict', '#/predict', 'Prediction Engine'], ['audit', '#/audit', 'Model Audit']]],
     ['Analysis Tools', [['explorer', '#/explorer', 'Shot & Event Explorer'], ['zone', '#/team/{F}/zone', 'Zone Play Analyzer'], ['leaders', '#/leaders', 'Skating & Usage'], ['chem', '#/lines/{F}', 'Line / Pair Chemistry'], ['opp', '#/matchup', 'Opponent Matchups'], ['scen', '#/predict', 'Scenario Simulator'], ['xg', '#/audit/xg', 'Custom Models']]],
+    ['Case Value · Real NHL', [['cv', '#/cv', 'Props · CV%'], ['cvs3', '#/cv/sgp3', '3-Leg SGP'], ['cvs5', '#/cv/sgp5', '5-Leg SGP'], ['cvs8', '#/cv/sgp8', '8-Leg SGP'], ['cvo', '#/cv/odds', 'Odds Desk'], ['cvm', '#/cv/models', 'AutoGluon · XGBoost']]],
     ['Data & Models', [['library', '#/audit/library', 'Model Library'], ['features', '#/library', 'Feature Store'], ['backtest', '#/audit/backtest', 'Backtests'], ['calib', '#/audit/calibration', 'Calibration'], ['versions', '#/audit/versions', 'Version Control']]]
   ];
 
@@ -170,6 +171,7 @@
   /** Attach progress feedback to a loading element while a promise runs. */
   app.withProgress = (el, opts) => Object.assign({}, opts, { onProgress: (f) => { const i = el && el.querySelector('.prog i'); if (i) i.style.width = (f * 100).toFixed(0) + '%'; } });
   app.store = store;
+  app.rerender = () => route();
 
   /** Delegated tab handling: data-tabs container toggles [data-pane] siblings. */
   app.wireTabs = (root, onChange) => {

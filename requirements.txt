@@ -1,0 +1,12 @@
+autogluon.common==1.6.3
+autogluon.core==1.6.3
+autogluon.features==1.6.3
+autogluon.tabular==1.6.3
+lightgbm==4.7.0
+numpy==2.5.4
+pandas==2.3.3
+pyarrow==24.0.0
+pytest==9.2.0
+scikit-learn==1.9.1
+scipy==1.18.1
+xgboost==3.4.1

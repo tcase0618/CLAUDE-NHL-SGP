@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "description": "Normalized sportsbook quote contract shared by ml/odds.py (feed), js/engine/odds.js (validation/matching) and the CV / SGP engines.",
+  "single": {
+    "book": "string — sportsbook identity, never merged across books",
+    "game_id": "integer — NHL gameId (e.g. 2026020262)",
+    "market": "player_sog | player_points | player_goals | player_assists | player_blocks | player_hits | player_ppp | goalie_saves",
+    "player_id": "integer — NHL playerId (exact match required)",
+    "line": "number — x.5 lines settle with no push; integer lines may push",
+    "side": "over | under",
+    "american": "integer — offered American odds (|odds| >= 100)",
+    "ts": "ISO-8601 UTC price timestamp",
+    "status": "open | suspended | closed",
+    "source": "feed | manual | import"
+  },
+  "sgp": {
+    "book": "string", "game_id": "integer", "market": "sgp",
+    "legs": "array of exactly 3, 5 or 8 {market, player_id, line, side}; no duplicates",
+    "american": "integer — the sportsbook's ACTUAL combined SGP price (never a product of single prices)",
+    "ts": "ISO-8601 UTC", "status": "open | suspended | closed"
+  },
+  "rejection_rules": ["invalid structure", "unsupported market", "price older than 30 minutes", "suspended/closed", "game already started", "player not in that game's projected lineup", "timestamp in the future", "duplicate legs", "SGP leg count not in {3,5,8}"],
+  "settlement": "Player props settle on NHL-recorded stats including overtime, excluding shootout. A player who does not dress voids (books reprice the SGP — reprice rules are book-specific and are NOT modelled; such parlays are marked unsupported). Goalie legs are evaluated conditional on starting."
+}
