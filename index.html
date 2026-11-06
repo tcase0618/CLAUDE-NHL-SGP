@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NHL Quant Terminal</title>
+  <meta name="description" content="Institutional-grade hockey intelligence & prediction terminal — synthetic demo data.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/terminal.css">
+</head>
+<body>
+  <div id="boot" role="status" aria-live="polite">
+    <div class="bx">
+      <h1>NHL QUANT TERMINAL</h1>
+      <div class="bs">Building synthetic universe · event-level simulation · model fitting</div>
+      <div class="bar"><i id="bootbar"></i></div>
+      <ul id="bootsteps"></ul>
+    </div>
+  </div>
+  <div id="app" hidden></div>
+
+  <!-- core -->
+  <script src="js/core/rng.js"></script>
+  <script src="js/core/util.js"></script>
+  <script src="js/data/teams.js"></script>
+  <!-- engine -->
+  <script src="js/engine/league.js"></script>
+  <script src="js/engine/sim.js"></script>
+  <script src="js/engine/season.js"></script>
+  <script src="js/engine/metrics.js"></script>
+  <script src="js/engine/chem.js"></script>
+  <script src="js/engine/estimate.js"></script>
+  <script src="js/engine/predict.js"></script>
+  <script src="js/engine/audit.js"></script>
+  <!-- views -->
+  <script src="js/views/charts.js"></script>
+  <script src="js/views/components.js"></script>
+  <script src="js/views/home.js"></script>
+  <script src="js/views/player.js"></script>
+  <script src="js/views/goalie.js"></script>
+  <script src="js/views/team.js"></script>
+  <script src="js/views/lines.js"></script>
+  <script src="js/views/matchup.js"></script>
+  <script src="js/views/predict.js"></script>
+  <script src="js/views/audit.js"></script>
+  <script src="js/views/explorer.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
