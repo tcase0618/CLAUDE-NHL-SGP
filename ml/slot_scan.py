@@ -86,6 +86,10 @@ def scan(slot: str, games: list[dict], sims: int) -> str:
     md = open(md_path).read()
     gl = "\n".join(f"- {team}: " + (f"**confirmed starter id {v['confirmed']}**" if v["confirmed"] else "not yet confirmed — model start probabilities " + ", ".join(f"{n} {int(100 * p)}%" for n, p in v["probs"].items())) for team, v in goalies.items())
     open(md_path, "w").write(md.replace("**How to use:**", f"**Slot {slot}** · games: {', '.join(g['away'] + '@' + g['home'] for g in games)} · scanned {t0.isoformat()[:16]}Z\n\n**Starting goalies at scan time:**\n{gl}\n\n**How to use:**", 1))
+    try:  # settle everything finished so far into the cumulative ledger
+        run([PY, "ml/ledger.py"])
+    except subprocess.CalledProcessError as e:  # ledger failure must never block a scan
+        print("ledger update failed:", e)
     state = load_state()
     state["scans"][slot] = {"scanned_at": t0.isoformat(), "games": ids, "report": out + ".md", "seconds": (datetime.now(timezone.utc) - t0).total_seconds()}
     os.makedirs(os.path.dirname(STATE), exist_ok=True)

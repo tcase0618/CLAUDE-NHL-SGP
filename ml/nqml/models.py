@@ -30,7 +30,8 @@ SKATER_FEATURES = (["home", "is_d", "pos_c", "pos_w", "gp_prior", "fo_prior", "t
 GOALIE_FEATURES = (["home", "g_gp_prior", "g_svpct_l10", "g_svpct_l30", "g_sa_pg_l10", "g_sa_pg_l30", "starter_l10", "rest_days", "b2b",
                     "opp_rest", "opp_b2b"] + TEAM_CTX + OPP_CTX)
 TEAM_FEATURES = ["home", "rest_days", "b2b", "opp_rest", "opp_b2b", "team_gp_prior", "opp_gp_prior"] + TEAM_CTX + OPP_CTX
-GSTART_FEATURES = ["home", "b2b", "rest_days", "share_l10", "days_since_start", "started_prev", "g_gp_prior", "g_svpct_l30", "team_gp_prior"]
+GSTART_FEATURES = ["home", "b2b", "rest_days", "share_l10", "days_since_start", "started_prev", "g_gp_prior", "g_svpct_l30", "team_gp_prior",
+                   "share_l3", "share_l5", "share_season", "streak", "n_cands", "starts_14d", "prev_b2b", "g_svpct_l5", "rank_l10", "rank_season"]
 
 FEATURES = {"skater": SKATER_FEATURES, "goalie": GOALIE_FEATURES, "team": TEAM_FEATURES, "goalie_candidate": GSTART_FEATURES}
 

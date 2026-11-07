@@ -62,9 +62,9 @@
      "test": 0.9528443429151366
     },
     "g_start": {
-     "champion_model": "blend",
-     "select": 0.4632936977535024,
-     "test": 0.4465699541758847
+     "champion_model": "autogluon",
+     "select": 0.4249883681952089,
+     "test": 0.4226119110110922
     },
     "t_goals": {
      "champion_model": "baseline",
@@ -90,6 +90,14 @@
    "ts": "2026-11-06T23:14:50.227220+00:00",
    "action": "promote",
    "version": "v20261106-224110"
+  },
+  {
+   "ts": "2026-11-07T03:55:03.667455+00:00",
+   "action": "target-promote",
+   "target": "g_start",
+   "challenger": "v20261107-035455",
+   "select_new": 0.4249883681952089,
+   "select_old": 0.4632936977535024
   }
  ]
 }

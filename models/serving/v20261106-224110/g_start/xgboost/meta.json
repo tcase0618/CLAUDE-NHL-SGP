@@ -8,12 +8,22 @@
   "started_prev",
   "g_gp_prior",
   "g_svpct_l30",
-  "team_gp_prior"
+  "team_gp_prior",
+  "share_l3",
+  "share_l5",
+  "share_season",
+  "streak",
+  "n_cands",
+  "starts_14d",
+  "prev_b2b",
+  "g_svpct_l5",
+  "rank_l10",
+  "rank_season"
  ],
  "params": {
   "max_depth": 5,
   "min_child_weight": 5,
-  "reg_lambda": 8.0,
+  "reg_lambda": 1.0,
   "learning_rate": 0.04,
   "subsample": 0.8,
   "colsample_bytree": 0.7,
@@ -25,7 +35,7 @@
   "eval_metric": "logloss",
   "seed": 7
  },
- "best_iteration": 99,
+ "best_iteration": 142,
  "search": [
   {
    "params": {
@@ -33,44 +43,44 @@
     "min_child_weight": 5,
     "reg_lambda": 1.0
    },
-   "rounds": 152,
-   "tune_logloss": 0.4828766131501196
+   "rounds": 305,
+   "tune_logloss": 0.45511139492215597
   },
   {
    "params": {
     "max_depth": 3,
     "min_child_weight": 5,
     "reg_lambda": 8.0
+   },
+   "rounds": 388,
+   "tune_logloss": 0.45408007100845055
+  },
+  {
+   "params": {
+    "max_depth": 3,
+    "min_child_weight": 25,
+    "reg_lambda": 1.0
+   },
+   "rounds": 652,
+   "tune_logloss": 0.45380323889917557
+  },
+  {
+   "params": {
+    "max_depth": 3,
+    "min_child_weight": 25,
+    "reg_lambda": 8.0
+   },
+   "rounds": 716,
+   "tune_logloss": 0.4527987083347023
+  },
+  {
+   "params": {
+    "max_depth": 5,
+    "min_child_weight": 5,
+    "reg_lambda": 1.0
    },
    "rounds": 143,
-   "tune_logloss": 0.4829502684207121
-  },
-  {
-   "params": {
-    "max_depth": 3,
-    "min_child_weight": 25,
-    "reg_lambda": 1.0
-   },
-   "rounds": 147,
-   "tune_logloss": 0.48248897210035924
-  },
-  {
-   "params": {
-    "max_depth": 3,
-    "min_child_weight": 25,
-    "reg_lambda": 8.0
-   },
-   "rounds": 144,
-   "tune_logloss": 0.4826281890138815
-  },
-  {
-   "params": {
-    "max_depth": 5,
-    "min_child_weight": 5,
-    "reg_lambda": 1.0
-   },
-   "rounds": 97,
-   "tune_logloss": 0.4751578934066742
+   "tune_logloss": 0.445665675158834
   },
   {
    "params": {
@@ -78,8 +88,8 @@
     "min_child_weight": 5,
     "reg_lambda": 8.0
    },
-   "rounds": 100,
-   "tune_logloss": 0.47422053355504934
+   "rounds": 198,
+   "tune_logloss": 0.4461970580775333
   },
   {
    "params": {
@@ -87,8 +97,8 @@
     "min_child_weight": 25,
     "reg_lambda": 1.0
    },
-   "rounds": 100,
-   "tune_logloss": 0.47533255575337935
+   "rounds": 195,
+   "tune_logloss": 0.4469830411604781
   },
   {
    "params": {
@@ -96,8 +106,8 @@
     "min_child_weight": 25,
     "reg_lambda": 8.0
    },
-   "rounds": 103,
-   "tune_logloss": 0.4754633932076126
+   "rounds": 243,
+   "tune_logloss": 0.4473981962663464
   }
  ]
 }

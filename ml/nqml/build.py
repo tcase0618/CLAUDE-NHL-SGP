@@ -231,7 +231,15 @@ def goalie_start_frame(K: pd.DataFrame, TG: pd.DataFrame, tctx: pd.DataFrame) ->
             prev = hist[-20:]
             cands = sorted({pid for h in prev for pid in h[3]})
             last10 = [h[2] for h in hist[-10:]]
+            season_starts = [h[2] for h in hist if h[4] == r.season]
+            share = lambda arr, pid: (sum(1 for x in arr if x == pid) / len(arr)) if arr else np.nan
             for pid in cands:
+                streak = 0
+                for h in reversed(hist):
+                    if h[2] == pid:
+                        streak += 1
+                    else:
+                        break
                 gh = [x for x in gk_hist.get(pid, []) if x[0] < r.start_utc]
                 st = [x for x in gh if x[1] == 1]
                 l30 = gh[-30:]
@@ -242,6 +250,15 @@ def goalie_start_frame(K: pd.DataFrame, TG: pd.DataFrame, tctx: pd.DataFrame) ->
                                  days_since_start=min(30.0, (r.start_utc - st[-1][0]).total_seconds() / 86400) if st else 30.0,
                                  started_prev=int(bool(hist) and hist[-1][2] == pid), g_gp_prior=len(gh), g_svpct_l30=(sv / sa) if sa else np.nan,
                                  started=(int(start_by_game.get((r.game_id, team)) == pid) if (r.game_id, team) in start_by_game else np.nan),
+                                 share_l3=share([h[2] for h in hist[-3:]], pid), share_l5=share([h[2] for h in hist[-5:]], pid),
+                                 share_season=share(season_starts, pid), streak=streak, n_cands=len(cands),
+                                 starts_14d=sum(1 for x in st if (r.start_utc - x[0]).total_seconds() <= 14 * 86400),
+                                 prev_b2b=int(bool(hist) and hist[-1][2] == pid) * int(r.b2b or 0),
+                                 g_svpct_l5=(lambda l5: (sum(x[2] for x in l5) / sum(x[3] for x in l5)) if sum(x[3] for x in l5) else np.nan)(gh[-5:]),
                                  upcoming=int(getattr(r, "upcoming", 0) or 0)))
-            hist.append((r.game_id, r.start_utc, start_by_game.get((r.game_id, team)), app.get(r.game_id, [])))
-    return pd.DataFrame(rows)
+            hist.append((r.game_id, r.start_utc, start_by_game.get((r.game_id, team)), app.get(r.game_id, []), r.season))
+    out = pd.DataFrame(rows)
+    if len(out):  # rank within the candidate set (1 = most recent usage)
+        out["rank_l10"] = out.groupby(["game_id", "team"])["share_l10"].rank(ascending=False, method="min")
+        out["rank_season"] = out.groupby(["game_id", "team"])["share_season"].rank(ascending=False, method="min")
+    return out
