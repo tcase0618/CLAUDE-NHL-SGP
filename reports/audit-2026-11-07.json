@@ -1,5 +1,5 @@
 {
- "audited_at": "2026-11-07T03:44:47.465419+00:00",
+ "audited_at": "2026-11-07T16:33:29.059187+00:00",
  "source": "sgp-2026-11-07.json",
  "model_version": "v20261106-224110",
  "counts": {
@@ -75,7 +75,7 @@
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3D Cross-team scenario",
@@ -108,7 +108,7 @@
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3A Shot-volume structure",
@@ -141,7 +141,7 @@
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3C Goalie workload structure",
@@ -174,7 +174,7 @@
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5E Balanced cross-team structure",
@@ -212,14 +212,14 @@
      "text": "K. Sherwood 2+ hits",
      "p": 0.85788,
      "result": "WON",
-     "value": 5
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5B Top-6 usage cluster",
@@ -264,7 +264,7 @@
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5D High-tempo matchup",
@@ -309,7 +309,7 @@
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8D Multi-line production",
@@ -353,7 +353,7 @@
      "text": "K. Sherwood 2+ hits",
      "p": 0.85788,
      "result": "WON",
-     "value": 5
+     "value": 4
     },
     {
      "text": "D. Nurse 1+ blocked shot",
@@ -372,7 +372,7 @@
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8E Goaltender workload game",
@@ -435,7 +435,7 @@
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8B Concentrated offensive production",
@@ -498,7 +498,7 @@
   {
    "game_id": 2026020264,
    "game": "ANA@CGY",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3D Cross-team scenario",
@@ -531,7 +531,7 @@
   {
    "game_id": 2026020264,
    "game": "ANA@CGY",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3A Shot-volume structure",
@@ -564,7 +564,7 @@
   {
    "game_id": 2026020264,
    "game": "ANA@CGY",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3B Team offensive scenario",
@@ -597,7 +597,7 @@
   {
    "game_id": 2026020264,
    "game": "ANA@CGY",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5E Balanced cross-team structure",
@@ -642,7 +642,7 @@
   {
    "game_id": 2026020264,
    "game": "ANA@CGY",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5A Five-on-five offensive environment",
@@ -687,7 +687,7 @@
   {
    "game_id": 2026020264,
    "game": "ANA@CGY",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5D High-tempo matchup",
@@ -732,7 +732,7 @@
   {
    "game_id": 2026020264,
    "game": "ANA@CGY",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8D Multi-line production",
@@ -795,7 +795,7 @@
   {
    "game_id": 2026020264,
    "game": "ANA@CGY",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8A Shot-dominant game",

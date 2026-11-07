@@ -1,0 +1,547 @@
+{
+ "generated_at": "2026-11-07T16:33:10.705Z",
+ "model_version": "v20261106-224110",
+ "data_through": "2026-11-07 01:00:00+00:00",
+ "sims": 50000,
+ "games": [
+  {
+   "game_id": 2026020265,
+   "start_utc": "2026-11-07 17:30:00+00:00",
+   "away": "FLA",
+   "home": "WSH",
+   "sizes": {
+    "3": {
+     "evaluated": 13964,
+     "verified": 42,
+     "finalists": 42,
+     "exposureCap": 4,
+     "picks": [
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "S. Vilmanis 1+ hit",
+         "p": 0.90894,
+         "player_id": 8483771,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "T. Wilson 1+ hit",
+         "p": 0.8958,
+         "player_id": 8476880,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "B. Imama 1+ hit",
+         "p": 0.88718,
+         "player_id": 8478147,
+         "stat": "HIT",
+         "line": 0.5
+        }
+       ],
+       "pJoint": 0.72636,
+       "pLower": 0.7005190176595264,
+       "pIndep": 0.72604458780084,
+       "lift": 1.000434425384418,
+       "breakEven": -234,
+       "mcHits": 36318,
+       "scenario": {
+        "n": 36318,
+        "shots": 58.586210694421496,
+        "goals": 6.761110193292582,
+        "ppg": 1.297923894487582,
+        "margin": 0.31213172531527067,
+        "pace": 1
+       }
+      },
+      {
+       "family": "3A Shot-volume structure",
+       "legs": [
+        {
+         "text": "B. Tkachuk 2+ SOG",
+         "p": 0.80698,
+         "player_id": 8480801,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "S. Reinhart 2+ SOG",
+         "p": 0.74008,
+         "player_id": 8477933,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "M. Tkachuk 2+ SOG",
+         "p": 0.71506,
+         "player_id": 8479314,
+         "stat": "SOG",
+         "line": 1.5
+        }
+       ],
+       "pJoint": 0.4325,
+       "pLower": 0.40389354633434615,
+       "pIndep": 0.43075844169467203,
+       "lift": 1.0040430044701536,
+       "breakEven": 148,
+       "mcHits": 21625,
+       "scenario": {
+        "n": 21625,
+        "shots": 60.913895953757226,
+        "goals": 7.000878612716763,
+        "ppg": 1.3601387283236994,
+        "margin": 0.055398843930635835,
+        "pace": 1
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "S. Vilmanis 1+ hit",
+         "p": 0.90894,
+         "player_id": 8483771,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "T. Wilson 1+ hit",
+         "p": 0.8958,
+         "player_id": 8476880,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "M. Fehérváry 1+ blocked shot",
+         "p": 0.85208,
+         "player_id": 8480796,
+         "stat": "BLK",
+         "line": 0.5
+        }
+       ],
+       "pJoint": 0.70088,
+       "pLower": 0.6750390176595263,
+       "pIndep": 0.7018425568180799,
+       "lift": 0.9986285288506244,
+       "breakEven": -208,
+       "mcHits": 35044,
+       "scenario": {
+        "n": 35044,
+        "shots": 58.63577217212647,
+        "goals": 6.77065974203858,
+        "ppg": 1.2991382262298825,
+        "margin": 0.30438876840543316,
+        "pace": 1
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 22184,
+     "verified": 56,
+     "finalists": 56,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "5E Balanced cross-team structure",
+       "legs": [
+        {
+         "text": "S. Vilmanis 1+ hit",
+         "p": 0.90894,
+         "player_id": 8483771,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "T. Wilson 1+ hit",
+         "p": 0.8958,
+         "player_id": 8476880,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "B. Imama 1+ hit",
+         "p": 0.88718,
+         "player_id": 8478147,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "M. Fehérváry 1+ blocked shot",
+         "p": 0.85208,
+         "player_id": 8480796,
+         "stat": "BLK",
+         "line": 0.5
+        },
+        {
+         "text": "B. Jenner 1+ hit",
+         "p": 0.83986,
+         "player_id": 8476432,
+         "stat": "HIT",
+         "line": 0.5
+        }
+       ],
+       "pJoint": 0.51982,
+       "pLower": 0.49132166364862295,
+       "pIndep": 0.5208668500315644,
+       "lift": 0.99799017727563,
+       "breakEven": 104,
+       "mcHits": 25991,
+       "scenario": {
+        "n": 25991,
+        "shots": 58.66157516063252,
+        "goals": 6.7702666307568,
+        "ppg": 1.3094147974298795,
+        "margin": 0.3264206840829518,
+        "pace": 1
+       }
+      },
+      {
+       "family": "5B Top-6 usage cluster",
+       "legs": [
+        {
+         "text": "M. Fehérváry 1+ blocked shot",
+         "p": 0.85208,
+         "player_id": 8480796,
+         "stat": "BLK",
+         "line": 0.5
+        },
+        {
+         "text": "M. Roy 1+ blocked shot",
+         "p": 0.8293,
+         "player_id": 8478911,
+         "stat": "BLK",
+         "line": 0.5
+        },
+        {
+         "text": "J. Chychrun 1+ blocked shot",
+         "p": 0.7933,
+         "player_id": 8479345,
+         "stat": "BLK",
+         "line": 0.5
+        },
+        {
+         "text": "M. Roy 1+ hit",
+         "p": 0.78458,
+         "player_id": 8478911,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "M. Fehérváry 1+ hit",
+         "p": 0.7681,
+         "player_id": 8480796,
+         "stat": "HIT",
+         "line": 0.5
+        }
+       ],
+       "pJoint": 0.33682,
+       "pLower": 0.3099450161346849,
+       "pIndep": 0.3353110124381399,
+       "lift": 1.0045002624604777,
+       "breakEven": 223,
+       "mcHits": 16841,
+       "scenario": {
+        "n": 16841,
+        "shots": 58.87227599311205,
+        "goals": 6.818478712665518,
+        "ppg": 1.3153613205866634,
+        "margin": 0.241553351938721,
+        "pace": 1
+       }
+      },
+      {
+       "family": "5D High-tempo matchup",
+       "legs": [
+        {
+         "text": "B. Tkachuk 2+ SOG",
+         "p": 0.80698,
+         "player_id": 8480801,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "S. Reinhart 2+ SOG",
+         "p": 0.74008,
+         "player_id": 8477933,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "M. Tkachuk 2+ SOG",
+         "p": 0.71506,
+         "player_id": 8479314,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "J. Chychrun 2+ SOG",
+         "p": 0.70348,
+         "player_id": 8479345,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "S. Bennett 2+ SOG",
+         "p": 0.68904,
+         "player_id": 8477935,
+         "stat": "SOG",
+         "line": 1.5
+        }
+       ],
+       "pJoint": 0.20786,
+       "pLower": 0.18409311623035116,
+       "pIndep": 0.2074745424026231,
+       "lift": 1.0018578549103574,
+       "breakEven": 443,
+       "mcHits": 10393,
+       "scenario": {
+        "n": 10393,
+        "shots": 62.83363802559415,
+        "goals": 7.235831809872029,
+        "ppg": 1.4117194265370923,
+        "margin": 0.07254883094390455,
+        "pace": 1
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 20486,
+     "verified": 42,
+     "finalists": 42,
+     "exposureCap": 2,
+     "picks": [
+      {
+       "family": "8D Multi-line production",
+       "legs": [
+        {
+         "text": "B. Tkachuk 1+ hit",
+         "p": 0.94592,
+         "player_id": 8480801,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "G. Hathaway 1+ hit",
+         "p": 0.94424,
+         "player_id": 8477903,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "S. Vilmanis 1+ hit",
+         "p": 0.90894,
+         "player_id": 8483771,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "T. Wilson 1+ hit",
+         "p": 0.8958,
+         "player_id": 8476880,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "B. Imama 1+ hit",
+         "p": 0.88718,
+         "player_id": 8478147,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "M. Fehérváry 1+ blocked shot",
+         "p": 0.85208,
+         "player_id": 8480796,
+         "stat": "BLK",
+         "line": 0.5
+        },
+        {
+         "text": "B. Jenner 1+ hit",
+         "p": 0.83986,
+         "player_id": 8476432,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "M. Roy 1+ blocked shot",
+         "p": 0.8293,
+         "player_id": 8478911,
+         "stat": "BLK",
+         "line": 0.5
+        }
+       ],
+       "pJoint": 0.3805,
+       "pLower": 0.35890744131225927,
+       "pIndep": 0.3815661448657559,
+       "lift": 0.9972058714325114,
+       "breakEven": 179,
+       "mcHits": 19025,
+       "scenario": {
+        "n": 19025,
+        "shots": 58.74333771353482,
+        "goals": 6.779185282522996,
+        "ppg": 1.315059132720105,
+        "margin": 0.30223390275952694,
+        "pace": 1
+       }
+      },
+      {
+       "family": "8F Cross-team high-event scenario",
+       "legs": [
+        {
+         "text": "B. Tkachuk 2+ SOG",
+         "p": 0.80698,
+         "player_id": 8480801,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "S. Reinhart 2+ SOG",
+         "p": 0.74008,
+         "player_id": 8477933,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "M. Tkachuk 2+ SOG",
+         "p": 0.71506,
+         "player_id": 8479314,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "M. Tkachuk 1+ point",
+         "p": 0.6151,
+         "player_id": 8479314,
+         "stat": "PTS",
+         "line": 0.5
+        },
+        {
+         "text": "S. Reinhart 1+ point",
+         "p": 0.61174,
+         "player_id": 8477933,
+         "stat": "PTS",
+         "line": 0.5
+        },
+        {
+         "text": "J. Chychrun 2+ SOG",
+         "p": 0.70348,
+         "player_id": 8479345,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "A. Ovechkin 2+ SOG",
+         "p": 0.6535,
+         "player_id": 8471214,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "A. Tuch 2+ SOG",
+         "p": 0.63502,
+         "player_id": 8477949,
+         "stat": "SOG",
+         "line": 1.5
+        }
+       ],
+       "pJoint": 0.05984,
+       "pLower": 0.04671275983834474,
+       "pIndep": 0.04634191467269779,
+       "lift": 1.2912716365440673,
+       "breakEven": 2041,
+       "mcHits": 2992,
+       "scenario": {
+        "n": 2992,
+        "shots": 65.01704545454545,
+        "goals": 8.359625668449198,
+        "ppg": 1.7185828877005347,
+        "margin": -0.5213903743315508,
+        "pace": 1
+       }
+      },
+      {
+       "family": "8A Shot-dominant game",
+       "legs": [
+        {
+         "text": "B. Tkachuk 2+ SOG",
+         "p": 0.80698,
+         "player_id": 8480801,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "S. Reinhart 2+ SOG",
+         "p": 0.74008,
+         "player_id": 8477933,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "M. Tkachuk 2+ SOG",
+         "p": 0.71506,
+         "player_id": 8479314,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "J. Chychrun 2+ SOG",
+         "p": 0.70348,
+         "player_id": 8479345,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "S. Bennett 2+ SOG",
+         "p": 0.68904,
+         "player_id": 8477935,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "A. Ovechkin 2+ SOG",
+         "p": 0.6535,
+         "player_id": 8471214,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "C. Verhaeghe 2+ SOG",
+         "p": 0.64798,
+         "player_id": 8477409,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "A. Lundell 2+ SOG",
+         "p": 0.6345,
+         "player_id": 8482113,
+         "stat": "SOG",
+         "line": 1.5
+        }
+       ],
+       "pJoint": 0.05706,
+       "pLower": 0.04393275983834474,
+       "pIndep": 0.05559689083175637,
+       "lift": 1.026316384717829,
+       "breakEven": 2176,
+       "mcHits": 2853,
+       "scenario": {
+        "n": 2853,
+        "shots": 65.75885033298283,
+        "goals": 7.570977917981073,
+        "ppg": 1.4854539081668419,
+        "margin": -0.023834560112162635,
+        "pace": 1
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
