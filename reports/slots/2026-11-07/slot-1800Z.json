@@ -1,0 +1,547 @@
+{
+ "generated_at": "2026-11-07T17:02:34.121Z",
+ "model_version": "v20261106-224110",
+ "data_through": "2026-11-07 01:00:00+00:00",
+ "sims": 50000,
+ "games": [
+  {
+   "game_id": 2026020266,
+   "start_utc": "2026-11-07 18:00:00+00:00",
+   "away": "STL",
+   "home": "NSH",
+   "sizes": {
+    "3": {
+     "evaluated": 9655,
+     "verified": 56,
+     "finalists": 56,
+     "exposureCap": 4,
+     "picks": [
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "J. Neighbours 1+ hit",
+         "p": 0.87262,
+         "player_id": 8482089,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "A. Toropchenko 1+ hit",
+         "p": 0.86684,
+         "player_id": 8480281,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "J. Struble 1+ hit",
+         "p": 0.8662,
+         "player_id": 8481593,
+         "stat": "HIT",
+         "line": 0.5
+        }
+       ],
+       "pJoint": 0.66556,
+       "pLower": 0.6397190176595264,
+       "pIndep": 0.6646557283882879,
+       "lift": 1.0013605112738664,
+       "breakEven": -178,
+       "mcHits": 33278,
+       "scenario": {
+        "n": 33278,
+        "shots": 52.72408197608029,
+        "goals": 5.947022056613979,
+        "ppg": 1.1684596430073924,
+        "margin": -0.06265400564937797,
+        "pace": 1
+       }
+      },
+      {
+       "family": "3A Shot-volume structure",
+       "legs": [
+        {
+         "text": "F. Forsberg 2+ SOG",
+         "p": 0.75704,
+         "player_id": 8476887,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "R. Josi 2+ SOG",
+         "p": 0.73182,
+         "player_id": 8474600,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "D. Holloway 2+ SOG",
+         "p": 0.71842,
+         "player_id": 8482077,
+         "stat": "SOG",
+         "line": 1.5
+        }
+       ],
+       "pJoint": 0.40366,
+       "pLower": 0.3750683135847861,
+       "pIndep": 0.40240032033105605,
+       "lift": 1.0031304141803556,
+       "breakEven": 167,
+       "mcHits": 20183,
+       "scenario": {
+        "n": 20183,
+        "shots": 55.14254570678293,
+        "goals": 6.227865034930387,
+        "ppg": 1.2360897785264826,
+        "margin": 0.009760689689342517,
+        "pace": 1
+       }
+      },
+      {
+       "family": "3C Goalie workload structure",
+       "legs": [
+        {
+         "text": "S. Stamkos 2+ SOG",
+         "p": 0.71986,
+         "player_id": 8474564,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "J. Hofer 23+ saves",
+         "p": 0.536594506415061,
+         "player_id": 8480981,
+         "stat": "SV",
+         "line": 22.5
+        },
+        {
+         "text": "R. O'Reilly 2+ SOG",
+         "p": 0.57926,
+         "player_id": 8475158,
+         "stat": "SOG",
+         "line": 1.5
+        }
+       ],
+       "pJoint": 0.27838237566499635,
+       "pLower": 0.25189119538486787,
+       "pIndep": 0.22101528624618114,
+       "lift": 1.2595616366323008,
+       "breakEven": 297,
+       "mcHits": 12611,
+       "scenario": {
+        "n": 12611,
+        "shots": 57.50432162397907,
+        "goals": 6.221869796209658,
+        "ppg": 1.2310681151375784,
+        "margin": 0.20410752517643327,
+        "pace": 1
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 16936,
+     "verified": 42,
+     "finalists": 42,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "5E Balanced cross-team structure",
+       "legs": [
+        {
+         "text": "A. Edstrom 1+ hit",
+         "p": 0.9392,
+         "player_id": 8481726,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "R. Johnston 1+ hit",
+         "p": 0.93332,
+         "player_id": 8477527,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "J. Neighbours 1+ hit",
+         "p": 0.87262,
+         "player_id": 8482089,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "A. Toropchenko 1+ hit",
+         "p": 0.86684,
+         "player_id": 8480281,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "J. Struble 1+ hit",
+         "p": 0.8662,
+         "player_id": 8481593,
+         "stat": "HIT",
+         "line": 0.5
+        }
+       ],
+       "pJoint": 0.58256,
+       "pLower": 0.554061663648623,
+       "pIndep": 0.5816453962755347,
+       "lift": 1.0015724421276637,
+       "breakEven": -124,
+       "mcHits": 29128,
+       "scenario": {
+        "n": 29128,
+        "shots": 52.71669870914584,
+        "goals": 5.94881213952211,
+        "ppg": 1.170145564405383,
+        "margin": -0.06128124141719308,
+        "pace": 1
+       }
+      },
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "F. Forsberg 2+ SOG",
+         "p": 0.75704,
+         "player_id": 8476887,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "R. Josi 2+ SOG",
+         "p": 0.73182,
+         "player_id": 8474600,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "S. Stamkos 2+ SOG",
+         "p": 0.71986,
+         "player_id": 8474564,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "F. Forsberg 1+ point",
+         "p": 0.60792,
+         "player_id": 8476887,
+         "stat": "PTS",
+         "line": 0.5
+        },
+        {
+         "text": "S. Stamkos 1+ point",
+         "p": 0.5944,
+         "player_id": 8474564,
+         "stat": "PTS",
+         "line": 0.5
+        }
+       ],
+       "pJoint": 0.2015,
+       "pLower": 0.17773311623035118,
+       "pIndep": 0.15204605770103535,
+       "lift": 1.3252563272387161,
+       "breakEven": 463,
+       "mcHits": 10075,
+       "scenario": {
+        "n": 10075,
+        "shots": 55.973895781637715,
+        "goals": 7.205260545905707,
+        "ppg": 1.5391563275434244,
+        "margin": 1.1512655086848635,
+        "pace": 1
+       }
+      },
+      {
+       "family": "5E Balanced cross-team structure",
+       "legs": [
+        {
+         "text": "A. Edstrom 1+ hit",
+         "p": 0.9392,
+         "player_id": 8481726,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "R. Johnston 1+ hit",
+         "p": 0.93332,
+         "player_id": 8477527,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "J. Neighbours 1+ hit",
+         "p": 0.87262,
+         "player_id": 8482089,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "A. Toropchenko 1+ hit",
+         "p": 0.86684,
+         "player_id": 8480281,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "R. Schaefer 1+ hit",
+         "p": 0.85692,
+         "player_id": 8483513,
+         "stat": "HIT",
+         "line": 0.5
+        }
+       ],
+       "pJoint": 0.57802,
+       "pLower": 0.549521663648623,
+       "pIndep": 0.5783250248118682,
+       "lift": 0.9994725719988211,
+       "breakEven": -122,
+       "mcHits": 28901,
+       "scenario": {
+        "n": 28901,
+        "shots": 52.72066710494447,
+        "goals": 5.947406664129269,
+        "ppg": 1.172727587280717,
+        "margin": -0.05778346770007958,
+        "pace": 1
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 12628,
+     "verified": 29,
+     "finalists": 29,
+     "exposureCap": 2,
+     "picks": [
+      {
+       "family": "8D Multi-line production",
+       "legs": [
+        {
+         "text": "A. Edstrom 1+ hit",
+         "p": 0.9392,
+         "player_id": 8481726,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "R. Johnston 1+ hit",
+         "p": 0.93332,
+         "player_id": 8477527,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "J. Neighbours 1+ hit",
+         "p": 0.87262,
+         "player_id": 8482089,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "A. Toropchenko 1+ hit",
+         "p": 0.86684,
+         "player_id": 8480281,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "J. Struble 1+ hit",
+         "p": 0.8662,
+         "player_id": 8481593,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "R. Schaefer 1+ hit",
+         "p": 0.85692,
+         "player_id": 8483513,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "R. Colton 1+ hit",
+         "p": 0.8481,
+         "player_id": 8479525,
+         "stat": "HIT",
+         "line": 0.5
+        },
+        {
+         "text": "C. Parayko 1+ blocked shot",
+         "p": 0.8229,
+         "player_id": 8476892,
+         "stat": "BLK",
+         "line": 0.5
+        }
+       ],
+       "pJoint": 0.34884,
+       "pLower": 0.32724744131225925,
+       "pIndep": 0.34951444071550314,
+       "lift": 0.9980703494993727,
+       "breakEven": 206,
+       "mcHits": 17442,
+       "scenario": {
+        "n": 17442,
+        "shots": 52.733115468409586,
+        "goals": 5.943240454076367,
+        "ppg": 1.1727439513817224,
+        "margin": -0.04437564499484004,
+        "pace": 1
+       }
+      },
+      {
+       "family": "8F Cross-team high-event scenario",
+       "legs": [
+        {
+         "text": "F. Forsberg 2+ SOG",
+         "p": 0.75704,
+         "player_id": 8476887,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "R. Josi 2+ SOG",
+         "p": 0.73182,
+         "player_id": 8474600,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "S. Stamkos 2+ SOG",
+         "p": 0.71986,
+         "player_id": 8474564,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "F. Forsberg 1+ point",
+         "p": 0.60792,
+         "player_id": 8476887,
+         "stat": "PTS",
+         "line": 0.5
+        },
+        {
+         "text": "S. Stamkos 1+ point",
+         "p": 0.5944,
+         "player_id": 8474564,
+         "stat": "PTS",
+         "line": 0.5
+        },
+        {
+         "text": "D. Holloway 2+ SOG",
+         "p": 0.71842,
+         "player_id": 8482077,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "M. McTavish 2+ SOG",
+         "p": 0.66636,
+         "player_id": 8482745,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "J. Snuggerud 2+ SOG",
+         "p": 0.6265,
+         "player_id": 8483516,
+         "stat": "SOG",
+         "line": 1.5
+        }
+       ],
+       "pJoint": 0.05956,
+       "pLower": 0.046432759838344745,
+       "pIndep": 0.0451902250755698,
+       "lift": 1.3179841414907805,
+       "breakEven": 2054,
+       "mcHits": 2978,
+       "scenario": {
+        "n": 2978,
+        "shots": 58.87541974479517,
+        "goals": 7.496642041638684,
+        "ppg": 1.6289456010745467,
+        "margin": 0.8203492276695769,
+        "pace": 1
+       }
+      },
+      {
+       "family": "8A Shot-dominant game",
+       "legs": [
+        {
+         "text": "F. Forsberg 2+ SOG",
+         "p": 0.75704,
+         "player_id": 8476887,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "R. Josi 2+ SOG",
+         "p": 0.73182,
+         "player_id": 8474600,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "S. Stamkos 2+ SOG",
+         "p": 0.71986,
+         "player_id": 8474564,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "D. Holloway 2+ SOG",
+         "p": 0.71842,
+         "player_id": 8482077,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "M. McTavish 2+ SOG",
+         "p": 0.66636,
+         "player_id": 8482745,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "J. Snuggerud 2+ SOG",
+         "p": 0.6265,
+         "player_id": 8483516,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "R. O'Reilly 2+ SOG",
+         "p": 0.57926,
+         "player_id": 8475158,
+         "stat": "SOG",
+         "line": 1.5
+        },
+        {
+         "text": "M. Bourque 2+ SOG",
+         "p": 0.55928,
+         "player_id": 8482145,
+         "stat": "SOG",
+         "line": 1.5
+        }
+       ],
+       "pJoint": 0.03834,
+       "pLower": 0.024823042672015176,
+       "pIndep": 0.03832230467123214,
+       "lift": 1.000461750119667,
+       "breakEven": 3929,
+       "mcHits": 1917,
+       "scenario": {
+        "n": 1917,
+        "shots": 60.320813771518,
+        "goals": 6.797600417318727,
+        "ppg": 1.3771517996870108,
+        "margin": 0.10380803338549817,
+        "pace": 1
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
