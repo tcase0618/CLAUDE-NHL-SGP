@@ -13,6 +13,8 @@
   const sgp = {};
 
   sgp.LINES = { SOG: [1.5, 2.5, 3.5, 4.5], PTS: [0.5, 1.5], G: [0.5], A: [0.5], BLK: [0.5, 1.5, 2.5], HIT: [0.5, 1.5, 2.5, 3.5], PPP: [0.5], SV: [22.5, 24.5, 26.5, 28.5, 30.5] };
+  sgp.GOALIE_MIN_START = 0.85;
+  sgp.MAX_LEG_EXPOSURE = 2;   // a leg may appear in at most this many published parlays per game
   sgp.MARKET_OF = { SOG: 'player_sog', PTS: 'player_points', G: 'player_goals', A: 'player_assists', BLK: 'player_blocks', HIT: 'player_hits', PPP: 'player_ppp', SV: 'goalie_saves' };
   sgp.CONFIG = {
     3: { band: [0.35, 0.93], beam: 40, keep: 6, floor: 0.12 },
@@ -67,7 +69,9 @@
           pool.push(...best);
         }
       });
-      (t.goalies || []).filter((g) => g.pStart >= 0.5).forEach((g) => {
+      // Goalie legs only for a confirmed / near-certain starter: post-mortem 2026-11-07 showed the start
+      // model's top pick starts just 54% of the time when it is below 70% confident.
+      (t.goalies || []).filter((g) => g.pStart >= sgp.GOALIE_MIN_START).forEach((g) => {
         for (const line of sgp.LINES.SV) {
           const leg = { player_id: g.id, stat: 'SV', line, side: 'over' };
           const { m, valid } = NQ.joint.legMask(R, leg);

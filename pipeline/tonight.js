@@ -50,6 +50,8 @@ for (const g of games) {
   const pH = g.teamWin ? g.teamWin.pHome : null;
   md += `## ${g.away.abbr} @ ${g.home.abbr} — ${et(g.start_utc)} ET\n`;
   md += `Model P(${g.home.abbr} win) ${pH === null ? '—' : pct(pH)} · Polymarket: ${q.map((x) => `${x.team} ${fmtA(x.american)} (${Math.round(x.price * 100)}¢)`).join(', ') || 'no quote'} · goalie start probs: ${['away', 'home'].map((s) => g[s].goalies.filter((k) => k.pStart > 0.05).map((k) => `${k.name} ${pct(k.pStart, 0)}`).join('/')).join(' vs ')}\n\n`;
+  const legUse = new Map();  // exposure control across this game's whole card (all sizes)
+  const lk = (l) => l.player_id + l.stat + l.line;
   for (const size of [3, 5, 8]) {
     const res = NQ.sgp.research(R, F, g, size, V.tables, []);
     const ok = res.items.filter((x) => x.lower.verified && x.lower.pLower > 0);
@@ -59,9 +61,10 @@ for (const g of games) {
     // one pick per family, skipping leg sets already chosen by another family
     const seen = new Set(), picks = [];
     for (const arr of Object.values(byFam).sort((a, b) => b[0].lower.pLower - a[0].lower.pLower)) {
-      const x = arr.find((c) => !seen.has(c.legs.map((l) => l.player_id + l.stat + l.line).sort().join()));
+      const x = arr.find((c) => !seen.has(c.legs.map(lk).sort().join()) && c.legs.every((l) => (legUse.get(lk(l)) || 0) < NQ.sgp.MAX_LEG_EXPOSURE));
       if (!x) continue;
-      seen.add(x.legs.map((l) => l.player_id + l.stat + l.line).sort().join());
+      seen.add(x.legs.map(lk).sort().join());
+      x.legs.forEach((l) => legUse.set(lk(l), (legUse.get(lk(l)) || 0) + 1));
       picks.push(x);
       if (picks.length >= PER + 1) break;
     }
