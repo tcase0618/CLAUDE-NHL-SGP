@@ -49,8 +49,15 @@ def game_stats(gid: int) -> dict:
                 st["players"][p["playerId"]] = {"SOG": p.get("sog", 0), "G": p.get("goals", 0), "A": p.get("assists", 0), "PTS": p.get("points", 0),
                                                 "HIT": p.get("hits", 0), "BLK": p.get("blockedShots", 0), "PPP": ppp.get(p["playerId"], 0),
                                                 "name": p["name"]["default"]}
-        for g in t.get("goalies", []):
-            st["goalies"][g["playerId"]] = {"SV": g.get("saves", 0) or 0, "started": bool(g.get("starter")), "name": g["name"]["default"]}
+        gl = t.get("goalies", [])
+        flagged = any(g.get("starter") for g in gl)
+        # live boxscores leave `starter` empty → fall back to the goalie with the most TOI
+        def toi(g):
+            m, _, sec = (g.get("toi") or "0:00").partition(":")
+            return int(m or 0) * 60 + int(sec or 0)
+        top = max(gl, key=toi)["playerId"] if gl and not flagged else None
+        for g in gl:
+            st["goalies"][g["playerId"]] = {"SV": g.get("saves", 0) or 0, "started": bool(g.get("starter")) or g["playerId"] == top, "name": g["name"]["default"]}
     return st
 
 
