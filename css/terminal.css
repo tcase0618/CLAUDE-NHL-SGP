@@ -323,3 +323,4 @@ table { border-collapse: collapse; width: 100%; }
 }
 a.tab { text-decoration: none; display: inline-block; }
 a.tab:hover { text-decoration: none; color: var(--txt); }
+.ctrl .pill { white-space: normal; }
