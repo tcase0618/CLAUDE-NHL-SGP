@@ -72,11 +72,22 @@ def fetch_game(gid: int) -> str:
     return "ok"
 
 
+def _base_ids() -> set[int]:
+    """Game ids already present in the committed base tables (no need to refetch)."""
+    p = os.path.join(ROOT, "data", "base", "games.parquet")
+    if not os.path.exists(p):
+        return set()
+    import pandas as pd
+    return set(int(x) for x in pd.read_parquet(p, columns=["game_id"]).game_id)
+
+
 def ingest(seasons=SEASONS, workers: int = 4, log=print) -> dict:
     stats = {}
     for season in seasons:
         start = int(season[:4])
         ids = [int(f"{start}02{n:04d}") for n in range(1, MAX_GAMES + 1)]
+        have = _base_ids()
+        ids = [i for i in ids if i not in have]
         counts: dict[str, int] = {}
         miss_run = 0
         # walk in chunks; stop a season once a long run of non-final games appears

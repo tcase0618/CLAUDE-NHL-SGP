@@ -1,0 +1,129 @@
+{
+ "features": [
+  "home",
+  "rest_days",
+  "b2b",
+  "opp_rest",
+  "opp_b2b",
+  "team_gp_prior",
+  "opp_gp_prior",
+  "t_gf_pg_l20",
+  "t_gf_pg_l82",
+  "t_ga_pg_l20",
+  "t_ga_pg_l82",
+  "t_sf_pg_l20",
+  "t_sf_pg_l82",
+  "t_sa_pg_l20",
+  "t_sa_pg_l82",
+  "t_pen_pg_l20",
+  "t_pen_pg_l82",
+  "t_pen_drawn_pg_l20",
+  "t_pen_drawn_pg_l82",
+  "t_win_pg_l20",
+  "t_win_pg_l82",
+  "ot_gf_pg_l20",
+  "ot_gf_pg_l82",
+  "ot_ga_pg_l20",
+  "ot_ga_pg_l82",
+  "ot_sf_pg_l20",
+  "ot_sf_pg_l82",
+  "ot_sa_pg_l20",
+  "ot_sa_pg_l82",
+  "ot_pen_pg_l20",
+  "ot_pen_pg_l82",
+  "ot_pen_drawn_pg_l20",
+  "ot_pen_drawn_pg_l82",
+  "ot_win_pg_l20",
+  "ot_win_pg_l82"
+ ],
+ "params": {
+  "max_depth": 3,
+  "min_child_weight": 5,
+  "reg_lambda": 8.0,
+  "learning_rate": 0.04,
+  "subsample": 0.8,
+  "colsample_bytree": 0.7,
+  "gamma": 0.0,
+  "reg_alpha": 0.0,
+  "nthread": 4,
+  "tree_method": "hist",
+  "objective": "binary:logistic",
+  "eval_metric": "logloss",
+  "seed": 7
+ },
+ "best_iteration": 22,
+ "search": [
+  {
+   "params": {
+    "max_depth": 3,
+    "min_child_weight": 5,
+    "reg_lambda": 1.0
+   },
+   "rounds": 25,
+   "tune_logloss": 0.6898121276238302
+  },
+  {
+   "params": {
+    "max_depth": 3,
+    "min_child_weight": 5,
+    "reg_lambda": 8.0
+   },
+   "rounds": 23,
+   "tune_logloss": 0.6894538003403146
+  },
+  {
+   "params": {
+    "max_depth": 3,
+    "min_child_weight": 25,
+    "reg_lambda": 1.0
+   },
+   "rounds": 24,
+   "tune_logloss": 0.6905433678770209
+  },
+  {
+   "params": {
+    "max_depth": 3,
+    "min_child_weight": 25,
+    "reg_lambda": 8.0
+   },
+   "rounds": 24,
+   "tune_logloss": 0.689694966371353
+  },
+  {
+   "params": {
+    "max_depth": 5,
+    "min_child_weight": 5,
+    "reg_lambda": 1.0
+   },
+   "rounds": 25,
+   "tune_logloss": 0.690233494605388
+  },
+  {
+   "params": {
+    "max_depth": 5,
+    "min_child_weight": 5,
+    "reg_lambda": 8.0
+   },
+   "rounds": 23,
+   "tune_logloss": 0.6912823975444198
+  },
+  {
+   "params": {
+    "max_depth": 5,
+    "min_child_weight": 25,
+    "reg_lambda": 1.0
+   },
+   "rounds": 19,
+   "tune_logloss": 0.690765791648143
+  },
+  {
+   "params": {
+    "max_depth": 5,
+    "min_child_weight": 25,
+    "reg_lambda": 8.0
+   },
+   "rounds": 26,
+   "tune_logloss": 0.6902241285319801
+  }
+ ]
+}

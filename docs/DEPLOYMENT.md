@@ -25,6 +25,8 @@ python3 -m http.server 8080                          # serve the terminal → #/
 15 15 * * *  /path/to/repo/pipeline/run_daily.sh  >> /var/log/nq_daily.log 2>&1
 # weekly retrain + promotion + validation + tests
 40 9 * * 1   /path/to/repo/pipeline/run_weekly.sh >> /var/log/nq_weekly.log 2>&1
+# pregame slot scans: parlays built 60 min before every puck drop (same start time = one slot)
+*/10 * * * *  /path/to/repo/pipeline/slot_scan.sh --due >> /var/log/nq_slots.log 2>&1
 # Polymarket US quotes every 10 min on game days (free public gateway, no key)
 */10 16-23 * * *  /path/to/repo/.venv/bin/python /path/to/repo/ml/polymarket.py --tier 1
 # optional sportsbook odds every 10 min (needs ODDS_API_KEY; mind the quota)
@@ -48,3 +50,13 @@ Every stage is idempotent and file-based:
 
 ## Data freshness
 The terminal shows "data through" and flags it **stale** after 36 h. CV Confidence also drops a criterion when data is older than 36 h.
+
+## Pregame slot scans
+`ml/slot_scan.py` groups games by scheduled start time. About 60 minutes before each slot it:
+1. ingests newly final games;
+2. re-scores with the champion models;
+3. forces start probability to 100% for any goalie the NHL has already flagged as starting;
+4. refreshes Polymarket;
+5. writes `reports/slots/<date>/slot-<HHMM>Z.md`.
+
+`--list` shows the schedule; `--slot <ISO>` scans one slot manually. In a fresh container it runs from the committed base tables (`data/base/`) and the portable serving bundle (`models/serving/`, baseline + XGBoost, ~11 MB). Where the champion is AutoGluon and its 2.9 GB artifacts are absent, XGBoost serves; the model actually used is recorded as `served`. Settle any report with `ml/settle.py <report.json>`.

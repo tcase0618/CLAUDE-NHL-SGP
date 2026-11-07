@@ -1,81 +1,81 @@
 {
- "audited_at": "2026-11-07T03:37:51.353948+00:00",
+ "audited_at": "2026-11-07T03:44:47.465419+00:00",
  "source": "sgp-2026-11-07.json",
  "model_version": "v20261106-224110",
  "counts": {
   "WON": 7,
-  "LOST": 0,
-  "PENDING": 118,
-  "VOID-REPRICE": 0
+  "LOST": 9,
+  "PENDING": 108,
+  "VOID-REPRICE": 1
  },
  "by_size": {
   "3": {
-   "n": 3,
+   "n": 5,
    "won": 3,
-   "expected_wins": 1.69394,
-   "hit_rate": 1.0,
-   "mean_p": 0.5646466666666666,
-   "brier": 0.2075645809333333,
-   "logloss": 0.6015676821248616
+   "expected_wins": 2.83334,
+   "hit_rate": 0.6,
+   "mean_p": 0.5666680000000001,
+   "brier": 0.26560861752,
+   "logloss": 0.7311896350665424
   },
   "5": {
-   "n": 2,
+   "n": 6,
    "won": 2,
-   "expected_wins": 0.88576,
-   "hit_rate": 1.0,
-   "mean_p": 0.44288,
-   "brier": 0.322038056,
-   "logloss": 0.8450872373845589
+   "expected_wins": 2.199,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.3665,
+   "brier": 0.19792762053333335,
+   "logloss": 0.571520122931588
   },
   "8": {
-   "n": 2,
+   "n": 5,
    "won": 2,
-   "expected_wins": 0.52338,
-   "hit_rate": 1.0,
-   "mean_p": 0.26169,
-   "brier": 0.558036169,
-   "logloss": 1.4452615958808468
+   "expected_wins": 1.1369875125186968,
+   "hit_rate": 0.4,
+   "mean_p": 0.22739750250373936,
+   "brier": 0.25840523848414965,
+   "logloss": 0.7233559156310858
   }
  },
  "by_size_independence": {
   "3": {
-   "n": 3,
+   "n": 5,
    "won": 3,
-   "expected_wins": 1.68533590894768,
-   "hit_rate": 1.0,
-   "mean_p": 0.5617786363158933,
-   "brier": 0.2110624589711846,
-   "logloss": 0.6088215116813537
+   "expected_wins": 2.822555276201104,
+   "hit_rate": 0.6,
+   "mean_p": 0.5645110552402208,
+   "brier": 0.26726942576517765,
+   "logloss": 0.7345343044390389
   },
   "5": {
-   "n": 2,
+   "n": 6,
    "won": 2,
-   "expected_wins": 0.8812047840612176,
-   "hit_rate": 1.0,
-   "mean_p": 0.4406023920306088,
-   "brier": 0.3251671418121158,
-   "logloss": 0.852179306952128
+   "expected_wins": 2.1487495261252283,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.3581249210208714,
+   "brier": 0.1961030460457387,
+   "logloss": 0.5643611530138962
   },
   "8": {
-   "n": 2,
+   "n": 5,
    "won": 2,
-   "expected_wins": 0.4789439414858038,
-   "hit_rate": 1.0,
-   "mean_p": 0.2394719707429019,
-   "brier": 0.5967725761007282,
-   "logloss": 1.6223900824599569
+   "expected_wins": 1.0574097111063139,
+   "hit_rate": 0.4,
+   "mean_p": 0.21148194222126276,
+   "brier": 0.2710526280731539,
+   "logloss": 0.7853664578358108
   }
  },
  "legs": {
-  "n": 74,
+  "n": 86,
   "won": 74,
-  "expected": 60.39274
+  "expected": 69.13206
  },
  "parlays": [
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "CRIT",
+   "state": "FINAL",
    "size": 3,
    "pick": "A",
    "family": "3D Cross-team scenario",
@@ -95,7 +95,7 @@
      "text": "M. McCarron 1+ hit",
      "p": 0.89534,
      "result": "WON",
-     "value": 3
+     "value": 2
     },
     {
      "text": "T. Pitlick 1+ hit",
@@ -108,7 +108,7 @@
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "CRIT",
+   "state": "FINAL",
    "size": 3,
    "pick": "B",
    "family": "3A Shot-volume structure",
@@ -141,7 +141,7 @@
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "CRIT",
+   "state": "FINAL",
    "size": 3,
    "pick": "C",
    "family": "3C Goalie workload structure",
@@ -149,7 +149,7 @@
    "pLower": 0.5320376675912426,
    "pIndep": 0.5125203183729807,
    "breakEven": -114,
-   "status": "PENDING",
+   "status": "VOID-REPRICE",
    "legs": [
     {
      "text": "M. Boldy 2+ SOG",
@@ -166,7 +166,7 @@
     {
      "text": "A. Nedeljkovic 23+ saves",
      "p": 0.7358571100239683,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     }
    ]
@@ -174,7 +174,7 @@
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "CRIT",
+   "state": "FINAL",
    "size": 5,
    "pick": "A",
    "family": "5E Balanced cross-team structure",
@@ -194,7 +194,7 @@
      "text": "M. McCarron 1+ hit",
      "p": 0.89534,
      "result": "WON",
-     "value": 3
+     "value": 2
     },
     {
      "text": "T. Pitlick 1+ hit",
@@ -219,7 +219,7 @@
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "CRIT",
+   "state": "FINAL",
    "size": 5,
    "pick": "B",
    "family": "5B Top-6 usage cluster",
@@ -227,13 +227,13 @@
    "pLower": 0.3288650161346849,
    "pIndep": 0.3558437660751544,
    "breakEven": 204,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "D. Nurse 1+ blocked shot",
      "p": 0.84872,
      "result": "WON",
-     "value": 4
+     "value": 5
     },
     {
      "text": "M. Celebrini 2+ SOG",
@@ -250,21 +250,21 @@
     {
      "text": "J. Trouba 1+ hit",
      "p": 0.7914,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "D. Nurse 1+ hit",
      "p": 0.78064,
-     "result": "WON",
-     "value": 1
+     "result": "LOST",
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "CRIT",
+   "state": "FINAL",
    "size": 5,
    "pick": "C",
    "family": "5D High-tempo matchup",
@@ -309,7 +309,7 @@
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "CRIT",
+   "state": "FINAL",
    "size": 8,
    "pick": "A",
    "family": "8D Multi-line production",
@@ -335,7 +335,7 @@
      "text": "M. McCarron 1+ hit",
      "p": 0.89534,
      "result": "WON",
-     "value": 3
+     "value": 2
     },
     {
      "text": "T. Pitlick 1+ hit",
@@ -359,7 +359,7 @@
      "text": "D. Nurse 1+ blocked shot",
      "p": 0.84872,
      "result": "WON",
-     "value": 4
+     "value": 5
     },
     {
      "text": "M. Boldy 2+ SOG",
@@ -372,7 +372,7 @@
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "CRIT",
+   "state": "FINAL",
    "size": 8,
    "pick": "B",
    "family": "8E Goaltender workload game",
@@ -380,13 +380,13 @@
    "pLower": 0.200654953830956,
    "pIndep": 0.1897680218561785,
    "breakEven": 398,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "D. Nurse 1+ blocked shot",
      "p": 0.84872,
      "result": "WON",
-     "value": 4
+     "value": 5
     },
     {
      "text": "M. Boldy 2+ SOG",
@@ -403,7 +403,7 @@
     {
      "text": "J. Brodin 1+ blocked shot",
      "p": 0.82926,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -421,7 +421,7 @@
     {
      "text": "A. Nedeljkovic 23+ saves",
      "p": 0.7358571100239683,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
@@ -435,7 +435,7 @@
   {
    "game_id": 2026020263,
    "game": "SJS@MIN",
-   "state": "CRIT",
+   "state": "FINAL",
    "size": 8,
    "pick": "C",
    "family": "8B Concentrated offensive production",
@@ -498,7 +498,7 @@
   {
    "game_id": 2026020264,
    "game": "ANA@CGY",
-   "state": "CRIT",
+   "state": "FINAL",
    "size": 3,
    "pick": "A",
    "family": "3D Cross-team scenario",
@@ -506,7 +506,7 @@
    "pLower": 0.7115390176595264,
    "pIndep": 0.736725428404224,
    "breakEven": -247,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "J. Caulfield 1+ hit",
@@ -518,12 +518,12 @@
      "text": "M. Pospisil 2+ hits",
      "p": 0.89632,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "J. Malott 1+ hit",
      "p": 0.87784,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -531,7 +531,7 @@
   {
    "game_id": 2026020264,
    "game": "ANA@CGY",
-   "state": "CRIT",
+   "state": "FINAL",
    "size": 3,
    "pick": "B",
    "family": "3A Shot-volume structure",
@@ -539,13 +539,13 @@
    "pLower": 0.37342831358478606,
    "pIndep": 0.4004939388492001,
    "breakEven": 168,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Gauthier 2+ SOG",
      "p": 0.83148,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "B. Sennecke 2+ SOG",
@@ -556,7 +556,7 @@
     {
      "text": "L. Carlsson 2+ SOG",
      "p": 0.67644,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     }
    ]
@@ -564,7 +564,7 @@
   {
    "game_id": 2026020264,
    "game": "ANA@CGY",
-   "state": "CRIT",
+   "state": "FINAL",
    "size": 3,
    "pick": "C",
    "family": "3B Team offensive scenario",
@@ -578,7 +578,7 @@
      "text": "C. Gauthier 2+ SOG",
      "p": 0.83148,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "B. Sennecke 2+ SOG",
@@ -597,7 +597,7 @@
   {
    "game_id": 2026020264,
    "game": "ANA@CGY",
-   "state": "CRIT",
+   "state": "FINAL",
    "size": 5,
    "pick": "A",
    "family": "5E Balanced cross-team structure",
@@ -605,7 +605,7 @@
    "pLower": 0.562561663648623,
    "pIndep": 0.5896796288826535,
    "breakEven": -129,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "A. Klapka 1+ hit",
@@ -623,12 +623,12 @@
      "text": "M. Pospisil 2+ hits",
      "p": 0.89632,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "J. Malott 1+ hit",
      "p": 0.87784,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -642,7 +642,7 @@
   {
    "game_id": 2026020264,
    "game": "ANA@CGY",
-   "state": "CRIT",
+   "state": "FINAL",
    "size": 5,
    "pick": "B",
    "family": "5A Five-on-five offensive environment",
@@ -650,13 +650,13 @@
    "pLower": 0.17441311623035116,
    "pIndep": 0.15436732799454592,
    "breakEven": 473,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Gauthier 2+ SOG",
      "p": 0.83148,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "B. Sennecke 2+ SOG",
@@ -667,7 +667,7 @@
     {
      "text": "L. Carlsson 2+ SOG",
      "p": 0.67644,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
@@ -679,15 +679,15 @@
     {
      "text": "C. Gauthier 1+ point",
      "p": 0.58962,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020264,
    "game": "ANA@CGY",
-   "state": "CRIT",
+   "state": "FINAL",
    "size": 5,
    "pick": "C",
    "family": "5D High-tempo matchup",
@@ -695,13 +695,13 @@
    "pLower": 0.14671102451144816,
    "pIndep": 0.1676540191116568,
    "breakEven": 582,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Gauthier 2+ SOG",
      "p": 0.83148,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "B. Sennecke 2+ SOG",
@@ -712,7 +712,7 @@
     {
      "text": "L. Carlsson 2+ SOG",
      "p": 0.67644,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
@@ -732,7 +732,7 @@
   {
    "game_id": 2026020264,
    "game": "ANA@CGY",
-   "state": "CRIT",
+   "state": "FINAL",
    "size": 8,
    "pick": "A",
    "family": "8D Multi-line production",
@@ -740,7 +740,7 @@
    "pLower": 0.3321674413122593,
    "pIndep": 0.3527204566970353,
    "breakEven": 201,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "A. Klapka 1+ hit",
@@ -758,12 +758,12 @@
      "text": "M. Pospisil 2+ hits",
      "p": 0.89632,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "J. Malott 1+ hit",
      "p": 0.87784,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -782,20 +782,20 @@
      "text": "C. Gauthier 2+ SOG",
      "p": 0.83148,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "N. Nesterenko 1+ hit",
      "p": 0.8289,
      "result": "WON",
-     "value": 4
+     "value": 5
     }
    ]
   },
   {
    "game_id": 2026020264,
    "game": "ANA@CGY",
-   "state": "CRIT",
+   "state": "FINAL",
    "size": 8,
    "pick": "B",
    "family": "8A Shot-dominant game",
@@ -803,13 +803,13 @@
    "pLower": 0.02408304267201518,
    "pIndep": 0.03597729106729631,
    "breakEven": 4052,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Gauthier 2+ SOG",
      "p": 0.83148,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "B. Sennecke 2+ SOG",
@@ -820,7 +820,7 @@
     {
      "text": "L. Carlsson 2+ SOG",
      "p": 0.67644,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
@@ -838,7 +838,7 @@
     {
      "text": "M. Granlund 2+ SOG",
      "p": 0.60694,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
@@ -850,7 +850,7 @@
     {
      "text": "M. Gridin 2+ SOG",
      "p": 0.58282,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     }
    ]

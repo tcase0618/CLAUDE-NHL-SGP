@@ -21,6 +21,7 @@ from nqml.models import FEATURES, AutoGluonModel, Baseline, XGBSpecialist  # noq
 from train import FRAME, load_frames  # noqa: E402
 
 ART = os.path.join(ROOT, "models", "artifacts")
+SERVE = os.path.join(ROOT, "models", "serving")  # committed baseline + XGBoost bundle (portable)
 
 
 def main():
@@ -39,6 +40,8 @@ def main():
         if up.empty:
             continue
         base = os.path.join(ART, ver, tid)
+        if not os.path.isdir(os.path.join(base, "xgboost")):
+            base = os.path.join(SERVE, ver, tid)  # fresh container: portable bundle
         mus = {}
         mus["baseline"] = Baseline.load(os.path.join(base, "baseline"), t).predict(up)
         mus["xgboost"] = XGBSpecialist.load(os.path.join(base, "xgboost"), t).predict(up)
@@ -49,9 +52,11 @@ def main():
         out = up[keys[ent] + [c for c in ("name", "team", "opp", "pos", "is_d", "home") if c in up.columns and c not in keys[ent]]].copy()
         for k, v in mus.items():
             out["mu_" + k] = v
-        out["mu"] = mus.get(champ, mus["baseline"])
+        served = champ if champ in mus else ("xgboost" if champ in ("autogluon", "blend") else "baseline")
+        out["mu"] = mus[served]
+        out["served"] = served
         out.to_parquet(os.path.join(BUILD, f"upcoming_{tid}.parquet"), index=False)
-        print(f"{tid}: {len(out)} rows, champion={champ}")
+        print(f"{tid}: {len(out)} rows, champion={champ}, served={served}")
     print(f"inference {time.time() - t0:.1f}s with version {ver}")
 
 

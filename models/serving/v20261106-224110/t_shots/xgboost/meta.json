@@ -1,0 +1,130 @@
+{
+ "features": [
+  "home",
+  "rest_days",
+  "b2b",
+  "opp_rest",
+  "opp_b2b",
+  "team_gp_prior",
+  "opp_gp_prior",
+  "t_gf_pg_l20",
+  "t_gf_pg_l82",
+  "t_ga_pg_l20",
+  "t_ga_pg_l82",
+  "t_sf_pg_l20",
+  "t_sf_pg_l82",
+  "t_sa_pg_l20",
+  "t_sa_pg_l82",
+  "t_pen_pg_l20",
+  "t_pen_pg_l82",
+  "t_pen_drawn_pg_l20",
+  "t_pen_drawn_pg_l82",
+  "t_win_pg_l20",
+  "t_win_pg_l82",
+  "ot_gf_pg_l20",
+  "ot_gf_pg_l82",
+  "ot_ga_pg_l20",
+  "ot_ga_pg_l82",
+  "ot_sf_pg_l20",
+  "ot_sf_pg_l82",
+  "ot_sa_pg_l20",
+  "ot_sa_pg_l82",
+  "ot_pen_pg_l20",
+  "ot_pen_pg_l82",
+  "ot_pen_drawn_pg_l20",
+  "ot_pen_drawn_pg_l82",
+  "ot_win_pg_l20",
+  "ot_win_pg_l82"
+ ],
+ "params": {
+  "max_depth": 5,
+  "min_child_weight": 5,
+  "reg_lambda": 8.0,
+  "learning_rate": 0.04,
+  "subsample": 0.8,
+  "colsample_bytree": 0.7,
+  "gamma": 0.0,
+  "reg_alpha": 0.0,
+  "nthread": 4,
+  "tree_method": "hist",
+  "objective": "count:poisson",
+  "eval_metric": "poisson-nloglik",
+  "seed": 7,
+  "max_delta_step": 0.7
+ },
+ "best_iteration": 169,
+ "search": [
+  {
+   "params": {
+    "max_depth": 3,
+    "min_child_weight": 5,
+    "reg_lambda": 1.0
+   },
+   "rounds": 331,
+   "tune_poisson-nloglik": 3.2223824967851153
+  },
+  {
+   "params": {
+    "max_depth": 3,
+    "min_child_weight": 5,
+    "reg_lambda": 8.0
+   },
+   "rounds": 333,
+   "tune_poisson-nloglik": 3.222010947562553
+  },
+  {
+   "params": {
+    "max_depth": 3,
+    "min_child_weight": 25,
+    "reg_lambda": 1.0
+   },
+   "rounds": 331,
+   "tune_poisson-nloglik": 3.2223824967851153
+  },
+  {
+   "params": {
+    "max_depth": 3,
+    "min_child_weight": 25,
+    "reg_lambda": 8.0
+   },
+   "rounds": 333,
+   "tune_poisson-nloglik": 3.222010947562553
+  },
+  {
+   "params": {
+    "max_depth": 5,
+    "min_child_weight": 5,
+    "reg_lambda": 1.0
+   },
+   "rounds": 152,
+   "tune_poisson-nloglik": 3.2212977939181857
+  },
+  {
+   "params": {
+    "max_depth": 5,
+    "min_child_weight": 5,
+    "reg_lambda": 8.0
+   },
+   "rounds": 170,
+   "tune_poisson-nloglik": 3.2170732572630003
+  },
+  {
+   "params": {
+    "max_depth": 5,
+    "min_child_weight": 25,
+    "reg_lambda": 1.0
+   },
+   "rounds": 152,
+   "tune_poisson-nloglik": 3.2212977939181857
+  },
+  {
+   "params": {
+    "max_depth": 5,
+    "min_child_weight": 25,
+    "reg_lambda": 8.0
+   },
+   "rounds": 170,
+   "tune_poisson-nloglik": 3.2170732572630003
+  }
+ ]
+}

@@ -9,3 +9,4 @@ __pycache__/
 *.pyc
 AutogluonModels/
 data/ingest.log
+!models/serving/

@@ -1,0 +1,181 @@
+{
+ "features": [
+  "home",
+  "is_d",
+  "pos_c",
+  "pos_w",
+  "gp_prior",
+  "fo_prior",
+  "toi_rank",
+  "ppp_share_rank",
+  "rest_days",
+  "b2b",
+  "team_gp_prior",
+  "opp_rest",
+  "opp_b2b",
+  "toi_pg_l5",
+  "toi_pg_l20",
+  "toi_pg_l82",
+  "goals_pg_l5",
+  "goals_pg_l20",
+  "goals_pg_l82",
+  "goals_p60_l5",
+  "goals_p60_l20",
+  "goals_p60_l82",
+  "assists_pg_l5",
+  "assists_pg_l20",
+  "assists_pg_l82",
+  "assists_p60_l5",
+  "assists_p60_l20",
+  "assists_p60_l82",
+  "points_pg_l5",
+  "points_pg_l20",
+  "points_pg_l82",
+  "points_p60_l5",
+  "points_p60_l20",
+  "points_p60_l82",
+  "sog_pg_l5",
+  "sog_pg_l20",
+  "sog_pg_l82",
+  "sog_p60_l5",
+  "sog_p60_l20",
+  "sog_p60_l82",
+  "hits_pg_l5",
+  "hits_pg_l20",
+  "hits_pg_l82",
+  "hits_p60_l5",
+  "hits_p60_l20",
+  "hits_p60_l82",
+  "blocks_pg_l5",
+  "blocks_pg_l20",
+  "blocks_pg_l82",
+  "blocks_p60_l5",
+  "blocks_p60_l20",
+  "blocks_p60_l82",
+  "ppp_pg_l5",
+  "ppp_pg_l20",
+  "ppp_pg_l82",
+  "ppp_p60_l5",
+  "ppp_p60_l20",
+  "ppp_p60_l82",
+  "t_gf_pg_l20",
+  "t_gf_pg_l82",
+  "t_ga_pg_l20",
+  "t_ga_pg_l82",
+  "t_sf_pg_l20",
+  "t_sf_pg_l82",
+  "t_sa_pg_l20",
+  "t_sa_pg_l82",
+  "t_pen_pg_l20",
+  "t_pen_pg_l82",
+  "t_pen_drawn_pg_l20",
+  "t_pen_drawn_pg_l82",
+  "t_win_pg_l20",
+  "t_win_pg_l82",
+  "ot_gf_pg_l20",
+  "ot_gf_pg_l82",
+  "ot_ga_pg_l20",
+  "ot_ga_pg_l82",
+  "ot_sf_pg_l20",
+  "ot_sf_pg_l82",
+  "ot_sa_pg_l20",
+  "ot_sa_pg_l82",
+  "ot_pen_pg_l20",
+  "ot_pen_pg_l82",
+  "ot_pen_drawn_pg_l20",
+  "ot_pen_drawn_pg_l82",
+  "ot_win_pg_l20",
+  "ot_win_pg_l82"
+ ],
+ "params": {
+  "max_depth": 3,
+  "min_child_weight": 25,
+  "reg_lambda": 8.0,
+  "learning_rate": 0.04,
+  "subsample": 0.8,
+  "colsample_bytree": 0.7,
+  "gamma": 0.0,
+  "reg_alpha": 0.0,
+  "nthread": 4,
+  "tree_method": "hist",
+  "objective": "count:poisson",
+  "eval_metric": "poisson-nloglik",
+  "seed": 7,
+  "max_delta_step": 0.7
+ },
+ "best_iteration": 426,
+ "search": [
+  {
+   "params": {
+    "max_depth": 3,
+    "min_child_weight": 5,
+    "reg_lambda": 1.0
+   },
+   "rounds": 390,
+   "tune_poisson-nloglik": 1.280784109222739
+  },
+  {
+   "params": {
+    "max_depth": 3,
+    "min_child_weight": 5,
+    "reg_lambda": 8.0
+   },
+   "rounds": 390,
+   "tune_poisson-nloglik": 1.2807420469099395
+  },
+  {
+   "params": {
+    "max_depth": 3,
+    "min_child_weight": 25,
+    "reg_lambda": 1.0
+   },
+   "rounds": 486,
+   "tune_poisson-nloglik": 1.280666015001754
+  },
+  {
+   "params": {
+    "max_depth": 3,
+    "min_child_weight": 25,
+    "reg_lambda": 8.0
+   },
+   "rounds": 427,
+   "tune_poisson-nloglik": 1.2806184856061864
+  },
+  {
+   "params": {
+    "max_depth": 5,
+    "min_child_weight": 5,
+    "reg_lambda": 1.0
+   },
+   "rounds": 235,
+   "tune_poisson-nloglik": 1.280892228306411
+  },
+  {
+   "params": {
+    "max_depth": 5,
+    "min_child_weight": 5,
+    "reg_lambda": 8.0
+   },
+   "rounds": 339,
+   "tune_poisson-nloglik": 1.2809498082768132
+  },
+  {
+   "params": {
+    "max_depth": 5,
+    "min_child_weight": 25,
+    "reg_lambda": 1.0
+   },
+   "rounds": 308,
+   "tune_poisson-nloglik": 1.2809420259816064
+  },
+  {
+   "params": {
+    "max_depth": 5,
+    "min_child_weight": 25,
+    "reg_lambda": 8.0
+   },
+   "rounds": 224,
+   "tune_poisson-nloglik": 1.2810849714340535
+  }
+ ]
+}

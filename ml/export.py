@@ -34,7 +34,10 @@ def latest_report() -> dict:
     if os.path.exists(reg_p):
         reg = json.load(open(reg_p))
         if reg.get("champion"):
-            return json.load(open(os.path.join(ROOT, "models", "artifacts", reg["champion"], "report.json")))
+            for d in ("artifacts", "serving"):
+                rp = os.path.join(ROOT, "models", d, reg["champion"], "report.json")
+                if os.path.exists(rp):
+                    return json.load(open(rp))
     vs = sorted(glob.glob(os.path.join(ROOT, "models", "artifacts", "v*", "report.json")))
     return json.load(open(vs[-1]))
 
@@ -177,7 +180,13 @@ def write_js(path: str, var: str, obj) -> None:
 
 def main():
     report = latest_report()
-    params = fit_joint(report)
+    serve_dir = os.path.join(ROOT, "models", "serving", report["version"])
+    if os.path.exists(os.path.join(BUILD, "sel_sk_sog.parquet")):
+        params = fit_joint(report)
+        os.makedirs(serve_dir, exist_ok=True)
+        json.dump(params, open(os.path.join(serve_dir, "joint_params.json"), "w"), indent=1)
+    else:  # serve-only container: reuse the dependence parameters fitted at training time
+        params = json.load(open(os.path.join(serve_dir, "joint_params.json")))
     print("joint params", json.dumps(params))
     games_meta = pd.read_parquet(os.path.join(BUILD, "games.parquet"), columns=["start_utc"])
     data_through = str(games_meta.start_utc.max())
@@ -216,8 +225,9 @@ def main():
                                   for r in d.tail(10).itertuples()] for pid, d in sg.groupby("player_id")}
     write_js(os.path.join(ART, "slate.js"), "NQ_SLATE", slate)
     write_js(os.path.join(ART, "ml_report.js"), "NQ_ML", slim_report(report))
-    test = assemble("test", with_outcome=True)
-    json.dump({"params": params, "games": test, "model_version": report["version"]}, open(os.path.join(BUILD, "test_games.json"), "w"))
+    test = assemble("test", with_outcome=True) if os.path.exists(os.path.join(BUILD, "test_sk_sog.parquet")) else []
+    if test:
+        json.dump({"params": params, "games": test, "model_version": report["version"]}, open(os.path.join(BUILD, "test_games.json"), "w"))
     # append-only prediction history
     hist = os.path.join(ROOT, "data", "history")
     os.makedirs(hist, exist_ok=True)

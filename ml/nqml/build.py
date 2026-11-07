@@ -24,6 +24,7 @@ import pandas as pd
 from .ingest import RAW, ROOT, load_raw
 
 BUILD = os.path.join(ROOT, "data", "build")
+BASE_DIR = os.path.join(ROOT, "data", "base")  # committed normalized tables (fresh containers start from these)
 
 
 def _toi(s: str | None) -> float:
@@ -85,9 +86,19 @@ def build_tables() -> dict[str, pd.DataFrame]:
                                shots_against=p.get("shotsAgainst", 0) or 0, saves=p.get("saves", 0) or 0, goals_against=p.get("goalsAgainst", 0) or 0,
                                decision=p.get("decision") or ""))
     G = pd.DataFrame(games)
+    S = pd.DataFrame(sk)
+    K = pd.DataFrame(gk)
+    # merge with committed base tables: keep base rows for games whose raw JSON is not cached here
+    if os.path.exists(os.path.join(BASE_DIR, "games.parquet")):
+        parsed = set(G.game_id) if len(G) else set()
+        bG, bS, bK = (pd.read_parquet(os.path.join(BASE_DIR, f"{n}.parquet")) for n in ("games", "skater_games", "goalie_games"))
+        G = pd.concat([bG[~bG.game_id.isin(parsed)], G], ignore_index=True)
+        S = pd.concat([bS[~bS.game_id.isin(parsed)], S], ignore_index=True)
+        K = pd.concat([bK[~bK.game_id.isin(parsed)], K], ignore_index=True)
     G["start_utc"] = pd.to_datetime(G["start_utc"], utc=True)
-    S = pd.DataFrame(sk); S["start_utc"] = pd.to_datetime(S["start_utc"], utc=True)
-    K = pd.DataFrame(gk); K["start_utc"] = pd.to_datetime(K["start_utc"], utc=True)
+    S["start_utc"] = pd.to_datetime(S["start_utc"], utc=True)
+    K["start_utc"] = pd.to_datetime(K["start_utc"], utc=True)
+    G = G.sort_values("start_utc").reset_index(drop=True)
     rows = []
     for _, g in G.iterrows():
         for side in ("home", "away"):
@@ -97,8 +108,10 @@ def build_tables() -> dict[str, pd.DataFrame]:
                              pen_drawn=g[f"{o}_pen"], outcome=g.outcome, win=int(g[f"{side}_score"] > g[f"{o}_score"])))
     TG = pd.DataFrame(rows)
     os.makedirs(BUILD, exist_ok=True)
+    os.makedirs(BASE_DIR, exist_ok=True)
     for name, df in (("games", G), ("skater_games", S), ("goalie_games", K), ("team_games", TG)):
         df.to_parquet(os.path.join(BUILD, f"{name}.parquet"), index=False)
+        df.to_parquet(os.path.join(BASE_DIR, f"{name}.parquet"), index=False)
     return {"games": G, "skater_games": S, "goalie_games": K, "team_games": TG}
 
 

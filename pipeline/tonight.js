@@ -24,6 +24,9 @@ for (const f of ['js/core/rng.js', 'js/core/util.js', 'js/engine/cv.js', 'js/eng
 const NQ = globalThis.NQ, S = globalThis.NQ_SLATE, V = globalThis.NQ_SGPVAL, O = globalThis.NQ_ODDS;
 const arg = (k, d) => { const i = process.argv.indexOf(k); return i > 0 ? +process.argv[i + 1] : d; };
 const HOURS = arg('--hours', 30), SIMS = arg('--sims', 50000), PER = arg('--per', 2);
+const sarg = (k) => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : null; };
+const ONLY = sarg('--games') ? new Set(sarg('--games').split(',').map(Number)) : null;  // slot scan: just these games
+const OUT = sarg('--out');  // output path prefix (without extension)
 const now = Date.now();
 const fmtA = (o) => (o === null || o === undefined ? '—' : o > 0 ? '+' + o : String(o));
 const pct = (x, d = 1) => (100 * x).toFixed(d) + '%';
@@ -31,7 +34,7 @@ const STATN = { SOG: 'SOG', G: 'goal', A: 'assist', PTS: 'point', BLK: 'blocked 
 const legTxt = (l) => (l.stat === 'SV' ? `${l.name} ${Math.ceil(l.line)}+ saves` : `${l.name} ${Math.ceil(l.line)}+ ${STATN[l.stat]}${Math.ceil(l.line) > 1 && l.stat !== 'SOG' ? 's' : ''}`);
 const et = (iso) => new Date(iso).toLocaleString('en-US', { timeZone: 'America/New_York', weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
 
-const games = S.games.filter((g) => { const t = Date.parse(g.start_utc); return t > now && t - now <= HOURS * 3600e3; })
+const games = S.games.filter((g) => { const t = Date.parse(g.start_utc); return ONLY ? ONLY.has(g.game_id) && t > now : t > now && t - now <= HOURS * 3600e3; })
   .sort((a, b) => Date.parse(a.start_utc) - Date.parse(b.start_utc));
 const ml = (g) => (O && O.quotes ? O.quotes.filter((q) => q.market === 'team_ml' && String(q.game_id) === String(g.game_id)) : []);
 const out = { generated_at: new Date().toISOString(), model_version: S.model_version, data_through: S.data_through, sims: SIMS, games: [] };
@@ -81,7 +84,9 @@ for (const g of games) {
 md += `---\n**Model notes:** projected lineups = each team's most recent dressed lineup (late scratches not seen); goalie legs settle only if that goalie starts. Historical validation (635 held-out games): search-selected combos hit *more* often than the joint model predicted (5-leg: 34.7% actual vs 30.6% predicted), so these probabilities lean conservative. Parlays are high-variance; nothing here is a guarantee.\n`;
 fs.mkdirSync(path.join(ROOT, 'reports'), { recursive: true });
 const stamp = new Date().toISOString().slice(0, 10);
-fs.writeFileSync(path.join(ROOT, 'reports', `sgp-${stamp}.md`), md);
-fs.writeFileSync(path.join(ROOT, 'reports', `sgp-${stamp}.json`), JSON.stringify(out, null, 1));
+const base = OUT ? path.join(ROOT, OUT) : path.join(ROOT, 'reports', `sgp-${stamp}`);
+fs.mkdirSync(path.dirname(base), { recursive: true });
+fs.writeFileSync(base + '.md', md);
+fs.writeFileSync(base + '.json', JSON.stringify(out, null, 1));
 console.log(md);
 console.error(`games ${games.length}, total ${((Date.now() - t0) / 1000).toFixed(0)}s`);

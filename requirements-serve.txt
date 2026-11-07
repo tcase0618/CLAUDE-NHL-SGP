@@ -1,0 +1,7 @@
+# Minimal inference/scan environment (no AutoGluon): serving bundle + scans
+xgboost-cpu==3.3.0
+numpy==2.5.4
+pandas==2.3.3
+pyarrow==24.0.0
+scipy==1.18.1
+scikit-learn==1.9.1
