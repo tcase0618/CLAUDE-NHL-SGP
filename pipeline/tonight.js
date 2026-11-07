@@ -24,6 +24,7 @@ for (const f of ['js/core/rng.js', 'js/core/util.js', 'js/engine/cv.js', 'js/eng
 const NQ = globalThis.NQ, S = globalThis.NQ_SLATE, V = globalThis.NQ_SGPVAL, O = globalThis.NQ_ODDS;
 const arg = (k, d) => { const i = process.argv.indexOf(k); return i > 0 ? +process.argv[i + 1] : d; };
 const HOURS = arg('--hours', 30), SIMS = arg('--sims', 50000), PER = arg('--per', 2);
+const QUOTA = arg('--min', 3);  // guaranteed parlays per size per game (user: volume — at least 3/5/8 every game)
 const sarg = (k) => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : null; };
 const ONLY = sarg('--games') ? new Set(sarg('--games').split(',').map(Number)) : null;  // slot scan: just these games
 const OUT = sarg('--out');  // output path prefix (without extension)
@@ -50,29 +51,47 @@ for (const g of games) {
   const pH = g.teamWin ? g.teamWin.pHome : null;
   md += `## ${g.away.abbr} @ ${g.home.abbr} — ${et(g.start_utc)} ET\n`;
   md += `Model P(${g.home.abbr} win) ${pH === null ? '—' : pct(pH)} · Polymarket: ${q.map((x) => `${x.team} ${fmtA(x.american)} (${Math.round(x.price * 100)}¢)`).join(', ') || 'no quote'} · goalie start probs: ${['away', 'home'].map((s) => g[s].goalies.filter((k) => k.pStart > 0.05).map((k) => `${k.name} ${pct(k.pStart, 0)}`).join('/')).join(' vs ')}\n\n`;
-  const legUse = new Map();  // exposure control across this game's whole card (all sizes)
+  // ---- volume with diversification: quota per size, exposure cap relaxed only as needed
+  const legUse = new Map();  // exposure across this game's whole card (all sizes)
   const lk = (l) => l.player_id + l.stat + l.line;
-  for (const size of [3, 5, 8]) {
-    const res = NQ.sgp.research(R, F, g, size, V.tables, []);
-    const ok = res.items.filter((x) => x.lower.verified && x.lower.pLower > 0);
-    // best per family, then fill — diversity across ideologies
+  const research = {};
+  for (const size of [3, 5, 8]) research[size] = NQ.sgp.research(R, F, g, size, V.tables, []);
+  const chosen = {};
+  const seen = new Set();
+  for (const size of [8, 5, 3]) {  // big parlays first: they need the most distinct legs
+    const res = research[size];
+    const ok = res.items.filter((x) => x.lower.verified && x.lower.pLower > 0).sort((a, b) => b.lower.pLower - a.lower.pLower);
+    // ordering: best of each ideology first (diversity), then everything else by conservative P
     const byFam = {};
-    ok.sort((a, b) => b.lower.pLower - a.lower.pLower).forEach((x) => { (byFam[x.family.id] = byFam[x.family.id] || []).push(x); });
-    // one pick per family, skipping leg sets already chosen by another family
-    const seen = new Set(), picks = [];
-    for (const arr of Object.values(byFam).sort((a, b) => b[0].lower.pLower - a[0].lower.pLower)) {
-      const x = arr.find((c) => !seen.has(c.legs.map(lk).sort().join()) && c.legs.every((l) => (legUse.get(lk(l)) || 0) < NQ.sgp.MAX_LEG_EXPOSURE));
-      if (!x) continue;
-      seen.add(x.legs.map(lk).sort().join());
-      x.legs.forEach((l) => legUse.set(lk(l), (legUse.get(lk(l)) || 0) + 1));
-      picks.push(x);
-      if (picks.length >= PER + 1) break;
+    ok.forEach((x) => { (byFam[x.family.id] = byFam[x.family.id] || []).push(x); });
+    const order = [];
+    for (let k = 0; Object.values(byFam).some((a) => a.length > k); k++)
+      Object.values(byFam).sort((a, b) => b[0].lower.pLower - a[0].lower.pLower).forEach((a) => { if (a[k]) order.push(a[k]); });
+    const picks = [];
+    let capUsed = NQ.sgp.MAX_LEG_EXPOSURE;
+    for (const cap of [NQ.sgp.MAX_LEG_EXPOSURE, NQ.sgp.MAX_LEG_EXPOSURE + 1, NQ.sgp.MAX_LEG_EXPOSURE + 2, Infinity]) {
+      for (const x of order) {
+        if (picks.length >= QUOTA) break;
+        const key = x.legs.map(lk).sort().join();
+        if (seen.has(key) || !x.legs.every((l) => (legUse.get(lk(l)) || 0) < cap)) continue;
+        seen.add(key);
+        x.legs.forEach((l) => legUse.set(lk(l), (legUse.get(lk(l)) || 0) + 1));
+        picks.push(x);
+        capUsed = cap;
+      }
+      if (picks.length >= QUOTA) break;
     }
-    gm.sizes[size] = { evaluated: res.evaluated, verified: ok.length, finalists: res.items.length, picks: picks.map((x) => ({
+    chosen[size] = { picks, ok, capUsed };
+  }
+  for (const size of [3, 5, 8]) {
+    const res = research[size], { picks, ok, capUsed } = chosen[size];
+    gm.sizes[size] = { evaluated: res.evaluated, verified: ok.length, finalists: res.items.length, exposureCap: capUsed === Infinity ? null : capUsed, picks: picks.map((x) => ({
       family: x.family.id + ' ' + x.family.n, legs: x.legs.map((l) => ({ text: legTxt(l), p: l.p, player_id: l.player_id, stat: l.stat, line: l.line })),
       pJoint: x.ev.p, pLower: x.lower.pLower, pIndep: x.ev.indep, lift: x.ev.lift, breakEven: x.breakEven, mcHits: x.ev.hits, scenario: x.scenario.hit })) };
-    md += `### ${size}-leg (${res.evaluated.toLocaleString()} candidates searched · ${ok.length}/${res.items.length} finalists verified)\n`;
+    const relaxed = capUsed > NQ.sgp.MAX_LEG_EXPOSURE ? ` · exposure cap relaxed to ${capUsed === Infinity ? 'none' : capUsed} to fill the quota` : '';
+    md += `### ${size}-leg (${res.evaluated.toLocaleString()} candidates searched · ${ok.length}/${res.items.length} finalists verified${relaxed})\n`;
     if (!picks.length) { md += `_No verified ${size}-leg combination (precision or calibration requirements not met)._\n\n`; continue; }
+    if (picks.length < QUOTA) md += `_Only ${picks.length} verified distinct ${size}-leg combination(s) available — quota ${QUOTA}._\n`;
     picks.forEach((x, i) => {
       md += `**${String.fromCharCode(65 + i)}. ${x.family.n}** — joint **${pct(x.ev.p)}** · conservative ${pct(x.lower.pLower)} · if independent ${pct(x.ev.indep)} (lift ${x.ev.lift.toFixed(2)}×) · **break-even ${fmtA(x.breakEven)}**\n`;
       x.legs.forEach((l) => { md += `- ${legTxt(l)} (${pct(l.p, 0)})\n`; });

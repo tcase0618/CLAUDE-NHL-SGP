@@ -17,9 +17,9 @@
   sgp.MAX_LEG_EXPOSURE = 2;   // a leg may appear in at most this many published parlays per game
   sgp.MARKET_OF = { SOG: 'player_sog', PTS: 'player_points', G: 'player_goals', A: 'player_assists', BLK: 'player_blocks', HIT: 'player_hits', PPP: 'player_ppp', SV: 'goalie_saves' };
   sgp.CONFIG = {
-    3: { band: [0.35, 0.93], beam: 40, keep: 6, floor: 0.12 },
-    5: { band: [0.45, 0.94], beam: 40, keep: 6, floor: 0.05 },
-    8: { band: [0.55, 0.96], beam: 30, keep: 6, floor: 0.015 }
+    3: { band: [0.35, 0.93], beam: 40, keep: 14, floor: 0.12 },
+    5: { band: [0.45, 0.94], beam: 40, keep: 14, floor: 0.05 },
+    8: { band: [0.55, 0.96], beam: 30, keep: 14, floor: 0.015 }
   };
 
   // Ideology families: pool filter + combination constraint (+ description).
