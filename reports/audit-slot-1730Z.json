@@ -1,0 +1,499 @@
+{
+ "audited_at": "2026-11-07T21:03:17.682795+00:00",
+ "source": "slot-1730Z.json",
+ "model_version": "v20261106-224110",
+ "counts": {
+  "WON": 3,
+  "LOST": 5,
+  "PENDING": 0,
+  "VOID-REPRICE": 1
+ },
+ "by_size": {
+  "3": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 1.85974,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.6199133333333333,
+   "brier": 0.44696262466666664,
+   "logloss": 1.1136751020042739
+  },
+  "5": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 1.0645,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.35483333333333333,
+   "brier": 0.3370487748,
+   "logloss": 0.905064526876069
+  },
+  "8": {
+   "n": 2,
+   "won": 1,
+   "expected_wins": 0.44034,
+   "hit_rate": 0.5,
+   "mean_p": 0.22017,
+   "brier": 0.5143405378,
+   "logloss": 1.6474617616144276
+  }
+ },
+ "by_size_independence": {
+  "3": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 1.858645586313592,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.6195485287711974,
+   "brier": 0.44791988991256987,
+   "logloss": 1.115710440102074
+  },
+  "5": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 1.0636524048723275,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.3545508016241092,
+   "brier": 0.3372774504880088,
+   "logloss": 0.9056531383249306
+  },
+  "8": {
+   "n": 2,
+   "won": 1,
+   "expected_wins": 0.4279080595384537,
+   "hit_rate": 0.5,
+   "mean_p": 0.21395402976922684,
+   "brier": 0.5275282333089255,
+   "logloss": 1.776136739888335
+  }
+ },
+ "legs": {
+  "n": 47,
+  "won": 35,
+  "expected": 37.21712
+ },
+ "parlays": [
+  {
+   "game_id": 2026020265,
+   "game": "FLA@WSH",
+   "state": "OFF",
+   "size": 3,
+   "pick": "A",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.72636,
+   "pLower": 0.7005190176595264,
+   "pIndep": 0.72604458780084,
+   "breakEven": -234,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "S. Vilmanis 1+ hit",
+     "p": 0.90894,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "T. Wilson 1+ hit",
+     "p": 0.8958,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "B. Imama 1+ hit",
+     "p": 0.88718,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020265,
+   "game": "FLA@WSH",
+   "state": "OFF",
+   "size": 3,
+   "pick": "B",
+   "family": "3A Shot-volume structure",
+   "pJoint": 0.4325,
+   "pLower": 0.40389354633434615,
+   "pIndep": 0.43075844169467203,
+   "breakEven": 148,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80698,
+     "result": "WON",
+     "value": 7
+    },
+    {
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.74008,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Tkachuk 2+ SOG",
+     "p": 0.71506,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020265,
+   "game": "FLA@WSH",
+   "state": "OFF",
+   "size": 3,
+   "pick": "C",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.70088,
+   "pLower": 0.6750390176595263,
+   "pIndep": 0.7018425568180799,
+   "breakEven": -208,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "S. Vilmanis 1+ hit",
+     "p": 0.90894,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "T. Wilson 1+ hit",
+     "p": 0.8958,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "M. Feh\u00e9rv\u00e1ry 1+ blocked shot",
+     "p": 0.85208,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020265,
+   "game": "FLA@WSH",
+   "state": "OFF",
+   "size": 5,
+   "pick": "A",
+   "family": "5E Balanced cross-team structure",
+   "pJoint": 0.51982,
+   "pLower": 0.49132166364862295,
+   "pIndep": 0.5208668500315644,
+   "breakEven": 104,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "S. Vilmanis 1+ hit",
+     "p": 0.90894,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "T. Wilson 1+ hit",
+     "p": 0.8958,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "B. Imama 1+ hit",
+     "p": 0.88718,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Feh\u00e9rv\u00e1ry 1+ blocked shot",
+     "p": 0.85208,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "B. Jenner 1+ hit",
+     "p": 0.83986,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020265,
+   "game": "FLA@WSH",
+   "state": "OFF",
+   "size": 5,
+   "pick": "B",
+   "family": "5B Top-6 usage cluster",
+   "pJoint": 0.33682,
+   "pLower": 0.3099450161346849,
+   "pIndep": 0.3353110124381399,
+   "breakEven": 223,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "M. Feh\u00e9rv\u00e1ry 1+ blocked shot",
+     "p": 0.85208,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Roy 1+ blocked shot",
+     "p": 0.8293,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "J. Chychrun 1+ blocked shot",
+     "p": 0.7933,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Roy 1+ hit",
+     "p": 0.78458,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Feh\u00e9rv\u00e1ry 1+ hit",
+     "p": 0.7681,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020265,
+   "game": "FLA@WSH",
+   "state": "OFF",
+   "size": 5,
+   "pick": "C",
+   "family": "5D High-tempo matchup",
+   "pJoint": 0.20786,
+   "pLower": 0.18409311623035116,
+   "pIndep": 0.2074745424026231,
+   "breakEven": 443,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80698,
+     "result": "WON",
+     "value": 7
+    },
+    {
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.74008,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Tkachuk 2+ SOG",
+     "p": 0.71506,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "J. Chychrun 2+ SOG",
+     "p": 0.70348,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Bennett 2+ SOG",
+     "p": 0.68904,
+     "result": "WON",
+     "value": 4
+    }
+   ]
+  },
+  {
+   "game_id": 2026020265,
+   "game": "FLA@WSH",
+   "state": "OFF",
+   "size": 8,
+   "pick": "A",
+   "family": "8D Multi-line production",
+   "pJoint": 0.3805,
+   "pLower": 0.35890744131225927,
+   "pIndep": 0.3815661448657559,
+   "breakEven": 179,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "B. Tkachuk 1+ hit",
+     "p": 0.94592,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "G. Hathaway 1+ hit",
+     "p": 0.94424,
+     "result": "WON",
+     "value": 6
+    },
+    {
+     "text": "S. Vilmanis 1+ hit",
+     "p": 0.90894,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "T. Wilson 1+ hit",
+     "p": 0.8958,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "B. Imama 1+ hit",
+     "p": 0.88718,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Feh\u00e9rv\u00e1ry 1+ blocked shot",
+     "p": 0.85208,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "B. Jenner 1+ hit",
+     "p": 0.83986,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "M. Roy 1+ blocked shot",
+     "p": 0.8293,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020265,
+   "game": "FLA@WSH",
+   "state": "OFF",
+   "size": 8,
+   "pick": "B",
+   "family": "8F Cross-team high-event scenario",
+   "pJoint": 0.05984,
+   "pLower": 0.04671275983834474,
+   "pIndep": 0.04634191467269779,
+   "breakEven": 2041,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80698,
+     "result": "WON",
+     "value": 7
+    },
+    {
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.74008,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Tkachuk 2+ SOG",
+     "p": 0.71506,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Tkachuk 1+ point",
+     "p": 0.6151,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "S. Reinhart 1+ point",
+     "p": 0.61174,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Chychrun 2+ SOG",
+     "p": 0.70348,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "A. Ovechkin 2+ SOG",
+     "p": 0.6535,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "A. Tuch 2+ SOG",
+     "p": 0.63502,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020265,
+   "game": "FLA@WSH",
+   "state": "OFF",
+   "size": 8,
+   "pick": "C",
+   "family": "8A Shot-dominant game",
+   "pJoint": 0.05706,
+   "pLower": 0.04393275983834474,
+   "pIndep": 0.05559689083175637,
+   "breakEven": 2176,
+   "status": "VOID-REPRICE",
+   "legs": [
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80698,
+     "result": "WON",
+     "value": 7
+    },
+    {
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.74008,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Tkachuk 2+ SOG",
+     "p": 0.71506,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "J. Chychrun 2+ SOG",
+     "p": 0.70348,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Bennett 2+ SOG",
+     "p": 0.68904,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "A. Ovechkin 2+ SOG",
+     "p": 0.6535,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "C. Verhaeghe 2+ SOG",
+     "p": 0.64798,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "A. Lundell 2+ SOG",
+     "p": 0.6345,
+     "result": "VOID",
+     "value": null
+    }
+   ]
+  }
+ ]
+}
