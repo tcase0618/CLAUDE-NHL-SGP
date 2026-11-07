@@ -193,3 +193,9 @@ test('best() keeps one quote per game — a team playing several games keeps all
   const mk = (g) => ({ book: 'polymarket_us', game_id: g, market: 'team_ml', team: 'TOR', side: 'home', american: -110, ts: '2026-11-06T21:55:00Z', status: 'open' });
   assert.strictEqual(NQ.odds.best([mk(77), mk(78)], c2).length, 2);
 });
+test('SGP leg pool only offers bettable markets (no hits)', () => {
+  const P = NQ.sgp.pool(R, G);
+  assert.ok(P.legs.length > 0);
+  assert.ok(P.legs.every((l) => NQ.sgp.BETTABLE.includes(l.stat) || l.stat === 'SV'), 'non-bettable stat in pool');
+  assert.ok(!P.legs.some((l) => l.stat === 'HIT'));
+});

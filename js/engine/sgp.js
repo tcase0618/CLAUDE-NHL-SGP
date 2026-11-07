@@ -13,6 +13,9 @@
   const sgp = {};
 
   sgp.LINES = { SOG: [1.5, 2.5, 3.5, 4.5], PTS: [0.5, 1.5], G: [0.5], A: [0.5], BLK: [0.5, 1.5, 2.5], HIT: [0.5, 1.5, 2.5, 3.5], PPP: [0.5], SV: [22.5, 24.5, 26.5, 28.5, 30.5] };
+  // Parlay legs are drawn ONLY from markets the user's sportsbook offers in an SGP.
+  // Hits are still simulated (blocks/pace depend on the same environment) but never offered as legs.
+  sgp.BETTABLE = ['SOG', 'PTS', 'G', 'A', 'BLK', 'PPP'];  // + SV (goalie saves) below
   sgp.GOALIE_MIN_START = 0.85;
   sgp.MAX_LEG_EXPOSURE = 2;   // a leg may appear in at most this many published parlays per game
   sgp.MARKET_OF = { SOG: 'player_sog', PTS: 'player_points', G: 'player_goals', A: 'player_assists', BLK: 'player_blocks', HIT: 'player_hits', PPP: 'player_ppp', SV: 'goalie_saves' };
@@ -56,7 +59,7 @@
     const sides = [game.home, game.away];
     sides.forEach((t, side) => {
       t.players.forEach((p) => {
-        for (const stat of ['SOG', 'PTS', 'G', 'A', 'BLK', 'HIT', 'PPP']) {
+        for (const stat of sgp.BETTABLE) {
           let best = null;
           for (const line of sgp.LINES[stat]) {
             const leg = { player_id: p.id, stat, line, side: 'over' };
