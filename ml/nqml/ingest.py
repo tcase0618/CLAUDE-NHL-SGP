@@ -110,8 +110,10 @@ def ingest(seasons=SEASONS, workers: int = 4, log=print) -> dict:
 def upcoming(days: int = 7) -> list[dict]:
     """Scheduled (not yet started) regular-season games for the next `days` days."""
     out, seen = [], set()
-    d = datetime.now(timezone.utc).date()
-    end = d + timedelta(days=days)
+    # Start one day back: the schedule endpoint is keyed by North American (ET) game date, so after
+    # 00:00 UTC tonight's late games belong to "yesterday" and would otherwise be skipped.
+    d = datetime.now(timezone.utc).date() - timedelta(days=1)
+    end = d + timedelta(days=days + 1)
     while d <= end:
         js = _get(f"{BASE}/schedule/{d.isoformat()}")
         if not js:

@@ -1,27 +1,43 @@
 {
- "audited_at": "2026-11-07T23:03:24.322198+00:00",
+ "audited_at": "2026-11-08T00:00:38.472376+00:00",
  "source": "slot-2200Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 0,
+  "WON": 1,
   "LOST": 0,
-  "PENDING": 9,
+  "PENDING": 8,
   "VOID-REPRICE": 0
  },
  "by_size": {
-  "3": null,
+  "3": {
+   "n": 1,
+   "won": 1,
+   "expected_wins": 0.45488,
+   "hit_rate": 1.0,
+   "mean_p": 0.45488,
+   "brier": 0.29715581440000005,
+   "logloss": 0.7877216310794474
+  },
   "5": null,
   "8": null
  },
  "by_size_independence": {
-  "3": null,
+  "3": {
+   "n": 1,
+   "won": 1,
+   "expected_wins": 0.452411888727888,
+   "hit_rate": 1.0,
+   "mean_p": 0.452411888727888,
+   "brier": 0.29985273960655884,
+   "logloss": 0.7931622558461014
+  },
   "5": null,
   "8": null
  },
  "legs": {
-  "n": 24,
-  "won": 24,
-  "expected": 17.02778
+  "n": 30,
+  "won": 30,
+  "expected": 21.32896
  },
  "parlays": [
   {
@@ -47,7 +63,7 @@
      "text": "M. Zibanejad 1+ point",
      "p": 0.62056,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "A. Fox 1+ point",
@@ -68,7 +84,7 @@
    "pLower": 0.42627354633434617,
    "pIndep": 0.452411888727888,
    "breakEven": 135,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "A. Larsson 1+ blocked shot",
@@ -79,14 +95,14 @@
     {
      "text": "B. Schneider 1+ blocked shot",
      "p": 0.74958,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Pettersson 1+ blocked shot",
      "p": 0.74988,
      "result": "WON",
-     "value": 2
+     "value": 3
     }
    ]
   },
@@ -107,7 +123,7 @@
      "text": "P. Dorofeyev 2+ SOG",
      "p": 0.7426,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "M. Zibanejad 2+ SOG",
@@ -119,7 +135,7 @@
      "text": "M. Zibanejad 1+ point",
      "p": 0.62056,
      "result": "WON",
-     "value": 1
+     "value": 2
     }
    ]
   },
@@ -140,13 +156,13 @@
      "text": "M. Pettersson 1+ blocked shot",
      "p": 0.74988,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "B. Schneider 1+ blocked shot",
      "p": 0.74958,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "A. Fox 1+ blocked shot",
@@ -158,7 +174,7 @@
      "text": "V. Gavrikov 1+ blocked shot",
      "p": 0.71978,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "A. Fox 1+ point",
@@ -185,13 +201,13 @@
      "text": "M. Pettersson 1+ blocked shot",
      "p": 0.74988,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "B. Schneider 1+ blocked shot",
      "p": 0.74958,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "A. Fox 1+ blocked shot",
@@ -203,7 +219,7 @@
      "text": "V. Gavrikov 1+ blocked shot",
      "p": 0.71978,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "M. Zibanejad 2+ SOG",
@@ -235,20 +251,20 @@
     {
      "text": "B. Schneider 1+ blocked shot",
      "p": 0.74958,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Pettersson 1+ blocked shot",
      "p": 0.74988,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "P. Dorofeyev 2+ SOG",
      "p": 0.7426,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "B. Montour 1+ blocked shot",
@@ -280,20 +296,20 @@
     {
      "text": "B. Schneider 1+ blocked shot",
      "p": 0.74958,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Pettersson 1+ blocked shot",
      "p": 0.74988,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "P. Dorofeyev 2+ SOG",
      "p": 0.7426,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "B. Montour 1+ blocked shot",
@@ -305,7 +321,7 @@
      "text": "V. Gavrikov 1+ blocked shot",
      "p": 0.71978,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "A. Fox 1+ blocked shot",
@@ -317,7 +333,7 @@
      "text": "R. Evans 1+ blocked shot",
      "p": 0.71088,
      "result": "WON",
-     "value": 1
+     "value": 2
     }
    ]
   },
@@ -338,7 +354,7 @@
      "text": "P. Dorofeyev 2+ SOG",
      "p": 0.7426,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "M. Zibanejad 2+ SOG",
@@ -350,7 +366,7 @@
      "text": "M. Zibanejad 1+ point",
      "p": 0.62056,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "A. Fox 1+ point",
@@ -361,8 +377,8 @@
     {
      "text": "P. Dorofeyev 1+ point",
      "p": 0.55328,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. McMann 2+ SOG",
@@ -401,7 +417,7 @@
      "text": "P. Dorofeyev 2+ SOG",
      "p": 0.7426,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "B. McMann 2+ SOG",
@@ -425,7 +441,7 @@
      "text": "J. Miller 2+ SOG",
      "p": 0.62306,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "A. Lafreni\u00e8re 2+ SOG",
