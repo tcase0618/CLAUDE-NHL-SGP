@@ -1,27 +1,75 @@
 {
- "audited_at": "2026-11-08T01:03:30.907789+00:00",
+ "audited_at": "2026-11-08T02:02:09.493972+00:00",
  "source": "slot-0000Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 0,
+  "WON": 7,
   "LOST": 0,
-  "PENDING": 27,
+  "PENDING": 20,
   "VOID-REPRICE": 0
  },
  "by_size": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 4,
+   "won": 4,
+   "expected_wins": 2.10718,
+   "hit_rate": 1.0,
+   "mean_p": 0.526795,
+   "brier": 0.22450597830000002,
+   "logloss": 0.6419881545891842
+  },
+  "5": {
+   "n": 2,
+   "won": 2,
+   "expected_wins": 0.58334,
+   "hit_rate": 1.0,
+   "mean_p": 0.29167,
+   "brier": 0.5039188217999999,
+   "logloss": 1.245156884974926
+  },
+  "8": {
+   "n": 1,
+   "won": 1,
+   "expected_wins": 0.06882,
+   "hit_rate": 1.0,
+   "mean_p": 0.06882,
+   "brier": 0.8670961924,
+   "logloss": 2.6762608786128026
+  }
  },
  "by_size_independence": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 4,
+   "won": 4,
+   "expected_wins": 2.1072487765842,
+   "hit_rate": 1.0,
+   "mean_p": 0.52681219414605,
+   "brier": 0.22449899251922287,
+   "logloss": 0.6419706812375989
+  },
+  "5": {
+   "n": 2,
+   "won": 2,
+   "expected_wins": 0.5787573013530166,
+   "hit_rate": 1.0,
+   "mean_p": 0.2893786506765083,
+   "brier": 0.5071225802172793,
+   "logloss": 1.2529622403423062
+  },
+  "8": {
+   "n": 1,
+   "won": 1,
+   "expected_wins": 0.06525877095239122,
+   "hit_rate": 1.0,
+   "mean_p": 0.06525877095239122,
+   "brier": 0.8737411652814343,
+   "logloss": 2.7293948210866885
+  }
  },
  "legs": {
-  "n": 44,
-  "won": 44,
-  "expected": 33.52458
+  "n": 90,
+  "won": 90,
+  "expected": 68.74948
  },
  "parlays": [
   {
@@ -41,13 +89,13 @@
      "text": "C. Caufield 2+ SOG",
      "p": 0.8365,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "N. Dobson 1+ blocked shot",
      "p": 0.83626,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "J. McCabe 1+ blocked shot",
@@ -85,8 +133,8 @@
     {
      "text": "W. Nylander 2+ SOG",
      "p": 0.7112,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     }
    ]
   },
@@ -101,7 +149,7 @@
    "pLower": 0.5349390176595263,
    "pIndep": 0.5617028010528,
    "breakEven": -115,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "J. McCabe 1+ blocked shot",
@@ -112,14 +160,14 @@
     {
      "text": "A. Carrier 1+ blocked shot",
      "p": 0.81778,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "K. Guhle 1+ blocked shot",
      "p": 0.8071,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     }
    ]
   },
@@ -140,19 +188,19 @@
      "text": "N. Dobson 1+ blocked shot",
      "p": 0.83626,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "A. Carrier 1+ blocked shot",
      "p": 0.81778,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "K. Guhle 1+ blocked shot",
      "p": 0.8071,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "L. Hutson 1+ blocked shot",
@@ -185,13 +233,13 @@
      "text": "C. Caufield 2+ SOG",
      "p": 0.8365,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "N. Dobson 1+ blocked shot",
      "p": 0.83626,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "J. McCabe 1+ blocked shot",
@@ -202,8 +250,8 @@
     {
      "text": "A. Carrier 1+ blocked shot",
      "p": 0.81778,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "C. Tanev 1+ blocked shot",
@@ -241,8 +289,8 @@
     {
      "text": "W. Nylander 2+ SOG",
      "p": 0.7112,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "W. Nylander 1+ point",
@@ -275,13 +323,13 @@
      "text": "C. Caufield 2+ SOG",
      "p": 0.8365,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "N. Dobson 1+ blocked shot",
      "p": 0.83626,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "J. McCabe 1+ blocked shot",
@@ -292,14 +340,14 @@
     {
      "text": "A. Carrier 1+ blocked shot",
      "p": 0.81778,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "K. Guhle 1+ blocked shot",
      "p": 0.8071,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "L. Hutson 1+ blocked shot",
@@ -338,7 +386,7 @@
      "text": "C. Caufield 2+ SOG",
      "p": 0.8365,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "A. Matthews 2+ SOG",
@@ -356,7 +404,7 @@
      "text": "N. Suzuki 2+ SOG",
      "p": 0.70368,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "N. Suzuki 1+ point",
@@ -367,8 +415,8 @@
     {
      "text": "W. Nylander 2+ SOG",
      "p": 0.7112,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. Slafkovsk\u00fd 2+ SOG",
@@ -407,7 +455,7 @@
      "text": "N. Suzuki 2+ SOG",
      "p": 0.70368,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "N. Suzuki 1+ point",
@@ -418,8 +466,8 @@
     {
      "text": "W. Nylander 2+ SOG",
      "p": 0.7112,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "W. Nylander 1+ point",
@@ -464,7 +512,7 @@
      "text": "C. Keller 2+ SOG",
      "p": 0.6915,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "D. Guenther 2+ SOG",
@@ -475,8 +523,8 @@
     {
      "text": "T. St\u00fctzle 2+ SOG",
      "p": 0.6546,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 3
     }
    ]
   },
@@ -496,8 +544,8 @@
     {
      "text": "M. Weegar 1+ blocked shot",
      "p": 0.86158,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "T. Chabot 1+ blocked shot",
@@ -530,7 +578,7 @@
      "text": "C. Keller 2+ SOG",
      "p": 0.6915,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "D. Guenther 2+ SOG",
@@ -562,8 +610,8 @@
     {
      "text": "T. St\u00fctzle 2+ SOG",
      "p": 0.6546,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "T. St\u00fctzle 1+ point",
@@ -608,7 +656,7 @@
      "text": "C. Keller 2+ SOG",
      "p": 0.6915,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "C. Keller 1+ point",
@@ -620,7 +668,7 @@
      "text": "N. Schmaltz 2+ SOG",
      "p": 0.6368,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "N. Schmaltz 1+ point",
@@ -652,8 +700,8 @@
     {
      "text": "M. Weegar 1+ blocked shot",
      "p": 0.86158,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "T. Chabot 1+ blocked shot",
@@ -697,8 +745,8 @@
     {
      "text": "M. Weegar 1+ blocked shot",
      "p": 0.86158,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "T. Chabot 1+ blocked shot",
@@ -761,7 +809,7 @@
      "text": "C. Keller 2+ SOG",
      "p": 0.6915,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "D. Guenther 2+ SOG",
@@ -772,8 +820,8 @@
     {
      "text": "T. St\u00fctzle 2+ SOG",
      "p": 0.6546,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "T. St\u00fctzle 1+ point",
@@ -791,7 +839,7 @@
      "text": "N. Schmaltz 2+ SOG",
      "p": 0.6368,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "J. Sanderson 1+ point",
@@ -802,8 +850,8 @@
     {
      "text": "D. Cozens 2+ SOG",
      "p": 0.61172,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     }
    ]
   },
@@ -823,8 +871,8 @@
     {
      "text": "M. Weegar 1+ blocked shot",
      "p": 0.86158,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "T. Chabot 1+ blocked shot",
@@ -881,13 +929,13 @@
    "pLower": 0.4818935463343461,
    "pIndep": 0.5108441307354,
    "breakEven": 108,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "A. Pelech 1+ blocked shot",
      "p": 0.81792,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. Pesce 1+ blocked shot",
@@ -898,8 +946,8 @@
     {
      "text": "M. Schaefer 1+ blocked shot",
      "p": 0.78214,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     }
    ]
   },
@@ -914,19 +962,19 @@
    "pLower": 0.5115390176595264,
    "pIndep": 0.53629566858,
    "breakEven": -105,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "J. Hughes 2+ SOG",
      "p": 0.83348,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "A. Pelech 1+ blocked shot",
      "p": 0.81792,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. Pesce 1+ blocked shot",
@@ -947,25 +995,25 @@
    "pLower": 0.4699135463343462,
    "pIndep": 0.49840617621600003,
    "breakEven": 113,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "J. Hughes 2+ SOG",
      "p": 0.83348,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "M. Schaefer 2+ SOG",
      "p": 0.78752,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "B. Horvat 2+ SOG",
      "p": 0.76418,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     }
    ]
   },
@@ -980,19 +1028,19 @@
    "pLower": 0.3115650161346849,
    "pIndep": 0.33563746716525233,
    "breakEven": 221,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "J. Hughes 2+ SOG",
      "p": 0.83348,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "A. Pelech 1+ blocked shot",
      "p": 0.81792,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. Pesce 1+ blocked shot",
@@ -1004,13 +1052,13 @@
      "text": "M. Schaefer 2+ SOG",
      "p": 0.78752,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "M. Schaefer 1+ blocked shot",
      "p": 0.78214,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     }
    ]
   },
@@ -1025,37 +1073,37 @@
    "pLower": 0.21802501613468486,
    "pIndep": 0.24311983418776428,
    "breakEven": 359,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "J. Hughes 2+ SOG",
      "p": 0.83348,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "M. Schaefer 2+ SOG",
      "p": 0.78752,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "B. Horvat 2+ SOG",
      "p": 0.76418,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "T. Meier 2+ SOG",
      "p": 0.7459,
      "result": "WON",
-     "value": 3
+     "value": 6
     },
     {
      "text": "L. Evangelista 2+ SOG",
      "p": 0.65352,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 3
     }
    ]
   },
@@ -1075,14 +1123,14 @@
     {
      "text": "J. Hughes 2+ SOG",
      "p": 0.83348,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "T. Meier 2+ SOG",
      "p": 0.7459,
      "result": "WON",
-     "value": 3
+     "value": 6
     },
     {
      "text": "J. Hughes 1+ point",
@@ -1093,8 +1141,8 @@
     {
      "text": "N. Hischier 2+ SOG",
      "p": 0.65814,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "N. Hischier 1+ point",
@@ -1120,14 +1168,14 @@
     {
      "text": "J. Hughes 2+ SOG",
      "p": 0.83348,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "A. Pelech 1+ blocked shot",
      "p": 0.81792,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. Pesce 1+ blocked shot",
@@ -1139,13 +1187,13 @@
      "text": "M. Schaefer 2+ SOG",
      "p": 0.78752,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "M. Schaefer 1+ blocked shot",
      "p": 0.78214,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. Siegenthaler 1+ blocked shot",
@@ -1156,14 +1204,14 @@
     {
      "text": "B. Horvat 2+ SOG",
      "p": 0.76418,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "T. Meier 2+ SOG",
      "p": 0.7459,
      "result": "WON",
-     "value": 3
+     "value": 6
     }
    ]
   },
@@ -1178,55 +1226,55 @@
    "pLower": 0.05569275983834475,
    "pIndep": 0.06525877095239122,
    "breakEven": 1696,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "J. Hughes 2+ SOG",
      "p": 0.83348,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "M. Schaefer 2+ SOG",
      "p": 0.78752,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "B. Horvat 2+ SOG",
      "p": 0.76418,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "T. Meier 2+ SOG",
      "p": 0.7459,
      "result": "WON",
-     "value": 3
+     "value": 6
     },
     {
      "text": "N. Hischier 2+ SOG",
      "p": 0.65814,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "D. Hamilton 2+ SOG",
      "p": 0.65432,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "L. Evangelista 2+ SOG",
      "p": 0.65352,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "J. Bratt 2+ SOG",
      "p": 0.62704,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 3
     }
    ]
   },
@@ -1246,20 +1294,20 @@
     {
      "text": "J. Hughes 2+ SOG",
      "p": 0.83348,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "M. Schaefer 2+ SOG",
      "p": 0.78752,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "B. Horvat 2+ SOG",
      "p": 0.76418,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. Hughes 1+ point",
@@ -1271,13 +1319,13 @@
      "text": "B. Horvat 1+ point",
      "p": 0.65654,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "D. Hamilton 2+ SOG",
      "p": 0.65432,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "M. Schaefer 1+ point",

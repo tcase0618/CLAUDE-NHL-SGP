@@ -1,0 +1,1313 @@
+{
+ "audited_at": "2026-11-08T02:02:10.506787+00:00",
+ "source": "slot-0100Z.json",
+ "model_version": "v20261106-224110",
+ "counts": {
+  "WON": 1,
+  "LOST": 0,
+  "PENDING": 26,
+  "VOID-REPRICE": 0
+ },
+ "by_size": {
+  "3": {
+   "n": 1,
+   "won": 1,
+   "expected_wins": 0.3534,
+   "hit_rate": 1.0,
+   "mean_p": 0.3534,
+   "brier": 0.4180915600000001,
+   "logloss": 1.040154719096541
+  },
+  "5": null,
+  "8": null
+ },
+ "by_size_independence": {
+  "3": {
+   "n": 1,
+   "won": 1,
+   "expected_wins": 0.27478400924769597,
+   "hit_rate": 1.0,
+   "mean_p": 0.27478400924769597,
+   "brier": 0.5259382332428459,
+   "logloss": 1.291769910837644
+  },
+  "5": null,
+  "8": null
+ },
+ "legs": {
+  "n": 58,
+  "won": 58,
+  "expected": 43.43194
+ },
+ "parlays": [
+  {
+   "game_id": 2026020271,
+   "game": "CHI@CAR",
+   "state": "LIVE",
+   "size": 3,
+   "pick": "A",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.5728271251193887,
+   "pLower": 0.5469861427789151,
+   "pIndep": 0.5537754136470371,
+   "breakEven": -121,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "S. Knight 23+ saves",
+     "p": 0.8796290248840702,
+     "result": "PENDING",
+     "value": 10
+    },
+    {
+     "text": "I. Cole 1+ blocked shot",
+     "p": 0.8185,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "S. Aho 2+ SOG",
+     "p": 0.76644,
+     "result": "PENDING",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020271,
+   "game": "CHI@CAR",
+   "state": "LIVE",
+   "size": 3,
+   "pick": "B",
+   "family": "3C Goalie workload structure",
+   "pJoint": 0.549535469306243,
+   "pLower": 0.5236944869657694,
+   "pIndep": 0.518822656607654,
+   "breakEven": -110,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "S. Knight 23+ saves",
+     "p": 0.8796290248840702,
+     "result": "PENDING",
+     "value": 10
+    },
+    {
+     "text": "A. Svechnikov 2+ SOG",
+     "p": 0.769,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "S. Aho 2+ SOG",
+     "p": 0.76644,
+     "result": "PENDING",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020271,
+   "game": "CHI@CAR",
+   "state": "LIVE",
+   "size": 3,
+   "pick": "C",
+   "family": "3A Shot-volume structure",
+   "pJoint": 0.445,
+   "pLower": 0.41639354633434617,
+   "pIndep": 0.4427265738402,
+   "breakEven": 140,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "A. Svechnikov 2+ SOG",
+     "p": 0.769,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "S. Aho 2+ SOG",
+     "p": 0.76644,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "S. Jarvis 2+ SOG",
+     "p": 0.74672,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020271,
+   "game": "CHI@CAR",
+   "state": "LIVE",
+   "size": 5,
+   "pick": "A",
+   "family": "5B Top-6 usage cluster",
+   "pJoint": 0.25116,
+   "pLower": 0.22428501613468485,
+   "pIndep": 0.25162027674995396,
+   "breakEven": 346,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "I. Cole 1+ blocked shot",
+     "p": 0.8185,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "A. Vlasic 1+ blocked shot",
+     "p": 0.78894,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "C. Bedard 2+ SOG",
+     "p": 0.74768,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "W. Kaiser 1+ blocked shot",
+     "p": 0.74118,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "A. Levshunov 1+ blocked shot",
+     "p": 0.70748,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020271,
+   "game": "CHI@CAR",
+   "state": "LIVE",
+   "size": 5,
+   "pick": "B",
+   "family": "5E Balanced cross-team structure",
+   "pJoint": 0.29354,
+   "pLower": 0.2666650161346849,
+   "pIndep": 0.29256307575228474,
+   "breakEven": 275,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "I. Cole 1+ blocked shot",
+     "p": 0.8185,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "A. Vlasic 1+ blocked shot",
+     "p": 0.78894,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Slavin 1+ blocked shot",
+     "p": 0.77874,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "A. Svechnikov 2+ SOG",
+     "p": 0.769,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "S. Aho 2+ SOG",
+     "p": 0.76644,
+     "result": "PENDING",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020271,
+   "game": "CHI@CAR",
+   "state": "LIVE",
+   "size": 5,
+   "pick": "C",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.24284,
+   "pLower": 0.21596501613468486,
+   "pIndep": 0.22479529198670892,
+   "breakEven": 363,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "A. Svechnikov 2+ SOG",
+     "p": 0.769,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "S. Aho 2+ SOG",
+     "p": 0.76644,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "S. Jarvis 2+ SOG",
+     "p": 0.74672,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Aho 1+ point",
+     "p": 0.70598,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "N. Ehlers 2+ SOG",
+     "p": 0.71668,
+     "result": "PENDING",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020271,
+   "game": "CHI@CAR",
+   "state": "LIVE",
+   "size": 8,
+   "pick": "A",
+   "family": "8E Goaltender workload game",
+   "pJoint": 0.1595901710514891,
+   "pLower": 0.13799761236374833,
+   "pIndep": 0.1443358119530226,
+   "breakEven": 625,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "S. Knight 23+ saves",
+     "p": 0.8796290248840702,
+     "result": "PENDING",
+     "value": 10
+    },
+    {
+     "text": "I. Cole 1+ blocked shot",
+     "p": 0.8185,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "A. Svechnikov 2+ SOG",
+     "p": 0.769,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "A. Vlasic 1+ blocked shot",
+     "p": 0.78894,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "S. Aho 2+ SOG",
+     "p": 0.76644,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "J. Slavin 1+ blocked shot",
+     "p": 0.77874,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "S. Jarvis 2+ SOG",
+     "p": 0.74672,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "W. Kaiser 1+ blocked shot",
+     "p": 0.74118,
+     "result": "PENDING",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020271,
+   "game": "CHI@CAR",
+   "state": "LIVE",
+   "size": 8,
+   "pick": "B",
+   "family": "8D Multi-line production",
+   "pJoint": 0.12686,
+   "pLower": 0.10526744131225924,
+   "pIndep": 0.12347073204411149,
+   "breakEven": 850,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "I. Cole 1+ blocked shot",
+     "p": 0.8185,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "A. Vlasic 1+ blocked shot",
+     "p": 0.78894,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Slavin 1+ blocked shot",
+     "p": 0.77874,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "A. Svechnikov 2+ SOG",
+     "p": 0.769,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "S. Aho 2+ SOG",
+     "p": 0.76644,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "W. Kaiser 1+ blocked shot",
+     "p": 0.74118,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "S. Jarvis 2+ SOG",
+     "p": 0.74672,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Walker 1+ blocked shot",
+     "p": 0.74354,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020271,
+   "game": "CHI@CAR",
+   "state": "LIVE",
+   "size": 8,
+   "pick": "C",
+   "family": "8A Shot-dominant game",
+   "pJoint": 0.10569158635061214,
+   "pLower": 0.07106545871139562,
+   "pIndep": 0.0917344391042997,
+   "breakEven": 1307,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "S. Knight 23+ saves",
+     "p": 0.8796290248840702,
+     "result": "PENDING",
+     "value": 10
+    },
+    {
+     "text": "A. Svechnikov 2+ SOG",
+     "p": 0.769,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "S. Aho 2+ SOG",
+     "p": 0.76644,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "S. Jarvis 2+ SOG",
+     "p": 0.74672,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "C. Bedard 2+ SOG",
+     "p": 0.74768,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "N. Ehlers 2+ SOG",
+     "p": 0.71668,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "L. Stankoven 2+ SOG",
+     "p": 0.6621,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "J. Blake 2+ SOG",
+     "p": 0.65766,
+     "result": "PENDING",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020272,
+   "game": "SJS@DAL",
+   "state": "LIVE",
+   "size": 3,
+   "pick": "A",
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.3534,
+   "pLower": 0.3269088197198715,
+   "pIndep": 0.27478400924769597,
+   "breakEven": 206,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "J. Robertson 1+ point",
+     "p": 0.66882,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Rantanen 1+ point",
+     "p": 0.66172,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "W. Johnston 1+ point",
+     "p": 0.63408,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020272,
+   "game": "SJS@DAL",
+   "state": "LIVE",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.5587,
+   "pLower": 0.5328590176595264,
+   "pIndep": 0.558236195048448,
+   "breakEven": -114,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "D. Nurse 1+ blocked shot",
+     "p": 0.8473,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Trouba 1+ blocked shot",
+     "p": 0.81962,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "T. Harley 1+ blocked shot",
+     "p": 0.80846,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020272,
+   "game": "SJS@DAL",
+   "state": "LIVE",
+   "size": 3,
+   "pick": "C",
+   "family": "3A Shot-volume structure",
+   "pJoint": 0.44386,
+   "pLower": 0.41525354633434614,
+   "pIndep": 0.44242387254296,
+   "breakEven": 141,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Robertson 2+ SOG",
+     "p": 0.80974,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "M. Celebrini 2+ SOG",
+     "p": 0.77268,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "W. Johnston 2+ SOG",
+     "p": 0.7104,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020272,
+   "game": "SJS@DAL",
+   "state": "LIVE",
+   "size": 5,
+   "pick": "A",
+   "family": "5E Balanced cross-team structure",
+   "pJoint": 0.35848,
+   "pLower": 0.3316050161346849,
+   "pIndep": 0.35524422707034403,
+   "breakEven": 202,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "D. Nurse 1+ blocked shot",
+     "p": 0.8473,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Trouba 1+ blocked shot",
+     "p": 0.81962,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "T. Harley 1+ blocked shot",
+     "p": 0.80846,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "E. Pohlkamp 1+ blocked shot",
+     "p": 0.80904,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "E. Lindell 1+ blocked shot",
+     "p": 0.7977,
+     "result": "PENDING",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020272,
+   "game": "SJS@DAL",
+   "state": "LIVE",
+   "size": 5,
+   "pick": "B",
+   "family": "5E Balanced cross-team structure",
+   "pJoint": 0.34662,
+   "pLower": 0.31974501613468487,
+   "pIndep": 0.3455650831179939,
+   "breakEven": 213,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "D. Nurse 1+ blocked shot",
+     "p": 0.8473,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Trouba 1+ blocked shot",
+     "p": 0.81962,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "T. Harley 1+ blocked shot",
+     "p": 0.80846,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "E. Lindell 1+ blocked shot",
+     "p": 0.7977,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "T. Myers 1+ blocked shot",
+     "p": 0.7855,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020272,
+   "game": "SJS@DAL",
+   "state": "LIVE",
+   "size": 5,
+   "pick": "C",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.18716,
+   "pLower": 0.16339311623035116,
+   "pIndep": 0.12425756133916632,
+   "breakEven": 512,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Robertson 1+ point",
+     "p": 0.66882,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Rantanen 1+ point",
+     "p": 0.66172,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "W. Johnston 1+ point",
+     "p": 0.63408,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "W. Johnston 2+ SOG",
+     "p": 0.7104,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Rantanen 2+ SOG",
+     "p": 0.639,
+     "result": "PENDING",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020272,
+   "game": "SJS@DAL",
+   "state": "LIVE",
+   "size": 8,
+   "pick": "A",
+   "family": "8D Multi-line production",
+   "pJoint": 0.17352,
+   "pLower": 0.15192744131225924,
+   "pIndep": 0.17234031703563324,
+   "breakEven": 558,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "D. Nurse 1+ blocked shot",
+     "p": 0.8473,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Trouba 1+ blocked shot",
+     "p": 0.81962,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "J. Robertson 2+ SOG",
+     "p": 0.80974,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "E. Pohlkamp 1+ blocked shot",
+     "p": 0.80904,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "T. Harley 1+ blocked shot",
+     "p": 0.80846,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "E. Lindell 1+ blocked shot",
+     "p": 0.7977,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "T. Myers 1+ blocked shot",
+     "p": 0.7855,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Celebrini 2+ SOG",
+     "p": 0.77268,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020272,
+   "game": "SJS@DAL",
+   "state": "LIVE",
+   "size": 8,
+   "pick": "B",
+   "family": "8F Cross-team high-event scenario",
+   "pJoint": 0.06916,
+   "pLower": 0.05603275983834474,
+   "pIndep": 0.05013708656150175,
+   "breakEven": 1685,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Robertson 2+ SOG",
+     "p": 0.80974,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "M. Celebrini 2+ SOG",
+     "p": 0.77268,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Robertson 1+ point",
+     "p": 0.66882,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Rantanen 1+ point",
+     "p": 0.66172,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "W. Johnston 2+ SOG",
+     "p": 0.7104,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Celebrini 1+ point",
+     "p": 0.66502,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Rantanen 2+ SOG",
+     "p": 0.639,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "W. Smith 2+ SOG",
+     "p": 0.60706,
+     "result": "PENDING",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020272,
+   "game": "SJS@DAL",
+   "state": "LIVE",
+   "size": 8,
+   "pick": "C",
+   "family": "8A Shot-dominant game",
+   "pJoint": 0.03558,
+   "pLower": 0.022063042672015178,
+   "pIndep": 0.03397049594875414,
+   "breakEven": 4432,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Robertson 2+ SOG",
+     "p": 0.80974,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "M. Celebrini 2+ SOG",
+     "p": 0.77268,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "W. Johnston 2+ SOG",
+     "p": 0.7104,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Rantanen 2+ SOG",
+     "p": 0.639,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "R. Hintz 2+ SOG",
+     "p": 0.62534,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "W. Smith 2+ SOG",
+     "p": 0.60706,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "T. Seguin 2+ SOG",
+     "p": 0.57196,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "K. Sherwood 2+ SOG",
+     "p": 0.5564,
+     "result": "PENDING",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020273,
+   "game": "TBL@MIN",
+   "state": "LIVE",
+   "size": 3,
+   "pick": "A",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.5039,
+   "pLower": 0.4752935463343462,
+   "pIndep": 0.503434965152112,
+   "breakEven": 110,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Brodin 1+ blocked shot",
+     "p": 0.86868,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "O. Maatta 1+ blocked shot",
+     "p": 0.76798,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "E. Cernak 1+ blocked shot",
+     "p": 0.76492,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020273,
+   "game": "TBL@MIN",
+   "state": "LIVE",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.54646,
+   "pLower": 0.5206190176595263,
+   "pIndep": 0.544868528546832,
+   "breakEven": -109,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Brodin 1+ blocked shot",
+     "p": 0.86868,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "B. Hagel 2+ SOG",
+     "p": 0.79616,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "M. Boldy 2+ SOG",
+     "p": 0.79256,
+     "result": "PENDING",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020273,
+   "game": "TBL@MIN",
+   "state": "LIVE",
+   "size": 3,
+   "pick": "C",
+   "family": "3A Shot-volume structure",
+   "pJoint": 0.4825,
+   "pLower": 0.45389354633434614,
+   "pIndep": 0.48266345141611194,
+   "breakEven": 120,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "B. Hagel 2+ SOG",
+     "p": 0.79616,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "M. Boldy 2+ SOG",
+     "p": 0.79256,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "K. Kaprizov 2+ SOG",
+     "p": 0.76294,
+     "result": "PENDING",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020273,
+   "game": "TBL@MIN",
+   "state": "LIVE",
+   "size": 5,
+   "pick": "A",
+   "family": "5E Balanced cross-team structure",
+   "pJoint": 0.32096,
+   "pLower": 0.2940850161346849,
+   "pIndep": 0.3194626197626521,
+   "breakEven": 240,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Brodin 1+ blocked shot",
+     "p": 0.86868,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "B. Hagel 2+ SOG",
+     "p": 0.79616,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "M. Boldy 2+ SOG",
+     "p": 0.79256,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "E. Cernak 1+ blocked shot",
+     "p": 0.76492,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "K. Kaprizov 2+ SOG",
+     "p": 0.76294,
+     "result": "PENDING",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020273,
+   "game": "TBL@MIN",
+   "state": "LIVE",
+   "size": 5,
+   "pick": "B",
+   "family": "5B Top-6 usage cluster",
+   "pJoint": 0.295,
+   "pLower": 0.26812501613468487,
+   "pIndep": 0.2943334603650131,
+   "breakEven": 273,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Brodin 1+ blocked shot",
+     "p": 0.86868,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "M. Boldy 2+ SOG",
+     "p": 0.79256,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "O. Maatta 1+ blocked shot",
+     "p": 0.76798,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "K. Kaprizov 2+ SOG",
+     "p": 0.76294,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "J. Eriksson Ek 2+ SOG",
+     "p": 0.73792,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020273,
+   "game": "TBL@MIN",
+   "state": "LIVE",
+   "size": 5,
+   "pick": "C",
+   "family": "5D High-tempo matchup",
+   "pJoint": 0.26768,
+   "pLower": 0.24080501613468483,
+   "pIndep": 0.26745248918897424,
+   "breakEven": 315,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "B. Hagel 2+ SOG",
+     "p": 0.79616,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "M. Boldy 2+ SOG",
+     "p": 0.79256,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "K. Kaprizov 2+ SOG",
+     "p": 0.76294,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "N. Kucherov 2+ SOG",
+     "p": 0.74688,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "J. Eriksson Ek 2+ SOG",
+     "p": 0.73792,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020273,
+   "game": "TBL@MIN",
+   "state": "LIVE",
+   "size": 8,
+   "pick": "A",
+   "family": "8D Multi-line production",
+   "pJoint": 0.13062,
+   "pLower": 0.10902744131225925,
+   "pIndep": 0.12789760086595597,
+   "breakEven": 817,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Brodin 1+ blocked shot",
+     "p": 0.86868,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "B. Hagel 2+ SOG",
+     "p": 0.79616,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "M. Boldy 2+ SOG",
+     "p": 0.79256,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "O. Maatta 1+ blocked shot",
+     "p": 0.76798,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "E. Cernak 1+ blocked shot",
+     "p": 0.76492,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "K. Kaprizov 2+ SOG",
+     "p": 0.76294,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "N. Kucherov 2+ SOG",
+     "p": 0.74688,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "R. McDonagh 1+ blocked shot",
+     "p": 0.7071,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020273,
+   "game": "TBL@MIN",
+   "state": "LIVE",
+   "size": 8,
+   "pick": "B",
+   "family": "8B Concentrated offensive production",
+   "pJoint": 0.11178,
+   "pLower": 0.07715387236078348,
+   "pIndep": 0.07201640851791725,
+   "breakEven": 1196,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "B. Hagel 2+ SOG",
+     "p": 0.79616,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "M. Boldy 2+ SOG",
+     "p": 0.79256,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "K. Kaprizov 2+ SOG",
+     "p": 0.76294,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "K. Kaprizov 1+ point",
+     "p": 0.66364,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Boldy 1+ point",
+     "p": 0.66622,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "Q. Hughes 1+ point",
+     "p": 0.63958,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "N. Kucherov 2+ SOG",
+     "p": 0.74688,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "Q. Hughes 2+ SOG",
+     "p": 0.70888,
+     "result": "PENDING",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020273,
+   "game": "TBL@MIN",
+   "state": "LIVE",
+   "size": 8,
+   "pick": "C",
+   "family": "8F Cross-team high-event scenario",
+   "pJoint": 0.1098,
+   "pLower": 0.07517387236078348,
+   "pIndep": 0.0708905795500197,
+   "breakEven": 1230,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "B. Hagel 2+ SOG",
+     "p": 0.79616,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "M. Boldy 2+ SOG",
+     "p": 0.79256,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "K. Kaprizov 2+ SOG",
+     "p": 0.76294,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "K. Kaprizov 1+ point",
+     "p": 0.66364,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Boldy 1+ point",
+     "p": 0.66622,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "Q. Hughes 1+ point",
+     "p": 0.63958,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "N. Kucherov 2+ SOG",
+     "p": 0.74688,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "N. Kucherov 1+ point",
+     "p": 0.68898,
+     "result": "PENDING",
+     "value": 0
+    }
+   ]
+  }
+ ]
+}
