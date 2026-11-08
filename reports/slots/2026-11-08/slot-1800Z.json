@@ -1,0 +1,643 @@
+{
+ "generated_at": "2026-11-08T17:02:58.432Z",
+ "model_version": "v20261106-224110",
+ "data_through": "2026-11-08 03:00:00+00:00",
+ "sims": 50000,
+ "games": [
+  {
+   "game_id": 2026020277,
+   "start_utc": "2026-11-08 18:00:00+00:00",
+   "away": "FLA",
+   "home": "BOS",
+   "sizes": {
+    "3": {
+     "evaluated": 12272,
+     "verified": 56,
+     "finalists": 56,
+     "exposureCap": null,
+     "picks": [
+      {
+       "family": "3B Team offensive scenario",
+       "legs": [
+        {
+         "text": "S. Reinhart 2+ SOG",
+         "p": 0.7444,
+         "player_id": 8477933,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Tkachuk 2+ SOG",
+         "p": 0.71582,
+         "player_id": 8479314,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Tkachuk 1+ point",
+         "p": 0.61972,
+         "player_id": 8479314,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.36336,
+       "pLower": 0.3376465681170497,
+       "pIndep": 0.33470337789996796,
+       "lift": 1.0856179650167637,
+       "breakEven": 196,
+       "mcHits": 18168,
+       "scenario": {
+        "n": 18168,
+        "shots": 56.90912593571114,
+        "goals": 7.078049317481286,
+        "ppg": 1.3958608542492295,
+        "margin": -0.76221928665786,
+        "pace": 1.0048016226636791
+       }
+      },
+      {
+       "family": "3B Team offensive scenario",
+       "legs": [
+        {
+         "text": "S. Reinhart 2+ SOG",
+         "p": 0.7444,
+         "player_id": 8477933,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Tkachuk 2+ SOG",
+         "p": 0.71582,
+         "player_id": 8479314,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Bennett 2+ SOG",
+         "p": 0.6717,
+         "player_id": 8477935,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.36268,
+       "pLower": 0.33696656811704967,
+       "pIndep": 0.358653245170528,
+       "lift": 1.0112274317427614,
+       "breakEven": 197,
+       "mcHits": 18134,
+       "scenario": {
+        "n": 18134,
+        "shots": 57.400463218264036,
+        "goals": 6.648450424616742,
+        "ppg": 1.269493768611448,
+        "margin": -0.3011470166537995,
+        "pace": 1.0066732549708115
+       }
+      },
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "D. Pastrnak 2+ SOG",
+         "p": 0.80668,
+         "player_id": 8477956,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Pastrnak 1+ point",
+         "p": 0.72986,
+         "player_id": 8477956,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "BOS +1.5 puck line",
+         "p": 0.70548,
+         "player_id": "TEAM:BOS",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.46968,
+       "pLower": 0.4285845450485358,
+       "pIndep": 0.40317468184399996,
+       "lift": 1.1649541033971296,
+       "breakEven": 133,
+       "mcHits": 23484,
+       "scenario": {
+        "n": 23484,
+        "shots": 55.47351388179186,
+        "goals": 6.670626809742804,
+        "ppg": 1.3187276443536025,
+        "margin": 1.523122125702606,
+        "pace": 1.0017785684931646
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 17378,
+     "verified": 70,
+     "finalists": 70,
+     "exposureCap": null,
+     "picks": [
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "D. Pastrnak 1+ point",
+         "p": 0.72986,
+         "player_id": 8477956,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "BOS +1.5 puck line",
+         "p": 0.70548,
+         "player_id": "TEAM:BOS",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "BOS team total over 2.5",
+         "p": 0.63774,
+         "player_id": "TEAM:BOS",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Pastrnak 2+ SOG",
+         "p": 0.80668,
+         "player_id": 8477956,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Tkachuk 2+ SOG",
+         "p": 0.80808,
+         "player_id": 8480801,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.32604,
+       "pLower": 0.2832376673702255,
+       "pIndep": 0.20485694406156815,
+       "lift": 1.5915496616117208,
+       "breakEven": 253,
+       "mcHits": 16302,
+       "scenario": {
+        "n": 16302,
+        "shots": 56.979941111520056,
+        "goals": 7.248374432584959,
+        "ppg": 1.4322169059011165,
+        "margin": 1.712489265120844,
+        "pace": 1.0052839597775562
+       }
+      },
+      {
+       "family": "5E Balanced cross-team structure",
+       "legs": [
+        {
+         "text": "B. Tkachuk 2+ SOG",
+         "p": 0.80808,
+         "player_id": 8480801,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "D. Pastrnak 2+ SOG",
+         "p": 0.80668,
+         "player_id": 8477956,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. McAvoy 1+ blocked shot",
+         "p": 0.78306,
+         "player_id": 8479325,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Pastrnak 1+ point",
+         "p": 0.72986,
+         "player_id": 8477956,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "S. Jones 1+ blocked shot",
+         "p": 0.74304,
+         "player_id": 8477495,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.28598,
+       "pLower": 0.2431776673702255,
+       "pIndep": 0.27150174046858827,
+       "lift": 1.0533265809140802,
+       "breakEven": 311,
+       "mcHits": 14299,
+       "scenario": {
+        "n": 14299,
+        "shots": 56.695922791803625,
+        "goals": 6.994265333240087,
+        "ppg": 1.372263794670956,
+        "margin": 0.5013637317294916,
+        "pace": 1.0048210995248485
+       }
+      },
+      {
+       "family": "5B Top-6 usage cluster",
+       "legs": [
+        {
+         "text": "D. Pastrnak 2+ SOG",
+         "p": 0.80668,
+         "player_id": 8477956,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. McAvoy 1+ blocked shot",
+         "p": 0.78306,
+         "player_id": 8479325,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Pastrnak 1+ point",
+         "p": 0.72986,
+         "player_id": 8477956,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "W. Borgen 1+ blocked shot",
+         "p": 0.74066,
+         "player_id": 8478840,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "N. Zadorov 1+ blocked shot",
+         "p": 0.73912,
+         "player_id": 8477507,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.2568,
+       "pLower": 0.23351209772814027,
+       "pIndep": 0.24609191582893042,
+       "lift": 1.0435125393493756,
+       "breakEven": 328,
+       "mcHits": 12840,
+       "scenario": {
+        "n": 12840,
+        "shots": 56.11253894080997,
+        "goals": 6.968847352024922,
+        "ppg": 1.3640965732087227,
+        "margin": 0.5292834890965732,
+        "pace": 1.003002244145885
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 12095,
+     "verified": 45,
+     "finalists": 45,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "D. Pastrnak 2+ SOG",
+         "p": 0.80668,
+         "player_id": 8477956,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Pastrnak 1+ point",
+         "p": 0.72986,
+         "player_id": 8477956,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "BOS +1.5 puck line",
+         "p": 0.70548,
+         "player_id": "TEAM:BOS",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "BOS team total over 2.5",
+         "p": 0.63774,
+         "player_id": "TEAM:BOS",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Tkachuk 2+ SOG",
+         "p": 0.80808,
+         "player_id": 8480801,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "C. McAvoy 1+ blocked shot",
+         "p": 0.78306,
+         "player_id": 8479325,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "S. Jones 1+ blocked shot",
+         "p": 0.74304,
+         "player_id": 8477495,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "P. Zacha 1+ point",
+         "p": 0.59542,
+         "player_id": 8478401,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.14408,
+       "pLower": 0.1001295759026227,
+       "pIndep": 0.07150261509138352,
+       "lift": 2.015031195934014,
+       "breakEven": 899,
+       "mcHits": 7204,
+       "scenario": {
+        "n": 7204,
+        "shots": 57.519988895058304,
+        "goals": 7.548722931704608,
+        "ppg": 1.544280955024986,
+        "margin": 1.8721543586896168,
+        "pace": 1.006393842982425
+       }
+      },
+      {
+       "family": "8D Multi-line production",
+       "legs": [
+        {
+         "text": "B. Tkachuk 2+ SOG",
+         "p": 0.80808,
+         "player_id": 8480801,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "D. Pastrnak 2+ SOG",
+         "p": 0.80668,
+         "player_id": 8477956,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. McAvoy 1+ blocked shot",
+         "p": 0.78306,
+         "player_id": 8479325,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Pastrnak 1+ point",
+         "p": 0.72986,
+         "player_id": 8477956,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "S. Jones 1+ blocked shot",
+         "p": 0.74304,
+         "player_id": 8477495,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Reinhart 2+ SOG",
+         "p": 0.7444,
+         "player_id": 8477933,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Ekblad 1+ blocked shot",
+         "p": 0.74014,
+         "player_id": 8477932,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Bennett 2+ SOG",
+         "p": 0.6717,
+         "player_id": 8477935,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.10926,
+       "pLower": 0.09593910383622854,
+       "pIndep": 0.10188523258269856,
+       "lift": 1.0723830846763338,
+       "breakEven": 942,
+       "mcHits": 5463,
+       "scenario": {
+        "n": 5463,
+        "shots": 58.76185246201721,
+        "goals": 7.227347611202636,
+        "ppg": 1.3979498444078344,
+        "margin": 0.32894014277869305,
+        "pace": 1.0104111383276808
+       }
+      },
+      {
+       "family": "8F Cross-team high-event scenario",
+       "legs": [
+        {
+         "text": "B. Tkachuk 2+ SOG",
+         "p": 0.80808,
+         "player_id": 8480801,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "D. Pastrnak 2+ SOG",
+         "p": 0.80668,
+         "player_id": 8477956,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Pastrnak 1+ point",
+         "p": 0.72986,
+         "player_id": 8477956,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "S. Reinhart 2+ SOG",
+         "p": 0.7444,
+         "player_id": 8477933,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Tkachuk 2+ SOG",
+         "p": 0.71582,
+         "player_id": 8479314,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Reinhart 1+ point",
+         "p": 0.62974,
+         "player_id": 8477933,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Tkachuk 1+ point",
+         "p": 0.61972,
+         "player_id": 8479314,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "P. Zacha 1+ point",
+         "p": 0.59542,
+         "player_id": 8478401,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.08908,
+       "pLower": 0.07575910383622855,
+       "pIndep": 0.058063220209543846,
+       "lift": 1.5341897965445246,
+       "breakEven": 1220,
+       "mcHits": 4454,
+       "scenario": {
+        "n": 4454,
+        "shots": 60.07386618769645,
+        "goals": 8.603726986977998,
+        "ppg": 1.7815446789402785,
+        "margin": -0.13852716659182757,
+        "pace": 1.0127954517826137
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
