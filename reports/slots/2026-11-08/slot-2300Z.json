@@ -1,0 +1,643 @@
+{
+ "generated_at": "2026-11-08T22:03:15.232Z",
+ "model_version": "v20261106-224110",
+ "data_through": "2026-11-08 18:00:00+00:00",
+ "sims": 50000,
+ "games": [
+  {
+   "game_id": 2026020280,
+   "start_utc": "2026-11-08 23:00:00+00:00",
+   "away": "TBL",
+   "home": "WPG",
+   "sizes": {
+    "3": {
+     "evaluated": 12300,
+     "verified": 56,
+     "finalists": 56,
+     "exposureCap": null,
+     "picks": [
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "M. Ferraro 1+ blocked shot",
+         "p": 0.84356,
+         "player_id": 8479983,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Samberg 1+ blocked shot",
+         "p": 0.83772,
+         "player_id": 8480049,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "TBL +1.5 puck line",
+         "p": 0.77812,
+         "player_id": "TEAM:TBL",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.56284,
+       "pLower": 0.5355736098849943,
+       "pIndep": 0.5623117264402561,
+       "lift": 1.0009394674428866,
+       "breakEven": -115,
+       "mcHits": 28142,
+       "scenario": {
+        "n": 28142,
+        "shots": 54.43955653471679,
+        "goals": 6.1326842441901785,
+        "ppg": 1.0712813588231114,
+        "margin": -1.5850330466917775,
+        "pace": 1.000008460652912
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "M. Ferraro 1+ blocked shot",
+         "p": 0.84356,
+         "player_id": 8479983,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Samberg 1+ blocked shot",
+         "p": 0.83772,
+         "player_id": 8480049,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Hagel 2+ SOG",
+         "p": 0.79642,
+         "player_id": 8479542,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.5756,
+       "pLower": 0.5483336098849942,
+       "pIndep": 0.5733190117530721,
+       "lift": 1.0039785672551713,
+       "breakEven": -121,
+       "mcHits": 28780,
+       "scenario": {
+        "n": 28780,
+        "shots": 55.33373870743572,
+        "goals": 6.296594857539958,
+        "ppg": 1.114141765114663,
+        "margin": -0.6763029881862405,
+        "pace": 1.0018864922634507
+       }
+      },
+      {
+       "family": "3A Shot-volume structure",
+       "legs": [
+        {
+         "text": "K. Connor 2+ SOG",
+         "p": 0.79992,
+         "player_id": 8478398,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Hagel 2+ SOG",
+         "p": 0.79642,
+         "player_id": 8479542,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "N. Kucherov 2+ SOG",
+         "p": 0.74774,
+         "player_id": 8476453,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.47566,
+       "pLower": 0.43456454504853587,
+       "pIndep": 0.472056411370752,
+       "lift": 1.0076338093127133,
+       "breakEven": 130,
+       "mcHits": 23783,
+       "scenario": {
+        "n": 23783,
+        "shots": 56.92801580961191,
+        "goals": 6.476222511878232,
+        "ppg": 1.1518731867300172,
+        "margin": -0.695707017617626,
+        "pace": 1.00551050159331
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 16540,
+     "verified": 70,
+     "finalists": 70,
+     "exposureCap": 4,
+     "picks": [
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "M. Ferraro 1+ blocked shot",
+         "p": 0.84356,
+         "player_id": 8479983,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Samberg 1+ blocked shot",
+         "p": 0.83772,
+         "player_id": 8480049,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "TBL +1.5 puck line",
+         "p": 0.77812,
+         "player_id": "TEAM:TBL",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "TBL team total over 2.5",
+         "p": 0.68106,
+         "player_id": "TEAM:TBL",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "N. Kucherov 1+ point",
+         "p": 0.69386,
+         "player_id": 8476453,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.36784,
+       "pLower": 0.342411997284063,
+       "pIndep": 0.26181027839579407,
+       "lift": 1.4049868563369179,
+       "breakEven": 192,
+       "mcHits": 18392,
+       "scenario": {
+        "n": 18392,
+        "shots": 55.72428229665072,
+        "goals": 7.099336668116573,
+        "ppg": 1.2706611570247934,
+        "margin": -2.1055350152240107,
+        "pace": 1.0028054747356183
+       }
+      },
+      {
+       "family": "5E Balanced cross-team structure",
+       "legs": [
+        {
+         "text": "M. Ferraro 1+ blocked shot",
+         "p": 0.84356,
+         "player_id": 8479983,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Samberg 1+ blocked shot",
+         "p": 0.83772,
+         "player_id": 8480049,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "K. Connor 2+ SOG",
+         "p": 0.79992,
+         "player_id": 8478398,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Hagel 2+ SOG",
+         "p": 0.79642,
+         "player_id": 8479542,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "E. Cernak 1+ blocked shot",
+         "p": 0.78946,
+         "player_id": 8478416,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.3621,
+       "pLower": 0.336671997284063,
+       "pIndep": 0.3599553740299614,
+       "lift": 1.0059580329251039,
+       "breakEven": 197,
+       "mcHits": 18105,
+       "scenario": {
+        "n": 18105,
+        "shots": 56.24562275614471,
+        "goals": 6.387738193869097,
+        "ppg": 1.1315106324219828,
+        "margin": -0.5778514222590445,
+        "pace": 1.003972520432529
+       }
+      },
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "N. Kucherov 2+ SOG",
+         "p": 0.74774,
+         "player_id": 8476453,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "N. Kucherov 1+ point",
+         "p": 0.69386,
+         "player_id": 8476453,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Guentzel 2+ SOG",
+         "p": 0.72492,
+         "player_id": 8477404,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Guentzel 1+ point",
+         "p": 0.6338,
+         "player_id": 8477404,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "B. Hagel 1+ point",
+         "p": 0.63194,
+         "player_id": 8479542,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.21138,
+       "pLower": 0.1880920977281403,
+       "pIndep": 0.1477087957219939,
+       "lift": 1.4310589898643755,
+       "breakEven": 432,
+       "mcHits": 10569,
+       "scenario": {
+        "n": 10569,
+        "shots": 57.75588986659098,
+        "goals": 7.676979846721544,
+        "ppg": 1.4413851830826,
+        "margin": -2.0247894786640175,
+        "pace": 1.008081276433246
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 15480,
+     "verified": 70,
+     "finalists": 70,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "M. Ferraro 1+ blocked shot",
+         "p": 0.84356,
+         "player_id": 8479983,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Samberg 1+ blocked shot",
+         "p": 0.83772,
+         "player_id": 8480049,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "TBL +1.5 puck line",
+         "p": 0.77812,
+         "player_id": "TEAM:TBL",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "TBL team total over 2.5",
+         "p": 0.68106,
+         "player_id": "TEAM:TBL",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "N. Kucherov 1+ point",
+         "p": 0.69386,
+         "player_id": 8476453,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "B. Hagel 2+ SOG",
+         "p": 0.79642,
+         "player_id": 8479542,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "N. Kucherov 2+ SOG",
+         "p": 0.74774,
+         "player_id": 8476453,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "K. Connor 2+ SOG",
+         "p": 0.79992,
+         "player_id": 8478398,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.1912,
+       "pLower": 0.1472495759026227,
+       "pIndep": 0.12358922047949605,
+       "lift": 1.5470604900507554,
+       "breakEven": 579,
+       "mcHits": 9560,
+       "scenario": {
+        "n": 9560,
+        "shots": 57.9173640167364,
+        "goals": 7.271757322175732,
+        "ppg": 1.3185146443514644,
+        "margin": -2.1405857740585774,
+        "pace": 1.0075678519998135
+       }
+      },
+      {
+       "family": "8D Multi-line production",
+       "legs": [
+        {
+         "text": "M. Ferraro 1+ blocked shot",
+         "p": 0.84356,
+         "player_id": 8479983,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Samberg 1+ blocked shot",
+         "p": 0.83772,
+         "player_id": 8480049,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "K. Connor 2+ SOG",
+         "p": 0.79992,
+         "player_id": 8478398,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Hagel 2+ SOG",
+         "p": 0.79642,
+         "player_id": 8479542,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "E. Cernak 1+ blocked shot",
+         "p": 0.78946,
+         "player_id": 8478416,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "N. Pionk 1+ blocked shot",
+         "p": 0.78382,
+         "player_id": 8480145,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "N. Kucherov 2+ SOG",
+         "p": 0.74774,
+         "player_id": 8476453,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "R. McDonagh 1+ blocked shot",
+         "p": 0.69968,
+         "player_id": 8474151,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.14946,
+       "pLower": 0.1055095759026227,
+       "pIndep": 0.14794530983128507,
+       "lift": 1.010238176326389,
+       "breakEven": 848,
+       "mcHits": 7473,
+       "scenario": {
+        "n": 7473,
+        "shots": 57.529238592265486,
+        "goals": 6.548775592131674,
+        "ppg": 1.173558142646862,
+        "margin": -0.7010571390338552,
+        "pace": 1.0073073509864725
+       }
+      },
+      {
+       "family": "8B Concentrated offensive production",
+       "legs": [
+        {
+         "text": "K. Connor 2+ SOG",
+         "p": 0.79992,
+         "player_id": 8478398,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Hagel 2+ SOG",
+         "p": 0.79642,
+         "player_id": 8479542,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "N. Kucherov 2+ SOG",
+         "p": 0.74774,
+         "player_id": 8476453,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "N. Kucherov 1+ point",
+         "p": 0.69386,
+         "player_id": 8476453,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Guentzel 2+ SOG",
+         "p": 0.72492,
+         "player_id": 8477404,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Guentzel 1+ point",
+         "p": 0.6338,
+         "player_id": 8477404,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "B. Hagel 1+ point",
+         "p": 0.63194,
+         "player_id": 8479542,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "K. Connor 1+ point",
+         "p": 0.66818,
+         "player_id": 8478398,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.09962,
+       "pLower": 0.08629910383622855,
+       "pIndep": 0.06284544943939073,
+       "lift": 1.5851585260134913,
+       "breakEven": 1059,
+       "mcHits": 4981,
+       "scenario": {
+        "n": 4981,
+        "shots": 59.74503111824935,
+        "goals": 8.426219634611524,
+        "ppg": 1.6151375225858262,
+        "margin": -1.4420799036338086,
+        "pace": 1.011638489479857
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,82 +1,82 @@
 # Parlay audit — slot-1800Z.json
-Audited 2026-11-07T21:03:18.318362+00:00 against official NHL data · model v20261106-224110
+Audited 2026-11-08T22:03:31.333622+00:00 against official NHL data · model v20261106-224110
 
-**Parlays:** 2 won · 7 lost · 0 pending · 0 void/reprice (of 9)
+**Parlays:** 4 won · 5 lost · 0 pending · 0 void/reprice (of 9)
 
 | Size | Settled | Won | Expected wins (model) | Hit rate | Mean model P | Brier joint | Brier indep |
 |---|---|---|---|---|---|---|---|
-| 3 | 3 | 1 | 1.35 | 33% | 44.9% | 0.292 | 0.283 |
-| 5 | 3 | 1 | 1.36 | 33% | 45.4% | 0.186 | 0.180 |
-| 8 | 3 | 0 | 0.45 | 0% | 14.9% | 0.042 | 0.042 |
+| 3 | 3 | 3 | 1.20 | 100% | 39.9% | 0.364 | 0.403 |
+| 5 | 3 | 1 | 0.87 | 33% | 29.0% | 0.201 | 0.256 |
+| 8 | 3 | 0 | 0.34 | 0% | 11.4% | 0.014 | 0.006 |
 
-**Settled legs:** 39/48 won vs 36.8 expected by the model.
+**Settled legs:** 41/48 won vs 35.3 expected by the model.
 
 _Small samples: a single night cannot validate or refute the model — compare against the 24,535-combination historical validation._
 
-## STL @ NSH — STL 1 @ NSH 3 · FINAL (REG)
-**3-leg A · 3D Cross-team scenario** — model 66.6% · break-even -178 → **LOST**
-- ✅ J. Neighbours 1+ hit (model 87%) — actual: 5
-- ✅ A. Toropchenko 1+ hit (model 87%) — actual: 3
-- ❌ J. Struble 1+ hit (model 87%) — actual: 0
+## FLA @ BOS — FLA 1 @ BOS 4 · OFF (REG)
+**3-leg A · 3B Team offensive scenario** — model 36.3% · break-even +196 → **WON**
+- ✅ S. Reinhart 2+ SOG (model 74%) — actual: 3
+- ✅ M. Tkachuk 2+ SOG (model 72%) — actual: 5
+- ✅ M. Tkachuk 1+ point (model 62%) — actual: 1
 
-**3-leg B · 3A Shot-volume structure** — model 40.4% · break-even +167 → **WON**
-- ✅ F. Forsberg 2+ SOG (model 76%) — actual: 3
-- ✅ R. Josi 2+ SOG (model 73%) — actual: 2
-- ✅ D. Holloway 2+ SOG (model 72%) — actual: 2
+**3-leg B · 3B Team offensive scenario** — model 36.3% · break-even +197 → **WON**
+- ✅ S. Reinhart 2+ SOG (model 74%) — actual: 3
+- ✅ M. Tkachuk 2+ SOG (model 72%) — actual: 5
+- ✅ S. Bennett 2+ SOG (model 67%) — actual: 2
 
-**3-leg C · 3C Goalie workload structure** — model 27.8% · break-even +297 → **LOST**
-- ✅ S. Stamkos 2+ SOG (model 72%) — actual: 5
-- ✅ J. Hofer 23+ saves (model 54%) — actual: 26
-- ❌ R. O'Reilly 2+ SOG (model 58%) — actual: 1
+**3-leg C · 3E Game script** — model 47.0% · break-even +133 → **WON**
+- ✅ D. Pastrnak 2+ SOG (model 81%) — actual: 3
+- ✅ D. Pastrnak 1+ point (model 73%) — actual: 2
+- ✅ BOS +1.5 puck line (model 71%) — actual: 3
 
-**5-leg A · 5E Balanced cross-team structure** — model 58.3% · break-even -124 → **LOST**
-- ✅ A. Edstrom 1+ hit (model 94%) — actual: 4
-- ✅ R. Johnston 1+ hit (model 93%) — actual: 2
-- ✅ J. Neighbours 1+ hit (model 87%) — actual: 5
-- ✅ A. Toropchenko 1+ hit (model 87%) — actual: 3
-- ❌ J. Struble 1+ hit (model 87%) — actual: 0
+**5-leg A · 5F Game script** — model 32.6% · break-even +253 → **WON**
+- ✅ D. Pastrnak 1+ point (model 73%) — actual: 2
+- ✅ BOS +1.5 puck line (model 71%) — actual: 3
+- ✅ BOS team total over 2.5 (model 64%) — actual: 4
+- ✅ D. Pastrnak 2+ SOG (model 81%) — actual: 3
+- ✅ B. Tkachuk 2+ SOG (model 81%) — actual: 8
 
-**5-leg B · 5A Five-on-five offensive environment** — model 20.2% · break-even +463 → **LOST**
-- ✅ F. Forsberg 2+ SOG (model 76%) — actual: 3
-- ✅ R. Josi 2+ SOG (model 73%) — actual: 2
-- ✅ S. Stamkos 2+ SOG (model 72%) — actual: 5
-- ❌ F. Forsberg 1+ point (model 61%) — actual: 0
-- ✅ S. Stamkos 1+ point (model 59%) — actual: 2
+**5-leg B · 5E Balanced cross-team structure** — model 28.6% · break-even +311 → **LOST**
+- ✅ B. Tkachuk 2+ SOG (model 81%) — actual: 8
+- ✅ D. Pastrnak 2+ SOG (model 81%) — actual: 3
+- ❌ C. McAvoy 1+ blocked shot (model 78%) — actual: 0
+- ✅ D. Pastrnak 1+ point (model 73%) — actual: 2
+- ✅ S. Jones 1+ blocked shot (model 74%) — actual: 2
 
-**5-leg C · 5E Balanced cross-team structure** — model 57.8% · break-even -122 → **WON**
-- ✅ A. Edstrom 1+ hit (model 94%) — actual: 4
-- ✅ R. Johnston 1+ hit (model 93%) — actual: 2
-- ✅ J. Neighbours 1+ hit (model 87%) — actual: 5
-- ✅ A. Toropchenko 1+ hit (model 87%) — actual: 3
-- ✅ R. Schaefer 1+ hit (model 86%) — actual: 3
+**5-leg C · 5B Top-6 usage cluster** — model 25.7% · break-even +328 → **LOST**
+- ✅ D. Pastrnak 2+ SOG (model 81%) — actual: 3
+- ❌ C. McAvoy 1+ blocked shot (model 78%) — actual: 0
+- ✅ D. Pastrnak 1+ point (model 73%) — actual: 2
+- ✅ W. Borgen 1+ blocked shot (model 74%) — actual: 1
+- ❌ N. Zadorov 1+ blocked shot (model 74%) — actual: 0
 
-**8-leg A · 8D Multi-line production** — model 34.9% · break-even +206 → **LOST**
-- ✅ A. Edstrom 1+ hit (model 94%) — actual: 4
-- ✅ R. Johnston 1+ hit (model 93%) — actual: 2
-- ✅ J. Neighbours 1+ hit (model 87%) — actual: 5
-- ✅ A. Toropchenko 1+ hit (model 87%) — actual: 3
-- ❌ J. Struble 1+ hit (model 87%) — actual: 0
-- ✅ R. Schaefer 1+ hit (model 86%) — actual: 3
-- ✅ R. Colton 1+ hit (model 85%) — actual: 1
-- ✅ C. Parayko 1+ blocked shot (model 82%) — actual: 2
+**8-leg A · 8G Game script** — model 14.4% · break-even +899 → **LOST**
+- ✅ D. Pastrnak 2+ SOG (model 81%) — actual: 3
+- ✅ D. Pastrnak 1+ point (model 73%) — actual: 2
+- ✅ BOS +1.5 puck line (model 71%) — actual: 3
+- ✅ BOS team total over 2.5 (model 64%) — actual: 4
+- ✅ B. Tkachuk 2+ SOG (model 81%) — actual: 8
+- ❌ C. McAvoy 1+ blocked shot (model 78%) — actual: 0
+- ✅ S. Jones 1+ blocked shot (model 74%) — actual: 2
+- ✅ P. Zacha 1+ point (model 60%) — actual: 2
 
-**8-leg B · 8F Cross-team high-event scenario** — model 6.0% · break-even +2054 → **LOST**
-- ✅ F. Forsberg 2+ SOG (model 76%) — actual: 3
-- ✅ R. Josi 2+ SOG (model 73%) — actual: 2
-- ✅ S. Stamkos 2+ SOG (model 72%) — actual: 5
-- ❌ F. Forsberg 1+ point (model 61%) — actual: 0
-- ✅ S. Stamkos 1+ point (model 59%) — actual: 2
-- ✅ D. Holloway 2+ SOG (model 72%) — actual: 2
-- ❌ M. McTavish 2+ SOG (model 67%) — actual: 0
-- ✅ J. Snuggerud 2+ SOG (model 63%) — actual: 5
+**8-leg B · 8D Multi-line production** — model 10.9% · break-even +942 → **LOST**
+- ✅ B. Tkachuk 2+ SOG (model 81%) — actual: 8
+- ✅ D. Pastrnak 2+ SOG (model 81%) — actual: 3
+- ❌ C. McAvoy 1+ blocked shot (model 78%) — actual: 0
+- ✅ D. Pastrnak 1+ point (model 73%) — actual: 2
+- ✅ S. Jones 1+ blocked shot (model 74%) — actual: 2
+- ✅ S. Reinhart 2+ SOG (model 74%) — actual: 3
+- ❌ A. Ekblad 1+ blocked shot (model 74%) — actual: 0
+- ✅ S. Bennett 2+ SOG (model 67%) — actual: 2
 
-**8-leg C · 8A Shot-dominant game** — model 3.8% · break-even +3929 → **LOST**
-- ✅ F. Forsberg 2+ SOG (model 76%) — actual: 3
-- ✅ R. Josi 2+ SOG (model 73%) — actual: 2
-- ✅ S. Stamkos 2+ SOG (model 72%) — actual: 5
-- ✅ D. Holloway 2+ SOG (model 72%) — actual: 2
-- ❌ M. McTavish 2+ SOG (model 67%) — actual: 0
-- ✅ J. Snuggerud 2+ SOG (model 63%) — actual: 5
-- ❌ R. O'Reilly 2+ SOG (model 58%) — actual: 1
-- ✅ M. Bourque 2+ SOG (model 56%) — actual: 2
+**8-leg C · 8F Cross-team high-event scenario** — model 8.9% · break-even +1220 → **LOST**
+- ✅ B. Tkachuk 2+ SOG (model 81%) — actual: 8
+- ✅ D. Pastrnak 2+ SOG (model 81%) — actual: 3
+- ✅ D. Pastrnak 1+ point (model 73%) — actual: 2
+- ✅ S. Reinhart 2+ SOG (model 74%) — actual: 3
+- ✅ M. Tkachuk 2+ SOG (model 72%) — actual: 5
+- ❌ S. Reinhart 1+ point (model 63%) — actual: 0
+- ✅ M. Tkachuk 1+ point (model 62%) — actual: 1
+- ✅ P. Zacha 1+ point (model 60%) — actual: 2
 

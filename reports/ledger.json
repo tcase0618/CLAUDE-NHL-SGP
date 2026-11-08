@@ -1,81 +1,81 @@
 {
- "updated_at": "2026-11-08T17:03:13.527129+00:00",
+ "updated_at": "2026-11-08T22:03:31.240715+00:00",
  "nights": [
   "2026-11-07",
   "2026-11-08"
  ],
  "all": {
-  "n": 123,
-  "won": 46,
-  "lost": 77,
-  "win_pct": 0.37398373983739835,
-  "expected": 38.192974240011424,
-  "brier_joint": 0.23345608733106799,
-  "brier_indep": 0.23758968337879097,
-  "fair_pnl_2": 126.30419316222296
+  "n": 132,
+  "won": 50,
+  "lost": 82,
+  "win_pct": 0.3787878787878788,
+  "expected": 40.59993424001143,
+  "brier_joint": 0.23068492604940427,
+  "brier_indep": 0.23650809271921727,
+  "fair_pnl_2": 129.71531450667598
  },
  "by_size": {
   "3": {
-   "n": 41,
-   "won": 20,
+   "n": 44,
+   "won": 23,
    "lost": 21,
-   "win_pct": 0.4878048780487805,
-   "expected": 20.325384970090628,
-   "brier_joint": 0.25518584856534304,
-   "brier_indep": 0.2565667474081994,
-   "fair_pnl_2": -0.5286715496578038
+   "win_pct": 0.5227272727272727,
+   "expected": 21.52110497009063,
+   "brier_joint": 0.2626215083086151,
+   "brier_indep": 0.266576871805368,
+   "fair_pnl_2": 8.748233134262765
   },
   "5": {
-   "n": 42,
-   "won": 17,
-   "lost": 25,
-   "win_pct": 0.40476190476190477,
-   "expected": 12.828899999999999,
-   "brier_joint": 0.25853490482857144,
-   "brier_indep": 0.2661549653026246,
-   "fair_pnl_2": 36.33717428851366
+   "n": 45,
+   "won": 18,
+   "lost": 27,
+   "win_pct": 0.4,
+   "expected": 13.69772,
+   "brier_joint": 0.25467597521777774,
+   "brier_indep": 0.2654452321829149,
+   "fair_pnl_2": 36.47139094904611
   },
   "8": {
-   "n": 40,
+   "n": 43,
    "won": 9,
-   "lost": 31,
-   "win_pct": 0.225,
-   "expected": 5.038689269920798,
-   "brier_joint": 0.18485032369355753,
-   "brier_indep": 0.18814464672862202,
-   "fair_pnl_2": 90.4956904233671
+   "lost": 34,
+   "win_pct": 0.20930232558139536,
+   "expected": 5.381109269920798,
+   "brier_joint": 0.17289872065447212,
+   "brier_indep": 0.1754569867737051,
+   "fair_pnl_2": 84.4956904233671
   }
  },
  "voids": 2,
  "legs": {
-  "n": 241,
-  "won": 189,
-  "expected": 175.98226353129914
+  "n": 257,
+  "won": 201,
+  "expected": 187.39292353129912
  },
  "bands": [
   {
    "band": "0\u201310%",
-   "n": 20,
-   "pred": 0.061527,
-   "actual": 0.2
+   "n": 21,
+   "pred": 0.06283904761904761,
+   "actual": 0.19047619047619047
   },
   {
    "band": "10\u201325%",
-   "n": 31,
-   "pred": 0.17210287967486446,
-   "actual": 0.3548387096774194
+   "n": 33,
+   "pred": 0.16934937181578175,
+   "actual": 0.3333333333333333
   },
   {
    "band": "25\u201340%",
-   "n": 34,
-   "pred": 0.3275153639901469,
-   "actual": 0.3235294117647059
+   "n": 39,
+   "pred": 0.3264200609144871,
+   "actual": 0.358974358974359
   },
   {
    "band": "40\u201360%",
-   "n": 33,
-   "pred": 0.5132370483159282,
-   "actual": 0.5757575757575758
+   "n": 34,
+   "pred": 0.5119559586595774,
+   "actual": 0.5882352941176471
   },
   {
    "band": "60\u2013100%",
@@ -1143,7 +1143,7 @@
      "text": "B. Tkachuk 1+ hit",
      "p": 0.94592,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "G. Hathaway 1+ hit",
@@ -6066,6 +6066,438 @@
      "p": 0.55648,
      "result": "WON",
      "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "date": "2026-11-08",
+   "source": "reports/slots/2026-11-08/slot-1800Z.json",
+   "size": 3,
+   "pick": "A",
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.36336,
+   "pIndep": 0.33470337789996796,
+   "pLower": 0.3376465681170497,
+   "breakEven": 196,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.7444,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Tkachuk 2+ SOG",
+     "p": 0.71582,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "M. Tkachuk 1+ point",
+     "p": 0.61972,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "date": "2026-11-08",
+   "source": "reports/slots/2026-11-08/slot-1800Z.json",
+   "size": 3,
+   "pick": "B",
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.36268,
+   "pIndep": 0.358653245170528,
+   "pLower": 0.33696656811704967,
+   "breakEven": 197,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.7444,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Tkachuk 2+ SOG",
+     "p": 0.71582,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "S. Bennett 2+ SOG",
+     "p": 0.6717,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "date": "2026-11-08",
+   "source": "reports/slots/2026-11-08/slot-1800Z.json",
+   "size": 3,
+   "pick": "C",
+   "family": "3E Game script",
+   "pJoint": 0.46968,
+   "pIndep": 0.40317468184399996,
+   "pLower": 0.4285845450485358,
+   "breakEven": 133,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "BOS +1.5 puck line",
+     "p": 0.70548,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "date": "2026-11-08",
+   "source": "reports/slots/2026-11-08/slot-1800Z.json",
+   "size": 5,
+   "pick": "A",
+   "family": "5F Game script",
+   "pJoint": 0.32604,
+   "pIndep": 0.20485694406156815,
+   "pLower": 0.2832376673702255,
+   "breakEven": 253,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "BOS +1.5 puck line",
+     "p": 0.70548,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "BOS team total over 2.5",
+     "p": 0.63774,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80808,
+     "result": "WON",
+     "value": 8
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "date": "2026-11-08",
+   "source": "reports/slots/2026-11-08/slot-1800Z.json",
+   "size": 5,
+   "pick": "B",
+   "family": "5E Balanced cross-team structure",
+   "pJoint": 0.28598,
+   "pIndep": 0.27150174046858827,
+   "pLower": 0.2431776673702255,
+   "breakEven": 311,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80808,
+     "result": "WON",
+     "value": 8
+    },
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "C. McAvoy 1+ blocked shot",
+     "p": 0.78306,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Jones 1+ blocked shot",
+     "p": 0.74304,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "date": "2026-11-08",
+   "source": "reports/slots/2026-11-08/slot-1800Z.json",
+   "size": 5,
+   "pick": "C",
+   "family": "5B Top-6 usage cluster",
+   "pJoint": 0.2568,
+   "pIndep": 0.24609191582893042,
+   "pLower": 0.23351209772814027,
+   "breakEven": 328,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "C. McAvoy 1+ blocked shot",
+     "p": 0.78306,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "W. Borgen 1+ blocked shot",
+     "p": 0.74066,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "N. Zadorov 1+ blocked shot",
+     "p": 0.73912,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "date": "2026-11-08",
+   "source": "reports/slots/2026-11-08/slot-1800Z.json",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.14408,
+   "pIndep": 0.07150261509138352,
+   "pLower": 0.1001295759026227,
+   "breakEven": 899,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "BOS +1.5 puck line",
+     "p": 0.70548,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "BOS team total over 2.5",
+     "p": 0.63774,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80808,
+     "result": "WON",
+     "value": 8
+    },
+    {
+     "text": "C. McAvoy 1+ blocked shot",
+     "p": 0.78306,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "S. Jones 1+ blocked shot",
+     "p": 0.74304,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "P. Zacha 1+ point",
+     "p": 0.59542,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "date": "2026-11-08",
+   "source": "reports/slots/2026-11-08/slot-1800Z.json",
+   "size": 8,
+   "pick": "B",
+   "family": "8D Multi-line production",
+   "pJoint": 0.10926,
+   "pIndep": 0.10188523258269856,
+   "pLower": 0.09593910383622854,
+   "breakEven": 942,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80808,
+     "result": "WON",
+     "value": 8
+    },
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "C. McAvoy 1+ blocked shot",
+     "p": 0.78306,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Jones 1+ blocked shot",
+     "p": 0.74304,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.7444,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "A. Ekblad 1+ blocked shot",
+     "p": 0.74014,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "S. Bennett 2+ SOG",
+     "p": 0.6717,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "date": "2026-11-08",
+   "source": "reports/slots/2026-11-08/slot-1800Z.json",
+   "size": 8,
+   "pick": "C",
+   "family": "8F Cross-team high-event scenario",
+   "pJoint": 0.08908,
+   "pIndep": 0.058063220209543846,
+   "pLower": 0.07575910383622855,
+   "breakEven": 1220,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80808,
+     "result": "WON",
+     "value": 8
+    },
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.7444,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Tkachuk 2+ SOG",
+     "p": 0.71582,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "S. Reinhart 1+ point",
+     "p": 0.62974,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "M. Tkachuk 1+ point",
+     "p": 0.61972,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "P. Zacha 1+ point",
+     "p": 0.59542,
+     "result": "WON",
+     "value": 2
     }
    ]
   }

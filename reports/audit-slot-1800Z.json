@@ -1,495 +1,495 @@
 {
- "audited_at": "2026-11-07T21:03:18.318362+00:00",
+ "audited_at": "2026-11-08T22:03:31.333622+00:00",
  "source": "slot-1800Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 2,
-  "LOST": 7,
+  "WON": 4,
+  "LOST": 5,
   "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
   "3": {
    "n": 3,
-   "won": 1,
-   "expected_wins": 1.3476023756649964,
-   "hit_rate": 0.3333333333333333,
-   "mean_p": 0.4492007918883321,
-   "brier": 0.2920294187602957,
-   "logloss": 0.7762466712582835
+   "won": 3,
+   "expected_wins": 1.1957200000000001,
+   "hit_rate": 1.0,
+   "mean_p": 0.3985733333333334,
+   "brier": 0.36424219146666664,
+   "logloss": 0.9274330813517923
   },
   "5": {
    "n": 3,
    "won": 1,
-   "expected_wins": 1.36208,
+   "expected_wins": 0.8688199999999999,
    "hit_rate": 0.3333333333333333,
-   "mean_p": 0.45402666666666663,
-   "brier": 0.18601517466666664,
-   "logloss": 0.5489271925843539
+   "mean_p": 0.2896066666666666,
+   "brier": 0.20065096066666666,
+   "logloss": 0.5847898676895886
   },
   "8": {
    "n": 3,
    "won": 0,
-   "expected_wins": 0.44673999999999997,
+   "expected_wins": 0.34242,
    "hit_rate": 0.0,
-   "mean_p": 0.14891333333333331,
-   "brier": 0.04223556493333333,
-   "logloss": 0.17650054683742658
+   "mean_p": 0.11414,
+   "brier": 0.01354401346666667,
+   "logloss": 0.12152708912366073
   }
  },
  "by_size_independence": {
   "3": {
    "n": 3,
-   "won": 1,
-   "expected_wins": 1.288071334965525,
-   "hit_rate": 0.3333333333333333,
-   "mean_p": 0.42935711165517504,
-   "brier": 0.28258012372475716,
-   "logloss": 0.7508897729202477
+   "won": 3,
+   "expected_wins": 1.096531304914496,
+   "hit_rate": 1.0,
+   "mean_p": 0.36551043497149865,
+   "brier": 0.40338190523333944,
+   "logloss": 1.0094317279645086
   },
   "5": {
    "n": 3,
    "won": 1,
-   "expected_wins": 1.3120164787884383,
+   "expected_wins": 0.7224506003590868,
    "hit_rate": 0.3333333333333333,
-   "mean_p": 0.4373388262628128,
-   "brier": 0.17974638512362062,
-   "logloss": 0.5279913571681439
+   "mean_p": 0.24081686678636227,
+   "brier": 0.2555089685069781,
+   "logloss": 0.7282327474796788
   },
   "8": {
    "n": 3,
    "won": 0,
-   "expected_wins": 0.4330269704623051,
+   "expected_wins": 0.23145106788362593,
    "hit_rate": 0.0,
-   "mean_p": 0.14434232348743503,
-   "brier": 0.04189036658212212,
-   "logloss": 0.17178508269404105
+   "mean_p": 0.07715035596120864,
+   "brier": 0.006288187374813036,
+   "logloss": 0.08048741651841364
   }
  },
  "legs": {
   "n": 48,
-  "won": 39,
-  "expected": 36.79373450641506
+  "won": 41,
+  "expected": 35.29786
  },
  "parlays": [
   {
-   "game_id": 2026020266,
-   "game": "STL@NSH",
-   "state": "FINAL",
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
-   "family": "3D Cross-team scenario",
-   "pJoint": 0.66556,
-   "pLower": 0.6397190176595264,
-   "pIndep": 0.6646557283882879,
-   "breakEven": -178,
-   "status": "LOST",
-   "legs": [
-    {
-     "text": "J. Neighbours 1+ hit",
-     "p": 0.87262,
-     "result": "WON",
-     "value": 5
-    },
-    {
-     "text": "A. Toropchenko 1+ hit",
-     "p": 0.86684,
-     "result": "WON",
-     "value": 3
-    },
-    {
-     "text": "J. Struble 1+ hit",
-     "p": 0.8662,
-     "result": "LOST",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "game_id": 2026020266,
-   "game": "STL@NSH",
-   "state": "FINAL",
-   "size": 3,
-   "pick": "B",
-   "family": "3A Shot-volume structure",
-   "pJoint": 0.40366,
-   "pLower": 0.3750683135847861,
-   "pIndep": 0.40240032033105605,
-   "breakEven": 167,
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.36336,
+   "pLower": 0.3376465681170497,
+   "pIndep": 0.33470337789996796,
+   "breakEven": 196,
    "status": "WON",
    "legs": [
     {
-     "text": "F. Forsberg 2+ SOG",
-     "p": 0.75704,
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.7444,
      "result": "WON",
      "value": 3
     },
     {
-     "text": "R. Josi 2+ SOG",
-     "p": 0.73182,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "D. Holloway 2+ SOG",
-     "p": 0.71842,
-     "result": "WON",
-     "value": 2
-    }
-   ]
-  },
-  {
-   "game_id": 2026020266,
-   "game": "STL@NSH",
-   "state": "FINAL",
-   "size": 3,
-   "pick": "C",
-   "family": "3C Goalie workload structure",
-   "pJoint": 0.27838237566499635,
-   "pLower": 0.25189119538486787,
-   "pIndep": 0.22101528624618114,
-   "breakEven": 297,
-   "status": "LOST",
-   "legs": [
-    {
-     "text": "S. Stamkos 2+ SOG",
-     "p": 0.71986,
+     "text": "M. Tkachuk 2+ SOG",
+     "p": 0.71582,
      "result": "WON",
      "value": 5
     },
     {
-     "text": "J. Hofer 23+ saves",
-     "p": 0.536594506415061,
+     "text": "M. Tkachuk 1+ point",
+     "p": 0.61972,
      "result": "WON",
-     "value": 26
-    },
-    {
-     "text": "R. O'Reilly 2+ SOG",
-     "p": 0.57926,
-     "result": "LOST",
      "value": 1
     }
    ]
   },
   {
-   "game_id": 2026020266,
-   "game": "STL@NSH",
-   "state": "FINAL",
-   "size": 5,
-   "pick": "A",
-   "family": "5E Balanced cross-team structure",
-   "pJoint": 0.58256,
-   "pLower": 0.554061663648623,
-   "pIndep": 0.5816453962755347,
-   "breakEven": -124,
-   "status": "LOST",
-   "legs": [
-    {
-     "text": "A. Edstrom 1+ hit",
-     "p": 0.9392,
-     "result": "WON",
-     "value": 4
-    },
-    {
-     "text": "R. Johnston 1+ hit",
-     "p": 0.93332,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "J. Neighbours 1+ hit",
-     "p": 0.87262,
-     "result": "WON",
-     "value": 5
-    },
-    {
-     "text": "A. Toropchenko 1+ hit",
-     "p": 0.86684,
-     "result": "WON",
-     "value": 3
-    },
-    {
-     "text": "J. Struble 1+ hit",
-     "p": 0.8662,
-     "result": "LOST",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "game_id": 2026020266,
-   "game": "STL@NSH",
-   "state": "FINAL",
-   "size": 5,
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
+   "size": 3,
    "pick": "B",
-   "family": "5A Five-on-five offensive environment",
-   "pJoint": 0.2015,
-   "pLower": 0.17773311623035118,
-   "pIndep": 0.15204605770103535,
-   "breakEven": 463,
-   "status": "LOST",
-   "legs": [
-    {
-     "text": "F. Forsberg 2+ SOG",
-     "p": 0.75704,
-     "result": "WON",
-     "value": 3
-    },
-    {
-     "text": "R. Josi 2+ SOG",
-     "p": 0.73182,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "S. Stamkos 2+ SOG",
-     "p": 0.71986,
-     "result": "WON",
-     "value": 5
-    },
-    {
-     "text": "F. Forsberg 1+ point",
-     "p": 0.60792,
-     "result": "LOST",
-     "value": 0
-    },
-    {
-     "text": "S. Stamkos 1+ point",
-     "p": 0.5944,
-     "result": "WON",
-     "value": 2
-    }
-   ]
-  },
-  {
-   "game_id": 2026020266,
-   "game": "STL@NSH",
-   "state": "FINAL",
-   "size": 5,
-   "pick": "C",
-   "family": "5E Balanced cross-team structure",
-   "pJoint": 0.57802,
-   "pLower": 0.549521663648623,
-   "pIndep": 0.5783250248118682,
-   "breakEven": -122,
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.36268,
+   "pLower": 0.33696656811704967,
+   "pIndep": 0.358653245170528,
+   "breakEven": 197,
    "status": "WON",
    "legs": [
     {
-     "text": "A. Edstrom 1+ hit",
-     "p": 0.9392,
-     "result": "WON",
-     "value": 4
-    },
-    {
-     "text": "R. Johnston 1+ hit",
-     "p": 0.93332,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "J. Neighbours 1+ hit",
-     "p": 0.87262,
-     "result": "WON",
-     "value": 5
-    },
-    {
-     "text": "A. Toropchenko 1+ hit",
-     "p": 0.86684,
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.7444,
      "result": "WON",
      "value": 3
     },
     {
-     "text": "R. Schaefer 1+ hit",
-     "p": 0.85692,
+     "text": "M. Tkachuk 2+ SOG",
+     "p": 0.71582,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "S. Bennett 2+ SOG",
+     "p": 0.6717,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
+   "size": 3,
+   "pick": "C",
+   "family": "3E Game script",
+   "pJoint": 0.46968,
+   "pLower": 0.4285845450485358,
+   "pIndep": 0.40317468184399996,
+   "breakEven": 133,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "BOS +1.5 puck line",
+     "p": 0.70548,
      "result": "WON",
      "value": 3
     }
    ]
   },
   {
-   "game_id": 2026020266,
-   "game": "STL@NSH",
-   "state": "FINAL",
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
+   "size": 5,
+   "pick": "A",
+   "family": "5F Game script",
+   "pJoint": 0.32604,
+   "pLower": 0.2832376673702255,
+   "pIndep": 0.20485694406156815,
+   "breakEven": 253,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "BOS +1.5 puck line",
+     "p": 0.70548,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "BOS team total over 2.5",
+     "p": 0.63774,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80808,
+     "result": "WON",
+     "value": 8
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
+   "size": 5,
+   "pick": "B",
+   "family": "5E Balanced cross-team structure",
+   "pJoint": 0.28598,
+   "pLower": 0.2431776673702255,
+   "pIndep": 0.27150174046858827,
+   "breakEven": 311,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80808,
+     "result": "WON",
+     "value": 8
+    },
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "C. McAvoy 1+ blocked shot",
+     "p": 0.78306,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Jones 1+ blocked shot",
+     "p": 0.74304,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
+   "size": 5,
+   "pick": "C",
+   "family": "5B Top-6 usage cluster",
+   "pJoint": 0.2568,
+   "pLower": 0.23351209772814027,
+   "pIndep": 0.24609191582893042,
+   "breakEven": 328,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "C. McAvoy 1+ blocked shot",
+     "p": 0.78306,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "W. Borgen 1+ blocked shot",
+     "p": 0.74066,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "N. Zadorov 1+ blocked shot",
+     "p": 0.73912,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.14408,
+   "pLower": 0.1001295759026227,
+   "pIndep": 0.07150261509138352,
+   "breakEven": 899,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "BOS +1.5 puck line",
+     "p": 0.70548,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "BOS team total over 2.5",
+     "p": 0.63774,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80808,
+     "result": "WON",
+     "value": 8
+    },
+    {
+     "text": "C. McAvoy 1+ blocked shot",
+     "p": 0.78306,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "S. Jones 1+ blocked shot",
+     "p": 0.74304,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "P. Zacha 1+ point",
+     "p": 0.59542,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
+   "size": 8,
+   "pick": "B",
    "family": "8D Multi-line production",
-   "pJoint": 0.34884,
-   "pLower": 0.32724744131225925,
-   "pIndep": 0.34951444071550314,
-   "breakEven": 206,
+   "pJoint": 0.10926,
+   "pLower": 0.09593910383622854,
+   "pIndep": 0.10188523258269856,
+   "breakEven": 942,
    "status": "LOST",
    "legs": [
     {
-     "text": "A. Edstrom 1+ hit",
-     "p": 0.9392,
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80808,
      "result": "WON",
-     "value": 4
+     "value": 8
     },
     {
-     "text": "R. Johnston 1+ hit",
-     "p": 0.93332,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "J. Neighbours 1+ hit",
-     "p": 0.87262,
-     "result": "WON",
-     "value": 5
-    },
-    {
-     "text": "A. Toropchenko 1+ hit",
-     "p": 0.86684,
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
      "result": "WON",
      "value": 3
     },
     {
-     "text": "J. Struble 1+ hit",
-     "p": 0.8662,
+     "text": "C. McAvoy 1+ blocked shot",
+     "p": 0.78306,
      "result": "LOST",
      "value": 0
     },
     {
-     "text": "R. Schaefer 1+ hit",
-     "p": 0.85692,
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Jones 1+ blocked shot",
+     "p": 0.74304,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.7444,
      "result": "WON",
      "value": 3
     },
     {
-     "text": "R. Colton 1+ hit",
-     "p": 0.8481,
-     "result": "WON",
-     "value": 1
+     "text": "A. Ekblad 1+ blocked shot",
+     "p": 0.74014,
+     "result": "LOST",
+     "value": 0
     },
     {
-     "text": "C. Parayko 1+ blocked shot",
-     "p": 0.8229,
+     "text": "S. Bennett 2+ SOG",
+     "p": 0.6717,
      "result": "WON",
      "value": 2
     }
    ]
   },
   {
-   "game_id": 2026020266,
-   "game": "STL@NSH",
-   "state": "FINAL",
-   "size": 8,
-   "pick": "B",
-   "family": "8F Cross-team high-event scenario",
-   "pJoint": 0.05956,
-   "pLower": 0.046432759838344745,
-   "pIndep": 0.0451902250755698,
-   "breakEven": 2054,
-   "status": "LOST",
-   "legs": [
-    {
-     "text": "F. Forsberg 2+ SOG",
-     "p": 0.75704,
-     "result": "WON",
-     "value": 3
-    },
-    {
-     "text": "R. Josi 2+ SOG",
-     "p": 0.73182,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "S. Stamkos 2+ SOG",
-     "p": 0.71986,
-     "result": "WON",
-     "value": 5
-    },
-    {
-     "text": "F. Forsberg 1+ point",
-     "p": 0.60792,
-     "result": "LOST",
-     "value": 0
-    },
-    {
-     "text": "S. Stamkos 1+ point",
-     "p": 0.5944,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "D. Holloway 2+ SOG",
-     "p": 0.71842,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "M. McTavish 2+ SOG",
-     "p": 0.66636,
-     "result": "LOST",
-     "value": 0
-    },
-    {
-     "text": "J. Snuggerud 2+ SOG",
-     "p": 0.6265,
-     "result": "WON",
-     "value": 5
-    }
-   ]
-  },
-  {
-   "game_id": 2026020266,
-   "game": "STL@NSH",
-   "state": "FINAL",
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
-   "family": "8A Shot-dominant game",
-   "pJoint": 0.03834,
-   "pLower": 0.024823042672015176,
-   "pIndep": 0.03832230467123214,
-   "breakEven": 3929,
+   "family": "8F Cross-team high-event scenario",
+   "pJoint": 0.08908,
+   "pLower": 0.07575910383622855,
+   "pIndep": 0.058063220209543846,
+   "breakEven": 1220,
    "status": "LOST",
    "legs": [
     {
-     "text": "F. Forsberg 2+ SOG",
-     "p": 0.75704,
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80808,
+     "result": "WON",
+     "value": 8
+    },
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
      "result": "WON",
      "value": 3
     },
     {
-     "text": "R. Josi 2+ SOG",
-     "p": 0.73182,
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
      "result": "WON",
      "value": 2
     },
     {
-     "text": "S. Stamkos 2+ SOG",
-     "p": 0.71986,
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.7444,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Tkachuk 2+ SOG",
+     "p": 0.71582,
      "result": "WON",
      "value": 5
     },
     {
-     "text": "D. Holloway 2+ SOG",
-     "p": 0.71842,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "M. McTavish 2+ SOG",
-     "p": 0.66636,
+     "text": "S. Reinhart 1+ point",
+     "p": 0.62974,
      "result": "LOST",
      "value": 0
     },
     {
-     "text": "J. Snuggerud 2+ SOG",
-     "p": 0.6265,
+     "text": "M. Tkachuk 1+ point",
+     "p": 0.61972,
      "result": "WON",
-     "value": 5
-    },
-    {
-     "text": "R. O'Reilly 2+ SOG",
-     "p": 0.57926,
-     "result": "LOST",
      "value": 1
     },
     {
-     "text": "M. Bourque 2+ SOG",
-     "p": 0.55928,
+     "text": "P. Zacha 1+ point",
+     "p": 0.59542,
      "result": "WON",
      "value": 2
     }
