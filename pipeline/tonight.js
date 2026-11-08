@@ -32,7 +32,9 @@ const now = Date.now();
 const fmtA = (o) => (o === null || o === undefined ? '—' : o > 0 ? '+' + o : String(o));
 const pct = (x, d = 1) => (100 * x).toFixed(d) + '%';
 const STATN = { SOG: 'SOG', G: 'goal', A: 'assist', PTS: 'point', BLK: 'blocked shot', HIT: 'hit', PPP: 'PP point', SV: 'saves' };
-const legTxt = (l) => (l.stat === 'SV' ? `${l.name} ${Math.ceil(l.line)}+ saves` : `${l.name} ${Math.ceil(l.line)}+ ${STATN[l.stat]}${Math.ceil(l.line) > 1 && l.stat !== 'SOG' ? 's' : ''}`);
+const teamTxt = (l) => l.stat === 'ML' ? `${l.name} moneyline` : l.stat === 'PL' ? `${l.name} ${l.line > 0 ? '+' : ''}${l.line} puck line`
+  : l.stat === 'TT' ? `${l.name} team total ${l.side} ${l.line}` : `Game total ${l.side} ${l.line}`;
+const legTxt = (l) => (['ML', 'PL', 'TT', 'GT'].includes(l.stat) ? teamTxt(l) : l.stat === 'SV' ? `${l.name} ${Math.ceil(l.line)}+ saves` : `${l.name} ${Math.ceil(l.line)}+ ${STATN[l.stat]}${Math.ceil(l.line) > 1 && l.stat !== 'SOG' ? 's' : ''}`);
 const et = (iso) => new Date(iso).toLocaleString('en-US', { timeZone: 'America/New_York', weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
 
 const games = S.games.filter((g) => { const t = Date.parse(g.start_utc); return ONLY ? ONLY.has(g.game_id) && t > now : t > now && t - now <= HOURS * 3600e3; })
@@ -53,7 +55,7 @@ for (const g of games) {
   md += `Model P(${g.home.abbr} win) ${pH === null ? '—' : pct(pH)} · Polymarket: ${q.map((x) => `${x.team} ${fmtA(x.american)} (${Math.round(x.price * 100)}¢)`).join(', ') || 'no quote'} · goalie start probs: ${['away', 'home'].map((s) => g[s].goalies.filter((k) => k.pStart > 0.05).map((k) => `${k.name} ${pct(k.pStart, 0)}`).join('/')).join(' vs ')}\n\n`;
   // ---- volume with diversification: quota per size, exposure cap relaxed only as needed
   const legUse = new Map();  // exposure across this game's whole card (all sizes)
-  const lk = (l) => l.player_id + l.stat + l.line;
+  const lk = (l) => l.player_id + l.stat + l.line + (l.side || '');
   const research = {};
   for (const size of [3, 5, 8]) research[size] = NQ.sgp.research(R, F, g, size, V.tables, []);
   const chosen = {};
@@ -65,8 +67,11 @@ for (const g of games) {
     const byFam = {};
     ok.forEach((x) => { (byFam[x.family.id] = byFam[x.family.id] || []).push(x); });
     const order = [];
+    // the game-script family (team markets + production) gets the first slot when it has a verified combo
+    const gsId = NQ.sgp.GAME_SCRIPT[size];
+    if (byFam[gsId]) order.push(byFam[gsId][0]);
     for (let k = 0; Object.values(byFam).some((a) => a.length > k); k++)
-      Object.values(byFam).sort((a, b) => b[0].lower.pLower - a[0].lower.pLower).forEach((a) => { if (a[k]) order.push(a[k]); });
+      Object.values(byFam).sort((a, b) => b[0].lower.pLower - a[0].lower.pLower).forEach((a) => { if (a[k] && !order.includes(a[k])) order.push(a[k]); });
     const picks = [];
     let capUsed = NQ.sgp.MAX_LEG_EXPOSURE;
     for (const cap of [NQ.sgp.MAX_LEG_EXPOSURE, NQ.sgp.MAX_LEG_EXPOSURE + 1, NQ.sgp.MAX_LEG_EXPOSURE + 2, Infinity]) {
@@ -86,7 +91,7 @@ for (const g of games) {
   for (const size of [3, 5, 8]) {
     const res = research[size], { picks, ok, capUsed } = chosen[size];
     gm.sizes[size] = { evaluated: res.evaluated, verified: ok.length, finalists: res.items.length, exposureCap: capUsed === Infinity ? null : capUsed, picks: picks.map((x) => ({
-      family: x.family.id + ' ' + x.family.n, legs: x.legs.map((l) => ({ text: legTxt(l), p: l.p, player_id: l.player_id, stat: l.stat, line: l.line })),
+      family: x.family.id + ' ' + x.family.n, legs: x.legs.map((l) => ({ text: legTxt(l), p: l.p, player_id: l.player_id, stat: l.stat, line: l.line, side: l.side, team: l.team })),
       pJoint: x.ev.p, pLower: x.lower.pLower, pIndep: x.ev.indep, lift: x.ev.lift, breakEven: x.breakEven, mcHits: x.ev.hits, scenario: x.scenario.hit })) };
     const relaxed = capUsed > NQ.sgp.MAX_LEG_EXPOSURE ? ` · exposure cap relaxed to ${capUsed === Infinity ? 'none' : capUsed} to fill the quota` : '';
     md += `### ${size}-leg (${res.evaluated.toLocaleString()} candidates searched · ${ok.length}/${res.items.length} finalists verified${relaxed})\n`;

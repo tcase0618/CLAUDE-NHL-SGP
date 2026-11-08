@@ -1,0 +1,10 @@
+{
+  "params": { "sigE": 0.06, "eqP": 0.20, "enP": 0.20, "gScale": 0.98, "otHome": 0.513 },
+  "provenance": {
+    "fitted": "2026-11-08",
+    "window": "held-out FIT window (games before 2026-07-01); eval window untouched",
+    "sigE": "shared pace shock; sweep 0/0.06/0.10/0.14 on 635 held-out games — 0.06 best searched-combo log loss at 3, 5 and 8 legs (small gain)",
+    "eqP_enP_gScale": "pipeline/fit_scoreline.js on 374 FIT-window games: regulation-tie rate 21.8% (actual 23.0%), |margin|>=2 59.6% (60.2%), mean total 6.33 (6.31), over 5.5 58.1% (57.2%), over 6.5 45.9% (46.5%)",
+    "otHome": "home win share of OT/SO games before 2026-07-01 (597 games)"
+  }
+}

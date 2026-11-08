@@ -187,6 +187,10 @@ def main():
         json.dump(params, open(os.path.join(serve_dir, "joint_params.json"), "w"), indent=1)
     else:  # serve-only container: reuse the dependence parameters fitted at training time
         params = json.load(open(os.path.join(serve_dir, "joint_params.json")))
+    # committed, validated simulator calibration (pace shock, late-game score effects, OT home share)
+    cal = os.path.join(ROOT, "contracts", "sim_calibration.json")
+    if os.path.exists(cal):
+        params.update(json.load(open(cal))["params"])
     print("joint params", json.dumps(params))
     games_meta = pd.read_parquet(os.path.join(BUILD, "games.parquet"), columns=["start_utc"])
     data_through = str(games_meta.start_utc.max())

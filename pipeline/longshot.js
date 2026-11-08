@@ -11,7 +11,9 @@ const arg = (k, d) => { const i = process.argv.indexOf(k); return i > 0 ? +proce
 const HOURS = arg('--hours', 30), SIMS = arg('--sims', 100000);
 const now = Date.now();
 const STATN = { SOG: 'SOG', G: 'goal', A: 'assist', PTS: 'point', BLK: 'blocked shot', HIT: 'hit', PPP: 'PP point' };
-const legTxt = (l) => (l.stat === 'SV' ? `${l.name} ${Math.ceil(l.line)}+ saves` : `${l.name} ${Math.ceil(l.line)}+ ${STATN[l.stat]}${Math.ceil(l.line) > 1 && l.stat !== 'SOG' ? 's' : ''}`);
+const teamTxt = (l) => l.stat === 'ML' ? `${l.name} moneyline` : l.stat === 'PL' ? `${l.name} ${l.line > 0 ? '+' : ''}${l.line} puck line`
+  : l.stat === 'TT' ? `${l.name} team total ${l.side} ${l.line}` : `Game total ${l.side} ${l.line}`;
+const legTxt = (l) => (['ML', 'PL', 'TT', 'GT'].includes(l.stat) ? teamTxt(l) : l.stat === 'SV' ? `${l.name} ${Math.ceil(l.line)}+ saves` : `${l.name} ${Math.ceil(l.line)}+ ${STATN[l.stat]}${Math.ceil(l.line) > 1 && l.stat !== 'SOG' ? 's' : ''}`);
 const all = [];
 for (const g of S.games.filter((x) => Date.parse(x.start_utc) > now && Date.parse(x.start_utc) - now <= HOURS * 3600e3)) {
   const R = NQ.joint.simulate(g, { n: SIMS, seed: 7 + g.game_id % 997, params: S.params });

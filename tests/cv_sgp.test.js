@@ -196,6 +196,28 @@ test('best() keeps one quote per game — a team playing several games keeps all
 test('SGP leg pool only offers bettable markets (no hits)', () => {
   const P = NQ.sgp.pool(R, G);
   assert.ok(P.legs.length > 0);
-  assert.ok(P.legs.every((l) => NQ.sgp.BETTABLE.includes(l.stat) || l.stat === 'SV'), 'non-bettable stat in pool');
+  assert.ok(P.legs.every((l) => NQ.sgp.BETTABLE.includes(l.stat) || l.stat === 'SV' || NQ.joint.TEAM_STATS.includes(l.stat)), 'non-bettable stat in pool');
   assert.ok(!P.legs.some((l) => l.stat === 'HIT'));
+});
+test('team markets: final score identities and complementary legs', () => {
+  const P = NQ.sgp.pool(R, G);
+  const tl = P.legs.filter((l) => l.teamMkt);
+  const get = (st, t, line, side) => tl.find((l) => l.stat === st && l.team === t && l.line === line && (side ? l.side === side : true));
+  near(get('ML', 0, 0).p + get('ML', 1, 0).p, 1, 1e-9);                       // no ties in a final score
+  near(get('PL', 0, -1.5).p + get('PL', 1, 1.5).p, 1, 1e-9);                  // home -1.5 vs away +1.5
+  near(get('GT', -1, 5.5, 'over').p + get('GT', -1, 5.5, 'under').p, 1, 1e-9);
+  assert.ok(get('PL', 0, -1.5).p < get('ML', 0, 0).p, 'winning by 2+ is rarer than winning');
+  assert.ok(NQ.sgp.conflict(get('ML', 0, 0), get('PL', 1, 1.5)), 'one side leg per parlay');
+  assert.ok(NQ.sgp.conflict(get('GT', -1, 5.5, 'over'), get('GT', -1, 6.5, 'under')), 'one game-total line per parlay');
+  for (let s = 0; s < R.n; s++) assert.ok(R.out.FS[2 * s] !== R.out.FS[2 * s + 1] && R.out.FS[2 * s] >= R.out.GT[2 * s]);
+});
+test('game-script families require a team leg; classic families never include one', () => {
+  const P = NQ.sgp.pool(R, G);
+  for (const size of [3, 5, 8]) for (const fam of NQ.sgp.FAMILIES[size]) {
+    const res = NQ.sgp.search(P, size, fam);
+    for (const f of res.finalists) {
+      const k = f.legs.filter((l) => l.teamMkt).length;
+      if (fam.id === NQ.sgp.GAME_SCRIPT[size]) assert.ok(k >= 1 && k <= (size === 3 ? 1 : 2), fam.id); else assert.strictEqual(k, 0, fam.id);
+    }
+  }
 });

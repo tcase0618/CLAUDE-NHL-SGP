@@ -18,6 +18,16 @@
   const SL = () => globalThis.NQ_SLATE, ML = () => globalThis.NQ_ML, VAL = () => globalThis.NQ_SGPVAL;
   const STAT_T = { SOG: 'sk_sog', G: 'sk_goals', A: 'sk_assists', PTS: 'sk_points', BLK: 'sk_blocks', HIT: 'sk_hits', PPP: 'sk_ppp' };
   const STAT_N = { SOG: 'Shots on goal', G: 'Goals', A: 'Assists', PTS: 'Points', BLK: 'Blocked shots', HIT: 'Hits', PPP: 'PP points', SV: 'Saves' };
+  // one display string for any SGP leg (player prop, goalie saves, or team market)
+  const legLabel = (l, link) => {
+    if (l.teamMkt || ['ML', 'PL', 'TT', 'GT'].includes(l.stat)) {
+      const t = u.esc(l.name);
+      return l.stat === 'ML' ? `${t} moneyline` : l.stat === 'PL' ? `${t} ${l.line > 0 ? '+' : ''}${l.line} puck line`
+        : l.stat === 'TT' ? `${t} team total ${l.side === 'under' ? 'u' : 'o'}${l.line}` : `Game total ${l.side === 'under' ? 'u' : 'o'}${l.line}`;
+    }
+    const nm = link ? `<a class="plink" href="#/cv/player/${l.player_id}">${u.esc(l.name)}</a>` : u.esc(l.name);
+    return `${nm} ${l.stat === 'SV' ? 'saves' : l.stat} o${l.line}`;
+  };
   const MARKET = { SOG: 'player_sog', G: 'player_goals', A: 'player_assists', PTS: 'player_points', BLK: 'player_blocks', HIT: 'player_hits', PPP: 'player_ppp', SV: 'goalie_saves' };
   const state = { game: null, mode: 'cv', stat: 'ALL', sims: 20000, cache: {} };
   // real-data panels: never carry the synthetic DEMO badge
@@ -180,7 +190,7 @@
     Object.values(byFam).forEach((a) => a.sort((p, q) => (q.lower.pLower ?? 0) - (p.lower.pLower ?? 0)));
     const unq = [];
     for (let k = 0; Object.values(byFam).some((a) => a.length > k); k++) Object.keys(byFam).sort().forEach((f) => { if (byFam[f][k]) unq.push(byFam[f][k]); });
-    const row = (x, i) => `<tr data-sgp="${items.indexOf(x)}" style="cursor:pointer"><td class="num">${i + 1}</td><td><span class="badge b-arch">${x.family.id}</span> ${u.esc(x.family.n)}</td><td style="white-space:normal;min-width:260px">${x.legs.map((l) => `<a class="plink" href="#/cv/player/${l.player_id}">${u.esc(l.name)}</a> ${l.stat === 'SV' ? 'saves' : l.stat} o${l.line} <span class="muted">(${u.pct(l.p, 0)})</span>`).join('<br>')}</td>
+    const row = (x, i) => `<tr data-sgp="${items.indexOf(x)}" style="cursor:pointer"><td class="num">${i + 1}</td><td><span class="badge b-arch">${x.family.id}</span> ${u.esc(x.family.n)}</td><td style="white-space:normal;min-width:260px">${x.legs.map((l) => `${legLabel(l, true)} <span class="muted">(${u.pct(l.p, 0)})</span>`).join('<br>')}</td>
       <td class="num">${u.pct(x.ev.p, 2)}</td><td class="num">${x.lower.pLower === null ? '—' : u.pct(x.lower.pLower, 2)}</td><td class="num">${u.pct(x.ev.indep, 2)}</td><td class="num">${u.fx(x.ev.lift, 2)}×</td>
       <td class="num">${fmtA(x.breakEven)}</td><td class="num">${x.best ? `${u.esc(x.best.book)} ${fmtA(x.best.american)}` : '<span class="muted">no quote</span>'}</td><td class="num ${x.best ? (x.best.cv > 0 ? 'pos' : 'neg') : ''}">${x.best ? '<b>' + u.sgn(x.best.cv, 1) + '</b>' : '—'}</td>
       <td>${x.lower.verified ? '<span class="badge b-pp">verified</span>' : `<span class="badge" title="${u.esc(x.lower.reason)}">unverified</span>`}</td><td class="num muted">${x.ev.hits}/${x.ev.n}</td></tr>`;
@@ -203,7 +213,7 @@
       const m = mc && mc[l.stat];
       const d = S.dist[STAT_T[l.stat]];
       const pr = (mu) => (mu === undefined || !d ? '—' : u.pct(NQ.cv.dist(mu, d.family, d.alpha).ge(Math.ceil(l.line)), 1));
-      return `<tr><td>${u.esc(l.name)} ${l.stat === 'SV' ? 'saves' : l.stat} o${l.line}</td><td class="num">${u.pct(l.p, 1)}</td><td class="num">${m ? pr(m.baseline) : '—'}</td><td class="num">${m ? pr(m.xgboost) : '—'}</td><td class="num">${m ? pr(m.autogluon) : '—'}</td><td class="num">${m ? pr(m.blend) : '—'}</td></tr>`;
+      return `<tr><td>${legLabel(l, false)}</td><td class="num">${u.pct(l.p, 1)}</td><td class="num">${m ? pr(m.baseline) : '—'}</td><td class="num">${m ? pr(m.xgboost) : '—'}</td><td class="num">${m ? pr(m.autogluon) : '—'}</td><td class="num">${m ? pr(m.blend) : '—'}</td></tr>`;
     }).join('');
     const ci = [NQ.cv.wilsonLower(x.ev.hits, x.ev.n), NQ.cv.wilsonUpper(x.ev.hits, x.ev.n)];
     return c.panel('Combination Detail', `${x.family.id} · ${u.esc(x.family.n)}`, `<div class="note" style="margin:0 0 8px">${u.esc(x.family.d)}</div>
@@ -334,7 +344,7 @@
               det.scrollIntoView({ block: 'nearest' });
               det.querySelector('#sq-add').addEventListener('click', () => {
                 const book = det.querySelector('#sq-book').value.trim(), am = +det.querySelector('#sq-odds').value.replace('+', '');
-                const q = { book, game_id: g.game_id, market: 'sgp', american: am, ts: new Date().toISOString(), status: 'open', legs: x.legs.map((l) => ({ market: l.market, player_id: l.player_id, line: l.line, side: 'over' })) };
+                const q = { book, game_id: g.game_id, market: 'sgp', american: am, ts: new Date().toISOString(), status: 'open', legs: x.legs.map((l) => ({ market: l.market, player_id: l.player_id, line: l.line, side: l.side || 'over' })) };
                 const err = NQ.odds.validate(q);
                 if (err.length) { alert('Quote rejected: ' + err.join('; ')); return; }
                 NQ.odds.add(q); delete run.res[size]; draw();

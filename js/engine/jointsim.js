@@ -14,6 +14,9 @@
  *   PP flag per goal from the scorer's PP share → PPP to scorer + assisters
  *   hits_i ~ Poisson(μH·Γ·E^0.3); blocks_i ~ Poisson(μB·Γ·(S_opp/μS_opp)^κ)
  *   goalie saves = S_opp − G_opp for the sampled starter
+ *   final score: regulation goals; a tie goes to OT/shootout, the winner (home
+ *   with prob otHome) gets +1 — books and the NHL count a shootout as one goal,
+ *   so moneyline, puck line, team totals and game totals settle on this score.
  *
  * Identities hold in every sim: points = goals + assists, goals ≤ SOG,
  * Σ skater goals = team goals, saves + goals against = opponent shots.
@@ -131,7 +134,29 @@
           out.PTS[base + off + i] = out.G[base + off + i] + out.A[base + off + i];
         }
       }
+      // Late-game score effects: a one-goal game ends tied after a late equalizer (trailing team pushes /
+      // pulls its goalie) with prob eqP, else the leader adds an empty-netter with prob enP. The goal is a
+      // real shot by a skater (SOG+1, G+1, assists as usual); the opposing goalie's saves are unchanged.
+      if (Math.abs(Gt[0] - Gt[1]) === 1 && (prm.eqP > 0 || prm.enP > 0)) {
+        const lead = Gt[0] > Gt[1] ? 0 : 1, r0 = rng.next();
+        const t = r0 < prm.eqP ? 1 - lead : r0 < prm.eqP + (1 - prm.eqP) * prm.enP ? lead : -1;
+        if (t >= 0) {
+          const X = T[t], off = t === 0 ? 0 : nH;
+          let tw = 0; for (let i = 0; i < X.n; i++) tw += X.wS[i] * X.fin[i];
+          let x = rng.next() * tw, sc = X.n - 1;
+          for (let i = 0; i < X.n; i++) { x -= X.wS[i] * X.fin[i]; if (x <= 0) { sc = i; break; } }
+          out.SOG[base + off + sc]++; out.G[base + off + sc]++; S[t]++; Gt[t]++;
+          const r = rng.next();
+          const na = r < prm.assist[0] ? 0 : r < prm.assist[0] + prm.assist[1] ? 1 : 2;
+          let a1 = -1;
+          for (let a = 0; a < na && X.n > a + 1; a++) { const who = pick(rng, X.wA, X.n, sc, a1); if (who < 0) break; out.A[base + off + who]++; a1 = who; }
+              for (let i = 0; i < X.n; i++) out.PTS[base + off + i] = out.G[base + off + i] + out.A[base + off + i];
+        }
+      }
       out.S[s * 2] = S[0]; out.S[s * 2 + 1] = S[1]; out.GT[s * 2] = Gt[0]; out.GT[s * 2 + 1] = Gt[1];
+      let f0 = Gt[0], f1 = Gt[1];
+      if (f0 === f1) { if (rng.next() < prm.otHome) f0++; else f1++; }
+      out.FS[s * 2] = f0; out.FS[s * 2 + 1] = f1;
       out.PPG[s * 2] = ppg[0]; out.PPG[s * 2 + 1] = ppg[1];
       out.E[s] = E;
       const gs = [0, 1].map((t) => { const gl = T[t].t.goalies || []; let x = rng.next(); for (let k = 0; k < gl.length; k++) { x -= gl[k].pStart; if (x <= 0) return k; } return gl.length ? 0 : -1; });
@@ -142,7 +167,7 @@
   function alloc(n, NP) {
     const o = {};
     for (const k of STATS) o[k] = new Int16Array(n * NP);
-    o.S = new Int16Array(n * 2); o.GT = new Int16Array(n * 2); o.PPG = new Int16Array(n * 2); o.GST = new Int8Array(n * 2); o.E = new Float32Array(n);
+    o.S = new Int16Array(n * 2); o.GT = new Int16Array(n * 2); o.PPG = new Int16Array(n * 2); o.GST = new Int8Array(n * 2); o.FS = new Int16Array(n * 2); o.E = new Float32Array(n);
     return o;
   }
 
@@ -158,7 +183,7 @@
    */
   joint.simulate = (game, opts) => {
     opts = opts || {};
-    const prm = Object.assign({ sigE: 0.08, sigO: 0.08, sigW: 0.15, sigZ: 0.25, assist: [0.06, 0.28, 0.66], alphaH: 0.35, alphaB: 0.3, blkK: 0.8, gScale: 1, ppScale: 1, hScale: 1, bScale: 1 }, opts.params || {});
+    const prm = Object.assign({ sigE: 0.08, sigO: 0.08, sigW: 0.15, sigZ: 0.25, assist: [0.06, 0.28, 0.66], alphaH: 0.35, alphaB: 0.3, blkK: 0.8, gScale: 1, ppScale: 1, hScale: 1, bScale: 1, otHome: 0.5, eqP: 0, enP: 0 }, opts.params || {});
     const T = prep(game);
     const NP = T[0].n + T[1].n;
     const all = [...game.home.players, ...game.away.players];
@@ -197,10 +222,23 @@
     return { game, n, NP, out, idx, gIdx, players: all, recon, params: prm };
   };
 
+  joint.TEAM_STATS = ['ML', 'PL', 'TT', 'GT'];
+
   /** Mask of sims where a leg settles as a WIN. Goalie legs are conditional on start (mask also returns valid). */
   joint.legMask = (R, leg) => {
     const m = new Uint8Array(R.n), valid = new Uint8Array(R.n).fill(1);
     const thr = (v) => (leg.side === 'over' ? v > leg.line : v < leg.line);
+    if (joint.TEAM_STATS.includes(leg.stat)) {
+      // team markets: leg.team = 0 home / 1 away (ignored for GT); settled on the final score
+      const t = leg.team, o = 1 - t, F = R.out.FS;
+      for (let s = 0; s < R.n; s++) {
+        const a = F[s * 2 + t], b = F[s * 2 + o];
+        const v = leg.stat === 'ML' ? (a > b ? 1 : 0) : leg.stat === 'PL' ? (a - b + leg.line > 0 ? 1 : 0)
+          : thr(leg.stat === 'TT' ? a : F[s * 2] + F[s * 2 + 1]) ? 1 : 0;
+        m[s] = v;
+      }
+      return { m, valid };
+    }
     if (leg.stat === 'SV') {
       const g = R.gIdx[leg.player_id];
       if (!g) return { m, valid: new Uint8Array(R.n) };

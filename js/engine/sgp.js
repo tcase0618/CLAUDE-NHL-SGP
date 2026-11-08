@@ -51,6 +51,30 @@
     ]
   };
 
+  // Existing ideologies stay player-prop only (their historical calibration was fitted that way).
+  for (const size of [3, 5, 8]) sgp.FAMILIES[size].forEach((f) => { const p0 = f.pool; f.pool = (l) => !l.teamMkt && p0(l); });
+  // Game-script families: one or two team markets (moneyline / puck line / team total / game total)
+  // plus player production that the same game script drives. Correlation is priced by the joint sim.
+  const isTeam = (l) => !!l.teamMkt;
+  const gsPool = (l) => isTeam(l) || ['SOG', 'PTS', 'G', 'A', 'PPP', 'BLK'].includes(l.stat);
+  sgp.FAMILIES[3].push({ id: '3E', n: 'Game script', d: 'A team market (ML, puck line, team or game total) with the player production that game script implies.', pool: gsPool, ok: (legs) => legs.filter(isTeam).length === 1 });
+  sgp.FAMILIES[5].push({ id: '5F', n: 'Game script', d: 'Side or total plus production from the players that drive it.', pool: gsPool, ok: (legs) => { const k = legs.filter(isTeam).length; return k >= 1 && k <= 2; } });
+  sgp.FAMILIES[8].push({ id: '8G', n: 'Game script', d: 'Side and/or total with both teams\' production under one game environment.', pool: gsPool, ok: (legs) => { const k = legs.filter(isTeam).length; return k >= 1 && k <= 2; } });
+  sgp.GAME_SCRIPT = { 3: '3E', 5: '5F', 8: '8G' };
+
+  // Team markets offered as legs. PL: line -1.5 = win by 2+, +1.5 = lose by at most 1.
+  sgp.TEAM_LEGS = (game) => {
+    const out = [];
+    [0, 1].forEach((t) => {
+      const ab = (t === 0 ? game.home : game.away).abbr, pid = 'TEAM:' + ab;
+      out.push({ player_id: pid, stat: 'ML', line: 0, side: 'over', team: t, name: ab, market: 'team_ml' });
+      for (const line of [-1.5, 1.5]) out.push({ player_id: pid, stat: 'PL', line, side: 'over', team: t, name: ab, market: 'team_spread' });
+      for (const line of [2.5, 3.5]) for (const side of ['over', 'under']) out.push({ player_id: pid, stat: 'TT', line, side, team: t, name: ab, market: 'team_total' });
+    });
+    for (const line of [5.5, 6.5]) for (const side of ['over', 'under']) out.push({ player_id: 'GAME', stat: 'GT', line, side, team: -1, name: game.away.abbr + '@' + game.home.abbr, market: 'game_total' });
+    return out;
+  };
+
   /** Build the over-side prop pool with simulated marginal probabilities. */
   sgp.pool = (R, game) => {
     const pool = [];
@@ -84,6 +108,11 @@
         }
       });
     });
+    sgp.TEAM_LEGS(game).forEach((leg) => {
+      const { m, valid } = NQ.joint.legMask(R, leg);
+      let c = 0; for (let s = 0; s < R.n; s++) c += m[s];
+      pool.push({ ...leg, teamMkt: true, pos: 'TEAM', toiRank: 0, ppShare: 0, p: c / R.n, ...pack(m, valid) });
+    });
     return { legs: pool, W };
   };
 
@@ -91,6 +120,8 @@
 
   /** Redundant / incompatible pair check. */
   sgp.conflict = (a, b) => {
+    const side = (l) => l.stat === 'ML' || l.stat === 'PL';
+    if (side(a) && side(b)) return true;                 // one moneyline / puck-line leg per parlay
     if (a.player_id !== b.player_id) return false;
     if (a.stat === b.stat) return true; // one line per player-market
     const pair = [a.stat, b.stat].sort().join('|');
@@ -111,7 +142,7 @@
         for (const l of pool) {
           if (st.legs.some((x) => x === l || sgp.conflict(x, l))) continue;
           const legs = [...st.legs, l];
-          const key = legs.map((x) => x.player_id + x.stat + x.line).sort().join(',');
+          const key = legs.map((x) => x.player_id + x.stat + x.line + (x.side || '')).sort().join(',');
           if (seen.has(key)) continue; seen.add(key);
           if (k === size - 1 && !fam.ok(legs)) continue;
           let hit = 0, val = 0;
@@ -156,10 +187,10 @@
       const res = sgp.search(P, size, fam);
       evaluated += res.evaluated;
       for (const f of res.finalists) {
-        const legs = f.legs.map((l) => ({ player_id: l.player_id, stat: l.stat, line: l.line, side: 'over', team: l.team, name: l.name, pos: l.pos, market: l.market, p: l.p }));
+        const legs = f.legs.map((l) => ({ player_id: l.player_id, stat: l.stat, line: l.line, side: l.side || 'over', team: l.team, name: l.name, pos: l.pos, market: l.market, p: l.p, teamMkt: !!l.teamMkt }));
         const ev = NQ.joint.evaluate(fresh, legs, { minHits: size === 8 ? 80 : 50 });
         const lo = sgp.lower(ev, size, valTables);
-        const key = NQ.odds.sgpKey(game.game_id, legs.map((l) => ({ market: l.market, player_id: l.player_id, line: l.line, side: 'over' })));
+        const key = NQ.odds.sgpKey(game.game_id, legs.map((l) => ({ market: l.market, player_id: l.player_id, line: l.line, side: l.side })));
         const q = (quotes || []).filter((x) => x.market === 'sgp' && NQ.odds.sgpKey(x.game_id, x.legs) === key);
         const cvs = q.map((x) => ({ book: x.book, ts: x.ts, american: x.american, ...NQ.cv.evalSGP({ pJoint: ev.p, pJointLower: lo.pLower ?? 0, quoteAmerican: x.american, precisionOK: lo.verified }) }));
         out.push({ family: fam, legs, searchP: f.p, ev, lower: lo, key, quotes: cvs, best: cvs.filter((x) => x.supported).sort((a, b) => b.cv - a.cv)[0] || null,

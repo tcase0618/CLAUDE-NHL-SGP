@@ -33,7 +33,9 @@ def game_stats(gid: int) -> dict:
     land = _get(f"{BASE}/gamecenter/{gid}/landing") or {}
     st = {"state": box.get("gameState", "FUT"), "score": f"{box.get('awayTeam', {}).get('abbrev')} {box.get('awayTeam', {}).get('score', '-')} @ "
           f"{box.get('homeTeam', {}).get('abbrev')} {box.get('homeTeam', {}).get('score', '-')}", "players": {}, "goalies": {},
-          "period": (box.get("periodDescriptor") or {}).get("number"), "outcome": (box.get("gameOutcome") or {}).get("lastPeriodType")}
+          "period": (box.get("periodDescriptor") or {}).get("number"),
+          "home_score": box.get("homeTeam", {}).get("score"), "away_score": box.get("awayTeam", {}).get("score"),
+          "home_abbr": box.get("homeTeam", {}).get("abbrev"), "away_abbr": box.get("awayTeam", {}).get("abbrev"), "outcome": (box.get("gameOutcome") or {}).get("lastPeriodType")}
     ppp = {}
     for per in (land.get("summary") or {}).get("scoring", []):
         if (per.get("periodDescriptor") or {}).get("periodType") == "SO":
@@ -61,7 +63,29 @@ def game_stats(gid: int) -> dict:
     return st
 
 
+TEAM_STATS = ("ML", "PL", "TT", "GT")
+
+
+def grade_team(leg: dict, gs: dict) -> tuple[str, float | None]:
+    """Moneyline / puck line / team total / game total on the FINAL score (a shootout counts as one goal).
+    Settled only once the game is final."""
+    if gs["state"] not in FINAL or gs.get("home_score") is None:
+        return "PENDING", None
+    h, a = gs["home_score"], gs["away_score"]
+    t = leg.get("team", 0)
+    mine, theirs = (h, a) if t == 0 else (a, h)
+    if leg["stat"] == "ML":
+        return ("WON" if mine > theirs else "LOST"), mine - theirs
+    if leg["stat"] == "PL":
+        return ("WON" if mine - theirs + leg["line"] > 0 else "LOST"), mine - theirs
+    v = mine if leg["stat"] == "TT" else h + a
+    won = v > leg["line"] if leg.get("side", "over") == "over" else v < leg["line"]
+    return ("WON" if won else "LOST"), v
+
+
 def grade(leg: dict, gs: dict) -> tuple[str, float | None]:
+    if leg["stat"] in TEAM_STATS:
+        return grade_team(leg, gs)
     final = gs["state"] in FINAL
     if leg["stat"] == "SV":
         g = gs["goalies"].get(leg["player_id"])

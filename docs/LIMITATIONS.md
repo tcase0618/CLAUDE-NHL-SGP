@@ -49,3 +49,15 @@ Stated plainly so that nothing in the terminal is mistaken for something it isn'
 - The real-data section requires a browser to load generated `data/artifacts/*.js`.
 - Odds you enter are stored in that browser's `localStorage` only (export/import JSON to move them).
 - No automated wagering exists or is planned. Nothing here is a guarantee of profit.
+
+## Team markets in SGPs (added 2026-11-08)
+- Moneyline, puck line (±1.5), team totals (o/u 2.5, 3.5) and game totals (o/u 5.5, 6.5) are SGP legs, priced by the
+  same joint simulation as the player props and settled on the FINAL score (a shootout counts as one goal, as at books).
+- Final score = regulation goals + late-game score effects (late equalizer `eqP`, empty-netter `enP`, fitted on the FIT
+  window only — `pipeline/fit_scoreline.js`) + OT/shootout winner (home share `otHome`). Values: `contracts/sim_calibration.json`.
+- Held-out calibration (635 games): regulation ties 21.8% predicted vs 22.8% actual; PL −1.5 29.8% vs 29.6%; game over 6.5
+  45.8% vs 47.4%; team total over 2.5 61.1% vs 60.7%. Game-script families: 5F 461 hits vs 439.9 expected (independence
+  350.9); 8G 222 vs 214.5 (independence 136.2).
+- Player props ignore OT goals (slightly conservative for overs). **First goal scorer is NOT supported**: the simulator does
+  not order goals in time, so it is never offered.
+- Hits are simulated (for pace/blocks) but never offered as legs — not a bettable market for this user.
