@@ -1,0 +1,2614 @@
+{
+ "audited_at": "2026-11-08T23:02:37.438347+00:00",
+ "source": "sgp-2026-11-08.json",
+ "model_version": "v20261106-224110",
+ "counts": {
+  "WON": 8,
+  "LOST": 5,
+  "PENDING": 41,
+  "VOID-REPRICE": 0
+ },
+ "by_size": {
+  "3": {
+   "n": 5,
+   "won": 5,
+   "expected_wins": 2.08822,
+   "hit_rate": 1.0,
+   "mean_p": 0.417644,
+   "brier": 0.34693121832,
+   "logloss": 0.8941416074882435
+  },
+  "5": {
+   "n": 4,
+   "won": 2,
+   "expected_wins": 1.22272,
+   "hit_rate": 0.5,
+   "mean_p": 0.30568,
+   "brier": 0.254849523,
+   "logloss": 0.6982776236748713
+  },
+  "8": {
+   "n": 4,
+   "won": 1,
+   "expected_wins": 0.49678,
+   "hit_rate": 0.25,
+   "mean_p": 0.124195,
+   "brier": 0.1889347625,
+   "logloss": 0.5582622524209253
+  }
+ },
+ "by_size_independence": {
+  "3": {
+   "n": 5,
+   "won": 5,
+   "expected_wins": 1.9342804244285037,
+   "hit_rate": 1.0,
+   "mean_p": 0.3868560848857007,
+   "brier": 0.3857699347256124,
+   "logloss": 0.9800655737832311
+  },
+  "5": {
+   "n": 4,
+   "won": 2,
+   "expected_wins": 1.0735377860324458,
+   "hit_rate": 0.5,
+   "mean_p": 0.26838444650811144,
+   "brier": 0.296903686529564,
+   "logloss": 0.8078547341419396
+  },
+  "8": {
+   "n": 4,
+   "won": 1,
+   "expected_wins": 0.38164667117993034,
+   "hit_rate": 0.25,
+   "mean_p": 0.09541166779498259,
+   "brier": 0.18525801869534278,
+   "logloss": 0.5343197654909966
+  }
+ },
+ "legs": {
+  "n": 87,
+  "won": 80,
+  "expected": 65.31376
+ },
+ "parlays": [
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
+   "size": 3,
+   "pick": "A",
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.36336,
+   "pLower": 0.3376465681170497,
+   "pIndep": 0.33470337789996796,
+   "breakEven": 196,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.7444,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Tkachuk 2+ SOG",
+     "p": 0.71582,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "M. Tkachuk 1+ point",
+     "p": 0.61972,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
+   "size": 3,
+   "pick": "B",
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.36268,
+   "pLower": 0.33696656811704967,
+   "pIndep": 0.358653245170528,
+   "breakEven": 197,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.7444,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Tkachuk 2+ SOG",
+     "p": 0.71582,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "S. Bennett 2+ SOG",
+     "p": 0.6717,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
+   "size": 3,
+   "pick": "C",
+   "family": "3E Game script",
+   "pJoint": 0.46968,
+   "pLower": 0.4285845450485358,
+   "pIndep": 0.40317468184399996,
+   "breakEven": 133,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "BOS +1.5 puck line",
+     "p": 0.70548,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
+   "size": 5,
+   "pick": "A",
+   "family": "5F Game script",
+   "pJoint": 0.32604,
+   "pLower": 0.2832376673702255,
+   "pIndep": 0.20485694406156815,
+   "breakEven": 253,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "BOS +1.5 puck line",
+     "p": 0.70548,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "BOS team total over 2.5",
+     "p": 0.63774,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80808,
+     "result": "WON",
+     "value": 8
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
+   "size": 5,
+   "pick": "B",
+   "family": "5E Balanced cross-team structure",
+   "pJoint": 0.28598,
+   "pLower": 0.2431776673702255,
+   "pIndep": 0.27150174046858827,
+   "breakEven": 311,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80808,
+     "result": "WON",
+     "value": 8
+    },
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "C. McAvoy 1+ blocked shot",
+     "p": 0.78306,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Jones 1+ blocked shot",
+     "p": 0.74304,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
+   "size": 5,
+   "pick": "C",
+   "family": "5B Top-6 usage cluster",
+   "pJoint": 0.2568,
+   "pLower": 0.23351209772814027,
+   "pIndep": 0.24609191582893042,
+   "breakEven": 328,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "C. McAvoy 1+ blocked shot",
+     "p": 0.78306,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "W. Borgen 1+ blocked shot",
+     "p": 0.74066,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "N. Zadorov 1+ blocked shot",
+     "p": 0.73912,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.14408,
+   "pLower": 0.1001295759026227,
+   "pIndep": 0.07150261509138352,
+   "breakEven": 899,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "BOS +1.5 puck line",
+     "p": 0.70548,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "BOS team total over 2.5",
+     "p": 0.63774,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80808,
+     "result": "WON",
+     "value": 8
+    },
+    {
+     "text": "C. McAvoy 1+ blocked shot",
+     "p": 0.78306,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "S. Jones 1+ blocked shot",
+     "p": 0.74304,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "P. Zacha 1+ point",
+     "p": 0.59542,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
+   "size": 8,
+   "pick": "B",
+   "family": "8D Multi-line production",
+   "pJoint": 0.10926,
+   "pLower": 0.09593910383622854,
+   "pIndep": 0.10188523258269856,
+   "breakEven": 942,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80808,
+     "result": "WON",
+     "value": 8
+    },
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "C. McAvoy 1+ blocked shot",
+     "p": 0.78306,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Jones 1+ blocked shot",
+     "p": 0.74304,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.7444,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "A. Ekblad 1+ blocked shot",
+     "p": 0.74014,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "S. Bennett 2+ SOG",
+     "p": 0.6717,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020277,
+   "game": "FLA@BOS",
+   "state": "OFF",
+   "size": 8,
+   "pick": "C",
+   "family": "8F Cross-team high-event scenario",
+   "pJoint": 0.08908,
+   "pLower": 0.07575910383622855,
+   "pIndep": 0.058063220209543846,
+   "breakEven": 1220,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.80808,
+     "result": "WON",
+     "value": 8
+    },
+    {
+     "text": "D. Pastrnak 2+ SOG",
+     "p": 0.80668,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "D. Pastrnak 1+ point",
+     "p": 0.72986,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.7444,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Tkachuk 2+ SOG",
+     "p": 0.71582,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "S. Reinhart 1+ point",
+     "p": 0.62974,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "M. Tkachuk 1+ point",
+     "p": 0.61972,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "P. Zacha 1+ point",
+     "p": 0.59542,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "state": "CRIT",
+   "size": 3,
+   "pick": "A",
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.32656,
+   "pLower": 0.3008465681170497,
+   "pIndep": 0.27175147636624,
+   "breakEven": 232,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "J. Eichel 2+ SOG",
+     "p": 0.75162,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "J. Eichel 1+ point",
+     "p": 0.6204,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Marner 1+ point",
+     "p": 0.58144,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "state": "CRIT",
+   "size": 3,
+   "pick": "B",
+   "family": "3E Game script",
+   "pJoint": 0.5056,
+   "pLower": 0.4645045450485359,
+   "pIndep": 0.504157237907648,
+   "breakEven": 115,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "M. Samuelsson 1+ blocked shot",
+     "p": 0.85666,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.83054,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "VGK +1.5 puck line",
+     "p": 0.71558,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "state": "CRIT",
+   "size": 3,
+   "pick": "C",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.56594,
+   "pLower": 0.5386736098849942,
+   "pIndep": 0.5659976431477679,
+   "breakEven": -117,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Samuelsson 1+ blocked shot",
+     "p": 0.85666,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.83054,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "C. Timmins 1+ blocked shot",
+     "p": 0.81042,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "state": "CRIT",
+   "size": 5,
+   "pick": "A",
+   "family": "5F Game script",
+   "pJoint": 0.3199,
+   "pLower": 0.2770976673702255,
+   "pIndep": 0.3202581475755459,
+   "breakEven": 261,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "M. Samuelsson 1+ blocked shot",
+     "p": 0.85666,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.83054,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "C. Timmins 1+ blocked shot",
+     "p": 0.81042,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "N. Hanifin 1+ blocked shot",
+     "p": 0.79648,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "VGK +1.5 puck line",
+     "p": 0.71558,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "state": "CRIT",
+   "size": 5,
+   "pick": "B",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.16782,
+   "pLower": 0.14781309306170373,
+   "pIndep": 0.10055971982171881,
+   "breakEven": 577,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "T. Thompson 2+ SOG",
+     "p": 0.78756,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "T. Thompson 1+ point",
+     "p": 0.60216,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "R. Dahlin 1+ point",
+     "p": 0.59892,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "J. Quinn 2+ SOG",
+     "p": 0.66308,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Quinn 1+ point",
+     "p": 0.53486,
+     "result": "PENDING",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "state": "CRIT",
+   "size": 5,
+   "pick": "C",
+   "family": "5E Balanced cross-team structure",
+   "pJoint": 0.3539,
+   "pLower": 0.328471997284063,
+   "pIndep": 0.35108718567335895,
+   "breakEven": 204,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Samuelsson 1+ blocked shot",
+     "p": 0.85666,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.83054,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "C. Timmins 1+ blocked shot",
+     "p": 0.81042,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "N. Hanifin 1+ blocked shot",
+     "p": 0.79648,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "T. Thompson 2+ SOG",
+     "p": 0.78756,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "state": "CRIT",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.1579,
+   "pLower": 0.1139495759026227,
+   "pIndep": 0.09305656093275717,
+   "breakEven": 778,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "M. Samuelsson 1+ blocked shot",
+     "p": 0.85666,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.83054,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "C. Timmins 1+ blocked shot",
+     "p": 0.81042,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "N. Hanifin 1+ blocked shot",
+     "p": 0.79648,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "VGK +1.5 puck line",
+     "p": 0.71558,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "VGK team total over 2.5",
+     "p": 0.61796,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Eichel 2+ SOG",
+     "p": 0.75162,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "J. Eichel 1+ point",
+     "p": 0.6204,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "state": "CRIT",
+   "size": 8,
+   "pick": "B",
+   "family": "8D Multi-line production",
+   "pJoint": 0.15436,
+   "pLower": 0.11040957590262268,
+   "pIndep": 0.1501956032963044,
+   "breakEven": 806,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Samuelsson 1+ blocked shot",
+     "p": 0.85666,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.83054,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "C. Timmins 1+ blocked shot",
+     "p": 0.81042,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "N. Hanifin 1+ blocked shot",
+     "p": 0.79648,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "T. Thompson 2+ SOG",
+     "p": 0.78756,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "R. Andersson 1+ blocked shot",
+     "p": 0.773,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Eichel 2+ SOG",
+     "p": 0.75162,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "O. Power 1+ blocked shot",
+     "p": 0.73854,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "state": "CRIT",
+   "size": 8,
+   "pick": "C",
+   "family": "8F Cross-team high-event scenario",
+   "pJoint": 0.05538,
+   "pLower": 0.04380195177535315,
+   "pIndep": 0.03236677842795861,
+   "breakEven": 2183,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "T. Thompson 2+ SOG",
+     "p": 0.78756,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Eichel 2+ SOG",
+     "p": 0.75162,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "T. Thompson 1+ point",
+     "p": 0.60216,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "R. Dahlin 1+ point",
+     "p": 0.59892,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "R. Dahlin 2+ SOG",
+     "p": 0.66632,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Eichel 1+ point",
+     "p": 0.6204,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Marner 1+ point",
+     "p": 0.58144,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Marner 2+ SOG",
+     "p": 0.63294,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020280,
+   "game": "TBL@WPG",
+   "state": "PRE",
+   "size": 3,
+   "pick": "A",
+   "family": "3A Shot-volume structure",
+   "pJoint": 0.37868,
+   "pLower": 0.3529665681170497,
+   "pIndep": 0.374939895397824,
+   "breakEven": 183,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "K. Connor 2+ SOG",
+     "p": 0.79602,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Guentzel 2+ SOG",
+     "p": 0.7275,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "C. Perfetti 2+ SOG",
+     "p": 0.64792,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020280,
+   "game": "TBL@WPG",
+   "state": "PRE",
+   "size": 3,
+   "pick": "B",
+   "family": "3E Game script",
+   "pJoint": 0.55106,
+   "pLower": 0.5237936098849942,
+   "pIndep": 0.550131900434496,
+   "breakEven": -110,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "D. Samberg 1+ blocked shot",
+     "p": 0.84054,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Ferraro 1+ blocked shot",
+     "p": 0.838,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "TBL +1.5 puck line",
+     "p": 0.7803,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020280,
+   "game": "TBL@WPG",
+   "state": "PRE",
+   "size": 3,
+   "pick": "C",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.56164,
+   "pLower": 0.5343736098849943,
+   "pIndep": 0.559361355759136,
+   "breakEven": -115,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "D. Samberg 1+ blocked shot",
+     "p": 0.84054,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Ferraro 1+ blocked shot",
+     "p": 0.838,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "B. Hagel 2+ SOG",
+     "p": 0.79642,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020280,
+   "game": "TBL@WPG",
+   "state": "PRE",
+   "size": 5,
+   "pick": "A",
+   "family": "5F Game script",
+   "pJoint": 0.36422,
+   "pLower": 0.338791997284063,
+   "pIndep": 0.25891881799705085,
+   "breakEven": 195,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "D. Samberg 1+ blocked shot",
+     "p": 0.84054,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Ferraro 1+ blocked shot",
+     "p": 0.838,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "TBL +1.5 puck line",
+     "p": 0.7803,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "TBL team total over 2.5",
+     "p": 0.68094,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Kucherov 1+ point",
+     "p": 0.68432,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020280,
+   "game": "TBL@WPG",
+   "state": "PRE",
+   "size": 5,
+   "pick": "B",
+   "family": "5E Balanced cross-team structure",
+   "pJoint": 0.35856,
+   "pLower": 0.333131997284063,
+   "pIndep": 0.35573700808420095,
+   "breakEven": 200,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "D. Samberg 1+ blocked shot",
+     "p": 0.84054,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Ferraro 1+ blocked shot",
+     "p": 0.838,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "B. Hagel 2+ SOG",
+     "p": 0.79642,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "K. Connor 2+ SOG",
+     "p": 0.79602,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "E. Cernak 1+ blocked shot",
+     "p": 0.78504,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020280,
+   "game": "TBL@WPG",
+   "state": "PRE",
+   "size": 5,
+   "pick": "C",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.21818,
+   "pLower": 0.1948920977281403,
+   "pIndep": 0.15373530133890706,
+   "breakEven": 413,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "N. Kucherov 2+ SOG",
+     "p": 0.74308,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Guentzel 2+ SOG",
+     "p": 0.7275,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Kucherov 1+ point",
+     "p": 0.68432,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Guentzel 1+ point",
+     "p": 0.63164,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "B. Hagel 1+ point",
+     "p": 0.62794,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020280,
+   "game": "TBL@WPG",
+   "state": "PRE",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.18898,
+   "pLower": 0.1450295759026227,
+   "pIndep": 0.12109612080620095,
+   "breakEven": 590,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "D. Samberg 1+ blocked shot",
+     "p": 0.84054,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Ferraro 1+ blocked shot",
+     "p": 0.838,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "B. Hagel 2+ SOG",
+     "p": 0.79642,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "TBL +1.5 puck line",
+     "p": 0.7803,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "TBL team total over 2.5",
+     "p": 0.68094,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Kucherov 1+ point",
+     "p": 0.68432,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Kucherov 2+ SOG",
+     "p": 0.74308,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Pionk 1+ blocked shot",
+     "p": 0.7801,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020280,
+   "game": "TBL@WPG",
+   "state": "PRE",
+   "size": 8,
+   "pick": "B",
+   "family": "8D Multi-line production",
+   "pJoint": 0.14964,
+   "pLower": 0.10568957590262268,
+   "pIndep": 0.14601707922853754,
+   "breakEven": 846,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "D. Samberg 1+ blocked shot",
+     "p": 0.84054,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Ferraro 1+ blocked shot",
+     "p": 0.838,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "B. Hagel 2+ SOG",
+     "p": 0.79642,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "K. Connor 2+ SOG",
+     "p": 0.79602,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "E. Cernak 1+ blocked shot",
+     "p": 0.78504,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Pionk 1+ blocked shot",
+     "p": 0.7801,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Kucherov 2+ SOG",
+     "p": 0.74308,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "R. McDonagh 1+ blocked shot",
+     "p": 0.69982,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020280,
+   "game": "TBL@WPG",
+   "state": "PRE",
+   "size": 8,
+   "pick": "C",
+   "family": "8B Concentrated offensive production",
+   "pJoint": 0.10358,
+   "pLower": 0.09025910383622855,
+   "pIndep": 0.06540946431351376,
+   "breakEven": 1008,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "B. Hagel 2+ SOG",
+     "p": 0.79642,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "K. Connor 2+ SOG",
+     "p": 0.79602,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Kucherov 2+ SOG",
+     "p": 0.74308,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Kucherov 1+ point",
+     "p": 0.68432,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Guentzel 2+ SOG",
+     "p": 0.7275,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Guentzel 1+ point",
+     "p": 0.63164,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "B. Hagel 1+ point",
+     "p": 0.62794,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "K. Connor 1+ point",
+     "p": 0.6677,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020279,
+   "game": "NJD@TOR",
+   "state": "FUT",
+   "size": 3,
+   "pick": "A",
+   "family": "3E Game script",
+   "pJoint": 0.56944,
+   "pLower": 0.5421736098849942,
+   "pIndep": 0.56140071635312,
+   "breakEven": -118,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Hughes 2+ SOG",
+     "p": 0.86782,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. McCabe 1+ blocked shot",
+     "p": 0.84092,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "NJD +1.5 puck line",
+     "p": 0.75834,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020279,
+   "game": "NJD@TOR",
+   "state": "FUT",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.6028,
+   "pLower": 0.5755336098849942,
+   "pIndep": 0.59993354738576,
+   "breakEven": -136,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Hughes 2+ SOG",
+     "p": 0.86782,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. McCabe 1+ blocked shot",
+     "p": 0.84092,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "C. Tanev 1+ blocked shot",
+     "p": 0.80554,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020279,
+   "game": "NJD@TOR",
+   "state": "FUT",
+   "size": 3,
+   "pick": "C",
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.54678,
+   "pLower": 0.5195136098849943,
+   "pIndep": 0.5318894259168,
+   "breakEven": -108,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Hughes 2+ SOG",
+     "p": 0.86782,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Meier 2+ SOG",
+     "p": 0.80488,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Hughes 1+ point",
+     "p": 0.74952,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020279,
+   "game": "NJD@TOR",
+   "state": "FUT",
+   "size": 5,
+   "pick": "A",
+   "family": "5F Game script",
+   "pJoint": 0.43212,
+   "pLower": 0.406691997284063,
+   "pIndep": 0.3102838225365665,
+   "breakEven": 146,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Hughes 2+ SOG",
+     "p": 0.86782,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "NJD +1.5 puck line",
+     "p": 0.75834,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "NJD team total over 2.5",
+     "p": 0.72584,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Hughes 1+ point",
+     "p": 0.74952,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. McCabe 1+ blocked shot",
+     "p": 0.84092,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020279,
+   "game": "NJD@TOR",
+   "state": "FUT",
+   "size": 5,
+   "pick": "B",
+   "family": "5E Balanced cross-team structure",
+   "pJoint": 0.3855,
+   "pLower": 0.36007199728406303,
+   "pIndep": 0.3805663219529465,
+   "breakEven": 178,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Hughes 2+ SOG",
+     "p": 0.86782,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. McCabe 1+ blocked shot",
+     "p": 0.84092,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Meier 2+ SOG",
+     "p": 0.80488,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "C. Tanev 1+ blocked shot",
+     "p": 0.80554,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Siegenthaler 1+ blocked shot",
+     "p": 0.78694,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020279,
+   "game": "NJD@TOR",
+   "state": "FUT",
+   "size": 5,
+   "pick": "C",
+   "family": "5B Top-6 usage cluster",
+   "pJoint": 0.31074,
+   "pLower": 0.2679376673702255,
+   "pIndep": 0.30174674283691905,
+   "breakEven": 273,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Hughes 2+ SOG",
+     "p": 0.86782,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Siegenthaler 1+ blocked shot",
+     "p": 0.78694,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "B. Pesce 1+ blocked shot",
+     "p": 0.78496,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Hughes 1+ point",
+     "p": 0.74952,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Hischier 2+ SOG",
+     "p": 0.73334,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020279,
+   "game": "NJD@TOR",
+   "state": "FUT",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.23036,
+   "pLower": 0.1864095759026227,
+   "pIndep": 0.1607019886065763,
+   "breakEven": 436,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Hughes 2+ SOG",
+     "p": 0.86782,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "NJD +1.5 puck line",
+     "p": 0.75834,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "NJD team total over 2.5",
+     "p": 0.72584,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Hughes 1+ point",
+     "p": 0.74952,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. McCabe 1+ blocked shot",
+     "p": 0.84092,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Meier 2+ SOG",
+     "p": 0.80488,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "C. Tanev 1+ blocked shot",
+     "p": 0.80554,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Siegenthaler 1+ blocked shot",
+     "p": 0.78694,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020279,
+   "game": "NJD@TOR",
+   "state": "FUT",
+   "size": 8,
+   "pick": "B",
+   "family": "8D Multi-line production",
+   "pJoint": 0.177,
+   "pLower": 0.13304957590262267,
+   "pIndep": 0.16864721674923253,
+   "breakEven": 652,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Hughes 2+ SOG",
+     "p": 0.86782,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. McCabe 1+ blocked shot",
+     "p": 0.84092,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Meier 2+ SOG",
+     "p": 0.80488,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "C. Tanev 1+ blocked shot",
+     "p": 0.80554,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Siegenthaler 1+ blocked shot",
+     "p": 0.78694,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "B. Pesce 1+ blocked shot",
+     "p": 0.78496,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Hughes 1+ point",
+     "p": 0.74952,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "A. Matthews 2+ SOG",
+     "p": 0.74314,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020279,
+   "game": "NJD@TOR",
+   "state": "FUT",
+   "size": 8,
+   "pick": "C",
+   "family": "8F Cross-team high-event scenario",
+   "pJoint": 0.10636,
+   "pLower": 0.09303910383622854,
+   "pIndep": 0.09663306892703961,
+   "breakEven": 975,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. Hughes 2+ SOG",
+     "p": 0.86782,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Meier 2+ SOG",
+     "p": 0.80488,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Hughes 1+ point",
+     "p": 0.74952,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "A. Matthews 2+ SOG",
+     "p": 0.74314,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Hischier 2+ SOG",
+     "p": 0.73334,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Bratt 2+ SOG",
+     "p": 0.69464,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "D. Raddysh 2+ SOG",
+     "p": 0.70036,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "W. Nylander 2+ SOG",
+     "p": 0.68642,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020281,
+   "game": "PHI@CGY",
+   "state": "FUT",
+   "size": 3,
+   "pick": "A",
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.25738,
+   "pLower": 0.23166656811704966,
+   "pIndep": 0.22889733945408003,
+   "breakEven": 332,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "T. Zegras 2+ SOG",
+     "p": 0.63288,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Zegras 1+ point",
+     "p": 0.57282,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Michkov 2+ SOG",
+     "p": 0.62656,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020281,
+   "game": "PHI@CGY",
+   "state": "FUT",
+   "size": 3,
+   "pick": "B",
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.25408,
+   "pLower": 0.22836656811704964,
+   "pIndep": 0.25031606121983996,
+   "breakEven": 338,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "M. Backlund 2+ SOG",
+     "p": 0.64186,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Coronato 2+ SOG",
+     "p": 0.64024,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Farabee 2+ SOG",
+     "p": 0.61176,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020281,
+   "game": "PHI@CGY",
+   "state": "FUT",
+   "size": 3,
+   "pick": "C",
+   "family": "3E Game script",
+   "pJoint": 0.5387,
+   "pLower": 0.5114336098849942,
+   "pIndep": 0.53796847822816,
+   "breakEven": -105,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "N. Seeler 1+ blocked shot",
+     "p": 0.84746,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Sanheim 1+ blocked shot",
+     "p": 0.84242,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "PHI +1.5 puck line",
+     "p": 0.75322,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020281,
+   "game": "PHI@CGY",
+   "state": "FUT",
+   "size": 5,
+   "pick": "A",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.11874,
+   "pLower": 0.09873309306170375,
+   "pIndep": 0.08247085352950251,
+   "breakEven": 913,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "O. Tippett 2+ SOG",
+     "p": 0.66126,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Konecny 2+ SOG",
+     "p": 0.64092,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Zegras 2+ SOG",
+     "p": 0.63288,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Zegras 1+ point",
+     "p": 0.57282,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Konecny 1+ point",
+     "p": 0.5402,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020281,
+   "game": "PHI@CGY",
+   "state": "FUT",
+   "size": 5,
+   "pick": "B",
+   "family": "5F Game script",
+   "pJoint": 0.34352,
+   "pLower": 0.318091997284063,
+   "pIndep": 0.3430641572305097,
+   "breakEven": 214,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "N. Seeler 1+ blocked shot",
+     "p": 0.84746,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Sanheim 1+ blocked shot",
+     "p": 0.84242,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "Z. Whitecloud 1+ blocked shot",
+     "p": 0.8087,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "C. York 1+ blocked shot",
+     "p": 0.79204,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "PHI +1.5 puck line",
+     "p": 0.75322,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020281,
+   "game": "PHI@CGY",
+   "state": "FUT",
+   "size": 5,
+   "pick": "C",
+   "family": "5D High-tempo matchup",
+   "pJoint": 0.11538,
+   "pLower": 0.09510881012198232,
+   "pIndep": 0.10987247166389762,
+   "breakEven": 951,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "O. Tippett 2+ SOG",
+     "p": 0.66126,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Konecny 2+ SOG",
+     "p": 0.64092,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Backlund 2+ SOG",
+     "p": 0.64186,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Coronato 2+ SOG",
+     "p": 0.64024,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Michkov 2+ SOG",
+     "p": 0.62656,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020281,
+   "game": "PHI@CGY",
+   "state": "FUT",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.15782,
+   "pLower": 0.11386957590262267,
+   "pIndep": 0.12937925585458468,
+   "breakEven": 778,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "N. Seeler 1+ blocked shot",
+     "p": 0.84746,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Sanheim 1+ blocked shot",
+     "p": 0.84242,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "Z. Whitecloud 1+ blocked shot",
+     "p": 0.8087,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "C. York 1+ blocked shot",
+     "p": 0.79204,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "PHI +1.5 puck line",
+     "p": 0.75322,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "PHI team total over 2.5",
+     "p": 0.64768,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "Y. Kuznetsov 1+ blocked shot",
+     "p": 0.7624,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Drysdale 1+ blocked shot",
+     "p": 0.76334,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020281,
+   "game": "PHI@CGY",
+   "state": "FUT",
+   "size": 8,
+   "pick": "B",
+   "family": "8D Multi-line production",
+   "pJoint": 0.14756,
+   "pLower": 0.10360957590262268,
+   "pIndep": 0.1466034038541553,
+   "breakEven": 865,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "N. Seeler 1+ blocked shot",
+     "p": 0.84746,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Sanheim 1+ blocked shot",
+     "p": 0.84242,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "Z. Whitecloud 1+ blocked shot",
+     "p": 0.8087,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "C. York 1+ blocked shot",
+     "p": 0.79204,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "Y. Kuznetsov 1+ blocked shot",
+     "p": 0.7624,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Drysdale 1+ blocked shot",
+     "p": 0.76334,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Middleton 1+ blocked shot",
+     "p": 0.75268,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Hanley 1+ blocked shot",
+     "p": 0.72608,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020281,
+   "game": "PHI@CGY",
+   "state": "FUT",
+   "size": 8,
+   "pick": "C",
+   "family": "8F Cross-team high-event scenario",
+   "pJoint": 0.03064,
+   "pLower": 0.01904315719088618,
+   "pIndep": 0.02451453642316783,
+   "breakEven": 5151,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "O. Tippett 2+ SOG",
+     "p": 0.66126,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Konecny 2+ SOG",
+     "p": 0.64092,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Zegras 2+ SOG",
+     "p": 0.63288,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Zegras 1+ point",
+     "p": 0.57282,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Michkov 2+ SOG",
+     "p": 0.62656,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Backlund 2+ SOG",
+     "p": 0.64186,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Coronato 2+ SOG",
+     "p": 0.64024,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Farabee 2+ SOG",
+     "p": 0.61176,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020282,
+   "game": "PIT@ANA",
+   "state": "FUT",
+   "size": 3,
+   "pick": "A",
+   "family": "3C Goalie workload structure",
+   "pJoint": 0.26455106682551716,
+   "pLower": 0.23883763494256682,
+   "pIndep": 0.20557820944320904,
+   "breakEven": 319,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "C. Gauthier 3+ SOG",
+     "p": 0.63286,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "A. Silovs 23+ saves",
+     "p": 0.5486453734960617,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Granlund 2+ SOG",
+     "p": 0.58888,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020282,
+   "game": "PIT@ANA",
+   "state": "FUT",
+   "size": 3,
+   "pick": "B",
+   "family": "3C Goalie workload structure",
+   "pJoint": 0.2910646593739846,
+   "pLower": 0.2653512274910343,
+   "pIndep": 0.22599119826033562,
+   "breakEven": 277,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "L. Carlsson 2+ SOG",
+     "p": 0.64762,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "C. Gauthier 3+ SOG",
+     "p": 0.63286,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "A. Silovs 23+ saves",
+     "p": 0.5486453734960617,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020282,
+   "game": "PIT@ANA",
+   "state": "FUT",
+   "size": 3,
+   "pick": "C",
+   "family": "3C Goalie workload structure",
+   "pJoint": 0.31354922560381243,
+   "pLower": 0.2878357937208621,
+   "pIndep": 0.25077787478763164,
+   "breakEven": 247,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "B. Sennecke 2+ SOG",
+     "p": 0.71306,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "L. Carlsson 2+ SOG",
+     "p": 0.64762,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "A. Silovs 23+ saves",
+     "p": 0.5486453734960617,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020282,
+   "game": "PIT@ANA",
+   "state": "FUT",
+   "size": 5,
+   "pick": "A",
+   "family": "5F Game script",
+   "pJoint": 0.30736,
+   "pLower": 0.2645576673702255,
+   "pIndep": 0.19147621502381845,
+   "breakEven": 278,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "C. Gauthier 2+ SOG",
+     "p": 0.8268,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "ANA +1.5 puck line",
+     "p": 0.7048,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "ANA team total over 2.5",
+     "p": 0.61106,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "L. Carlsson 1+ point",
+     "p": 0.68674,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "P. Mintyukov 1+ blocked shot",
+     "p": 0.77972,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020282,
+   "game": "PIT@ANA",
+   "state": "FUT",
+   "size": 5,
+   "pick": "B",
+   "family": "5E Balanced cross-team structure",
+   "pJoint": 0.2601,
+   "pLower": 0.2368120977281403,
+   "pIndep": 0.25462180810157364,
+   "breakEven": 322,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "C. Gauthier 2+ SOG",
+     "p": 0.8268,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. LaCombe 1+ blocked shot",
+     "p": 0.79878,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "P. Mintyukov 1+ blocked shot",
+     "p": 0.77972,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "K. Korczak 1+ blocked shot",
+     "p": 0.7114,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "R. Rakell 2+ SOG",
+     "p": 0.68026,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020282,
+   "game": "PIT@ANA",
+   "state": "FUT",
+   "size": 5,
+   "pick": "C",
+   "family": "5B Top-6 usage cluster",
+   "pJoint": 0.18648,
+   "pLower": 0.16647309306170374,
+   "pIndep": 0.16905766849818832,
+   "breakEven": 501,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "J. LaCombe 1+ blocked shot",
+     "p": 0.79878,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "B. Sennecke 2+ SOG",
+     "p": 0.71306,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "L. Carlsson 1+ point",
+     "p": 0.68674,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "L. Carlsson 2+ SOG",
+     "p": 0.64762,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Luneau 1+ blocked shot",
+     "p": 0.6776,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020282,
+   "game": "PIT@ANA",
+   "state": "FUT",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.14592,
+   "pLower": 0.10196957590262268,
+   "pIndep": 0.06888737518140302,
+   "breakEven": 881,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "C. Gauthier 2+ SOG",
+     "p": 0.8268,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "ANA +1.5 puck line",
+     "p": 0.7048,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "ANA team total over 2.5",
+     "p": 0.61106,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "L. Carlsson 1+ point",
+     "p": 0.68674,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. LaCombe 1+ blocked shot",
+     "p": 0.79878,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "C. Gauthier 1+ point",
+     "p": 0.60358,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "P. Mintyukov 1+ blocked shot",
+     "p": 0.77972,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "D. Helleson 1+ blocked shot",
+     "p": 0.74488,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020282,
+   "game": "PIT@ANA",
+   "state": "FUT",
+   "size": 8,
+   "pick": "B",
+   "family": "8D Multi-line production",
+   "pJoint": 0.1002,
+   "pLower": 0.08687910383622854,
+   "pIndep": 0.09785927165719899,
+   "breakEven": 1051,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "C. Gauthier 2+ SOG",
+     "p": 0.8268,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. LaCombe 1+ blocked shot",
+     "p": 0.79878,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "P. Mintyukov 1+ blocked shot",
+     "p": 0.77972,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "D. Helleson 1+ blocked shot",
+     "p": 0.74488,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "K. Korczak 1+ blocked shot",
+     "p": 0.7114,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "B. Sennecke 2+ SOG",
+     "p": 0.71306,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "D. Carlile 1+ blocked shot",
+     "p": 0.6982,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Warren 1+ blocked shot",
+     "p": 0.6939,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020282,
+   "game": "PIT@ANA",
+   "state": "FUT",
+   "size": 8,
+   "pick": "C",
+   "family": "8B Concentrated offensive production",
+   "pJoint": 0.04106,
+   "pLower": 0.02946315719088618,
+   "pIndep": 0.022854015901036546,
+   "breakEven": 3294,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "B. Sennecke 2+ SOG",
+     "p": 0.71306,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "L. Carlsson 1+ point",
+     "p": 0.68674,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "L. Carlsson 2+ SOG",
+     "p": 0.64762,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "R. Rakell 2+ SOG",
+     "p": 0.68026,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "B. Sennecke 1+ point",
+     "p": 0.5586,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Granlund 1+ point",
+     "p": 0.56352,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Granlund 2+ SOG",
+     "p": 0.58888,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "E. Karlsson 1+ point",
+     "p": 0.5828,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  }
+ ]
+}
