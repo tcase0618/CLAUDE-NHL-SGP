@@ -1,49 +1,81 @@
 {
- "audited_at": "2026-11-08T00:00:38.472376+00:00",
+ "audited_at": "2026-11-08T01:03:30.580764+00:00",
  "source": "slot-2200Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 1,
-  "LOST": 0,
-  "PENDING": 8,
+  "WON": 2,
+  "LOST": 7,
+  "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
   "3": {
-   "n": 1,
+   "n": 3,
    "won": 1,
-   "expected_wins": 0.45488,
-   "hit_rate": 1.0,
-   "mean_p": 0.45488,
-   "brier": 0.29715581440000005,
-   "logloss": 0.7877216310794474
+   "expected_wins": 1.1085,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.3695,
+   "brier": 0.17030272386666667,
+   "logloss": 0.5264448476812976
   },
-  "5": null,
-  "8": null
+  "5": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 0.63202,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.21067333333333335,
+   "brier": 0.21496576679999999,
+   "logloss": 0.6121773462617098
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.16298,
+   "hit_rate": 0.0,
+   "mean_p": 0.05432666666666667,
+   "brier": 0.0035474084000000003,
+   "logloss": 0.056194651109811374
+  }
  },
  "by_size_independence": {
   "3": {
-   "n": 1,
+   "n": 3,
    "won": 1,
-   "expected_wins": 0.452411888727888,
-   "hit_rate": 1.0,
-   "mean_p": 0.452411888727888,
-   "brier": 0.29985273960655884,
-   "logloss": 0.7931622558461014
+   "expected_wins": 1.021674853218096,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.340558284406032,
+   "brier": 0.15425082716940058,
+   "logloss": 0.4879757157608819
   },
-  "5": null,
-  "8": null
+  "5": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 0.6268221887287551,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.20894072957625168,
+   "brier": 0.21646510347098555,
+   "logloss": 0.6161342006164344
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.1450160573101656,
+   "hit_rate": 0.0,
+   "mean_p": 0.0483386857700552,
+   "brier": 0.003072366014563619,
+   "logloss": 0.04995796564747993
+  }
  },
  "legs": {
-  "n": 30,
-  "won": 30,
-  "expected": 21.32896
+  "n": 48,
+  "won": 39,
+  "expected": 33.329480000000004
  },
  "parlays": [
   {
    "game_id": 2026020267,
    "game": "NYR@SEA",
-   "state": "LIVE",
+   "state": "FINAL",
    "size": 3,
    "pick": "A",
    "family": "3B Team offensive scenario",
@@ -51,13 +83,13 @@
    "pLower": 0.2918688197198715,
    "pIndep": 0.263779857229856,
    "breakEven": 243,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Zibanejad 2+ SOG",
      "p": 0.66152,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "M. Zibanejad 1+ point",
@@ -76,7 +108,7 @@
   {
    "game_id": 2026020267,
    "game": "NYR@SEA",
-   "state": "LIVE",
+   "state": "FINAL",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -102,14 +134,14 @@
      "text": "M. Pettersson 1+ blocked shot",
      "p": 0.74988,
      "result": "WON",
-     "value": 3
+     "value": 5
     }
    ]
   },
   {
    "game_id": 2026020267,
    "game": "NYR@SEA",
-   "state": "LIVE",
+   "state": "FINAL",
    "size": 3,
    "pick": "C",
    "family": "3B Team offensive scenario",
@@ -117,7 +149,7 @@
    "pLower": 0.3087688197198715,
    "pIndep": 0.305483107260352,
    "breakEven": 224,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "P. Dorofeyev 2+ SOG",
@@ -128,8 +160,8 @@
     {
      "text": "M. Zibanejad 2+ SOG",
      "p": 0.66152,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "M. Zibanejad 1+ point",
@@ -142,7 +174,7 @@
   {
    "game_id": 2026020267,
    "game": "NYR@SEA",
-   "state": "LIVE",
+   "state": "FINAL",
    "size": 5,
    "pick": "A",
    "family": "5B Top-6 usage cluster",
@@ -150,13 +182,13 @@
    "pLower": 0.16673311623035117,
    "pIndep": 0.18933450348009354,
    "breakEven": 500,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Pettersson 1+ blocked shot",
      "p": 0.74988,
      "result": "WON",
-     "value": 3
+     "value": 5
     },
     {
      "text": "B. Schneider 1+ blocked shot",
@@ -167,7 +199,7 @@
     {
      "text": "A. Fox 1+ blocked shot",
      "p": 0.72626,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -187,7 +219,7 @@
   {
    "game_id": 2026020267,
    "game": "NYR@SEA",
-   "state": "LIVE",
+   "state": "FINAL",
    "size": 5,
    "pick": "B",
    "family": "5B Top-6 usage cluster",
@@ -195,13 +227,13 @@
    "pLower": 0.17273311623035117,
    "pIndep": 0.1958904155353435,
    "breakEven": 479,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Pettersson 1+ blocked shot",
      "p": 0.74988,
      "result": "WON",
-     "value": 3
+     "value": 5
     },
     {
      "text": "B. Schneider 1+ blocked shot",
@@ -212,7 +244,7 @@
     {
      "text": "A. Fox 1+ blocked shot",
      "p": 0.72626,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -224,15 +256,15 @@
     {
      "text": "M. Zibanejad 2+ SOG",
      "p": 0.66152,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020267,
    "game": "NYR@SEA",
-   "state": "LIVE",
+   "state": "FINAL",
    "size": 5,
    "pick": "C",
    "family": "5E Balanced cross-team structure",
@@ -240,7 +272,7 @@
    "pLower": 0.21814501613468484,
    "pIndep": 0.24159726971331807,
    "breakEven": 358,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "A. Larsson 1+ blocked shot",
@@ -258,7 +290,7 @@
      "text": "M. Pettersson 1+ blocked shot",
      "p": 0.74988,
      "result": "WON",
-     "value": 3
+     "value": 5
     },
     {
      "text": "P. Dorofeyev 2+ SOG",
@@ -269,15 +301,15 @@
     {
      "text": "B. Montour 1+ blocked shot",
      "p": 0.73226,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020267,
    "game": "NYR@SEA",
-   "state": "LIVE",
+   "state": "FINAL",
    "size": 8,
    "pick": "A",
    "family": "8D Multi-line production",
@@ -285,7 +317,7 @@
    "pLower": 0.05335387236078348,
    "pIndep": 0.08669453053399992,
    "breakEven": 1774,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "A. Larsson 1+ blocked shot",
@@ -303,7 +335,7 @@
      "text": "M. Pettersson 1+ blocked shot",
      "p": 0.74988,
      "result": "WON",
-     "value": 3
+     "value": 5
     },
     {
      "text": "P. Dorofeyev 2+ SOG",
@@ -314,8 +346,8 @@
     {
      "text": "B. Montour 1+ blocked shot",
      "p": 0.73226,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "V. Gavrikov 1+ blocked shot",
@@ -326,21 +358,21 @@
     {
      "text": "A. Fox 1+ blocked shot",
      "p": 0.72626,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "R. Evans 1+ blocked shot",
      "p": 0.71088,
      "result": "WON",
-     "value": 2
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020267,
    "game": "NYR@SEA",
-   "state": "LIVE",
+   "state": "FINAL",
    "size": 8,
    "pick": "B",
    "family": "8F Cross-team high-event scenario",
@@ -348,7 +380,7 @@
    "pLower": 0.030663042672015174,
    "pIndep": 0.028683177569246685,
    "breakEven": 3161,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "P. Dorofeyev 2+ SOG",
@@ -359,8 +391,8 @@
     {
      "text": "M. Zibanejad 2+ SOG",
      "p": 0.66152,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "M. Zibanejad 1+ point",
@@ -383,27 +415,27 @@
     {
      "text": "B. McMann 2+ SOG",
      "p": 0.67888,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. Montour 2+ SOG",
      "p": 0.63578,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "J. Eberle 2+ SOG",
      "p": 0.6068,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020267,
    "game": "NYR@SEA",
-   "state": "LIVE",
+   "state": "FINAL",
    "size": 8,
    "pick": "C",
    "family": "8A Shot-dominant game",
@@ -411,7 +443,7 @@
    "pLower": 0.017303042672015177,
    "pIndep": 0.029638349206918987,
    "breakEven": 5679,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "P. Dorofeyev 2+ SOG",
@@ -422,26 +454,26 @@
     {
      "text": "B. McMann 2+ SOG",
      "p": 0.67888,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "M. Zibanejad 2+ SOG",
      "p": 0.66152,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "B. Montour 2+ SOG",
      "p": 0.63578,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "J. Miller 2+ SOG",
      "p": 0.62306,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "A. Lafreni\u00e8re 2+ SOG",
@@ -452,14 +484,14 @@
     {
      "text": "A. Fox 2+ SOG",
      "p": 0.58364,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "J. Eberle 2+ SOG",
      "p": 0.6068,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     }
    ]
   }

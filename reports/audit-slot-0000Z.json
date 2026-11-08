@@ -1,5 +1,5 @@
 {
- "audited_at": "2026-11-08T00:00:39.056275+00:00",
+ "audited_at": "2026-11-08T01:03:30.907789+00:00",
  "source": "slot-0000Z.json",
  "model_version": "v20261106-224110",
  "counts": {
@@ -19,15 +19,15 @@
   "8": null
  },
  "legs": {
-  "n": 0,
-  "won": 0,
-  "expected": 0
+  "n": 44,
+  "won": 44,
+  "expected": 33.52458
  },
  "parlays": [
   {
    "game_id": 2026020268,
    "game": "MTL@TOR",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "A",
    "family": "3D Cross-team scenario",
@@ -41,26 +41,26 @@
      "text": "C. Caufield 2+ SOG",
      "p": 0.8365,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "N. Dobson 1+ blocked shot",
      "p": 0.83626,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. McCabe 1+ blocked shot",
      "p": 0.8316,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020268,
    "game": "MTL@TOR",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "B",
    "family": "3B Team offensive scenario",
@@ -73,27 +73,27 @@
     {
      "text": "A. Matthews 2+ SOG",
      "p": 0.7936,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "D. Raddysh 2+ SOG",
      "p": 0.73808,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "W. Nylander 2+ SOG",
      "p": 0.7112,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020268,
    "game": "MTL@TOR",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "C",
    "family": "3D Cross-team scenario",
@@ -106,27 +106,27 @@
     {
      "text": "J. McCabe 1+ blocked shot",
      "p": 0.8316,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "A. Carrier 1+ blocked shot",
      "p": 0.81778,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "K. Guhle 1+ blocked shot",
      "p": 0.8071,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020268,
    "game": "MTL@TOR",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "A",
    "family": "5B Top-6 usage cluster",
@@ -139,39 +139,39 @@
     {
      "text": "N. Dobson 1+ blocked shot",
      "p": 0.83626,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "A. Carrier 1+ blocked shot",
      "p": 0.81778,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "K. Guhle 1+ blocked shot",
      "p": 0.8071,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "L. Hutson 1+ blocked shot",
      "p": 0.79838,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "J. Slafkovsk\u00fd 2+ SOG",
      "p": 0.69212,
      "result": "PENDING",
-     "value": null
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020268,
    "game": "MTL@TOR",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "B",
    "family": "5E Balanced cross-team structure",
@@ -185,38 +185,38 @@
      "text": "C. Caufield 2+ SOG",
      "p": 0.8365,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "N. Dobson 1+ blocked shot",
      "p": 0.83626,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. McCabe 1+ blocked shot",
      "p": 0.8316,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "A. Carrier 1+ blocked shot",
      "p": 0.81778,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "C. Tanev 1+ blocked shot",
      "p": 0.7978,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020268,
    "game": "MTL@TOR",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "C",
    "family": "5A Five-on-five offensive environment",
@@ -229,39 +229,39 @@
     {
      "text": "A. Matthews 2+ SOG",
      "p": 0.7936,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "D. Raddysh 2+ SOG",
      "p": 0.73808,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "W. Nylander 2+ SOG",
      "p": 0.7112,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "W. Nylander 1+ point",
      "p": 0.6494,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "A. Matthews 1+ point",
      "p": 0.60856,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020268,
    "game": "MTL@TOR",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "A",
    "family": "8D Multi-line production",
@@ -275,56 +275,56 @@
      "text": "C. Caufield 2+ SOG",
      "p": 0.8365,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "N. Dobson 1+ blocked shot",
      "p": 0.83626,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. McCabe 1+ blocked shot",
      "p": 0.8316,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "A. Carrier 1+ blocked shot",
      "p": 0.81778,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "K. Guhle 1+ blocked shot",
      "p": 0.8071,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "L. Hutson 1+ blocked shot",
      "p": 0.79838,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "C. Tanev 1+ blocked shot",
      "p": 0.7978,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "A. Matthews 2+ SOG",
      "p": 0.7936,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020268,
    "game": "MTL@TOR",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "B",
    "family": "8F Cross-team high-event scenario",
@@ -338,56 +338,56 @@
      "text": "C. Caufield 2+ SOG",
      "p": 0.8365,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "A. Matthews 2+ SOG",
      "p": 0.7936,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "D. Raddysh 2+ SOG",
      "p": 0.73808,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "N. Suzuki 2+ SOG",
      "p": 0.70368,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "N. Suzuki 1+ point",
      "p": 0.6804,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "W. Nylander 2+ SOG",
      "p": 0.7112,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "J. Slafkovsk\u00fd 2+ SOG",
      "p": 0.69212,
      "result": "PENDING",
-     "value": null
+     "value": 1
     },
     {
      "text": "J. Slafkovsk\u00fd 1+ point",
      "p": 0.58916,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020268,
    "game": "MTL@TOR",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "C",
    "family": "8B Concentrated offensive production",
@@ -401,56 +401,56 @@
      "text": "D. Raddysh 2+ SOG",
      "p": 0.73808,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "N. Suzuki 2+ SOG",
      "p": 0.70368,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "N. Suzuki 1+ point",
      "p": 0.6804,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "W. Nylander 2+ SOG",
      "p": 0.7112,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "W. Nylander 1+ point",
      "p": 0.6494,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "D. Raddysh 1+ point",
      "p": 0.59254,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "A. Matthews 1+ point",
      "p": 0.60856,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "L. Hutson 1+ point",
      "p": 0.5793,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020269,
    "game": "UTA@OTT",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "A",
    "family": "3A Shot-volume structure",
@@ -463,27 +463,27 @@
     {
      "text": "C. Keller 2+ SOG",
      "p": 0.6915,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "D. Guenther 2+ SOG",
      "p": 0.69094,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "T. St\u00fctzle 2+ SOG",
      "p": 0.6546,
      "result": "PENDING",
-     "value": null
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020269,
    "game": "UTA@OTT",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -497,26 +497,26 @@
      "text": "M. Weegar 1+ blocked shot",
      "p": 0.86158,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "T. Chabot 1+ blocked shot",
      "p": 0.85752,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "J. Sanderson 1+ blocked shot",
      "p": 0.79552,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020269,
    "game": "UTA@OTT",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "C",
    "family": "3B Team offensive scenario",
@@ -529,27 +529,27 @@
     {
      "text": "C. Keller 2+ SOG",
      "p": 0.6915,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "D. Guenther 2+ SOG",
      "p": 0.69094,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "C. Keller 1+ point",
      "p": 0.5911,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020269,
    "game": "UTA@OTT",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
@@ -563,38 +563,38 @@
      "text": "T. St\u00fctzle 2+ SOG",
      "p": 0.6546,
      "result": "PENDING",
-     "value": null
+     "value": 1
     },
     {
      "text": "T. St\u00fctzle 1+ point",
      "p": 0.61598,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "D. Batherson 2+ SOG",
      "p": 0.61234,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "D. Batherson 1+ point",
      "p": 0.53308,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "J. Sanderson 1+ point",
      "p": 0.55314,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020269,
    "game": "UTA@OTT",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "B",
    "family": "5A Five-on-five offensive environment",
@@ -607,39 +607,39 @@
     {
      "text": "C. Keller 2+ SOG",
      "p": 0.6915,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "C. Keller 1+ point",
      "p": 0.5911,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "N. Schmaltz 2+ SOG",
      "p": 0.6368,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "N. Schmaltz 1+ point",
      "p": 0.52912,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "M. Sergachev 1+ point",
      "p": 0.54116,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020269,
    "game": "UTA@OTT",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "C",
    "family": "5E Balanced cross-team structure",
@@ -653,38 +653,38 @@
      "text": "M. Weegar 1+ blocked shot",
      "p": 0.86158,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "T. Chabot 1+ blocked shot",
      "p": 0.85752,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "J. Sanderson 1+ blocked shot",
      "p": 0.79552,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Sergachev 1+ blocked shot",
      "p": 0.78328,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "A. Zub 1+ blocked shot",
      "p": 0.77482,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020269,
    "game": "UTA@OTT",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "A",
    "family": "8D Multi-line production",
@@ -698,37 +698,37 @@
      "text": "M. Weegar 1+ blocked shot",
      "p": 0.86158,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "T. Chabot 1+ blocked shot",
      "p": 0.85752,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "J. Sanderson 1+ blocked shot",
      "p": 0.79552,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Sergachev 1+ blocked shot",
      "p": 0.78328,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "A. Zub 1+ blocked shot",
      "p": 0.77482,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "A. Peeke 1+ blocked shot",
      "p": 0.76502,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "N. Schmidt 1+ blocked shot",
@@ -740,14 +740,14 @@
      "text": "D. Guenther 2+ SOG",
      "p": 0.69094,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020269,
    "game": "UTA@OTT",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "B",
    "family": "8F Cross-team high-event scenario",
@@ -760,57 +760,57 @@
     {
      "text": "C. Keller 2+ SOG",
      "p": 0.6915,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "D. Guenther 2+ SOG",
      "p": 0.69094,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "T. St\u00fctzle 2+ SOG",
      "p": 0.6546,
      "result": "PENDING",
-     "value": null
+     "value": 1
     },
     {
      "text": "T. St\u00fctzle 1+ point",
      "p": 0.61598,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "C. Keller 1+ point",
      "p": 0.5911,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "N. Schmaltz 2+ SOG",
      "p": 0.6368,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "J. Sanderson 1+ point",
      "p": 0.55314,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "D. Cozens 2+ SOG",
      "p": 0.61172,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020269,
    "game": "UTA@OTT",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "C",
    "family": "8D Multi-line production",
@@ -824,37 +824,37 @@
      "text": "M. Weegar 1+ blocked shot",
      "p": 0.86158,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "T. Chabot 1+ blocked shot",
      "p": 0.85752,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "J. Sanderson 1+ blocked shot",
      "p": 0.79552,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Sergachev 1+ blocked shot",
      "p": 0.78328,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "A. Zub 1+ blocked shot",
      "p": 0.77482,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "A. Peeke 1+ blocked shot",
      "p": 0.76502,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "N. Schmidt 1+ blocked shot",
@@ -873,7 +873,7 @@
   {
    "game_id": 2026020270,
    "game": "NJD@NYI",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "A",
    "family": "3D Cross-team scenario",
@@ -887,26 +887,26 @@
      "text": "A. Pelech 1+ blocked shot",
      "p": 0.81792,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "B. Pesce 1+ blocked shot",
      "p": 0.7949,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Schaefer 1+ blocked shot",
      "p": 0.78214,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020270,
    "game": "NJD@NYI",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -920,26 +920,26 @@
      "text": "J. Hughes 2+ SOG",
      "p": 0.83348,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "A. Pelech 1+ blocked shot",
      "p": 0.81792,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "B. Pesce 1+ blocked shot",
      "p": 0.7949,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020270,
    "game": "NJD@NYI",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "C",
    "family": "3A Shot-volume structure",
@@ -953,26 +953,26 @@
      "text": "J. Hughes 2+ SOG",
      "p": 0.83348,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "M. Schaefer 2+ SOG",
      "p": 0.78752,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. Horvat 2+ SOG",
      "p": 0.76418,
      "result": "PENDING",
-     "value": null
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020270,
    "game": "NJD@NYI",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "A",
    "family": "5E Balanced cross-team structure",
@@ -986,38 +986,38 @@
      "text": "J. Hughes 2+ SOG",
      "p": 0.83348,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "A. Pelech 1+ blocked shot",
      "p": 0.81792,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "B. Pesce 1+ blocked shot",
      "p": 0.7949,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Schaefer 2+ SOG",
      "p": 0.78752,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "M. Schaefer 1+ blocked shot",
      "p": 0.78214,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020270,
    "game": "NJD@NYI",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "B",
    "family": "5D High-tempo matchup",
@@ -1031,38 +1031,38 @@
      "text": "J. Hughes 2+ SOG",
      "p": 0.83348,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "M. Schaefer 2+ SOG",
      "p": 0.78752,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. Horvat 2+ SOG",
      "p": 0.76418,
      "result": "PENDING",
-     "value": null
+     "value": 1
     },
     {
      "text": "T. Meier 2+ SOG",
      "p": 0.7459,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "L. Evangelista 2+ SOG",
      "p": 0.65352,
      "result": "PENDING",
-     "value": null
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020270,
    "game": "NJD@NYI",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "C",
    "family": "5A Five-on-five offensive environment",
@@ -1076,38 +1076,38 @@
      "text": "J. Hughes 2+ SOG",
      "p": 0.83348,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "T. Meier 2+ SOG",
      "p": 0.7459,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "J. Hughes 1+ point",
      "p": 0.70168,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "N. Hischier 2+ SOG",
      "p": 0.65814,
      "result": "PENDING",
-     "value": null
+     "value": 1
     },
     {
      "text": "N. Hischier 1+ point",
      "p": 0.55688,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020270,
    "game": "NJD@NYI",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "A",
    "family": "8D Multi-line production",
@@ -1121,56 +1121,56 @@
      "text": "J. Hughes 2+ SOG",
      "p": 0.83348,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "A. Pelech 1+ blocked shot",
      "p": 0.81792,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "B. Pesce 1+ blocked shot",
      "p": 0.7949,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Schaefer 2+ SOG",
      "p": 0.78752,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "M. Schaefer 1+ blocked shot",
      "p": 0.78214,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "J. Siegenthaler 1+ blocked shot",
      "p": 0.77692,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "B. Horvat 2+ SOG",
      "p": 0.76418,
      "result": "PENDING",
-     "value": null
+     "value": 1
     },
     {
      "text": "T. Meier 2+ SOG",
      "p": 0.7459,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020270,
    "game": "NJD@NYI",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "B",
    "family": "8A Shot-dominant game",
@@ -1184,56 +1184,56 @@
      "text": "J. Hughes 2+ SOG",
      "p": 0.83348,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "M. Schaefer 2+ SOG",
      "p": 0.78752,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. Horvat 2+ SOG",
      "p": 0.76418,
      "result": "PENDING",
-     "value": null
+     "value": 1
     },
     {
      "text": "T. Meier 2+ SOG",
      "p": 0.7459,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "N. Hischier 2+ SOG",
      "p": 0.65814,
      "result": "PENDING",
-     "value": null
+     "value": 1
     },
     {
      "text": "D. Hamilton 2+ SOG",
      "p": 0.65432,
      "result": "PENDING",
-     "value": null
+     "value": 1
     },
     {
      "text": "L. Evangelista 2+ SOG",
      "p": 0.65352,
      "result": "PENDING",
-     "value": null
+     "value": 1
     },
     {
      "text": "J. Bratt 2+ SOG",
      "p": 0.62704,
      "result": "PENDING",
-     "value": null
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020270,
    "game": "NJD@NYI",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "C",
    "family": "8B Concentrated offensive production",
@@ -1247,49 +1247,49 @@
      "text": "J. Hughes 2+ SOG",
      "p": 0.83348,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "M. Schaefer 2+ SOG",
      "p": 0.78752,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. Horvat 2+ SOG",
      "p": 0.76418,
      "result": "PENDING",
-     "value": null
+     "value": 1
     },
     {
      "text": "J. Hughes 1+ point",
      "p": 0.70168,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "B. Horvat 1+ point",
      "p": 0.65654,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "D. Hamilton 2+ SOG",
      "p": 0.65432,
      "result": "PENDING",
-     "value": null
+     "value": 1
     },
     {
      "text": "M. Schaefer 1+ point",
      "p": 0.558,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "L. Hughes 2+ SOG",
      "p": 0.60424,
      "result": "PENDING",
-     "value": null
+     "value": 1
     }
    ]
   }
