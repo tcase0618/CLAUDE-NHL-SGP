@@ -1,81 +1,81 @@
 {
- "updated_at": "2026-11-08T23:02:37.348241+00:00",
+ "updated_at": "2026-11-09T00:02:28.375576+00:00",
  "nights": [
   "2026-11-07",
   "2026-11-08"
  ],
  "all": {
-  "n": 132,
-  "won": 50,
-  "lost": 82,
-  "win_pct": 0.3787878787878788,
-  "expected": 40.59993424001143,
-  "brier_joint": 0.23068492604940427,
-  "brier_indep": 0.23650809271921727,
-  "fair_pnl_2": 129.71531450667598
+  "n": 141,
+  "won": 57,
+  "lost": 84,
+  "win_pct": 0.40425531914893614,
+  "expected": 43.20729424001143,
+  "brier_joint": 0.23881008689447777,
+  "brier_indep": 0.24555065849673283,
+  "fair_pnl_2": 162.8556397009836
  },
  "by_size": {
   "3": {
-   "n": 44,
-   "won": 23,
+   "n": 47,
+   "won": 26,
    "lost": 21,
-   "win_pct": 0.5227272727272727,
-   "expected": 21.52110497009063,
-   "brier_joint": 0.2626215083086151,
-   "brier_indep": 0.266576871805368,
-   "fair_pnl_2": 8.748233134262765
+   "win_pct": 0.5531914893617021,
+   "expected": 22.91920497009063,
+   "brier_joint": 0.26471717537827794,
+   "brier_indep": 0.2700839651507151,
+   "fair_pnl_2": 16.362321663984876
   },
   "5": {
-   "n": 45,
-   "won": 18,
-   "lost": 27,
-   "win_pct": 0.4,
-   "expected": 13.69772,
-   "brier_joint": 0.25467597521777774,
-   "brier_indep": 0.2654452321829149,
-   "fair_pnl_2": 36.47139094904611
+   "n": 48,
+   "won": 20,
+   "lost": 28,
+   "win_pct": 0.4166666666666667,
+   "expected": 14.53934,
+   "brier_joint": 0.257678409525,
+   "brier_indep": 0.26746426108367793,
+   "fair_pnl_2": 42.37465861507731
   },
   "8": {
-   "n": 43,
-   "won": 9,
-   "lost": 34,
-   "win_pct": 0.20930232558139536,
-   "expected": 5.381109269920798,
-   "brier_joint": 0.17289872065447212,
-   "brier_indep": 0.1754569867737051,
-   "fair_pnl_2": 84.4956904233671
+   "n": 46,
+   "won": 11,
+   "lost": 35,
+   "win_pct": 0.2391304347826087,
+   "expected": 5.748749269920798,
+   "brier_joint": 0.19265111635091958,
+   "brier_indep": 0.19761765117259075,
+   "fair_pnl_2": 104.11865942192142
   }
  },
  "voids": 2,
  "legs": {
-  "n": 257,
-  "won": 201,
-  "expected": 187.39292353129912
+  "n": 275,
+  "won": 216,
+  "expected": 199.97140353129913
  },
  "bands": [
   {
    "band": "0\u201310%",
-   "n": 21,
-   "pred": 0.06283904761904761,
-   "actual": 0.19047619047619047
+   "n": 22,
+   "pred": 0.0625,
+   "actual": 0.18181818181818182
   },
   {
    "band": "10\u201325%",
-   "n": 33,
-   "pred": 0.16934937181578175,
-   "actual": 0.3333333333333333
+   "n": 36,
+   "pred": 0.16857247972002218,
+   "actual": 0.3611111111111111
   },
   {
    "band": "25\u201340%",
-   "n": 39,
-   "pred": 0.3264200609144871,
-   "actual": 0.358974358974359
+   "n": 42,
+   "pred": 0.3269224375158333,
+   "actual": 0.40476190476190477
   },
   {
    "band": "40\u201360%",
-   "n": 34,
-   "pred": 0.5119559586595774,
-   "actual": 0.5882352941176471
+   "n": 36,
+   "pred": 0.5132789609562676,
+   "actual": 0.6111111111111112
   },
   {
    "band": "60\u2013100%",
@@ -6498,6 +6498,438 @@
      "p": 0.59542,
      "result": "WON",
      "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "date": "2026-11-08",
+   "source": "reports/sgp-2026-11-08.json",
+   "size": 3,
+   "pick": "A",
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.32656,
+   "pIndep": 0.27175147636624,
+   "pLower": 0.3008465681170497,
+   "breakEven": 232,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "J. Eichel 2+ SOG",
+     "p": 0.75162,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "J. Eichel 1+ point",
+     "p": 0.6204,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Marner 1+ point",
+     "p": 0.58144,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "date": "2026-11-08",
+   "source": "reports/sgp-2026-11-08.json",
+   "size": 3,
+   "pick": "B",
+   "family": "3E Game script",
+   "pJoint": 0.5056,
+   "pIndep": 0.504157237907648,
+   "pLower": 0.4645045450485359,
+   "breakEven": 115,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Samuelsson 1+ blocked shot",
+     "p": 0.85666,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.83054,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "VGK +1.5 puck line",
+     "p": 0.71558,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "date": "2026-11-08",
+   "source": "reports/sgp-2026-11-08.json",
+   "size": 3,
+   "pick": "C",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.56594,
+   "pIndep": 0.5659976431477679,
+   "pLower": 0.5386736098849942,
+   "breakEven": -117,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Samuelsson 1+ blocked shot",
+     "p": 0.85666,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.83054,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "C. Timmins 1+ blocked shot",
+     "p": 0.81042,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "date": "2026-11-08",
+   "source": "reports/sgp-2026-11-08.json",
+   "size": 5,
+   "pick": "A",
+   "family": "5F Game script",
+   "pJoint": 0.3199,
+   "pIndep": 0.3202581475755459,
+   "pLower": 0.2770976673702255,
+   "breakEven": 261,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Samuelsson 1+ blocked shot",
+     "p": 0.85666,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.83054,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "C. Timmins 1+ blocked shot",
+     "p": 0.81042,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "N. Hanifin 1+ blocked shot",
+     "p": 0.79648,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "VGK +1.5 puck line",
+     "p": 0.71558,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "date": "2026-11-08",
+   "source": "reports/sgp-2026-11-08.json",
+   "size": 5,
+   "pick": "B",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.16782,
+   "pIndep": 0.10055971982171881,
+   "pLower": 0.14781309306170373,
+   "breakEven": 577,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "T. Thompson 2+ SOG",
+     "p": 0.78756,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "T. Thompson 1+ point",
+     "p": 0.60216,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "R. Dahlin 1+ point",
+     "p": 0.59892,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "J. Quinn 2+ SOG",
+     "p": 0.66308,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Quinn 1+ point",
+     "p": 0.53486,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "date": "2026-11-08",
+   "source": "reports/sgp-2026-11-08.json",
+   "size": 5,
+   "pick": "C",
+   "family": "5E Balanced cross-team structure",
+   "pJoint": 0.3539,
+   "pIndep": 0.35108718567335895,
+   "pLower": 0.328471997284063,
+   "breakEven": 204,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Samuelsson 1+ blocked shot",
+     "p": 0.85666,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.83054,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "C. Timmins 1+ blocked shot",
+     "p": 0.81042,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "N. Hanifin 1+ blocked shot",
+     "p": 0.79648,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "T. Thompson 2+ SOG",
+     "p": 0.78756,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "date": "2026-11-08",
+   "source": "reports/sgp-2026-11-08.json",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.1579,
+   "pIndep": 0.09305656093275717,
+   "pLower": 0.1139495759026227,
+   "breakEven": 778,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Samuelsson 1+ blocked shot",
+     "p": 0.85666,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.83054,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "C. Timmins 1+ blocked shot",
+     "p": 0.81042,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "N. Hanifin 1+ blocked shot",
+     "p": 0.79648,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "VGK +1.5 puck line",
+     "p": 0.71558,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "VGK team total over 2.5",
+     "p": 0.61796,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "J. Eichel 2+ SOG",
+     "p": 0.75162,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "J. Eichel 1+ point",
+     "p": 0.6204,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "date": "2026-11-08",
+   "source": "reports/sgp-2026-11-08.json",
+   "size": 8,
+   "pick": "B",
+   "family": "8D Multi-line production",
+   "pJoint": 0.15436,
+   "pIndep": 0.1501956032963044,
+   "pLower": 0.11040957590262268,
+   "breakEven": 806,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Samuelsson 1+ blocked shot",
+     "p": 0.85666,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.83054,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "C. Timmins 1+ blocked shot",
+     "p": 0.81042,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "N. Hanifin 1+ blocked shot",
+     "p": 0.79648,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "T. Thompson 2+ SOG",
+     "p": 0.78756,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "R. Andersson 1+ blocked shot",
+     "p": 0.773,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Eichel 2+ SOG",
+     "p": 0.75162,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "O. Power 1+ blocked shot",
+     "p": 0.73854,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020278,
+   "game": "VGK@BUF",
+   "date": "2026-11-08",
+   "source": "reports/sgp-2026-11-08.json",
+   "size": 8,
+   "pick": "C",
+   "family": "8F Cross-team high-event scenario",
+   "pJoint": 0.05538,
+   "pIndep": 0.03236677842795861,
+   "pLower": 0.04380195177535315,
+   "breakEven": 2183,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "T. Thompson 2+ SOG",
+     "p": 0.78756,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Eichel 2+ SOG",
+     "p": 0.75162,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "T. Thompson 1+ point",
+     "p": 0.60216,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "R. Dahlin 1+ point",
+     "p": 0.59892,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "R. Dahlin 2+ SOG",
+     "p": 0.66632,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Eichel 1+ point",
+     "p": 0.6204,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Marner 1+ point",
+     "p": 0.58144,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Marner 2+ SOG",
+     "p": 0.63294,
+     "result": "WON",
+     "value": 3
     }
    ]
   }
