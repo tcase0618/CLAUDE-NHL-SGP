@@ -24,7 +24,10 @@ for (const f of ['js/core/rng.js', 'js/core/util.js', 'js/engine/cv.js', 'js/eng
 const NQ = globalThis.NQ, S = globalThis.NQ_SLATE, V = globalThis.NQ_SGPVAL, O = globalThis.NQ_ODDS;
 const arg = (k, d) => { const i = process.argv.indexOf(k); return i > 0 ? +process.argv[i + 1] : d; };
 const HOURS = arg('--hours', 30), SIMS = arg('--sims', 50000), PER = arg('--per', 2);
-const QUOTA = arg('--min', 3);  // guaranteed parlays per size per game (user: volume — at least 3/5/8 every game)
+// HARD-CODED CARD (user requirement, not configurable): every game gets exactly 3 three-leg, 3 five-leg and
+// 3 eight-leg parlays. Leg-exposure limits and verification only decide WHICH combos fill the slots, never HOW MANY.
+const CARD = Object.freeze({ 3: 3, 5: 3, 8: 3 });
+const PREFERRED_CAP = 3;  // a single leg should appear in at most 3 of a game's 9 parlays (2026-11-08 audit: one 0-block leg sank 6)
 const sarg = (k) => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : null; };
 const ONLY = sarg('--games') ? new Set(sarg('--games').split(',').map(Number)) : null;  // slot scan: just these games
 const OUT = sarg('--out');  // output path prefix (without extension)
@@ -57,10 +60,11 @@ for (const g of games) {
   const legUse = new Map();  // exposure across this game's whole card (all sizes)
   const lk = (l) => l.player_id + l.stat + l.line + (l.side || '');
   const research = {};
-  for (const size of [3, 5, 8]) research[size] = NQ.sgp.research(R, F, g, size, V.tables, []);
+  const POOL = NQ.sgp.pool(R, g);  // built once per game, reused by every search
+  for (const size of [3, 5, 8]) research[size] = NQ.sgp.research(R, F, g, size, V.tables, [], { pool: POOL });
   const chosen = {};
   const seen = new Set();
-  for (const size of [8, 5, 3]) {  // big parlays first: they need the most distinct legs
+  for (const size of [3, 5, 8]) {  // 3-legs pick first (shortest odds, most bettable); 5/8 fill via diversified re-search
     const res = research[size];
     const ok = res.items.filter((x) => x.lower.verified && x.lower.pLower > 0).sort((a, b) => b.lower.pLower - a.lower.pLower);
     // ordering: best of each ideology first (diversity), then everything else by conservative P
@@ -72,33 +76,59 @@ for (const g of games) {
     if (byFam[gsId]) order.push(byFam[gsId][0]);
     for (let k = 0; Object.values(byFam).some((a) => a.length > k); k++)
       Object.values(byFam).sort((a, b) => b[0].lower.pLower - a[0].lower.pLower).forEach((a) => { if (a[k] && !order.includes(a[k])) order.push(a[k]); });
+    const QUOTA = CARD[size];
     const picks = [];
     let capUsed = NQ.sgp.MAX_LEG_EXPOSURE;
-    for (const cap of [NQ.sgp.MAX_LEG_EXPOSURE, NQ.sgp.MAX_LEG_EXPOSURE + 1, NQ.sgp.MAX_LEG_EXPOSURE + 2, Infinity]) {
-      for (const x of order) {
-        if (picks.length >= QUOTA) break;
+    const take = (pool, cap, tier) => {
+      for (const x of pool) {
+        if (picks.length >= QUOTA) return;
         const key = x.legs.map(lk).sort().join();
         if (seen.has(key) || !x.legs.every((l) => (legUse.get(lk(l)) || 0) < cap)) continue;
         seen.add(key);
         x.legs.forEach((l) => legUse.set(lk(l), (legUse.get(lk(l)) || 0) + 1));
-        picks.push(x);
-        capUsed = cap;
+        if (x.breakEven === null || x.breakEven === undefined) x.breakEven = NQ.cv.fair(x.ev.p);  // unverified: point estimate
+        x.tier = tier; picks.push(x); capUsed = Math.max(capUsed, cap);
       }
-      if (picks.length >= QUOTA) break;
+    };
+    // tier 1: verified, leg exposure ≤ 2 then ≤ PREFERRED_CAP · tier 2: verified, any exposure ·
+    // tier 3: remaining finalists (simulation precision below the verification bar) — flagged, never hidden
+    for (const cap of [NQ.sgp.MAX_LEG_EXPOSURE, PREFERRED_CAP]) take(order, cap, 'verified');
+    // diversify: re-search without legs already at the cap, so new combos are genuinely different
+    for (let it = 0; it < 3 && picks.length < QUOTA; it++) {
+      const sat = new Set([...legUse].filter(([, n]) => n >= PREFERRED_CAP).map(([k]) => k));
+      if (!sat.size) break;
+      const div = NQ.sgp.research(R, F, g, size, V.tables, [], { pool: POOL, exclude: (l) => sat.has(lk(l)) }).items
+        .filter((x) => x.lower.verified && x.lower.pLower > 0).sort((a, b) => b.lower.pLower - a.lower.pLower);
+      const before = picks.length;
+      take(div, PREFERRED_CAP, 'verified');
+      if (picks.length === before) break;
     }
+    take(order, Infinity, 'verified');
+    if (picks.length < QUOTA) {
+      const rest = res.items.filter((x) => !ok.includes(x) && x.ev.p > 0).sort((a, b) => b.ev.p - a.ev.p);
+      for (const cap of [PREFERRED_CAP, Infinity]) take(rest, cap, 'unverified');
+    }
+    if (picks.length < QUOTA) {  // last resort: widen the search for this size and retry
+      const cfg = NQ.sgp.CONFIG[size], save = { ...cfg };
+      Object.assign(cfg, { beam: cfg.beam * 3, keep: cfg.keep * 3, floor: cfg.floor / 3, band: [Math.max(0.2, cfg.band[0] - 0.15), cfg.band[1]] });
+      const wide = NQ.sgp.research(R, F, g, size, V.tables, []).items.filter((x) => x.ev.p > 0).sort((a, b) => b.ev.p - a.ev.p);
+      Object.assign(cfg, save);
+      take(wide.filter((x) => x.lower.verified), Infinity, 'verified');
+      take(wide, Infinity, 'unverified');
+    }
+    if (picks.length < QUOTA) throw new Error(`CARD CONTRACT VIOLATED: ${g.away}@${g.home} ${size}-leg has ${picks.length}/${QUOTA}`);
     chosen[size] = { picks, ok, capUsed };
   }
   for (const size of [3, 5, 8]) {
     const res = research[size], { picks, ok, capUsed } = chosen[size];
     gm.sizes[size] = { evaluated: res.evaluated, verified: ok.length, finalists: res.items.length, exposureCap: capUsed === Infinity ? null : capUsed, picks: picks.map((x) => ({
       family: x.family.id + ' ' + x.family.n, legs: x.legs.map((l) => ({ text: legTxt(l), p: l.p, player_id: l.player_id, stat: l.stat, line: l.line, side: l.side, team: l.team })),
-      pJoint: x.ev.p, pLower: x.lower.pLower, pIndep: x.ev.indep, lift: x.ev.lift, breakEven: x.breakEven, mcHits: x.ev.hits, scenario: x.scenario.hit })) };
-    const relaxed = capUsed > NQ.sgp.MAX_LEG_EXPOSURE ? ` · exposure cap relaxed to ${capUsed === Infinity ? 'none' : capUsed} to fill the quota` : '';
+      pJoint: x.ev.p, pLower: x.lower.pLower, verified: x.tier === 'verified', pIndep: x.ev.indep, lift: x.ev.lift, breakEven: x.breakEven, mcHits: x.ev.hits, scenario: x.scenario.hit })) };
+    const relaxed = capUsed > PREFERRED_CAP ? ` · exposure cap relaxed to ${capUsed === Infinity ? 'none' : capUsed} to fill the quota` : '';
     md += `### ${size}-leg (${res.evaluated.toLocaleString()} candidates searched · ${ok.length}/${res.items.length} finalists verified${relaxed})\n`;
     if (!picks.length) { md += `_No verified ${size}-leg combination (precision or calibration requirements not met)._\n\n`; continue; }
-    if (picks.length < QUOTA) md += `_Only ${picks.length} verified distinct ${size}-leg combination(s) available — quota ${QUOTA}._\n`;
     picks.forEach((x, i) => {
-      md += `**${String.fromCharCode(65 + i)}. ${x.family.n}** — joint **${pct(x.ev.p)}** · conservative ${pct(x.lower.pLower)} · if independent ${pct(x.ev.indep)} (lift ${x.ev.lift.toFixed(2)}×) · **break-even ${fmtA(x.breakEven)}**\n`;
+      md += `**${String.fromCharCode(65 + i)}. ${x.family.n}**${x.tier === 'verified' ? '' : ' ⚠️ _unverified (simulation precision below bar)_'} — joint **${pct(x.ev.p)}** · conservative ${pct(x.lower.pLower)} · if independent ${pct(x.ev.indep)} (lift ${x.ev.lift.toFixed(2)}×) · **break-even ${fmtA(x.breakEven)}**\n`;
       x.legs.forEach((l) => { md += `- ${legTxt(l)} (${pct(l.p, 0)})\n`; });
       const sc = x.scenario;
       if (sc.hit && sc.all) md += `  _Scenario when it hits: ${sc.hit.shots.toFixed(1)} total SOG (avg ${sc.all.shots.toFixed(1)}), ${sc.hit.goals.toFixed(2)} goals (avg ${sc.all.goals.toFixed(2)})._\n`;
@@ -116,4 +146,6 @@ fs.mkdirSync(path.dirname(base), { recursive: true });
 fs.writeFileSync(base + '.md', md);
 fs.writeFileSync(base + '.json', JSON.stringify(out, null, 1));
 console.log(md);
+// contract check: every game must carry exactly 3/3/3
+for (const gm of out.games) for (const sz of [3, 5, 8]) if (gm.sizes[sz].picks.length !== CARD[sz]) { console.error(`CARD CONTRACT VIOLATED ${gm.away}@${gm.home} ${sz}`); process.exitCode = 1; }
 console.error(`games ${games.length}, total ${((Date.now() - t0) / 1000).toFixed(0)}s`);

@@ -61,3 +61,12 @@ Stated plainly so that nothing in the terminal is mistaken for something it isn'
 - Player props ignore OT goals (slightly conservative for overs). **First goal scorer is NOT supported**: the simulator does
   not order goals in time, so it is never offered.
 - Hits are simulated (for pace/blocks) but never offered as legs — not a bettable market for this user.
+
+## Card contract (hard-coded, 2026-11-09)
+- `pipeline/tonight.js` CARD = {3: 3, 5: 3, 8: 3}: every game always publishes exactly 3 three-leg, 3 five-leg and 3 eight-leg
+  parlays; the script fails loudly (exit 1) if any game would ship fewer. Not configurable.
+- Diversity: a single leg appears in at most 3 of a game's 9 parlays (2026-11-08 audit: one 0-block leg sank 6 parlays).
+  When the cap binds, the search re-runs without saturated legs instead of reusing them. Exposure is relaxed only as a last
+  resort, and any combo below the simulation-precision bar is flagged "unverified" rather than hidden or dropped.
+- Build order 3 → 5 → 8: the shortest (most bettable) parlays get the strongest legs. On 10 upcoming games this lifted the
+  average best 3-leg from 42.5% to 56.4% and 5-leg from 32.9% to 36.8%, at the cost of the best 8-leg (18.9% → 14.4%).

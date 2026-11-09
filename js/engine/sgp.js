@@ -20,9 +20,9 @@
   sgp.MAX_LEG_EXPOSURE = 2;   // a leg may appear in at most this many published parlays per game
   sgp.MARKET_OF = { SOG: 'player_sog', PTS: 'player_points', G: 'player_goals', A: 'player_assists', BLK: 'player_blocks', HIT: 'player_hits', PPP: 'player_ppp', SV: 'goalie_saves' };
   sgp.CONFIG = {
-    3: { band: [0.35, 0.93], beam: 40, keep: 14, floor: 0.12 },
-    5: { band: [0.45, 0.94], beam: 40, keep: 14, floor: 0.05 },
-    8: { band: [0.55, 0.96], beam: 30, keep: 14, floor: 0.015 }
+    3: { band: [0.35, 0.93], beam: 40, keep: 24, floor: 0.12 },
+    5: { band: [0.45, 0.94], beam: 40, keep: 24, floor: 0.05 },
+    8: { band: [0.55, 0.96], beam: 30, keep: 24, floor: 0.015 }
   };
 
   // Ideology families: pool filter + combination constraint (+ description).
@@ -179,8 +179,10 @@
   };
 
   /** Full research run for one game & size. fresh = independent re-simulation. */
-  sgp.research = (R, fresh, game, size, valTables, quotes) => {
-    const P = sgp.pool(R, game);
+  sgp.research = (R, fresh, game, size, valTables, quotes, opts) => {
+    // opts.exclude(leg) → true removes a leg from the search pool (used to diversify a card when a leg is saturated)
+    const P0 = (opts && opts.pool) || sgp.pool(R, game);
+    const P = opts && opts.exclude ? { ...P0, legs: P0.legs.filter((l) => !opts.exclude(l)) } : P0;
     const out = [];
     let evaluated = 0;
     for (const fam of sgp.FAMILIES[size]) {
