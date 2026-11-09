@@ -1,22 +1,22 @@
 # Parlay ledger (cumulative)
-Updated 2026-11-09T00:02Z · nights: 2026-11-07, 2026-11-08
+Updated 2026-11-09T10:48Z · nights: 2026-11-07, 2026-11-08, 2026-11-09
 
-**Parlays:** 57–84 (40.4%) · model expected 43.2 wins · voids 2
-**Legs:** 216/275 (78.5%) · expected 200.0
-**Brier:** joint 0.239 vs independence 0.246 · **fair-price $2/parlay P&L ceiling:** +162.86
+**Parlays:** 64–113 (36.2%) · model expected 53.4 wins · voids 2
+**Legs:** 267/345 (77.4%) · expected 249.7
+**Brier:** joint 0.217 vs independence 0.220 · **fair-price $2/parlay P&L ceiling:** +128.70
 
 | Size | W–L | Win % | Expected wins | Brier joint | Brier indep |
 |---|---|---|---|---|---|
-| 3 | 26–21 | 55% | 22.92 | 0.265 | 0.270 |
-| 5 | 20–28 | 42% | 14.54 | 0.258 | 0.267 |
-| 8 | 11–35 | 24% | 5.75 | 0.193 | 0.198 |
+| 3 | 30–29 | 51% | 28.17 | 0.246 | 0.249 |
+| 5 | 23–37 | 38% | 17.95 | 0.247 | 0.251 |
+| 8 | 11–47 | 19% | 7.31 | 0.157 | 0.159 |
 
 | Predicted band | n | Predicted | Actual |
 |---|---|---|---|
-| 0–10% | 22 | 6.2% | 18.2% |
-| 10–25% | 36 | 16.9% | 36.1% |
-| 25–40% | 42 | 32.7% | 40.5% |
-| 40–60% | 36 | 51.3% | 61.1% |
+| 0–10% | 25 | 6.2% | 16.0% |
+| 10–25% | 49 | 16.6% | 28.6% |
+| 25–40% | 54 | 32.3% | 35.2% |
+| 40–60% | 44 | 51.7% | 59.1% |
 | 60–100% | 5 | 71.1% | 20.0% |
 
 _Recalibrate tails only after ≥ 10 nights. P&L is a fair-price ceiling until real sportsbook SGP prices are recorded._
