@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-09T12:31:37.609466+00:00",
+ "updated_at": "2026-11-10T00:03:45.628885+00:00",
  "nights": [
   "2026-11-07",
   "2026-11-08",
@@ -1122,7 +1122,7 @@
      "text": "S. Bennett 2+ SOG",
      "p": 0.68904,
      "result": "WON",
-     "value": 4
+     "value": 3
     }
    ]
   },
@@ -1296,7 +1296,7 @@
      "text": "S. Bennett 2+ SOG",
      "p": 0.68904,
      "result": "WON",
-     "value": 4
+     "value": 3
     },
     {
      "text": "A. Ovechkin 2+ SOG",
@@ -1618,7 +1618,7 @@
      "text": "C. Parayko 1+ blocked shot",
      "p": 0.8229,
      "result": "WON",
-     "value": 2
+     "value": 1
     }
    ]
   },
@@ -6134,7 +6134,7 @@
      "text": "S. Bennett 2+ SOG",
      "p": 0.6717,
      "result": "WON",
-     "value": 2
+     "value": 3
     }
    ]
   },
@@ -6434,7 +6434,7 @@
      "text": "S. Bennett 2+ SOG",
      "p": 0.6717,
      "result": "WON",
-     "value": 2
+     "value": 3
     }
    ]
   },
