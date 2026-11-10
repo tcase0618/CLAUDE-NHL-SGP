@@ -101,6 +101,14 @@
    ],
    "report": "reports/slots/2026-11-10/slot-0100Z.md",
    "seconds": 161.202002
+  },
+  "2026-11-10T02:30:00Z": {
+   "scanned_at": "2026-11-10T01:31:01.066360+00:00",
+   "games": [
+    2026020284
+   ],
+   "report": "reports/slots/2026-11-10/slot-0230Z.md",
+   "seconds": 133.401518
   }
  }
 }
