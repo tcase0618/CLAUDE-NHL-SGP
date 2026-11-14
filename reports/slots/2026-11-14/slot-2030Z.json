@@ -1,0 +1,652 @@
+{
+ "generated_at": "2026-11-14T19:32:40.748Z",
+ "model_version": "v20261106-224110",
+ "data_through": "2026-11-14 03:00:00+00:00",
+ "sims": 50000,
+ "games": [
+  {
+   "game_id": 2026020312,
+   "start_utc": "2026-11-14 20:30:00+00:00",
+   "away": "WPG",
+   "home": "CHI",
+   "sizes": {
+    "3": {
+     "evaluated": 11755,
+     "verified": 96,
+     "finalists": 96,
+     "exposureCap": 2,
+     "picks": [
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "K. Connor 2+ SOG",
+         "p": 0.82992,
+         "player_id": 8478398,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "WPG +1.5 puck line",
+         "p": 0.73916,
+         "player_id": "TEAM:WPG",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "K. Connor 1+ point",
+         "p": 0.7057,
+         "player_id": 8478398,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.49936,
+       "pLower": 0.45826454504853587,
+       "verified": true,
+       "pIndep": 0.43742053833216005,
+       "lift": 1.14160163101625,
+       "breakEven": 118,
+       "mcHits": 24968,
+       "scenario": {
+        "n": 24968,
+        "shots": 57.22036206344121,
+        "goals": 6.793295418135213,
+        "ppg": 1.4128884972765139,
+        "margin": -1.7003764818968279,
+        "pace": 1.0017918860996353
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "K. Connor 2+ SOG",
+         "p": 0.82992,
+         "player_id": 8478398,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "C. Bedard 2+ SOG",
+         "p": 0.7974,
+         "player_id": 8484144,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "I. Cole 1+ blocked shot",
+         "p": 0.75568,
+         "player_id": 8474013,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.50496,
+       "pLower": 0.4638645450485358,
+       "verified": true,
+       "pIndep": 0.50239540867144,
+       "lift": 1.005104726843229,
+       "breakEven": 116,
+       "mcHits": 25248,
+       "scenario": {
+        "n": 25248,
+        "shots": 57.79519169835235,
+        "goals": 6.588482256020279,
+        "ppg": 1.3743662864385298,
+        "margin": -0.26940747782002533,
+        "pace": 1.0033930956004766
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "C. Bedard 2+ SOG",
+         "p": 0.7974,
+         "player_id": 8484144,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Ferraro 1+ blocked shot",
+         "p": 0.77204,
+         "player_id": 8479983,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "I. Cole 1+ blocked shot",
+         "p": 0.75568,
+         "player_id": 8474013,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.45706,
+       "pLower": 0.42966972193476616,
+       "verified": true,
+       "pIndep": 0.45542308843716,
+       "lift": 1.0035942656496781,
+       "breakEven": 133,
+       "mcHits": 22853,
+       "scenario": {
+        "n": 22853,
+        "shots": 57.24683848947622,
+        "goals": 6.531483831444449,
+        "ppg": 1.354920579355008,
+        "margin": -0.1912221590163217,
+        "pace": 1.002266935635431
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 15284,
+     "verified": 120,
+     "finalists": 120,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "WPG +1.5 puck line",
+         "p": 0.73916,
+         "player_id": "TEAM:WPG",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "WPG team total over 2.5",
+         "p": 0.66654,
+         "player_id": "TEAM:WPG",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "K. Connor 1+ point",
+         "p": 0.7057,
+         "player_id": 8478398,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Scheifele 1+ point",
+         "p": 0.65424,
+         "player_id": 8476460,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Ferraro 1+ blocked shot",
+         "p": 0.77204,
+         "player_id": 8479983,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.30598,
+       "pLower": 0.26317766737022547,
+       "verified": true,
+       "pIndep": 0.1755042287615505,
+       "lift": 1.7434337745543493,
+       "breakEven": 280,
+       "mcHits": 15299,
+       "scenario": {
+        "n": 15299,
+        "shots": 57.76096476893915,
+        "goals": 7.4363683900908555,
+        "ppg": 1.5755931760245767,
+        "margin": -2.0365383358389435,
+        "pace": 1.0029605670694948
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "K. Connor 2+ SOG",
+         "p": 0.82992,
+         "player_id": 8478398,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "WPG +1.5 puck line",
+         "p": 0.73916,
+         "player_id": "TEAM:WPG",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "WPG team total over 2.5",
+         "p": 0.66654,
+         "player_id": "TEAM:WPG",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "K. Connor 1+ point",
+         "p": 0.7057,
+         "player_id": 8478398,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Scheifele 1+ point",
+         "p": 0.65424,
+         "player_id": 8476460,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.3526,
+       "pLower": 0.32717199728406304,
+       "verified": true,
+       "pIndep": 0.193605728323524,
+       "lift": 1.821227104452144,
+       "breakEven": 206,
+       "mcHits": 17630,
+       "scenario": {
+        "n": 17630,
+        "shots": 58.12127056154282,
+        "goals": 7.4746454906409525,
+        "ppg": 1.5888258650028362,
+        "margin": -2.0704480998298354,
+        "pace": 1.0037405548383753
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "CHI +1.5 puck line",
+         "p": 0.6617,
+         "player_id": "TEAM:CHI",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "CHI team total over 2.5",
+         "p": 0.61158,
+         "player_id": "TEAM:CHI",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. Bedard 1+ point",
+         "p": 0.67606,
+         "player_id": 8484144,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. Bedard 2+ SOG",
+         "p": 0.7974,
+         "player_id": 8484144,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Ferraro 1+ blocked shot",
+         "p": 0.77204,
+         "player_id": 8479983,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.2794,
+       "pLower": 0.23659766737022547,
+       "verified": true,
+       "pIndep": 0.16530365465695565,
+       "lift": 1.6902227635548732,
+       "breakEven": 323,
+       "mcHits": 13970,
+       "scenario": {
+        "n": 13970,
+        "shots": 58.06542591267001,
+        "goals": 7.288117394416607,
+        "ppg": 1.5603435934144596,
+        "margin": 1.6451682176091624,
+        "pace": 1.0039915602038225
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 13291,
+     "verified": 96,
+     "finalists": 96,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "WPG team total over 2.5",
+         "p": 0.66654,
+         "player_id": "TEAM:WPG",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Scheifele 1+ point",
+         "p": 0.65424,
+         "player_id": 8476460,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "Game total over 5.5",
+         "p": 0.62466,
+         "player_id": "GAME",
+         "stat": "GT",
+         "line": 5.5,
+         "side": "over",
+         "team": -1
+        },
+        {
+         "text": "I. Cole 1+ blocked shot",
+         "p": 0.75568,
+         "player_id": 8474013,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Samberg 1+ blocked shot",
+         "p": 0.74646,
+         "player_id": 8480049,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "C. Bedard 1+ point",
+         "p": 0.67606,
+         "player_id": 8484144,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Vlasic 1+ blocked shot",
+         "p": 0.72202,
+         "player_id": 8481568,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. Perfetti 2+ SOG",
+         "p": 0.68028,
+         "player_id": 8482149,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.09562,
+       "pLower": 0.08229910383622854,
+       "verified": true,
+       "pIndep": 0.05338447280272068,
+       "lift": 1.7911575216516298,
+       "breakEven": 1115,
+       "mcHits": 4781,
+       "scenario": {
+        "n": 4781,
+        "shots": 60.41811336540473,
+        "goals": 8.674545074252249,
+        "ppg": 1.9048316251830162,
+        "margin": -0.9301401380464338,
+        "pace": 1.008084250541193
+       }
+      },
+      {
+       "family": "8A Shot-dominant game",
+       "legs": [
+        {
+         "text": "C. Perfetti 2+ SOG",
+         "p": 0.68028,
+         "player_id": 8482149,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "K. Connor 3+ SOG",
+         "p": 0.64356,
+         "player_id": 8478398,
+         "stat": "SOG",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Scheifele 2+ SOG",
+         "p": 0.6306,
+         "player_id": 8476460,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "G. Vilardi 2+ SOG",
+         "p": 0.62248,
+         "player_id": 8480014,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Morrissey 2+ SOG",
+         "p": 0.62268,
+         "player_id": 8477504,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "F. Nazar 2+ SOG",
+         "p": 0.61516,
+         "player_id": 8483493,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "P. Kane 2+ SOG",
+         "p": 0.6036,
+         "player_id": 8474141,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "N. Pionk 2+ SOG",
+         "p": 0.59976,
+         "player_id": 8480145,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.02668,
+       "pLower": 0.01508315719088618,
+       "verified": true,
+       "pIndep": 0.02359312686835192,
+       "lift": 1.1308378134391692,
+       "breakEven": 6530,
+       "mcHits": 1334,
+       "scenario": {
+        "n": 1334,
+        "shots": 66.11394302848576,
+        "goals": 7.506746626686657,
+        "ppg": 1.6266866566716642,
+        "margin": -0.6821589205397302,
+        "pace": 1.0230105357549002
+       }
+      },
+      {
+       "family": "8A Shot-dominant game",
+       "legs": [
+        {
+         "text": "C. Perfetti 2+ SOG",
+         "p": 0.68028,
+         "player_id": 8482149,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "K. Connor 3+ SOG",
+         "p": 0.64356,
+         "player_id": 8478398,
+         "stat": "SOG",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Scheifele 2+ SOG",
+         "p": 0.6306,
+         "player_id": 8476460,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "G. Vilardi 2+ SOG",
+         "p": 0.62248,
+         "player_id": 8480014,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Morrissey 2+ SOG",
+         "p": 0.62268,
+         "player_id": 8477504,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "F. Nazar 2+ SOG",
+         "p": 0.61516,
+         "player_id": 8483493,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "N. Pionk 2+ SOG",
+         "p": 0.59976,
+         "player_id": 8480145,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "C. Bedard 3+ SOG",
+         "p": 0.5917,
+         "player_id": 8484144,
+         "stat": "SOG",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.02646,
+       "pLower": 0.014863157190886182,
+       "verified": true,
+       "pIndep": 0.023010311903388186,
+       "lift": 1.149919223654846,
+       "breakEven": 6628,
+       "mcHits": 1323,
+       "scenario": {
+        "n": 1323,
+        "shots": 66.43915343915344,
+        "goals": 7.5132275132275135,
+        "ppg": 1.6591080876795163,
+        "margin": -0.6107331821617535,
+        "pace": 1.0240910506032221
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

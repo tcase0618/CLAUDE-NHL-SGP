@@ -1,5 +1,5 @@
 # Parlay ledger (cumulative)
-Updated 2026-11-14T17:03Z · nights: 2026-11-07, 2026-11-08, 2026-11-09, 2026-11-10, 2026-11-14
+Updated 2026-11-14T19:33Z · nights: 2026-11-07, 2026-11-08, 2026-11-09, 2026-11-10, 2026-11-14
 
 **Parlays:** 78–142 (35.5%) · model expected 65.4 wins · voids 4
 **Legs:** 346/458 (75.5%) · expected 327.6
