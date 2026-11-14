@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-14T19:33:07.521792+00:00",
+ "updated_at": "2026-11-14T23:05:20.125450+00:00",
  "nights": [
   "2026-11-07",
   "2026-11-08",
@@ -8,77 +8,77 @@
   "2026-11-14"
  ],
  "all": {
-  "n": 220,
-  "won": 78,
-  "lost": 142,
-  "win_pct": 0.35454545454545455,
-  "expected": 65.3732086568408,
-  "brier_joint": 0.2116349628862176,
-  "brier_indep": 0.21386772449333008,
-  "fair_pnl_2": 183.3869680204045
+  "n": 229,
+  "won": 83,
+  "lost": 146,
+  "win_pct": 0.3624454148471616,
+  "expected": 67.7570686568408,
+  "brier_joint": 0.21551086527234878,
+  "brier_indep": 0.21850603977577399,
+  "fair_pnl_2": 229.67279212918794
  },
  "by_size": {
   "3": {
-   "n": 74,
-   "won": 39,
-   "lost": 35,
-   "win_pct": 0.527027027027027,
-   "expected": 35.347652333026396,
-   "brier_joint": 0.24577679167787753,
-   "brier_indep": 0.24974138430407988,
-   "fair_pnl_2": 14.001255953261825
+   "n": 77,
+   "won": 41,
+   "lost": 36,
+   "win_pct": 0.5324675324675324,
+   "expected": 36.7849123330264,
+   "brier_joint": 0.2466855338254927,
+   "brier_indep": 0.2506082872844758,
+   "fair_pnl_2": 16.696431669567065
   },
   "5": {
-   "n": 75,
-   "won": 27,
-   "lost": 48,
-   "win_pct": 0.36,
-   "expected": 21.5184,
-   "brier_joint": 0.2424078224106667,
-   "brier_indep": 0.2440352190592994,
-   "fair_pnl_2": 55.39945682640593
+   "n": 78,
+   "won": 29,
+   "lost": 49,
+   "win_pct": 0.3717948717948718,
+   "expected": 22.23306,
+   "brier_joint": 0.24672331174871795,
+   "brier_indep": 0.2503799351314239,
+   "fair_pnl_2": 64.81332739646547
   },
   "8": {
-   "n": 71,
-   "won": 12,
-   "lost": 59,
-   "win_pct": 0.16901408450704225,
-   "expected": 8.507156323814408,
-   "brier_joint": 0.1435439798592244,
-   "brier_indep": 0.14461120451525705,
-   "fair_pnl_2": 113.98625524073677
+   "n": 74,
+   "won": 13,
+   "lost": 61,
+   "win_pct": 0.17567567567567569,
+   "expected": 8.739096323814408,
+   "brier_joint": 0.1501727530595261,
+   "brier_indep": 0.15150554118238568,
+   "fair_pnl_2": 148.1630330631554
   }
  },
  "voids": 4,
  "legs": {
-  "n": 458,
-  "won": 346,
-  "expected": 327.61482411294367
+  "n": 479,
+  "won": 365,
+  "expected": 342.34436411294365
  },
  "bands": [
   {
    "band": "0\u201310%",
-   "n": 33,
-   "pred": 0.05960203193616999,
-   "actual": 0.15151515151515152
+   "n": 35,
+   "pred": 0.05939963011124599,
+   "actual": 0.17142857142857143
   },
   {
    "band": "10\u201325%",
-   "n": 62,
-   "pred": 0.16359111725678704,
-   "actual": 0.27419354838709675
+   "n": 65,
+   "pred": 0.16327460415262765,
+   "actual": 0.27692307692307694
   },
   {
    "band": "25\u201340%",
-   "n": 64,
-   "pred": 0.3243024302037001,
-   "actual": 0.328125
+   "n": 66,
+   "pred": 0.3259562959551031,
+   "actual": 0.3484848484848485
   },
   {
    "band": "40\u201360%",
-   "n": 56,
-   "pred": 0.5170256571426713,
-   "actual": 0.6071428571428571
+   "n": 58,
+   "pred": 0.5171933931032688,
+   "actual": 0.603448275862069
   },
   {
    "band": "60\u2013100%",
@@ -10821,6 +10821,438 @@
      "p": 0.65144,
      "result": "WON",
      "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020321,
+   "game": "SEA@CAR",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-1800Z.json",
+   "size": 3,
+   "pick": "A",
+   "family": "3E Game script",
+   "pJoint": 0.55366,
+   "pIndep": 0.553792662701696,
+   "pLower": 0.5263936098849943,
+   "breakEven": -111,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "CAR +1.5 puck line",
+     "p": 0.85822,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "A. Larsson 1+ blocked shot",
+     "p": 0.8342,
+     "result": "WON",
+     "value": 6
+    },
+    {
+     "text": "R. Evans 1+ blocked shot",
+     "p": 0.76898,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020321,
+   "game": "SEA@CAR",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-1800Z.json",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.49012,
+   "pIndep": 0.491320180088512,
+   "pLower": 0.44902454504853584,
+   "breakEven": 123,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "A. Larsson 1+ blocked shot",
+     "p": 0.8342,
+     "result": "WON",
+     "value": 6
+    },
+    {
+     "text": "R. Evans 1+ blocked shot",
+     "p": 0.76898,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "S. Walker 1+ blocked shot",
+     "p": 0.75818,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020321,
+   "game": "SEA@CAR",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-1800Z.json",
+   "size": 3,
+   "pick": "C",
+   "family": "3A Shot-volume structure",
+   "pJoint": 0.39348,
+   "pIndep": 0.387236444310144,
+   "pLower": 0.36608972193476613,
+   "breakEven": 173,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "A. Svechnikov 2+ SOG",
+     "p": 0.73276,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "S. Jarvis 2+ SOG",
+     "p": 0.72826,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Aho 2+ SOG",
+     "p": 0.72706,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020321,
+   "game": "SEA@CAR",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-1800Z.json",
+   "size": 5,
+   "pick": "A",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.20154,
+   "pIndep": 0.18053036732578998,
+   "pLower": 0.1782520977281403,
+   "breakEven": 461,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "A. Svechnikov 2+ SOG",
+     "p": 0.73276,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "S. Aho 2+ SOG",
+     "p": 0.72706,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Aho 1+ point",
+     "p": 0.687,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "S. Jarvis 2+ SOG",
+     "p": 0.72826,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "N. Ehlers 2+ SOG",
+     "p": 0.68492,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020321,
+   "game": "SEA@CAR",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-1800Z.json",
+   "size": 5,
+   "pick": "B",
+   "family": "5F Game script",
+   "pJoint": 0.36428,
+   "pIndep": 0.2687075629526242,
+   "pLower": 0.338851997284063,
+   "breakEven": 195,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "CAR +1.5 puck line",
+     "p": 0.85822,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "CAR team total over 2.5",
+     "p": 0.75624,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "A. Larsson 1+ blocked shot",
+     "p": 0.8342,
+     "result": "WON",
+     "value": 6
+    },
+    {
+     "text": "S. Aho 1+ point",
+     "p": 0.687,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "S. Aho 2+ SOG",
+     "p": 0.72706,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020321,
+   "game": "SEA@CAR",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-1800Z.json",
+   "size": 5,
+   "pick": "C",
+   "family": "5D High-tempo matchup",
+   "pJoint": 0.14884,
+   "pIndep": 0.14378596400802274,
+   "pLower": 0.12883309306170374,
+   "breakEven": 676,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "A. Svechnikov 2+ SOG",
+     "p": 0.73276,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "S. Jarvis 2+ SOG",
+     "p": 0.72826,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "N. Ehlers 2+ SOG",
+     "p": 0.68492,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Blake 2+ SOG",
+     "p": 0.6496,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "B. McMann 2+ SOG",
+     "p": 0.6126,
+     "result": "LOST",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020321,
+   "game": "SEA@CAR",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-1800Z.json",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.11982,
+   "pIndep": 0.0930431845519558,
+   "pLower": 0.10649910383622854,
+   "breakEven": 839,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "CAR +1.5 puck line",
+     "p": 0.85822,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "CAR team total over 2.5",
+     "p": 0.75624,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "S. Aho 1+ point",
+     "p": 0.687,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "R. Evans 1+ blocked shot",
+     "p": 0.76898,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "S. Walker 1+ blocked shot",
+     "p": 0.75818,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "J. Slavin 1+ blocked shot",
+     "p": 0.75372,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "B. Montour 1+ blocked shot",
+     "p": 0.74172,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Beniers 1+ blocked shot",
+     "p": 0.6444,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020321,
+   "game": "SEA@CAR",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-1800Z.json",
+   "size": 8,
+   "pick": "B",
+   "family": "8D Multi-line production",
+   "pJoint": 0.06234,
+   "pIndep": 0.05944737381422107,
+   "pLower": 0.05076195177535315,
+   "breakEven": 1870,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "S. Walker 1+ blocked shot",
+     "p": 0.75818,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "J. Slavin 1+ blocked shot",
+     "p": 0.75372,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "B. Montour 1+ blocked shot",
+     "p": 0.74172,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "V. Dunn 1+ blocked shot",
+     "p": 0.72562,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "N. Ehlers 2+ SOG",
+     "p": 0.68492,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "K. Miller 1+ blocked shot",
+     "p": 0.67742,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Blake 2+ SOG",
+     "p": 0.6496,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "L. Stankoven 2+ SOG",
+     "p": 0.6375,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020321,
+   "game": "SEA@CAR",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-1800Z.json",
+   "size": 8,
+   "pick": "C",
+   "family": "8D Multi-line production",
+   "pJoint": 0.04978,
+   "pIndep": 0.034689944904585324,
+   "pLower": 0.03820195177535315,
+   "breakEven": 2518,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "J. Slavin 1+ blocked shot",
+     "p": 0.75372,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "B. Montour 1+ blocked shot",
+     "p": 0.74172,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "V. Dunn 1+ blocked shot",
+     "p": 0.72562,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "K. Miller 1+ blocked shot",
+     "p": 0.67742,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Blake 2+ SOG",
+     "p": 0.6496,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "J. Blake 1+ point",
+     "p": 0.56658,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "A. Svechnikov 1+ point",
+     "p": 0.60394,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "N. Ehlers 1+ point",
+     "p": 0.58062,
+     "result": "WON",
+     "value": 3
     }
    ]
   }
