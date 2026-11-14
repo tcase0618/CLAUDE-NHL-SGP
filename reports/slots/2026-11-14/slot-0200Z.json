@@ -1,0 +1,652 @@
+{
+ "generated_at": "2026-11-14T01:03:53.665Z",
+ "model_version": "v20261106-224110",
+ "data_through": "2026-11-13 03:00:00+00:00",
+ "sims": 50000,
+ "games": [
+  {
+   "game_id": 2026020310,
+   "start_utc": "2026-11-14 02:00:00+00:00",
+   "away": "NYR",
+   "home": "VAN",
+   "sizes": {
+    "3": {
+     "evaluated": 11396,
+     "verified": 96,
+     "finalists": 96,
+     "exposureCap": 2,
+     "picks": [
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "F. Hronek 1+ blocked shot",
+         "p": 0.82778,
+         "player_id": 8479425,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "E. Pettersson 1+ blocked shot",
+         "p": 0.77984,
+         "player_id": 8483678,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "NYR +1.5 puck line",
+         "p": 0.75256,
+         "player_id": "TEAM:NYR",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.4899,
+       "pLower": 0.44880454504853584,
+       "verified": true,
+       "pIndep": 0.48989481815808,
+       "lift": 1.0000105774581154,
+       "breakEven": 123,
+       "mcHits": 24495,
+       "scenario": {
+        "n": 24495,
+        "shots": 51.878628291488056,
+        "goals": 6.30357215758318,
+        "ppg": 1.3002653602776078,
+        "margin": -1.5253725250051031,
+        "pace": 1.0002317088213373
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "F. Hronek 1+ blocked shot",
+         "p": 0.82778,
+         "player_id": 8479425,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "E. Pettersson 1+ blocked shot",
+         "p": 0.77984,
+         "player_id": 8483678,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Schneider 1+ blocked shot",
+         "p": 0.76282,
+         "player_id": 8482073,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.50562,
+       "pLower": 0.4645245450485358,
+       "verified": true,
+       "pIndep": 0.50460418130976,
+       "lift": 1.0020131000254562,
+       "breakEven": 115,
+       "mcHits": 25281,
+       "scenario": {
+        "n": 25281,
+        "shots": 52.097662276017566,
+        "goals": 6.403385942011788,
+        "ppg": 1.312724971322337,
+        "margin": -0.41034769194256554,
+        "pace": 1.00068058344124
+       }
+      },
+      {
+       "family": "3B Team offensive scenario",
+       "legs": [
+        {
+         "text": "P. Dorofeyev 2+ SOG",
+         "p": 0.74772,
+         "player_id": 8481604,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Zibanejad 1+ point",
+         "p": 0.66848,
+         "player_id": 8476459,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Fox 1+ point",
+         "p": 0.62672,
+         "player_id": 8479323,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.34878,
+       "pLower": 0.32306656811704965,
+       "verified": true,
+       "pIndep": 0.307080069386832,
+       "lift": 1.1357949758720358,
+       "breakEven": 210,
+       "mcHits": 17439,
+       "scenario": {
+        "n": 17439,
+        "shots": 53.993864327082974,
+        "goals": 7.444692929640461,
+        "ppg": 1.6378232696828947,
+        "margin": -1.512472045415448,
+        "pace": 1.0054921529368117
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 15499,
+     "verified": 96,
+     "finalists": 96,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "P. Dorofeyev 2+ SOG",
+         "p": 0.74772,
+         "player_id": 8481604,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Zibanejad 1+ point",
+         "p": 0.66848,
+         "player_id": 8476459,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Fox 1+ point",
+         "p": 0.62672,
+         "player_id": 8479323,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Miller 1+ point",
+         "p": 0.59206,
+         "player_id": 8476468,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Miller 2+ SOG",
+         "p": 0.63014,
+         "player_id": 8476468,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.17016,
+       "pLower": 0.15015309306170374,
+       "verified": true,
+       "pIndep": 0.11302987962819072,
+       "lift": 1.5054426365819158,
+       "breakEven": 566,
+       "mcHits": 8508,
+       "scenario": {
+        "n": 8508,
+        "shots": 55.414433474377056,
+        "goals": 7.903267512929008,
+        "ppg": 1.8045369064409966,
+        "margin": -1.9554536906440996,
+        "pace": 1.0098349067685073
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "F. Hronek 1+ blocked shot",
+         "p": 0.82778,
+         "player_id": 8479425,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "NYR +1.5 puck line",
+         "p": 0.75256,
+         "player_id": "TEAM:NYR",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "NYR team total over 2.5",
+         "p": 0.67448,
+         "player_id": "TEAM:NYR",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Zibanejad 1+ point",
+         "p": 0.66848,
+         "player_id": 8476459,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "E. Pettersson 1+ blocked shot",
+         "p": 0.77984,
+         "player_id": 8483678,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.3189,
+       "pLower": 0.2760976673702255,
+       "verified": true,
+       "pIndep": 0.21943667942287443,
+       "lift": 1.4532666135794496,
+       "breakEven": 262,
+       "mcHits": 15945,
+       "scenario": {
+        "n": 15945,
+        "shots": 53.231984948259644,
+        "goals": 7.250987770460959,
+        "ppg": 1.5296958294136094,
+        "margin": -2.0246472248353715,
+        "pace": 1.0034276790363208
+       }
+      },
+      {
+       "family": "5D High-tempo matchup",
+       "legs": [
+        {
+         "text": "P. Dorofeyev 2+ SOG",
+         "p": 0.74772,
+         "player_id": 8481604,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. DeBrusk 2+ SOG",
+         "p": 0.67726,
+         "player_id": 8478498,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Zibanejad 2+ SOG",
+         "p": 0.63314,
+         "player_id": 8476459,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Miller 2+ SOG",
+         "p": 0.63014,
+         "player_id": 8476468,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Lafrenière 2+ SOG",
+         "p": 0.60384,
+         "player_id": 8482109,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.12624,
+       "pLower": 0.10623309306170374,
+       "verified": true,
+       "pIndep": 0.12003457706779272,
+       "lift": 1.0516969616904852,
+       "breakEven": 841,
+       "mcHits": 6312,
+       "scenario": {
+        "n": 6312,
+        "shots": 57.2973700887199,
+        "goals": 7.028358681875792,
+        "ppg": 1.5114068441064639,
+        "margin": -0.7450887198986058,
+        "pace": 1.013769163746571
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 11366,
+     "verified": 72,
+     "finalists": 72,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "NYR +1.5 puck line",
+         "p": 0.75256,
+         "player_id": "TEAM:NYR",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "NYR team total over 2.5",
+         "p": 0.67448,
+         "player_id": "TEAM:NYR",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "G. Brisebois 1+ blocked shot",
+         "p": 0.76692,
+         "player_id": 8478465,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Schneider 1+ blocked shot",
+         "p": 0.76282,
+         "player_id": 8482073,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Fox 1+ point",
+         "p": 0.62672,
+         "player_id": 8479323,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Pettersson 1+ blocked shot",
+         "p": 0.7568,
+         "player_id": 8477969,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Miller 1+ point",
+         "p": 0.59206,
+         "player_id": 8476468,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Fox 1+ blocked shot",
+         "p": 0.6989,
+         "player_id": 8479323,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.1051,
+       "pLower": 0.09177910383622855,
+       "verified": true,
+       "pIndep": 0.05794328090294286,
+       "lift": 1.8138427503966577,
+       "breakEven": 990,
+       "mcHits": 5255,
+       "scenario": {
+        "n": 5255,
+        "shots": 54.02854424357754,
+        "goals": 7.66070409134158,
+        "ppg": 1.6909609895337774,
+        "margin": -2.170313986679353,
+        "pace": 1.0058306164564574
+       }
+      },
+      {
+       "family": "8D Multi-line production",
+       "legs": [
+        {
+         "text": "G. Brisebois 1+ blocked shot",
+         "p": 0.76692,
+         "player_id": 8478465,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Schneider 1+ blocked shot",
+         "p": 0.76282,
+         "player_id": 8482073,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Pettersson 1+ blocked shot",
+         "p": 0.7568,
+         "player_id": 8477969,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "V. Gavrikov 1+ blocked shot",
+         "p": 0.72748,
+         "player_id": 8478882,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Oleksiak 1+ blocked shot",
+         "p": 0.69742,
+         "player_id": 8476467,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Fox 1+ blocked shot",
+         "p": 0.6989,
+         "player_id": 8479323,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "Z. Buium 1+ blocked shot",
+         "p": 0.69704,
+         "player_id": 8484798,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. DeBrusk 2+ SOG",
+         "p": 0.67726,
+         "player_id": 8478498,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.07852,
+       "pLower": 0.06519910383622855,
+       "verified": true,
+       "pIndep": 0.07632537615546539,
+       "lift": 1.0287535280542142,
+       "breakEven": 1434,
+       "mcHits": 3926,
+       "scenario": {
+        "n": 3926,
+        "shots": 53.81074885379521,
+        "goals": 6.617422312786551,
+        "ppg": 1.390219052470708,
+        "margin": -0.2414671421293938,
+        "pace": 1.0048117412636612
+       }
+      },
+      {
+       "family": "8F Cross-team high-event scenario",
+       "legs": [
+        {
+         "text": "J. DeBrusk 2+ SOG",
+         "p": 0.67726,
+         "player_id": 8478498,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Boeser 1+ point",
+         "p": 0.61166,
+         "player_id": 8478444,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "E. Pettersson 1+ point",
+         "p": 0.56028,
+         "player_id": 8480012,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Boeser 2+ SOG",
+         "p": 0.58776,
+         "player_id": 8478444,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Miller 2+ SOG",
+         "p": 0.63014,
+         "player_id": 8476468,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Miller 1+ point",
+         "p": 0.59206,
+         "player_id": 8476468,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Zibanejad 2+ SOG",
+         "p": 0.63314,
+         "player_id": 8476459,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Lafrenière 2+ SOG",
+         "p": 0.60384,
+         "player_id": 8482109,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.0288,
+       "pLower": 0.01720315719088618,
+       "verified": true,
+       "pIndep": 0.018628170198049552,
+       "lift": 1.546045569361154,
+       "breakEven": 5713,
+       "mcHits": 1440,
+       "scenario": {
+        "n": 1440,
+        "shots": 59.68680555555556,
+        "goals": 8.746527777777779,
+        "ppg": 2.0319444444444446,
+        "margin": -0.11875,
+        "pace": 1.02114843312237
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
