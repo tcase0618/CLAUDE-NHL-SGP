@@ -1,0 +1,652 @@
+{
+ "generated_at": "2026-11-15T00:03:27.093Z",
+ "model_version": "v20261106-224110",
+ "data_through": "2026-11-14 20:30:00+00:00",
+ "sims": 50000,
+ "games": [
+  {
+   "game_id": 2026020322,
+   "start_utc": "2026-11-15 01:00:00+00:00",
+   "away": "BUF",
+   "home": "DAL",
+   "sizes": {
+    "3": {
+     "evaluated": 12114,
+     "verified": 96,
+     "finalists": 96,
+     "exposureCap": 2,
+     "picks": [
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "T. Harley 1+ blocked shot",
+         "p": 0.84666,
+         "player_id": 8481581,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Samuelsson 1+ blocked shot",
+         "p": 0.82984,
+         "player_id": 8480807,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "BUF +1.5 puck line",
+         "p": 0.70566,
+         "player_id": "TEAM:BUF",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.49952,
+       "pLower": 0.45842454504853586,
+       "verified": true,
+       "pIndep": 0.4985878057778399,
+       "lift": 1.0018696691161666,
+       "breakEven": 118,
+       "mcHits": 24976,
+       "scenario": {
+        "n": 24976,
+        "shots": 53.379003843689944,
+        "goals": 5.915438821268418,
+        "ppg": 1.1715647021140294,
+        "margin": -1.2497597693786036,
+        "pace": 0.9999978670768063
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "T. Harley 1+ blocked shot",
+         "p": 0.84666,
+         "player_id": 8481581,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Samuelsson 1+ blocked shot",
+         "p": 0.82984,
+         "player_id": 8480807,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "E. Lindell 1+ blocked shot",
+         "p": 0.8107,
+         "player_id": 8476902,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.5818,
+       "pLower": 0.5545336098849942,
+       "verified": true,
+       "pIndep": 0.5811241577565599,
+       "lift": 1.0011629911343716,
+       "breakEven": -124,
+       "mcHits": 29090,
+       "scenario": {
+        "n": 29090,
+        "shots": 53.67349604675146,
+        "goals": 6.073083533860433,
+        "ppg": 1.232829150910966,
+        "margin": -0.017188037126160193,
+        "pace": 1.0009654709812537
+       }
+      },
+      {
+       "family": "3A Shot-volume structure",
+       "legs": [
+        {
+         "text": "J. Robertson 2+ SOG",
+         "p": 0.79242,
+         "player_id": 8480027,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "T. Thompson 2+ SOG",
+         "p": 0.7665,
+         "player_id": 8479420,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "W. Johnston 2+ SOG",
+         "p": 0.70798,
+         "player_id": 8482740,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.43182,
+       "pLower": 0.4044297219347661,
+       "verified": true,
+       "pIndep": 0.430108934267,
+       "lift": 1.0039782148118268,
+       "breakEven": 147,
+       "mcHits": 21591,
+       "scenario": {
+        "n": 21591,
+        "shots": 56.05131767866241,
+        "goals": 6.33097123801584,
+        "ppg": 1.312028159881432,
+        "margin": 0.10439534991431615,
+        "pace": 1.0061606401633236
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 16240,
+     "verified": 119,
+     "finalists": 119,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "J. Robertson 2+ SOG",
+         "p": 0.79242,
+         "player_id": 8480027,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Robertson 1+ point",
+         "p": 0.6384,
+         "player_id": 8480027,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Rantanen 1+ point",
+         "p": 0.65034,
+         "player_id": 8478420,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "W. Johnston 1+ point",
+         "p": 0.63388,
+         "player_id": 8482740,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "W. Johnston 2+ SOG",
+         "p": 0.70798,
+         "player_id": 8482740,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.2196,
+       "pLower": 0.1963120977281403,
+       "verified": true,
+       "pIndep": 0.1464659634286776,
+       "lift": 1.4993244495806386,
+       "breakEven": 409,
+       "mcHits": 10980,
+       "scenario": {
+        "n": 10980,
+        "shots": 56.535336976320586,
+        "goals": 7.425774134790529,
+        "ppg": 1.696174863387978,
+        "margin": 1.407377049180328,
+        "pace": 1.0073911478882063
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "T. Harley 1+ blocked shot",
+         "p": 0.84666,
+         "player_id": 8481581,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Samuelsson 1+ blocked shot",
+         "p": 0.82984,
+         "player_id": 8480807,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "E. Lindell 1+ blocked shot",
+         "p": 0.8107,
+         "player_id": 8476902,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Robertson 2+ SOG",
+         "p": 0.79242,
+         "player_id": 8480027,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "DAL +1.5 puck line",
+         "p": 0.70682,
+         "player_id": "TEAM:DAL",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.33026,
+       "pLower": 0.304831997284063,
+       "verified": true,
+       "pIndep": 0.3252835499552451,
+       "lift": 1.0152988063658295,
+       "breakEven": 228,
+       "mcHits": 16513,
+       "scenario": {
+        "n": 16513,
+        "shots": 54.23878156603888,
+        "goals": 6.02204323866045,
+        "ppg": 1.252043844243929,
+        "margin": 1.2752376915157755,
+        "pace": 1.0026668433431838
+       }
+      },
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "W. Johnston 2+ SOG",
+         "p": 0.70798,
+         "player_id": 8482740,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "W. Johnston 1+ point",
+         "p": 0.63388,
+         "player_id": 8482740,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Rantanen 1+ point",
+         "p": 0.65034,
+         "player_id": 8478420,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Robertson 1+ point",
+         "p": 0.6384,
+         "player_id": 8480027,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Rantanen 2+ SOG",
+         "p": 0.63202,
+         "player_id": 8478420,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.17944,
+       "pLower": 0.15943309306170372,
+       "verified": true,
+       "pIndep": 0.11720237851824036,
+       "lift": 1.531026949014294,
+       "breakEven": 527,
+       "mcHits": 8972,
+       "scenario": {
+        "n": 8972,
+        "shots": 56.93468568880963,
+        "goals": 7.469794917521177,
+        "ppg": 1.7141105662059741,
+        "margin": 1.46020954079358,
+        "pace": 1.008355432291728
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 16457,
+     "verified": 92,
+     "finalists": 92,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "8B Concentrated offensive production",
+       "legs": [
+        {
+         "text": "T. Thompson 2+ SOG",
+         "p": 0.7665,
+         "player_id": 8479420,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Rantanen 1+ point",
+         "p": 0.65034,
+         "player_id": 8478420,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "W. Johnston 1+ point",
+         "p": 0.63388,
+         "player_id": 8482740,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Rantanen 2+ SOG",
+         "p": 0.63202,
+         "player_id": 8478420,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "T. Thompson 1+ point",
+         "p": 0.59922,
+         "player_id": 8479420,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "R. Dahlin 1+ point",
+         "p": 0.57504,
+         "player_id": 8480839,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "R. Dahlin 2+ SOG",
+         "p": 0.62118,
+         "player_id": 8480839,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "T. Harley 2+ SOG",
+         "p": 0.57348,
+         "player_id": 8481581,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.04296,
+       "pLower": 0.03138195177535315,
+       "verified": true,
+       "pIndep": 0.025202151659335256,
+       "lift": 1.704616358980086,
+       "breakEven": 3087,
+       "mcHits": 2148,
+       "scenario": {
+        "n": 2148,
+        "shots": 59.797486033519554,
+        "goals": 8.443202979515828,
+        "ppg": 1.9241154562383613,
+        "margin": -0.05772811918063315,
+        "pace": 1.015208768833505
+       }
+      },
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "E. Lindell 1+ blocked shot",
+         "p": 0.8107,
+         "player_id": 8476902,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. Timmins 1+ blocked shot",
+         "p": 0.79884,
+         "player_id": 8479982,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "DAL +1.5 puck line",
+         "p": 0.70682,
+         "player_id": "TEAM:DAL",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "DAL team total over 2.5",
+         "p": 0.60952,
+         "player_id": "TEAM:DAL",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Robertson 1+ point",
+         "p": 0.6384,
+         "player_id": 8480027,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "T. Myers 1+ blocked shot",
+         "p": 0.77084,
+         "player_id": 8474574,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "T. Thompson 2+ SOG",
+         "p": 0.7665,
+         "player_id": 8479420,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "O. Power 1+ blocked shot",
+         "p": 0.71506,
+         "player_id": 8482671,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.12018,
+       "pLower": 0.10685910383622854,
+       "verified": true,
+       "pIndep": 0.07619792915945814,
+       "lift": 1.5772082171485435,
+       "breakEven": 836,
+       "mcHits": 6009,
+       "scenario": {
+        "n": 6009,
+        "shots": 55.810118156099186,
+        "goals": 7.077716758196039,
+        "ppg": 1.5327009485771343,
+        "margin": 1.707771675819604,
+        "pace": 1.0055119092124416
+       }
+      },
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "C. Timmins 1+ blocked shot",
+         "p": 0.79884,
+         "player_id": 8479982,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "T. Myers 1+ blocked shot",
+         "p": 0.77084,
+         "player_id": 8474574,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "BUF +1.5 puck line",
+         "p": 0.70566,
+         "player_id": "TEAM:BUF",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "BUF team total over 2.5",
+         "p": 0.60806,
+         "player_id": "TEAM:BUF",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "T. Thompson 1+ point",
+         "p": 0.59922,
+         "player_id": 8479420,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "R. Dahlin 1+ point",
+         "p": 0.57504,
+         "player_id": 8480839,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "O. Power 1+ blocked shot",
+         "p": 0.71506,
+         "player_id": 8482671,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Quinn 2+ SOG",
+         "p": 0.66866,
+         "player_id": 8482097,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.0955,
+       "pLower": 0.08217910383622855,
+       "verified": true,
+       "pIndep": 0.04405842392501225,
+       "lift": 2.1675764017918953,
+       "breakEven": 1117,
+       "mcHits": 4775,
+       "scenario": {
+        "n": 4775,
+        "shots": 56.293821989528794,
+        "goals": 7.403769633507854,
+        "ppg": 1.5918324607329843,
+        "margin": -1.975916230366492,
+        "pace": 1.006942839647463
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

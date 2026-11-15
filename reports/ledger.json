@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-14T23:05:20.125450+00:00",
+ "updated_at": "2026-11-15T00:03:55.169685+00:00",
  "nights": [
   "2026-11-07",
   "2026-11-08",
@@ -8,59 +8,59 @@
   "2026-11-14"
  ],
  "all": {
-  "n": 229,
-  "won": 83,
-  "lost": 146,
-  "win_pct": 0.3624454148471616,
-  "expected": 67.7570686568408,
-  "brier_joint": 0.21551086527234878,
-  "brier_indep": 0.21850603977577399,
-  "fair_pnl_2": 229.67279212918794
+  "n": 238,
+  "won": 90,
+  "lost": 148,
+  "win_pct": 0.37815126050420167,
+  "expected": 70.30518865684081,
+  "brier_joint": 0.22009179420574734,
+  "brier_indep": 0.22614497123862756,
+  "fair_pnl_2": 264.29726870207395
  },
  "by_size": {
   "3": {
-   "n": 77,
-   "won": 41,
+   "n": 80,
+   "won": 44,
    "lost": 36,
-   "win_pct": 0.5324675324675324,
-   "expected": 36.7849123330264,
-   "brier_joint": 0.2466855338254927,
-   "brier_indep": 0.2506082872844758,
-   "fair_pnl_2": 16.696431669567065
+   "win_pct": 0.55,
+   "expected": 38.246292333026396,
+   "brier_joint": 0.24731593699203672,
+   "brier_indep": 0.2519688514189212,
+   "fair_pnl_2": 23.03806110325691
   },
   "5": {
-   "n": 78,
-   "won": 29,
+   "n": 81,
+   "won": 32,
    "lost": 49,
-   "win_pct": 0.3717948717948718,
-   "expected": 22.23306,
-   "brier_joint": 0.24672331174871795,
-   "brier_indep": 0.2503799351314239,
-   "fair_pnl_2": 64.81332739646547
+   "win_pct": 0.3950617283950617,
+   "expected": 23.17104,
+   "brier_joint": 0.25511695304691356,
+   "brier_indep": 0.2661286163871953,
+   "fair_pnl_2": 78.1800482022586
   },
   "8": {
-   "n": 74,
-   "won": 13,
-   "lost": 61,
-   "win_pct": 0.17567567567567569,
-   "expected": 8.739096323814408,
-   "brier_joint": 0.1501727530595261,
-   "brier_indep": 0.15150554118238568,
-   "fair_pnl_2": 148.1630330631554
+   "n": 77,
+   "won": 14,
+   "lost": 63,
+   "win_pct": 0.18181818181818182,
+   "expected": 8.887856323814407,
+   "brier_joint": 0.15496232291954457,
+   "brier_indep": 0.15725424823268627,
+   "fair_pnl_2": 163.07915939655845
   }
  },
  "voids": 4,
  "legs": {
-  "n": 479,
-  "won": 365,
-  "expected": 342.34436411294365
+  "n": 502,
+  "won": 386,
+  "expected": 357.9173441129437
  },
  "bands": [
   {
    "band": "0\u201310%",
-   "n": 35,
-   "pred": 0.05939963011124599,
-   "actual": 0.17142857142857143
+   "n": 38,
+   "pred": 0.05862492247088446,
+   "actual": 0.18421052631578946
   },
   {
    "band": "10\u201325%",
@@ -70,15 +70,15 @@
   },
   {
    "band": "25\u201340%",
-   "n": 66,
-   "pred": 0.3259562959551031,
-   "actual": 0.3484848484848485
+   "n": 69,
+   "pred": 0.3253781961309682,
+   "actual": 0.37681159420289856
   },
   {
    "band": "40\u201360%",
-   "n": 58,
-   "pred": 0.5171933931032688,
-   "actual": 0.603448275862069
+   "n": 61,
+   "pred": 0.5157147016391737,
+   "actual": 0.6229508196721312
   },
   {
    "band": "60\u2013100%",
@@ -10821,6 +10821,438 @@
      "p": 0.65144,
      "result": "WON",
      "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020312,
+   "game": "WPG@CHI",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-2030Z.json",
+   "size": 3,
+   "pick": "A",
+   "family": "3E Game script",
+   "pJoint": 0.49936,
+   "pIndep": 0.43742053833216005,
+   "pLower": 0.45826454504853587,
+   "breakEven": 118,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "K. Connor 2+ SOG",
+     "p": 0.82992,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "WPG +1.5 puck line",
+     "p": 0.73916,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "K. Connor 1+ point",
+     "p": 0.7057,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020312,
+   "game": "WPG@CHI",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-2030Z.json",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.50496,
+   "pIndep": 0.50239540867144,
+   "pLower": 0.4638645450485358,
+   "breakEven": 116,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "K. Connor 2+ SOG",
+     "p": 0.82992,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "C. Bedard 2+ SOG",
+     "p": 0.7974,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "I. Cole 1+ blocked shot",
+     "p": 0.75568,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020312,
+   "game": "WPG@CHI",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-2030Z.json",
+   "size": 3,
+   "pick": "C",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.45706,
+   "pIndep": 0.45542308843716,
+   "pLower": 0.42966972193476616,
+   "breakEven": 133,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "C. Bedard 2+ SOG",
+     "p": 0.7974,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Ferraro 1+ blocked shot",
+     "p": 0.77204,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "I. Cole 1+ blocked shot",
+     "p": 0.75568,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020312,
+   "game": "WPG@CHI",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-2030Z.json",
+   "size": 5,
+   "pick": "A",
+   "family": "5F Game script",
+   "pJoint": 0.30598,
+   "pIndep": 0.1755042287615505,
+   "pLower": 0.26317766737022547,
+   "breakEven": 280,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "WPG +1.5 puck line",
+     "p": 0.73916,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "WPG team total over 2.5",
+     "p": 0.66654,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "K. Connor 1+ point",
+     "p": 0.7057,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Scheifele 1+ point",
+     "p": 0.65424,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "M. Ferraro 1+ blocked shot",
+     "p": 0.77204,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020312,
+   "game": "WPG@CHI",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-2030Z.json",
+   "size": 5,
+   "pick": "B",
+   "family": "5F Game script",
+   "pJoint": 0.3526,
+   "pIndep": 0.193605728323524,
+   "pLower": 0.32717199728406304,
+   "breakEven": 206,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "K. Connor 2+ SOG",
+     "p": 0.82992,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "WPG +1.5 puck line",
+     "p": 0.73916,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "WPG team total over 2.5",
+     "p": 0.66654,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "K. Connor 1+ point",
+     "p": 0.7057,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Scheifele 1+ point",
+     "p": 0.65424,
+     "result": "WON",
+     "value": 4
+    }
+   ]
+  },
+  {
+   "game_id": 2026020312,
+   "game": "WPG@CHI",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-2030Z.json",
+   "size": 5,
+   "pick": "C",
+   "family": "5F Game script",
+   "pJoint": 0.2794,
+   "pIndep": 0.16530365465695565,
+   "pLower": 0.23659766737022547,
+   "breakEven": 323,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "CHI +1.5 puck line",
+     "p": 0.6617,
+     "result": "WON",
+     "value": -1
+    },
+    {
+     "text": "CHI team total over 2.5",
+     "p": 0.61158,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "C. Bedard 1+ point",
+     "p": 0.67606,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "C. Bedard 2+ SOG",
+     "p": 0.7974,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Ferraro 1+ blocked shot",
+     "p": 0.77204,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020312,
+   "game": "WPG@CHI",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-2030Z.json",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.09562,
+   "pIndep": 0.05338447280272068,
+   "pLower": 0.08229910383622854,
+   "breakEven": 1115,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "WPG team total over 2.5",
+     "p": 0.66654,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "M. Scheifele 1+ point",
+     "p": 0.65424,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "Game total over 5.5",
+     "p": 0.62466,
+     "result": "WON",
+     "value": 9
+    },
+    {
+     "text": "I. Cole 1+ blocked shot",
+     "p": 0.75568,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "D. Samberg 1+ blocked shot",
+     "p": 0.74646,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "C. Bedard 1+ point",
+     "p": 0.67606,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "A. Vlasic 1+ blocked shot",
+     "p": 0.72202,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "C. Perfetti 2+ SOG",
+     "p": 0.68028,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020312,
+   "game": "WPG@CHI",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-2030Z.json",
+   "size": 8,
+   "pick": "B",
+   "family": "8A Shot-dominant game",
+   "pJoint": 0.02668,
+   "pIndep": 0.02359312686835192,
+   "pLower": 0.01508315719088618,
+   "breakEven": 6530,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "C. Perfetti 2+ SOG",
+     "p": 0.68028,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "K. Connor 3+ SOG",
+     "p": 0.64356,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "M. Scheifele 2+ SOG",
+     "p": 0.6306,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "G. Vilardi 2+ SOG",
+     "p": 0.62248,
+     "result": "WON",
+     "value": 7
+    },
+    {
+     "text": "J. Morrissey 2+ SOG",
+     "p": 0.62268,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "F. Nazar 2+ SOG",
+     "p": 0.61516,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "P. Kane 2+ SOG",
+     "p": 0.6036,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "N. Pionk 2+ SOG",
+     "p": 0.59976,
+     "result": "LOST",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020312,
+   "game": "WPG@CHI",
+   "date": "2026-11-14",
+   "source": "reports/slots/2026-11-14/slot-2030Z.json",
+   "size": 8,
+   "pick": "C",
+   "family": "8A Shot-dominant game",
+   "pJoint": 0.02646,
+   "pIndep": 0.023010311903388186,
+   "pLower": 0.014863157190886182,
+   "breakEven": 6628,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "C. Perfetti 2+ SOG",
+     "p": 0.68028,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "K. Connor 3+ SOG",
+     "p": 0.64356,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "M. Scheifele 2+ SOG",
+     "p": 0.6306,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "G. Vilardi 2+ SOG",
+     "p": 0.62248,
+     "result": "WON",
+     "value": 7
+    },
+    {
+     "text": "J. Morrissey 2+ SOG",
+     "p": 0.62268,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "F. Nazar 2+ SOG",
+     "p": 0.61516,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "N. Pionk 2+ SOG",
+     "p": 0.59976,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "C. Bedard 3+ SOG",
+     "p": 0.5917,
+     "result": "WON",
+     "value": 3
     }
    ]
   },
