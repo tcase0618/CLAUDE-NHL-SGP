@@ -1,0 +1,652 @@
+{
+ "generated_at": "2026-11-15T01:03:05.280Z",
+ "model_version": "v20261106-224110",
+ "data_through": "2026-11-14 20:30:00+00:00",
+ "sims": 50000,
+ "games": [
+  {
+   "game_id": 2026020323,
+   "start_utc": "2026-11-15 02:00:00+00:00",
+   "away": "SJS",
+   "home": "UTA",
+   "sizes": {
+    "3": {
+     "evaluated": 12745,
+     "verified": 96,
+     "finalists": 96,
+     "exposureCap": 2,
+     "picks": [
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "M. Weegar 1+ blocked shot",
+         "p": 0.87136,
+         "player_id": 8477346,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Nurse 1+ blocked shot",
+         "p": 0.8472,
+         "player_id": 8477498,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "SJS +1.5 puck line",
+         "p": 0.73068,
+         "player_id": "TEAM:SJS",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.53504,
+       "pLower": 0.5077736098849942,
+       "verified": true,
+       "pIndep": 0.535068296739064,
+       "lift": 0.9999471156500274,
+       "breakEven": -103,
+       "mcHits": 26752,
+       "scenario": {
+        "n": 26752,
+        "shots": 55.256952751196174,
+        "goals": 5.686341208133971,
+        "ppg": 1.1001794258373205,
+        "margin": -1.2564668062200957,
+        "pace": 0.9997471599910925
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "M. Weegar 1+ blocked shot",
+         "p": 0.87136,
+         "player_id": 8477346,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Nurse 1+ blocked shot",
+         "p": 0.8472,
+         "player_id": 8477498,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Trouba 1+ blocked shot",
+         "p": 0.82378,
+         "player_id": 8476885,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.60036,
+       "pLower": 0.5730936098849942,
+       "verified": true,
+       "pIndep": 0.600001435807488,
+       "lift": 1.0005976055574424,
+       "breakEven": -134,
+       "mcHits": 30018,
+       "scenario": {
+        "n": 30018,
+        "shots": 55.513358651475784,
+        "goals": 5.814844426677327,
+        "ppg": 1.1130654940369111,
+        "margin": -0.13125458058498235,
+        "pace": 1.0005281870282858
+       }
+      },
+      {
+       "family": "3A Shot-volume structure",
+       "legs": [
+        {
+         "text": "M. Celebrini 2+ SOG",
+         "p": 0.81668,
+         "player_id": 8484801,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "C. Keller 2+ SOG",
+         "p": 0.76324,
+         "player_id": 8479343,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Sergachev 2+ SOG",
+         "p": 0.66866,
+         "player_id": 8479410,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.41868,
+       "pLower": 0.39128972193476613,
+       "verified": true,
+       "pIndep": 0.41549859019032,
+       "lift": 1.007656848626665,
+       "breakEven": 156,
+       "mcHits": 20934,
+       "scenario": {
+        "n": 20934,
+        "shots": 57.84718639533773,
+        "goals": 6.067975542180186,
+        "ppg": 1.1772714244769276,
+        "margin": -0.04753033342887169,
+        "pace": 1.0061711776879543
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 17498,
+     "verified": 91,
+     "finalists": 91,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "C. Keller 2+ SOG",
+         "p": 0.76324,
+         "player_id": 8479343,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. Keller 1+ point",
+         "p": 0.71508,
+         "player_id": 8479343,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Sergachev 1+ point",
+         "p": 0.61242,
+         "player_id": 8479410,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Sergachev 2+ SOG",
+         "p": 0.66866,
+         "player_id": 8479410,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Lee 2+ SOG",
+         "p": 0.60486,
+         "player_id": 8475314,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.17594,
+       "pLower": 0.15593309306170375,
+       "verified": true,
+       "pIndep": 0.13237825676275697,
+       "lift": 1.329070228771124,
+       "breakEven": 541,
+       "mcHits": 8797,
+       "scenario": {
+        "n": 8797,
+        "shots": 59.23644424235535,
+        "goals": 6.898147095600773,
+        "ppg": 1.4245765601909741,
+        "margin": 0.9370239854495851,
+        "pace": 1.0095127875850705
+       }
+      },
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "M. Celebrini 2+ SOG",
+         "p": 0.81668,
+         "player_id": 8484801,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Celebrini 1+ point",
+         "p": 0.69856,
+         "player_id": 8484801,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "W. Smith 2+ SOG",
+         "p": 0.65804,
+         "player_id": 8484227,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "W. Smith 1+ point",
+         "p": 0.57236,
+         "player_id": 8484227,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "K. Sherwood 2+ SOG",
+         "p": 0.59196,
+         "player_id": 8480748,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.16732,
+       "pLower": 0.14731309306170373,
+       "verified": true,
+       "pIndep": 0.12685217029283946,
+       "lift": 1.3190156669274176,
+       "breakEven": 579,
+       "mcHits": 8366,
+       "scenario": {
+        "n": 8366,
+        "shots": 59.290580922782695,
+        "goals": 7.030002390628735,
+        "ppg": 1.4564905570164954,
+        "margin": -1.3003825005976573,
+        "pace": 1.0100035628590207
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "M. Weegar 1+ blocked shot",
+         "p": 0.87136,
+         "player_id": 8477346,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Nurse 1+ blocked shot",
+         "p": 0.8472,
+         "player_id": 8477498,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Trouba 1+ blocked shot",
+         "p": 0.82378,
+         "player_id": 8476885,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Celebrini 2+ SOG",
+         "p": 0.81668,
+         "player_id": 8484801,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "SJS +1.5 puck line",
+         "p": 0.73068,
+         "player_id": "TEAM:SJS",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.36388,
+       "pLower": 0.338451997284063,
+       "verified": true,
+       "pIndep": 0.35986963613046963,
+       "lift": 1.0111439351000884,
+       "breakEven": 195,
+       "mcHits": 18194,
+       "scenario": {
+        "n": 18194,
+        "shots": 56.027096845113775,
+        "goals": 5.780532043530834,
+        "ppg": 1.1266901176211939,
+        "margin": -1.2947675057711334,
+        "pace": 1.0019831937185235
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 13456,
+     "verified": 74,
+     "finalists": 74,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "8A Shot-dominant game",
+       "legs": [
+        {
+         "text": "C. Keller 2+ SOG",
+         "p": 0.76324,
+         "player_id": 8479343,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Sergachev 2+ SOG",
+         "p": 0.66866,
+         "player_id": 8479410,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "W. Smith 2+ SOG",
+         "p": 0.65804,
+         "player_id": 8484227,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Celebrini 3+ SOG",
+         "p": 0.62052,
+         "player_id": 8484801,
+         "stat": "SOG",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Lee 2+ SOG",
+         "p": 0.60486,
+         "player_id": 8475314,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "V. Trocheck 2+ SOG",
+         "p": 0.59478,
+         "player_id": 8476389,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Hayton 2+ SOG",
+         "p": 0.57562,
+         "player_id": 8480849,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "K. Sherwood 2+ SOG",
+         "p": 0.59196,
+         "player_id": 8480748,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.02792,
+       "pLower": 0.01632315719088618,
+       "verified": true,
+       "pIndep": 0.025199629521760244,
+       "lift": 1.1079527965238805,
+       "breakEven": 6026,
+       "mcHits": 1396,
+       "scenario": {
+        "n": 1396,
+        "shots": 64.74212034383955,
+        "goals": 6.808739255014327,
+        "ppg": 1.3796561604584527,
+        "margin": -0.053724928366762174,
+        "pace": 1.0222019463094394
+       }
+      },
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "J. Trouba 1+ blocked shot",
+         "p": 0.82378,
+         "player_id": 8476885,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "C. Keller 1+ point",
+         "p": 0.71508,
+         "player_id": 8479343,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "UTA +1.5 puck line",
+         "p": 0.69274,
+         "player_id": "TEAM:UTA",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "UTA team total over 2.5",
+         "p": 0.56484,
+         "player_id": "TEAM:UTA",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Sergachev 1+ point",
+         "p": 0.61242,
+         "player_id": 8479410,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Sergachev 1+ blocked shot",
+         "p": 0.79678,
+         "player_id": 8479410,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "E. Pohlkamp 1+ blocked shot",
+         "p": 0.78808,
+         "player_id": 8484421,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Peeke 1+ blocked shot",
+         "p": 0.77072,
+         "player_id": 8479369,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.14274,
+       "pLower": 0.09878957590262269,
+       "verified": true,
+       "pIndep": 0.06757151416497065,
+       "lift": 2.112428613801835,
+       "breakEven": 912,
+       "mcHits": 7137,
+       "scenario": {
+        "n": 7137,
+        "shots": 57.19419924337957,
+        "goals": 6.944794731679978,
+        "ppg": 1.3846153846153846,
+        "margin": 1.7395264116575593,
+        "pace": 1.0047895478002995
+       }
+      },
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "SJS +1.5 puck line",
+         "p": 0.73068,
+         "player_id": "TEAM:SJS",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Celebrini 1+ point",
+         "p": 0.69856,
+         "player_id": 8484801,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "SJS team total over 2.5",
+         "p": 0.59866,
+         "player_id": "TEAM:SJS",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Sergachev 1+ blocked shot",
+         "p": 0.79678,
+         "player_id": 8479410,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "E. Pohlkamp 1+ blocked shot",
+         "p": 0.78808,
+         "player_id": 8484421,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Peeke 1+ blocked shot",
+         "p": 0.77072,
+         "player_id": 8479369,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "W. Smith 1+ point",
+         "p": 0.57236,
+         "player_id": 8484227,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "W. Smith 2+ SOG",
+         "p": 0.65804,
+         "player_id": 8484227,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.12328,
+       "pLower": 0.07932957590262268,
+       "verified": true,
+       "pIndep": 0.055662594138779456,
+       "lift": 2.2147728094137156,
+       "breakEven": 1161,
+       "mcHits": 6164,
+       "scenario": {
+        "n": 6164,
+        "shots": 58.08436080467229,
+        "goals": 7.06505515898767,
+        "ppg": 1.4469500324464633,
+        "margin": -1.9797209604153148,
+        "pace": 1.0064171276875395
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
