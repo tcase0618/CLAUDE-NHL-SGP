@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-16T10:49:09.958005+00:00",
+ "updated_at": "2026-11-16T23:34:20.550922+00:00",
  "nights": [
   "2026-11-07",
   "2026-11-08",
@@ -12674,7 +12674,7 @@
      "text": "N. Kucherov 2+ SOG",
      "p": 0.75286,
      "result": "WON",
-     "value": 5
+     "value": 6
     },
     {
      "text": "N. Kucherov 1+ point",
@@ -12720,7 +12720,7 @@
      "text": "N. Kucherov 2+ SOG",
      "p": 0.75286,
      "result": "WON",
-     "value": 5
+     "value": 6
     },
     {
      "text": "N. Kucherov 1+ point",
@@ -12818,7 +12818,7 @@
      "text": "N. Kucherov 2+ SOG",
      "p": 0.75286,
      "result": "WON",
-     "value": 5
+     "value": 6
     },
     {
      "text": "N. Kucherov 1+ point",
@@ -18598,7 +18598,7 @@
      "text": "J. Lauzon 1+ blocked shot",
      "p": 0.70196,
      "result": "WON",
-     "value": 2
+     "value": 1
     }
    ]
   },
@@ -18694,13 +18694,13 @@
      "text": "R. Josi 2+ SOG",
      "p": 0.72898,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "A. Nedeljkovic 23+ saves",
      "p": 0.5885284161392738,
      "result": "WON",
-     "value": 32
+     "value": 33
     }
    ]
   },
@@ -18774,7 +18774,7 @@
      "text": "R. Josi 2+ SOG",
      "p": 0.72898,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "S. Stamkos 2+ SOG",
@@ -18860,7 +18860,7 @@
      "text": "R. Josi 2+ SOG",
      "p": 0.72898,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "R. Josi 1+ point",

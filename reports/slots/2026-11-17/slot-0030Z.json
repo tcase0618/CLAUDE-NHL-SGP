@@ -1,0 +1,652 @@
+{
+ "generated_at": "2026-11-16T23:33:43.280Z",
+ "model_version": "v20261106-224110",
+ "data_through": "2026-11-16 02:00:00+00:00",
+ "sims": 50000,
+ "games": [
+  {
+   "game_id": 2026020331,
+   "start_utc": "2026-11-17 00:30:00+00:00",
+   "away": "MTL",
+   "home": "NYR",
+   "sizes": {
+    "3": {
+     "evaluated": 12489,
+     "verified": 96,
+     "finalists": 96,
+     "exposureCap": 2,
+     "picks": [
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "K. Guhle 1+ blocked shot",
+         "p": 0.81518,
+         "player_id": 8482087,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "B. Schneider 1+ blocked shot",
+         "p": 0.8087,
+         "player_id": 8482073,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "NYR +1.5 puck line",
+         "p": 0.7139,
+         "player_id": "TEAM:NYR",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.47196,
+       "pLower": 0.43086454504853583,
+       "verified": true,
+       "pIndep": 0.47338306101206395,
+       "lift": 0.9969938488947586,
+       "breakEven": 132,
+       "mcHits": 23598,
+       "scenario": {
+        "n": 23598,
+        "shots": 54.842825663191796,
+        "goals": 5.986948046444614,
+        "ppg": 1.2418849055004662,
+        "margin": 1.280701754385965,
+        "pace": 0.9999168239889412
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "K. Guhle 1+ blocked shot",
+         "p": 0.81518,
+         "player_id": 8482087,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "B. Schneider 1+ blocked shot",
+         "p": 0.8087,
+         "player_id": 8482073,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "N. Dobson 1+ blocked shot",
+         "p": 0.80232,
+         "player_id": 8480865,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.53232,
+       "pLower": 0.5050536098849943,
+       "verified": true,
+       "pIndep": 0.5321479459273599,
+       "lift": 1.000323319997675,
+       "breakEven": -102,
+       "mcHits": 26616,
+       "scenario": {
+        "n": 26616,
+        "shots": 55.14938382927562,
+        "goals": 6.117485722873459,
+        "ppg": 1.2383152990682296,
+        "margin": 0.08960775473399459,
+        "pace": 1.0005863905736803
+       }
+      },
+      {
+       "family": "3A Shot-volume structure",
+       "legs": [
+        {
+         "text": "C. Caufield 2+ SOG",
+         "p": 0.78914,
+         "player_id": 8481540,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "P. Dorofeyev 2+ SOG",
+         "p": 0.73818,
+         "player_id": 8481604,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "N. Suzuki 2+ SOG",
+         "p": 0.66312,
+         "player_id": 8480018,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.3898,
+       "pLower": 0.3624097219347661,
+       "verified": true,
+       "pIndep": 0.3887331600172,
+       "lift": 1.0027444017967306,
+       "breakEven": 176,
+       "mcHits": 19490,
+       "scenario": {
+        "n": 19490,
+        "shots": 57.70384812724474,
+        "goals": 6.415238583889174,
+        "ppg": 1.3205233453052847,
+        "margin": -0.01862493586454592,
+        "pace": 1.0066880477643
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 17946,
+     "verified": 115,
+     "finalists": 115,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "C. Caufield 2+ SOG",
+         "p": 0.78914,
+         "player_id": 8481540,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "N. Suzuki 2+ SOG",
+         "p": 0.66312,
+         "player_id": 8480018,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "N. Suzuki 1+ point",
+         "p": 0.62648,
+         "player_id": 8480018,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "L. Hutson 1+ point",
+         "p": 0.5972,
+         "player_id": 8483457,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "C. Caufield 1+ point",
+         "p": 0.55982,
+         "player_id": 8481540,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.17502,
+       "pLower": 0.15501309306170374,
+       "verified": true,
+       "pIndep": 0.11062332913042144,
+       "lift": 1.5821255911911394,
+       "breakEven": 545,
+       "mcHits": 8751,
+       "scenario": {
+        "n": 8751,
+        "shots": 58.124785738772715,
+        "goals": 7.591703805279397,
+        "ppg": 1.7193463604159525,
+        "margin": -1.422580276539824,
+        "pace": 1.0085509251954283
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "K. Guhle 1+ blocked shot",
+         "p": 0.81518,
+         "player_id": 8482087,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "B. Schneider 1+ blocked shot",
+         "p": 0.8087,
+         "player_id": 8482073,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "N. Dobson 1+ blocked shot",
+         "p": 0.80232,
+         "player_id": 8480865,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Pettersson 1+ blocked shot",
+         "p": 0.7982,
+         "player_id": 8477969,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "NYR +1.5 puck line",
+         "p": 0.7139,
+         "player_id": "TEAM:NYR",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.30782,
+       "pLower": 0.2650176673702255,
+       "verified": true,
+       "pIndep": 0.3066114772841173,
+       "lift": 1.0039415442846022,
+       "breakEven": 277,
+       "mcHits": 15391,
+       "scenario": {
+        "n": 15391,
+        "shots": 55.08232083685271,
+        "goals": 6.0028588135923595,
+        "ppg": 1.244753427327659,
+        "margin": 1.2889350919368463,
+        "pace": 1.0001558506359451
+       }
+      },
+      {
+       "family": "5D High-tempo matchup",
+       "legs": [
+        {
+         "text": "C. Caufield 2+ SOG",
+         "p": 0.78914,
+         "player_id": 8481540,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "P. Dorofeyev 2+ SOG",
+         "p": 0.73818,
+         "player_id": 8481604,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "N. Suzuki 2+ SOG",
+         "p": 0.66312,
+         "player_id": 8480018,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Slafkovský 2+ SOG",
+         "p": 0.65152,
+         "player_id": 8483515,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Zibanejad 2+ SOG",
+         "p": 0.6417,
+         "player_id": 8476459,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.16544,
+       "pLower": 0.14543309306170374,
+       "verified": true,
+       "pIndep": 0.16210001108153776,
+       "lift": 1.020604495312355,
+       "breakEven": 588,
+       "mcHits": 8272,
+       "scenario": {
+        "n": 8272,
+        "shots": 60.12354932301741,
+        "goals": 6.67154255319149,
+        "ppg": 1.383220502901354,
+        "margin": -0.024298839458413928,
+        "pace": 1.013081409022702
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 13379,
+     "verified": 80,
+     "finalists": 80,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "8D Multi-line production",
+       "legs": [
+        {
+         "text": "N. Dobson 1+ blocked shot",
+         "p": 0.80232,
+         "player_id": 8480865,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Pettersson 1+ blocked shot",
+         "p": 0.7982,
+         "player_id": 8477969,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Carrier 1+ blocked shot",
+         "p": 0.79108,
+         "player_id": 8478851,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "V. Gavrikov 1+ blocked shot",
+         "p": 0.77448,
+         "player_id": 8478882,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Fox 1+ blocked shot",
+         "p": 0.75746,
+         "player_id": 8479323,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "P. Dorofeyev 2+ SOG",
+         "p": 0.73818,
+         "player_id": 8481604,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "L. Hutson 1+ blocked shot",
+         "p": 0.73966,
+         "player_id": 8483457,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Slafkovský 2+ SOG",
+         "p": 0.65152,
+         "player_id": 8483515,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.10744,
+       "pLower": 0.09411910383622854,
+       "verified": true,
+       "pIndep": 0.10701937142716386,
+       "lift": 1.003930396592942,
+       "breakEven": 962,
+       "mcHits": 5372,
+       "scenario": {
+        "n": 5372,
+        "shots": 57.56682799702159,
+        "goals": 6.336559940431869,
+        "ppg": 1.2939314966492925,
+        "margin": 0.09903201787043932,
+        "pace": 1.0072643926071747
+       }
+      },
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "M. Pettersson 1+ blocked shot",
+         "p": 0.7982,
+         "player_id": 8477969,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Carrier 1+ blocked shot",
+         "p": 0.79108,
+         "player_id": 8478851,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "MTL +1.5 puck line",
+         "p": 0.70076,
+         "player_id": "TEAM:MTL",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "MTL team total over 2.5",
+         "p": 0.60616,
+         "player_id": "TEAM:MTL",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "N. Suzuki 1+ point",
+         "p": 0.62648,
+         "player_id": 8480018,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "V. Gavrikov 1+ blocked shot",
+         "p": 0.77448,
+         "player_id": 8478882,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "L. Hutson 1+ point",
+         "p": 0.5972,
+         "player_id": 8483457,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "C. Caufield 1+ point",
+         "p": 0.55982,
+         "player_id": 8481540,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.11904,
+       "pLower": 0.10571910383622855,
+       "verified": true,
+       "pIndep": 0.04448597111145869,
+       "lift": 2.6758997730261465,
+       "breakEven": 846,
+       "mcHits": 5952,
+       "scenario": {
+        "n": 5952,
+        "shots": 57.07409274193548,
+        "goals": 7.526881720430108,
+        "ppg": 1.6638104838709677,
+        "margin": -2.0524193548387095,
+        "pace": 1.004657945745895
+       }
+      },
+      {
+       "family": "8F Cross-team high-event scenario",
+       "legs": [
+        {
+         "text": "N. Suzuki 1+ point",
+         "p": 0.62648,
+         "player_id": 8480018,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "L. Hutson 1+ point",
+         "p": 0.5972,
+         "player_id": 8483457,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Slafkovský 2+ SOG",
+         "p": 0.65152,
+         "player_id": 8483515,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Slafkovský 1+ point",
+         "p": 0.55214,
+         "player_id": 8483515,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "C. Caufield 1+ point",
+         "p": 0.55982,
+         "player_id": 8481540,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Zibanejad 2+ SOG",
+         "p": 0.6417,
+         "player_id": 8476459,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Zibanejad 1+ point",
+         "p": 0.61358,
+         "player_id": 8476459,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Miller 2+ SOG",
+         "p": 0.63112,
+         "player_id": 8476468,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.03958,
+       "pLower": 0.027983157190886176,
+       "verified": true,
+       "pIndep": 0.018720580389333007,
+       "lift": 2.114250689714337,
+       "breakEven": 3474,
+       "mcHits": 1979,
+       "scenario": {
+        "n": 1979,
+        "shots": 61.246083880747854,
+        "goals": 8.812026275896917,
+        "ppg": 2.0636685194542697,
+        "margin": -0.9838302172814553,
+        "pace": 1.0157827061496039
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
