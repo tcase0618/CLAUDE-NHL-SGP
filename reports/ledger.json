@@ -1,85 +1,86 @@
 {
- "updated_at": "2026-11-16T01:03:47.424027+00:00",
+ "updated_at": "2026-11-16T10:49:09.958005+00:00",
  "nights": [
   "2026-11-07",
   "2026-11-08",
   "2026-11-09",
   "2026-11-10",
   "2026-11-14",
-  "2026-11-15"
+  "2026-11-15",
+  "2026-11-16"
  ],
  "all": {
-  "n": 338,
-  "won": 115,
-  "lost": 223,
-  "win_pct": 0.34023668639053256,
-  "expected": 98.7641886568408,
-  "brier_joint": 0.19399350535434282,
-  "brier_indep": 0.19680726501415063,
-  "fair_pnl_2": 182.6727016617196
+  "n": 383,
+  "won": 134,
+  "lost": 249,
+  "win_pct": 0.34986945169712796,
+  "expected": 111.578754254588,
+  "brier_joint": 0.19351567196033223,
+  "brier_indep": 0.19749669939781547,
+  "fair_pnl_2": 204.02799507129276
  },
  "by_size": {
   "3": {
-   "n": 112,
-   "won": 62,
-   "lost": 50,
-   "win_pct": 0.5535714285714286,
-   "expected": 54.6876323330264,
-   "brier_joint": 0.24147724684788335,
-   "brier_indep": 0.24480883716366528,
-   "fair_pnl_2": 26.680286000352545
+   "n": 127,
+   "won": 74,
+   "lost": 53,
+   "win_pct": 0.5826771653543307,
+   "expected": 62.054000401045236,
+   "brier_joint": 0.2435373999922253,
+   "brier_indep": 0.24763909160257008,
+   "fair_pnl_2": 46.43295798504845
   },
   "5": {
-   "n": 113,
-   "won": 39,
-   "lost": 74,
-   "win_pct": 0.34513274336283184,
-   "expected": 32.08062,
-   "brier_joint": 0.23252009213805308,
-   "brier_indep": 0.23774976610523046,
-   "fair_pnl_2": 64.9132562648086
+   "n": 128,
+   "won": 45,
+   "lost": 83,
+   "win_pct": 0.3515625,
+   "expected": 36.26158,
+   "brier_joint": 0.23471628217812499,
+   "brier_indep": 0.242393055022716,
+   "fair_pnl_2": 79.22082407501964
   },
   "8": {
-   "n": 113,
-   "won": 14,
-   "lost": 99,
-   "win_pct": 0.12389380530973451,
-   "expected": 11.995936323814409,
-   "brier_joint": 0.1084033871788047,
-   "brier_indep": 0.1082879844474456,
-   "fair_pnl_2": 91.07915939655845
+   "n": 128,
+   "won": 15,
+   "lost": 113,
+   "win_pct": 0.1171875,
+   "expected": 13.263173853542769,
+   "brier_joint": 0.10268412846089559,
+   "brier_indep": 0.10284968900725996,
+   "fair_pnl_2": 78.37421301122467
   }
  },
  "voids": 12,
  "legs": {
-  "n": 753,
-  "won": 557,
-  "expected": 534.9986641129436
+  "n": 865,
+  "won": 645,
+  "expected": 612.6986140859692
  },
  "bands": [
   {
    "band": "0\u201310%",
-   "n": 60,
-   "pred": 0.06013645089822683,
-   "actual": 0.11666666666666667
+   "n": 70,
+   "pred": 0.06089406508601674,
+   "actual": 0.1
   },
   {
    "band": "10\u201325%",
-   "n": 91,
-   "pred": 0.16062977219693184,
-   "actual": 0.2087912087912088
+   "n": 100,
+   "pred": 0.15967369297521597,
+   "actual": 0.22
   },
   {
    "band": "25\u201340%",
-   "n": 90,
-   "pred": 0.3260437281448534,
-   "actual": 0.35555555555555557
+   "n": 103,
+   "pred": 0.32590014519965943,
+   "actual": 0.36893203883495146
   },
   {
    "band": "40\u201360%",
-   "n": 89,
-   "pred": 0.5149231101122426,
-   "actual": 0.6067415730337079
+   "n": 102,
+   "pred": 0.513867504367454,
+   "actual": 0.6274509803921569
   },
   {
    "band": "60\u2013100%",
@@ -16870,6 +16871,2166 @@
      "p": 0.6787,
      "result": "LOST",
      "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020326,
+   "game": "EDM@PHI",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0030Z.json",
+   "size": 3,
+   "pick": "A",
+   "family": "3E Game script",
+   "pJoint": 0.50328,
+   "pIndep": 0.5033432690711039,
+   "pLower": 0.4621845450485358,
+   "breakEven": 116,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "N. Seeler 1+ blocked shot",
+     "p": 0.83358,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "C. Murphy 1+ blocked shot",
+     "p": 0.82184,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "EDM +1.5 puck line",
+     "p": 0.73762,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020326,
+   "game": "EDM@PHI",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0030Z.json",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.54444,
+   "pIndep": 0.54496525509096,
+   "pLower": 0.5171736098849943,
+   "breakEven": -107,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "N. Seeler 1+ blocked shot",
+     "p": 0.83358,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "C. Murphy 1+ blocked shot",
+     "p": 0.82184,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "T. Sanheim 1+ blocked shot",
+     "p": 0.78792,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020326,
+   "game": "EDM@PHI",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0030Z.json",
+   "size": 3,
+   "pick": "C",
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.43056,
+   "pIndep": 0.40401213920839996,
+   "pLower": 0.40316972193476613,
+   "breakEven": 148,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "L. Draisaitl 2+ SOG",
+     "p": 0.77688,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "C. McDavid 2+ SOG",
+     "p": 0.74008,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "L. Draisaitl 1+ point",
+     "p": 0.70268,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020326,
+   "game": "EDM@PHI",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0030Z.json",
+   "size": 5,
+   "pick": "A",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.25778,
+   "pIndep": 0.17888282590035795,
+   "pLower": 0.2344920977281403,
+   "breakEven": 326,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "L. Draisaitl 2+ SOG",
+     "p": 0.77688,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "C. McDavid 2+ SOG",
+     "p": 0.74008,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "L. Draisaitl 1+ point",
+     "p": 0.70268,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "C. McDavid 1+ point",
+     "p": 0.67152,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "E. Bouchard 1+ point",
+     "p": 0.66774,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020326,
+   "game": "EDM@PHI",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0030Z.json",
+   "size": 5,
+   "pick": "B",
+   "family": "5F Game script",
+   "pJoint": 0.33484,
+   "pIndep": 0.18218983451707904,
+   "pLower": 0.30941199728406305,
+   "breakEven": 223,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "EDM +1.5 puck line",
+     "p": 0.73762,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "L. Draisaitl 1+ point",
+     "p": 0.70268,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "EDM team total over 2.5",
+     "p": 0.63126,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "N. Seeler 1+ blocked shot",
+     "p": 0.83358,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "C. McDavid 1+ point",
+     "p": 0.67152,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020326,
+   "game": "EDM@PHI",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0030Z.json",
+   "size": 5,
+   "pick": "C",
+   "family": "5D High-tempo matchup",
+   "pJoint": 0.15262,
+   "pIndep": 0.14762061158942746,
+   "pLower": 0.13261309306170374,
+   "breakEven": 654,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "L. Draisaitl 2+ SOG",
+     "p": 0.77688,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "C. McDavid 2+ SOG",
+     "p": 0.74008,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "E. Bouchard 2+ SOG",
+     "p": 0.6591,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "Z. Hyman 2+ SOG",
+     "p": 0.64534,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "T. Konecny 2+ SOG",
+     "p": 0.61518,
+     "result": "WON",
+     "value": 6
+    }
+   ]
+  },
+  {
+   "game_id": 2026020326,
+   "game": "EDM@PHI",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0030Z.json",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.14044,
+   "pIndep": 0.07461345636473624,
+   "pLower": 0.09648957590262269,
+   "breakEven": 936,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "C. Murphy 1+ blocked shot",
+     "p": 0.82184,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "EDM +1.5 puck line",
+     "p": 0.73762,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "EDM team total over 2.5",
+     "p": 0.63126,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "C. McDavid 1+ point",
+     "p": 0.67152,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "E. Bouchard 1+ point",
+     "p": 0.66774,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "T. Sanheim 1+ blocked shot",
+     "p": 0.78792,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "C. York 1+ blocked shot",
+     "p": 0.76188,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "J. Drysdale 1+ blocked shot",
+     "p": 0.71852,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020326,
+   "game": "EDM@PHI",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0030Z.json",
+   "size": 8,
+   "pick": "B",
+   "family": "8F Cross-team high-event scenario",
+   "pJoint": 0.0233,
+   "pIndep": 0.016731418563024878,
+   "pLower": 0.011703157190886182,
+   "breakEven": 8445,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "E. Bouchard 1+ point",
+     "p": 0.66774,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "E. Bouchard 2+ SOG",
+     "p": 0.6591,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "Z. Hyman 2+ SOG",
+     "p": 0.64534,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "T. Konecny 2+ SOG",
+     "p": 0.61518,
+     "result": "WON",
+     "value": 6
+    },
+    {
+     "text": "T. Zegras 2+ SOG",
+     "p": 0.57884,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "T. Zegras 1+ point",
+     "p": 0.55138,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "O. Tippett 2+ SOG",
+     "p": 0.56924,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "L. Draisaitl 3+ SOG",
+     "p": 0.55904,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020326,
+   "game": "EDM@PHI",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0030Z.json",
+   "size": 8,
+   "pick": "C",
+   "family": "8G Game script",
+   "pJoint": 0.0837,
+   "pIndep": 0.06315673801550692,
+   "pLower": 0.07037910383622854,
+   "breakEven": 1321,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "T. Sanheim 1+ blocked shot",
+     "p": 0.78792,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "C. York 1+ blocked shot",
+     "p": 0.76188,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "PHI +1.5 puck line",
+     "p": 0.67422,
+     "result": "LOST",
+     "value": -3
+    },
+    {
+     "text": "PHI team total over 2.5",
+     "p": 0.5818,
+     "result": "LOST",
+     "value": 2
+    },
+    {
+     "text": "R. Ristolainen 1+ blocked shot",
+     "p": 0.73242,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "R. Shea 1+ blocked shot",
+     "p": 0.72496,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Drysdale 1+ blocked shot",
+     "p": 0.71852,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "M. Ekholm 1+ blocked shot",
+     "p": 0.68672,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020327,
+   "game": "FLA@DAL",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 3,
+   "pick": "A",
+   "family": "3E Game script",
+   "pJoint": 0.48672,
+   "pIndep": 0.488588636392528,
+   "pLower": 0.4456245450485358,
+   "breakEven": 124,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "T. Harley 1+ blocked shot",
+     "p": 0.85252,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "E. Lindell 1+ blocked shot",
+     "p": 0.78422,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "DAL +1.5 puck line",
+     "p": 0.7134,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020327,
+   "game": "FLA@DAL",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.5347,
+   "pIndep": 0.532903542048544,
+   "pLower": 0.5074336098849942,
+   "breakEven": -103,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "T. Harley 1+ blocked shot",
+     "p": 0.85252,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "E. Lindell 1+ blocked shot",
+     "p": 0.78422,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.77978,
+     "result": "WON",
+     "value": 4
+    }
+   ]
+  },
+  {
+   "game_id": 2026020327,
+   "game": "FLA@DAL",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 3,
+   "pick": "C",
+   "family": "3A Shot-volume structure",
+   "pJoint": 0.4186,
+   "pIndep": 0.41670152280438394,
+   "pLower": 0.39120972193476616,
+   "breakEven": 156,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.77978,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "J. Robertson 2+ SOG",
+     "p": 0.77158,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.68858,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020327,
+   "game": "FLA@DAL",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 5,
+   "pick": "A",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.17684,
+   "pIndep": 0.10947206616309858,
+   "pLower": 0.15683309306170373,
+   "breakEven": 538,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "J. Robertson 2+ SOG",
+     "p": 0.77158,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "W. Johnston 2+ SOG",
+     "p": 0.6868,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "J. Robertson 1+ point",
+     "p": 0.63452,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Rantanen 1+ point",
+     "p": 0.5901,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "W. Johnston 1+ point",
+     "p": 0.54468,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020327,
+   "game": "FLA@DAL",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 5,
+   "pick": "B",
+   "family": "5F Game script",
+   "pJoint": 0.30976,
+   "pIndep": 0.18551967932520122,
+   "pLower": 0.26695766737022547,
+   "breakEven": 275,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "T. Harley 1+ blocked shot",
+     "p": 0.85252,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Robertson 2+ SOG",
+     "p": 0.77158,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "DAL +1.5 puck line",
+     "p": 0.7134,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "DAL team total over 2.5",
+     "p": 0.6193,
+     "result": "LOST",
+     "value": 2
+    },
+    {
+     "text": "J. Robertson 1+ point",
+     "p": 0.63452,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020327,
+   "game": "FLA@DAL",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 5,
+   "pick": "C",
+   "family": "5F Game script",
+   "pJoint": 0.25856,
+   "pIndep": 0.20764577675126583,
+   "pLower": 0.2352720977281403,
+   "breakEven": 325,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "E. Lindell 1+ blocked shot",
+     "p": 0.78422,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "DAL +1.5 puck line",
+     "p": 0.7134,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "DAL team total over 2.5",
+     "p": 0.6193,
+     "result": "LOST",
+     "value": 2
+    },
+    {
+     "text": "B. Tkachuk 2+ SOG",
+     "p": 0.77978,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "S. Jones 1+ blocked shot",
+     "p": 0.7535,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020327,
+   "game": "FLA@DAL",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.09546,
+   "pIndep": 0.0427973838989636,
+   "pLower": 0.08213910383622855,
+   "breakEven": 1117,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "FLA +1.5 puck line",
+     "p": 0.70082,
+     "result": "WON",
+     "value": -1
+    },
+    {
+     "text": "FLA team total over 2.5",
+     "p": 0.60694,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "M. Tkachuk 1+ point",
+     "p": 0.61118,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "S. Reinhart 1+ point",
+     "p": 0.59116,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.68858,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Jones 1+ blocked shot",
+     "p": 0.7535,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "T. Myers 1+ blocked shot",
+     "p": 0.73132,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "A. Ekblad 1+ blocked shot",
+     "p": 0.72782,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020327,
+   "game": "FLA@DAL",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 8,
+   "pick": "B",
+   "family": "8G Game script",
+   "pJoint": 0.09516,
+   "pIndep": 0.03903888278521425,
+   "pLower": 0.08183910383622854,
+   "breakEven": 1122,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "FLA +1.5 puck line",
+     "p": 0.70082,
+     "result": "WON",
+     "value": -1
+    },
+    {
+     "text": "FLA team total over 2.5",
+     "p": 0.60694,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "M. Tkachuk 1+ point",
+     "p": 0.61118,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "S. Reinhart 1+ point",
+     "p": 0.59116,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "S. Reinhart 2+ SOG",
+     "p": 0.68858,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Jones 1+ blocked shot",
+     "p": 0.7535,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "A. Ekblad 1+ blocked shot",
+     "p": 0.72782,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "M. Tkachuk 2+ SOG",
+     "p": 0.65816,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020327,
+   "game": "FLA@DAL",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 8,
+   "pick": "C",
+   "family": "8D Multi-line production",
+   "pJoint": 0.05668,
+   "pIndep": 0.050016986408922756,
+   "pLower": 0.04510195177535315,
+   "breakEven": 2117,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "T. Myers 1+ blocked shot",
+     "p": 0.73132,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "A. Ekblad 1+ blocked shot",
+     "p": 0.72782,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "N. Mikkola 1+ blocked shot",
+     "p": 0.72284,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "G. Forsling 1+ blocked shot",
+     "p": 0.69964,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "R. Gudas 1+ blocked shot",
+     "p": 0.69904,
+     "result": "VOID",
+     "value": null
+    },
+    {
+     "text": "W. Johnston 2+ SOG",
+     "p": 0.6868,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Tkachuk 2+ SOG",
+     "p": 0.65816,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Tkachuk 1+ point",
+     "p": 0.61118,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020328,
+   "game": "CGY@ANA",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 3,
+   "pick": "A",
+   "family": "3E Game script",
+   "pJoint": 0.57188,
+   "pIndep": 0.56633745064176,
+   "pLower": 0.5446136098849943,
+   "breakEven": -120,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "C. Gauthier 2+ SOG",
+     "p": 0.85044,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "Z. Whitecloud 1+ blocked shot",
+     "p": 0.82734,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "ANA +1.5 puck line",
+     "p": 0.81922,
+     "result": "WON",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "game_id": 2026020328,
+   "game": "CGY@ANA",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.56618,
+   "pIndep": 0.56478587914224,
+   "pLower": 0.5389136098849943,
+   "breakEven": -117,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "C. Gauthier 2+ SOG",
+     "p": 0.85044,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "Z. Whitecloud 1+ blocked shot",
+     "p": 0.82734,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. LaCombe 1+ blocked shot",
+     "p": 0.82198,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020328,
+   "game": "CGY@ANA",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 3,
+   "pick": "C",
+   "family": "3C Goalie workload structure",
+   "pJoint": 0.40156864549071924,
+   "pIndep": 0.3491689543053778,
+   "pLower": 0.3741783674254854,
+   "breakEven": 167,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "B. Sennecke 2+ SOG",
+     "p": 0.73284,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "D. Cooley 23+ saves",
+     "p": 0.6892215568862275,
+     "result": "WON",
+     "value": 28
+    },
+    {
+     "text": "T. Terry 2+ SOG",
+     "p": 0.69632,
+     "result": "LOST",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020328,
+   "game": "CGY@ANA",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 5,
+   "pick": "A",
+   "family": "5B Top-6 usage cluster",
+   "pJoint": 0.25546,
+   "pIndep": 0.24970352915961067,
+   "pLower": 0.23217209772814032,
+   "breakEven": 331,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "J. LaCombe 1+ blocked shot",
+     "p": 0.82198,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "P. Mintyukov 1+ blocked shot",
+     "p": 0.79666,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "D. Helleson 1+ blocked shot",
+     "p": 0.76044,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "B. Sennecke 2+ SOG",
+     "p": 0.73284,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "L. Carlsson 1+ point",
+     "p": 0.68262,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020328,
+   "game": "CGY@ANA",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 5,
+   "pick": "B",
+   "family": "5F Game script",
+   "pJoint": 0.38266,
+   "pIndep": 0.32646938736191466,
+   "pLower": 0.357231997284063,
+   "breakEven": 180,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "C. Gauthier 2+ SOG",
+     "p": 0.85044,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "Z. Whitecloud 1+ blocked shot",
+     "p": 0.82734,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "ANA +1.5 puck line",
+     "p": 0.81922,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "ANA team total over 2.5",
+     "p": 0.71156,
+     "result": "WON",
+     "value": 6
+    },
+    {
+     "text": "J. LaCombe 1+ blocked shot",
+     "p": 0.82198,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020328,
+   "game": "CGY@ANA",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 5,
+   "pick": "C",
+   "family": "5F Game script",
+   "pJoint": 0.3226,
+   "pIndep": 0.24136289781405834,
+   "pLower": 0.2797976673702255,
+   "breakEven": 257,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "ANA +1.5 puck line",
+     "p": 0.81922,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "ANA team total over 2.5",
+     "p": 0.71156,
+     "result": "WON",
+     "value": 6
+    },
+    {
+     "text": "L. Carlsson 1+ point",
+     "p": 0.68262,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "P. Mintyukov 1+ blocked shot",
+     "p": 0.79666,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "D. Helleson 1+ blocked shot",
+     "p": 0.76044,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020328,
+   "game": "CGY@ANA",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 8,
+   "pick": "A",
+   "family": "8A Shot-dominant game",
+   "pJoint": 0.0517975021275617,
+   "pIndep": 0.035617524363472486,
+   "pLower": 0.04021945390291485,
+   "breakEven": 2386,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "B. Sennecke 2+ SOG",
+     "p": 0.73284,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "D. Cooley 23+ saves",
+     "p": 0.6892215568862275,
+     "result": "WON",
+     "value": 28
+    },
+    {
+     "text": "T. Terry 2+ SOG",
+     "p": 0.69632,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "C. Gauthier 3+ SOG",
+     "p": 0.67142,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "L. Carlsson 2+ SOG",
+     "p": 0.66216,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Granlund 2+ SOG",
+     "p": 0.6095,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Coronato 2+ SOG",
+     "p": 0.62538,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Backlund 2+ SOG",
+     "p": 0.61276,
+     "result": "WON",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "game_id": 2026020328,
+   "game": "CGY@ANA",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 8,
+   "pick": "B",
+   "family": "8E Goaltender workload game",
+   "pJoint": 0.10440002760080043,
+   "pIndep": 0.09267948390255992,
+   "pLower": 0.09107913143702898,
+   "breakEven": 998,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "P. Mintyukov 1+ blocked shot",
+     "p": 0.79666,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "D. Helleson 1+ blocked shot",
+     "p": 0.76044,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Hanley 1+ blocked shot",
+     "p": 0.75542,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "T. Terry 2+ SOG",
+     "p": 0.69632,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "D. Cooley 23+ saves",
+     "p": 0.6892215568862275,
+     "result": "WON",
+     "value": 28
+    },
+    {
+     "text": "S. Nemec 1+ blocked shot",
+     "p": 0.74464,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Middleton 1+ blocked shot",
+     "p": 0.74292,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "T. Hinds 1+ blocked shot",
+     "p": 0.73276,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020328,
+   "game": "CGY@ANA",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0100Z.json",
+   "size": 8,
+   "pick": "C",
+   "family": "8D Multi-line production",
+   "pJoint": 0.08384,
+   "pIndep": 0.06979167346834528,
+   "pLower": 0.07051910383622854,
+   "breakEven": 1318,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "J. Hanley 1+ blocked shot",
+     "p": 0.75542,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "S. Nemec 1+ blocked shot",
+     "p": 0.74464,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "Y. Kuznetsov 1+ blocked shot",
+     "p": 0.74588,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Middleton 1+ blocked shot",
+     "p": 0.74292,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "T. Hinds 1+ blocked shot",
+     "p": 0.73276,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "L. Carlsson 1+ point",
+     "p": 0.68262,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "L. Carlsson 2+ SOG",
+     "p": 0.66216,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Granlund 1+ point",
+     "p": 0.65996,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020329,
+   "game": "VAN@VGK",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 3,
+   "pick": "A",
+   "family": "3E Game script",
+   "pJoint": 0.52782,
+   "pIndep": 0.5292914700424001,
+   "pLower": 0.5005536098849942,
+   "breakEven": -100,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "F. Hronek 1+ blocked shot",
+     "p": 0.84336,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.81636,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "VGK +1.5 puck line",
+     "p": 0.76808,
+     "result": "LOST",
+     "value": -3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020329,
+   "game": "VAN@VGK",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.53908,
+   "pIndep": 0.5387635386016,
+   "pLower": 0.5118136098849942,
+   "breakEven": -105,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "F. Hronek 1+ blocked shot",
+     "p": 0.84336,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.81636,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "E. Pettersson 1+ blocked shot",
+     "p": 0.78014,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020329,
+   "game": "VAN@VGK",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 3,
+   "pick": "C",
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.39012,
+   "pIndep": 0.33863914022297603,
+   "pLower": 0.36272972193476616,
+   "breakEven": 176,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "J. Eichel 2+ SOG",
+     "p": 0.77084,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "J. Eichel 1+ point",
+     "p": 0.69314,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Marner 1+ point",
+     "p": 0.6353,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020329,
+   "game": "VAN@VGK",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 5,
+   "pick": "A",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.20806,
+   "pIndep": 0.1469483023711674,
+   "pLower": 0.1847720977281403,
+   "breakEven": 441,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "J. Eichel 2+ SOG",
+     "p": 0.77084,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "J. Eichel 1+ point",
+     "p": 0.69314,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Stone 1+ point",
+     "p": 0.6463,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Marner 1+ point",
+     "p": 0.6353,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Marner 2+ SOG",
+     "p": 0.68644,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020329,
+   "game": "VAN@VGK",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 5,
+   "pick": "B",
+   "family": "5F Game script",
+   "pJoint": 0.3571,
+   "pIndep": 0.24506576659679452,
+   "pLower": 0.331671997284063,
+   "breakEven": 202,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "F. Hronek 1+ blocked shot",
+     "p": 0.84336,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "VGK +1.5 puck line",
+     "p": 0.76808,
+     "result": "LOST",
+     "value": -3
+    },
+    {
+     "text": "VGK team total over 2.5",
+     "p": 0.71572,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "J. Eichel 1+ point",
+     "p": 0.69314,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Eichel 2+ SOG",
+     "p": 0.77084,
+     "result": "WON",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "game_id": 2026020329,
+   "game": "VAN@VGK",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 5,
+   "pick": "C",
+   "family": "5F Game script",
+   "pJoint": 0.31564,
+   "pIndep": 0.2681113303244512,
+   "pLower": 0.27283766737022547,
+   "breakEven": 267,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "VGK +1.5 puck line",
+     "p": 0.76808,
+     "result": "LOST",
+     "value": -3
+    },
+    {
+     "text": "VGK team total over 2.5",
+     "p": 0.71572,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.81636,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "E. Pettersson 1+ blocked shot",
+     "p": 0.78014,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "T. Willander 1+ blocked shot",
+     "p": 0.75058,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020329,
+   "game": "VAN@VGK",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 8,
+   "pick": "A",
+   "family": "8A Shot-dominant game",
+   "pJoint": 0.02212,
+   "pIndep": 0.01828447816788297,
+   "pLower": 0.010523157190886182,
+   "breakEven": 9403,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "M. Marner 2+ SOG",
+     "p": 0.68644,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "T. Hertl 2+ SOG",
+     "p": 0.67012,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "J. DeBrusk 2+ SOG",
+     "p": 0.62612,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Stone 2+ SOG",
+     "p": 0.60986,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "W. Karlsson 2+ SOG",
+     "p": 0.57978,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "V. Olofsson 2+ SOG",
+     "p": 0.58388,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "R. Andersson 2+ SOG",
+     "p": 0.55376,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Eichel 3+ SOG",
+     "p": 0.5532,
+     "result": "WON",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "game_id": 2026020329,
+   "game": "VAN@VGK",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 8,
+   "pick": "B",
+   "family": "8G Game script",
+   "pJoint": 0.11564,
+   "pIndep": 0.057560172246354506,
+   "pLower": 0.10231910383622855,
+   "breakEven": 877,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "VGK team total over 2.5",
+     "p": 0.71572,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "Game total over 5.5",
+     "p": 0.65732,
+     "result": "WON",
+     "value": 9
+    },
+    {
+     "text": "M. Stone 1+ point",
+     "p": 0.6463,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "E. Pettersson 1+ blocked shot",
+     "p": 0.78014,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Marner 1+ point",
+     "p": 0.6353,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Marner 2+ SOG",
+     "p": 0.68644,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "T. Willander 1+ blocked shot",
+     "p": 0.75058,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Oleksiak 1+ blocked shot",
+     "p": 0.73186,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020329,
+   "game": "VAN@VGK",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 8,
+   "pick": "C",
+   "family": "8G Game script",
+   "pJoint": 0.07808,
+   "pIndep": 0.04735163758756054,
+   "pLower": 0.06475910383622854,
+   "breakEven": 1444,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "E. Pettersson 1+ blocked shot",
+     "p": 0.75334,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "T. Willander 1+ blocked shot",
+     "p": 0.75058,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "Game total over 5.5",
+     "p": 0.65732,
+     "result": "WON",
+     "value": 9
+    },
+    {
+     "text": "VAN team total over 2.5",
+     "p": 0.60276,
+     "result": "WON",
+     "value": 6
+    },
+    {
+     "text": "B. Boeser 1+ point",
+     "p": 0.56048,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Oleksiak 1+ blocked shot",
+     "p": 0.73186,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "R. Andersson 1+ blocked shot",
+     "p": 0.7223,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "J. Lauzon 1+ blocked shot",
+     "p": 0.70196,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020330,
+   "game": "NSH@SJS",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 3,
+   "pick": "A",
+   "family": "3E Game script",
+   "pJoint": 0.5108,
+   "pIndep": 0.508392429447168,
+   "pLower": 0.46970454504853587,
+   "breakEven": 113,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Celebrini 2+ SOG",
+     "p": 0.85852,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "D. Nurse 1+ blocked shot",
+     "p": 0.82298,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "SJS +1.5 puck line",
+     "p": 0.7088,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020330,
+   "game": "NSH@SJS",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.5507,
+   "pIndep": 0.5481967756835521,
+   "pLower": 0.5234336098849942,
+   "breakEven": -110,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Celebrini 2+ SOG",
+     "p": 0.85852,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "D. Nurse 1+ blocked shot",
+     "p": 0.82298,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "F. Forsberg 2+ SOG",
+     "p": 0.76908,
+     "result": "WON",
+     "value": 7
+    }
+   ]
+  },
+  {
+   "game_id": 2026020330,
+   "game": "NSH@SJS",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 3,
+   "pick": "C",
+   "family": "3C Goalie workload structure",
+   "pJoint": 0.3899194225281182,
+   "pIndep": 0.32941848723827766,
+   "pLower": 0.3625291444628843,
+   "breakEven": 176,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "F. Forsberg 2+ SOG",
+     "p": 0.76908,
+     "result": "WON",
+     "value": 7
+    },
+    {
+     "text": "R. Josi 2+ SOG",
+     "p": 0.72898,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "A. Nedeljkovic 23+ saves",
+     "p": 0.5885284161392738,
+     "result": "WON",
+     "value": 32
+    }
+   ]
+  },
+  {
+   "game_id": 2026020330,
+   "game": "NSH@SJS",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 5,
+   "pick": "A",
+   "family": "5F Game script",
+   "pJoint": 0.34954,
+   "pIndep": 0.2232689665717738,
+   "pLower": 0.32411199728406304,
+   "breakEven": 209,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Celebrini 2+ SOG",
+     "p": 0.85852,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "M. Celebrini 1+ point",
+     "p": 0.71756,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "SJS +1.5 puck line",
+     "p": 0.7088,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "SJS team total over 2.5",
+     "p": 0.61802,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "D. Nurse 1+ blocked shot",
+     "p": 0.82298,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020330,
+   "game": "NSH@SJS",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 5,
+   "pick": "B",
+   "family": "5D High-tempo matchup",
+   "pJoint": 0.1997,
+   "pIndep": 0.19649441277460816,
+   "pLower": 0.1764120977281403,
+   "breakEven": 467,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "F. Forsberg 2+ SOG",
+     "p": 0.76908,
+     "result": "WON",
+     "value": 7
+    },
+    {
+     "text": "R. Josi 2+ SOG",
+     "p": 0.72898,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "S. Stamkos 2+ SOG",
+     "p": 0.7245,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "W. Smith 2+ SOG",
+     "p": 0.70582,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Celebrini 3+ SOG",
+     "p": 0.6845,
+     "result": "WON",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "game_id": 2026020330,
+   "game": "NSH@SJS",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 5,
+   "pick": "C",
+   "family": "5F Game script",
+   "pJoint": 0.2998,
+   "pIndep": 0.15299825518432597,
+   "pLower": 0.2569976673702255,
+   "breakEven": 289,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "J. Trouba 1+ blocked shot",
+     "p": 0.81706,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "NSH +1.5 puck line",
+     "p": 0.70256,
+     "result": "LOST",
+     "value": -2
+    },
+    {
+     "text": "NSH team total over 2.5",
+     "p": 0.6057,
+     "result": "LOST",
+     "value": 2
+    },
+    {
+     "text": "R. O'Reilly 1+ point",
+     "p": 0.65938,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "R. Josi 1+ point",
+     "p": 0.6553,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020330,
+   "game": "NSH@SJS",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 8,
+   "pick": "A",
+   "family": "8B Concentrated offensive production",
+   "pJoint": 0.06426,
+   "pIndep": 0.03848627418623927,
+   "pLower": 0.050939103836228544,
+   "breakEven": 1863,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "R. Josi 2+ SOG",
+     "p": 0.72898,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "R. Josi 1+ point",
+     "p": 0.6553,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "R. O'Reilly 1+ point",
+     "p": 0.65938,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Celebrini 1+ point",
+     "p": 0.71756,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Celebrini 3+ SOG",
+     "p": 0.6845,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "W. Smith 2+ SOG",
+     "p": 0.70582,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "W. Smith 1+ point",
+     "p": 0.605,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "R. O'Reilly 2+ SOG",
+     "p": 0.59158,
+     "result": "WON",
+     "value": 4
+    }
+   ]
+  },
+  {
+   "game_id": 2026020330,
+   "game": "NSH@SJS",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 8,
+   "pick": "B",
+   "family": "8G Game script",
+   "pJoint": 0.12022,
+   "pIndep": 0.05553049755820401,
+   "pLower": 0.10689910383622854,
+   "breakEven": 835,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "M. Celebrini 1+ point",
+     "p": 0.71756,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "SJS +1.5 puck line",
+     "p": 0.7088,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "SJS team total over 2.5",
+     "p": 0.61802,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "J. Trouba 1+ blocked shot",
+     "p": 0.81706,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "W. Smith 1+ point",
+     "p": 0.605,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "W. Smith 2+ SOG",
+     "p": 0.70582,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "R. Josi 1+ blocked shot",
+     "p": 0.7581,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "N. Perbix 1+ blocked shot",
+     "p": 0.70744,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020330,
+   "game": "NSH@SJS",
+   "date": "2026-11-16",
+   "source": "reports/slots/2026-11-16/slot-0200Z.json",
+   "size": 8,
+   "pick": "C",
+   "family": "8G Game script",
+   "pJoint": 0.13214,
+   "pIndep": 0.049614399343745966,
+   "pLower": 0.08818957590262269,
+   "breakEven": 1034,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "J. Trouba 1+ blocked shot",
+     "p": 0.81706,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "NSH +1.5 puck line",
+     "p": 0.70256,
+     "result": "LOST",
+     "value": -2
+    },
+    {
+     "text": "NSH team total over 2.5",
+     "p": 0.6057,
+     "result": "LOST",
+     "value": 2
+    },
+    {
+     "text": "R. O'Reilly 1+ point",
+     "p": 0.65938,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "R. Josi 1+ point",
+     "p": 0.6553,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "F. Forsberg 1+ point",
+     "p": 0.58762,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "S. Stamkos 2+ SOG",
+     "p": 0.7245,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "R. Josi 1+ blocked shot",
+     "p": 0.7581,
+     "result": "WON",
+     "value": 1
     }
    ]
   }
