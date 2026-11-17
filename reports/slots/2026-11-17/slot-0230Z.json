@@ -1,0 +1,652 @@
+{
+ "generated_at": "2026-11-17T01:33:33.898Z",
+ "model_version": "v20261106-224110",
+ "data_through": "2026-11-16 02:00:00+00:00",
+ "sims": 50000,
+ "games": [
+  {
+   "game_id": 2026020332,
+   "start_utc": "2026-11-17 02:30:00+00:00",
+   "away": "VAN",
+   "home": "UTA",
+   "sizes": {
+    "3": {
+     "evaluated": 12967,
+     "verified": 120,
+     "finalists": 120,
+     "exposureCap": 2,
+     "picks": [
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "M. Weegar 1+ blocked shot",
+         "p": 0.83882,
+         "player_id": 8477346,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "F. Hronek 1+ blocked shot",
+         "p": 0.83214,
+         "player_id": 8479425,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "UTA +1.5 puck line",
+         "p": 0.7393,
+         "player_id": "TEAM:UTA",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.5183,
+       "pLower": 0.4772045450485358,
+       "verified": true,
+       "pIndep": 0.5187474141124799,
+       "lift": 0.9991375106645198,
+       "breakEven": 110,
+       "mcHits": 25915,
+       "scenario": {
+        "n": 25915,
+        "shots": 51.85907775419641,
+        "goals": 5.8426008103415015,
+        "ppg": 1.0561450897163804,
+        "margin": 1.3434304456878257,
+        "pace": 1.0004593990517472
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "M. Weegar 1+ blocked shot",
+         "p": 0.83882,
+         "player_id": 8477346,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "F. Hronek 1+ blocked shot",
+         "p": 0.83214,
+         "player_id": 8479425,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "E. Pettersson 1+ blocked shot",
+         "p": 0.788,
+         "player_id": 8483678,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.55866,
+       "pLower": 0.5313936098849943,
+       "verified": true,
+       "pIndep": 0.55762494589488,
+       "lift": 1.0018561832872435,
+       "breakEven": -113,
+       "mcHits": 27933,
+       "scenario": {
+        "n": 27933,
+        "shots": 52.113092041671145,
+        "goals": 5.972935237890667,
+        "ppg": 1.0793326889342354,
+        "margin": 0.2342748720151792,
+        "pace": 1.0012186883672312
+       }
+      },
+      {
+       "family": "3B Team offensive scenario",
+       "legs": [
+        {
+         "text": "C. Keller 2+ SOG",
+         "p": 0.77202,
+         "player_id": 8479343,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. Keller 1+ point",
+         "p": 0.69056,
+         "player_id": 8479343,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Sergachev 1+ point",
+         "p": 0.64352,
+         "player_id": 8479410,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.41042,
+       "pLower": 0.38302972193476614,
+       "verified": true,
+       "pIndep": 0.343464888259232,
+       "lift": 1.1949401933924415,
+       "breakEven": 161,
+       "mcHits": 20521,
+       "scenario": {
+        "n": 20521,
+        "shots": 53.734515861800105,
+        "goals": 6.921446323278593,
+        "ppg": 1.3914526582525217,
+        "margin": 1.195312119292432,
+        "pace": 1.004994238769501
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 15088,
+     "verified": 105,
+     "finalists": 105,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "C. Keller 2+ SOG",
+         "p": 0.77202,
+         "player_id": 8479343,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. Keller 1+ point",
+         "p": 0.69056,
+         "player_id": 8479343,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Sergachev 1+ point",
+         "p": 0.64352,
+         "player_id": 8479410,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Sergachev 2+ SOG",
+         "p": 0.66204,
+         "player_id": 8479410,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Lee 2+ SOG",
+         "p": 0.63458,
+         "player_id": 8475314,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.18824,
+       "pLower": 0.16823309306170373,
+       "verified": true,
+       "pIndep": 0.14374700526765166,
+       "lift": 1.3095229333613176,
+       "breakEven": 494,
+       "mcHits": 9412,
+       "scenario": {
+        "n": 9412,
+        "shots": 55.67265193370166,
+        "goals": 7.102209944751381,
+        "ppg": 1.447726306842329,
+        "margin": 1.3212919677008075,
+        "pace": 1.009359635010558
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "M. Weegar 1+ blocked shot",
+         "p": 0.83882,
+         "player_id": 8477346,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "UTA +1.5 puck line",
+         "p": 0.7393,
+         "player_id": "TEAM:UTA",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "UTA team total over 2.5",
+         "p": 0.62446,
+         "player_id": "TEAM:UTA",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. Keller 1+ point",
+         "p": 0.69056,
+         "player_id": 8479343,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "F. Hronek 1+ blocked shot",
+         "p": 0.83214,
+         "player_id": 8479425,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.33644,
+       "pLower": 0.31101199728406304,
+       "verified": true,
+       "pIndep": 0.22323554215773117,
+       "lift": 1.5071076798437506,
+       "breakEven": 222,
+       "mcHits": 16822,
+       "scenario": {
+        "n": 16822,
+        "shots": 53.21864225419094,
+        "goals": 6.865117108548329,
+        "ppg": 1.2917607894423968,
+        "margin": 1.8521578884793723,
+        "pace": 1.003767466788881
+       }
+      },
+      {
+       "family": "5D High-tempo matchup",
+       "legs": [
+        {
+         "text": "C. Keller 2+ SOG",
+         "p": 0.77202,
+         "player_id": 8479343,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Sergachev 2+ SOG",
+         "p": 0.66204,
+         "player_id": 8479410,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Lee 2+ SOG",
+         "p": 0.63458,
+         "player_id": 8475314,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "V. Trocheck 2+ SOG",
+         "p": 0.62604,
+         "player_id": 8476389,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. DeBrusk 2+ SOG",
+         "p": 0.63094,
+         "player_id": 8478498,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.13042,
+       "pLower": 0.11041309306170376,
+       "verified": true,
+       "pIndep": 0.12568794780762735,
+       "lift": 1.037649211996168,
+       "breakEven": 806,
+       "mcHits": 6521,
+       "scenario": {
+        "n": 6521,
+        "shots": 57.14997699739304,
+        "goals": 6.570618003373716,
+        "ppg": 1.2278791596380922,
+        "margin": 0.5055973010274498,
+        "pace": 1.0130456215197132
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 11392,
+     "verified": 75,
+     "finalists": 75,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "8A Shot-dominant game",
+       "legs": [
+        {
+         "text": "K. Lankinen 23+ saves",
+         "p": 0.6951883396259548,
+         "player_id": 8480947,
+         "stat": "SV",
+         "line": 22.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Sergachev 2+ SOG",
+         "p": 0.66204,
+         "player_id": 8479410,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Lee 2+ SOG",
+         "p": 0.63458,
+         "player_id": 8475314,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "V. Trocheck 2+ SOG",
+         "p": 0.62604,
+         "player_id": 8476389,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Hayton 2+ SOG",
+         "p": 0.59512,
+         "player_id": 8480849,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. DeBrusk 2+ SOG",
+         "p": 0.63094,
+         "player_id": 8478498,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "L. Crouse 2+ SOG",
+         "p": 0.57054,
+         "player_id": 8478474,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. Keller 3+ SOG",
+         "p": 0.55316,
+         "player_id": 8479343,
+         "stat": "SOG",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.03242152367999649,
+       "pLower": 0.02082468087088267,
+       "verified": true,
+       "pIndep": 0.02121569310341993,
+       "lift": 1.5281859292530113,
+       "breakEven": 4702,
+       "mcHits": 1478,
+       "scenario": {
+        "n": 1478,
+        "shots": 60.70703653585927,
+        "goals": 6.849120433017592,
+        "ppg": 1.284167794316644,
+        "margin": 0.8098782138024357,
+        "pace": 1.0210705985477715
+       }
+      },
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "UTA +1.5 puck line",
+         "p": 0.7393,
+         "player_id": "TEAM:UTA",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "UTA team total over 2.5",
+         "p": 0.62446,
+         "player_id": "TEAM:UTA",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Sergachev 1+ point",
+         "p": 0.64352,
+         "player_id": 8479410,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "E. Pettersson 1+ blocked shot",
+         "p": 0.788,
+         "player_id": 8483678,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Sergachev 1+ blocked shot",
+         "p": 0.75998,
+         "player_id": 8479410,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Oleksiak 1+ blocked shot",
+         "p": 0.7528,
+         "player_id": 8476467,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "T. Willander 1+ blocked shot",
+         "p": 0.7338,
+         "player_id": 8484240,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Peeke 1+ blocked shot",
+         "p": 0.71108,
+         "player_id": 8479369,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.1078,
+       "pLower": 0.09447910383622855,
+       "verified": true,
+       "pIndep": 0.07067993944779571,
+       "lift": 1.525185234201017,
+       "breakEven": 958,
+       "mcHits": 5390,
+       "scenario": {
+        "n": 5390,
+        "shots": 53.68163265306122,
+        "goals": 6.995361781076067,
+        "ppg": 1.3109461966604823,
+        "margin": 1.8628942486085343,
+        "pace": 1.0050664994844922
+       }
+      },
+      {
+       "family": "8E Goaltender workload game",
+       "legs": [
+        {
+         "text": "E. Pettersson 1+ blocked shot",
+         "p": 0.788,
+         "player_id": 8483678,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Sergachev 1+ blocked shot",
+         "p": 0.75998,
+         "player_id": 8479410,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Oleksiak 1+ blocked shot",
+         "p": 0.7528,
+         "player_id": 8476467,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "T. Willander 1+ blocked shot",
+         "p": 0.7338,
+         "player_id": 8484240,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Peeke 1+ blocked shot",
+         "p": 0.71108,
+         "player_id": 8479369,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "K. Lankinen 23+ saves",
+         "p": 0.6951883396259548,
+         "player_id": 8480947,
+         "stat": "SV",
+         "line": 22.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "Z. Buium 1+ blocked shot",
+         "p": 0.6965,
+         "player_id": 8484798,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "E. Pettersson 1+ blocked shot",
+         "p": 0.68936,
+         "player_id": 8480012,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.08653782876697304,
+       "pLower": 0.07321693260320158,
+       "verified": true,
+       "pIndep": 0.08134809170758553,
+       "lift": 1.0637966662825058,
+       "breakEven": 1266,
+       "mcHits": 3945,
+       "scenario": {
+        "n": 3945,
+        "shots": 55.558174904942966,
+        "goals": 6.1229404309252216,
+        "ppg": 1.109252217997465,
+        "margin": 0.33891001267427123,
+        "pace": 1.0090287490791543
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
