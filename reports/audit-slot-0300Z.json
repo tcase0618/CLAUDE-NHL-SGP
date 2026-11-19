@@ -1,0 +1,499 @@
+{
+ "audited_at": "2026-11-19T10:48:48.291902+00:00",
+ "source": "slot-0300Z.json",
+ "model_version": "v20261106-224110",
+ "counts": {
+  "WON": 0,
+  "LOST": 9,
+  "PENDING": 0,
+  "VOID-REPRICE": 0
+ },
+ "by_size": {
+  "3": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 1.33788,
+   "hit_rate": 0.0,
+   "mean_p": 0.44595999999999997,
+   "brier": 0.20568674826666666,
+   "logloss": 0.6010189395606534
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.5791999999999999,
+   "hit_rate": 0.0,
+   "mean_p": 0.19306666666666664,
+   "brier": 0.04326560346666666,
+   "logloss": 0.2193542810045446
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.22521999999999998,
+   "hit_rate": 0.0,
+   "mean_p": 0.07507333333333333,
+   "brier": 0.006214216133333333,
+   "logloss": 0.07837502265368575
+  }
+ },
+ "by_size_independence": {
+  "3": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 1.333485851319696,
+   "hit_rate": 0.0,
+   "mean_p": 0.44449528377323205,
+   "brier": 0.20456069359872964,
+   "logloss": 0.5985964136619902
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.4269877525950468,
+   "hit_rate": 0.0,
+   "mean_p": 0.1423292508650156,
+   "brier": 0.025626666129800135,
+   "logloss": 0.15735113244947355
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.14532808329353522,
+   "hit_rate": 0.0,
+   "mean_p": 0.04844269443117841,
+   "brier": 0.0024807710907611643,
+   "logloss": 0.04972904022815702
+  }
+ },
+ "legs": {
+  "n": 48,
+  "won": 27,
+  "expected": 33.41132
+ },
+ "parlays": [
+  {
+   "game_id": 2026020346,
+   "game": "COL@UTA",
+   "state": "OFF",
+   "size": 3,
+   "pick": "A",
+   "family": "3E Game script",
+   "pJoint": 0.49496,
+   "pLower": 0.45386454504853585,
+   "pIndep": 0.493486248299616,
+   "breakEven": 120,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "M. Weegar 1+ blocked shot",
+     "p": 0.88178,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "M. Sergachev 1+ blocked shot",
+     "p": 0.79692,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "COL +1.5 puck line",
+     "p": 0.71858,
+     "result": "LOST",
+     "value": -3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020346,
+   "game": "COL@UTA",
+   "state": "OFF",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.51316,
+   "pLower": 0.4720645450485358,
+   "pIndep": 0.513149511650256,
+   "breakEven": 112,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "M. Weegar 1+ blocked shot",
+     "p": 0.88178,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "M. Sergachev 1+ blocked shot",
+     "p": 0.79692,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "A. Gagne 1+ blocked shot",
+     "p": 0.74476,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020346,
+   "game": "COL@UTA",
+   "state": "OFF",
+   "size": 3,
+   "pick": "C",
+   "family": "3A Shot-volume structure",
+   "pJoint": 0.32976,
+   "pLower": 0.30404656811704966,
+   "pIndep": 0.32685009136982407,
+   "breakEven": 229,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "C. Keller 2+ SOG",
+     "p": 0.73332,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "N. Kadri 2+ SOG",
+     "p": 0.68038,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Necas 2+ SOG",
+     "p": 0.65802,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020346,
+   "game": "COL@UTA",
+   "state": "OFF",
+   "size": 5,
+   "pick": "A",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.14398,
+   "pLower": 0.12397309306170375,
+   "pIndep": 0.08560810471630412,
+   "breakEven": 707,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "C. Keller 2+ SOG",
+     "p": 0.73332,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "C. Keller 1+ point",
+     "p": 0.63432,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Sergachev 2+ SOG",
+     "p": 0.65376,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Sergachev 1+ point",
+     "p": 0.5372,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "L. Cooley 1+ point",
+     "p": 0.53522,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020346,
+   "game": "COL@UTA",
+   "state": "OFF",
+   "size": 5,
+   "pick": "B",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.13288,
+   "pLower": 0.11287309306170375,
+   "pIndep": 0.09558583335506367,
+   "breakEven": 786,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "M. Necas 1+ point",
+     "p": 0.67534,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "M. Necas 2+ SOG",
+     "p": 0.65802,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "N. Kadri 2+ SOG",
+     "p": 0.68038,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "N. Kadri 1+ point",
+     "p": 0.5297,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "T. Hughes 2+ SOG",
+     "p": 0.59868,
+     "result": "LOST",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020346,
+   "game": "COL@UTA",
+   "state": "OFF",
+   "size": 5,
+   "pick": "C",
+   "family": "5F Game script",
+   "pJoint": 0.30234,
+   "pLower": 0.2595376673702255,
+   "pIndep": 0.245793814523679,
+   "breakEven": 285,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "M. Weegar 1+ blocked shot",
+     "p": 0.88178,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "COL +1.5 puck line",
+     "p": 0.71858,
+     "result": "LOST",
+     "value": -3
+    },
+    {
+     "text": "UTA team total under 3.5",
+     "p": 0.6543,
+     "result": "LOST",
+     "value": 4
+    },
+    {
+     "text": "M. Sergachev 1+ blocked shot",
+     "p": 0.79692,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "A. Peeke 1+ blocked shot",
+     "p": 0.76966,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020346,
+   "game": "COL@UTA",
+   "state": "OFF",
+   "size": 8,
+   "pick": "A",
+   "family": "8F Cross-team high-event scenario",
+   "pJoint": 0.04128,
+   "pLower": 0.029683157190886177,
+   "pIndep": 0.03229268507456705,
+   "breakEven": 3269,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "C. Keller 2+ SOG",
+     "p": 0.73332,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "M. Necas 1+ point",
+     "p": 0.67534,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "M. Necas 2+ SOG",
+     "p": 0.65802,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "N. Kadri 2+ SOG",
+     "p": 0.68038,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "C. Keller 1+ point",
+     "p": 0.63432,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Sergachev 2+ SOG",
+     "p": 0.65376,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "T. Hughes 2+ SOG",
+     "p": 0.59868,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "V. Trocheck 2+ SOG",
+     "p": 0.59704,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020346,
+   "game": "COL@UTA",
+   "state": "OFF",
+   "size": 8,
+   "pick": "B",
+   "family": "8G Game script",
+   "pJoint": 0.09526,
+   "pLower": 0.08193910383622854,
+   "pIndep": 0.05886238860896713,
+   "breakEven": 1120,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "COL +1.5 puck line",
+     "p": 0.71858,
+     "result": "LOST",
+     "value": -3
+    },
+    {
+     "text": "M. Necas 1+ point",
+     "p": 0.67534,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "COL team total over 2.5",
+     "p": 0.57042,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "A. Peeke 1+ blocked shot",
+     "p": 0.76966,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "S. Malinski 1+ blocked shot",
+     "p": 0.74528,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "A. Gagne 1+ blocked shot",
+     "p": 0.74476,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "B. Kulak 1+ blocked shot",
+     "p": 0.72376,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "D. Simashev 1+ blocked shot",
+     "p": 0.69632,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020346,
+   "game": "COL@UTA",
+   "state": "OFF",
+   "size": 8,
+   "pick": "C",
+   "family": "8G Game script",
+   "pJoint": 0.08868,
+   "pLower": 0.07535910383622854,
+   "pIndep": 0.05417300961000104,
+   "breakEven": 1227,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "UTA +1.5 puck line",
+     "p": 0.70924,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "UTA team total over 2.5",
+     "p": 0.5639,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "C. Keller 1+ point",
+     "p": 0.63432,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "A. Peeke 1+ blocked shot",
+     "p": 0.76966,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "A. Gagne 1+ blocked shot",
+     "p": 0.74476,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "S. Malinski 1+ blocked shot",
+     "p": 0.74528,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "B. Kulak 1+ blocked shot",
+     "p": 0.72376,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "Z. Jones 1+ blocked shot",
+     "p": 0.69578,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  }
+ ]
+}
