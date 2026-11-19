@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-19T10:49:16.523350+00:00",
+ "updated_at": "2026-11-19T23:05:28.343931+00:00",
  "nights": [
   "2026-11-07",
   "2026-11-08",
@@ -24739,13 +24739,13 @@
      "text": "V. Arvidsson 2+ SOG",
      "p": 0.74112,
      "result": "WON",
-     "value": 4
+     "value": 5
     },
     {
      "text": "J. Swayman 23+ saves",
      "p": 0.68911508101371,
      "result": "LOST",
-     "value": 20
+     "value": 21
     },
     {
      "text": "L. Raymond 2+ SOG",
@@ -24779,7 +24779,7 @@
      "text": "V. Arvidsson 2+ SOG",
      "p": 0.74112,
      "result": "WON",
-     "value": 4
+     "value": 5
     },
     {
      "text": "L. Raymond 2+ SOG",
@@ -24917,7 +24917,7 @@
      "text": "V. Arvidsson 2+ SOG",
      "p": 0.74112,
      "result": "WON",
-     "value": 4
+     "value": 5
     },
     {
      "text": "L. Raymond 2+ SOG",
