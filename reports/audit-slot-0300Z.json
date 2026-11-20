@@ -1,497 +1,449 @@
 {
- "audited_at": "2026-11-19T10:48:48.291902+00:00",
+ "audited_at": "2026-11-20T02:02:55.529639+00:00",
  "source": "slot-0300Z.json",
  "model_version": "v20261106-224110",
  "counts": {
   "WON": 0,
-  "LOST": 9,
-  "PENDING": 0,
+  "LOST": 0,
+  "PENDING": 9,
   "VOID-REPRICE": 0
  },
  "by_size": {
-  "3": {
-   "n": 3,
-   "won": 0,
-   "expected_wins": 1.33788,
-   "hit_rate": 0.0,
-   "mean_p": 0.44595999999999997,
-   "brier": 0.20568674826666666,
-   "logloss": 0.6010189395606534
-  },
-  "5": {
-   "n": 3,
-   "won": 0,
-   "expected_wins": 0.5791999999999999,
-   "hit_rate": 0.0,
-   "mean_p": 0.19306666666666664,
-   "brier": 0.04326560346666666,
-   "logloss": 0.2193542810045446
-  },
-  "8": {
-   "n": 3,
-   "won": 0,
-   "expected_wins": 0.22521999999999998,
-   "hit_rate": 0.0,
-   "mean_p": 0.07507333333333333,
-   "brier": 0.006214216133333333,
-   "logloss": 0.07837502265368575
-  }
+  "3": null,
+  "5": null,
+  "8": null
  },
  "by_size_independence": {
-  "3": {
-   "n": 3,
-   "won": 0,
-   "expected_wins": 1.333485851319696,
-   "hit_rate": 0.0,
-   "mean_p": 0.44449528377323205,
-   "brier": 0.20456069359872964,
-   "logloss": 0.5985964136619902
-  },
-  "5": {
-   "n": 3,
-   "won": 0,
-   "expected_wins": 0.4269877525950468,
-   "hit_rate": 0.0,
-   "mean_p": 0.1423292508650156,
-   "brier": 0.025626666129800135,
-   "logloss": 0.15735113244947355
-  },
-  "8": {
-   "n": 3,
-   "won": 0,
-   "expected_wins": 0.14532808329353522,
-   "hit_rate": 0.0,
-   "mean_p": 0.04844269443117841,
-   "brier": 0.0024807710907611643,
-   "logloss": 0.04972904022815702
-  }
+  "3": null,
+  "5": null,
+  "8": null
  },
  "legs": {
-  "n": 48,
-  "won": 27,
-  "expected": 33.41132
+  "n": 0,
+  "won": 0,
+  "expected": 0
  },
  "parlays": [
   {
-   "game_id": 2026020346,
-   "game": "COL@UTA",
-   "state": "OFF",
+   "game_id": 2026020358,
+   "game": "DAL@VGK",
+   "state": "FUT",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
-   "pJoint": 0.49496,
-   "pLower": 0.45386454504853585,
-   "pIndep": 0.493486248299616,
-   "breakEven": 120,
-   "status": "LOST",
+   "pJoint": 0.54284,
+   "pLower": 0.5155736098849942,
+   "pIndep": 0.541993866618696,
+   "breakEven": -106,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "M. Weegar 1+ blocked shot",
-     "p": 0.88178,
-     "result": "WON",
-     "value": 4
+     "text": "E. Lindell 1+ blocked shot",
+     "p": 0.8748,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "M. Sergachev 1+ blocked shot",
-     "p": 0.79692,
-     "result": "LOST",
-     "value": 0
+     "text": "T. Harley 1+ blocked shot",
+     "p": 0.84208,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "COL +1.5 puck line",
-     "p": 0.71858,
-     "result": "LOST",
-     "value": -3
+     "text": "VGK +1.5 puck line",
+     "p": 0.73314,
+     "result": "PENDING",
+     "value": null
     }
    ]
   },
   {
-   "game_id": 2026020346,
-   "game": "COL@UTA",
-   "state": "OFF",
+   "game_id": 2026020358,
+   "game": "DAL@VGK",
+   "state": "FUT",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
-   "pJoint": 0.51316,
-   "pLower": 0.4720645450485358,
-   "pIndep": 0.513149511650256,
-   "breakEven": 112,
-   "status": "LOST",
+   "pJoint": 0.6105,
+   "pLower": 0.5832336098849943,
+   "pIndep": 0.6107495590489921,
+   "breakEven": -140,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "M. Weegar 1+ blocked shot",
-     "p": 0.88178,
-     "result": "WON",
-     "value": 4
+     "text": "E. Lindell 1+ blocked shot",
+     "p": 0.8748,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "M. Sergachev 1+ blocked shot",
-     "p": 0.79692,
-     "result": "LOST",
-     "value": 0
+     "text": "T. Harley 1+ blocked shot",
+     "p": 0.84208,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "A. Gagne 1+ blocked shot",
-     "p": 0.74476,
-     "result": "LOST",
-     "value": 0
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.83224,
+     "result": "PENDING",
+     "value": null
     }
    ]
   },
   {
-   "game_id": 2026020346,
-   "game": "COL@UTA",
-   "state": "OFF",
+   "game_id": 2026020358,
+   "game": "DAL@VGK",
+   "state": "FUT",
    "size": 3,
    "pick": "C",
-   "family": "3A Shot-volume structure",
-   "pJoint": 0.32976,
-   "pLower": 0.30404656811704966,
-   "pIndep": 0.32685009136982407,
-   "breakEven": 229,
-   "status": "LOST",
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.39334,
+   "pLower": 0.36594972193476616,
+   "pIndep": 0.335977968566016,
+   "breakEven": 173,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "C. Keller 2+ SOG",
-     "p": 0.73332,
-     "result": "LOST",
-     "value": 0
+     "text": "J. Eichel 2+ SOG",
+     "p": 0.72552,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "N. Kadri 2+ SOG",
-     "p": 0.68038,
-     "result": "WON",
-     "value": 2
+     "text": "J. Eichel 1+ point",
+     "p": 0.68408,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "M. Necas 2+ SOG",
-     "p": 0.65802,
-     "result": "WON",
-     "value": 2
+     "text": "M. Marner 1+ point",
+     "p": 0.66586,
+     "result": "PENDING",
+     "value": null
     }
    ]
   },
   {
-   "game_id": 2026020346,
-   "game": "COL@UTA",
-   "state": "OFF",
+   "game_id": 2026020358,
+   "game": "DAL@VGK",
+   "state": "FUT",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
-   "pJoint": 0.14398,
-   "pLower": 0.12397309306170375,
-   "pIndep": 0.08560810471630412,
-   "breakEven": 707,
-   "status": "LOST",
+   "pJoint": 0.19304,
+   "pLower": 0.1697520977281403,
+   "pIndep": 0.1317158537260553,
+   "breakEven": 489,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "C. Keller 2+ SOG",
-     "p": 0.73332,
-     "result": "LOST",
-     "value": 0
+     "text": "J. Eichel 2+ SOG",
+     "p": 0.72552,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "C. Keller 1+ point",
-     "p": 0.63432,
-     "result": "WON",
-     "value": 1
+     "text": "J. Eichel 1+ point",
+     "p": 0.68408,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "M. Sergachev 2+ SOG",
-     "p": 0.65376,
-     "result": "WON",
-     "value": 2
+     "text": "M. Marner 1+ point",
+     "p": 0.66586,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "M. Sergachev 1+ point",
-     "p": 0.5372,
-     "result": "LOST",
-     "value": 0
+     "text": "M. Stone 1+ point",
+     "p": 0.60586,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "L. Cooley 1+ point",
-     "p": 0.53522,
-     "result": "WON",
-     "value": 1
+     "text": "M. Marner 2+ SOG",
+     "p": 0.64076,
+     "result": "PENDING",
+     "value": null
     }
    ]
   },
   {
-   "game_id": 2026020346,
-   "game": "COL@UTA",
-   "state": "OFF",
+   "game_id": 2026020358,
+   "game": "DAL@VGK",
+   "state": "FUT",
    "size": 5,
    "pick": "B",
    "family": "5A Five-on-five offensive environment",
-   "pJoint": 0.13288,
-   "pLower": 0.11287309306170375,
-   "pIndep": 0.09558583335506367,
-   "breakEven": 786,
-   "status": "LOST",
+   "pJoint": 0.17524,
+   "pLower": 0.15523309306170374,
+   "pIndep": 0.11079609407837165,
+   "breakEven": 544,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "M. Necas 1+ point",
-     "p": 0.67534,
-     "result": "LOST",
-     "value": 0
+     "text": "J. Robertson 2+ SOG",
+     "p": 0.75836,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "M. Necas 2+ SOG",
-     "p": 0.65802,
-     "result": "WON",
-     "value": 2
+     "text": "J. Robertson 1+ point",
+     "p": 0.64566,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "N. Kadri 2+ SOG",
-     "p": 0.68038,
-     "result": "WON",
-     "value": 2
+     "text": "M. Rantanen 1+ point",
+     "p": 0.62646,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "N. Kadri 1+ point",
-     "p": 0.5297,
-     "result": "LOST",
-     "value": 0
+     "text": "W. Johnston 2+ SOG",
+     "p": 0.64832,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "T. Hughes 2+ SOG",
-     "p": 0.59868,
-     "result": "LOST",
-     "value": 1
+     "text": "W. Johnston 1+ point",
+     "p": 0.54346,
+     "result": "PENDING",
+     "value": null
     }
    ]
   },
   {
-   "game_id": 2026020346,
-   "game": "COL@UTA",
-   "state": "OFF",
+   "game_id": 2026020358,
+   "game": "DAL@VGK",
+   "state": "FUT",
    "size": 5,
    "pick": "C",
-   "family": "5F Game script",
-   "pJoint": 0.30234,
-   "pLower": 0.2595376673702255,
-   "pIndep": 0.245793814523679,
-   "breakEven": 285,
-   "status": "LOST",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.16518,
+   "pLower": 0.14517309306170373,
+   "pIndep": 0.09339649094694497,
+   "breakEven": 589,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "M. Weegar 1+ blocked shot",
-     "p": 0.88178,
-     "result": "WON",
-     "value": 4
+     "text": "J. Robertson 2+ SOG",
+     "p": 0.75836,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "COL +1.5 puck line",
-     "p": 0.71858,
-     "result": "LOST",
-     "value": -3
+     "text": "J. Robertson 1+ point",
+     "p": 0.64566,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "UTA team total under 3.5",
-     "p": 0.6543,
-     "result": "LOST",
-     "value": 4
+     "text": "M. Rantanen 1+ point",
+     "p": 0.62646,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "M. Sergachev 1+ blocked shot",
-     "p": 0.79692,
-     "result": "LOST",
-     "value": 0
+     "text": "M. Heiskanen 1+ point",
+     "p": 0.54558,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "A. Peeke 1+ blocked shot",
-     "p": 0.76966,
-     "result": "WON",
-     "value": 1
+     "text": "W. Johnston 1+ point",
+     "p": 0.54346,
+     "result": "PENDING",
+     "value": null
     }
    ]
   },
   {
-   "game_id": 2026020346,
-   "game": "COL@UTA",
-   "state": "OFF",
+   "game_id": 2026020358,
+   "game": "DAL@VGK",
+   "state": "FUT",
    "size": 8,
    "pick": "A",
-   "family": "8F Cross-team high-event scenario",
-   "pJoint": 0.04128,
-   "pLower": 0.029683157190886177,
-   "pIndep": 0.03229268507456705,
-   "breakEven": 3269,
-   "status": "LOST",
+   "family": "8G Game script",
+   "pJoint": 0.19038,
+   "pLower": 0.14642957590262268,
+   "pIndep": 0.10543438026235745,
+   "breakEven": 583,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "C. Keller 2+ SOG",
-     "p": 0.73332,
-     "result": "LOST",
-     "value": 0
+     "text": "E. Lindell 1+ blocked shot",
+     "p": 0.8748,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "M. Necas 1+ point",
-     "p": 0.67534,
-     "result": "LOST",
-     "value": 0
+     "text": "T. Harley 1+ blocked shot",
+     "p": 0.84208,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "M. Necas 2+ SOG",
-     "p": 0.65802,
-     "result": "WON",
-     "value": 2
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.83224,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "N. Kadri 2+ SOG",
-     "p": 0.68038,
-     "result": "WON",
-     "value": 2
+     "text": "VGK +1.5 puck line",
+     "p": 0.73314,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "C. Keller 1+ point",
-     "p": 0.63432,
-     "result": "WON",
-     "value": 1
+     "text": "VGK team total over 2.5",
+     "p": 0.6413,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "M. Sergachev 2+ SOG",
-     "p": 0.65376,
-     "result": "WON",
-     "value": 2
+     "text": "J. Eichel 1+ point",
+     "p": 0.68408,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "T. Hughes 2+ SOG",
-     "p": 0.59868,
-     "result": "LOST",
-     "value": 1
+     "text": "M. Marner 1+ point",
+     "p": 0.66586,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "V. Trocheck 2+ SOG",
-     "p": 0.59704,
-     "result": "WON",
-     "value": 3
+     "text": "R. Andersson 1+ blocked shot",
+     "p": 0.78344,
+     "result": "PENDING",
+     "value": null
     }
    ]
   },
   {
-   "game_id": 2026020346,
-   "game": "COL@UTA",
-   "state": "OFF",
+   "game_id": 2026020358,
+   "game": "DAL@VGK",
+   "state": "FUT",
    "size": 8,
    "pick": "B",
-   "family": "8G Game script",
-   "pJoint": 0.09526,
-   "pLower": 0.08193910383622854,
-   "pIndep": 0.05886238860896713,
-   "breakEven": 1120,
-   "status": "LOST",
+   "family": "8A Shot-dominant game",
+   "pJoint": 0.03122,
+   "pLower": 0.019623157190886184,
+   "pIndep": 0.028111712150254934,
+   "breakEven": 4996,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "COL +1.5 puck line",
-     "p": 0.71858,
-     "result": "LOST",
-     "value": -3
+     "text": "J. Robertson 2+ SOG",
+     "p": 0.75836,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "M. Necas 1+ point",
-     "p": 0.67534,
-     "result": "LOST",
-     "value": 0
+     "text": "J. Eichel 2+ SOG",
+     "p": 0.72552,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "COL team total over 2.5",
-     "p": 0.57042,
-     "result": "LOST",
-     "value": 1
+     "text": "W. Johnston 2+ SOG",
+     "p": 0.64832,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "A. Peeke 1+ blocked shot",
-     "p": 0.76966,
-     "result": "WON",
-     "value": 1
+     "text": "T. Hertl 2+ SOG",
+     "p": 0.64252,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "S. Malinski 1+ blocked shot",
-     "p": 0.74528,
-     "result": "WON",
-     "value": 1
+     "text": "M. Marner 2+ SOG",
+     "p": 0.64076,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "A. Gagne 1+ blocked shot",
-     "p": 0.74476,
-     "result": "LOST",
-     "value": 0
+     "text": "M. Rantanen 2+ SOG",
+     "p": 0.6034,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "B. Kulak 1+ blocked shot",
-     "p": 0.72376,
-     "result": "WON",
-     "value": 1
+     "text": "W. Karlsson 2+ SOG",
+     "p": 0.5526,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "D. Simashev 1+ blocked shot",
-     "p": 0.69632,
-     "result": "WON",
-     "value": 1
+     "text": "V. Olofsson 2+ SOG",
+     "p": 0.57142,
+     "result": "PENDING",
+     "value": null
     }
    ]
   },
   {
-   "game_id": 2026020346,
-   "game": "COL@UTA",
-   "state": "OFF",
+   "game_id": 2026020358,
+   "game": "DAL@VGK",
+   "state": "FUT",
    "size": 8,
    "pick": "C",
    "family": "8G Game script",
-   "pJoint": 0.08868,
-   "pLower": 0.07535910383622854,
-   "pIndep": 0.05417300961000104,
-   "breakEven": 1227,
-   "status": "LOST",
+   "pJoint": 0.11846,
+   "pLower": 0.10513910383622854,
+   "pIndep": 0.05415909528780321,
+   "breakEven": 851,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "UTA +1.5 puck line",
-     "p": 0.70924,
-     "result": "WON",
-     "value": 3
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.83224,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "UTA team total over 2.5",
-     "p": 0.5639,
-     "result": "WON",
-     "value": 4
+     "text": "DAL +1.5 puck line",
+     "p": 0.67534,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "C. Keller 1+ point",
-     "p": 0.63432,
-     "result": "WON",
-     "value": 1
+     "text": "DAL team total over 2.5",
+     "p": 0.59386,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "A. Peeke 1+ blocked shot",
-     "p": 0.76966,
-     "result": "WON",
-     "value": 1
+     "text": "J. Robertson 1+ point",
+     "p": 0.64566,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "A. Gagne 1+ blocked shot",
-     "p": 0.74476,
-     "result": "LOST",
-     "value": 0
+     "text": "M. Rantanen 1+ point",
+     "p": 0.62646,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "S. Malinski 1+ blocked shot",
-     "p": 0.74528,
-     "result": "WON",
-     "value": 1
+     "text": "R. Andersson 1+ blocked shot",
+     "p": 0.78344,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "B. Kulak 1+ blocked shot",
-     "p": 0.72376,
-     "result": "WON",
-     "value": 1
+     "text": "M. Heiskanen 1+ blocked shot",
+     "p": 0.76058,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "Z. Jones 1+ blocked shot",
-     "p": 0.69578,
-     "result": "WON",
-     "value": 2
+     "text": "W. Johnston 2+ SOG",
+     "p": 0.64832,
+     "result": "PENDING",
+     "value": null
     }
    ]
   }

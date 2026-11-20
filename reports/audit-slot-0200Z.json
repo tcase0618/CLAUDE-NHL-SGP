@@ -1,0 +1,451 @@
+{
+ "audited_at": "2026-11-20T02:02:54.931302+00:00",
+ "source": "slot-0200Z.json",
+ "model_version": "v20261106-224110",
+ "counts": {
+  "WON": 0,
+  "LOST": 0,
+  "PENDING": 9,
+  "VOID-REPRICE": 0
+ },
+ "by_size": {
+  "3": null,
+  "5": null,
+  "8": null
+ },
+ "by_size_independence": {
+  "3": null,
+  "5": null,
+  "8": null
+ },
+ "legs": {
+  "n": 0,
+  "won": 0,
+  "expected": 0
+ },
+ "parlays": [
+  {
+   "game_id": 2026020356,
+   "game": "ANA@COL",
+   "state": "PRE",
+   "size": 3,
+   "pick": "A",
+   "family": "3E Game script",
+   "pJoint": 0.45566,
+   "pLower": 0.42826972193476615,
+   "pIndep": 0.4580349550272,
+   "breakEven": 133,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "P. Mintyukov 1+ blocked shot",
+     "p": 0.79692,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. LaCombe 1+ blocked shot",
+     "p": 0.79414,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "ANA +1.5 puck line",
+     "p": 0.72298,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020356,
+   "game": "ANA@COL",
+   "state": "PRE",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.46442,
+   "pLower": 0.42332454504853584,
+   "pIndep": 0.4627586792664,
+   "breakEven": 136,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "C. Gauthier 2+ SOG",
+     "p": 0.79472,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. LaCombe 1+ blocked shot",
+     "p": 0.79414,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "B. Kulak 1+ blocked shot",
+     "p": 0.72612,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020356,
+   "game": "ANA@COL",
+   "state": "PRE",
+   "size": 3,
+   "pick": "C",
+   "family": "3A Shot-volume structure",
+   "pJoint": 0.37564,
+   "pLower": 0.34992656811704964,
+   "pIndep": 0.372793372769664,
+   "breakEven": 186,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "C. Gauthier 2+ SOG",
+     "p": 0.79472,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Kadri 2+ SOG",
+     "p": 0.6971,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Necas 2+ SOG",
+     "p": 0.67356,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020356,
+   "game": "ANA@COL",
+   "state": "PRE",
+   "size": 5,
+   "pick": "A",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.14594,
+   "pLower": 0.12593309306170372,
+   "pIndep": 0.10688635016121885,
+   "breakEven": 694,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "M. Necas 1+ point",
+     "p": 0.68014,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Necas 2+ SOG",
+     "p": 0.67356,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Kadri 2+ SOG",
+     "p": 0.6971,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Kadri 1+ point",
+     "p": 0.5393,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Hughes 2+ SOG",
+     "p": 0.60008,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020356,
+   "game": "ANA@COL",
+   "state": "PRE",
+   "size": 5,
+   "pick": "B",
+   "family": "5F Game script",
+   "pJoint": 0.29298,
+   "pLower": 0.2501776673702255,
+   "pIndep": 0.23924304888968,
+   "breakEven": 300,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "ANA +1.5 puck line",
+     "p": 0.72298,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "COL team total under 3.5",
+     "p": 0.66086,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "C. Gauthier 2+ SOG",
+     "p": 0.79472,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "P. Mintyukov 1+ blocked shot",
+     "p": 0.79692,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. LaCombe 1+ blocked shot",
+     "p": 0.79414,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020356,
+   "game": "ANA@COL",
+   "state": "PRE",
+   "size": 5,
+   "pick": "C",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.14366,
+   "pLower": 0.12365309306170376,
+   "pIndep": 0.10391146685605755,
+   "breakEven": 709,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "M. Necas 1+ point",
+     "p": 0.68014,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Necas 2+ SOG",
+     "p": 0.67356,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Kadri 2+ SOG",
+     "p": 0.6971,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Kadri 1+ point",
+     "p": 0.5393,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "B. Nelson 2+ SOG",
+     "p": 0.59064,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020356,
+   "game": "ANA@COL",
+   "state": "PRE",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.09938,
+   "pLower": 0.08605910383622854,
+   "pIndep": 0.06111095054624428,
+   "breakEven": 1062,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "COL +1.5 puck line",
+     "p": 0.7057,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Necas 1+ point",
+     "p": 0.68014,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "COL team total over 2.5",
+     "p": 0.55824,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "P. Mintyukov 1+ blocked shot",
+     "p": 0.79692,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "D. Helleson 1+ blocked shot",
+     "p": 0.75828,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "S. Malinski 1+ blocked shot",
+     "p": 0.73064,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "B. Kulak 1+ blocked shot",
+     "p": 0.72612,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "D. Toews 1+ blocked shot",
+     "p": 0.69418,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020356,
+   "game": "ANA@COL",
+   "state": "PRE",
+   "size": 8,
+   "pick": "B",
+   "family": "8G Game script",
+   "pJoint": 0.09216,
+   "pLower": 0.07883910383622855,
+   "pIndep": 0.024705826636403905,
+   "breakEven": 1168,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "ANA +1.5 puck line",
+     "p": 0.72298,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "ANA team total over 2.5",
+     "p": 0.57076,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "C. Gauthier 1+ point",
+     "p": 0.58938,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "D. Helleson 1+ blocked shot",
+     "p": 0.75828,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "L. Carlsson 1+ point",
+     "p": 0.5702,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Granlund 1+ point",
+     "p": 0.5734,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Terry 1+ point",
+     "p": 0.55644,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "S. Malinski 1+ blocked shot",
+     "p": 0.73064,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020356,
+   "game": "ANA@COL",
+   "state": "PRE",
+   "size": 8,
+   "pick": "C",
+   "family": "8D Multi-line production",
+   "pJoint": 0.05856,
+   "pLower": 0.04698195177535315,
+   "pIndep": 0.058796685292473366,
+   "breakEven": 2028,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "D. Helleson 1+ blocked shot",
+     "p": 0.75828,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "S. Malinski 1+ blocked shot",
+     "p": 0.73064,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "B. Kulak 1+ blocked shot",
+     "p": 0.72612,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "D. Toews 1+ blocked shot",
+     "p": 0.69418,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Luneau 1+ blocked shot",
+     "p": 0.6891,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Hinds 1+ blocked shot",
+     "p": 0.688,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "A. Gagne 1+ blocked shot",
+     "p": 0.6636,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Terry 2+ SOG",
+     "p": 0.6428,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  }
+ ]
+}
