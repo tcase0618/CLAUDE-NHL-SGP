@@ -1,0 +1,652 @@
+{
+ "generated_at": "2026-11-20T01:03:07.618Z",
+ "model_version": "v20261106-224110",
+ "data_through": "2026-11-19 03:00:00+00:00",
+ "sims": 50000,
+ "games": [
+  {
+   "game_id": 2026020356,
+   "start_utc": "2026-11-20 02:00:00+00:00",
+   "away": "ANA",
+   "home": "COL",
+   "sizes": {
+    "3": {
+     "evaluated": 10713,
+     "verified": 109,
+     "finalists": 109,
+     "exposureCap": 2,
+     "picks": [
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "P. Mintyukov 1+ blocked shot",
+         "p": 0.79692,
+         "player_id": 8483490,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. LaCombe 1+ blocked shot",
+         "p": 0.79414,
+         "player_id": 8481605,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "ANA +1.5 puck line",
+         "p": 0.72298,
+         "player_id": "TEAM:ANA",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.45566,
+       "pLower": 0.42826972193476615,
+       "verified": true,
+       "pIndep": 0.4580349550272,
+       "lift": 0.9948149044060208,
+       "breakEven": 133,
+       "mcHits": 22783,
+       "scenario": {
+        "n": 22783,
+        "shots": 52.26818241671422,
+        "goals": 5.483781767107054,
+        "ppg": 1.1018742044506868,
+        "margin": -1.2019927138656015,
+        "pace": 1.0001011895677159
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "C. Gauthier 2+ SOG",
+         "p": 0.79472,
+         "player_id": 8483445,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. LaCombe 1+ blocked shot",
+         "p": 0.79414,
+         "player_id": 8481605,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "B. Kulak 1+ blocked shot",
+         "p": 0.72612,
+         "player_id": 8476967,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.46442,
+       "pLower": 0.42332454504853584,
+       "verified": true,
+       "pIndep": 0.4627586792664,
+       "lift": 1.0035900368983541,
+       "breakEven": 136,
+       "mcHits": 23221,
+       "scenario": {
+        "n": 23221,
+        "shots": 53.24430472417209,
+        "goals": 5.716248223590715,
+        "ppg": 1.1703199689935835,
+        "margin": -0.12355195728004824,
+        "pace": 1.0021062553131705
+       }
+      },
+      {
+       "family": "3A Shot-volume structure",
+       "legs": [
+        {
+         "text": "C. Gauthier 2+ SOG",
+         "p": 0.79472,
+         "player_id": 8483445,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "N. Kadri 2+ SOG",
+         "p": 0.6971,
+         "player_id": 8475172,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Necas 2+ SOG",
+         "p": 0.67356,
+         "player_id": 8480039,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.37564,
+       "pLower": 0.34992656811704964,
+       "verified": true,
+       "pIndep": 0.372793372769664,
+       "lift": 1.0076359383998352,
+       "breakEven": 186,
+       "mcHits": 18782,
+       "scenario": {
+        "n": 18782,
+        "shots": 55.187253753593865,
+        "goals": 5.926844851453519,
+        "ppg": 1.2517836226173997,
+        "margin": 0.06953466084549036,
+        "pace": 1.0062488329390242
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 16250,
+     "verified": 117,
+     "finalists": 117,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "M. Necas 1+ point",
+         "p": 0.68014,
+         "player_id": 8480039,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Necas 2+ SOG",
+         "p": 0.67356,
+         "player_id": 8480039,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "N. Kadri 2+ SOG",
+         "p": 0.6971,
+         "player_id": 8475172,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "N. Kadri 1+ point",
+         "p": 0.5393,
+         "player_id": 8475172,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "T. Hughes 2+ SOG",
+         "p": 0.60008,
+         "player_id": 8486171,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.14594,
+       "pLower": 0.12593309306170372,
+       "verified": true,
+       "pIndep": 0.10688635016121885,
+       "lift": 1.3653754644992155,
+       "breakEven": 694,
+       "mcHits": 7297,
+       "scenario": {
+        "n": 7297,
+        "shots": 56.506920652322876,
+        "goals": 6.840893517884062,
+        "ppg": 1.5772235165136357,
+        "margin": 1.1730848293819378,
+        "pace": 1.0088112051803575
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "ANA +1.5 puck line",
+         "p": 0.72298,
+         "player_id": "TEAM:ANA",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "COL team total under 3.5",
+         "p": 0.66086,
+         "player_id": "TEAM:COL",
+         "stat": "TT",
+         "line": 3.5,
+         "side": "under",
+         "team": 0
+        },
+        {
+         "text": "C. Gauthier 2+ SOG",
+         "p": 0.79472,
+         "player_id": 8483445,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "P. Mintyukov 1+ blocked shot",
+         "p": 0.79692,
+         "player_id": 8483490,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. LaCombe 1+ blocked shot",
+         "p": 0.79414,
+         "player_id": 8481605,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.29298,
+       "pLower": 0.2501776673702255,
+       "verified": true,
+       "pIndep": 0.23924304888968,
+       "lift": 1.2246123820930708,
+       "breakEven": 300,
+       "mcHits": 14649,
+       "scenario": {
+        "n": 14649,
+        "shots": 52.12383097822377,
+        "goals": 4.868182128472934,
+        "ppg": 0.9816369718069493,
+        "margin": -1.532937401870435,
+        "pace": 0.9997603205643674
+       }
+      },
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "M. Necas 1+ point",
+         "p": 0.68014,
+         "player_id": 8480039,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Necas 2+ SOG",
+         "p": 0.67356,
+         "player_id": 8480039,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "N. Kadri 2+ SOG",
+         "p": 0.6971,
+         "player_id": 8475172,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "N. Kadri 1+ point",
+         "p": 0.5393,
+         "player_id": 8475172,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Nelson 2+ SOG",
+         "p": 0.59064,
+         "player_id": 8475754,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.14366,
+       "pLower": 0.12365309306170376,
+       "verified": true,
+       "pIndep": 0.10391146685605755,
+       "lift": 1.382523068402102,
+       "breakEven": 709,
+       "mcHits": 7183,
+       "scenario": {
+        "n": 7183,
+        "shots": 56.46707503828484,
+        "goals": 6.830711401921203,
+        "ppg": 1.5865237366003062,
+        "margin": 1.1578727551162467,
+        "pace": 1.0091648506915754
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 14249,
+     "verified": 80,
+     "finalists": 80,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "COL +1.5 puck line",
+         "p": 0.7057,
+         "player_id": "TEAM:COL",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Necas 1+ point",
+         "p": 0.68014,
+         "player_id": 8480039,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "COL team total over 2.5",
+         "p": 0.55824,
+         "player_id": "TEAM:COL",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "P. Mintyukov 1+ blocked shot",
+         "p": 0.79692,
+         "player_id": 8483490,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "D. Helleson 1+ blocked shot",
+         "p": 0.75828,
+         "player_id": 8481563,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Malinski 1+ blocked shot",
+         "p": 0.73064,
+         "player_id": 8484258,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Kulak 1+ blocked shot",
+         "p": 0.72612,
+         "player_id": 8476967,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Toews 1+ blocked shot",
+         "p": 0.69418,
+         "player_id": 8478038,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.09938,
+       "pLower": 0.08605910383622854,
+       "verified": true,
+       "pIndep": 0.06111095054624428,
+       "lift": 1.6262224545958666,
+       "breakEven": 1062,
+       "mcHits": 4969,
+       "scenario": {
+        "n": 4969,
+        "shots": 54.06138055946871,
+        "goals": 6.650432682632321,
+        "ppg": 1.3751257798349767,
+        "margin": 1.7198631515395453,
+        "pace": 1.0040418875963546
+       }
+      },
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "ANA +1.5 puck line",
+         "p": 0.72298,
+         "player_id": "TEAM:ANA",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "ANA team total over 2.5",
+         "p": 0.57076,
+         "player_id": "TEAM:ANA",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "C. Gauthier 1+ point",
+         "p": 0.58938,
+         "player_id": 8483445,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "D. Helleson 1+ blocked shot",
+         "p": 0.75828,
+         "player_id": 8481563,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "L. Carlsson 1+ point",
+         "p": 0.5702,
+         "player_id": 8484153,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Granlund 1+ point",
+         "p": 0.5734,
+         "player_id": 8475798,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "T. Terry 1+ point",
+         "p": 0.55644,
+         "player_id": 8478873,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Malinski 1+ blocked shot",
+         "p": 0.73064,
+         "player_id": 8484258,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.09216,
+       "pLower": 0.07883910383622855,
+       "verified": true,
+       "pIndep": 0.024705826636403905,
+       "lift": 3.730294126819571,
+       "breakEven": 1168,
+       "mcHits": 4608,
+       "scenario": {
+        "n": 4608,
+        "shots": 55.200520833333336,
+        "goals": 7.411241319444445,
+        "ppg": 1.6100260416666667,
+        "margin": -2.326171875,
+        "pace": 1.0070613849028531
+       }
+      },
+      {
+       "family": "8D Multi-line production",
+       "legs": [
+        {
+         "text": "D. Helleson 1+ blocked shot",
+         "p": 0.75828,
+         "player_id": 8481563,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Malinski 1+ blocked shot",
+         "p": 0.73064,
+         "player_id": 8484258,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Kulak 1+ blocked shot",
+         "p": 0.72612,
+         "player_id": 8476967,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Toews 1+ blocked shot",
+         "p": 0.69418,
+         "player_id": 8478038,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "T. Luneau 1+ blocked shot",
+         "p": 0.6891,
+         "player_id": 8483482,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "T. Hinds 1+ blocked shot",
+         "p": 0.688,
+         "player_id": 8482731,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Gagne 1+ blocked shot",
+         "p": 0.6636,
+         "player_id": 8482942,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "T. Terry 2+ SOG",
+         "p": 0.6428,
+         "player_id": 8478873,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.05856,
+       "pLower": 0.04698195177535315,
+       "verified": true,
+       "pIndep": 0.058796685292473366,
+       "lift": 0.9959745129968464,
+       "breakEven": 2028,
+       "mcHits": 2928,
+       "scenario": {
+        "n": 2928,
+        "shots": 54.19569672131148,
+        "goals": 5.875,
+        "ppg": 1.1823770491803278,
+        "margin": -0.1359289617486339,
+        "pace": 1.005150021323578
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
