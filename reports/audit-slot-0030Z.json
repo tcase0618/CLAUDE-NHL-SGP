@@ -1,33 +1,81 @@
 {
- "audited_at": "2026-11-20T02:02:54.073175+00:00",
+ "audited_at": "2026-11-20T10:49:24.266966+00:00",
  "source": "slot-0030Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 0,
-  "LOST": 0,
-  "PENDING": 9,
+  "WON": 1,
+  "LOST": 8,
+  "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 1.42546,
+   "hit_rate": 0.0,
+   "mean_p": 0.4751533333333333,
+   "brier": 0.22645323800000003,
+   "logloss": 0.645872095576585
+  },
+  "5": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 0.78212,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.2607066666666667,
+   "brier": 0.18686253733333333,
+   "logloss": 0.5478334215268396
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.2966,
+   "hit_rate": 0.0,
+   "mean_p": 0.09886666666666666,
+   "brier": 0.010591285066666666,
+   "logloss": 0.10460963886554937
+  }
  },
  "by_size_independence": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 1.4134910485719683,
+   "hit_rate": 0.0,
+   "mean_p": 0.47116368285732274,
+   "brier": 0.22268619628893097,
+   "logloss": 0.638305096654546
+  },
+  "5": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 0.48339957358128516,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.1611331911937617,
+   "brier": 0.24434167367309986,
+   "logloss": 0.6980923104245172
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.17076379290203814,
+   "hit_rate": 0.0,
+   "mean_p": 0.056921264300679376,
+   "brier": 0.0034366828041550307,
+   "logloss": 0.05871550127668296
+  }
  },
  "legs": {
-  "n": 12,
-  "won": 12,
-  "expected": 8.91812
+  "n": 48,
+  "won": 27,
+  "expected": 34.22242
  },
  "parlays": [
   {
    "game_id": 2026020349,
    "game": "EDM@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -35,7 +83,7 @@
    "pLower": 0.44230454504853584,
    "pIndep": 0.4750018735189121,
    "breakEven": 126,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Murphy 1+ blocked shot",
@@ -46,21 +94,21 @@
     {
      "text": "N. Kucherov 2+ SOG",
      "p": 0.7548,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "TBL +1.5 puck line",
      "p": 0.73708,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020349,
    "game": "EDM@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -68,7 +116,7 @@
    "pLower": 0.46112454504853584,
    "pIndep": 0.501266792122976,
    "breakEven": 117,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Murphy 1+ blocked shot",
@@ -80,12 +128,12 @@
      "text": "L. Draisaitl 2+ SOG",
      "p": 0.76872,
      "result": "WON",
-     "value": 3
+     "value": 5
     },
     {
      "text": "J. Carlson 1+ blocked shot",
      "p": 0.753,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -93,7 +141,7 @@
   {
    "game_id": 2026020349,
    "game": "EDM@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3A Shot-volume structure",
@@ -101,68 +149,23 @@
    "pLower": 0.41244972193476614,
    "pIndep": 0.4372223829300801,
    "breakEven": 142,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "L. Draisaitl 2+ SOG",
      "p": 0.76872,
      "result": "WON",
-     "value": 3
+     "value": 5
     },
     {
      "text": "N. Kucherov 2+ SOG",
      "p": 0.7548,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "C. McDavid 2+ SOG",
      "p": 0.75122,
-     "result": "PENDING",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "game_id": 2026020349,
-   "game": "EDM@TBL",
-   "state": "LIVE",
-   "size": 5,
-   "pick": "A",
-   "family": "5A Five-on-five offensive environment",
-   "pJoint": 0.2149,
-   "pLower": 0.1916120977281403,
-   "pIndep": 0.14375278048425327,
-   "breakEven": 422,
-   "status": "PENDING",
-   "legs": [
-    {
-     "text": "C. McDavid 2+ SOG",
-     "p": 0.75122,
-     "result": "PENDING",
-     "value": 0
-    },
-    {
-     "text": "C. McDavid 1+ point",
-     "p": 0.70112,
-     "result": "PENDING",
-     "value": 0
-    },
-    {
-     "text": "L. Draisaitl 1+ point",
-     "p": 0.67912,
-     "result": "PENDING",
-     "value": 0
-    },
-    {
-     "text": "E. Bouchard 1+ point",
-     "p": 0.63564,
-     "result": "PENDING",
-     "value": 0
-    },
-    {
-     "text": "E. Bouchard 2+ SOG",
-     "p": 0.66098,
      "result": "WON",
      "value": 2
     }
@@ -171,7 +174,52 @@
   {
    "game_id": 2026020349,
    "game": "EDM@TBL",
-   "state": "LIVE",
+   "state": "OFF",
+   "size": 5,
+   "pick": "A",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.2149,
+   "pLower": 0.1916120977281403,
+   "pIndep": 0.14375278048425327,
+   "breakEven": 422,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "C. McDavid 2+ SOG",
+     "p": 0.75122,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "C. McDavid 1+ point",
+     "p": 0.70112,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "L. Draisaitl 1+ point",
+     "p": 0.67912,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "E. Bouchard 1+ point",
+     "p": 0.63564,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "E. Bouchard 2+ SOG",
+     "p": 0.66098,
+     "result": "WON",
+     "value": 4
+    }
+   ]
+  },
+  {
+   "game_id": 2026020349,
+   "game": "EDM@TBL",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -179,7 +227,7 @@
    "pLower": 0.2821376673702255,
    "pIndep": 0.17266799821272974,
    "breakEven": 254,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "C. Murphy 1+ blocked shot",
@@ -190,20 +238,20 @@
     {
      "text": "TBL +1.5 puck line",
      "p": 0.73708,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "TBL team total over 2.5",
      "p": 0.61868,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "N. Kucherov 1+ point",
      "p": 0.67686,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. Guentzel 1+ point",
@@ -216,7 +264,7 @@
   {
    "game_id": 2026020349,
    "game": "EDM@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5A Five-on-five offensive environment",
@@ -224,36 +272,36 @@
    "pLower": 0.2189920977281403,
    "pIndep": 0.16697879488430215,
    "breakEven": 357,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "L. Draisaitl 2+ SOG",
      "p": 0.76872,
      "result": "WON",
-     "value": 3
+     "value": 5
     },
     {
      "text": "L. Draisaitl 1+ point",
      "p": 0.67912,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "C. McDavid 1+ point",
      "p": 0.70112,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "C. McDavid 2+ SOG",
      "p": 0.75122,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "E. Bouchard 1+ point",
      "p": 0.63564,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -261,7 +309,7 @@
   {
    "game_id": 2026020349,
    "game": "EDM@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -269,25 +317,25 @@
    "pLower": 0.09330957590262268,
    "pIndep": 0.0623835227160462,
    "breakEven": 972,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "TBL +1.5 puck line",
      "p": 0.73708,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "TBL team total over 2.5",
      "p": 0.61868,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "N. Kucherov 1+ point",
      "p": 0.67686,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. Guentzel 1+ point",
@@ -298,33 +346,33 @@
     {
      "text": "N. Kucherov 2+ SOG",
      "p": 0.7548,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "J. Guentzel 2+ SOG",
      "p": 0.70788,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "J. Carlson 1+ blocked shot",
      "p": 0.753,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "R. Shea 1+ blocked shot",
      "p": 0.73592,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020349,
    "game": "EDM@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8F Cross-team high-event scenario",
@@ -332,13 +380,13 @@
    "pLower": 0.05541910383622854,
    "pIndep": 0.0376794866622508,
    "breakEven": 1704,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "J. Guentzel 2+ SOG",
      "p": 0.70788,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "J. Guentzel 1+ point",
@@ -349,45 +397,45 @@
     {
      "text": "N. Kucherov 1+ point",
      "p": 0.67686,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "C. McDavid 1+ point",
      "p": 0.70112,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "L. Draisaitl 1+ point",
      "p": 0.67912,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "E. Bouchard 1+ point",
      "p": 0.63564,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "E. Bouchard 2+ SOG",
      "p": 0.66098,
      "result": "WON",
-     "value": 2
+     "value": 4
     },
     {
      "text": "Z. Hyman 2+ SOG",
      "p": 0.63088,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020349,
    "game": "EDM@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8G Game script",
@@ -395,55 +443,55 @@
    "pLower": 0.07727910383622855,
    "pIndep": 0.07070078352374112,
    "breakEven": 1194,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "J. Carlson 1+ blocked shot",
      "p": 0.753,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "M. Ekholm 1+ blocked shot",
      "p": 0.7481,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "R. Shea 1+ blocked shot",
      "p": 0.73592,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "E. Cernak 1+ blocked shot",
      "p": 0.73396,
      "result": "WON",
-     "value": 1
+     "value": 3
     },
     {
      "text": "J. Moser 1+ blocked shot",
      "p": 0.72996,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "S. Mukhamadullin 1+ blocked shot",
      "p": 0.72976,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "EDM +1.5 puck line",
      "p": 0.67724,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -2
     },
     {
      "text": "TBL team total under 3.5",
      "p": 0.59688,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     }
    ]
   }

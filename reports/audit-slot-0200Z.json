@@ -1,33 +1,81 @@
 {
- "audited_at": "2026-11-20T02:02:54.931302+00:00",
+ "audited_at": "2026-11-20T10:49:25.213512+00:00",
  "source": "slot-0200Z.json",
  "model_version": "v20261106-224110",
  "counts": {
   "WON": 0,
-  "LOST": 0,
-  "PENDING": 9,
+  "LOST": 9,
+  "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 1.29572,
+   "hit_rate": 0.0,
+   "mean_p": 0.43190666666666666,
+   "brier": 0.1881391272,
+   "logloss": 0.5678714628036925
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.58258,
+   "hit_rate": 0.0,
+   "mean_p": 0.19419333333333333,
+   "brier": 0.04259131986666667,
+   "logloss": 0.21984598014436005
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.2501,
+   "hit_rate": 0.0,
+   "mean_p": 0.08336666666666666,
+   "brier": 0.007266374533333334,
+   "logloss": 0.08723455077157967
+  }
  },
  "by_size_independence": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 1.293587007063264,
+   "hit_rate": 0.0,
+   "mean_p": 0.431195669021088,
+   "brier": 0.18763883801471123,
+   "logloss": 0.5667803048318459
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.4500408659069564,
+   "hit_rate": 0.0,
+   "mean_p": 0.15001362196898546,
+   "brier": 0.02648650707899802,
+   "logloss": 0.16539961779628895
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.14461346247512155,
+   "hit_rate": 0.0,
+   "mean_p": 0.048204487491707186,
+   "brier": 0.002600658782611904,
+   "logloss": 0.049556734172960436
+  }
  },
  "legs": {
-  "n": 0,
-  "won": 0,
-  "expected": 0
+  "n": 43,
+  "won": 27,
+  "expected": 29.62352
  },
  "parlays": [
   {
    "game_id": 2026020356,
    "game": "ANA@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -35,32 +83,32 @@
    "pLower": 0.42826972193476615,
    "pIndep": 0.4580349550272,
    "breakEven": 133,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "P. Mintyukov 1+ blocked shot",
      "p": 0.79692,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. LaCombe 1+ blocked shot",
      "p": 0.79414,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "ANA +1.5 puck line",
      "p": 0.72298,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -4
     }
    ]
   },
   {
    "game_id": 2026020356,
    "game": "ANA@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -68,32 +116,32 @@
    "pLower": 0.42332454504853584,
    "pIndep": 0.4627586792664,
    "breakEven": 136,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Gauthier 2+ SOG",
      "p": 0.79472,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "J. LaCombe 1+ blocked shot",
      "p": 0.79414,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. Kulak 1+ blocked shot",
      "p": 0.72612,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020356,
    "game": "ANA@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3A Shot-volume structure",
@@ -101,32 +149,32 @@
    "pLower": 0.34992656811704964,
    "pIndep": 0.372793372769664,
    "breakEven": 186,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Gauthier 2+ SOG",
      "p": 0.79472,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "N. Kadri 2+ SOG",
      "p": 0.6971,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "M. Necas 2+ SOG",
      "p": 0.67356,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020356,
    "game": "ANA@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
@@ -134,44 +182,44 @@
    "pLower": 0.12593309306170372,
    "pIndep": 0.10688635016121885,
    "breakEven": 694,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Necas 1+ point",
      "p": 0.68014,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "M. Necas 2+ SOG",
      "p": 0.67356,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "N. Kadri 2+ SOG",
      "p": 0.6971,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "N. Kadri 1+ point",
      "p": 0.5393,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "T. Hughes 2+ SOG",
      "p": 0.60008,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020356,
    "game": "ANA@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -179,44 +227,44 @@
    "pLower": 0.2501776673702255,
    "pIndep": 0.23924304888968,
    "breakEven": 300,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "ANA +1.5 puck line",
      "p": 0.72298,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -4
     },
     {
      "text": "COL team total under 3.5",
      "p": 0.66086,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 4
     },
     {
      "text": "C. Gauthier 2+ SOG",
      "p": 0.79472,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "P. Mintyukov 1+ blocked shot",
      "p": 0.79692,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. LaCombe 1+ blocked shot",
      "p": 0.79414,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020356,
    "game": "ANA@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5A Five-on-five offensive environment",
@@ -224,44 +272,44 @@
    "pLower": 0.12365309306170376,
    "pIndep": 0.10391146685605755,
    "breakEven": 709,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Necas 1+ point",
      "p": 0.68014,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "M. Necas 2+ SOG",
      "p": 0.67356,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "N. Kadri 2+ SOG",
      "p": 0.6971,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "N. Kadri 1+ point",
      "p": 0.5393,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. Nelson 2+ SOG",
      "p": 0.59064,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020356,
    "game": "ANA@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -269,62 +317,62 @@
    "pLower": 0.08605910383622854,
    "pIndep": 0.06111095054624428,
    "breakEven": 1062,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "COL +1.5 puck line",
      "p": 0.7057,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "M. Necas 1+ point",
      "p": 0.68014,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "COL team total over 2.5",
      "p": 0.55824,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "P. Mintyukov 1+ blocked shot",
      "p": 0.79692,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "D. Helleson 1+ blocked shot",
      "p": 0.75828,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "S. Malinski 1+ blocked shot",
      "p": 0.73064,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. Kulak 1+ blocked shot",
      "p": 0.72612,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "D. Toews 1+ blocked shot",
      "p": 0.69418,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020356,
    "game": "ANA@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8G Game script",
@@ -332,62 +380,62 @@
    "pLower": 0.07883910383622855,
    "pIndep": 0.024705826636403905,
    "breakEven": 1168,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "ANA +1.5 puck line",
      "p": 0.72298,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -4
     },
     {
      "text": "ANA team total over 2.5",
      "p": 0.57076,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "C. Gauthier 1+ point",
      "p": 0.58938,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "D. Helleson 1+ blocked shot",
      "p": 0.75828,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "L. Carlsson 1+ point",
      "p": 0.5702,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "M. Granlund 1+ point",
      "p": 0.5734,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "T. Terry 1+ point",
      "p": 0.55644,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "S. Malinski 1+ blocked shot",
      "p": 0.73064,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020356,
    "game": "ANA@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8D Multi-line production",
@@ -395,55 +443,55 @@
    "pLower": 0.04698195177535315,
    "pIndep": 0.058796685292473366,
    "breakEven": 2028,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "D. Helleson 1+ blocked shot",
      "p": 0.75828,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "S. Malinski 1+ blocked shot",
      "p": 0.73064,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. Kulak 1+ blocked shot",
      "p": 0.72612,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "D. Toews 1+ blocked shot",
      "p": 0.69418,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "T. Luneau 1+ blocked shot",
      "p": 0.6891,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "T. Hinds 1+ blocked shot",
      "p": 0.688,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "A. Gagne 1+ blocked shot",
      "p": 0.6636,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "T. Terry 2+ SOG",
      "p": 0.6428,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   }

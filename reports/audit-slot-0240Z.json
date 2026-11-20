@@ -1,33 +1,81 @@
 {
- "audited_at": "2026-11-20T02:02:55.233986+00:00",
+ "audited_at": "2026-11-20T10:49:25.669824+00:00",
  "source": "slot-0240Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 0,
-  "LOST": 0,
-  "PENDING": 9,
+  "WON": 1,
+  "LOST": 8,
+  "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 1.22612,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.4087066666666667,
+   "brier": 0.1945499141333333,
+   "logloss": 0.5789493097823968
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.6404799999999999,
+   "hit_rate": 0.0,
+   "mean_p": 0.2134933333333333,
+   "brier": 0.04888117573333334,
+   "logloss": 0.2427441088304113
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.14862,
+   "hit_rate": 0.0,
+   "mean_p": 0.04954,
+   "brier": 0.0028873067999999995,
+   "logloss": 0.05105041900027526
+  }
  },
  "by_size_independence": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 1.223374978265328,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.40779165942177603,
+   "brier": 0.1937280636091578,
+   "logloss": 0.5770967449106851
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.3857570812027652,
+   "hit_rate": 0.0,
+   "mean_p": 0.12858569373425507,
+   "brier": 0.017790329447018322,
+   "logloss": 0.13846431514117583
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.10557990027201365,
+   "hit_rate": 0.0,
+   "mean_p": 0.03519330009067122,
+   "brier": 0.001303456348294982,
+   "logloss": 0.03586228822613202
+  }
  },
  "legs": {
-  "n": 0,
-  "won": 0,
-  "expected": 0
+  "n": 48,
+  "won": 34,
+  "expected": 32.38984
  },
  "parlays": [
   {
    "game_id": 2026020357,
    "game": "VAN@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -35,32 +83,32 @@
    "pLower": 0.39708972193476616,
    "pIndep": 0.42538064376945606,
    "breakEven": 152,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "A. Larsson 1+ blocked shot",
      "p": 0.7705,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "E. Pettersson 1+ blocked shot",
      "p": 0.77048,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "VAN +1.5 puck line",
      "p": 0.71028,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -4
     }
    ]
   },
   {
    "game_id": 2026020357,
    "game": "VAN@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -68,32 +116,32 @@
    "pLower": 0.42166454504853584,
    "pIndep": 0.46320343491239996,
    "breakEven": 137,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "F. Hronek 1+ blocked shot",
      "p": 0.77666,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "E. Pettersson 1+ blocked shot",
      "p": 0.77048,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "A. Larsson 1+ blocked shot",
      "p": 0.7705,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020357,
    "game": "VAN@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3A Shot-volume structure",
@@ -101,32 +149,32 @@
    "pLower": 0.3131665681170497,
    "pIndep": 0.334790899583472,
    "breakEven": 219,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "J. DeBrusk 2+ SOG",
      "p": 0.72798,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "B. McMann 2+ SOG",
      "p": 0.70664,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. Montour 2+ SOG",
      "p": 0.6456,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020357,
    "game": "VAN@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
@@ -134,44 +182,44 @@
    "pLower": 0.11253309306170374,
    "pIndep": 0.08441117691409215,
    "breakEven": 789,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "J. DeBrusk 2+ SOG",
      "p": 0.72798,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "B. Boeser 1+ point",
      "p": 0.62264,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "E. Pettersson 1+ point",
      "p": 0.59592,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "F. Hronek 1+ point",
      "p": 0.56066,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. Boeser 2+ SOG",
      "p": 0.57452,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020357,
    "game": "VAN@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -179,44 +227,44 @@
    "pLower": 0.2245520977281403,
    "pIndep": 0.13016606869933497,
    "breakEven": 345,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "VAN +1.5 puck line",
      "p": 0.71028,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -4
     },
     {
      "text": "VAN team total over 2.5",
      "p": 0.65268,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "F. Hronek 1+ blocked shot",
      "p": 0.77666,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. Boeser 1+ point",
      "p": 0.62264,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "E. Pettersson 1+ point",
      "p": 0.59592,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020357,
    "game": "VAN@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5F Game script",
@@ -224,44 +272,44 @@
    "pLower": 0.2368120977281403,
    "pIndep": 0.17117983558933805,
    "breakEven": 322,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "VAN +1.5 puck line",
      "p": 0.71028,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -4
     },
     {
      "text": "VAN team total over 2.5",
      "p": 0.65268,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "F. Hronek 1+ blocked shot",
      "p": 0.77666,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "E. Pettersson 1+ blocked shot",
      "p": 0.77048,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. Boeser 1+ point",
      "p": 0.62264,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020357,
    "game": "VAN@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8A Shot-dominant game",
@@ -269,62 +317,62 @@
    "pLower": 0.01596315719088618,
    "pIndep": 0.024404469134202175,
    "breakEven": 6164,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "J. DeBrusk 2+ SOG",
      "p": 0.72798,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "B. McMann 2+ SOG",
      "p": 0.70664,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. Montour 2+ SOG",
      "p": 0.6456,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "V. Dunn 2+ SOG",
      "p": 0.60634,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. Eberle 2+ SOG",
      "p": 0.6083,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "F. Chytil 2+ SOG",
      "p": 0.60902,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "B. Boeser 2+ SOG",
      "p": 0.57452,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "M. Samoskevich 2+ SOG",
      "p": 0.57042,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020357,
    "game": "VAN@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8G Game script",
@@ -332,62 +380,62 @@
    "pLower": 0.06415910383622854,
    "pIndep": 0.03742025436488659,
    "breakEven": 1459,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "VAN team total over 2.5",
      "p": 0.65268,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "Game total over 5.5",
      "p": 0.6312,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 6
     },
     {
      "text": "A. Larsson 1+ blocked shot",
      "p": 0.7705,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "E. Pettersson 1+ point",
      "p": 0.59592,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "F. Hronek 1+ point",
      "p": 0.56066,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "R. Evans 1+ blocked shot",
      "p": 0.71272,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "B. McMann 2+ SOG",
      "p": 0.70664,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. Montour 1+ blocked shot",
      "p": 0.70448,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020357,
    "game": "VAN@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8D Multi-line production",
@@ -395,55 +443,55 @@
    "pLower": 0.03200195177535315,
    "pIndep": 0.043755176772924884,
    "breakEven": 3025,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "R. Evans 1+ blocked shot",
      "p": 0.71272,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "T. Willander 1+ blocked shot",
      "p": 0.71132,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. Montour 1+ blocked shot",
      "p": 0.70448,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. Oleksiak 1+ blocked shot",
      "p": 0.6775,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "Z. Buium 1+ blocked shot",
      "p": 0.6614,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. Montour 2+ SOG",
      "p": 0.6456,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "E. Pettersson 1+ blocked shot",
      "p": 0.63648,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "V. Dunn 1+ blocked shot",
      "p": 0.63496,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   }
