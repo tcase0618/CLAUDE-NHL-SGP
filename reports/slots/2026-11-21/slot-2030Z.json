@@ -1,0 +1,652 @@
+{
+ "generated_at": "2026-11-21T19:32:56.241Z",
+ "model_version": "v20261106-224110",
+ "data_through": "2026-11-20 03:00:00+00:00",
+ "sims": 50000,
+ "games": [
+  {
+   "game_id": 2026020360,
+   "start_utc": "2026-11-21 20:30:00+00:00",
+   "away": "CHI",
+   "home": "CGY",
+   "sizes": {
+    "3": {
+     "evaluated": 11077,
+     "verified": 96,
+     "finalists": 96,
+     "exposureCap": 2,
+     "picks": [
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "I. Cole 1+ blocked shot",
+         "p": 0.78214,
+         "player_id": 8474013,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "Z. Whitecloud 1+ blocked shot",
+         "p": 0.76208,
+         "player_id": 8480727,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "CGY +1.5 puck line",
+         "p": 0.75212,
+         "player_id": "TEAM:CGY",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.44634,
+       "pLower": 0.41894972193476615,
+       "verified": true,
+       "pIndep": 0.44856880342176,
+       "lift": 0.9950313008734485,
+       "breakEven": 139,
+       "mcHits": 22317,
+       "scenario": {
+        "n": 22317,
+        "shots": 53.99731146659497,
+        "goals": 5.7674866693552005,
+        "ppg": 0.9996415288793297,
+        "margin": 1.374243849979836,
+        "pace": 1.0001369484378888
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "I. Cole 1+ blocked shot",
+         "p": 0.78214,
+         "player_id": 8474013,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "Z. Whitecloud 1+ blocked shot",
+         "p": 0.76208,
+         "player_id": 8480727,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Vlasic 1+ blocked shot",
+         "p": 0.72968,
+         "player_id": 8481568,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.43906,
+       "pLower": 0.41166972193476614,
+       "verified": true,
+       "pIndep": 0.44008094895072,
+       "lift": 0.9976800882811351,
+       "breakEven": 143,
+       "mcHits": 21953,
+       "scenario": {
+        "n": 21953,
+        "shots": 54.30938823850954,
+        "goals": 5.87864984284608,
+        "ppg": 1.035940418166082,
+        "margin": 0.2876144490502437,
+        "pace": 1.0011064693965017
+       }
+      },
+      {
+       "family": "3A Shot-volume structure",
+       "legs": [
+        {
+         "text": "M. Backlund 2+ SOG",
+         "p": 0.6754,
+         "player_id": 8474150,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Coronato 2+ SOG",
+         "p": 0.6726,
+         "player_id": 8482679,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "P. Kane 2+ SOG",
+         "p": 0.67438,
+         "player_id": 8474141,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.30888,
+       "pLower": 0.28316656811704966,
+       "verified": true,
+       "pIndep": 0.3060203728932,
+       "lift": 1.0093445644803458,
+       "breakEven": 253,
+       "mcHits": 15444,
+       "scenario": {
+        "n": 15444,
+        "shots": 57.23109298109298,
+        "goals": 6.164594664594665,
+        "ppg": 1.1086506086506087,
+        "margin": 0.41828541828541826,
+        "pace": 1.0077870592100575
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 13067,
+     "verified": 103,
+     "finalists": 103,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "5D High-tempo matchup",
+       "legs": [
+        {
+         "text": "M. Backlund 2+ SOG",
+         "p": 0.6754,
+         "player_id": 8474150,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Coronato 2+ SOG",
+         "p": 0.6726,
+         "player_id": 8482679,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "P. Kane 2+ SOG",
+         "p": 0.67438,
+         "player_id": 8474141,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Farabee 2+ SOG",
+         "p": 0.65212,
+         "player_id": 8480797,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "F. Nazar 2+ SOG",
+         "p": 0.63346,
+         "player_id": 8483493,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.13232,
+       "pLower": 0.11231309306170374,
+       "verified": true,
+       "pIndep": 0.12707681359291212,
+       "lift": 1.041259977007956,
+       "breakEven": 790,
+       "mcHits": 6616,
+       "scenario": {
+        "n": 6616,
+        "shots": 59.335701330108826,
+        "goals": 6.3523276904474,
+        "ppg": 1.1701934703748489,
+        "margin": 0.4094619105199516,
+        "pace": 1.0127093433306755
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "CGY +1.5 puck line",
+         "p": 0.75212,
+         "player_id": "TEAM:CGY",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "CHI team total under 3.5",
+         "p": 0.66236,
+         "player_id": "TEAM:CHI",
+         "stat": "TT",
+         "line": 3.5,
+         "side": "under",
+         "team": 1
+        },
+        {
+         "text": "I. Cole 1+ blocked shot",
+         "p": 0.78214,
+         "player_id": 8474013,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "Z. Whitecloud 1+ blocked shot",
+         "p": 0.76208,
+         "player_id": 8480727,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Vlasic 1+ blocked shot",
+         "p": 0.72968,
+         "player_id": 8481568,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.25952,
+       "pLower": 0.23623209772814027,
+       "verified": true,
+       "pIndep": 0.2198156473284191,
+       "lift": 1.1806256886356228,
+       "breakEven": 323,
+       "mcHits": 12976,
+       "scenario": {
+        "n": 12976,
+        "shots": 53.17324290998767,
+        "goals": 5.061806411837238,
+        "ppg": 0.8646732429099877,
+        "margin": 1.6744759556103577,
+        "pace": 0.9981425599908197
+       }
+      },
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "M. Backlund 2+ SOG",
+         "p": 0.6754,
+         "player_id": 8474150,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Coronato 2+ SOG",
+         "p": 0.6726,
+         "player_id": 8482679,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Farabee 2+ SOG",
+         "p": 0.65212,
+         "player_id": 8480797,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Farabee 1+ point",
+         "p": 0.54978,
+         "player_id": 8480797,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Coronato 1+ point",
+         "p": 0.56376,
+         "player_id": 8482679,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.12776,
+       "pLower": 0.10775309306170376,
+       "verified": true,
+       "pIndep": 0.08949553983239038,
+       "lift": 1.4275571747963343,
+       "breakEven": 828,
+       "mcHits": 6388,
+       "scenario": {
+        "n": 6388,
+        "shots": 58.26268002504696,
+        "goals": 7.213994990607389,
+        "ppg": 1.39167188478397,
+        "margin": 1.643237319974953,
+        "pace": 1.0112184809757607
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 8189,
+     "verified": 58,
+     "finalists": 58,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "CGY +1.5 puck line",
+         "p": 0.75212,
+         "player_id": "TEAM:CGY",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "CHI team total under 3.5",
+         "p": 0.66236,
+         "player_id": "TEAM:CHI",
+         "stat": "TT",
+         "line": 3.5,
+         "side": "under",
+         "team": 1
+        },
+        {
+         "text": "A. Vlasic 1+ blocked shot",
+         "p": 0.72968,
+         "player_id": 8481568,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Rinzel 1+ blocked shot",
+         "p": 0.72646,
+         "player_id": 8483506,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Middleton 1+ blocked shot",
+         "p": 0.7166,
+         "player_id": 8478136,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Hanley 1+ blocked shot",
+         "p": 0.70696,
+         "player_id": 8477810,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Levshunov 1+ blocked shot",
+         "p": 0.69514,
+         "player_id": 8484783,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "Y. Kuznetsov 1+ blocked shot",
+         "p": 0.699,
+         "player_id": 8482165,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.07822,
+       "pLower": 0.06489910383622854,
+       "verified": true,
+       "pIndep": 0.0654393350521766,
+       "lift": 1.1953055442515272,
+       "breakEven": 1441,
+       "mcHits": 3911,
+       "scenario": {
+        "n": 3911,
+        "shots": 53.526975198159036,
+        "goals": 5.054717463564306,
+        "ppg": 0.8514446433137305,
+        "margin": 1.6514957811301458,
+        "pace": 0.998886685272642
+       }
+      },
+      {
+       "family": "8D Multi-line production",
+       "legs": [
+        {
+         "text": "S. Rinzel 1+ blocked shot",
+         "p": 0.72646,
+         "player_id": 8483506,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Middleton 1+ blocked shot",
+         "p": 0.7166,
+         "player_id": 8478136,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Hanley 1+ blocked shot",
+         "p": 0.70696,
+         "player_id": 8477810,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "Y. Kuznetsov 1+ blocked shot",
+         "p": 0.699,
+         "player_id": 8482165,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Levshunov 1+ blocked shot",
+         "p": 0.69514,
+         "player_id": 8484783,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "P. Kane 2+ SOG",
+         "p": 0.67438,
+         "player_id": 8474141,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Nemec 1+ blocked shot",
+         "p": 0.67452,
+         "player_id": 8483495,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Farabee 2+ SOG",
+         "p": 0.65212,
+         "player_id": 8480797,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.05574,
+       "pLower": 0.04416195177535315,
+       "verified": true,
+       "pIndep": 0.052705234932732666,
+       "lift": 1.0575799552196397,
+       "breakEven": 2164,
+       "mcHits": 2787,
+       "scenario": {
+        "n": 2787,
+        "shots": 56.71869393613204,
+        "goals": 6.113024757804091,
+        "ppg": 1.119124506637962,
+        "margin": 0.25511302475780406,
+        "pace": 1.0061546936016337
+       }
+      },
+      {
+       "family": "8D Multi-line production",
+       "legs": [
+        {
+         "text": "S. Rinzel 1+ blocked shot",
+         "p": 0.72646,
+         "player_id": 8483506,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Middleton 1+ blocked shot",
+         "p": 0.7166,
+         "player_id": 8478136,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Hanley 1+ blocked shot",
+         "p": 0.70696,
+         "player_id": 8477810,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "Y. Kuznetsov 1+ blocked shot",
+         "p": 0.699,
+         "player_id": 8482165,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Levshunov 1+ blocked shot",
+         "p": 0.69514,
+         "player_id": 8484783,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Nemec 1+ blocked shot",
+         "p": 0.67452,
+         "player_id": 8483495,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "W. Kaiser 1+ blocked shot",
+         "p": 0.6619,
+         "player_id": 8482176,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "F. Nazar 2+ SOG",
+         "p": 0.63346,
+         "player_id": 8483493,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.05136,
+       "pLower": 0.03978195177535315,
+       "verified": true,
+       "pIndep": 0.04997233441507544,
+       "lift": 1.0277686764320126,
+       "breakEven": 2414,
+       "mcHits": 2568,
+       "scenario": {
+        "n": 2568,
+        "shots": 55.66783489096573,
+        "goals": 5.96690031152648,
+        "ppg": 1.0393302180685358,
+        "margin": 0.15848909657320873,
+        "pace": 1.004146361601687
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

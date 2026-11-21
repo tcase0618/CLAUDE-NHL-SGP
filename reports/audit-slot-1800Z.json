@@ -1,497 +1,465 @@
 {
- "audited_at": "2026-11-08T22:03:31.333622+00:00",
+ "audited_at": "2026-11-21T19:33:45.283871+00:00",
  "source": "slot-1800Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 4,
-  "LOST": 5,
-  "PENDING": 0,
+  "WON": 2,
+  "LOST": 0,
+  "PENDING": 7,
   "VOID-REPRICE": 0
  },
  "by_size": {
   "3": {
-   "n": 3,
-   "won": 3,
-   "expected_wins": 1.1957200000000001,
+   "n": 2,
+   "won": 2,
+   "expected_wins": 0.9532799999999999,
    "hit_rate": 1.0,
-   "mean_p": 0.3985733333333334,
-   "brier": 0.36424219146666664,
-   "logloss": 0.9274330813517923
+   "mean_p": 0.47663999999999995,
+   "brier": 0.2745528832,
+   "logloss": 0.7424201941178786
   },
-  "5": {
-   "n": 3,
-   "won": 1,
-   "expected_wins": 0.8688199999999999,
-   "hit_rate": 0.3333333333333333,
-   "mean_p": 0.2896066666666666,
-   "brier": 0.20065096066666666,
-   "logloss": 0.5847898676895886
-  },
-  "8": {
-   "n": 3,
-   "won": 0,
-   "expected_wins": 0.34242,
-   "hit_rate": 0.0,
-   "mean_p": 0.11414,
-   "brier": 0.01354401346666667,
-   "logloss": 0.12152708912366073
-  }
+  "5": null,
+  "8": null
  },
  "by_size_independence": {
   "3": {
-   "n": 3,
-   "won": 3,
-   "expected_wins": 1.096531304914496,
+   "n": 2,
+   "won": 2,
+   "expected_wins": 0.884322000268152,
    "hit_rate": 1.0,
-   "mean_p": 0.36551043497149865,
-   "brier": 0.40338190523333944,
-   "logloss": 1.0094317279645086
+   "mean_p": 0.442161000134076,
+   "brier": 0.31460800111198284,
+   "logloss": 0.8249146386490016
   },
-  "5": {
-   "n": 3,
-   "won": 1,
-   "expected_wins": 0.7224506003590868,
-   "hit_rate": 0.3333333333333333,
-   "mean_p": 0.24081686678636227,
-   "brier": 0.2555089685069781,
-   "logloss": 0.7282327474796788
-  },
-  "8": {
-   "n": 3,
-   "won": 0,
-   "expected_wins": 0.23145106788362593,
-   "hit_rate": 0.0,
-   "mean_p": 0.07715035596120864,
-   "brier": 0.006288187374813036,
-   "logloss": 0.08048741651841364
-  }
+  "5": null,
+  "8": null
  },
  "legs": {
-  "n": 48,
-  "won": 41,
-  "expected": 35.29786
+  "n": 23,
+  "won": 23,
+  "expected": 16.91006
  },
  "parlays": [
   {
-   "game_id": 2026020277,
-   "game": "FLA@BOS",
-   "state": "OFF",
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "state": "LIVE",
    "size": 3,
    "pick": "A",
-   "family": "3B Team offensive scenario",
-   "pJoint": 0.36336,
-   "pLower": 0.3376465681170497,
-   "pIndep": 0.33470337789996796,
-   "breakEven": 196,
-   "status": "WON",
-   "legs": [
-    {
-     "text": "S. Reinhart 2+ SOG",
-     "p": 0.7444,
-     "result": "WON",
-     "value": 3
-    },
-    {
-     "text": "M. Tkachuk 2+ SOG",
-     "p": 0.71582,
-     "result": "WON",
-     "value": 5
-    },
-    {
-     "text": "M. Tkachuk 1+ point",
-     "p": 0.61972,
-     "result": "WON",
-     "value": 1
-    }
-   ]
-  },
-  {
-   "game_id": 2026020277,
-   "game": "FLA@BOS",
-   "state": "OFF",
-   "size": 3,
-   "pick": "B",
-   "family": "3B Team offensive scenario",
-   "pJoint": 0.36268,
-   "pLower": 0.33696656811704967,
-   "pIndep": 0.358653245170528,
-   "breakEven": 197,
-   "status": "WON",
-   "legs": [
-    {
-     "text": "S. Reinhart 2+ SOG",
-     "p": 0.7444,
-     "result": "WON",
-     "value": 3
-    },
-    {
-     "text": "M. Tkachuk 2+ SOG",
-     "p": 0.71582,
-     "result": "WON",
-     "value": 5
-    },
-    {
-     "text": "S. Bennett 2+ SOG",
-     "p": 0.6717,
-     "result": "WON",
-     "value": 2
-    }
-   ]
-  },
-  {
-   "game_id": 2026020277,
-   "game": "FLA@BOS",
-   "state": "OFF",
-   "size": 3,
-   "pick": "C",
    "family": "3E Game script",
-   "pJoint": 0.46968,
-   "pLower": 0.4285845450485358,
-   "pIndep": 0.40317468184399996,
-   "breakEven": 133,
-   "status": "WON",
+   "pJoint": 0.5211,
+   "pLower": 0.4938336098849943,
+   "pIndep": 0.5226647534881919,
+   "breakEven": 102,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "D. Pastrnak 2+ SOG",
-     "p": 0.80668,
+     "text": "C. Murphy 1+ blocked shot",
+     "p": 0.83234,
      "result": "WON",
      "value": 3
     },
     {
-     "text": "D. Pastrnak 1+ point",
-     "p": 0.72986,
-     "result": "WON",
-     "value": 2
+     "text": "CAR +1.5 puck line",
+     "p": 0.80574,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "BOS +1.5 puck line",
-     "p": 0.70548,
+     "text": "J. Slavin 1+ blocked shot",
+     "p": 0.7788,
      "result": "WON",
      "value": 3
     }
    ]
   },
   {
-   "game_id": 2026020277,
-   "game": "FLA@BOS",
-   "state": "OFF",
-   "size": 5,
-   "pick": "A",
-   "family": "5F Game script",
-   "pJoint": 0.32604,
-   "pLower": 0.2832376673702255,
-   "pIndep": 0.20485694406156815,
-   "breakEven": 253,
-   "status": "WON",
-   "legs": [
-    {
-     "text": "D. Pastrnak 1+ point",
-     "p": 0.72986,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "BOS +1.5 puck line",
-     "p": 0.70548,
-     "result": "WON",
-     "value": 3
-    },
-    {
-     "text": "BOS team total over 2.5",
-     "p": 0.63774,
-     "result": "WON",
-     "value": 4
-    },
-    {
-     "text": "D. Pastrnak 2+ SOG",
-     "p": 0.80668,
-     "result": "WON",
-     "value": 3
-    },
-    {
-     "text": "B. Tkachuk 2+ SOG",
-     "p": 0.80808,
-     "result": "WON",
-     "value": 8
-    }
-   ]
-  },
-  {
-   "game_id": 2026020277,
-   "game": "FLA@BOS",
-   "state": "OFF",
-   "size": 5,
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "state": "LIVE",
+   "size": 3,
    "pick": "B",
-   "family": "5E Balanced cross-team structure",
-   "pJoint": 0.28598,
-   "pLower": 0.2431776673702255,
-   "pIndep": 0.27150174046858827,
-   "breakEven": 311,
-   "status": "LOST",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.50208,
+   "pLower": 0.4609845450485358,
+   "pIndep": 0.500672976178032,
+   "breakEven": 117,
+   "status": "WON",
    "legs": [
     {
-     "text": "B. Tkachuk 2+ SOG",
-     "p": 0.80808,
-     "result": "WON",
-     "value": 8
-    },
-    {
-     "text": "D. Pastrnak 2+ SOG",
-     "p": 0.80668,
+     "text": "C. Murphy 1+ blocked shot",
+     "p": 0.83234,
      "result": "WON",
      "value": 3
     },
     {
-     "text": "C. McAvoy 1+ blocked shot",
-     "p": 0.78306,
-     "result": "LOST",
-     "value": 0
-    },
-    {
-     "text": "D. Pastrnak 1+ point",
-     "p": 0.72986,
+     "text": "J. Slavin 1+ blocked shot",
+     "p": 0.7788,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
-     "text": "S. Jones 1+ blocked shot",
-     "p": 0.74304,
+     "text": "L. Draisaitl 2+ SOG",
+     "p": 0.77374,
      "result": "WON",
      "value": 2
     }
    ]
   },
   {
-   "game_id": 2026020277,
-   "game": "FLA@BOS",
-   "state": "OFF",
-   "size": 5,
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "state": "LIVE",
+   "size": 3,
    "pick": "C",
-   "family": "5B Top-6 usage cluster",
-   "pJoint": 0.2568,
-   "pLower": 0.23351209772814027,
-   "pIndep": 0.24609191582893042,
-   "breakEven": 328,
-   "status": "LOST",
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.4512,
+   "pLower": 0.4238097219347661,
+   "pIndep": 0.38364902409011997,
+   "breakEven": 136,
+   "status": "WON",
    "legs": [
     {
-     "text": "D. Pastrnak 2+ SOG",
-     "p": 0.80668,
-     "result": "WON",
-     "value": 3
-    },
-    {
-     "text": "C. McAvoy 1+ blocked shot",
-     "p": 0.78306,
-     "result": "LOST",
-     "value": 0
-    },
-    {
-     "text": "D. Pastrnak 1+ point",
-     "p": 0.72986,
+     "text": "L. Draisaitl 2+ SOG",
+     "p": 0.77374,
      "result": "WON",
      "value": 2
     },
     {
-     "text": "W. Borgen 1+ blocked shot",
-     "p": 0.74066,
+     "text": "L. Draisaitl 1+ point",
+     "p": 0.69818,
      "result": "WON",
      "value": 1
     },
     {
-     "text": "N. Zadorov 1+ blocked shot",
-     "p": 0.73912,
-     "result": "LOST",
+     "text": "C. McDavid 1+ point",
+     "p": 0.70814,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "state": "LIVE",
+   "size": 5,
+   "pick": "A",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.23414,
+   "pLower": 0.2108520977281403,
+   "pIndep": 0.15650677595695967,
+   "breakEven": 374,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "C. McDavid 2+ SOG",
+     "p": 0.76316,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "C. McDavid 1+ point",
+     "p": 0.70814,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "L. Draisaitl 1+ point",
+     "p": 0.69818,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "E. Bouchard 1+ point",
+     "p": 0.62476,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "E. Bouchard 2+ SOG",
+     "p": 0.66028,
+     "result": "PENDING",
      "value": 0
     }
    ]
   },
   {
-   "game_id": 2026020277,
-   "game": "FLA@BOS",
-   "state": "OFF",
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "state": "LIVE",
+   "size": 5,
+   "pick": "B",
+   "family": "5F Game script",
+   "pJoint": 0.33854,
+   "pLower": 0.313111997284063,
+   "pIndep": 0.25327623499730073,
+   "breakEven": 219,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "CAR +1.5 puck line",
+     "p": 0.80574,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "CAR team total over 2.5",
+     "p": 0.72782,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "C. Murphy 1+ blocked shot",
+     "p": 0.83234,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "L. Draisaitl 2+ SOG",
+     "p": 0.77374,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Aho 1+ point",
+     "p": 0.65064,
+     "result": "PENDING",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "state": "LIVE",
+   "size": 5,
+   "pick": "C",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.20118,
+   "pLower": 0.1778920977281403,
+   "pIndep": 0.139937788882213,
+   "breakEven": 462,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "C. McDavid 2+ SOG",
+     "p": 0.76316,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "C. McDavid 1+ point",
+     "p": 0.70814,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "L. Draisaitl 1+ point",
+     "p": 0.69818,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "E. Bouchard 1+ point",
+     "p": 0.62476,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "Z. Hyman 2+ SOG",
+     "p": 0.59956,
+     "result": "PENDING",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "state": "LIVE",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
-   "pJoint": 0.14408,
-   "pLower": 0.1001295759026227,
-   "pIndep": 0.07150261509138352,
-   "breakEven": 899,
-   "status": "LOST",
+   "pJoint": 0.1183,
+   "pLower": 0.10497910383622855,
+   "pIndep": 0.08380361913732888,
+   "breakEven": 853,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "D. Pastrnak 2+ SOG",
-     "p": 0.80668,
+     "text": "CAR +1.5 puck line",
+     "p": 0.80574,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "CAR team total over 2.5",
+     "p": 0.72782,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "J. Slavin 1+ blocked shot",
+     "p": 0.7788,
      "result": "WON",
      "value": 3
     },
     {
-     "text": "D. Pastrnak 1+ point",
-     "p": 0.72986,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "BOS +1.5 puck line",
-     "p": 0.70548,
-     "result": "WON",
-     "value": 3
-    },
-    {
-     "text": "BOS team total over 2.5",
-     "p": 0.63774,
-     "result": "WON",
-     "value": 4
-    },
-    {
-     "text": "B. Tkachuk 2+ SOG",
-     "p": 0.80808,
-     "result": "WON",
-     "value": 8
-    },
-    {
-     "text": "C. McAvoy 1+ blocked shot",
-     "p": 0.78306,
-     "result": "LOST",
+     "text": "S. Aho 1+ point",
+     "p": 0.65064,
+     "result": "PENDING",
      "value": 0
     },
     {
-     "text": "S. Jones 1+ blocked shot",
-     "p": 0.74304,
+     "text": "C. McDavid 2+ SOG",
+     "p": 0.76316,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "R. Shea 1+ blocked shot",
+     "p": 0.75226,
      "result": "WON",
      "value": 2
     },
     {
-     "text": "P. Zacha 1+ point",
-     "p": 0.59542,
-     "result": "WON",
-     "value": 2
+     "text": "S. Walker 1+ blocked shot",
+     "p": 0.74962,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "N. Ehlers 2+ SOG",
+     "p": 0.64854,
+     "result": "PENDING",
+     "value": 1
     }
    ]
   },
   {
-   "game_id": 2026020277,
-   "game": "FLA@BOS",
-   "state": "OFF",
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "state": "LIVE",
    "size": 8,
    "pick": "B",
    "family": "8D Multi-line production",
-   "pJoint": 0.10926,
-   "pLower": 0.09593910383622854,
-   "pIndep": 0.10188523258269856,
-   "breakEven": 942,
-   "status": "LOST",
+   "pJoint": 0.07128,
+   "pLower": 0.05795910383622854,
+   "pIndep": 0.05694774635703354,
+   "breakEven": 1625,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "B. Tkachuk 2+ SOG",
-     "p": 0.80808,
+     "text": "R. Shea 1+ blocked shot",
+     "p": 0.75226,
      "result": "WON",
-     "value": 8
+     "value": 2
     },
     {
-     "text": "D. Pastrnak 2+ SOG",
-     "p": 0.80668,
-     "result": "WON",
-     "value": 3
-    },
-    {
-     "text": "C. McAvoy 1+ blocked shot",
-     "p": 0.78306,
-     "result": "LOST",
+     "text": "S. Walker 1+ blocked shot",
+     "p": 0.74962,
+     "result": "PENDING",
      "value": 0
     },
     {
-     "text": "D. Pastrnak 1+ point",
-     "p": 0.72986,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "S. Jones 1+ blocked shot",
-     "p": 0.74304,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "S. Reinhart 2+ SOG",
-     "p": 0.7444,
-     "result": "WON",
-     "value": 3
-    },
-    {
-     "text": "A. Ekblad 1+ blocked shot",
-     "p": 0.74014,
-     "result": "LOST",
+     "text": "M. Ekholm 1+ blocked shot",
+     "p": 0.7243,
+     "result": "PENDING",
      "value": 0
     },
     {
-     "text": "S. Bennett 2+ SOG",
-     "p": 0.6717,
-     "result": "WON",
-     "value": 2
-    }
-   ]
-  },
-  {
-   "game_id": 2026020277,
-   "game": "FLA@BOS",
-   "state": "OFF",
-   "size": 8,
-   "pick": "C",
-   "family": "8F Cross-team high-event scenario",
-   "pJoint": 0.08908,
-   "pLower": 0.07575910383622855,
-   "pIndep": 0.058063220209543846,
-   "breakEven": 1220,
-   "status": "LOST",
-   "legs": [
-    {
-     "text": "B. Tkachuk 2+ SOG",
-     "p": 0.80808,
-     "result": "WON",
-     "value": 8
-    },
-    {
-     "text": "D. Pastrnak 2+ SOG",
-     "p": 0.80668,
-     "result": "WON",
-     "value": 3
-    },
-    {
-     "text": "D. Pastrnak 1+ point",
-     "p": 0.72986,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "S. Reinhart 2+ SOG",
-     "p": 0.7444,
-     "result": "WON",
-     "value": 3
-    },
-    {
-     "text": "M. Tkachuk 2+ SOG",
-     "p": 0.71582,
-     "result": "WON",
-     "value": 5
-    },
-    {
-     "text": "S. Reinhart 1+ point",
-     "p": 0.62974,
-     "result": "LOST",
+     "text": "A. Svechnikov 2+ SOG",
+     "p": 0.6919,
+     "result": "PENDING",
      "value": 0
     },
     {
-     "text": "M. Tkachuk 1+ point",
-     "p": 0.61972,
+     "text": "A. Svechnikov 1+ point",
+     "p": 0.60462,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "S. Aho 1+ point",
+     "p": 0.65064,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "E. Bouchard 1+ blocked shot",
+     "p": 0.7027,
      "result": "WON",
      "value": 1
     },
     {
-     "text": "P. Zacha 1+ point",
-     "p": 0.59542,
+     "text": "S. Jarvis 2+ SOG",
+     "p": 0.67496,
+     "result": "PENDING",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "state": "LIVE",
+   "size": 8,
+   "pick": "C",
+   "family": "8D Multi-line production",
+   "pJoint": 0.06226,
+   "pLower": 0.05068195177535315,
+   "pIndep": 0.05751801001780773,
+   "breakEven": 1873,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "R. Shea 1+ blocked shot",
+     "p": 0.75226,
      "result": "WON",
      "value": 2
+    },
+    {
+     "text": "S. Walker 1+ blocked shot",
+     "p": 0.74962,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "M. Ekholm 1+ blocked shot",
+     "p": 0.7243,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "E. Bouchard 1+ blocked shot",
+     "p": 0.7027,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "A. Svechnikov 2+ SOG",
+     "p": 0.6919,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "S. Jarvis 2+ SOG",
+     "p": 0.67496,
+     "result": "PENDING",
+     "value": 1
+    },
+    {
+     "text": "E. Bouchard 2+ SOG",
+     "p": 0.66028,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "E. Bouchard 1+ point",
+     "p": 0.62476,
+     "result": "WON",
+     "value": 1
     }
    ]
   }
