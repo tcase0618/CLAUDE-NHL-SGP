@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-21T19:34:20.332942+00:00",
+ "updated_at": "2026-11-21T22:05:20.737481+00:00",
  "nights": [
   "2026-11-07",
   "2026-11-08",
@@ -11,80 +11,81 @@
   "2026-11-17",
   "2026-11-18",
   "2026-11-19",
-  "2026-11-20"
+  "2026-11-20",
+  "2026-11-21"
  ],
  "all": {
-  "n": 626,
-  "won": 195,
-  "lost": 431,
-  "win_pct": 0.31150159744408945,
-  "expected": 179.84180347040436,
-  "brier_joint": 0.17832186889184978,
-  "brier_indep": 0.18168506499074344,
-  "fair_pnl_2": 105.48389033022404
+  "n": 635,
+  "won": 199,
+  "lost": 436,
+  "win_pct": 0.31338582677165355,
+  "expected": 182.34188347040435,
+  "brier_joint": 0.17789561764141412,
+  "brier_indep": 0.18142860373978176,
+  "fair_pnl_2": 105.645699697304
  },
  "by_size": {
   "3": {
-   "n": 208,
-   "won": 110,
+   "n": 211,
+   "won": 113,
    "lost": 98,
-   "win_pct": 0.5288461538461539,
-   "expected": 102.34101388133945,
-   "brier_joint": 0.23870581077207825,
-   "brier_indep": 0.24005757473301984,
-   "fair_pnl_2": 24.332401876497812
+   "win_pct": 0.5355450236966824,
+   "expected": 103.81539388133945,
+   "brier_joint": 0.23900123041228566,
+   "brier_indep": 0.24070635300594587,
+   "fair_pnl_2": 30.586489851718607
   },
   "5": {
-   "n": 209,
-   "won": 66,
-   "lost": 143,
-   "win_pct": 0.3157894736842105,
-   "expected": 57.32494,
-   "brier_joint": 0.21525045729952155,
-   "brier_indep": 0.22407672619056207,
-   "fair_pnl_2": 74.91640625648665
+   "n": 212,
+   "won": 67,
+   "lost": 145,
+   "win_pct": 0.3160377358490566,
+   "expected": 58.0988,
+   "brier_joint": 0.21471778226037735,
+   "brier_indep": 0.22374391089964604,
+   "fair_pnl_2": 74.82412764834581
   },
   "8": {
-   "n": 209,
+   "n": 212,
    "won": 19,
-   "lost": 190,
-   "win_pct": 0.09090909090909091,
-   "expected": 20.17584958906491,
-   "brier_joint": 0.08129825698615165,
-   "brier_indep": 0.08120018835363545,
-   "fair_pnl_2": 6.2350821972395885
+   "lost": 193,
+   "win_pct": 0.08962264150943396,
+   "expected": 20.427689589064908,
+   "brier_joint": 0.08025607427408346,
+   "brier_indep": 0.08011515933859377,
+   "fair_pnl_2": 0.23508219723958845
   }
  },
  "voids": 21,
  "legs": {
-  "n": 1474,
-  "won": 1078,
-  "expected": 1037.5848794212231
+  "n": 1494,
+  "won": 1093,
+  "expected": 1051.7569394212233
  },
  "bands": [
   {
    "band": "0\u201310%",
-   "n": 122,
-   "pred": 0.06137754337330582,
-   "actual": 0.06557377049180328
+   "n": 124,
+   "pred": 0.06146451848018799,
+   "actual": 0.06451612903225806
   },
   {
    "band": "10\u201325%",
-   "n": 168,
-   "pred": 0.15966636486619998,
-   "actual": 0.19047619047619047
+   "n": 171,
+   "pred": 0.16010274442995087,
+   "actual": 0.1871345029239766
   },
   {
    "band": "25\u201340%",
-   "n": 154,
-   "pred": 0.3283236242174867,
-   "actual": 0.35064935064935066
+   "n": 155,
+   "pred": 0.32838953631930934,
+   "actual": 0.3548387096774194
   },
   {
    "band": "40\u201360%",
-   "n": 169,
-   "pred": 0.5119535843304527,
-   "actual": 0.5621301775147929
+   "n": 172,
+   "pred": 0.5115961380921308,
+   "actual": 0.5697674418604651
   },
   {
    "band": "60\u2013100%",
@@ -31131,6 +31132,438 @@
      "p": 0.64832,
      "result": "WON",
      "value": 4
+    }
+   ]
+  },
+  {
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-1800Z.json",
+   "size": 3,
+   "pick": "A",
+   "family": "3E Game script",
+   "pJoint": 0.5211,
+   "pIndep": 0.5226647534881919,
+   "pLower": 0.4938336098849943,
+   "breakEven": 102,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "C. Murphy 1+ blocked shot",
+     "p": 0.83234,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "CAR +1.5 puck line",
+     "p": 0.80574,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "J. Slavin 1+ blocked shot",
+     "p": 0.7788,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-1800Z.json",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.50208,
+   "pIndep": 0.500672976178032,
+   "pLower": 0.4609845450485358,
+   "breakEven": 117,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "C. Murphy 1+ blocked shot",
+     "p": 0.83234,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "J. Slavin 1+ blocked shot",
+     "p": 0.7788,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "L. Draisaitl 2+ SOG",
+     "p": 0.77374,
+     "result": "WON",
+     "value": 4
+    }
+   ]
+  },
+  {
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-1800Z.json",
+   "size": 3,
+   "pick": "C",
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.4512,
+   "pIndep": 0.38364902409011997,
+   "pLower": 0.4238097219347661,
+   "breakEven": 136,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "L. Draisaitl 2+ SOG",
+     "p": 0.77374,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "L. Draisaitl 1+ point",
+     "p": 0.69818,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "C. McDavid 1+ point",
+     "p": 0.70814,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-1800Z.json",
+   "size": 5,
+   "pick": "A",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.23414,
+   "pIndep": 0.15650677595695967,
+   "pLower": 0.2108520977281403,
+   "breakEven": 374,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "C. McDavid 2+ SOG",
+     "p": 0.76316,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "C. McDavid 1+ point",
+     "p": 0.70814,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "L. Draisaitl 1+ point",
+     "p": 0.69818,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "E. Bouchard 1+ point",
+     "p": 0.62476,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "E. Bouchard 2+ SOG",
+     "p": 0.66028,
+     "result": "LOST",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-1800Z.json",
+   "size": 5,
+   "pick": "B",
+   "family": "5F Game script",
+   "pJoint": 0.33854,
+   "pIndep": 0.25327623499730073,
+   "pLower": 0.313111997284063,
+   "breakEven": 219,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "CAR +1.5 puck line",
+     "p": 0.80574,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "CAR team total over 2.5",
+     "p": 0.72782,
+     "result": "WON",
+     "value": 7
+    },
+    {
+     "text": "C. Murphy 1+ blocked shot",
+     "p": 0.83234,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "L. Draisaitl 2+ SOG",
+     "p": 0.77374,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "S. Aho 1+ point",
+     "p": 0.65064,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-1800Z.json",
+   "size": 5,
+   "pick": "C",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.20118,
+   "pIndep": 0.139937788882213,
+   "pLower": 0.1778920977281403,
+   "breakEven": 462,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "C. McDavid 2+ SOG",
+     "p": 0.76316,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "C. McDavid 1+ point",
+     "p": 0.70814,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "L. Draisaitl 1+ point",
+     "p": 0.69818,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "E. Bouchard 1+ point",
+     "p": 0.62476,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "Z. Hyman 2+ SOG",
+     "p": 0.59956,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-1800Z.json",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.1183,
+   "pIndep": 0.08380361913732888,
+   "pLower": 0.10497910383622855,
+   "breakEven": 853,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "CAR +1.5 puck line",
+     "p": 0.80574,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "CAR team total over 2.5",
+     "p": 0.72782,
+     "result": "WON",
+     "value": 7
+    },
+    {
+     "text": "J. Slavin 1+ blocked shot",
+     "p": 0.7788,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "S. Aho 1+ point",
+     "p": 0.65064,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "C. McDavid 2+ SOG",
+     "p": 0.76316,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "R. Shea 1+ blocked shot",
+     "p": 0.75226,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Walker 1+ blocked shot",
+     "p": 0.74962,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "N. Ehlers 2+ SOG",
+     "p": 0.64854,
+     "result": "LOST",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-1800Z.json",
+   "size": 8,
+   "pick": "B",
+   "family": "8D Multi-line production",
+   "pJoint": 0.07128,
+   "pIndep": 0.05694774635703354,
+   "pLower": 0.05795910383622854,
+   "breakEven": 1625,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "R. Shea 1+ blocked shot",
+     "p": 0.75226,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Walker 1+ blocked shot",
+     "p": 0.74962,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Ekholm 1+ blocked shot",
+     "p": 0.7243,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "A. Svechnikov 2+ SOG",
+     "p": 0.6919,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "A. Svechnikov 1+ point",
+     "p": 0.60462,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Aho 1+ point",
+     "p": 0.65064,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "E. Bouchard 1+ blocked shot",
+     "p": 0.7027,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Jarvis 2+ SOG",
+     "p": 0.67496,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020359,
+   "game": "EDM@CAR",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-1800Z.json",
+   "size": 8,
+   "pick": "C",
+   "family": "8D Multi-line production",
+   "pJoint": 0.06226,
+   "pIndep": 0.05751801001780773,
+   "pLower": 0.05068195177535315,
+   "breakEven": 1873,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "R. Shea 1+ blocked shot",
+     "p": 0.75226,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Walker 1+ blocked shot",
+     "p": 0.74962,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "M. Ekholm 1+ blocked shot",
+     "p": 0.7243,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "E. Bouchard 1+ blocked shot",
+     "p": 0.7027,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "A. Svechnikov 2+ SOG",
+     "p": 0.6919,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Jarvis 2+ SOG",
+     "p": 0.67496,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "E. Bouchard 2+ SOG",
+     "p": 0.66028,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "E. Bouchard 1+ point",
+     "p": 0.62476,
+     "result": "WON",
+     "value": 1
     }
    ]
   }

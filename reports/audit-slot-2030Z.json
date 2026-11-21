@@ -1,0 +1,467 @@
+{
+ "audited_at": "2026-11-21T22:04:50.437365+00:00",
+ "source": "slot-2030Z.json",
+ "model_version": "v20261106-224110",
+ "counts": {
+  "WON": 1,
+  "LOST": 0,
+  "PENDING": 8,
+  "VOID-REPRICE": 0
+ },
+ "by_size": {
+  "3": {
+   "n": 1,
+   "won": 1,
+   "expected_wins": 0.30888,
+   "hit_rate": 1.0,
+   "mean_p": 0.30888,
+   "brier": 0.47764685439999993,
+   "logloss": 1.1748024270261561
+  },
+  "5": null,
+  "8": null
+ },
+ "by_size_independence": {
+  "3": {
+   "n": 1,
+   "won": 1,
+   "expected_wins": 0.3060203728932,
+   "hit_rate": 1.0,
+   "mean_p": 0.3060203728932,
+   "brier": 0.4816077228392931,
+   "logloss": 1.1841036011636255
+  },
+  "5": null,
+  "8": null
+ },
+ "legs": {
+  "n": 34,
+  "won": 34,
+  "expected": 23.95054
+ },
+ "parlays": [
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "state": "LIVE",
+   "size": 3,
+   "pick": "A",
+   "family": "3E Game script",
+   "pJoint": 0.44634,
+   "pLower": 0.41894972193476615,
+   "pIndep": 0.44856880342176,
+   "breakEven": 139,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "I. Cole 1+ blocked shot",
+     "p": 0.78214,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "Z. Whitecloud 1+ blocked shot",
+     "p": 0.76208,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "CGY +1.5 puck line",
+     "p": 0.75212,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "state": "LIVE",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.43906,
+   "pLower": 0.41166972193476614,
+   "pIndep": 0.44008094895072,
+   "breakEven": 143,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "I. Cole 1+ blocked shot",
+     "p": 0.78214,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "Z. Whitecloud 1+ blocked shot",
+     "p": 0.76208,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "A. Vlasic 1+ blocked shot",
+     "p": 0.72968,
+     "result": "PENDING",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "state": "LIVE",
+   "size": 3,
+   "pick": "C",
+   "family": "3A Shot-volume structure",
+   "pJoint": 0.30888,
+   "pLower": 0.28316656811704966,
+   "pIndep": 0.3060203728932,
+   "breakEven": 253,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Backlund 2+ SOG",
+     "p": 0.6754,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Coronato 2+ SOG",
+     "p": 0.6726,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "P. Kane 2+ SOG",
+     "p": 0.67438,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "state": "LIVE",
+   "size": 5,
+   "pick": "A",
+   "family": "5D High-tempo matchup",
+   "pJoint": 0.13232,
+   "pLower": 0.11231309306170374,
+   "pIndep": 0.12707681359291212,
+   "breakEven": 790,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "M. Backlund 2+ SOG",
+     "p": 0.6754,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Coronato 2+ SOG",
+     "p": 0.6726,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "P. Kane 2+ SOG",
+     "p": 0.67438,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Farabee 2+ SOG",
+     "p": 0.65212,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "F. Nazar 2+ SOG",
+     "p": 0.63346,
+     "result": "PENDING",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "state": "LIVE",
+   "size": 5,
+   "pick": "B",
+   "family": "5F Game script",
+   "pJoint": 0.25952,
+   "pLower": 0.23623209772814027,
+   "pIndep": 0.2198156473284191,
+   "breakEven": 323,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "CGY +1.5 puck line",
+     "p": 0.75212,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "CHI team total under 3.5",
+     "p": 0.66236,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "I. Cole 1+ blocked shot",
+     "p": 0.78214,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "Z. Whitecloud 1+ blocked shot",
+     "p": 0.76208,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "A. Vlasic 1+ blocked shot",
+     "p": 0.72968,
+     "result": "PENDING",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "state": "LIVE",
+   "size": 5,
+   "pick": "C",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.12776,
+   "pLower": 0.10775309306170376,
+   "pIndep": 0.08949553983239038,
+   "breakEven": 828,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "M. Backlund 2+ SOG",
+     "p": 0.6754,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Coronato 2+ SOG",
+     "p": 0.6726,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "J. Farabee 2+ SOG",
+     "p": 0.65212,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "J. Farabee 1+ point",
+     "p": 0.54978,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "M. Coronato 1+ point",
+     "p": 0.56376,
+     "result": "PENDING",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "state": "LIVE",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.07822,
+   "pLower": 0.06489910383622854,
+   "pIndep": 0.0654393350521766,
+   "breakEven": 1441,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "CGY +1.5 puck line",
+     "p": 0.75212,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "CHI team total under 3.5",
+     "p": 0.66236,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "A. Vlasic 1+ blocked shot",
+     "p": 0.72968,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "S. Rinzel 1+ blocked shot",
+     "p": 0.72646,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Middleton 1+ blocked shot",
+     "p": 0.7166,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Hanley 1+ blocked shot",
+     "p": 0.70696,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "A. Levshunov 1+ blocked shot",
+     "p": 0.69514,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "Y. Kuznetsov 1+ blocked shot",
+     "p": 0.699,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "state": "LIVE",
+   "size": 8,
+   "pick": "B",
+   "family": "8D Multi-line production",
+   "pJoint": 0.05574,
+   "pLower": 0.04416195177535315,
+   "pIndep": 0.052705234932732666,
+   "breakEven": 2164,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "S. Rinzel 1+ blocked shot",
+     "p": 0.72646,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Middleton 1+ blocked shot",
+     "p": 0.7166,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Hanley 1+ blocked shot",
+     "p": 0.70696,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "Y. Kuznetsov 1+ blocked shot",
+     "p": 0.699,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "A. Levshunov 1+ blocked shot",
+     "p": 0.69514,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "P. Kane 2+ SOG",
+     "p": 0.67438,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Nemec 1+ blocked shot",
+     "p": 0.67452,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "J. Farabee 2+ SOG",
+     "p": 0.65212,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "state": "LIVE",
+   "size": 8,
+   "pick": "C",
+   "family": "8D Multi-line production",
+   "pJoint": 0.05136,
+   "pLower": 0.03978195177535315,
+   "pIndep": 0.04997233441507544,
+   "breakEven": 2414,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "S. Rinzel 1+ blocked shot",
+     "p": 0.72646,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Middleton 1+ blocked shot",
+     "p": 0.7166,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Hanley 1+ blocked shot",
+     "p": 0.70696,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "Y. Kuznetsov 1+ blocked shot",
+     "p": 0.699,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "A. Levshunov 1+ blocked shot",
+     "p": 0.69514,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "S. Nemec 1+ blocked shot",
+     "p": 0.67452,
+     "result": "PENDING",
+     "value": 0
+    },
+    {
+     "text": "W. Kaiser 1+ blocked shot",
+     "p": 0.6619,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "F. Nazar 2+ SOG",
+     "p": 0.63346,
+     "result": "PENDING",
+     "value": 1
+    }
+   ]
+  }
+ ]
+}

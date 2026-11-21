@@ -1,49 +1,81 @@
 {
- "audited_at": "2026-11-21T19:34:37.369941+00:00",
+ "audited_at": "2026-11-21T22:04:50.124152+00:00",
  "source": "slot-1800Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 2,
-  "LOST": 0,
-  "PENDING": 7,
+  "WON": 4,
+  "LOST": 5,
+  "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
   "3": {
-   "n": 2,
-   "won": 2,
-   "expected_wins": 0.9532799999999999,
+   "n": 3,
+   "won": 3,
+   "expected_wins": 1.47438,
    "hit_rate": 1.0,
-   "mean_p": 0.47663999999999995,
-   "brier": 0.2745528832,
-   "logloss": 0.7424201941178786
+   "mean_p": 0.49146,
+   "brier": 0.2594836588,
+   "logloss": 0.7122179017675752
   },
-  "5": null,
-  "8": null
+  "5": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 0.77386,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.2579533333333333,
+   "brier": 0.17760808786666663,
+   "logloss": 0.5248295196627889
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.25184,
+   "hit_rate": 0.0,
+   "mean_p": 0.08394666666666667,
+   "brier": 0.007650678666666667,
+   "logloss": 0.08804465191383072
+  }
  },
  "by_size_independence": {
   "3": {
-   "n": 2,
-   "won": 2,
-   "expected_wins": 0.884322000268152,
+   "n": 3,
+   "won": 3,
+   "expected_wins": 1.4069867537563439,
    "hit_rate": 1.0,
-   "mean_p": 0.442161000134076,
-   "brier": 0.31460800111198284,
-   "logloss": 0.8249146386490016
+   "mean_p": 0.46899558458544793,
+   "brier": 0.28568831326215144,
+   "logloss": 0.7662147681541988
   },
-  "5": null,
-  "8": null
+  "5": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 0.5497207998364734,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.18324026661215778,
+   "brier": 0.20055777896583038,
+   "logloss": 0.5647428373187858
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.19826937551217017,
+   "hit_rate": 0.0,
+   "mean_p": 0.06608979183739006,
+   "brier": 0.0045248046240227114,
+   "logloss": 0.06846553402069724
+  }
  },
  "legs": {
-  "n": 23,
-  "won": 23,
-  "expected": 16.91006
+  "n": 48,
+  "won": 39,
+  "expected": 34.62878
  },
  "parlays": [
   {
    "game_id": 2026020359,
    "game": "EDM@CAR",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -51,19 +83,19 @@
    "pLower": 0.4938336098849943,
    "pIndep": 0.5226647534881919,
    "breakEven": 102,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "C. Murphy 1+ blocked shot",
      "p": 0.83234,
      "result": "WON",
-     "value": 3
+     "value": 5
     },
     {
      "text": "CAR +1.5 puck line",
      "p": 0.80574,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "J. Slavin 1+ blocked shot",
@@ -76,7 +108,7 @@
   {
    "game_id": 2026020359,
    "game": "EDM@CAR",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -90,7 +122,7 @@
      "text": "C. Murphy 1+ blocked shot",
      "p": 0.83234,
      "result": "WON",
-     "value": 3
+     "value": 5
     },
     {
      "text": "J. Slavin 1+ blocked shot",
@@ -102,14 +134,14 @@
      "text": "L. Draisaitl 2+ SOG",
      "p": 0.77374,
      "result": "WON",
-     "value": 2
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020359,
    "game": "EDM@CAR",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3B Team offensive scenario",
@@ -123,26 +155,26 @@
      "text": "L. Draisaitl 2+ SOG",
      "p": 0.77374,
      "result": "WON",
-     "value": 2
+     "value": 4
     },
     {
      "text": "L. Draisaitl 1+ point",
      "p": 0.69818,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "C. McDavid 1+ point",
      "p": 0.70814,
      "result": "WON",
-     "value": 1
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020359,
    "game": "EDM@CAR",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
@@ -150,25 +182,25 @@
    "pLower": 0.2108520977281403,
    "pIndep": 0.15650677595695967,
    "breakEven": 374,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. McDavid 2+ SOG",
      "p": 0.76316,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "C. McDavid 1+ point",
      "p": 0.70814,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "L. Draisaitl 1+ point",
      "p": 0.69818,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "E. Bouchard 1+ point",
@@ -179,15 +211,15 @@
     {
      "text": "E. Bouchard 2+ SOG",
      "p": 0.66028,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020359,
    "game": "EDM@CAR",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -195,44 +227,44 @@
    "pLower": 0.313111997284063,
    "pIndep": 0.25327623499730073,
    "breakEven": 219,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "CAR +1.5 puck line",
      "p": 0.80574,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "CAR team total over 2.5",
      "p": 0.72782,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 7
     },
     {
      "text": "C. Murphy 1+ blocked shot",
      "p": 0.83234,
      "result": "WON",
-     "value": 3
+     "value": 5
     },
     {
      "text": "L. Draisaitl 2+ SOG",
      "p": 0.77374,
      "result": "WON",
-     "value": 2
+     "value": 4
     },
     {
      "text": "S. Aho 1+ point",
      "p": 0.65064,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020359,
    "game": "EDM@CAR",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5A Five-on-five offensive environment",
@@ -240,25 +272,25 @@
    "pLower": 0.1778920977281403,
    "pIndep": 0.139937788882213,
    "breakEven": 462,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. McDavid 2+ SOG",
      "p": 0.76316,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "C. McDavid 1+ point",
      "p": 0.70814,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "L. Draisaitl 1+ point",
      "p": 0.69818,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "E. Bouchard 1+ point",
@@ -269,7 +301,7 @@
     {
      "text": "Z. Hyman 2+ SOG",
      "p": 0.59956,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -277,7 +309,7 @@
   {
    "game_id": 2026020359,
    "game": "EDM@CAR",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -285,19 +317,19 @@
    "pLower": 0.10497910383622855,
    "pIndep": 0.08380361913732888,
    "breakEven": 853,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "CAR +1.5 puck line",
      "p": 0.80574,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "CAR team total over 2.5",
      "p": 0.72782,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 7
     },
     {
      "text": "J. Slavin 1+ blocked shot",
@@ -308,13 +340,13 @@
     {
      "text": "S. Aho 1+ point",
      "p": 0.65064,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "C. McDavid 2+ SOG",
      "p": 0.76316,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -326,13 +358,13 @@
     {
      "text": "S. Walker 1+ blocked shot",
      "p": 0.74962,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "N. Ehlers 2+ SOG",
      "p": 0.64854,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     }
    ]
@@ -340,7 +372,7 @@
   {
    "game_id": 2026020359,
    "game": "EDM@CAR",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8D Multi-line production",
@@ -348,7 +380,7 @@
    "pLower": 0.05795910383622854,
    "pIndep": 0.05694774635703354,
    "breakEven": 1625,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "R. Shea 1+ blocked shot",
@@ -359,51 +391,51 @@
     {
      "text": "S. Walker 1+ blocked shot",
      "p": 0.74962,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Ekholm 1+ blocked shot",
      "p": 0.7243,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "A. Svechnikov 2+ SOG",
      "p": 0.6919,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "A. Svechnikov 1+ point",
      "p": 0.60462,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "S. Aho 1+ point",
      "p": 0.65064,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "E. Bouchard 1+ blocked shot",
      "p": 0.7027,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "S. Jarvis 2+ SOG",
      "p": 0.67496,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020359,
    "game": "EDM@CAR",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8D Multi-line production",
@@ -411,7 +443,7 @@
    "pLower": 0.05068195177535315,
    "pIndep": 0.05751801001780773,
    "breakEven": 1873,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "R. Shea 1+ blocked shot",
@@ -422,38 +454,38 @@
     {
      "text": "S. Walker 1+ blocked shot",
      "p": 0.74962,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Ekholm 1+ blocked shot",
      "p": 0.7243,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "E. Bouchard 1+ blocked shot",
      "p": 0.7027,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "A. Svechnikov 2+ SOG",
      "p": 0.6919,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "S. Jarvis 2+ SOG",
      "p": 0.67496,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "E. Bouchard 2+ SOG",
      "p": 0.66028,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "E. Bouchard 1+ point",
