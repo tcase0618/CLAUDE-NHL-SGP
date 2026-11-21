@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20T10:49:59.589017+00:00",
+ "updated_at": "2026-11-21T10:48:51.249775+00:00",
  "nights": [
   "2026-11-07",
   "2026-11-08",
@@ -26042,7 +26042,7 @@
      "text": "A. Kempe 2+ SOG",
      "p": 0.75936,
      "result": "WON",
-     "value": 3
+     "value": 2
     },
     {
      "text": "A. Laferriere 2+ SOG",
@@ -26076,7 +26076,7 @@
      "text": "A. Kempe 2+ SOG",
      "p": 0.75936,
      "result": "WON",
-     "value": 3
+     "value": 2
     },
     {
      "text": "A. Laferriere 2+ SOG",
@@ -26238,7 +26238,7 @@
      "text": "A. Kempe 2+ SOG",
      "p": 0.75936,
      "result": "WON",
-     "value": 3
+     "value": 2
     },
     {
      "text": "A. Matthews 1+ point",
@@ -27114,7 +27114,7 @@
      "text": "R. Shea 1+ blocked shot",
      "p": 0.73592,
      "result": "WON",
-     "value": 1
+     "value": 2
     }
    ]
   },
@@ -27178,7 +27178,7 @@
      "text": "Z. Hyman 2+ SOG",
      "p": 0.63088,
      "result": "LOST",
-     "value": 1
+     "value": 0
     }
    ]
   },
@@ -27212,13 +27212,13 @@
      "text": "R. Shea 1+ blocked shot",
      "p": 0.73592,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "E. Cernak 1+ blocked shot",
      "p": 0.73396,
      "result": "WON",
-     "value": 3
+     "value": 2
     },
     {
      "text": "J. Moser 1+ blocked shot",
@@ -29758,7 +29758,7 @@
      "text": "S. Nemec 1+ blocked shot",
      "p": 0.75474,
      "result": "WON",
-     "value": 3
+     "value": 1
     },
     {
      "text": "Q. Hughes 2+ SOG",
@@ -29822,7 +29822,7 @@
      "text": "S. Nemec 1+ blocked shot",
      "p": 0.75474,
      "result": "WON",
-     "value": 3
+     "value": 1
     },
     {
      "text": "Q. Hughes 2+ SOG",
@@ -30362,7 +30362,7 @@
      "text": "B. McMann 2+ SOG",
      "p": 0.70664,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "B. Montour 2+ SOG",
@@ -30534,7 +30534,7 @@
      "text": "B. McMann 2+ SOG",
      "p": 0.70664,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "B. Montour 2+ SOG",
@@ -30628,7 +30628,7 @@
      "text": "B. McMann 2+ SOG",
      "p": 0.70664,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "B. Montour 1+ blocked shot",
