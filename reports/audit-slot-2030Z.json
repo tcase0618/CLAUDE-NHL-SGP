@@ -1,11 +1,11 @@
 {
- "audited_at": "2026-11-21T22:04:50.437365+00:00",
+ "audited_at": "2026-11-21T23:05:54.668733+00:00",
  "source": "slot-2030Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 1,
+  "WON": 2,
   "LOST": 0,
-  "PENDING": 8,
+  "PENDING": 7,
   "VOID-REPRICE": 0
  },
  "by_size": {
@@ -19,7 +19,15 @@
    "logloss": 1.1748024270261561
   },
   "5": null,
-  "8": null
+  "8": {
+   "n": 1,
+   "won": 1,
+   "expected_wins": 0.05574,
+   "hit_rate": 1.0,
+   "mean_p": 0.05574,
+   "brier": 0.8916269475999999,
+   "logloss": 2.887057256928335
+  }
  },
  "by_size_independence": {
   "3": {
@@ -32,18 +40,26 @@
    "logloss": 1.1841036011636255
   },
   "5": null,
-  "8": null
+  "8": {
+   "n": 1,
+   "won": 1,
+   "expected_wins": 0.052705234932732666,
+   "hit_rate": 1.0,
+   "mean_p": 0.052705234932732666,
+   "brier": 0.8973673719238491,
+   "logloss": 2.9430404937812162
+  }
  },
  "legs": {
-  "n": 34,
-  "won": 34,
-  "expected": 23.95054
+  "n": 36,
+  "won": 36,
+  "expected": 25.29958
  },
  "parlays": [
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "LIVE",
+   "state": "CRIT",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -76,7 +92,7 @@
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "LIVE",
+   "state": "CRIT",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -109,7 +125,7 @@
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "LIVE",
+   "state": "CRIT",
    "size": 3,
    "pick": "C",
    "family": "3A Shot-volume structure",
@@ -129,20 +145,20 @@
      "text": "M. Coronato 2+ SOG",
      "p": 0.6726,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "P. Kane 2+ SOG",
      "p": 0.67438,
      "result": "WON",
-     "value": 2
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "LIVE",
+   "state": "CRIT",
    "size": 5,
    "pick": "A",
    "family": "5D High-tempo matchup",
@@ -162,19 +178,19 @@
      "text": "M. Coronato 2+ SOG",
      "p": 0.6726,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "P. Kane 2+ SOG",
      "p": 0.67438,
      "result": "WON",
-     "value": 2
+     "value": 4
     },
     {
      "text": "J. Farabee 2+ SOG",
      "p": 0.65212,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "F. Nazar 2+ SOG",
@@ -187,7 +203,7 @@
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "LIVE",
+   "state": "CRIT",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -232,7 +248,7 @@
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "LIVE",
+   "state": "CRIT",
    "size": 5,
    "pick": "C",
    "family": "5A Five-on-five offensive environment",
@@ -252,13 +268,13 @@
      "text": "M. Coronato 2+ SOG",
      "p": 0.6726,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "J. Farabee 2+ SOG",
      "p": 0.65212,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "J. Farabee 1+ point",
@@ -277,7 +293,7 @@
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "LIVE",
+   "state": "CRIT",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -327,7 +343,7 @@
      "text": "A. Levshunov 1+ blocked shot",
      "p": 0.69514,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "Y. Kuznetsov 1+ blocked shot",
@@ -340,7 +356,7 @@
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "LIVE",
+   "state": "CRIT",
    "size": 8,
    "pick": "B",
    "family": "8D Multi-line production",
@@ -348,7 +364,7 @@
    "pLower": 0.04416195177535315,
    "pIndep": 0.052705234932732666,
    "breakEven": 2164,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "S. Rinzel 1+ blocked shot",
@@ -378,32 +394,32 @@
      "text": "A. Levshunov 1+ blocked shot",
      "p": 0.69514,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "P. Kane 2+ SOG",
      "p": 0.67438,
      "result": "WON",
-     "value": 2
+     "value": 4
     },
     {
      "text": "S. Nemec 1+ blocked shot",
      "p": 0.67452,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. Farabee 2+ SOG",
      "p": 0.65212,
      "result": "WON",
-     "value": 3
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "LIVE",
+   "state": "CRIT",
    "size": 8,
    "pick": "C",
    "family": "8D Multi-line production",
@@ -441,13 +457,13 @@
      "text": "A. Levshunov 1+ blocked shot",
      "p": 0.69514,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "S. Nemec 1+ blocked shot",
      "p": 0.67452,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "W. Kaiser 1+ blocked shot",
