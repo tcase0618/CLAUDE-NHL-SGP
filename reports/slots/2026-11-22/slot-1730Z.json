@@ -1,0 +1,652 @@
+{
+ "generated_at": "2026-11-22T16:32:51.006Z",
+ "model_version": "v20261106-224110",
+ "data_through": "2026-11-22 03:00:00+00:00",
+ "sims": 50000,
+ "games": [
+  {
+   "game_id": 2026020373,
+   "start_utc": "2026-11-22 17:30:00+00:00",
+   "away": "CAR",
+   "home": "NYR",
+   "sizes": {
+    "3": {
+     "evaluated": 14209,
+     "verified": 98,
+     "finalists": 98,
+     "exposureCap": 2,
+     "picks": [
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "M. Pettersson 1+ blocked shot",
+         "p": 0.8143,
+         "player_id": 8477969,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "CAR +1.5 puck line",
+         "p": 0.80694,
+         "player_id": "TEAM:CAR",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "B. Schneider 1+ blocked shot",
+         "p": 0.79488,
+         "player_id": 8482073,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.53238,
+       "pLower": 0.5051136098849942,
+       "verified": true,
+       "pIndep": 0.530605706693616,
+       "lift": 1.0033439016655894,
+       "breakEven": -102,
+       "mcHits": 26619,
+       "scenario": {
+        "n": 26619,
+        "shots": 55.74450580412487,
+        "goals": 6.025658364326233,
+        "ppg": 1.331642811525602,
+        "margin": -1.6940906871031969,
+        "pace": 1.0006737496771458
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "M. Pettersson 1+ blocked shot",
+         "p": 0.8143,
+         "player_id": 8477969,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Schneider 1+ blocked shot",
+         "p": 0.79488,
+         "player_id": 8482073,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "S. Walker 1+ blocked shot",
+         "p": 0.75958,
+         "player_id": 8480336,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.494,
+       "pLower": 0.45290454504853583,
+       "verified": true,
+       "pIndep": 0.4928070754917359,
+       "lift": 1.0024206724448381,
+       "breakEven": 121,
+       "mcHits": 24700,
+       "scenario": {
+        "n": 24700,
+        "shots": 55.91655870445344,
+        "goals": 6.081578947368421,
+        "ppg": 1.3373279352226721,
+        "margin": -0.8178542510121457,
+        "pace": 1.001093543229798
+       }
+      },
+      {
+       "family": "3A Shot-volume structure",
+       "legs": [
+        {
+         "text": "A. Svechnikov 2+ SOG",
+         "p": 0.68758,
+         "player_id": 8480830,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Aho 2+ SOG",
+         "p": 0.6705,
+         "player_id": 8478427,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "N. Ehlers 2+ SOG",
+         "p": 0.65922,
+         "player_id": 8477940,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.31102,
+       "pLower": 0.2853065681170497,
+       "verified": true,
+       "pIndep": 0.30489065497088,
+       "lift": 1.0201034204531634,
+       "breakEven": 251,
+       "mcHits": 15551,
+       "scenario": {
+        "n": 15551,
+        "shots": 58.83177930679699,
+        "goals": 6.407819432833901,
+        "ppg": 1.4554691016654877,
+        "margin": -1.1354896791203137,
+        "pace": 1.008990816924819
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 18348,
+     "verified": 120,
+     "finalists": 120,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "A. Svechnikov 2+ SOG",
+         "p": 0.68758,
+         "player_id": 8480830,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Aho 2+ SOG",
+         "p": 0.6705,
+         "player_id": 8478427,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "N. Ehlers 2+ SOG",
+         "p": 0.65922,
+         "player_id": 8477940,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Aho 1+ point",
+         "p": 0.60506,
+         "player_id": 8478427,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Jarvis 2+ SOG",
+         "p": 0.65012,
+         "player_id": 8482093,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.13844,
+       "pLower": 0.11843309306170376,
+       "verified": true,
+       "pIndep": 0.12003005307787987,
+       "lift": 1.153377812056578,
+       "breakEven": 744,
+       "mcHits": 6922,
+       "scenario": {
+        "n": 6922,
+        "shots": 60.51300202253684,
+        "goals": 7.079167870557642,
+        "ppg": 1.669026292978908,
+        "margin": -1.8303958393527882,
+        "pace": 1.012287966487243
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "M. Pettersson 1+ blocked shot",
+         "p": 0.8143,
+         "player_id": 8477969,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "CAR +1.5 puck line",
+         "p": 0.80694,
+         "player_id": "TEAM:CAR",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "CAR team total over 2.5",
+         "p": 0.68768,
+         "player_id": "TEAM:CAR",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "B. Schneider 1+ blocked shot",
+         "p": 0.79488,
+         "player_id": 8482073,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "V. Gavrikov 1+ blocked shot",
+         "p": 0.78606,
+         "player_id": 8478882,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.34074,
+       "pLower": 0.315311997284063,
+       "verified": true,
+       "pIndep": 0.29067691488783814,
+       "lift": 1.172229312160821,
+       "breakEven": 217,
+       "mcHits": 17037,
+       "scenario": {
+        "n": 17037,
+        "shots": 56.92439983565182,
+        "goals": 6.785995186946058,
+        "ppg": 1.4972706462405354,
+        "margin": -2.0898632388331277,
+        "pace": 1.003299678145856
+       }
+      },
+      {
+       "family": "5D High-tempo matchup",
+       "legs": [
+        {
+         "text": "A. Svechnikov 2+ SOG",
+         "p": 0.68758,
+         "player_id": 8480830,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Aho 2+ SOG",
+         "p": 0.6705,
+         "player_id": 8478427,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "N. Ehlers 2+ SOG",
+         "p": 0.65922,
+         "player_id": 8477940,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Jarvis 2+ SOG",
+         "p": 0.65012,
+         "player_id": 8482093,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Zibanejad 2+ SOG",
+         "p": 0.61698,
+         "player_id": 8476459,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.12692,
+       "pLower": 0.10691309306170375,
+       "verified": true,
+       "pIndep": 0.12339184939378335,
+       "lift": 1.0285930604294387,
+       "breakEven": 835,
+       "mcHits": 6346,
+       "scenario": {
+        "n": 6346,
+        "shots": 61.1769618657422,
+        "goals": 6.689725811534825,
+        "ppg": 1.561771194453199,
+        "margin": -1.1161361487551213,
+        "pace": 1.0147403303077083
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 12815,
+     "verified": 96,
+     "finalists": 96,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "CAR +1.5 puck line",
+         "p": 0.80694,
+         "player_id": "TEAM:CAR",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "CAR team total over 2.5",
+         "p": 0.68768,
+         "player_id": "TEAM:CAR",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "V. Gavrikov 1+ blocked shot",
+         "p": 0.78606,
+         "player_id": 8478882,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "S. Walker 1+ blocked shot",
+         "p": 0.75958,
+         "player_id": 8480336,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Fox 1+ blocked shot",
+         "p": 0.73884,
+         "player_id": 8479323,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "S. Aho 1+ point",
+         "p": 0.60506,
+         "player_id": 8478427,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Slavin 1+ blocked shot",
+         "p": 0.73396,
+         "player_id": 8476958,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Jarvis 2+ SOG",
+         "p": 0.65012,
+         "player_id": 8482093,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.10466,
+       "pLower": 0.09133910383622855,
+       "verified": true,
+       "pIndep": 0.07000885589323722,
+       "lift": 1.4949537264200607,
+       "breakEven": 995,
+       "mcHits": 5233,
+       "scenario": {
+        "n": 5233,
+        "shots": 58.62946684502197,
+        "goals": 7.1763806611886105,
+        "ppg": 1.646665392700172,
+        "margin": -2.372635199694248,
+        "pace": 1.0079263511361025
+       }
+      },
+      {
+       "family": "8D Multi-line production",
+       "legs": [
+        {
+         "text": "V. Gavrikov 1+ blocked shot",
+         "p": 0.78606,
+         "player_id": 8478882,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "S. Walker 1+ blocked shot",
+         "p": 0.75958,
+         "player_id": 8480336,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Fox 1+ blocked shot",
+         "p": 0.73884,
+         "player_id": 8479323,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Slavin 1+ blocked shot",
+         "p": 0.73396,
+         "player_id": 8476958,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "K. Miller 1+ blocked shot",
+         "p": 0.66986,
+         "player_id": 8480817,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Nikishin 1+ blocked shot",
+         "p": 0.65232,
+         "player_id": 8482100,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Blake 2+ SOG",
+         "p": 0.63078,
+         "player_id": 8482809,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "E. Tolvanen 1+ blocked shot",
+         "p": 0.6058,
+         "player_id": 8480009,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.05646,
+       "pLower": 0.04488195177535315,
+       "verified": true,
+       "pIndep": 0.05538835484865226,
+       "lift": 1.019347842236441,
+       "breakEven": 2128,
+       "mcHits": 2823,
+       "scenario": {
+        "n": 2823,
+        "shots": 58.16117605384343,
+        "goals": 6.349982288345731,
+        "ppg": 1.4002833864682962,
+        "margin": -1.0145235565001771,
+        "pace": 1.0052958374491323
+       }
+      },
+      {
+       "family": "8F Cross-team high-event scenario",
+       "legs": [
+        {
+         "text": "M. Zibanejad 2+ SOG",
+         "p": 0.61698,
+         "player_id": 8476459,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Zibanejad 1+ point",
+         "p": 0.6085,
+         "player_id": 8476459,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Blake 2+ SOG",
+         "p": 0.63078,
+         "player_id": 8482809,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Miller 2+ SOG",
+         "p": 0.6133,
+         "player_id": 8476468,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "S. Aho 1+ point",
+         "p": 0.60506,
+         "player_id": 8478427,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "L. Stankoven 2+ SOG",
+         "p": 0.60712,
+         "player_id": 8482702,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Fox 2+ SOG",
+         "p": 0.58728,
+         "player_id": 8479323,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Lafrenière 2+ SOG",
+         "p": 0.5971,
+         "player_id": 8482109,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.02422,
+       "pLower": 0.01262315719088618,
+       "verified": true,
+       "pIndep": 0.018455997053742564,
+       "lift": 1.3123105692677055,
+       "breakEven": 7822,
+       "mcHits": 1211,
+       "scenario": {
+        "n": 1211,
+        "shots": 64.11725846407927,
+        "goals": 7.993393889347646,
+        "ppg": 1.912469033856317,
+        "margin": -0.6507018992568125,
+        "pace": 1.0216924785386423
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
