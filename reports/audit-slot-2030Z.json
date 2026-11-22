@@ -1,65 +1,81 @@
 {
- "audited_at": "2026-11-21T23:05:54.668733+00:00",
+ "audited_at": "2026-11-22T01:04:32.148669+00:00",
  "source": "slot-2030Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 2,
-  "LOST": 0,
-  "PENDING": 7,
+  "WON": 5,
+  "LOST": 4,
+  "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
   "3": {
-   "n": 1,
-   "won": 1,
-   "expected_wins": 0.30888,
-   "hit_rate": 1.0,
-   "mean_p": 0.30888,
-   "brier": 0.47764685439999993,
-   "logloss": 1.1748024270261561
+   "n": 3,
+   "won": 2,
+   "expected_wins": 1.19428,
+   "hit_rate": 0.6666666666666666,
+   "mean_p": 0.39809333333333335,
+   "brier": 0.3256533112,
+   "logloss": 0.8532060145426152
   },
-  "5": null,
-  "8": {
-   "n": 1,
+  "5": {
+   "n": 3,
    "won": 1,
-   "expected_wins": 0.05574,
-   "hit_rate": 1.0,
-   "mean_p": 0.05574,
-   "brier": 0.8916269475999999,
-   "logloss": 2.887057256928335
+   "expected_wins": 0.5196,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.1732,
+   "brier": 0.2788472768,
+   "logloss": 0.8198931219025489
+  },
+  "8": {
+   "n": 3,
+   "won": 2,
+   "expected_wins": 0.18531999999999998,
+   "hit_rate": 0.6666666666666666,
+   "mean_p": 0.061773333333333326,
+   "brier": 0.5992210552,
+   "logloss": 1.9791338573800932
   }
  },
  "by_size_independence": {
   "3": {
-   "n": 1,
-   "won": 1,
-   "expected_wins": 0.3060203728932,
-   "hit_rate": 1.0,
-   "mean_p": 0.3060203728932,
-   "brier": 0.4816077228392931,
-   "logloss": 1.1841036011636255
+   "n": 3,
+   "won": 2,
+   "expected_wins": 1.19467012526568,
+   "hit_rate": 0.6666666666666666,
+   "mean_p": 0.39822337508856,
+   "brier": 0.3264517763427896,
+   "logloss": 0.8552532866532152
   },
-  "5": null,
-  "8": {
-   "n": 1,
+  "5": {
+   "n": 3,
    "won": 1,
-   "expected_wins": 0.052705234932732666,
-   "hit_rate": 1.0,
-   "mean_p": 0.052705234932732666,
-   "brier": 0.8973673719238491,
-   "logloss": 2.9430404937812162
+   "expected_wins": 0.4363880007537216,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.14546266691790719,
+   "brier": 0.2727744199424688,
+   "logloss": 0.8016483542669128
+  },
+  "8": {
+   "n": 3,
+   "won": 2,
+   "expected_wins": 0.1681169043999847,
+   "hit_rate": 0.6666666666666666,
+   "mean_p": 0.05603896813332823,
+   "brier": 0.6014007479575538,
+   "logloss": 2.002334989782842
   }
  },
  "legs": {
-  "n": 36,
-  "won": 36,
-  "expected": 25.29958
+  "n": 48,
+  "won": 41,
+  "expected": 33.45016
  },
  "parlays": [
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -67,7 +83,7 @@
    "pLower": 0.41894972193476615,
    "pIndep": 0.44856880342176,
    "breakEven": 139,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "I. Cole 1+ blocked shot",
@@ -79,20 +95,20 @@
      "text": "Z. Whitecloud 1+ blocked shot",
      "p": 0.76208,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "CGY +1.5 puck line",
      "p": 0.75212,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": -1
     }
    ]
   },
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -100,7 +116,7 @@
    "pLower": 0.41166972193476614,
    "pIndep": 0.44008094895072,
    "breakEven": 143,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "I. Cole 1+ blocked shot",
@@ -112,12 +128,12 @@
      "text": "Z. Whitecloud 1+ blocked shot",
      "p": 0.76208,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "A. Vlasic 1+ blocked shot",
      "p": 0.72968,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -125,7 +141,7 @@
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3A Shot-volume structure",
@@ -151,14 +167,14 @@
      "text": "P. Kane 2+ SOG",
      "p": 0.67438,
      "result": "WON",
-     "value": 4
+     "value": 7
     }
    ]
   },
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5D High-tempo matchup",
@@ -166,7 +182,7 @@
    "pLower": 0.11231309306170374,
    "pIndep": 0.12707681359291212,
    "breakEven": 790,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "M. Backlund 2+ SOG",
@@ -184,26 +200,26 @@
      "text": "P. Kane 2+ SOG",
      "p": 0.67438,
      "result": "WON",
-     "value": 4
+     "value": 7
     },
     {
      "text": "J. Farabee 2+ SOG",
      "p": 0.65212,
      "result": "WON",
-     "value": 4
+     "value": 5
     },
     {
      "text": "F. Nazar 2+ SOG",
      "p": 0.63346,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -211,19 +227,19 @@
    "pLower": 0.23623209772814027,
    "pIndep": 0.2198156473284191,
    "breakEven": 323,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "CGY +1.5 puck line",
      "p": 0.75212,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": -1
     },
     {
      "text": "CHI team total under 3.5",
      "p": 0.66236,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 4
     },
     {
      "text": "I. Cole 1+ blocked shot",
@@ -235,12 +251,12 @@
      "text": "Z. Whitecloud 1+ blocked shot",
      "p": 0.76208,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "A. Vlasic 1+ blocked shot",
      "p": 0.72968,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -248,7 +264,7 @@
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5A Five-on-five offensive environment",
@@ -256,7 +272,7 @@
    "pLower": 0.10775309306170376,
    "pIndep": 0.08949553983239038,
    "breakEven": 828,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Backlund 2+ SOG",
@@ -274,18 +290,18 @@
      "text": "J. Farabee 2+ SOG",
      "p": 0.65212,
      "result": "WON",
-     "value": 4
+     "value": 5
     },
     {
      "text": "J. Farabee 1+ point",
      "p": 0.54978,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "M. Coronato 1+ point",
      "p": 0.56376,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -293,7 +309,7 @@
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -301,37 +317,37 @@
    "pLower": 0.06489910383622854,
    "pIndep": 0.0654393350521766,
    "breakEven": 1441,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "CGY +1.5 puck line",
      "p": 0.75212,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": -1
     },
     {
      "text": "CHI team total under 3.5",
      "p": 0.66236,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 4
     },
     {
      "text": "A. Vlasic 1+ blocked shot",
      "p": 0.72968,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "S. Rinzel 1+ blocked shot",
      "p": 0.72646,
      "result": "WON",
-     "value": 1
+     "value": 3
     },
     {
      "text": "J. Middleton 1+ blocked shot",
      "p": 0.7166,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "J. Hanley 1+ blocked shot",
@@ -356,7 +372,7 @@
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8D Multi-line production",
@@ -370,13 +386,13 @@
      "text": "S. Rinzel 1+ blocked shot",
      "p": 0.72646,
      "result": "WON",
-     "value": 1
+     "value": 3
     },
     {
      "text": "J. Middleton 1+ blocked shot",
      "p": 0.7166,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "J. Hanley 1+ blocked shot",
@@ -400,7 +416,7 @@
      "text": "P. Kane 2+ SOG",
      "p": 0.67438,
      "result": "WON",
-     "value": 4
+     "value": 7
     },
     {
      "text": "S. Nemec 1+ blocked shot",
@@ -412,14 +428,14 @@
      "text": "J. Farabee 2+ SOG",
      "p": 0.65212,
      "result": "WON",
-     "value": 4
+     "value": 5
     }
    ]
   },
   {
    "game_id": 2026020360,
    "game": "CHI@CGY",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8D Multi-line production",
@@ -427,19 +443,19 @@
    "pLower": 0.03978195177535315,
    "pIndep": 0.04997233441507544,
    "breakEven": 2414,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "S. Rinzel 1+ blocked shot",
      "p": 0.72646,
      "result": "WON",
-     "value": 1
+     "value": 3
     },
     {
      "text": "J. Middleton 1+ blocked shot",
      "p": 0.7166,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "J. Hanley 1+ blocked shot",
@@ -474,8 +490,8 @@
     {
      "text": "F. Nazar 2+ SOG",
      "p": 0.63346,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 4
     }
    ]
   }

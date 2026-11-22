@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-21T23:06:29.773385+00:00",
+ "updated_at": "2026-11-22T01:04:21.722679+00:00",
  "nights": [
   "2026-11-07",
   "2026-11-08",
@@ -15,77 +15,77 @@
   "2026-11-21"
  ],
  "all": {
-  "n": 635,
-  "won": 199,
-  "lost": 436,
-  "win_pct": 0.31338582677165355,
-  "expected": 182.34188347040435,
-  "brier_joint": 0.17789561764141412,
-  "brier_indep": 0.18142860373978176,
-  "fair_pnl_2": 105.645699697304
+  "n": 644,
+  "won": 204,
+  "lost": 440,
+  "win_pct": 0.3167701863354037,
+  "expected": 184.24108347040436,
+  "brier_joint": 0.18101689772033847,
+  "brier_indep": 0.18448609348989106,
+  "fair_pnl_2": 188.53815367796562
  },
  "by_size": {
   "3": {
-   "n": 211,
-   "won": 113,
-   "lost": 98,
-   "win_pct": 0.5355450236966824,
-   "expected": 103.81539388133945,
-   "brier_joint": 0.23900123041228566,
-   "brier_indep": 0.24070635300594587,
-   "fair_pnl_2": 30.586489851718607
+   "n": 214,
+   "won": 115,
+   "lost": 99,
+   "win_pct": 0.5373831775700935,
+   "expected": 105.00967388133945,
+   "brier_joint": 0.24021597920837512,
+   "brier_indep": 0.2419083916508549,
+   "fair_pnl_2": 35.54238533510434
   },
   "5": {
-   "n": 212,
-   "won": 67,
-   "lost": 145,
-   "win_pct": 0.3160377358490566,
-   "expected": 58.0988,
-   "brier_joint": 0.21471778226037735,
-   "brier_indep": 0.22374391089964604,
-   "fair_pnl_2": 74.82412764834581
+   "n": 215,
+   "won": 68,
+   "lost": 147,
+   "win_pct": 0.31627906976744186,
+   "expected": 58.6184,
+   "brier_joint": 0.2156126124167442,
+   "brier_indep": 0.22442805753745285,
+   "fair_pnl_2": 83.93900068341232
   },
   "8": {
-   "n": 212,
-   "won": 19,
-   "lost": 193,
-   "win_pct": 0.08962264150943396,
-   "expected": 20.427689589064908,
-   "brier_joint": 0.08025607427408346,
-   "brier_indep": 0.08011515933859377,
-   "fair_pnl_2": 0.23508219723958845
+   "n": 215,
+   "won": 21,
+   "lost": 194,
+   "win_pct": 0.09767441860465116,
+   "expected": 20.61300958906491,
+   "brier_joint": 0.08749744610095671,
+   "brier_indep": 0.08738891173792808,
+   "fair_pnl_2": 69.05676765944898
   }
  },
  "voids": 21,
  "legs": {
-  "n": 1494,
-  "won": 1093,
-  "expected": 1051.7569394212233
+  "n": 1513,
+  "won": 1108,
+  "expected": 1064.7473994212232
  },
  "bands": [
   {
    "band": "0\u201310%",
-   "n": 124,
-   "pred": 0.06146451848018799,
-   "actual": 0.06451612903225806
+   "n": 127,
+   "pred": 0.06147181331923866,
+   "actual": 0.07874015748031496
   },
   {
    "band": "10\u201325%",
-   "n": 171,
-   "pred": 0.16010274442995087,
-   "actual": 0.1871345029239766
+   "n": 173,
+   "pred": 0.15975519825156992,
+   "actual": 0.1907514450867052
   },
   {
    "band": "25\u201340%",
-   "n": 155,
-   "pred": 0.32838953631930934,
-   "actual": 0.3548387096774194
+   "n": 157,
+   "pred": 0.327826612289764,
+   "actual": 0.35668789808917195
   },
   {
    "band": "40\u201360%",
-   "n": 172,
-   "pred": 0.5115961380921308,
-   "actual": 0.5697674418604651
+   "n": 174,
+   "pred": 0.510804228458888,
+   "actual": 0.5689655172413793
   },
   {
    "band": "60\u2013100%",
@@ -31564,6 +31564,438 @@
      "p": 0.62476,
      "result": "WON",
      "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-2030Z.json",
+   "size": 3,
+   "pick": "A",
+   "family": "3E Game script",
+   "pJoint": 0.44634,
+   "pIndep": 0.44856880342176,
+   "pLower": 0.41894972193476615,
+   "breakEven": 139,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "I. Cole 1+ blocked shot",
+     "p": 0.78214,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "Z. Whitecloud 1+ blocked shot",
+     "p": 0.76208,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "CGY +1.5 puck line",
+     "p": 0.75212,
+     "result": "WON",
+     "value": -1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-2030Z.json",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.43906,
+   "pIndep": 0.44008094895072,
+   "pLower": 0.41166972193476614,
+   "breakEven": 143,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "I. Cole 1+ blocked shot",
+     "p": 0.78214,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "Z. Whitecloud 1+ blocked shot",
+     "p": 0.76208,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "A. Vlasic 1+ blocked shot",
+     "p": 0.72968,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-2030Z.json",
+   "size": 3,
+   "pick": "C",
+   "family": "3A Shot-volume structure",
+   "pJoint": 0.30888,
+   "pIndep": 0.3060203728932,
+   "pLower": 0.28316656811704966,
+   "breakEven": 253,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Backlund 2+ SOG",
+     "p": 0.6754,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Coronato 2+ SOG",
+     "p": 0.6726,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "P. Kane 2+ SOG",
+     "p": 0.67438,
+     "result": "WON",
+     "value": 7
+    }
+   ]
+  },
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-2030Z.json",
+   "size": 5,
+   "pick": "A",
+   "family": "5D High-tempo matchup",
+   "pJoint": 0.13232,
+   "pIndep": 0.12707681359291212,
+   "pLower": 0.11231309306170374,
+   "breakEven": 790,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Backlund 2+ SOG",
+     "p": 0.6754,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Coronato 2+ SOG",
+     "p": 0.6726,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "P. Kane 2+ SOG",
+     "p": 0.67438,
+     "result": "WON",
+     "value": 7
+    },
+    {
+     "text": "J. Farabee 2+ SOG",
+     "p": 0.65212,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "F. Nazar 2+ SOG",
+     "p": 0.63346,
+     "result": "WON",
+     "value": 4
+    }
+   ]
+  },
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-2030Z.json",
+   "size": 5,
+   "pick": "B",
+   "family": "5F Game script",
+   "pJoint": 0.25952,
+   "pIndep": 0.2198156473284191,
+   "pLower": 0.23623209772814027,
+   "breakEven": 323,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "CGY +1.5 puck line",
+     "p": 0.75212,
+     "result": "WON",
+     "value": -1
+    },
+    {
+     "text": "CHI team total under 3.5",
+     "p": 0.66236,
+     "result": "LOST",
+     "value": 4
+    },
+    {
+     "text": "I. Cole 1+ blocked shot",
+     "p": 0.78214,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "Z. Whitecloud 1+ blocked shot",
+     "p": 0.76208,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "A. Vlasic 1+ blocked shot",
+     "p": 0.72968,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-2030Z.json",
+   "size": 5,
+   "pick": "C",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.12776,
+   "pIndep": 0.08949553983239038,
+   "pLower": 0.10775309306170376,
+   "breakEven": 828,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "M. Backlund 2+ SOG",
+     "p": 0.6754,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "M. Coronato 2+ SOG",
+     "p": 0.6726,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "J. Farabee 2+ SOG",
+     "p": 0.65212,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "J. Farabee 1+ point",
+     "p": 0.54978,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "M. Coronato 1+ point",
+     "p": 0.56376,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-2030Z.json",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.07822,
+   "pIndep": 0.0654393350521766,
+   "pLower": 0.06489910383622854,
+   "breakEven": 1441,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "CGY +1.5 puck line",
+     "p": 0.75212,
+     "result": "WON",
+     "value": -1
+    },
+    {
+     "text": "CHI team total under 3.5",
+     "p": 0.66236,
+     "result": "LOST",
+     "value": 4
+    },
+    {
+     "text": "A. Vlasic 1+ blocked shot",
+     "p": 0.72968,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "S. Rinzel 1+ blocked shot",
+     "p": 0.72646,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "J. Middleton 1+ blocked shot",
+     "p": 0.7166,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Hanley 1+ blocked shot",
+     "p": 0.70696,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "A. Levshunov 1+ blocked shot",
+     "p": 0.69514,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "Y. Kuznetsov 1+ blocked shot",
+     "p": 0.699,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-2030Z.json",
+   "size": 8,
+   "pick": "B",
+   "family": "8D Multi-line production",
+   "pJoint": 0.05574,
+   "pIndep": 0.052705234932732666,
+   "pLower": 0.04416195177535315,
+   "breakEven": 2164,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "S. Rinzel 1+ blocked shot",
+     "p": 0.72646,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "J. Middleton 1+ blocked shot",
+     "p": 0.7166,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Hanley 1+ blocked shot",
+     "p": 0.70696,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "Y. Kuznetsov 1+ blocked shot",
+     "p": 0.699,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "A. Levshunov 1+ blocked shot",
+     "p": 0.69514,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "P. Kane 2+ SOG",
+     "p": 0.67438,
+     "result": "WON",
+     "value": 7
+    },
+    {
+     "text": "S. Nemec 1+ blocked shot",
+     "p": 0.67452,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Farabee 2+ SOG",
+     "p": 0.65212,
+     "result": "WON",
+     "value": 5
+    }
+   ]
+  },
+  {
+   "game_id": 2026020360,
+   "game": "CHI@CGY",
+   "date": "2026-11-21",
+   "source": "reports/slots/2026-11-21/slot-2030Z.json",
+   "size": 8,
+   "pick": "C",
+   "family": "8D Multi-line production",
+   "pJoint": 0.05136,
+   "pIndep": 0.04997233441507544,
+   "pLower": 0.03978195177535315,
+   "breakEven": 2414,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "S. Rinzel 1+ blocked shot",
+     "p": 0.72646,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "J. Middleton 1+ blocked shot",
+     "p": 0.7166,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Hanley 1+ blocked shot",
+     "p": 0.70696,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "Y. Kuznetsov 1+ blocked shot",
+     "p": 0.699,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "A. Levshunov 1+ blocked shot",
+     "p": 0.69514,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Nemec 1+ blocked shot",
+     "p": 0.67452,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "W. Kaiser 1+ blocked shot",
+     "p": 0.6619,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "F. Nazar 2+ SOG",
+     "p": 0.63346,
+     "result": "WON",
+     "value": 4
     }
    ]
   }

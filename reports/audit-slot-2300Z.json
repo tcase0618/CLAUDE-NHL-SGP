@@ -1,5 +1,5 @@
 {
- "audited_at": "2026-11-21T23:05:55.208930+00:00",
+ "audited_at": "2026-11-22T01:04:32.703488+00:00",
  "source": "slot-2300Z.json",
  "model_version": "v20261106-224110",
  "counts": {
@@ -19,15 +19,15 @@
   "8": null
  },
  "legs": {
-  "n": 0,
-  "won": 0,
-  "expected": 0
+  "n": 29,
+  "won": 29,
+  "expected": 20.64364
  },
  "parlays": [
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -41,13 +41,13 @@
      "text": "B. Tkachuk 2+ SOG",
      "p": 0.8484,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "C. Timmins 1+ blocked shot",
      "p": 0.84706,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "FLA +1.5 puck line",
@@ -60,7 +60,7 @@
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -74,26 +74,26 @@
      "text": "B. Tkachuk 2+ SOG",
      "p": 0.8484,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "M. Samuelsson 1+ blocked shot",
      "p": 0.84692,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "C. Timmins 1+ blocked shot",
      "p": 0.84706,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "C",
    "family": "3E Game script",
@@ -107,13 +107,13 @@
      "text": "M. Samuelsson 1+ blocked shot",
      "p": 0.84692,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "T. Thompson 2+ SOG",
      "p": 0.78508,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "FLA +1.5 puck line",
@@ -126,7 +126,7 @@
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "A",
    "family": "5F Game script",
@@ -140,19 +140,19 @@
      "text": "B. Tkachuk 2+ SOG",
      "p": 0.8484,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "M. Samuelsson 1+ blocked shot",
      "p": 0.84692,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "C. Timmins 1+ blocked shot",
      "p": 0.84706,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "FLA +1.5 puck line",
@@ -171,7 +171,7 @@
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -185,7 +185,7 @@
      "text": "T. Thompson 2+ SOG",
      "p": 0.78508,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "BUF +1.5 puck line",
@@ -203,20 +203,20 @@
      "text": "R. Dahlin 1+ point",
      "p": 0.64514,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "T. Thompson 1+ point",
      "p": 0.6107,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "C",
    "family": "5F Game script",
@@ -230,7 +230,7 @@
      "text": "T. Thompson 2+ SOG",
      "p": 0.78508,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "BUF +1.5 puck line",
@@ -248,20 +248,20 @@
      "text": "R. Dahlin 1+ point",
      "p": 0.64514,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "O. Power 1+ blocked shot",
      "p": 0.7452,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -287,44 +287,44 @@
      "text": "R. Dahlin 1+ point",
      "p": 0.64514,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "T. Thompson 1+ point",
      "p": 0.6107,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "S. Jones 1+ blocked shot",
      "p": 0.74448,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "O. Power 1+ blocked shot",
      "p": 0.7452,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "S. Reinhart 2+ SOG",
      "p": 0.74622,
      "result": "PENDING",
-     "value": null
+     "value": 1
     },
     {
      "text": "A. Ekblad 1+ blocked shot",
      "p": 0.728,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "B",
    "family": "8D Multi-line production",
@@ -338,56 +338,56 @@
      "text": "O. Power 1+ blocked shot",
      "p": 0.7452,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "S. Jones 1+ blocked shot",
      "p": 0.74448,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "S. Reinhart 2+ SOG",
      "p": 0.74622,
      "result": "PENDING",
-     "value": null
+     "value": 1
     },
     {
      "text": "R. Dahlin 1+ blocked shot",
      "p": 0.73036,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Tkachuk 2+ SOG",
      "p": 0.72158,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "A. Ekblad 1+ blocked shot",
      "p": 0.728,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "S. Bennett 2+ SOG",
      "p": 0.7006,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "G. Forsling 1+ blocked shot",
      "p": 0.68892,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "C",
    "family": "8F Cross-team high-event scenario",
@@ -401,56 +401,56 @@
      "text": "S. Reinhart 2+ SOG",
      "p": 0.74622,
      "result": "PENDING",
-     "value": null
+     "value": 1
     },
     {
      "text": "M. Tkachuk 2+ SOG",
      "p": 0.72158,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "M. Tkachuk 1+ point",
      "p": 0.6201,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "S. Reinhart 1+ point",
      "p": 0.61666,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "S. Bennett 2+ SOG",
      "p": 0.7006,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "J. Quinn 2+ SOG",
      "p": 0.67986,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "R. Dahlin 2+ SOG",
      "p": 0.6434,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "T. Thompson 1+ point",
      "p": 0.6107,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020362,
    "game": "PIT@NSH",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -463,14 +463,14 @@
     {
      "text": "F. Forsberg 2+ SOG",
      "p": 0.75942,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "T. van Riemsdyk 1+ blocked shot",
      "p": 0.74096,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "NSH +1.5 puck line",
@@ -483,7 +483,7 @@
   {
    "game_id": 2026020362,
    "game": "PIT@NSH",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -496,27 +496,27 @@
     {
      "text": "F. Forsberg 2+ SOG",
      "p": 0.75942,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "R. Josi 1+ blocked shot",
      "p": 0.7553,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "T. van Riemsdyk 1+ blocked shot",
      "p": 0.74096,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020362,
    "game": "PIT@NSH",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "C",
    "family": "3A Shot-volume structure",
@@ -529,27 +529,27 @@
     {
      "text": "R. Rakell 2+ SOG",
      "p": 0.74082,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "R. Josi 2+ SOG",
      "p": 0.72138,
      "result": "PENDING",
-     "value": null
+     "value": 1
     },
     {
      "text": "S. Stamkos 2+ SOG",
      "p": 0.70012,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020362,
    "game": "PIT@NSH",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "A",
    "family": "5F Game script",
@@ -580,21 +580,21 @@
     {
      "text": "R. Rakell 2+ SOG",
      "p": 0.74082,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "E. Karlsson 1+ point",
      "p": 0.60236,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020362,
    "game": "PIT@NSH",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -626,20 +626,20 @@
      "text": "E. Karlsson 1+ point",
      "p": 0.60236,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "R. Josi 1+ blocked shot",
      "p": 0.7553,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020362,
    "game": "PIT@NSH",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "C",
    "family": "5F Game script",
@@ -664,27 +664,27 @@
     {
      "text": "F. Forsberg 1+ point",
      "p": 0.61146,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "R. O'Reilly 1+ point",
      "p": 0.60906,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "R. Josi 2+ SOG",
      "p": 0.72138,
      "result": "PENDING",
-     "value": null
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020362,
    "game": "PIT@NSH",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -709,45 +709,45 @@
     {
      "text": "F. Forsberg 2+ SOG",
      "p": 0.75942,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "F. Forsberg 1+ point",
      "p": 0.61146,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "R. O'Reilly 1+ point",
      "p": 0.60906,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "R. Josi 2+ SOG",
      "p": 0.72138,
      "result": "PENDING",
-     "value": null
+     "value": 1
     },
     {
      "text": "R. Josi 1+ point",
      "p": 0.58216,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "S. Stamkos 1+ point",
      "p": 0.58996,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020362,
    "game": "PIT@NSH",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "B",
    "family": "8G Game script",
@@ -778,26 +778,26 @@
     {
      "text": "R. Rakell 2+ SOG",
      "p": 0.74082,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "E. Karlsson 1+ point",
      "p": 0.60236,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "R. Josi 1+ blocked shot",
      "p": 0.7553,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "T. van Riemsdyk 1+ blocked shot",
      "p": 0.74096,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "E. Malkin 2+ SOG",
@@ -810,7 +810,7 @@
   {
    "game_id": 2026020362,
    "game": "PIT@NSH",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "C",
    "family": "8G Game script",
@@ -829,8 +829,8 @@
     {
      "text": "F. Forsberg 1+ point",
      "p": 0.61146,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "Game total over 5.5",
@@ -842,31 +842,31 @@
      "text": "R. O'Reilly 1+ point",
      "p": 0.60906,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "S. Stamkos 1+ point",
      "p": 0.58996,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "S. Stamkos 2+ SOG",
      "p": 0.70012,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "R. Josi 1+ point",
      "p": 0.58216,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "S. Girard 1+ blocked shot",
      "p": 0.72524,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   }
