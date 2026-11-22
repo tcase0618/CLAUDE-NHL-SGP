@@ -1,82 +1,82 @@
 # Parlay audit — slot-2200Z.json
-Audited 2026-11-08T01:03:30.580764+00:00 against official NHL data · model v20261106-224110
+Audited 2026-11-22T23:04:22.174470+00:00 against official NHL data · model v20261106-224110
 
-**Parlays:** 2 won · 7 lost · 0 pending · 0 void/reprice (of 9)
+**Parlays:** 0 won · 0 lost · 9 pending · 0 void/reprice (of 9)
 
 | Size | Settled | Won | Expected wins (model) | Hit rate | Mean model P | Brier joint | Brier indep |
 |---|---|---|---|---|---|---|---|
-| 3 | 3 | 1 | 1.11 | 33% | 37.0% | 0.170 | 0.154 |
-| 5 | 3 | 1 | 0.63 | 33% | 21.1% | 0.215 | 0.216 |
-| 8 | 3 | 0 | 0.16 | 0% | 5.4% | 0.004 | 0.003 |
+| 3 | 0 | – | – | – | – | – | – |
+| 5 | 0 | – | – | – | – | – | – |
+| 8 | 0 | – | – | – | – | – | – |
 
-**Settled legs:** 39/48 won vs 33.3 expected by the model.
+**Settled legs:** 21/21 won vs 15.4 expected by the model.
 
 _Small samples: a single night cannot validate or refute the model — compare against the 24,535-combination historical validation._
 
-## NYR @ SEA — NYR 4 @ SEA 3 · FINAL (REG)
-**3-leg A · 3B Team offensive scenario** — model 31.8% · break-even +243 → **LOST**
-- ❌ M. Zibanejad 2+ SOG (model 66%) — actual: 1
-- ✅ M. Zibanejad 1+ point (model 62%) — actual: 2
-- ✅ A. Fox 1+ point (model 62%) — actual: 1
+## BUF @ TBL — BUF 1 @ TBL 1 · LIVE
+**3-leg A · 3E Game script** — model 56.5% · break-even -116 → **PENDING**
+- ✅ C. Timmins 1+ blocked shot (model 86%) — actual: 3
+- ✅ M. Samuelsson 1+ blocked shot (model 85%) — actual: 1
+- ⏳ TBL +1.5 puck line (model 76%) — actual: n/a
 
-**3-leg B · 3D Cross-team scenario** — model 45.5% · break-even +135 → **WON**
-- ✅ A. Larsson 1+ blocked shot (model 78%) — actual: 1
-- ✅ B. Schneider 1+ blocked shot (model 75%) — actual: 1
-- ✅ M. Pettersson 1+ blocked shot (model 75%) — actual: 5
+**3-leg B · 3D Cross-team scenario** — model 57.1% · break-even -119 → **PENDING**
+- ✅ C. Timmins 1+ blocked shot (model 86%) — actual: 3
+- ✅ M. Samuelsson 1+ blocked shot (model 85%) — actual: 1
+- ⏳ N. Kucherov 2+ SOG (model 77%) — actual: 1
 
-**3-leg C · 3B Team offensive scenario** — model 33.5% · break-even +224 → **LOST**
-- ✅ P. Dorofeyev 2+ SOG (model 74%) — actual: 3
-- ❌ M. Zibanejad 2+ SOG (model 66%) — actual: 1
-- ✅ M. Zibanejad 1+ point (model 62%) — actual: 2
+**3-leg C · 3A Shot-volume structure** — model 43.3% · break-even +146 → **PENDING**
+- ⏳ N. Kucherov 2+ SOG (model 77%) — actual: 1
+- ✅ T. Thompson 2+ SOG (model 77%) — actual: 2
+- ⏳ J. Guentzel 2+ SOG (model 73%) — actual: 1
 
-**5-leg A · 5B Top-6 usage cluster** — model 19.1% · break-even +500 → **LOST**
-- ✅ M. Pettersson 1+ blocked shot (model 75%) — actual: 5
-- ✅ B. Schneider 1+ blocked shot (model 75%) — actual: 1
-- ❌ A. Fox 1+ blocked shot (model 73%) — actual: 0
-- ✅ V. Gavrikov 1+ blocked shot (model 72%) — actual: 2
-- ✅ A. Fox 1+ point (model 62%) — actual: 1
+**5-leg A · 5A Five-on-five offensive environment** — model 17.1% · break-even +564 → **PENDING**
+- ⏳ J. Guentzel 2+ SOG (model 73%) — actual: 1
+- ✅ J. Guentzel 1+ point (model 64%) — actual: 1
+- ✅ N. Kucherov 1+ point (model 68%) — actual: 1
+- ✅ J. Carlson 2+ SOG (model 64%) — actual: 4
+- ✅ J. Carlson 1+ point (model 52%) — actual: 1
 
-**5-leg B · 5B Top-6 usage cluster** — model 19.7% · break-even +479 → **LOST**
-- ✅ M. Pettersson 1+ blocked shot (model 75%) — actual: 5
-- ✅ B. Schneider 1+ blocked shot (model 75%) — actual: 1
-- ❌ A. Fox 1+ blocked shot (model 73%) — actual: 0
-- ✅ V. Gavrikov 1+ blocked shot (model 72%) — actual: 2
-- ❌ M. Zibanejad 2+ SOG (model 66%) — actual: 1
+**5-leg B · 5F Game script** — model 35.6% · break-even +202 → **PENDING**
+- ✅ C. Timmins 1+ blocked shot (model 86%) — actual: 3
+- ✅ M. Samuelsson 1+ blocked shot (model 85%) — actual: 1
+- ⏳ TBL +1.5 puck line (model 76%) — actual: n/a
+- ⏳ TBL team total over 2.5 (model 62%) — actual: n/a
+- ✅ N. Kucherov 1+ point (model 68%) — actual: 1
 
-**5-leg C · 5E Balanced cross-team structure** — model 24.5% · break-even +358 → **WON**
-- ✅ A. Larsson 1+ blocked shot (model 78%) — actual: 1
-- ✅ B. Schneider 1+ blocked shot (model 75%) — actual: 1
-- ✅ M. Pettersson 1+ blocked shot (model 75%) — actual: 5
-- ✅ P. Dorofeyev 2+ SOG (model 74%) — actual: 3
-- ✅ B. Montour 1+ blocked shot (model 73%) — actual: 1
+**5-leg C · 5A Five-on-five offensive environment** — model 20.8% · break-even +440 → **PENDING**
+- ⏳ N. Kucherov 2+ SOG (model 77%) — actual: 1
+- ⏳ J. Guentzel 2+ SOG (model 73%) — actual: 1
+- ✅ N. Kucherov 1+ point (model 68%) — actual: 1
+- ✅ J. Guentzel 1+ point (model 64%) — actual: 1
+- ✅ J. Carlson 2+ SOG (model 64%) — actual: 4
 
-**8-leg A · 8D Multi-line production** — model 8.8% · break-even +1774 → **LOST**
-- ✅ A. Larsson 1+ blocked shot (model 78%) — actual: 1
-- ✅ B. Schneider 1+ blocked shot (model 75%) — actual: 1
-- ✅ M. Pettersson 1+ blocked shot (model 75%) — actual: 5
-- ✅ P. Dorofeyev 2+ SOG (model 74%) — actual: 3
-- ✅ B. Montour 1+ blocked shot (model 73%) — actual: 1
-- ✅ V. Gavrikov 1+ blocked shot (model 72%) — actual: 2
-- ❌ A. Fox 1+ blocked shot (model 73%) — actual: 0
-- ✅ R. Evans 1+ blocked shot (model 71%) — actual: 3
+**8-leg A · 8G Game script** — model 10.2% · break-even +1022 → **PENDING**
+- ⏳ TBL +1.5 puck line (model 76%) — actual: n/a
+- ⏳ TBL team total over 2.5 (model 62%) — actual: n/a
+- ✅ J. Guentzel 1+ point (model 64%) — actual: 1
+- ✅ T. Thompson 2+ SOG (model 77%) — actual: 2
+- ⏳ J. Carlson 1+ blocked shot (model 75%) — actual: 0
+- ⏳ O. Power 1+ blocked shot (model 74%) — actual: 0
+- ⏳ E. Cernak 1+ blocked shot (model 73%) — actual: 0
+- ✅ R. Dahlin 1+ blocked shot (model 72%) — actual: 1
 
-**8-leg B · 8F Cross-team high-event scenario** — model 4.4% · break-even +3161 → **LOST**
-- ✅ P. Dorofeyev 2+ SOG (model 74%) — actual: 3
-- ❌ M. Zibanejad 2+ SOG (model 66%) — actual: 1
-- ✅ M. Zibanejad 1+ point (model 62%) — actual: 2
-- ✅ A. Fox 1+ point (model 62%) — actual: 1
-- ✅ P. Dorofeyev 1+ point (model 55%) — actual: 1
-- ✅ B. McMann 2+ SOG (model 68%) — actual: 2
-- ✅ B. Montour 2+ SOG (model 64%) — actual: 3
-- ✅ J. Eberle 2+ SOG (model 61%) — actual: 2
+**8-leg B · 8D Multi-line production** — model 7.4% · break-even +1542 → **PENDING**
+- ✅ T. Thompson 2+ SOG (model 77%) — actual: 2
+- ⏳ J. Carlson 1+ blocked shot (model 75%) — actual: 0
+- ⏳ O. Power 1+ blocked shot (model 74%) — actual: 0
+- ⏳ E. Cernak 1+ blocked shot (model 73%) — actual: 0
+- ✅ R. Dahlin 1+ blocked shot (model 72%) — actual: 1
+- ⏳ J. Moser 1+ blocked shot (model 70%) — actual: 0
+- ⏳ C. D'Astous 1+ blocked shot (model 68%) — actual: 0
+- ⏳ V. Hedman 1+ blocked shot (model 67%) — actual: 0
 
-**8-leg C · 8A Shot-dominant game** — model 3.1% · break-even +5679 → **LOST**
-- ✅ P. Dorofeyev 2+ SOG (model 74%) — actual: 3
-- ✅ B. McMann 2+ SOG (model 68%) — actual: 2
-- ❌ M. Zibanejad 2+ SOG (model 66%) — actual: 1
-- ✅ B. Montour 2+ SOG (model 64%) — actual: 3
-- ✅ J. Miller 2+ SOG (model 62%) — actual: 2
-- ✅ A. Lafrenière 2+ SOG (model 62%) — actual: 2
-- ❌ A. Fox 2+ SOG (model 58%) — actual: 1
-- ✅ J. Eberle 2+ SOG (model 61%) — actual: 2
+**8-leg C · 8D Multi-line production** — model 6.6% · break-even +1783 → **PENDING**
+- ⏳ J. Carlson 1+ blocked shot (model 75%) — actual: 0
+- ⏳ O. Power 1+ blocked shot (model 74%) — actual: 0
+- ⏳ E. Cernak 1+ blocked shot (model 73%) — actual: 0
+- ✅ R. Dahlin 1+ blocked shot (model 72%) — actual: 1
+- ⏳ R. McDonagh 1+ blocked shot (model 70%) — actual: 0
+- ⏳ J. Moser 1+ blocked shot (model 70%) — actual: 0
+- ⏳ C. D'Astous 1+ blocked shot (model 68%) — actual: 0
+- ⏳ V. Hedman 1+ blocked shot (model 67%) — actual: 0
 
