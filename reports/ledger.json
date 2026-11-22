@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-22T16:34:18.433570+00:00",
+ "updated_at": "2026-11-22T21:04:41.358398+00:00",
  "nights": [
   "2026-11-07",
   "2026-11-08",
@@ -16,77 +16,77 @@
   "2026-11-22"
  ],
  "all": {
-  "n": 751,
-  "won": 237,
-  "lost": 514,
-  "win_pct": 0.3155792276964048,
-  "expected": 214.60913272546287,
-  "brier_joint": 0.18370390266513537,
-  "brier_indep": 0.18796432665634652,
-  "fair_pnl_2": 239.44716326360177
+  "n": 760,
+  "won": 240,
+  "lost": 520,
+  "win_pct": 0.3157894736842105,
+  "expected": 216.73797272546287,
+  "brier_joint": 0.18375096701252192,
+  "brier_indep": 0.1879174564028002,
+  "fair_pnl_2": 311.82884454226286
  },
  "by_size": {
   "3": {
-   "n": 249,
-   "won": 131,
-   "lost": 118,
-   "win_pct": 0.5261044176706827,
-   "expected": 122.69649388133945,
-   "brier_joint": 0.2433831354497682,
-   "brier_indep": 0.24544158328877333,
-   "fair_pnl_2": 31.119763847760993
+   "n": 252,
+   "won": 133,
+   "lost": 119,
+   "win_pct": 0.5277777777777778,
+   "expected": 124.03389388133945,
+   "brier_joint": 0.2427533279039376,
+   "brier_indep": 0.24478368339544834,
+   "fair_pnl_2": 32.92506197200423
   },
   "5": {
-   "n": 251,
+   "n": 254,
    "won": 80,
-   "lost": 171,
-   "win_pct": 0.3187250996015936,
-   "expected": 68.35046,
-   "brier_joint": 0.2158102680685259,
-   "brier_indep": 0.2260375932427092,
-   "fair_pnl_2": 98.51942374819102
+   "lost": 174,
+   "win_pct": 0.31496062992125984,
+   "expected": 68.95656,
+   "brier_joint": 0.21385730453858268,
+   "brier_indep": 0.22381717218467487,
+   "fair_pnl_2": 92.51942374819102
   },
   "8": {
-   "n": 251,
-   "won": 26,
-   "lost": 225,
-   "win_pct": 0.10358565737051793,
-   "expected": 23.562178844123434,
-   "brier_joint": 0.09239383621244772,
-   "brier_indep": 0.09287178954618193,
-   "fair_pnl_2": 109.80797566764977
+   "n": 254,
+   "won": 27,
+   "lost": 227,
+   "win_pct": 0.1062992125984252,
+   "expected": 23.747518844123434,
+   "brier_joint": 0.09510685411387551,
+   "brier_indep": 0.0955992791951486,
+   "fair_pnl_2": 186.3843588220676
   }
  },
  "voids": 22,
  "legs": {
-  "n": 1768,
-  "won": 1286,
-  "expected": 1243.454903344988
+  "n": 1790,
+  "won": 1303,
+  "expected": 1258.379443344988
  },
  "bands": [
   {
    "band": "0\u201310%",
-   "n": 149,
-   "pred": 0.06110009187652055,
-   "actual": 0.09395973154362416
+   "n": 151,
+   "pred": 0.06082512377219578,
+   "actual": 0.09933774834437085
   },
   {
    "band": "10\u201325%",
-   "n": 202,
-   "pred": 0.1592638869035736,
-   "actual": 0.18316831683168316
+   "n": 205,
+   "pred": 0.15873817148547253,
+   "actual": 0.18048780487804877
   },
   {
    "band": "25\u201340%",
-   "n": 182,
-   "pred": 0.32858570400820303,
-   "actual": 0.3626373626373626
+   "n": 184,
+   "pred": 0.32855629418202686,
+   "actual": 0.358695652173913
   },
   {
    "band": "40\u201360%",
-   "n": 203,
-   "pred": 0.5116812598613129,
-   "actual": 0.5615763546798029
+   "n": 205,
+   "pred": 0.5116959792772999,
+   "actual": 0.5658536585365853
   },
   {
    "band": "60\u2013100%",
@@ -37046,7 +37046,7 @@
      "text": "M. Marchment 2+ SOG",
      "p": 0.5921,
      "result": "WON",
-     "value": 3
+     "value": 2
     },
     {
      "text": "J. Eberle 2+ SOG",
@@ -37181,6 +37181,438 @@
      "p": 0.67808,
      "result": "WON",
      "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020373,
+   "game": "CAR@NYR",
+   "date": "2026-11-22",
+   "source": "reports/slots/2026-11-22/slot-1730Z.json",
+   "size": 3,
+   "pick": "A",
+   "family": "3E Game script",
+   "pJoint": 0.53238,
+   "pIndep": 0.530605706693616,
+   "pLower": 0.5051136098849942,
+   "breakEven": -102,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Pettersson 1+ blocked shot",
+     "p": 0.8143,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "CAR +1.5 puck line",
+     "p": 0.80694,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "B. Schneider 1+ blocked shot",
+     "p": 0.79488,
+     "result": "WON",
+     "value": 4
+    }
+   ]
+  },
+  {
+   "game_id": 2026020373,
+   "game": "CAR@NYR",
+   "date": "2026-11-22",
+   "source": "reports/slots/2026-11-22/slot-1730Z.json",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.494,
+   "pIndep": 0.4928070754917359,
+   "pLower": 0.45290454504853583,
+   "breakEven": 121,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Pettersson 1+ blocked shot",
+     "p": 0.8143,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "B. Schneider 1+ blocked shot",
+     "p": 0.79488,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "S. Walker 1+ blocked shot",
+     "p": 0.75958,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020373,
+   "game": "CAR@NYR",
+   "date": "2026-11-22",
+   "source": "reports/slots/2026-11-22/slot-1730Z.json",
+   "size": 3,
+   "pick": "C",
+   "family": "3A Shot-volume structure",
+   "pJoint": 0.31102,
+   "pIndep": 0.30489065497088,
+   "pLower": 0.2853065681170497,
+   "breakEven": 251,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "A. Svechnikov 2+ SOG",
+     "p": 0.68758,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "S. Aho 2+ SOG",
+     "p": 0.6705,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "N. Ehlers 2+ SOG",
+     "p": 0.65922,
+     "result": "VOID",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020373,
+   "game": "CAR@NYR",
+   "date": "2026-11-22",
+   "source": "reports/slots/2026-11-22/slot-1730Z.json",
+   "size": 5,
+   "pick": "A",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.13844,
+   "pIndep": 0.12003005307787987,
+   "pLower": 0.11843309306170376,
+   "breakEven": 744,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "A. Svechnikov 2+ SOG",
+     "p": 0.68758,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "S. Aho 2+ SOG",
+     "p": 0.6705,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "N. Ehlers 2+ SOG",
+     "p": 0.65922,
+     "result": "VOID",
+     "value": null
+    },
+    {
+     "text": "S. Aho 1+ point",
+     "p": 0.60506,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "S. Jarvis 2+ SOG",
+     "p": 0.65012,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020373,
+   "game": "CAR@NYR",
+   "date": "2026-11-22",
+   "source": "reports/slots/2026-11-22/slot-1730Z.json",
+   "size": 5,
+   "pick": "B",
+   "family": "5F Game script",
+   "pJoint": 0.34074,
+   "pIndep": 0.29067691488783814,
+   "pLower": 0.315311997284063,
+   "breakEven": 217,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "M. Pettersson 1+ blocked shot",
+     "p": 0.8143,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "CAR +1.5 puck line",
+     "p": 0.80694,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "CAR team total over 2.5",
+     "p": 0.68768,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "B. Schneider 1+ blocked shot",
+     "p": 0.79488,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "V. Gavrikov 1+ blocked shot",
+     "p": 0.78606,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020373,
+   "game": "CAR@NYR",
+   "date": "2026-11-22",
+   "source": "reports/slots/2026-11-22/slot-1730Z.json",
+   "size": 5,
+   "pick": "C",
+   "family": "5D High-tempo matchup",
+   "pJoint": 0.12692,
+   "pIndep": 0.12339184939378335,
+   "pLower": 0.10691309306170375,
+   "breakEven": 835,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "A. Svechnikov 2+ SOG",
+     "p": 0.68758,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "S. Aho 2+ SOG",
+     "p": 0.6705,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "N. Ehlers 2+ SOG",
+     "p": 0.65922,
+     "result": "VOID",
+     "value": null
+    },
+    {
+     "text": "S. Jarvis 2+ SOG",
+     "p": 0.65012,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Zibanejad 2+ SOG",
+     "p": 0.61698,
+     "result": "WON",
+     "value": 4
+    }
+   ]
+  },
+  {
+   "game_id": 2026020373,
+   "game": "CAR@NYR",
+   "date": "2026-11-22",
+   "source": "reports/slots/2026-11-22/slot-1730Z.json",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.10466,
+   "pIndep": 0.07000885589323722,
+   "pLower": 0.09133910383622855,
+   "breakEven": 995,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "CAR +1.5 puck line",
+     "p": 0.80694,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "CAR team total over 2.5",
+     "p": 0.68768,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "V. Gavrikov 1+ blocked shot",
+     "p": 0.78606,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "S. Walker 1+ blocked shot",
+     "p": 0.75958,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "A. Fox 1+ blocked shot",
+     "p": 0.73884,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Aho 1+ point",
+     "p": 0.60506,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Slavin 1+ blocked shot",
+     "p": 0.73396,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "S. Jarvis 2+ SOG",
+     "p": 0.65012,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020373,
+   "game": "CAR@NYR",
+   "date": "2026-11-22",
+   "source": "reports/slots/2026-11-22/slot-1730Z.json",
+   "size": 8,
+   "pick": "B",
+   "family": "8D Multi-line production",
+   "pJoint": 0.05646,
+   "pIndep": 0.05538835484865226,
+   "pLower": 0.04488195177535315,
+   "breakEven": 2128,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "V. Gavrikov 1+ blocked shot",
+     "p": 0.78606,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "S. Walker 1+ blocked shot",
+     "p": 0.75958,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "A. Fox 1+ blocked shot",
+     "p": 0.73884,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Slavin 1+ blocked shot",
+     "p": 0.73396,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "K. Miller 1+ blocked shot",
+     "p": 0.66986,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "A. Nikishin 1+ blocked shot",
+     "p": 0.65232,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "J. Blake 2+ SOG",
+     "p": 0.63078,
+     "result": "WON",
+     "value": 6
+    },
+    {
+     "text": "E. Tolvanen 1+ blocked shot",
+     "p": 0.6058,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020373,
+   "game": "CAR@NYR",
+   "date": "2026-11-22",
+   "source": "reports/slots/2026-11-22/slot-1730Z.json",
+   "size": 8,
+   "pick": "C",
+   "family": "8F Cross-team high-event scenario",
+   "pJoint": 0.02422,
+   "pIndep": 0.018455997053742564,
+   "pLower": 0.01262315719088618,
+   "breakEven": 7822,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "M. Zibanejad 2+ SOG",
+     "p": 0.61698,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "M. Zibanejad 1+ point",
+     "p": 0.6085,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "J. Blake 2+ SOG",
+     "p": 0.63078,
+     "result": "WON",
+     "value": 6
+    },
+    {
+     "text": "J. Miller 2+ SOG",
+     "p": 0.6133,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "S. Aho 1+ point",
+     "p": 0.60506,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "L. Stankoven 2+ SOG",
+     "p": 0.60712,
+     "result": "WON",
+     "value": 7
+    },
+    {
+     "text": "A. Fox 2+ SOG",
+     "p": 0.58728,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "A. Lafreni\u00e8re 2+ SOG",
+     "p": 0.5971,
+     "result": "WON",
+     "value": 3
     }
    ]
   }
