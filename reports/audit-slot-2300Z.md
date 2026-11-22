@@ -1,5 +1,5 @@
 # Parlay audit — slot-2300Z.json
-Audited 2026-11-22T02:04:09.287165+00:00 against official NHL data · model v20261106-224110
+Audited 2026-11-22T10:48:07.898804+00:00 against official NHL data · model v20261106-224110
 
 **Parlays:** 4 won · 14 lost · 0 pending · 0 void/reprice (of 18)
 
@@ -13,7 +13,7 @@ Audited 2026-11-22T02:04:09.287165+00:00 against official NHL data · model v202
 
 _Small samples: a single night cannot validate or refute the model — compare against the 24,535-combination historical validation._
 
-## BUF @ FLA — BUF 3 @ FLA 4 · FINAL (REG)
+## BUF @ FLA — BUF 3 @ FLA 4 · OFF (REG)
 **3-leg A · 3E Game script** — model 53.3% · break-even -102 → **LOST**
 - ❌ B. Tkachuk 2+ SOG (model 85%) — actual: 1
 - ✅ C. Timmins 1+ blocked shot (model 85%) — actual: 4

@@ -1,33 +1,81 @@
 {
- "audited_at": "2026-11-22T02:04:11.783236+00:00",
+ "audited_at": "2026-11-22T10:48:10.934681+00:00",
  "source": "slot-0200Z.json",
  "model_version": "v20261106-224110",
  "counts": {
   "WON": 0,
-  "LOST": 0,
-  "PENDING": 9,
+  "LOST": 9,
+  "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 1.5238999999999998,
+   "hit_rate": 0.0,
+   "mean_p": 0.5079666666666666,
+   "brier": 0.26532603346666667,
+   "logloss": 0.7238411065331523
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.6754800000000001,
+   "hit_rate": 0.0,
+   "mean_p": 0.22516000000000003,
+   "brier": 0.05817965706666667,
+   "logloss": 0.2617233754998314
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.24774,
+   "hit_rate": 0.0,
+   "mean_p": 0.08258,
+   "brier": 0.008742215866666667,
+   "logloss": 0.08730892033952782
+  }
  },
  "by_size_independence": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 1.521111043195296,
+   "hit_rate": 0.0,
+   "mean_p": 0.5070370143984321,
+   "brier": 0.2643731401766798,
+   "logloss": 0.7218746389142732
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.6280264123403352,
+   "hit_rate": 0.0,
+   "mean_p": 0.2093421374467784,
+   "brier": 0.0527849043663245,
+   "logloss": 0.2425049463494305
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.1286451345353305,
+   "hit_rate": 0.0,
+   "mean_p": 0.04288171151177683,
+   "brier": 0.002129092300948669,
+   "logloss": 0.04398547245711528
+  }
  },
  "legs": {
-  "n": 0,
-  "won": 0,
-  "expected": 0
+  "n": 40,
+  "won": 21,
+  "expected": 28.41282
  },
  "parlays": [
   {
    "game_id": 2026020370,
    "game": "ANA@UTA",
-   "state": "PRE",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -35,32 +83,32 @@
    "pLower": 0.5069136098849942,
    "pIndep": 0.533446438961904,
    "breakEven": -103,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Weegar 1+ blocked shot",
      "p": 0.86858,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "S. Solberg 1+ blocked shot",
      "p": 0.8578,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "ANA +1.5 puck line",
      "p": 0.72472,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": -1
     }
    ]
   },
   {
    "game_id": 2026020370,
    "game": "ANA@UTA",
-   "state": "PRE",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -68,32 +116,32 @@
    "pLower": 0.5697136098849942,
    "pIndep": 0.595846105254192,
    "breakEven": -132,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Weegar 1+ blocked shot",
      "p": 0.86858,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "S. Solberg 1+ blocked shot",
      "p": 0.8578,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "P. Mintyukov 1+ blocked shot",
      "p": 0.79678,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020370,
    "game": "ANA@UTA",
-   "state": "PRE",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3A Shot-volume structure",
@@ -101,32 +149,32 @@
    "pLower": 0.3653497219347661,
    "pIndep": 0.39181849897919996,
    "breakEven": 174,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Gauthier 2+ SOG",
      "p": 0.79006,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "C. Keller 2+ SOG",
      "p": 0.74236,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "M. Sergachev 2+ SOG",
      "p": 0.66996,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020370,
    "game": "ANA@UTA",
-   "state": "PRE",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5D High-tempo matchup",
@@ -134,44 +182,44 @@
    "pLower": 0.14551309306170374,
    "pIndep": 0.16108056204484117,
    "breakEven": 587,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Gauthier 2+ SOG",
      "p": 0.79006,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "C. Keller 2+ SOG",
      "p": 0.74236,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "M. Sergachev 2+ SOG",
      "p": 0.66996,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "B. Sennecke 2+ SOG",
      "p": 0.6688,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "L. Carlsson 2+ SOG",
      "p": 0.61168,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020370,
    "game": "ANA@UTA",
-   "state": "PRE",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -179,44 +227,44 @@
    "pLower": 0.32205199728406303,
    "pIndep": 0.3416130011515131,
    "breakEven": 211,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Weegar 1+ blocked shot",
      "p": 0.86858,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "S. Solberg 1+ blocked shot",
      "p": 0.8578,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "P. Mintyukov 1+ blocked shot",
      "p": 0.79678,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "C. Gauthier 2+ SOG",
      "p": 0.79006,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "ANA +1.5 puck line",
      "p": 0.72472,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": -1
     }
    ]
   },
   {
    "game_id": 2026020370,
    "game": "ANA@UTA",
-   "state": "PRE",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5A Five-on-five offensive environment",
@@ -224,44 +272,44 @@
    "pLower": 0.14247309306170375,
    "pIndep": 0.12533284914398093,
    "breakEven": 602,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Keller 2+ SOG",
      "p": 0.74236,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "C. Keller 1+ point",
      "p": 0.70136,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "M. Sergachev 2+ SOG",
      "p": 0.66996,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "M. Sergachev 1+ point",
      "p": 0.59384,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "L. Cooley 2+ SOG",
      "p": 0.62132,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020370,
    "game": "ANA@UTA",
-   "state": "PRE",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -269,62 +317,62 @@
    "pLower": 0.10417910383622854,
    "pIndep": 0.05682507669302089,
    "breakEven": 860,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Keller 1+ point",
      "p": 0.70136,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "UTA +1.5 puck line",
      "p": 0.68782,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "UTA team total over 2.5",
      "p": 0.59902,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "P. Mintyukov 1+ blocked shot",
      "p": 0.79678,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. LaCombe 1+ blocked shot",
      "p": 0.77974,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "M. Sergachev 1+ blocked shot",
      "p": 0.76274,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "M. Sergachev 1+ point",
      "p": 0.59384,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "T. Luneau 1+ blocked shot",
      "p": 0.7002,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020370,
    "game": "ANA@UTA",
-   "state": "PRE",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8G Game script",
@@ -332,62 +380,62 @@
    "pLower": 0.09617910383622855,
    "pIndep": 0.05292659742720137,
    "breakEven": 940,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Keller 1+ point",
      "p": 0.70136,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "UTA +1.5 puck line",
      "p": 0.68782,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "UTA team total over 2.5",
      "p": 0.59902,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "J. LaCombe 1+ blocked shot",
      "p": 0.77974,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "M. Sergachev 1+ blocked shot",
      "p": 0.76274,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "M. Sergachev 1+ point",
      "p": 0.59384,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "A. Peeke 1+ blocked shot",
      "p": 0.74556,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "T. Luneau 1+ blocked shot",
      "p": 0.7002,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020370,
    "game": "ANA@UTA",
-   "state": "PRE",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8A Shot-dominant game",
@@ -395,55 +443,55 @@
    "pLower": 0.009143157190886183,
    "pIndep": 0.018893460415108233,
    "breakEven": 10837,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "B. Sennecke 2+ SOG",
      "p": 0.6688,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "L. Cooley 2+ SOG",
      "p": 0.62132,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "V. Trocheck 2+ SOG",
      "p": 0.61826,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "A. Lee 2+ SOG",
      "p": 0.59398,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "T. Terry 2+ SOG",
      "p": 0.60302,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "L. Carlsson 2+ SOG",
      "p": 0.61168,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "C. Gauthier 3+ SOG",
      "p": 0.57624,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "M. Granlund 2+ SOG",
      "p": 0.57022,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     }
    ]
   }

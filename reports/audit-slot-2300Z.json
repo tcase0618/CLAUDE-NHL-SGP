@@ -1,5 +1,5 @@
 {
- "audited_at": "2026-11-22T02:04:09.287165+00:00",
+ "audited_at": "2026-11-22T10:48:07.898804+00:00",
  "source": "slot-2300Z.json",
  "model_version": "v20261106-224110",
  "counts": {
@@ -75,7 +75,7 @@
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -108,7 +108,7 @@
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -141,7 +141,7 @@
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3E Game script",
@@ -174,7 +174,7 @@
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5F Game script",
@@ -219,7 +219,7 @@
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -264,7 +264,7 @@
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5F Game script",
@@ -309,7 +309,7 @@
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -372,7 +372,7 @@
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8D Multi-line production",
@@ -435,7 +435,7 @@
   {
    "game_id": 2026020361,
    "game": "BUF@FLA",
-   "state": "FINAL",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8F Cross-team high-event scenario",
