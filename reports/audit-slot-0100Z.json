@@ -1,33 +1,81 @@
 {
- "audited_at": "2026-11-23T00:04:22.905720+00:00",
+ "audited_at": "2026-11-23T10:48:49.852528+00:00",
  "source": "slot-0100Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 0,
-  "LOST": 0,
-  "PENDING": 9,
+  "WON": 2,
+  "LOST": 7,
+  "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 1.2452999999999999,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.41509999999999997,
+   "brier": 0.2844755233333333,
+   "logloss": 0.7671320522862676
+  },
+  "5": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 0.5527,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.18423333333333333,
+   "brier": 0.2757146468,
+   "logloss": 0.7991338344476663
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.19528,
+   "hit_rate": 0.0,
+   "mean_p": 0.06509333333333334,
+   "brier": 0.004503021866666666,
+   "logloss": 0.06746186528567077
+  }
  },
  "by_size_independence": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 1.190537319561336,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.396845773187112,
+   "brier": 0.3098794182844897,
+   "logloss": 0.826763908263322
+  },
+  "5": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 0.4045119828132632,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.13483732760442108,
+   "brier": 0.290489929724701,
+   "logloss": 0.9014169813581341
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.15470806949624252,
+   "hit_rate": 0.0,
+   "mean_p": 0.051569356498747505,
+   "brier": 0.00266784087252743,
+   "logloss": 0.05295130346877545
+  }
  },
  "legs": {
-  "n": 0,
-  "won": 0,
-  "expected": 0
+  "n": 48,
+  "won": 33,
+  "expected": 33.18068
  },
  "parlays": [
   {
    "game_id": 2026020377,
    "game": "CHI@VAN",
-   "state": "FUT",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -35,32 +83,32 @@
    "pLower": 0.42460972193476615,
    "pIndep": 0.45128977215249605,
    "breakEven": 136,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "F. Hronek 1+ blocked shot",
      "p": 0.7876,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "E. Pettersson 1+ blocked shot",
      "p": 0.77466,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "CHI +1.5 puck line",
      "p": 0.7363,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020377,
    "game": "CHI@VAN",
-   "state": "FUT",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -68,32 +116,32 @@
    "pLower": 0.4295097219347661,
    "pIndep": 0.45783286732583994,
    "breakEven": 133,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "F. Hronek 1+ blocked shot",
      "p": 0.7876,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "E. Pettersson 1+ blocked shot",
      "p": 0.77466,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "A. Vlasic 1+ blocked shot",
      "p": 0.75022,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020377,
    "game": "CHI@VAN",
-   "state": "FUT",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3B Team offensive scenario",
@@ -101,32 +149,32 @@
    "pLower": 0.31068656811704964,
    "pIndep": 0.28141468008299997,
    "breakEven": 222,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "P. Kane 2+ SOG",
      "p": 0.70968,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "P. Kane 1+ point",
      "p": 0.6522,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "F. Nazar 1+ point",
      "p": 0.617,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020377,
    "game": "CHI@VAN",
-   "state": "FUT",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
@@ -134,44 +182,44 @@
    "pLower": 0.12497309306170375,
    "pIndep": 0.09393745292057003,
    "breakEven": 700,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "P. Kane 2+ SOG",
      "p": 0.70968,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "P. Kane 1+ point",
      "p": 0.6522,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "F. Nazar 1+ point",
      "p": 0.617,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "F. Nazar 2+ SOG",
      "p": 0.65636,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "R. Kantserov 1+ point",
      "p": 0.50098,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020377,
    "game": "CHI@VAN",
-   "state": "FUT",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -179,44 +227,44 @@
    "pLower": 0.2415776673702255,
    "pIndep": 0.18914122073444475,
    "breakEven": 314,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "CHI +1.5 puck line",
      "p": 0.7363,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "CHI team total over 2.5",
      "p": 0.64508,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 6
     },
     {
      "text": "P. Kane 1+ point",
      "p": 0.6522,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "F. Hronek 1+ blocked shot",
      "p": 0.7876,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "E. Pettersson 1+ blocked shot",
      "p": 0.77466,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020377,
    "game": "CHI@VAN",
-   "state": "FUT",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5D High-tempo matchup",
@@ -224,44 +272,44 @@
    "pLower": 0.10333309306170375,
    "pIndep": 0.12143330915824843,
    "breakEven": 868,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "P. Kane 2+ SOG",
      "p": 0.70968,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "J. DeBrusk 2+ SOG",
      "p": 0.68008,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "F. Nazar 2+ SOG",
      "p": 0.65636,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. Boeser 2+ SOG",
      "p": 0.62454,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "F. Chytil 2+ SOG",
      "p": 0.61254,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020377,
    "game": "CHI@VAN",
-   "state": "FUT",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -269,62 +317,62 @@
    "pLower": 0.07463910383622854,
    "pIndep": 0.052386889472019735,
    "breakEven": 1240,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "CHI +1.5 puck line",
      "p": 0.7363,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "CHI team total over 2.5",
      "p": 0.64508,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 6
     },
     {
      "text": "F. Nazar 1+ point",
      "p": 0.617,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "I. Cole 1+ blocked shot",
      "p": 0.75414,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "A. Vlasic 1+ blocked shot",
      "p": 0.75022,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "F. Nazar 2+ SOG",
      "p": 0.65636,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "Z. Buium 1+ blocked shot",
      "p": 0.69532,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "A. Levshunov 1+ blocked shot",
      "p": 0.69168,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020377,
    "game": "CHI@VAN",
-   "state": "FUT",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8D Multi-line production",
@@ -332,62 +380,62 @@
    "pLower": 0.04466195177535315,
    "pIndep": 0.05464803092587418,
    "breakEven": 2139,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "I. Cole 1+ blocked shot",
      "p": 0.75414,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "A. Vlasic 1+ blocked shot",
      "p": 0.75022,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "Z. Buium 1+ blocked shot",
      "p": 0.69532,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "A. Levshunov 1+ blocked shot",
      "p": 0.69168,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "T. Willander 1+ blocked shot",
      "p": 0.6929,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "S. Rinzel 1+ blocked shot",
      "p": 0.69334,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. DeBrusk 2+ SOG",
      "p": 0.68008,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "L. Schenn 1+ blocked shot",
      "p": 0.60282,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020377,
    "game": "CHI@VAN",
-   "state": "FUT",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8D Multi-line production",
@@ -395,55 +443,55 @@
    "pLower": 0.03950195177535315,
    "pIndep": 0.047673149098348605,
    "breakEven": 2432,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "I. Cole 1+ blocked shot",
      "p": 0.75414,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "Z. Buium 1+ blocked shot",
      "p": 0.69532,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "T. Willander 1+ blocked shot",
      "p": 0.6929,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "A. Levshunov 1+ blocked shot",
      "p": 0.69168,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "S. Rinzel 1+ blocked shot",
      "p": 0.69334,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. DeBrusk 2+ SOG",
      "p": 0.68008,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "B. Boeser 1+ point",
      "p": 0.65862,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "L. Schenn 1+ blocked shot",
      "p": 0.60282,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   }

@@ -1,49 +1,81 @@
 {
- "audited_at": "2026-11-23T00:04:22.036012+00:00",
+ "audited_at": "2026-11-23T10:48:48.887495+00:00",
  "source": "slot-2200Z.json",
  "model_version": "v20261106-224110",
  "counts": {
   "WON": 1,
-  "LOST": 0,
-  "PENDING": 8,
+  "LOST": 8,
+  "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
   "3": {
-   "n": 1,
+   "n": 3,
    "won": 1,
-   "expected_wins": 0.5711,
-   "hit_rate": 1.0,
-   "mean_p": 0.5711,
-   "brier": 0.18395520999999995,
-   "logloss": 0.5601909533113197
+   "expected_wins": 1.56946,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.5231533333333334,
+   "brier": 0.23032001666666665,
+   "logloss": 0.653529533562117
   },
-  "5": null,
-  "8": null
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.7353,
+   "hit_rate": 0.0,
+   "mean_p": 0.24509999999999998,
+   "brier": 0.06650376919999999,
+   "logloss": 0.2870999432674793
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.2431,
+   "hit_rate": 0.0,
+   "mean_p": 0.08103333333333333,
+   "brier": 0.0068057158666666685,
+   "logloss": 0.08464806212362831
+  }
  },
  "by_size_independence": {
   "3": {
-   "n": 1,
+   "n": 3,
    "won": 1,
-   "expected_wins": 0.569350791124272,
-   "hit_rate": 1.0,
-   "mean_p": 0.569350791124272,
-   "brier": 0.1854587411052904,
-   "logloss": 0.5632585302046267
+   "expected_wins": 1.5628211935173282,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.5209403978391094,
+   "brier": 0.22926143155410936,
+   "logloss": 0.6513763941379945
   },
-  "5": null,
-  "8": null
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.5082712402661057,
+   "hit_rate": 0.0,
+   "mean_p": 0.16942374675536856,
+   "brier": 0.031658183588931736,
+   "logloss": 0.18780747550527657
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.2109641579464833,
+   "hit_rate": 0.0,
+   "mean_p": 0.0703213859821611,
+   "brier": 0.004953840974421367,
+   "logloss": 0.07292139321908138
+  }
  },
  "legs": {
-  "n": 26,
-  "won": 26,
-  "expected": 19.05642
+  "n": 48,
+  "won": 29,
+  "expected": 34.8448
  },
  "parlays": [
   {
    "game_id": 2026020374,
    "game": "BUF@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -51,7 +83,7 @@
    "pLower": 0.5376536098849942,
    "pIndep": 0.5631950888789761,
    "breakEven": -116,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Timmins 1+ blocked shot",
@@ -63,20 +95,20 @@
      "text": "M. Samuelsson 1+ blocked shot",
      "p": 0.85386,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "TBL +1.5 puck line",
      "p": 0.76172,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -4
     }
    ]
   },
   {
    "game_id": 2026020374,
    "game": "BUF@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -96,7 +128,7 @@
      "text": "M. Samuelsson 1+ blocked shot",
      "p": 0.85386,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "N. Kucherov 2+ SOG",
@@ -109,7 +141,7 @@
   {
    "game_id": 2026020374,
    "game": "BUF@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3A Shot-volume structure",
@@ -117,7 +149,7 @@
    "pLower": 0.40604972193476613,
    "pIndep": 0.43027531351408005,
    "breakEven": 146,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "N. Kucherov 2+ SOG",
@@ -134,7 +166,7 @@
     {
      "text": "J. Guentzel 2+ SOG",
      "p": 0.72804,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     }
    ]
@@ -142,7 +174,7 @@
   {
    "game_id": 2026020374,
    "game": "BUF@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
@@ -150,12 +182,12 @@
    "pLower": 0.15055309306170372,
    "pIndep": 0.10812748277379042,
    "breakEven": 564,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "J. Guentzel 2+ SOG",
      "p": 0.72804,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
@@ -174,7 +206,7 @@
      "text": "J. Carlson 2+ SOG",
      "p": 0.63964,
      "result": "WON",
-     "value": 5
+     "value": 6
     },
     {
      "text": "J. Carlson 1+ point",
@@ -187,7 +219,7 @@
   {
    "game_id": 2026020374,
    "game": "BUF@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -195,7 +227,7 @@
    "pLower": 0.330951997284063,
    "pIndep": 0.24023084353463584,
    "breakEven": 202,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Timmins 1+ blocked shot",
@@ -207,19 +239,19 @@
      "text": "M. Samuelsson 1+ blocked shot",
      "p": 0.85386,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "TBL +1.5 puck line",
      "p": 0.76172,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -4
     },
     {
      "text": "TBL team total over 2.5",
      "p": 0.61982,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 2
     },
     {
      "text": "N. Kucherov 1+ point",
@@ -232,7 +264,7 @@
   {
    "game_id": 2026020374,
    "game": "BUF@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5A Five-on-five offensive environment",
@@ -240,7 +272,7 @@
    "pLower": 0.1850720977281403,
    "pIndep": 0.15991291395767943,
    "breakEven": 440,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "N. Kucherov 2+ SOG",
@@ -251,7 +283,7 @@
     {
      "text": "J. Guentzel 2+ SOG",
      "p": 0.72804,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
@@ -270,14 +302,14 @@
      "text": "J. Carlson 2+ SOG",
      "p": 0.63964,
      "result": "WON",
-     "value": 5
+     "value": 6
     }
    ]
   },
   {
    "game_id": 2026020374,
    "game": "BUF@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -285,19 +317,19 @@
    "pLower": 0.08911910383622855,
    "pIndep": 0.06904437401247579,
    "breakEven": 1022,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "TBL +1.5 puck line",
      "p": 0.76172,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -4
     },
     {
      "text": "TBL team total over 2.5",
      "p": 0.61982,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 2
     },
     {
      "text": "J. Guentzel 1+ point",
@@ -314,20 +346,20 @@
     {
      "text": "J. Carlson 1+ blocked shot",
      "p": 0.75404,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "O. Power 1+ blocked shot",
      "p": 0.73766,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "E. Cernak 1+ blocked shot",
      "p": 0.7342,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "R. Dahlin 1+ blocked shot",
@@ -340,7 +372,7 @@
   {
    "game_id": 2026020374,
    "game": "BUF@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8D Multi-line production",
@@ -348,7 +380,7 @@
    "pLower": 0.06091910383622855,
    "pIndep": 0.07440842821821024,
    "breakEven": 1542,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "T. Thompson 2+ SOG",
@@ -359,20 +391,20 @@
     {
      "text": "J. Carlson 1+ blocked shot",
      "p": 0.75404,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "O. Power 1+ blocked shot",
      "p": 0.73766,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "E. Cernak 1+ blocked shot",
      "p": 0.7342,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "R. Dahlin 1+ blocked shot",
@@ -389,13 +421,13 @@
     {
      "text": "C. D'Astous 1+ blocked shot",
      "p": 0.67916,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "V. Hedman 1+ blocked shot",
      "p": 0.67286,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -403,7 +435,7 @@
   {
    "game_id": 2026020374,
    "game": "BUF@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8D Multi-line production",
@@ -411,25 +443,25 @@
    "pLower": 0.05309910383622855,
    "pIndep": 0.06751135571579726,
    "breakEven": 1783,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "J. Carlson 1+ blocked shot",
      "p": 0.75404,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "O. Power 1+ blocked shot",
      "p": 0.73766,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "E. Cernak 1+ blocked shot",
      "p": 0.7342,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "R. Dahlin 1+ blocked shot",
@@ -440,7 +472,7 @@
     {
      "text": "R. McDonagh 1+ blocked shot",
      "p": 0.69772,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -452,13 +484,13 @@
     {
      "text": "C. D'Astous 1+ blocked shot",
      "p": 0.67916,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "V. Hedman 1+ blocked shot",
      "p": 0.67286,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
