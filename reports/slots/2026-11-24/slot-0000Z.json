@@ -1,0 +1,652 @@
+{
+ "generated_at": "2026-11-23T23:03:29.470Z",
+ "model_version": "v20261106-224110",
+ "data_through": "2026-11-23 01:00:00+00:00",
+ "sims": 50000,
+ "games": [
+  {
+   "game_id": 2026020378,
+   "start_utc": "2026-11-24 00:00:00+00:00",
+   "away": "CBJ",
+   "home": "NJD",
+   "sizes": {
+    "3": {
+     "evaluated": 13197,
+     "verified": 96,
+     "finalists": 96,
+     "exposureCap": 2,
+     "picks": [
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "J. Hughes 2+ SOG",
+         "p": 0.8414,
+         "player_id": 8481559,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Pesce 1+ blocked shot",
+         "p": 0.8359,
+         "player_id": 8477488,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "NJD +1.5 puck line",
+         "p": 0.77494,
+         "player_id": "TEAM:NJD",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.53994,
+       "pLower": 0.5126736098849942,
+       "verified": true,
+       "pIndep": 0.5361537295356,
+       "lift": 1.0070619120148236,
+       "breakEven": -105,
+       "mcHits": 26997,
+       "scenario": {
+        "n": 26997,
+        "shots": 59.08452791050858,
+        "goals": 6.301922435826203,
+        "ppg": 1.2952550283364819,
+        "margin": 1.6254769048412787,
+        "pace": 1.0011114148151858
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "J. Hughes 2+ SOG",
+         "p": 0.8414,
+         "player_id": 8481559,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Pesce 1+ blocked shot",
+         "p": 0.8359,
+         "player_id": 8477488,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "Z. Werenski 1+ blocked shot",
+         "p": 0.78322,
+         "player_id": 8478460,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.55284,
+       "pLower": 0.5255736098849942,
+       "verified": true,
+       "pIndep": 0.5501927369862,
+       "lift": 1.0048115193746485,
+       "breakEven": -111,
+       "mcHits": 27642,
+       "scenario": {
+        "n": 27642,
+        "shots": 59.22776933651689,
+        "goals": 6.366435134939585,
+        "ppg": 1.2920555676144996,
+        "margin": 0.6194559004413573,
+        "pace": 1.0017338072362645
+       }
+      },
+      {
+       "family": "3A Shot-volume structure",
+       "legs": [
+        {
+         "text": "Z. Werenski 2+ SOG",
+         "p": 0.77096,
+         "player_id": 8478460,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "T. Meier 2+ SOG",
+         "p": 0.75118,
+         "player_id": 8478414,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Fantilli 2+ SOG",
+         "p": 0.71198,
+         "player_id": 8484166,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.41384,
+       "pLower": 0.3864497219347661,
+       "verified": true,
+       "pIndep": 0.4125399704857601,
+       "lift": 1.0031512813478634,
+       "breakEven": 159,
+       "mcHits": 20692,
+       "scenario": {
+        "n": 20692,
+        "shots": 61.1810844770926,
+        "goals": 6.586796829692635,
+        "ppg": 1.3462207616470134,
+        "margin": 0.4973902957664798,
+        "pace": 1.0062931525668068
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 21874,
+     "verified": 120,
+     "finalists": 120,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "J. Hughes 2+ SOG",
+         "p": 0.8414,
+         "player_id": 8481559,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "NJD +1.5 puck line",
+         "p": 0.77494,
+         "player_id": "TEAM:NJD",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "NJD team total over 2.5",
+         "p": 0.68812,
+         "player_id": "TEAM:NJD",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Hughes 1+ point",
+         "p": 0.7014,
+         "player_id": 8481559,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Pesce 1+ blocked shot",
+         "p": 0.8359,
+         "player_id": 8477488,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.37514,
+       "pLower": 0.349711997284063,
+       "verified": true,
+       "pIndep": 0.2582498355963439,
+       "lift": 1.4526243516621657,
+       "breakEven": 186,
+       "mcHits": 18757,
+       "scenario": {
+        "n": 18757,
+        "shots": 60.214639867782694,
+        "goals": 7.187769899237618,
+        "ppg": 1.5018393133230261,
+        "margin": 2.090792770698939,
+        "pace": 1.0037100144386444
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "NJD +1.5 puck line",
+         "p": 0.77494,
+         "player_id": "TEAM:NJD",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "NJD team total over 2.5",
+         "p": 0.68812,
+         "player_id": "TEAM:NJD",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Hughes 1+ point",
+         "p": 0.7014,
+         "player_id": 8481559,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "Z. Werenski 1+ blocked shot",
+         "p": 0.78322,
+         "player_id": 8478460,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Siegenthaler 1+ blocked shot",
+         "p": 0.77758,
+         "player_id": 8478399,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.32008,
+       "pLower": 0.27727766737022547,
+       "verified": true,
+       "pIndep": 0.227006730464012,
+       "lift": 1.4100022468309288,
+       "breakEven": 261,
+       "mcHits": 16004,
+       "scenario": {
+        "n": 16004,
+        "shots": 59.785616095976,
+        "goals": 7.154648837790552,
+        "ppg": 1.5049987503124218,
+        "margin": 2.047675581104724,
+        "pace": 1.0031487175678497
+       }
+      },
+      {
+       "family": "5E Balanced cross-team structure",
+       "legs": [
+        {
+         "text": "Z. Werenski 1+ blocked shot",
+         "p": 0.78322,
+         "player_id": 8478460,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Siegenthaler 1+ blocked shot",
+         "p": 0.77758,
+         "player_id": 8478399,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "Z. Werenski 2+ SOG",
+         "p": 0.77096,
+         "player_id": 8478460,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "T. Meier 2+ SOG",
+         "p": 0.75118,
+         "player_id": 8478414,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Severson 1+ blocked shot",
+         "p": 0.7298,
+         "player_id": 8476923,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.2597,
+       "pLower": 0.23641209772814029,
+       "verified": true,
+       "pIndep": 0.2555575282280256,
+       "lift": 1.0162095470272283,
+       "breakEven": 323,
+       "mcHits": 12985,
+       "scenario": {
+        "n": 12985,
+        "shots": 60.50465922217944,
+        "goals": 6.507816711590296,
+        "ppg": 1.3420100115517906,
+        "margin": 0.5929919137466307,
+        "pace": 1.0045421460659907
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 17735,
+     "verified": 96,
+     "finalists": 96,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "J. Hughes 1+ point",
+         "p": 0.7014,
+         "player_id": 8481559,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "NJD team total over 2.5",
+         "p": 0.68812,
+         "player_id": "TEAM:NJD",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "Game total over 5.5",
+         "p": 0.61066,
+         "player_id": "GAME",
+         "stat": "GT",
+         "line": 5.5,
+         "side": "over",
+         "team": -1
+        },
+        {
+         "text": "Z. Werenski 2+ SOG",
+         "p": 0.77096,
+         "player_id": 8478460,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Siegenthaler 1+ blocked shot",
+         "p": 0.77758,
+         "player_id": 8478399,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "T. Meier 2+ SOG",
+         "p": 0.75118,
+         "player_id": 8478414,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "I. Provorov 1+ blocked shot",
+         "p": 0.75082,
+         "player_id": 8478500,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "D. Severson 1+ blocked shot",
+         "p": 0.7298,
+         "player_id": 8476923,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.1161,
+       "pLower": 0.10277910383622854,
+       "verified": true,
+       "pIndep": 0.07013422292398133,
+       "lift": 1.6553972534327654,
+       "breakEven": 873,
+       "mcHits": 5805,
+       "scenario": {
+        "n": 5805,
+        "shots": 62.955900086132644,
+        "goals": 8.29250645994832,
+        "ppg": 1.7440137812230836,
+        "margin": 1.5286821705426357,
+        "pace": 1.0108491689865184
+       }
+      },
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "CBJ team total under 3.5",
+         "p": 0.64186,
+         "player_id": "TEAM:CBJ",
+         "stat": "TT",
+         "line": 3.5,
+         "side": "under",
+         "team": 1
+        },
+        {
+         "text": "NJD moneyline",
+         "p": 0.58452,
+         "player_id": "TEAM:NJD",
+         "stat": "ML",
+         "line": 0,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "I. Provorov 1+ blocked shot",
+         "p": 0.75082,
+         "player_id": 8478500,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "D. Severson 1+ blocked shot",
+         "p": 0.7298,
+         "player_id": 8476923,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "B. Dillon 1+ blocked shot",
+         "p": 0.72954,
+         "player_id": 8475455,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "E. Gudbranson 1+ blocked shot",
+         "p": 0.71588,
+         "player_id": 8475790,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "D. Fabbro 1+ blocked shot",
+         "p": 0.71616,
+         "player_id": 8479371,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "D. Hamilton 1+ blocked shot",
+         "p": 0.69568,
+         "player_id": 8476462,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.0716,
+       "pLower": 0.058279103836228544,
+       "verified": true,
+       "pIndep": 0.052215963948795886,
+       "lift": 1.3712281567800322,
+       "breakEven": 1616,
+       "mcHits": 3580,
+       "scenario": {
+        "n": 3580,
+        "shots": 58.36033519553072,
+        "goals": 5.768715083798883,
+        "ppg": 1.2122905027932962,
+        "margin": 2.406145251396648,
+        "pace": 0.9978140613553245
+       }
+      },
+      {
+       "family": "8A Shot-dominant game",
+       "legs": [
+        {
+         "text": "A. Fantilli 2+ SOG",
+         "p": 0.71198,
+         "player_id": 8484166,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "D. Hamilton 2+ SOG",
+         "p": 0.67594,
+         "player_id": 8476462,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "L. Evangelista 2+ SOG",
+         "p": 0.6707,
+         "player_id": 8482146,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Hughes 3+ SOG",
+         "p": 0.65696,
+         "player_id": 8481559,
+         "stat": "SOG",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Bratt 2+ SOG",
+         "p": 0.65502,
+         "player_id": 8479407,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "N. Hischier 2+ SOG",
+         "p": 0.64324,
+         "player_id": 8480002,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "L. Hughes 2+ SOG",
+         "p": 0.62284,
+         "player_id": 8482684,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Gritsyuk 2+ SOG",
+         "p": 0.59918,
+         "player_id": 8481721,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.0375,
+       "pLower": 0.025903157190886178,
+       "verified": true,
+       "pIndep": 0.033116230385274475,
+       "lift": 1.1323752602190742,
+       "breakEven": 3761,
+       "mcHits": 1875,
+       "scenario": {
+        "n": 1875,
+        "shots": 67.2928,
+        "goals": 7.2112,
+        "ppg": 1.5717333333333334,
+        "margin": 1.1728,
+        "pace": 1.0195369789759319
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

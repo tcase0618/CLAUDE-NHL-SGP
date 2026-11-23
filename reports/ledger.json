@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T10:49:34.025023+00:00",
+ "updated_at": "2026-11-23T23:05:09.047427+00:00",
  "nights": [
   "2026-11-07",
   "2026-11-08",
@@ -33321,7 +33321,7 @@
      "text": "C. Tanev 1+ blocked shot",
      "p": 0.81022,
      "result": "WON",
-     "value": 4
+     "value": 3
     },
     {
      "text": "TOR +1.5 puck line",
@@ -33355,7 +33355,7 @@
      "text": "C. Tanev 1+ blocked shot",
      "p": 0.81022,
      "result": "WON",
-     "value": 4
+     "value": 3
     },
     {
      "text": "Z. Werenski 2+ SOG",
@@ -33527,7 +33527,7 @@
      "text": "C. Tanev 1+ blocked shot",
      "p": 0.81022,
      "result": "WON",
-     "value": 4
+     "value": 3
     },
     {
      "text": "A. Matthews 1+ point",
@@ -35521,7 +35521,7 @@
      "text": "B. McNabb 1+ blocked shot",
      "p": 0.79876,
      "result": "WON",
-     "value": 3
+     "value": 4
     }
    ]
   },
@@ -35693,7 +35693,7 @@
      "text": "B. McNabb 1+ blocked shot",
      "p": 0.79876,
      "result": "WON",
-     "value": 3
+     "value": 4
     }
    ]
   },
@@ -35797,7 +35797,7 @@
      "text": "B. McNabb 1+ blocked shot",
      "p": 0.79876,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "J. Morrissey 1+ blocked shot",
@@ -38147,7 +38147,7 @@
      "text": "J. Hofer 23+ saves",
      "p": 0.5374034648298893,
      "result": "WON",
-     "value": 26
+     "value": 27
     }
    ]
   },
