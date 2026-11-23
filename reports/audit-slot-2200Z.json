@@ -1,27 +1,43 @@
 {
- "audited_at": "2026-11-22T23:04:22.174470+00:00",
+ "audited_at": "2026-11-23T00:04:22.036012+00:00",
  "source": "slot-2200Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 0,
+  "WON": 1,
   "LOST": 0,
-  "PENDING": 9,
+  "PENDING": 8,
   "VOID-REPRICE": 0
  },
  "by_size": {
-  "3": null,
+  "3": {
+   "n": 1,
+   "won": 1,
+   "expected_wins": 0.5711,
+   "hit_rate": 1.0,
+   "mean_p": 0.5711,
+   "brier": 0.18395520999999995,
+   "logloss": 0.5601909533113197
+  },
   "5": null,
   "8": null
  },
  "by_size_independence": {
-  "3": null,
+  "3": {
+   "n": 1,
+   "won": 1,
+   "expected_wins": 0.569350791124272,
+   "hit_rate": 1.0,
+   "mean_p": 0.569350791124272,
+   "brier": 0.1854587411052904,
+   "logloss": 0.5632585302046267
+  },
   "5": null,
   "8": null
  },
  "legs": {
-  "n": 21,
-  "won": 21,
-  "expected": 15.35124
+  "n": 26,
+  "won": 26,
+  "expected": 19.05642
  },
  "parlays": [
   {
@@ -41,7 +57,7 @@
      "text": "C. Timmins 1+ blocked shot",
      "p": 0.8559,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "M. Samuelsson 1+ blocked shot",
@@ -68,13 +84,13 @@
    "pLower": 0.5438336098849943,
    "pIndep": 0.569350791124272,
    "breakEven": -119,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "C. Timmins 1+ blocked shot",
      "p": 0.8559,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "M. Samuelsson 1+ blocked shot",
@@ -85,8 +101,8 @@
     {
      "text": "N. Kucherov 2+ SOG",
      "p": 0.76714,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 4
     }
    ]
   },
@@ -106,14 +122,14 @@
     {
      "text": "N. Kucherov 2+ SOG",
      "p": 0.76714,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "T. Thompson 2+ SOG",
      "p": 0.76706,
      "result": "WON",
-     "value": 2
+     "value": 5
     },
     {
      "text": "J. Guentzel 2+ SOG",
@@ -158,7 +174,7 @@
      "text": "J. Carlson 2+ SOG",
      "p": 0.63964,
      "result": "WON",
-     "value": 4
+     "value": 5
     },
     {
      "text": "J. Carlson 1+ point",
@@ -185,7 +201,7 @@
      "text": "C. Timmins 1+ blocked shot",
      "p": 0.8559,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "M. Samuelsson 1+ blocked shot",
@@ -229,8 +245,8 @@
     {
      "text": "N. Kucherov 2+ SOG",
      "p": 0.76714,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "J. Guentzel 2+ SOG",
@@ -254,7 +270,7 @@
      "text": "J. Carlson 2+ SOG",
      "p": 0.63964,
      "result": "WON",
-     "value": 4
+     "value": 5
     }
    ]
   },
@@ -293,7 +309,7 @@
      "text": "T. Thompson 2+ SOG",
      "p": 0.76706,
      "result": "WON",
-     "value": 2
+     "value": 5
     },
     {
      "text": "J. Carlson 1+ blocked shot",
@@ -338,7 +354,7 @@
      "text": "T. Thompson 2+ SOG",
      "p": 0.76706,
      "result": "WON",
-     "value": 2
+     "value": 5
     },
     {
      "text": "J. Carlson 1+ blocked shot",
@@ -367,8 +383,8 @@
     {
      "text": "J. Moser 1+ blocked shot",
      "p": 0.70188,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "C. D'Astous 1+ blocked shot",
@@ -430,8 +446,8 @@
     {
      "text": "J. Moser 1+ blocked shot",
      "p": 0.70188,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "C. D'Astous 1+ blocked shot",

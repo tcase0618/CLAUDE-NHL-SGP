@@ -1,5 +1,5 @@
 # Parlay audit — slot-0300Z.json
-Audited 2026-11-22T10:48:11.321866+00:00 against official NHL data · model v20261106-224110
+Audited 2026-11-23T00:04:21.019122+00:00 against official NHL data · model v20261106-224110
 
 **Parlays:** 6 won · 12 lost · 0 pending · 0 void/reprice (of 18)
 
@@ -124,7 +124,7 @@ _Small samples: a single night cannot validate or refute the model — compare a
 - ✅ B. Montour 2+ SOG (model 64%) — actual: 2
 - ✅ V. Dunn 2+ SOG (model 61%) — actual: 3
 - ✅ I. Stenberg 2+ SOG (model 60%) — actual: 2
-- ✅ M. Marchment 2+ SOG (model 59%) — actual: 3
+- ✅ M. Marchment 2+ SOG (model 59%) — actual: 2
 - ❌ J. Eberle 2+ SOG (model 58%) — actual: 1
 
 **8-leg B · 8G Game script** — model 7.7% · break-even +1473 → **LOST**

@@ -1,5 +1,5 @@
 {
- "audited_at": "2026-11-22T10:48:11.321866+00:00",
+ "audited_at": "2026-11-23T00:04:21.019122+00:00",
  "source": "slot-0300Z.json",
  "model_version": "v20261106-224110",
  "counts": {
@@ -782,7 +782,7 @@
      "text": "M. Marchment 2+ SOG",
      "p": 0.5921,
      "result": "WON",
-     "value": 3
+     "value": 2
     },
     {
      "text": "J. Eberle 2+ SOG",

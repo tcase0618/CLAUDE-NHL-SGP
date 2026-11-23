@@ -1,920 +1,449 @@
 {
- "audited_at": "2026-11-20T10:49:24.601479+00:00",
+ "audited_at": "2026-11-23T00:04:22.905720+00:00",
  "source": "slot-0100Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 4,
-  "LOST": 12,
-  "PENDING": 0,
-  "VOID-REPRICE": 2
+  "WON": 0,
+  "LOST": 0,
+  "PENDING": 9,
+  "VOID-REPRICE": 0
  },
  "by_size": {
-  "3": {
-   "n": 5,
-   "won": 2,
-   "expected_wins": 2.56506,
-   "hit_rate": 0.4,
-   "mean_p": 0.513012,
-   "brier": 0.21324011768,
-   "logloss": 0.619266408395906
-  },
-  "5": {
-   "n": 5,
-   "won": 2,
-   "expected_wins": 1.57984,
-   "hit_rate": 0.4,
-   "mean_p": 0.31596799999999997,
-   "brier": 0.25122798848,
-   "logloss": 0.6967334967486845
-  },
-  "8": {
-   "n": 6,
-   "won": 0,
-   "expected_wins": 0.50696,
-   "hit_rate": 0.0,
-   "mean_p": 0.08449333333333332,
-   "brier": 0.007796081466666667,
-   "logloss": 0.08866878377250342
-  }
+  "3": null,
+  "5": null,
+  "8": null
  },
  "by_size_independence": {
-  "3": {
-   "n": 5,
-   "won": 2,
-   "expected_wins": 2.549792066402648,
-   "hit_rate": 0.4,
-   "mean_p": 0.5099584132805296,
-   "brier": 0.21238843683475492,
-   "logloss": 0.6175727532416591
-  },
-  "5": {
-   "n": 5,
-   "won": 2,
-   "expected_wins": 1.1583184449718407,
-   "hit_rate": 0.4,
-   "mean_p": 0.23166368899436812,
-   "brier": 0.30220017610094774,
-   "logloss": 0.834317248360677
-  },
-  "8": {
-   "n": 6,
-   "won": 0,
-   "expected_wins": 0.4105741884636219,
-   "hit_rate": 0.0,
-   "mean_p": 0.06842903141060365,
-   "brier": 0.005273268036633371,
-   "logloss": 0.07122501300394515
-  }
+  "3": null,
+  "5": null,
+  "8": null
  },
  "legs": {
-  "n": 90,
-  "won": 71,
-  "expected": 66.14506
+  "n": 0,
+  "won": 0,
+  "expected": 0
  },
  "parlays": [
   {
-   "game_id": 2026020353,
-   "game": "CBJ@CHI",
-   "state": "OFF",
+   "game_id": 2026020377,
+   "game": "CHI@VAN",
+   "state": "FUT",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
-   "pJoint": 0.48168,
-   "pLower": 0.44058454504853584,
-   "pIndep": 0.475759513583008,
-   "breakEven": 127,
-   "status": "LOST",
+   "pJoint": 0.452,
+   "pLower": 0.42460972193476615,
+   "pIndep": 0.45128977215249605,
+   "breakEven": 136,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "I. Cole 1+ blocked shot",
-     "p": 0.80282,
-     "result": "LOST",
-     "value": 0
+     "text": "F. Hronek 1+ blocked shot",
+     "p": 0.7876,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "Z. Werenski 2+ SOG",
-     "p": 0.78822,
-     "result": "WON",
-     "value": 2
+     "text": "E. Pettersson 1+ blocked shot",
+     "p": 0.77466,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "CBJ +1.5 puck line",
-     "p": 0.73926,
-     "result": "WON",
-     "value": 2
-    }
-   ]
-  },
-  {
-   "game_id": 2026020353,
-   "game": "CBJ@CHI",
-   "state": "OFF",
-   "size": 3,
-   "pick": "B",
-   "family": "3D Cross-team scenario",
-   "pJoint": 0.50766,
-   "pLower": 0.46656454504853584,
-   "pIndep": 0.50689769922576,
-   "breakEven": 114,
-   "status": "LOST",
-   "legs": [
-    {
-     "text": "I. Cole 1+ blocked shot",
-     "p": 0.80282,
-     "result": "LOST",
-     "value": 0
-    },
-    {
-     "text": "Z. Werenski 2+ SOG",
-     "p": 0.78822,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "C. Bedard 2+ SOG",
-     "p": 0.7857,
-     "result": "VOID",
+     "text": "CHI +1.5 puck line",
+     "p": 0.7363,
+     "result": "PENDING",
      "value": null
     }
    ]
   },
   {
-   "game_id": 2026020353,
-   "game": "CBJ@CHI",
-   "state": "OFF",
+   "game_id": 2026020377,
+   "game": "CHI@VAN",
+   "state": "FUT",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.4569,
+   "pLower": 0.4295097219347661,
+   "pIndep": 0.45783286732583994,
+   "breakEven": 133,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "F. Hronek 1+ blocked shot",
+     "p": 0.7876,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "E. Pettersson 1+ blocked shot",
+     "p": 0.77466,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "A. Vlasic 1+ blocked shot",
+     "p": 0.75022,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020377,
+   "game": "CHI@VAN",
+   "state": "FUT",
    "size": 3,
    "pick": "C",
    "family": "3B Team offensive scenario",
-   "pJoint": 0.36786,
-   "pLower": 0.3421465681170497,
-   "pIndep": 0.34032147560063997,
-   "breakEven": 192,
-   "status": "VOID-REPRICE",
+   "pJoint": 0.3364,
+   "pLower": 0.31068656811704964,
+   "pIndep": 0.28141468008299997,
+   "breakEven": 222,
+   "status": "PENDING",
    "legs": [
-    {
-     "text": "C. Bedard 2+ SOG",
-     "p": 0.7857,
-     "result": "VOID",
-     "value": null
-    },
     {
      "text": "P. Kane 2+ SOG",
-     "p": 0.6808,
-     "result": "WON",
-     "value": 2
+     "p": 0.70968,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "C. Bedard 1+ point",
-     "p": 0.64578,
-     "result": "VOID",
+     "text": "P. Kane 1+ point",
+     "p": 0.6522,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "F. Nazar 1+ point",
+     "p": 0.617,
+     "result": "PENDING",
      "value": null
     }
    ]
   },
   {
-   "game_id": 2026020353,
-   "game": "CBJ@CHI",
-   "state": "OFF",
-   "size": 5,
-   "pick": "A",
-   "family": "5F Game script",
-   "pJoint": 0.28868,
-   "pLower": 0.24587766737022548,
-   "pIndep": 0.19001110915363265,
-   "breakEven": 307,
-   "status": "WON",
-   "legs": [
-    {
-     "text": "CBJ +1.5 puck line",
-     "p": 0.73926,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "CBJ team total over 2.5",
-     "p": 0.66026,
-     "result": "WON",
-     "value": 4
-    },
-    {
-     "text": "Z. Werenski 1+ point",
-     "p": 0.68514,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "A. Vlasic 1+ blocked shot",
-     "p": 0.77062,
-     "result": "WON",
-     "value": 1
-    },
-    {
-     "text": "A. Fantilli 2+ SOG",
-     "p": 0.72854,
-     "result": "WON",
-     "value": 5
-    }
-   ]
-  },
-  {
-   "game_id": 2026020353,
-   "game": "CBJ@CHI",
-   "state": "OFF",
-   "size": 5,
-   "pick": "B",
-   "family": "5F Game script",
-   "pJoint": 0.33062,
-   "pLower": 0.30519199728406304,
-   "pIndep": 0.21525525595071981,
-   "breakEven": 228,
-   "status": "LOST",
-   "legs": [
-    {
-     "text": "CBJ +1.5 puck line",
-     "p": 0.73926,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "CBJ team total over 2.5",
-     "p": 0.66026,
-     "result": "WON",
-     "value": 4
-    },
-    {
-     "text": "Z. Werenski 1+ point",
-     "p": 0.68514,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "Z. Werenski 2+ SOG",
-     "p": 0.78822,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "I. Cole 1+ blocked shot",
-     "p": 0.80282,
-     "result": "LOST",
-     "value": 0
-    }
-   ]
-  },
-  {
-   "game_id": 2026020353,
-   "game": "CBJ@CHI",
-   "state": "OFF",
-   "size": 5,
-   "pick": "C",
-   "family": "5F Game script",
-   "pJoint": 0.25922,
-   "pLower": 0.2359320977281403,
-   "pIndep": 0.1578040322333423,
-   "breakEven": 324,
-   "status": "VOID-REPRICE",
-   "legs": [
-    {
-     "text": "Z. Werenski 1+ point",
-     "p": 0.68514,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "CBJ team total over 2.5",
-     "p": 0.66026,
-     "result": "WON",
-     "value": 4
-    },
-    {
-     "text": "Game total over 5.5",
-     "p": 0.60876,
-     "result": "WON",
-     "value": 6
-    },
-    {
-     "text": "C. Bedard 2+ SOG",
-     "p": 0.7857,
-     "result": "VOID",
-     "value": null
-    },
-    {
-     "text": "A. Fantilli 2+ SOG",
-     "p": 0.72854,
-     "result": "WON",
-     "value": 5
-    }
-   ]
-  },
-  {
-   "game_id": 2026020353,
-   "game": "CBJ@CHI",
-   "state": "OFF",
-   "size": 8,
-   "pick": "A",
-   "family": "8G Game script",
-   "pJoint": 0.08052,
-   "pLower": 0.06719910383622854,
-   "pIndep": 0.04764523872570144,
-   "breakEven": 1388,
-   "status": "LOST",
-   "legs": [
-    {
-     "text": "CHI +1.5 puck line",
-     "p": 0.6645,
-     "result": "LOST",
-     "value": -2
-    },
-    {
-     "text": "CHI team total over 2.5",
-     "p": 0.60404,
-     "result": "LOST",
-     "value": 2
-    },
-    {
-     "text": "C. Bedard 1+ point",
-     "p": 0.64578,
-     "result": "VOID",
-     "value": null
-    },
-    {
-     "text": "A. Vlasic 1+ blocked shot",
-     "p": 0.77062,
-     "result": "WON",
-     "value": 1
-    },
-    {
-     "text": "S. Rinzel 1+ blocked shot",
-     "p": 0.72442,
-     "result": "WON",
-     "value": 1
-    },
-    {
-     "text": "A. Fantilli 2+ SOG",
-     "p": 0.72854,
-     "result": "WON",
-     "value": 5
-    },
-    {
-     "text": "P. Kane 2+ SOG",
-     "p": 0.6808,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "Z. Werenski 1+ blocked shot",
-     "p": 0.69134,
-     "result": "WON",
-     "value": 1
-    }
-   ]
-  },
-  {
-   "game_id": 2026020353,
-   "game": "CBJ@CHI",
-   "state": "OFF",
-   "size": 8,
-   "pick": "B",
-   "family": "8D Multi-line production",
-   "pJoint": 0.05258,
-   "pLower": 0.04100195177535315,
-   "pIndep": 0.05167655092214738,
-   "breakEven": 2339,
-   "status": "LOST",
-   "legs": [
-    {
-     "text": "A. Vlasic 1+ blocked shot",
-     "p": 0.77062,
-     "result": "WON",
-     "value": 1
-    },
-    {
-     "text": "S. Rinzel 1+ blocked shot",
-     "p": 0.72442,
-     "result": "WON",
-     "value": 1
-    },
-    {
-     "text": "A. Levshunov 1+ blocked shot",
-     "p": 0.71016,
-     "result": "LOST",
-     "value": 0
-    },
-    {
-     "text": "Z. Werenski 1+ blocked shot",
-     "p": 0.69134,
-     "result": "WON",
-     "value": 1
-    },
-    {
-     "text": "W. Kaiser 1+ blocked shot",
-     "p": 0.69004,
-     "result": "WON",
-     "value": 1
-    },
-    {
-     "text": "I. Provorov 1+ blocked shot",
-     "p": 0.6835,
-     "result": "LOST",
-     "value": 0
-    },
-    {
-     "text": "P. Kane 2+ SOG",
-     "p": 0.6808,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "C. Bedard 1+ point",
-     "p": 0.64578,
-     "result": "VOID",
-     "value": null
-    }
-   ]
-  },
-  {
-   "game_id": 2026020353,
-   "game": "CBJ@CHI",
-   "state": "OFF",
-   "size": 8,
-   "pick": "C",
-   "family": "8G Game script",
-   "pJoint": 0.0516,
-   "pLower": 0.04002195177535315,
-   "pIndep": 0.0392291144800167,
-   "breakEven": 2399,
-   "status": "LOST",
-   "legs": [
-    {
-     "text": "CHI +1.5 puck line",
-     "p": 0.6645,
-     "result": "LOST",
-     "value": -2
-    },
-    {
-     "text": "CHI team total over 2.5",
-     "p": 0.60404,
-     "result": "LOST",
-     "value": 2
-    },
-    {
-     "text": "S. Rinzel 1+ blocked shot",
-     "p": 0.72442,
-     "result": "WON",
-     "value": 1
-    },
-    {
-     "text": "A. Levshunov 1+ blocked shot",
-     "p": 0.71016,
-     "result": "LOST",
-     "value": 0
-    },
-    {
-     "text": "Z. Werenski 1+ blocked shot",
-     "p": 0.69134,
-     "result": "WON",
-     "value": 1
-    },
-    {
-     "text": "I. Provorov 1+ blocked shot",
-     "p": 0.6835,
-     "result": "LOST",
-     "value": 0
-    },
-    {
-     "text": "W. Kaiser 1+ blocked shot",
-     "p": 0.69004,
-     "result": "WON",
-     "value": 1
-    },
-    {
-     "text": "D. Severson 1+ blocked shot",
-     "p": 0.64132,
-     "result": "WON",
-     "value": 2
-    }
-   ]
-  },
-  {
-   "game_id": 2026020355,
-   "game": "MIN@CGY",
-   "state": "OFF",
-   "size": 3,
-   "pick": "A",
-   "family": "3E Game script",
-   "pJoint": 0.55852,
-   "pLower": 0.5312536098849943,
-   "pIndep": 0.5539648441432641,
-   "breakEven": -113,
-   "status": "WON",
-   "legs": [
-    {
-     "text": "M. Boldy 2+ SOG",
-     "p": 0.83678,
-     "result": "WON",
-     "value": 3
-    },
-    {
-     "text": "J. Brodin 1+ blocked shot",
-     "p": 0.83428,
-     "result": "WON",
-     "value": 4
-    },
-    {
-     "text": "MIN +1.5 puck line",
-     "p": 0.79628,
-     "result": "WON",
-     "value": 3
-    }
-   ]
-  },
-  {
-   "game_id": 2026020355,
-   "game": "MIN@CGY",
-   "state": "OFF",
-   "size": 3,
-   "pick": "B",
-   "family": "3D Cross-team scenario",
-   "pJoint": 0.5719,
-   "pLower": 0.5446336098849942,
-   "pIndep": 0.570915573221296,
-   "breakEven": -120,
-   "status": "WON",
-   "legs": [
-    {
-     "text": "M. Boldy 2+ SOG",
-     "p": 0.83678,
-     "result": "WON",
-     "value": 3
-    },
-    {
-     "text": "J. Brodin 1+ blocked shot",
-     "p": 0.83428,
-     "result": "WON",
-     "value": 4
-    },
-    {
-     "text": "Z. Whitecloud 1+ blocked shot",
-     "p": 0.82442,
-     "result": "WON",
-     "value": 1
-    }
-   ]
-  },
-  {
-   "game_id": 2026020355,
-   "game": "MIN@CGY",
-   "state": "OFF",
-   "size": 3,
-   "pick": "C",
-   "family": "3A Shot-volume structure",
-   "pJoint": 0.4453,
-   "pLower": 0.4179097219347661,
-   "pIndep": 0.44225443622932,
-   "breakEven": 139,
-   "status": "LOST",
-   "legs": [
-    {
-     "text": "K. Kaprizov 2+ SOG",
-     "p": 0.81118,
-     "result": "LOST",
-     "value": 1
-    },
-    {
-     "text": "J. Eriksson Ek 2+ SOG",
-     "p": 0.77028,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "Q. Hughes 2+ SOG",
-     "p": 0.70508,
-     "result": "WON",
-     "value": 2
-    }
-   ]
-  },
-  {
-   "game_id": 2026020355,
-   "game": "MIN@CGY",
-   "state": "OFF",
+   "game_id": 2026020377,
+   "game": "CHI@VAN",
+   "state": "FUT",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
-   "pJoint": 0.24466,
-   "pLower": 0.2213720977281403,
-   "pIndep": 0.18304221443782678,
-   "breakEven": 352,
-   "status": "LOST",
+   "pJoint": 0.14498,
+   "pLower": 0.12497309306170375,
+   "pIndep": 0.09393745292057003,
+   "breakEven": 700,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "K. Kaprizov 2+ SOG",
-     "p": 0.81118,
-     "result": "LOST",
-     "value": 1
+     "text": "P. Kane 2+ SOG",
+     "p": 0.70968,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "J. Eriksson Ek 2+ SOG",
-     "p": 0.77028,
-     "result": "WON",
-     "value": 2
+     "text": "P. Kane 1+ point",
+     "p": 0.6522,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "K. Kaprizov 1+ point",
-     "p": 0.6871,
-     "result": "WON",
-     "value": 3
+     "text": "F. Nazar 1+ point",
+     "p": 0.617,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "Q. Hughes 1+ point",
-     "p": 0.64888,
-     "result": "WON",
-     "value": 2
+     "text": "F. Nazar 2+ SOG",
+     "p": 0.65636,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "M. Boldy 1+ point",
-     "p": 0.64492,
-     "result": "WON",
-     "value": 3
+     "text": "R. Kantserov 1+ point",
+     "p": 0.50098,
+     "result": "PENDING",
+     "value": null
     }
    ]
   },
   {
-   "game_id": 2026020355,
-   "game": "MIN@CGY",
-   "state": "OFF",
+   "game_id": 2026020377,
+   "game": "CHI@VAN",
+   "state": "FUT",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
-   "pJoint": 0.37786,
-   "pLower": 0.352431997284063,
-   "pIndep": 0.36922828119364154,
-   "breakEven": 184,
-   "status": "LOST",
+   "pJoint": 0.28438,
+   "pLower": 0.2415776673702255,
+   "pIndep": 0.18914122073444475,
+   "breakEven": 314,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "M. Boldy 2+ SOG",
-     "p": 0.83678,
-     "result": "WON",
-     "value": 3
+     "text": "CHI +1.5 puck line",
+     "p": 0.7363,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "J. Brodin 1+ blocked shot",
-     "p": 0.83428,
-     "result": "WON",
-     "value": 4
+     "text": "CHI team total over 2.5",
+     "p": 0.64508,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "Z. Whitecloud 1+ blocked shot",
-     "p": 0.82442,
-     "result": "WON",
-     "value": 1
+     "text": "P. Kane 1+ point",
+     "p": 0.6522,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "K. Kaprizov 2+ SOG",
-     "p": 0.81118,
-     "result": "LOST",
-     "value": 1
+     "text": "F. Hronek 1+ blocked shot",
+     "p": 0.7876,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "MIN +1.5 puck line",
-     "p": 0.79628,
-     "result": "WON",
-     "value": 3
+     "text": "E. Pettersson 1+ blocked shot",
+     "p": 0.77466,
+     "result": "PENDING",
+     "value": null
     }
    ]
   },
   {
-   "game_id": 2026020355,
-   "game": "MIN@CGY",
-   "state": "OFF",
+   "game_id": 2026020377,
+   "game": "CHI@VAN",
+   "state": "FUT",
    "size": 5,
    "pick": "C",
-   "family": "5F Game script",
-   "pJoint": 0.33802,
-   "pLower": 0.312591997284063,
-   "pIndep": 0.20078158423601994,
-   "breakEven": 220,
-   "status": "WON",
+   "family": "5D High-tempo matchup",
+   "pJoint": 0.12334,
+   "pLower": 0.10333309306170375,
+   "pIndep": 0.12143330915824843,
+   "breakEven": 868,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "Z. Whitecloud 1+ blocked shot",
-     "p": 0.82442,
-     "result": "WON",
-     "value": 1
+     "text": "P. Kane 2+ SOG",
+     "p": 0.70968,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "MIN +1.5 puck line",
-     "p": 0.79628,
-     "result": "WON",
-     "value": 3
+     "text": "J. DeBrusk 2+ SOG",
+     "p": 0.68008,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "MIN team total over 2.5",
-     "p": 0.6764,
-     "result": "WON",
-     "value": 4
+     "text": "F. Nazar 2+ SOG",
+     "p": 0.65636,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "K. Kaprizov 1+ point",
-     "p": 0.6871,
-     "result": "WON",
-     "value": 3
+     "text": "B. Boeser 2+ SOG",
+     "p": 0.62454,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "Q. Hughes 1+ point",
-     "p": 0.64888,
-     "result": "WON",
-     "value": 2
+     "text": "F. Chytil 2+ SOG",
+     "p": 0.61254,
+     "result": "PENDING",
+     "value": null
     }
    ]
   },
   {
-   "game_id": 2026020355,
-   "game": "MIN@CGY",
-   "state": "OFF",
+   "game_id": 2026020377,
+   "game": "CHI@VAN",
+   "state": "FUT",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
-   "pJoint": 0.11992,
-   "pLower": 0.10659910383622855,
-   "pIndep": 0.07259467789147551,
-   "breakEven": 838,
-   "status": "LOST",
+   "pJoint": 0.08796,
+   "pLower": 0.07463910383622854,
+   "pIndep": 0.052386889472019735,
+   "breakEven": 1240,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "J. Spurgeon 1+ blocked shot",
-     "p": 0.78522,
-     "result": "WON",
-     "value": 1
+     "text": "CHI +1.5 puck line",
+     "p": 0.7363,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "Y. Kuznetsov 1+ blocked shot",
-     "p": 0.77628,
-     "result": "LOST",
-     "value": 0
+     "text": "CHI team total over 2.5",
+     "p": 0.64508,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "J. Eriksson Ek 2+ SOG",
-     "p": 0.77028,
-     "result": "WON",
-     "value": 2
+     "text": "F. Nazar 1+ point",
+     "p": 0.617,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "J. Hanley 1+ blocked shot",
-     "p": 0.76846,
-     "result": "WON",
-     "value": 2
+     "text": "I. Cole 1+ blocked shot",
+     "p": 0.75414,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "J. Middleton 1+ blocked shot",
-     "p": 0.7679,
-     "result": "WON",
-     "value": 1
+     "text": "A. Vlasic 1+ blocked shot",
+     "p": 0.75022,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "MIN team total over 2.5",
-     "p": 0.6764,
-     "result": "WON",
-     "value": 4
+     "text": "F. Nazar 2+ SOG",
+     "p": 0.65636,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "MIN moneyline",
-     "p": 0.60248,
-     "result": "WON",
-     "value": 3
+     "text": "Z. Buium 1+ blocked shot",
+     "p": 0.69532,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "Q. Hughes 1+ point",
-     "p": 0.64888,
-     "result": "WON",
-     "value": 2
+     "text": "A. Levshunov 1+ blocked shot",
+     "p": 0.69168,
+     "result": "PENDING",
+     "value": null
     }
    ]
   },
   {
-   "game_id": 2026020355,
-   "game": "MIN@CGY",
-   "state": "OFF",
+   "game_id": 2026020377,
+   "game": "CHI@VAN",
+   "state": "FUT",
    "size": 8,
    "pick": "B",
    "family": "8D Multi-line production",
-   "pJoint": 0.10384,
-   "pLower": 0.09051910383622855,
-   "pIndep": 0.10117688931440676,
-   "breakEven": 1005,
-   "status": "LOST",
+   "pJoint": 0.05624,
+   "pLower": 0.04466195177535315,
+   "pIndep": 0.05464803092587418,
+   "breakEven": 2139,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "J. Spurgeon 1+ blocked shot",
-     "p": 0.78522,
-     "result": "WON",
-     "value": 1
+     "text": "I. Cole 1+ blocked shot",
+     "p": 0.75414,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "B. Faber 1+ blocked shot",
-     "p": 0.77922,
-     "result": "LOST",
-     "value": 0
+     "text": "A. Vlasic 1+ blocked shot",
+     "p": 0.75022,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "Y. Kuznetsov 1+ blocked shot",
-     "p": 0.77628,
-     "result": "LOST",
-     "value": 0
+     "text": "Z. Buium 1+ blocked shot",
+     "p": 0.69532,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "J. Hanley 1+ blocked shot",
-     "p": 0.76846,
-     "result": "WON",
-     "value": 2
+     "text": "A. Levshunov 1+ blocked shot",
+     "p": 0.69168,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "J. Middleton 1+ blocked shot",
-     "p": 0.7679,
-     "result": "WON",
-     "value": 1
+     "text": "T. Willander 1+ blocked shot",
+     "p": 0.6929,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "S. Nemec 1+ blocked shot",
-     "p": 0.75474,
-     "result": "WON",
-     "value": 3
+     "text": "S. Rinzel 1+ blocked shot",
+     "p": 0.69334,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "Q. Hughes 2+ SOG",
-     "p": 0.70508,
-     "result": "WON",
-     "value": 2
+     "text": "J. DeBrusk 2+ SOG",
+     "p": 0.68008,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "K. Kaprizov 1+ point",
-     "p": 0.6871,
-     "result": "WON",
-     "value": 3
+     "text": "L. Schenn 1+ blocked shot",
+     "p": 0.60282,
+     "result": "PENDING",
+     "value": null
     }
    ]
   },
   {
-   "game_id": 2026020355,
-   "game": "MIN@CGY",
-   "state": "OFF",
+   "game_id": 2026020377,
+   "game": "CHI@VAN",
+   "state": "FUT",
    "size": 8,
    "pick": "C",
    "family": "8D Multi-line production",
-   "pJoint": 0.0985,
-   "pLower": 0.08517910383622855,
-   "pIndep": 0.09825171712987413,
-   "breakEven": 1074,
-   "status": "LOST",
+   "pJoint": 0.05108,
+   "pLower": 0.03950195177535315,
+   "pIndep": 0.047673149098348605,
+   "breakEven": 2432,
+   "status": "PENDING",
    "legs": [
     {
-     "text": "J. Spurgeon 1+ blocked shot",
-     "p": 0.78522,
-     "result": "WON",
-     "value": 1
+     "text": "I. Cole 1+ blocked shot",
+     "p": 0.75414,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "B. Faber 1+ blocked shot",
-     "p": 0.77922,
-     "result": "LOST",
-     "value": 0
+     "text": "Z. Buium 1+ blocked shot",
+     "p": 0.69532,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "Y. Kuznetsov 1+ blocked shot",
-     "p": 0.77628,
-     "result": "LOST",
-     "value": 0
+     "text": "T. Willander 1+ blocked shot",
+     "p": 0.6929,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "J. Hanley 1+ blocked shot",
-     "p": 0.76846,
-     "result": "WON",
-     "value": 2
+     "text": "A. Levshunov 1+ blocked shot",
+     "p": 0.69168,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "J. Middleton 1+ blocked shot",
-     "p": 0.7679,
-     "result": "WON",
-     "value": 1
+     "text": "S. Rinzel 1+ blocked shot",
+     "p": 0.69334,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "S. Nemec 1+ blocked shot",
-     "p": 0.75474,
-     "result": "WON",
-     "value": 3
+     "text": "J. DeBrusk 2+ SOG",
+     "p": 0.68008,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "Q. Hughes 2+ SOG",
-     "p": 0.70508,
-     "result": "WON",
-     "value": 2
+     "text": "B. Boeser 1+ point",
+     "p": 0.65862,
+     "result": "PENDING",
+     "value": null
     },
     {
-     "text": "Q. Hughes 1+ blocked shot",
-     "p": 0.6717,
-     "result": "WON",
-     "value": 1
+     "text": "L. Schenn 1+ blocked shot",
+     "p": 0.60282,
+     "result": "PENDING",
+     "value": null
     }
    ]
   }

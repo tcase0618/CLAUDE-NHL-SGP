@@ -1,5 +1,5 @@
 # Parlay audit — slot-0200Z.json
-Audited 2026-11-22T10:48:10.934681+00:00 against official NHL data · model v20261106-224110
+Audited 2026-11-23T00:04:20.568834+00:00 against official NHL data · model v20261106-224110
 
 **Parlays:** 0 won · 9 lost · 0 pending · 0 void/reprice (of 9)
 
