@@ -1,33 +1,81 @@
 {
- "audited_at": "2026-11-24T02:03:07.497121+00:00",
+ "audited_at": "2026-11-24T10:48:23.711733+00:00",
  "source": "slot-0240Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 0,
-  "LOST": 0,
-  "PENDING": 9,
+  "WON": 1,
+  "LOST": 8,
+  "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 1.56842,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.5228066666666666,
+   "brier": 0.2905562190666666,
+   "logloss": 0.7745124624897546
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.81428,
+   "hit_rate": 0.0,
+   "mean_p": 0.27142666666666665,
+   "brier": 0.07615184906666667,
+   "logloss": 0.31908485863552555
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.14848,
+   "hit_rate": 0.0,
+   "mean_p": 0.049493333333333334,
+   "brier": 0.0027706712,
+   "logloss": 0.05093773565514547
+  }
  },
  "by_size_independence": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 1.564543918340608,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.5215146394468694,
+   "brier": 0.28817500093953813,
+   "logloss": 0.7697379478555568
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.7599266892491046,
+   "hit_rate": 0.0,
+   "mean_p": 0.25330889641636817,
+   "brier": 0.06474482965333245,
+   "logloss": 0.29263119157286416
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.12797001410214356,
+   "hit_rate": 0.0,
+   "mean_p": 0.04265667136738119,
+   "brier": 0.0021718953713036966,
+   "logloss": 0.04378679941042796
+  }
  },
  "legs": {
-  "n": 0,
-  "won": 0,
-  "expected": 0
+  "n": 45,
+  "won": 27,
+  "expected": 33.02314
  },
  "parlays": [
   {
    "game_id": 2026020383,
    "game": "ANA@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -35,32 +83,32 @@
    "pLower": 0.5055536098849942,
    "pIndep": 0.527041870433536,
    "breakEven": -102,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Gauthier 2+ SOG",
      "p": 0.83078,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "A. Larsson 1+ blocked shot",
      "p": 0.8297,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "ANA +1.5 puck line",
      "p": 0.76382,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": -1
     }
    ]
   },
   {
    "game_id": 2026020383,
    "game": "ANA@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -68,32 +116,32 @@
    "pLower": 0.5323536098849942,
    "pIndep": 0.560068245104832,
    "breakEven": -114,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Gauthier 2+ SOG",
      "p": 0.83078,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "A. Larsson 1+ blocked shot",
      "p": 0.8297,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "S. Solberg 1+ blocked shot",
      "p": 0.82842,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020383,
    "game": "ANA@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3E Game script",
@@ -101,32 +149,32 @@
    "pLower": 0.43488454504853585,
    "pIndep": 0.47743380280223996,
    "breakEven": 130,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "S. Solberg 1+ blocked shot",
      "p": 0.82842,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. Montour 1+ blocked shot",
      "p": 0.76434,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "ANA +1.5 puck line",
      "p": 0.76382,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": -1
     }
    ]
   },
   {
    "game_id": 2026020383,
    "game": "ANA@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5F Game script",
@@ -134,44 +182,44 @@
    "pLower": 0.316251997284063,
    "pIndep": 0.2871366490612789,
    "breakEven": 216,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Gauthier 2+ SOG",
      "p": 0.83078,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "A. Larsson 1+ blocked shot",
      "p": 0.8297,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "S. Solberg 1+ blocked shot",
      "p": 0.82842,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "ANA +1.5 puck line",
      "p": 0.76382,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": -1
     },
     {
      "text": "SEA team total under 3.5",
      "p": 0.67282,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020383,
    "game": "ANA@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5E Balanced cross-team structure",
@@ -179,44 +227,44 @@
    "pLower": 0.2171920977281403,
    "pIndep": 0.23969825150076354,
    "breakEven": 360,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "P. Mintyukov 1+ blocked shot",
      "p": 0.77592,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "R. Evans 1+ blocked shot",
      "p": 0.77468,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. LaCombe 1+ blocked shot",
      "p": 0.76958,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. Montour 1+ blocked shot",
      "p": 0.76434,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "D. Helleson 1+ blocked shot",
      "p": 0.73394,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020383,
    "game": "ANA@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5E Balanced cross-team structure",
@@ -224,44 +272,44 @@
    "pLower": 0.2088320977281403,
    "pIndep": 0.23309178868706212,
    "breakEven": 379,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "P. Mintyukov 1+ blocked shot",
      "p": 0.77592,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "R. Evans 1+ blocked shot",
      "p": 0.77468,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. LaCombe 1+ blocked shot",
      "p": 0.76958,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. Montour 1+ blocked shot",
      "p": 0.76434,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "R. Lindgren 1+ blocked shot",
      "p": 0.70818,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020383,
    "game": "ANA@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8A Shot-dominant game",
@@ -269,62 +317,62 @@
    "pLower": 0.01566315719088618,
    "pIndep": 0.02436436812387203,
    "breakEven": 6284,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "T. Terry 2+ SOG",
      "p": 0.68806,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. McMann 2+ SOG",
      "p": 0.66788,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "L. Carlsson 2+ SOG",
      "p": 0.65634,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "C. Gauthier 3+ SOG",
      "p": 0.63814,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "M. Granlund 2+ SOG",
      "p": 0.61848,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "B. Montour 2+ SOG",
      "p": 0.61186,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "V. Dunn 2+ SOG",
      "p": 0.59108,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. Eberle 2+ SOG",
      "p": 0.5556,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020383,
    "game": "ANA@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8D Multi-line production",
@@ -332,62 +380,62 @@
    "pLower": 0.05781910383622854,
    "pIndep": 0.06846113533685085,
    "breakEven": 1630,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "P. Mintyukov 1+ blocked shot",
      "p": 0.77592,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "R. Evans 1+ blocked shot",
      "p": 0.77468,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. LaCombe 1+ blocked shot",
      "p": 0.76958,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "D. Helleson 1+ blocked shot",
      "p": 0.73394,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "R. Lindgren 1+ blocked shot",
      "p": 0.70818,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "I. Moore 1+ blocked shot",
      "p": 0.68852,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "T. Terry 2+ SOG",
      "p": 0.68806,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. McMann 2+ SOG",
      "p": 0.66788,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020383,
    "game": "ANA@SEA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8D Multi-line production",
@@ -395,55 +443,55 @@
    "pLower": 0.03850195177535315,
    "pIndep": 0.03514451064142068,
    "breakEven": 2497,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "D. Helleson 1+ blocked shot",
      "p": 0.73394,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "R. Lindgren 1+ blocked shot",
      "p": 0.70818,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "T. Terry 2+ SOG",
      "p": 0.68806,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "I. Moore 1+ blocked shot",
      "p": 0.68852,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "L. Carlsson 2+ SOG",
      "p": 0.65634,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "L. Carlsson 1+ point",
      "p": 0.6169,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "C. Gauthier 1+ point",
      "p": 0.58196,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "C. Gauthier 3+ SOG",
      "p": 0.63814,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     }
    ]
   }

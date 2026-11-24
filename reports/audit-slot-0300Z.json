@@ -1,33 +1,81 @@
 {
- "audited_at": "2026-11-24T02:03:07.847140+00:00",
+ "audited_at": "2026-11-24T10:48:24.079886+00:00",
  "source": "slot-0300Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 0,
-  "LOST": 0,
-  "PENDING": 9,
+  "WON": 1,
+  "LOST": 8,
+  "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 1.6613981665849638,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.5537993888616546,
+   "brier": 0.2711190198553861,
+   "logloss": 0.7360883681215303
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 1.01536,
+   "hit_rate": 0.0,
+   "mean_p": 0.33845333333333333,
+   "brier": 0.11816150213333332,
+   "logloss": 0.4171554100555153
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.3663000213913276,
+   "hit_rate": 0.0,
+   "mean_p": 0.12210000713044254,
+   "brier": 0.018819983173409542,
+   "logloss": 0.1327769926601688
+  }
  },
  "by_size_independence": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 1.6010757244271918,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.5336919081423973,
+   "brier": 0.25544250652017464,
+   "logloss": 0.7046855646376663
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.8083762615383787,
+   "hit_rate": 0.0,
+   "mean_p": 0.2694587538461262,
+   "brier": 0.07877683928403545,
+   "logloss": 0.31987010547737676
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.2486471090779516,
+   "hit_rate": 0.0,
+   "mean_p": 0.08288236969265053,
+   "brier": 0.008260080837760423,
+   "logloss": 0.08733213677541442
+  }
  },
  "legs": {
-  "n": 0,
-  "won": 0,
-  "expected": 0
+  "n": 45,
+  "won": 34,
+  "expected": 33.66392178731368
  },
  "parlays": [
   {
    "game_id": 2026020384,
    "game": "MIN@SJS",
-   "state": "FUT",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -35,32 +83,32 @@
    "pLower": 0.5276936098849943,
    "pIndep": 0.5485373394059521,
    "breakEven": -112,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "M. Boldy 2+ SOG",
      "p": 0.84892,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "D. Nurse 1+ blocked shot",
      "p": 0.83034,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "MIN +1.5 puck line",
      "p": 0.7764,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020384,
    "game": "MIN@SJS",
-   "state": "FUT",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -68,32 +116,32 @@
    "pLower": 0.5659136098849943,
    "pIndep": 0.591807195525312,
    "breakEven": -130,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Boldy 2+ SOG",
      "p": 0.84892,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "M. Celebrini 2+ SOG",
      "p": 0.83358,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "D. Nurse 1+ blocked shot",
      "p": 0.83034,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020384,
    "game": "MIN@SJS",
-   "state": "FUT",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3C Goalie workload structure",
@@ -101,32 +149,32 @@
    "pLower": 0.47216271163349954,
    "pIndep": 0.46073118949592773,
    "breakEven": 112,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "K. Kaprizov 2+ SOG",
      "p": 0.82372,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "J. Eriksson Ek 2+ SOG",
      "p": 0.76706,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "Y. Askarov 23+ saves",
      "p": 0.7298308936568412,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 25
     }
    ]
   },
   {
    "game_id": 2026020384,
    "game": "MIN@SJS",
-   "state": "FUT",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
@@ -134,44 +182,44 @@
    "pLower": 0.23063209772814028,
    "pIndep": 0.17797987230054138,
    "breakEven": 334,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "K. Kaprizov 2+ SOG",
      "p": 0.82372,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "J. Eriksson Ek 2+ SOG",
      "p": 0.76706,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "K. Kaprizov 1+ point",
      "p": 0.73626,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "M. Boldy 1+ point",
      "p": 0.69916,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "J. Eriksson Ek 1+ point",
      "p": 0.55374,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020384,
    "game": "MIN@SJS",
-   "state": "FUT",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -179,44 +227,44 @@
    "pLower": 0.362831997284063,
    "pIndep": 0.26063685699813693,
    "breakEven": 176,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Boldy 2+ SOG",
      "p": 0.84892,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "K. Kaprizov 2+ SOG",
      "p": 0.82372,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "MIN +1.5 puck line",
      "p": 0.7764,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "K. Kaprizov 1+ point",
      "p": 0.73626,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "MIN team total over 2.5",
      "p": 0.65562,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     }
    ]
   },
   {
    "game_id": 2026020384,
    "game": "MIN@SJS",
-   "state": "FUT",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5E Balanced cross-team structure",
@@ -224,44 +272,44 @@
    "pLower": 0.34775199728406303,
    "pIndep": 0.36975953223970043,
    "breakEven": 188,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Celebrini 2+ SOG",
      "p": 0.83358,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "D. Nurse 1+ blocked shot",
      "p": 0.83034,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. Trouba 1+ blocked shot",
      "p": 0.82142,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "J. Brodin 1+ blocked shot",
      "p": 0.8154,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. Spurgeon 1+ blocked shot",
      "p": 0.77422,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020384,
    "game": "MIN@SJS",
-   "state": "FUT",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -269,62 +317,62 @@
    "pLower": 0.15592957590262269,
    "pIndep": 0.11397158423322808,
    "breakEven": 541,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "MIN +1.5 puck line",
      "p": 0.7764,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "K. Kaprizov 1+ point",
      "p": 0.73626,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "MIN team total over 2.5",
      "p": 0.65562,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "M. Boldy 1+ point",
      "p": 0.69916,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "M. Celebrini 2+ SOG",
      "p": 0.83358,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "J. Trouba 1+ blocked shot",
      "p": 0.82142,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "J. Brodin 1+ blocked shot",
      "p": 0.8154,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. Eriksson Ek 2+ SOG",
      "p": 0.76706,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020384,
    "game": "MIN@SJS",
-   "state": "FUT",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8E Goaltender workload game",
@@ -332,62 +380,62 @@
    "pLower": 0.10635912522755614,
    "pIndep": 0.10422930619968689,
    "breakEven": 840,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "J. Trouba 1+ blocked shot",
      "p": 0.82142,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "J. Brodin 1+ blocked shot",
      "p": 0.8154,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "E. Pohlkamp 1+ blocked shot",
      "p": 0.77384,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. Spurgeon 1+ blocked shot",
      "p": 0.77422,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. Faber 1+ blocked shot",
      "p": 0.74788,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "Y. Askarov 23+ saves",
      "p": 0.7298308936568412,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 25
     },
     {
      "text": "M. Boldy 3+ SOG",
      "p": 0.67158,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "S. Dickinson 1+ blocked shot",
      "p": 0.70908,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020384,
    "game": "MIN@SJS",
-   "state": "FUT",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8F Cross-team high-event scenario",
@@ -395,55 +443,55 @@
    "pLower": 0.03516195177535315,
    "pIndep": 0.03044621864503664,
    "breakEven": 2744,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Boldy 1+ point",
      "p": 0.69916,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "M. Boldy 3+ SOG",
      "p": 0.67158,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "M. Celebrini 1+ point",
      "p": 0.70874,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "M. Celebrini 3+ SOG",
      "p": 0.64604,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "W. Smith 2+ SOG",
      "p": 0.65742,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "W. Smith 1+ point",
      "p": 0.55596,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "K. Kaprizov 3+ SOG",
      "p": 0.63132,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "B. Faber 2+ SOG",
      "p": 0.62488,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   }
