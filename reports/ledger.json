@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-24T10:49:12.936316+00:00",
+ "updated_at": "2026-11-25T00:05:39.183192+00:00",
  "nights": [
   "2026-11-07",
   "2026-11-08",
@@ -19,34 +19,34 @@
  ],
  "all": {
   "n": 859,
-  "won": 259,
-  "lost": 600,
-  "win_pct": 0.30151338766006985,
+  "won": 262,
+  "lost": 597,
+  "win_pct": 0.3050058207217695,
   "expected": 245.02663525835223,
-  "brier_joint": 0.1797114743279602,
-  "brier_indep": 0.18364805546670038,
-  "fair_pnl_2": 225.9079010402308
+  "brier_joint": 0.18051371375383918,
+  "brier_indep": 0.1850465469246873,
+  "fair_pnl_2": 242.8322594044579
  },
  "by_size": {
   "3": {
    "n": 285,
-   "won": 144,
-   "lost": 141,
-   "win_pct": 0.5052631578947369,
+   "won": 145,
+   "lost": 140,
+   "win_pct": 0.5087719298245614,
    "expected": 140.49394771205945,
-   "brier_joint": 0.24343742937519622,
-   "brier_indep": 0.24512455440546765,
-   "fair_pnl_2": 11.248774953371923
+   "brier_joint": 0.2433443896096877,
+   "brier_indep": 0.24540012500549627,
+   "fair_pnl_2": 15.145449434573624
   },
   "5": {
    "n": 287,
-   "won": 88,
-   "lost": 199,
-   "win_pct": 0.30662020905923343,
+   "won": 90,
+   "lost": 197,
+   "win_pct": 0.313588850174216,
    "expected": 77.9933,
-   "brier_joint": 0.2109895295261324,
-   "brier_indep": 0.22119289122821048,
-   "fair_pnl_2": 94.27476726479127
+   "brier_joint": 0.21348304868989545,
+   "brier_indep": 0.22510496976968308,
+   "fair_pnl_2": 107.30245114781667
   },
   "8": {
    "n": 287,
@@ -62,7 +62,7 @@
  "voids": 22,
  "legs": {
   "n": 2026,
-  "won": 1454,
+  "won": 1455,
   "expected": 1424.3575037916694
  },
  "bands": [
@@ -82,13 +82,13 @@
    "band": "25\u201340%",
    "n": 208,
    "pred": 0.32892513574486504,
-   "actual": 0.35096153846153844
+   "actual": 0.3605769230769231
   },
   {
    "band": "40\u201360%",
    "n": 235,
    "pred": 0.5119614445835213,
-   "actual": 0.5361702127659574
+   "actual": 0.5404255319148936
   },
   {
    "band": "60\u2013100%",
@@ -40504,7 +40504,7 @@
      "text": "J. Middleton 1+ blocked shot",
      "p": 0.76532,
      "result": "WON",
-     "value": 2
+     "value": 1
     },
     {
      "text": "S. Nemec 1+ blocked shot",
@@ -40544,7 +40544,7 @@
      "text": "J. Middleton 1+ blocked shot",
      "p": 0.76532,
      "result": "WON",
-     "value": 2
+     "value": 1
     },
     {
      "text": "S. Nemec 1+ blocked shot",
@@ -40608,7 +40608,7 @@
      "text": "J. Middleton 1+ blocked shot",
      "p": 0.76532,
      "result": "WON",
-     "value": 2
+     "value": 1
     },
     {
      "text": "S. Nemec 1+ blocked shot",
@@ -42018,13 +42018,13 @@
    "pIndep": 0.46073118949592773,
    "pLower": 0.47216271163349954,
    "breakEven": 112,
-   "status": "LOST",
+   "status": "WON",
    "legs": [
     {
      "text": "K. Kaprizov 2+ SOG",
      "p": 0.82372,
-     "result": "LOST",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. Eriksson Ek 2+ SOG",
@@ -42036,7 +42036,7 @@
      "text": "Y. Askarov 23+ saves",
      "p": 0.7298308936568412,
      "result": "WON",
-     "value": 25
+     "value": 26
     }
    ]
   },
@@ -42052,13 +42052,13 @@
    "pIndep": 0.17797987230054138,
    "pLower": 0.23063209772814028,
    "breakEven": 334,
-   "status": "LOST",
+   "status": "WON",
    "legs": [
     {
      "text": "K. Kaprizov 2+ SOG",
      "p": 0.82372,
-     "result": "LOST",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. Eriksson Ek 2+ SOG",
@@ -42098,7 +42098,7 @@
    "pIndep": 0.26063685699813693,
    "pLower": 0.362831997284063,
    "breakEven": 176,
-   "status": "LOST",
+   "status": "WON",
    "legs": [
     {
      "text": "M. Boldy 2+ SOG",
@@ -42109,8 +42109,8 @@
     {
      "text": "K. Kaprizov 2+ SOG",
      "p": 0.82372,
-     "result": "LOST",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "MIN +1.5 puck line",
@@ -42290,7 +42290,7 @@
      "text": "Y. Askarov 23+ saves",
      "p": 0.7298308936568412,
      "result": "WON",
-     "value": 25
+     "value": 26
     },
     {
      "text": "M. Boldy 3+ SOG",
@@ -42360,7 +42360,7 @@
      "text": "K. Kaprizov 3+ SOG",
      "p": 0.63132,
      "result": "LOST",
-     "value": 1
+     "value": 2
     },
     {
      "text": "B. Faber 2+ SOG",
