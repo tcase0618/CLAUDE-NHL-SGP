@@ -1,0 +1,652 @@
+{
+ "generated_at": "2026-11-25T23:32:06.555Z",
+ "model_version": "v20261106-224110",
+ "data_through": "2026-11-25 01:00:00+00:00",
+ "sims": 50000,
+ "games": [
+  {
+   "game_id": 2026020394,
+   "start_utc": "2026-11-26 00:30:00+00:00",
+   "away": "VAN",
+   "home": "DET",
+   "sizes": {
+    "3": {
+     "evaluated": 11691,
+     "verified": 96,
+     "finalists": 96,
+     "exposureCap": 2,
+     "picks": [
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "A. DeBrincat 2+ SOG",
+         "p": 0.8553,
+         "player_id": 8479337,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "F. Hronek 1+ blocked shot",
+         "p": 0.82214,
+         "player_id": 8479425,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "DET +1.5 puck line",
+         "p": 0.77284,
+         "player_id": "TEAM:DET",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.54508,
+       "pLower": 0.5178136098849943,
+       "verified": true,
+       "pIndep": 0.540256920036288,
+       "lift": 1.0089273821118072,
+       "breakEven": -107,
+       "mcHits": 27254,
+       "scenario": {
+        "n": 27254,
+        "shots": 53.944631980626696,
+        "goals": 6.07896088647538,
+        "ppg": 1.108424451456667,
+        "margin": 1.5810523225948485,
+        "pace": 1.0007829514709443
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "A. DeBrincat 2+ SOG",
+         "p": 0.8553,
+         "player_id": 8479337,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Chiarot 1+ blocked shot",
+         "p": 0.8274,
+         "player_id": 8475279,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "F. Hronek 1+ blocked shot",
+         "p": 0.82214,
+         "player_id": 8479425,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.57036,
+       "pLower": 0.5430936098849942,
+       "verified": true,
+       "pIndep": 0.5697417397889281,
+       "lift": 1.001085158709455,
+       "breakEven": -119,
+       "mcHits": 28518,
+       "scenario": {
+        "n": 28518,
+        "shots": 54.16596535521425,
+        "goals": 6.164317273301073,
+        "ppg": 1.113226733992566,
+        "margin": 0.5803352268742549,
+        "pace": 1.0013949397432242
+       }
+      },
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "B. Chiarot 1+ blocked shot",
+         "p": 0.8274,
+         "player_id": 8475279,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Seider 1+ blocked shot",
+         "p": 0.8241,
+         "player_id": 8481542,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "DET +1.5 puck line",
+         "p": 0.77284,
+         "player_id": "TEAM:DET",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.5103,
+       "pLower": 0.4692045450485358,
+       "verified": true,
+       "pIndep": 0.5119910303872001,
+       "lift": 0.996697148413086,
+       "breakEven": 113,
+       "mcHits": 25515,
+       "scenario": {
+        "n": 25515,
+        "shots": 53.42618067803253,
+        "goals": 6.026219870664315,
+        "ppg": 1.0941015089163237,
+        "margin": 1.5026063100137175,
+        "pace": 0.9996047625629523
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 18627,
+     "verified": 116,
+     "finalists": 116,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "V. Arvidsson 2+ SOG",
+         "p": 0.75814,
+         "player_id": 8478042,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "L. Raymond 2+ SOG",
+         "p": 0.70276,
+         "player_id": 8482078,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. DeBrincat 3+ SOG",
+         "p": 0.67756,
+         "player_id": 8479337,
+         "stat": "SOG",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. DeBrincat 1+ point",
+         "p": 0.61508,
+         "player_id": 8479337,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "L. Raymond 1+ point",
+         "p": 0.59728,
+         "player_id": 8482078,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.1764,
+       "pLower": 0.15639309306170374,
+       "verified": true,
+       "pIndep": 0.1306919235975129,
+       "lift": 1.3497391050976693,
+       "breakEven": 539,
+       "mcHits": 8820,
+       "scenario": {
+        "n": 8820,
+        "shots": 57.43015873015873,
+        "goals": 7.4038548752834465,
+        "ppg": 1.5112244897959184,
+        "margin": 1.790702947845805,
+        "pace": 1.0083670949179029
+       }
+      },
+      {
+       "family": "5D High-tempo matchup",
+       "legs": [
+        {
+         "text": "V. Arvidsson 2+ SOG",
+         "p": 0.75814,
+         "player_id": 8478042,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "L. Raymond 2+ SOG",
+         "p": 0.70276,
+         "player_id": 8482078,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. DeBrincat 3+ SOG",
+         "p": 0.67756,
+         "player_id": 8479337,
+         "stat": "SOG",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. DeBrusk 2+ SOG",
+         "p": 0.64688,
+         "player_id": 8478498,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "B. Boeser 2+ SOG",
+         "p": 0.61006,
+         "player_id": 8478444,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.14346,
+       "pLower": 0.12345309306170375,
+       "verified": true,
+       "pIndep": 0.13947289245361003,
+       "lift": 1.028586971104196,
+       "breakEven": 710,
+       "mcHits": 7173,
+       "scenario": {
+        "n": 7173,
+        "shots": 58.955388261536314,
+        "goals": 6.746549560853199,
+        "ppg": 1.2954133556392025,
+        "margin": 0.6464519726753102,
+        "pace": 1.013778877793438
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "A. DeBrincat 2+ SOG",
+         "p": 0.8553,
+         "player_id": 8479337,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Chiarot 1+ blocked shot",
+         "p": 0.8274,
+         "player_id": 8475279,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Seider 1+ blocked shot",
+         "p": 0.8241,
+         "player_id": 8481542,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "F. Hronek 1+ blocked shot",
+         "p": 0.82214,
+         "player_id": 8479425,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "DET +1.5 puck line",
+         "p": 0.77284,
+         "player_id": "TEAM:DET",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.35878,
+       "pLower": 0.333351997284063,
+       "verified": true,
+       "pIndep": 0.35772424753400534,
+       "lift": 1.0029513024998238,
+       "breakEven": 200,
+       "mcHits": 17939,
+       "scenario": {
+        "n": 17939,
+        "shots": 54.13094375383243,
+        "goals": 6.082223089358381,
+        "ppg": 1.1090919226266793,
+        "margin": 1.5530966051619377,
+        "pace": 1.0013470307455208
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 13229,
+     "verified": 64,
+     "finalists": 64,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "8A Shot-dominant game",
+       "legs": [
+        {
+         "text": "V. Arvidsson 2+ SOG",
+         "p": 0.75814,
+         "player_id": 8478042,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "L. Raymond 2+ SOG",
+         "p": 0.70276,
+         "player_id": 8482078,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. DeBrincat 3+ SOG",
+         "p": 0.67756,
+         "player_id": 8479337,
+         "stat": "SOG",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. DeBrusk 2+ SOG",
+         "p": 0.64688,
+         "player_id": 8478498,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "B. Boeser 2+ SOG",
+         "p": 0.61006,
+         "player_id": 8478444,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Seider 2+ SOG",
+         "p": 0.60082,
+         "player_id": 8481542,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "F. Chytil 2+ SOG",
+         "p": 0.5641,
+         "player_id": 8480078,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Kasper 2+ SOG",
+         "p": 0.55626,
+         "player_id": 8483464,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.0302,
+       "pLower": 0.018603157190886184,
+       "verified": true,
+       "pIndep": 0.026216278224347057,
+       "lift": 1.1519560382126728,
+       "breakEven": 5275,
+       "mcHits": 1510,
+       "scenario": {
+        "n": 1510,
+        "shots": 62.69933774834437,
+        "goals": 7.152980132450331,
+        "ppg": 1.3788079470198675,
+        "margin": 0.7026490066225165,
+        "pace": 1.0262964441286806
+       }
+      },
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "M. Seider 1+ blocked shot",
+         "p": 0.8241,
+         "player_id": 8481542,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "E. Pettersson 1+ blocked shot",
+         "p": 0.79794,
+         "player_id": 8483678,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "DET team total over 2.5",
+         "p": 0.669,
+         "player_id": "TEAM:DET",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "DET moneyline",
+         "p": 0.58098,
+         "player_id": "TEAM:DET",
+         "stat": "ML",
+         "line": 0,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Faulk 1+ blocked shot",
+         "p": 0.76282,
+         "player_id": 8475753,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. DeBrincat 1+ point",
+         "p": 0.61508,
+         "player_id": 8479337,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Oleksiak 1+ blocked shot",
+         "p": 0.74332,
+         "player_id": 8476467,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "L. Raymond 1+ point",
+         "p": 0.59728,
+         "player_id": 8482078,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.10866,
+       "pLower": 0.09533910383622855,
+       "verified": true,
+       "pIndep": 0.05302614604579148,
+       "lift": 2.049177775548031,
+       "breakEven": 949,
+       "mcHits": 5433,
+       "scenario": {
+        "n": 5433,
+        "shots": 55.296521258972945,
+        "goals": 7.2475612000736245,
+        "ppg": 1.4805816307748942,
+        "margin": 2.7009018958218296,
+        "pace": 1.0032605506999484
+       }
+      },
+      {
+       "family": "8F Cross-team high-event scenario",
+       "legs": [
+        {
+         "text": "A. DeBrincat 1+ point",
+         "p": 0.61508,
+         "player_id": 8479337,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "L. Raymond 1+ point",
+         "p": 0.59728,
+         "player_id": 8482078,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Seider 1+ point",
+         "p": 0.56612,
+         "player_id": 8481542,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "V. Arvidsson 1+ point",
+         "p": 0.57426,
+         "player_id": 8478042,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Boeser 2+ SOG",
+         "p": 0.61006,
+         "player_id": 8478444,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "B. Boeser 1+ point",
+         "p": 0.59144,
+         "player_id": 8478444,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. DeBrusk 2+ SOG",
+         "p": 0.64688,
+         "player_id": 8478498,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Seider 2+ SOG",
+         "p": 0.60082,
+         "player_id": 8481542,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.03312,
+       "pLower": 0.021523157190886176,
+       "verified": true,
+       "pIndep": 0.016489530400134202,
+       "lift": 2.0085471930559313,
+       "breakEven": 4546,
+       "mcHits": 1656,
+       "scenario": {
+        "n": 1656,
+        "shots": 59.91002415458937,
+        "goals": 8.928140096618357,
+        "ppg": 2.0030193236714977,
+        "margin": 1.6491545893719808,
+        "pace": 1.0153652279849215
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
