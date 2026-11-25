@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25T00:05:39.183192+00:00",
+ "updated_at": "2026-11-25T10:49:51.128499+00:00",
  "nights": [
   "2026-11-07",
   "2026-11-08",
@@ -15,80 +15,81 @@
   "2026-11-21",
   "2026-11-22",
   "2026-11-23",
-  "2026-11-24"
+  "2026-11-24",
+  "2026-11-25"
  ],
  "all": {
-  "n": 859,
-  "won": 262,
-  "lost": 597,
-  "win_pct": 0.3050058207217695,
-  "expected": 245.02663525835223,
-  "brier_joint": 0.18051371375383918,
-  "brier_indep": 0.1850465469246873,
-  "fair_pnl_2": 242.8322594044579
+  "n": 868,
+  "won": 264,
+  "lost": 604,
+  "win_pct": 0.30414746543778803,
+  "expected": 247.6165552583522,
+  "brier_joint": 0.18013335835316574,
+  "brier_indep": 0.18465129893949528,
+  "fair_pnl_2": 234.61283428403436
  },
  "by_size": {
   "3": {
-   "n": 285,
-   "won": 145,
-   "lost": 140,
-   "win_pct": 0.5087719298245614,
-   "expected": 140.49394771205945,
-   "brier_joint": 0.2433443896096877,
-   "brier_indep": 0.24540012500549627,
-   "fair_pnl_2": 15.145449434573624
+   "n": 288,
+   "won": 146,
+   "lost": 142,
+   "win_pct": 0.5069444444444444,
+   "expected": 142.03256771205946,
+   "brier_joint": 0.24333936597486458,
+   "brier_indep": 0.24516003894926927,
+   "fair_pnl_2": 12.905554717521547
   },
   "5": {
-   "n": 287,
-   "won": 90,
-   "lost": 197,
-   "win_pct": 0.313588850174216,
-   "expected": 77.9933,
-   "brier_joint": 0.21348304868989545,
-   "brier_indep": 0.22510496976968308,
-   "fair_pnl_2": 107.30245114781667
+   "n": 290,
+   "won": 91,
+   "lost": 199,
+   "win_pct": 0.3137931034482759,
+   "expected": 78.73064,
+   "brier_joint": 0.21310699291586205,
+   "brier_indep": 0.22499592231126356,
+   "fair_pnl_2": 107.3229207444452
   },
   "8": {
-   "n": 287,
+   "n": 290,
    "won": 27,
-   "lost": 260,
-   "win_pct": 0.09407665505226481,
-   "expected": 26.53938754629277,
-   "brier_joint": 0.08515154739298558,
-   "brier_indep": 0.08505512842453283,
-   "fair_pnl_2": 120.38435882206761
+   "lost": 263,
+   "win_pct": 0.09310344827586207,
+   "expected": 26.85334754629277,
+   "brier_joint": 0.08438961966960987,
+   "brier_indep": 0.08421523721319277,
+   "fair_pnl_2": 114.38435882206761
   }
  },
  "voids": 22,
  "legs": {
-  "n": 2026,
-  "won": 1455,
-  "expected": 1424.3575037916694
+  "n": 2048,
+  "won": 1470,
+  "expected": 1440.0695237916693
  },
  "bands": [
   {
    "band": "0\u201310%",
-   "n": 173,
-   "pred": 0.061245678441500404,
-   "actual": 0.08670520231213873
+   "n": 174,
+   "pred": 0.06133886419758374,
+   "actual": 0.08620689655172414
   },
   {
    "band": "10\u201325%",
-   "n": 228,
-   "pred": 0.1580866016487421,
-   "actual": 0.17105263157894737
+   "n": 232,
+   "pred": 0.15812666024100516,
+   "actual": 0.16810344827586207
   },
   {
    "band": "25\u201340%",
-   "n": 208,
-   "pred": 0.32892513574486504,
-   "actual": 0.3605769230769231
+   "n": 209,
+   "pred": 0.3289408049518274,
+   "actual": 0.36363636363636365
   },
   {
    "band": "40\u201360%",
-   "n": 235,
-   "pred": 0.5119614445835213,
-   "actual": 0.5404255319148936
+   "n": 238,
+   "pred": 0.5119729389795274,
+   "actual": 0.5378151260504201
   },
   {
    "band": "60\u2013100%",
@@ -42365,6 +42366,438 @@
     {
      "text": "B. Faber 2+ SOG",
      "p": 0.62488,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020385,
+   "game": "VGK@EDM",
+   "date": "2026-11-25",
+   "source": "reports/slots/2026-11-25/slot-0100Z.json",
+   "size": 3,
+   "pick": "A",
+   "family": "3E Game script",
+   "pJoint": 0.5319,
+   "pIndep": 0.5326032507852001,
+   "pLower": 0.5046336098849943,
+   "breakEven": -102,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "C. Murphy 1+ blocked shot",
+     "p": 0.84166,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.82176,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "VGK +1.5 puck line",
+     "p": 0.7742,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020385,
+   "game": "VGK@EDM",
+   "date": "2026-11-25",
+   "source": "reports/slots/2026-11-25/slot-0100Z.json",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.54028,
+   "pIndep": 0.5400994648140001,
+   "pLower": 0.5130136098849942,
+   "breakEven": -105,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "C. Murphy 1+ blocked shot",
+     "p": 0.84166,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.82176,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "L. Draisaitl 2+ SOG",
+     "p": 0.78316,
+     "result": "LOST",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020385,
+   "game": "VGK@EDM",
+   "date": "2026-11-25",
+   "source": "reports/slots/2026-11-25/slot-0100Z.json",
+   "size": 3,
+   "pick": "C",
+   "family": "3B Team offensive scenario",
+   "pJoint": 0.46644,
+   "pIndep": 0.39609145125108003,
+   "pLower": 0.42534454504853586,
+   "breakEven": 135,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "L. Draisaitl 2+ SOG",
+     "p": 0.78316,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "L. Draisaitl 1+ point",
+     "p": 0.70214,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "C. McDavid 1+ point",
+     "p": 0.70714,
+     "result": "WON",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020385,
+   "game": "VGK@EDM",
+   "date": "2026-11-25",
+   "source": "reports/slots/2026-11-25/slot-0100Z.json",
+   "size": 5,
+   "pick": "A",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.2436,
+   "pIndep": 0.16269578207865845,
+   "pLower": 0.2203120977281403,
+   "breakEven": 354,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "C. McDavid 2+ SOG",
+     "p": 0.76036,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "C. McDavid 1+ point",
+     "p": 0.70714,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "L. Draisaitl 1+ point",
+     "p": 0.70214,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "E. Bouchard 1+ point",
+     "p": 0.6112,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "E. Bouchard 2+ SOG",
+     "p": 0.68286,
+     "result": "WON",
+     "value": 3
+    }
+   ]
+  },
+  {
+   "game_id": 2026020385,
+   "game": "VGK@EDM",
+   "date": "2026-11-25",
+   "source": "reports/slots/2026-11-25/slot-0100Z.json",
+   "size": 5,
+   "pick": "B",
+   "family": "5D High-tempo matchup",
+   "pJoint": 0.16154,
+   "pIndep": 0.15551275509378096,
+   "pLower": 0.14153309306170372,
+   "breakEven": 607,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "C. McDavid 2+ SOG",
+     "p": 0.76036,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "J. Eichel 2+ SOG",
+     "p": 0.72644,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "E. Bouchard 2+ SOG",
+     "p": 0.68286,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Marner 2+ SOG",
+     "p": 0.6626,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "T. Hertl 2+ SOG",
+     "p": 0.63072,
+     "result": "LOST",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "game_id": 2026020385,
+   "game": "VGK@EDM",
+   "date": "2026-11-25",
+   "source": "reports/slots/2026-11-25/slot-0100Z.json",
+   "size": 5,
+   "pick": "C",
+   "family": "5F Game script",
+   "pJoint": 0.3322,
+   "pIndep": 0.22991103639622104,
+   "pLower": 0.306771997284063,
+   "breakEven": 226,
+   "status": "WON",
+   "legs": [
+    {
+     "text": "C. Murphy 1+ blocked shot",
+     "p": 0.84166,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "B. McNabb 1+ blocked shot",
+     "p": 0.82176,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "VGK +1.5 puck line",
+     "p": 0.7742,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "VGK team total over 2.5",
+     "p": 0.66102,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "M. Marner 1+ point",
+     "p": 0.65202,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020385,
+   "game": "VGK@EDM",
+   "date": "2026-11-25",
+   "source": "reports/slots/2026-11-25/slot-0100Z.json",
+   "size": 8,
+   "pick": "A",
+   "family": "8B Concentrated offensive production",
+   "pJoint": 0.10198,
+   "pIndep": 0.060164422601323084,
+   "pLower": 0.08865910383622855,
+   "breakEven": 1028,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "L. Draisaitl 2+ SOG",
+     "p": 0.78316,
+     "result": "LOST",
+     "value": 1
+    },
+    {
+     "text": "L. Draisaitl 1+ point",
+     "p": 0.70214,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "C. McDavid 1+ point",
+     "p": 0.70714,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "C. McDavid 2+ SOG",
+     "p": 0.76036,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "E. Bouchard 1+ point",
+     "p": 0.6112,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "E. Bouchard 2+ SOG",
+     "p": 0.68286,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "J. Eichel 2+ SOG",
+     "p": 0.72644,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "J. Eichel 1+ point",
+     "p": 0.645,
+     "result": "WON",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "game_id": 2026020385,
+   "game": "VGK@EDM",
+   "date": "2026-11-25",
+   "source": "reports/slots/2026-11-25/slot-0100Z.json",
+   "size": 8,
+   "pick": "B",
+   "family": "8G Game script",
+   "pJoint": 0.13452,
+   "pIndep": 0.0568082592329256,
+   "pLower": 0.09056957590262268,
+   "breakEven": 1004,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "VGK +1.5 puck line",
+     "p": 0.7742,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "VGK team total over 2.5",
+     "p": 0.66102,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "M. Marner 1+ point",
+     "p": 0.65202,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Eichel 1+ point",
+     "p": 0.645,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Eichel 2+ SOG",
+     "p": 0.72644,
+     "result": "WON",
+     "value": 4
+    },
+    {
+     "text": "R. Andersson 1+ blocked shot",
+     "p": 0.78534,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "M. Stone 1+ point",
+     "p": 0.60778,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "R. Shea 1+ blocked shot",
+     "p": 0.74806,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020385,
+   "game": "VGK@EDM",
+   "date": "2026-11-25",
+   "source": "reports/slots/2026-11-25/slot-0100Z.json",
+   "size": 8,
+   "pick": "C",
+   "family": "8D Multi-line production",
+   "pJoint": 0.07746,
+   "pIndep": 0.06892022867744317,
+   "pLower": 0.06413910383622855,
+   "breakEven": 1459,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "R. Andersson 1+ blocked shot",
+     "p": 0.78534,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "R. Shea 1+ blocked shot",
+     "p": 0.74806,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "J. Lauzon 1+ blocked shot",
+     "p": 0.73332,
+     "result": "WON",
+     "value": 5
+    },
+    {
+     "text": "M. Ekholm 1+ blocked shot",
+     "p": 0.72564,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "E. Bouchard 1+ blocked shot",
+     "p": 0.728,
+     "result": "WON",
+     "value": 1
+    },
+    {
+     "text": "P. Wotherspoon 1+ blocked shot",
+     "p": 0.7216,
+     "result": "LOST",
+     "value": 0
+    },
+    {
+     "text": "M. Marner 1+ point",
+     "p": 0.65202,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "J. Eichel 1+ point",
+     "p": 0.645,
      "result": "WON",
      "value": 2
     }

@@ -1,31 +1,31 @@
 {
- "audited_at": "2026-11-24T10:48:24.079886+00:00",
+ "audited_at": "2026-11-25T10:48:53.960391+00:00",
  "source": "slot-0300Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 1,
-  "LOST": 8,
+  "WON": 4,
+  "LOST": 5,
   "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
   "3": {
    "n": 3,
-   "won": 1,
+   "won": 2,
    "expected_wins": 1.6613981665849638,
-   "hit_rate": 0.3333333333333333,
+   "hit_rate": 0.6666666666666666,
    "mean_p": 0.5537993888616546,
-   "brier": 0.2711190198553861,
-   "logloss": 0.7360883681215303
+   "brier": 0.26228024213207696,
+   "logloss": 0.7184066678025941
   },
   "5": {
    "n": 3,
-   "won": 0,
+   "won": 2,
    "expected_wins": 1.01536,
-   "hit_rate": 0.0,
+   "hit_rate": 0.6666666666666666,
    "mean_p": 0.33845333333333333,
-   "brier": 0.11816150213333332,
-   "logloss": 0.4171554100555153
+   "brier": 0.3567081688,
+   "logloss": 0.9279706479312037
   },
   "8": {
    "n": 3,
@@ -40,21 +40,21 @@
  "by_size_independence": {
   "3": {
    "n": 3,
-   "won": 1,
+   "won": 2,
    "expected_wins": 1.6010757244271918,
-   "hit_rate": 0.3333333333333333,
+   "hit_rate": 0.6666666666666666,
    "mean_p": 0.5336919081423973,
-   "brier": 0.25544250652017464,
-   "logloss": 0.7046855646376663
+   "brier": 0.2816217135228895,
+   "logloss": 0.7571520304695502
   },
   "5": {
    "n": 3,
-   "won": 0,
+   "won": 2,
    "expected_wins": 0.8083762615383787,
-   "hit_rate": 0.0,
+   "hit_rate": 0.6666666666666666,
    "mean_p": 0.2694587538461262,
-   "brier": 0.07877683928403545,
-   "logloss": 0.31987010547737676
+   "brier": 0.4530323530849166,
+   "logloss": 1.1774552808665084
   },
   "8": {
    "n": 3,
@@ -68,7 +68,7 @@
  },
  "legs": {
   "n": 45,
-  "won": 34,
+  "won": 37,
   "expected": 33.66392178731368
  },
  "parlays": [
@@ -149,13 +149,13 @@
    "pLower": 0.47216271163349954,
    "pIndep": 0.46073118949592773,
    "breakEven": 112,
-   "status": "LOST",
+   "status": "WON",
    "legs": [
     {
      "text": "K. Kaprizov 2+ SOG",
      "p": 0.82372,
-     "result": "LOST",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. Eriksson Ek 2+ SOG",
@@ -167,7 +167,7 @@
      "text": "Y. Askarov 23+ saves",
      "p": 0.7298308936568412,
      "result": "WON",
-     "value": 25
+     "value": 26
     }
    ]
   },
@@ -182,13 +182,13 @@
    "pLower": 0.23063209772814028,
    "pIndep": 0.17797987230054138,
    "breakEven": 334,
-   "status": "LOST",
+   "status": "WON",
    "legs": [
     {
      "text": "K. Kaprizov 2+ SOG",
      "p": 0.82372,
-     "result": "LOST",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. Eriksson Ek 2+ SOG",
@@ -227,7 +227,7 @@
    "pLower": 0.362831997284063,
    "pIndep": 0.26063685699813693,
    "breakEven": 176,
-   "status": "LOST",
+   "status": "WON",
    "legs": [
     {
      "text": "M. Boldy 2+ SOG",
@@ -238,8 +238,8 @@
     {
      "text": "K. Kaprizov 2+ SOG",
      "p": 0.82372,
-     "result": "LOST",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "MIN +1.5 puck line",
@@ -416,7 +416,7 @@
      "text": "Y. Askarov 23+ saves",
      "p": 0.7298308936568412,
      "result": "WON",
-     "value": 25
+     "value": 26
     },
     {
      "text": "M. Boldy 3+ SOG",
@@ -485,7 +485,7 @@
      "text": "K. Kaprizov 3+ SOG",
      "p": 0.63132,
      "result": "LOST",
-     "value": 1
+     "value": 2
     },
     {
      "text": "B. Faber 2+ SOG",

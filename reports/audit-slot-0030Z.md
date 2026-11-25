@@ -1,5 +1,5 @@
 # Parlay audit — slot-0030Z.json
-Audited 2026-11-24T10:48:22.503763+00:00 against official NHL data · model v20261106-224110
+Audited 2026-11-25T10:48:52.380548+00:00 against official NHL data · model v20261106-224110
 
 **Parlays:** 8 won · 28 lost · 0 pending · 0 void/reprice (of 36)
 
@@ -124,13 +124,13 @@ _Small samples: a single night cannot validate or refute the model — compare a
 - ✅ J. Sanderson 1+ blocked shot (model 80%) — actual: 3
 - ❌ Y. Kuznetsov 1+ blocked shot (model 79%) — actual: 0
 - ✅ J. Hanley 1+ blocked shot (model 77%) — actual: 2
-- ✅ J. Middleton 1+ blocked shot (model 77%) — actual: 2
+- ✅ J. Middleton 1+ blocked shot (model 77%) — actual: 1
 - ❌ S. Nemec 1+ blocked shot (model 76%) — actual: 0
 
 **8-leg B · 8D Multi-line production** — model 9.2% · break-even +1169 → **LOST**
 - ❌ Y. Kuznetsov 1+ blocked shot (model 79%) — actual: 0
 - ✅ J. Hanley 1+ blocked shot (model 77%) — actual: 2
-- ✅ J. Middleton 1+ blocked shot (model 77%) — actual: 2
+- ✅ J. Middleton 1+ blocked shot (model 77%) — actual: 1
 - ❌ S. Nemec 1+ blocked shot (model 76%) — actual: 0
 - ✅ A. Zub 1+ blocked shot (model 75%) — actual: 3
 - ❌ T. Kleven 1+ blocked shot (model 73%) — actual: 0
@@ -140,7 +140,7 @@ _Small samples: a single night cannot validate or refute the model — compare a
 **8-leg C · 8D Multi-line production** — model 9.2% · break-even +1171 → **LOST**
 - ❌ Y. Kuznetsov 1+ blocked shot (model 79%) — actual: 0
 - ✅ J. Hanley 1+ blocked shot (model 77%) — actual: 2
-- ✅ J. Middleton 1+ blocked shot (model 77%) — actual: 2
+- ✅ J. Middleton 1+ blocked shot (model 77%) — actual: 1
 - ❌ S. Nemec 1+ blocked shot (model 76%) — actual: 0
 - ✅ A. Zub 1+ blocked shot (model 75%) — actual: 3
 - ❌ T. Kleven 1+ blocked shot (model 73%) — actual: 0
