@@ -1,0 +1,451 @@
+{
+ "audited_at": "2026-11-26T02:04:22.734274+00:00",
+ "source": "slot-0230Z.json",
+ "model_version": "v20261106-224110",
+ "counts": {
+  "WON": 0,
+  "LOST": 0,
+  "PENDING": 9,
+  "VOID-REPRICE": 0
+ },
+ "by_size": {
+  "3": null,
+  "5": null,
+  "8": null
+ },
+ "by_size_independence": {
+  "3": null,
+  "5": null,
+  "8": null
+ },
+ "legs": {
+  "n": 0,
+  "won": 0,
+  "expected": 0
+ },
+ "parlays": [
+  {
+   "game_id": 2026020397,
+   "game": "MTL@COL",
+   "state": "PRE",
+   "size": 3,
+   "pick": "A",
+   "family": "3E Game script",
+   "pJoint": 0.50592,
+   "pLower": 0.4648245450485359,
+   "pIndep": 0.5072390260427521,
+   "breakEven": 115,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "A. Carrier 1+ blocked shot",
+     "p": 0.84242,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "K. Guhle 1+ blocked shot",
+     "p": 0.82786,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "MTL +1.5 puck line",
+     "p": 0.71196,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020397,
+   "game": "MTL@COL",
+   "state": "PRE",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.52194,
+   "pLower": 0.49467360988499426,
+   "pIndep": 0.522512084271744,
+   "breakEven": 102,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "A. Carrier 1+ blocked shot",
+     "p": 0.84242,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "K. Guhle 1+ blocked shot",
+     "p": 0.82786,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "S. Malinski 1+ blocked shot",
+     "p": 0.74586,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020397,
+   "game": "MTL@COL",
+   "state": "PRE",
+   "size": 3,
+   "pick": "C",
+   "family": "3A Shot-volume structure",
+   "pJoint": 0.41544,
+   "pLower": 0.3880497219347661,
+   "pIndep": 0.411781640218368,
+   "breakEven": 158,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "C. Caufield 2+ SOG",
+     "p": 0.77154,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "D. Larkin 2+ SOG",
+     "p": 0.74184,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Kadri 2+ SOG",
+     "p": 0.71198,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020397,
+   "game": "MTL@COL",
+   "state": "PRE",
+   "size": 5,
+   "pick": "A",
+   "family": "5A Five-on-five offensive environment",
+   "pJoint": 0.19394,
+   "pLower": 0.1706520977281403,
+   "pIndep": 0.12723825227205907,
+   "breakEven": 486,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "C. Caufield 2+ SOG",
+     "p": 0.77154,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "D. Larkin 2+ SOG",
+     "p": 0.74184,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "D. Larkin 1+ point",
+     "p": 0.5993,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Suzuki 1+ point",
+     "p": 0.62564,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "C. Caufield 1+ point",
+     "p": 0.58052,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020397,
+   "game": "MTL@COL",
+   "state": "PRE",
+   "size": 5,
+   "pick": "B",
+   "family": "5F Game script",
+   "pJoint": 0.33186,
+   "pLower": 0.306431997284063,
+   "pIndep": 0.33433747980047956,
+   "breakEven": 226,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "A. Carrier 1+ blocked shot",
+     "p": 0.84242,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Dobson 1+ blocked shot",
+     "p": 0.83648,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "K. Guhle 1+ blocked shot",
+     "p": 0.82786,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "L. Hutson 1+ blocked shot",
+     "p": 0.7882,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "MTL +1.5 puck line",
+     "p": 0.71196,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020397,
+   "game": "MTL@COL",
+   "state": "PRE",
+   "size": 5,
+   "pick": "C",
+   "family": "5D High-tempo matchup",
+   "pJoint": 0.19236,
+   "pLower": 0.1690720977281403,
+   "pIndep": 0.18691113063675605,
+   "breakEven": 491,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "C. Caufield 2+ SOG",
+     "p": 0.77154,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "D. Larkin 2+ SOG",
+     "p": 0.74184,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Kadri 2+ SOG",
+     "p": 0.71198,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Necas 2+ SOG",
+     "p": 0.694,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Suzuki 2+ SOG",
+     "p": 0.646,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020397,
+   "game": "MTL@COL",
+   "state": "PRE",
+   "size": 8,
+   "pick": "A",
+   "family": "8G Game script",
+   "pJoint": 0.11982,
+   "pLower": 0.10649910383622854,
+   "pIndep": 0.07434027409050739,
+   "breakEven": 839,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "COL +1.5 puck line",
+     "p": 0.699,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Necas 1+ point",
+     "p": 0.69076,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "COL team total over 2.5",
+     "p": 0.60088,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Dobson 1+ blocked shot",
+     "p": 0.83648,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "L. Hutson 1+ blocked shot",
+     "p": 0.7882,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "S. Malinski 1+ blocked shot",
+     "p": 0.74586,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Kadri 2+ SOG",
+     "p": 0.71198,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "D. Toews 1+ blocked shot",
+     "p": 0.72434,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020397,
+   "game": "MTL@COL",
+   "state": "PRE",
+   "size": 8,
+   "pick": "B",
+   "family": "8G Game script",
+   "pJoint": 0.11982,
+   "pLower": 0.10649910383622854,
+   "pIndep": 0.046843621153225844,
+   "breakEven": 839,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "N. Dobson 1+ blocked shot",
+     "p": 0.83648,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "L. Hutson 1+ blocked shot",
+     "p": 0.7882,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "MTL +1.5 puck line",
+     "p": 0.71196,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "MTL team total over 2.5",
+     "p": 0.60884,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Suzuki 1+ point",
+     "p": 0.62564,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "D. Larkin 1+ point",
+     "p": 0.5993,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "S. Malinski 1+ blocked shot",
+     "p": 0.74586,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "C. Caufield 1+ point",
+     "p": 0.58052,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  },
+  {
+   "game_id": 2026020397,
+   "game": "MTL@COL",
+   "state": "PRE",
+   "size": 8,
+   "pick": "C",
+   "family": "8F Cross-team high-event scenario",
+   "pJoint": 0.04418,
+   "pLower": 0.03260195177535315,
+   "pIndep": 0.02687377564413884,
+   "breakEven": 2967,
+   "status": "PENDING",
+   "legs": [
+    {
+     "text": "M. Necas 2+ SOG",
+     "p": 0.694,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "M. Necas 1+ point",
+     "p": 0.69076,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Suzuki 2+ SOG",
+     "p": 0.646,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "N. Suzuki 1+ point",
+     "p": 0.62564,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "D. Larkin 1+ point",
+     "p": 0.5993,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "C. Caufield 1+ point",
+     "p": 0.58052,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "T. Hughes 2+ SOG",
+     "p": 0.61852,
+     "result": "PENDING",
+     "value": null
+    },
+    {
+     "text": "B. Nelson 2+ SOG",
+     "p": 0.61894,
+     "result": "PENDING",
+     "value": null
+    }
+   ]
+  }
+ ]
+}
