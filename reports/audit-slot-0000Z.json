@@ -1,49 +1,81 @@
 {
- "audited_at": "2026-11-26T02:04:19.428793+00:00",
+ "audited_at": "2026-11-26T10:48:42.808062+00:00",
  "source": "slot-0000Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 3,
-  "LOST": 0,
-  "PENDING": 69,
-  "VOID-REPRICE": 0
+  "WON": 21,
+  "LOST": 47,
+  "PENDING": 0,
+  "VOID-REPRICE": 4
  },
  "by_size": {
   "3": {
-   "n": 3,
-   "won": 3,
-   "expected_wins": 1.5707,
-   "hit_rate": 1.0,
-   "mean_p": 0.5235666666666666,
-   "brier": 0.23111429026666666,
-   "logloss": 0.6550666015714158
+   "n": 23,
+   "won": 14,
+   "expected_wins": 11.23024,
+   "hit_rate": 0.6086956521739131,
+   "mean_p": 0.4882713043478261,
+   "brier": 0.2635552417391304,
+   "logloss": 0.7218003534157471
   },
-  "5": null,
-  "8": null
+  "5": {
+   "n": 21,
+   "won": 6,
+   "expected_wins": 5.38222,
+   "hit_rate": 0.2857142857142857,
+   "mean_p": 0.2562961904761905,
+   "brier": 0.21330065514285715,
+   "logloss": 0.63230549073227
+  },
+  "8": {
+   "n": 24,
+   "won": 1,
+   "expected_wins": 1.5425,
+   "hit_rate": 0.041666666666666664,
+   "mean_p": 0.06427083333333333,
+   "brier": 0.039638743983333335,
+   "logloss": 0.16432961656599968
+  }
  },
  "by_size_independence": {
   "3": {
-   "n": 3,
-   "won": 3,
-   "expected_wins": 1.512244527483704,
-   "hit_rate": 1.0,
-   "mean_p": 0.5040815091612346,
-   "brier": 0.2539955150612674,
-   "logloss": 0.702548153810918
+   "n": 23,
+   "won": 14,
+   "expected_wins": 11.043750263049871,
+   "hit_rate": 0.6086956521739131,
+   "mean_p": 0.4801630549152118,
+   "brier": 0.26444386672997455,
+   "logloss": 0.7232384888727822
   },
-  "5": null,
-  "8": null
+  "5": {
+   "n": 21,
+   "won": 6,
+   "expected_wins": 4.288796682899514,
+   "hit_rate": 0.2857142857142857,
+   "mean_p": 0.20422841347140544,
+   "brier": 0.208896539901493,
+   "logloss": 0.6360223220881015
+  },
+  "8": {
+   "n": 24,
+   "won": 1,
+   "expected_wins": 1.1330119241702155,
+   "hit_rate": 0.041666666666666664,
+   "mean_p": 0.04720883017375898,
+   "brier": 0.03882768601412508,
+   "logloss": 0.1578227367754309
+  }
  },
  "legs": {
-  "n": 188,
-  "won": 188,
-  "expected": 135.51294
+  "n": 375,
+  "won": 282,
+  "expected": 265.77492
  },
  "parlays": [
   {
    "game_id": 2026020386,
    "game": "WPG@BOS",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -51,32 +83,32 @@
    "pLower": 0.4742645450485359,
    "pIndep": 0.507706398016928,
    "breakEven": 111,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "D. Pastrnak 2+ SOG",
      "p": 0.84254,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
      "text": "M. Ferraro 1+ blocked shot",
      "p": 0.82122,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "BOS +1.5 puck line",
      "p": 0.73992,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -2
     }
    ]
   },
   {
    "game_id": 2026020386,
    "game": "WPG@BOS",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -84,12 +116,12 @@
    "pLower": 0.5445736098849943,
    "pIndep": 0.5708740078904719,
    "breakEven": -120,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "D. Pastrnak 2+ SOG",
      "p": 0.84254,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
@@ -102,14 +134,14 @@
      "text": "M. Ferraro 1+ blocked shot",
      "p": 0.82122,
      "result": "WON",
-     "value": 1
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020386,
    "game": "WPG@BOS",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3B Team offensive scenario",
@@ -129,20 +161,20 @@
      "text": "K. Connor 1+ point",
      "p": 0.7139,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "M. Scheifele 1+ point",
      "p": 0.62538,
      "result": "WON",
-     "value": 1
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020386,
    "game": "WPG@BOS",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5F Game script",
@@ -150,31 +182,31 @@
    "pLower": 0.32645199728406304,
    "pIndep": 0.2273145574134427,
    "breakEven": 206,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "D. Pastrnak 2+ SOG",
      "p": 0.84254,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
      "text": "M. Ferraro 1+ blocked shot",
      "p": 0.82122,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "BOS +1.5 puck line",
      "p": 0.73992,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -2
     },
     {
      "text": "BOS team total over 2.5",
      "p": 0.64064,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 2
     },
     {
      "text": "D. Pastrnak 1+ point",
@@ -187,7 +219,7 @@
   {
    "game_id": 2026020386,
    "game": "WPG@BOS",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5A Five-on-five offensive environment",
@@ -195,7 +227,7 @@
    "pLower": 0.1784720977281403,
    "pIndep": 0.15898976698099573,
    "breakEven": 460,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "K. Connor 2+ SOG",
@@ -207,24 +239,24 @@
      "text": "K. Connor 1+ point",
      "p": 0.7139,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "M. Scheifele 1+ point",
      "p": 0.62538,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "M. Scheifele 2+ SOG",
      "p": 0.6564,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "C. Perfetti 2+ SOG",
      "p": 0.63628,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -232,7 +264,7 @@
   {
    "game_id": 2026020386,
    "game": "WPG@BOS",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5F Game script",
@@ -240,19 +272,19 @@
    "pLower": 0.2740376673702255,
    "pIndep": 0.21274449049757807,
    "breakEven": 265,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "BOS +1.5 puck line",
      "p": 0.73992,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -2
     },
     {
      "text": "BOS team total over 2.5",
      "p": 0.64064,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 2
     },
     {
      "text": "D. Pastrnak 1+ point",
@@ -263,7 +295,7 @@
     {
      "text": "D. Samberg 1+ blocked shot",
      "p": 0.8074,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -277,7 +309,7 @@
   {
    "game_id": 2026020386,
    "game": "WPG@BOS",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -285,37 +317,37 @@
    "pLower": 0.09458957590262268,
    "pIndep": 0.06980105198310467,
    "breakEven": 957,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "D. Samberg 1+ blocked shot",
      "p": 0.8074,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "K. Connor 1+ point",
      "p": 0.7139,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "WPG +1.5 puck line",
      "p": 0.6702,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "WPG team total over 2.5",
      "p": 0.5847,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "M. Scheifele 1+ point",
      "p": 0.62538,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "J. Morrissey 1+ blocked shot",
@@ -326,13 +358,13 @@
     {
      "text": "N. Pionk 1+ blocked shot",
      "p": 0.77716,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "C. McAvoy 1+ blocked shot",
      "p": 0.76264,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -340,7 +372,7 @@
   {
    "game_id": 2026020386,
    "game": "WPG@BOS",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8D Multi-line production",
@@ -348,12 +380,12 @@
    "pLower": 0.08941910383622854,
    "pIndep": 0.09996144053161797,
    "breakEven": 1018,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "D. Samberg 1+ blocked shot",
      "p": 0.8074,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -365,20 +397,20 @@
     {
      "text": "N. Pionk 1+ blocked shot",
      "p": 0.77716,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "C. McAvoy 1+ blocked shot",
      "p": 0.76264,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "W. Borgen 1+ blocked shot",
      "p": 0.7495,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "C. Clifton 1+ blocked shot",
@@ -389,7 +421,7 @@
     {
      "text": "H. Lindholm 1+ blocked shot",
      "p": 0.69792,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -403,7 +435,7 @@
   {
    "game_id": 2026020386,
    "game": "WPG@BOS",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8A Shot-dominant game",
@@ -411,30 +443,30 @@
    "pLower": 0.01682315719088618,
    "pIndep": 0.02463453609041866,
    "breakEven": 5844,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "D. Pastrnak 3+ SOG",
      "p": 0.65852,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
      "text": "M. Scheifele 2+ SOG",
      "p": 0.6564,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "C. Perfetti 2+ SOG",
      "p": 0.63628,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "K. Connor 3+ SOG",
      "p": 0.6345,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 2
     },
     {
@@ -446,14 +478,14 @@
     {
      "text": "G. Vilardi 2+ SOG",
      "p": 0.60752,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
      "text": "E. Lindholm 2+ SOG",
      "p": 0.60214,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "M. Geekie 2+ SOG",
@@ -466,7 +498,7 @@
   {
    "game_id": 2026020387,
    "game": "NYR@BUF",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -474,39 +506,6 @@
    "pLower": 0.5106736098849942,
    "pIndep": 0.533734636643208,
    "breakEven": -104,
-   "status": "PENDING",
-   "legs": [
-    {
-     "text": "T. Thompson 2+ SOG",
-     "p": 0.83494,
-     "result": "WON",
-     "value": 2
-    },
-    {
-     "text": "C. Timmins 1+ blocked shot",
-     "p": 0.82904,
-     "result": "WON",
-     "value": 1
-    },
-    {
-     "text": "BUF +1.5 puck line",
-     "p": 0.77848,
-     "result": "PENDING",
-     "value": null
-    }
-   ]
-  },
-  {
-   "game_id": 2026020387,
-   "game": "NYR@BUF",
-   "state": "LIVE",
-   "size": 3,
-   "pick": "B",
-   "family": "3D Cross-team scenario",
-   "pJoint": 0.55208,
-   "pLower": 0.5248136098849943,
-   "pIndep": 0.5516857516285439,
-   "breakEven": -110,
    "status": "WON",
    "legs": [
     {
@@ -519,20 +518,53 @@
      "text": "C. Timmins 1+ blocked shot",
      "p": 0.82904,
      "result": "WON",
-     "value": 1
+     "value": 3
     },
     {
-     "text": "B. Schneider 1+ blocked shot",
-     "p": 0.8095,
+     "text": "BUF +1.5 puck line",
+     "p": 0.77848,
      "result": "WON",
-     "value": 1
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020387,
    "game": "NYR@BUF",
-   "state": "LIVE",
+   "state": "OFF",
+   "size": 3,
+   "pick": "B",
+   "family": "3D Cross-team scenario",
+   "pJoint": 0.55208,
+   "pLower": 0.5248136098849943,
+   "pIndep": 0.5516857516285439,
+   "breakEven": -110,
+   "status": "LOST",
+   "legs": [
+    {
+     "text": "T. Thompson 2+ SOG",
+     "p": 0.83494,
+     "result": "WON",
+     "value": 2
+    },
+    {
+     "text": "C. Timmins 1+ blocked shot",
+     "p": 0.82904,
+     "result": "WON",
+     "value": 3
+    },
+    {
+     "text": "B. Schneider 1+ blocked shot",
+     "p": 0.8095,
+     "result": "LOST",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "game_id": 2026020387,
+   "game": "NYR@BUF",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3E Game script",
@@ -540,7 +572,7 @@
    "pLower": 0.4665245450485358,
    "pIndep": 0.509187928144896,
    "breakEven": 114,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Samuelsson 1+ blocked shot",
@@ -551,21 +583,21 @@
     {
      "text": "B. Schneider 1+ blocked shot",
      "p": 0.8095,
-     "result": "WON",
-     "value": 1
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "BUF +1.5 puck line",
      "p": 0.77848,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020387,
    "game": "NYR@BUF",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
@@ -573,13 +605,13 @@
    "pLower": 0.17185309306170374,
    "pIndep": 0.12686271282524936,
    "breakEven": 482,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "J. Quinn 2+ SOG",
      "p": 0.73788,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "R. Dahlin 2+ SOG",
@@ -597,20 +629,20 @@
      "text": "T. Thompson 1+ point",
      "p": 0.63348,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "J. Quinn 1+ point",
      "p": 0.59396,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020387,
    "game": "NYR@BUF",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -618,7 +650,7 @@
    "pLower": 0.325131997284063,
    "pIndep": 0.3468775673577758,
    "breakEven": 208,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "T. Thompson 2+ SOG",
@@ -630,7 +662,7 @@
      "text": "C. Timmins 1+ blocked shot",
      "p": 0.82904,
      "result": "WON",
-     "value": 1
+     "value": 3
     },
     {
      "text": "M. Samuelsson 1+ blocked shot",
@@ -647,15 +679,15 @@
     {
      "text": "BUF +1.5 puck line",
      "p": 0.77848,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020387,
    "game": "NYR@BUF",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5E Balanced cross-team structure",
@@ -663,7 +695,7 @@
    "pLower": 0.25507766737022547,
    "pIndep": 0.2960745991806589,
    "breakEven": 292,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Samuelsson 1+ blocked shot",
@@ -674,8 +706,8 @@
     {
      "text": "B. Schneider 1+ blocked shot",
      "p": 0.8095,
-     "result": "WON",
-     "value": 1
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "M. Pettersson 1+ blocked shot",
@@ -686,21 +718,21 @@
     {
      "text": "A. Fox 1+ blocked shot",
      "p": 0.75996,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "J. Quinn 2+ SOG",
      "p": 0.73788,
      "result": "WON",
-     "value": 3
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020387,
    "game": "NYR@BUF",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8D Multi-line production",
@@ -708,7 +740,7 @@
    "pLower": 0.06637910383622854,
    "pIndep": 0.07726863005369361,
    "breakEven": 1406,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Pettersson 1+ blocked shot",
@@ -719,7 +751,7 @@
     {
      "text": "A. Fox 1+ blocked shot",
      "p": 0.75996,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -732,7 +764,7 @@
      "text": "J. Quinn 2+ SOG",
      "p": 0.73788,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "R. Dahlin 2+ SOG",
@@ -763,7 +795,7 @@
   {
    "game_id": 2026020387,
    "game": "NYR@BUF",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8A Shot-dominant game",
@@ -771,7 +803,7 @@
    "pLower": 0.016723157190886184,
    "pIndep": 0.024776231590874484,
    "breakEven": 5880,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "R. Dahlin 2+ SOG",
@@ -782,38 +814,38 @@
     {
      "text": "T. Thompson 3+ SOG",
      "p": 0.64624,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 2
     },
     {
      "text": "Z. Benson 2+ SOG",
      "p": 0.6447,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
      "text": "M. Zibanejad 2+ SOG",
      "p": 0.64852,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
      "text": "A. Lafreni\u00e8re 2+ SOG",
      "p": 0.633,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "A. Fox 2+ SOG",
      "p": 0.60098,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. Miller 2+ SOG",
      "p": 0.61142,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "W. Cuylle 2+ SOG",
@@ -826,7 +858,7 @@
   {
    "game_id": 2026020387,
    "game": "NYR@BUF",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8D Multi-line production",
@@ -834,12 +866,12 @@
    "pLower": 0.04806195177535315,
    "pIndep": 0.046965817586432194,
    "breakEven": 1981,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "A. Fox 1+ blocked shot",
      "p": 0.75996,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -870,12 +902,12 @@
      "text": "T. Thompson 1+ point",
      "p": 0.63348,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "T. Thompson 3+ SOG",
      "p": 0.64624,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 2
     },
     {
@@ -889,7 +921,7 @@
   {
    "game_id": 2026020388,
    "game": "CAR@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -897,13 +929,13 @@
    "pLower": 0.4289097219347661,
    "pIndep": 0.46154987439468803,
    "breakEven": 133,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "J. Slavin 1+ blocked shot",
      "p": 0.78116,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "N. Kucherov 2+ SOG",
@@ -914,15 +946,15 @@
     {
      "text": "CAR +1.5 puck line",
      "p": 0.76556,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020388,
    "game": "CAR@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -930,19 +962,19 @@
    "pLower": 0.43732454504853585,
    "pIndep": 0.47584678993523194,
    "breakEven": 129,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "S. Walker 1+ blocked shot",
      "p": 0.788,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "J. Slavin 1+ blocked shot",
      "p": 0.78116,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "N. Kucherov 2+ SOG",
@@ -955,7 +987,7 @@
   {
    "game_id": 2026020388,
    "game": "CAR@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3E Game script",
@@ -963,32 +995,32 @@
    "pLower": 0.42432454504853584,
    "pIndep": 0.46542323311220796,
    "breakEven": 136,
-   "status": "PENDING",
+   "status": "VOID-REPRICE",
    "legs": [
     {
      "text": "S. Walker 1+ blocked shot",
      "p": 0.788,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "E. Cernak 1+ blocked shot",
      "p": 0.7845,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "CAR +1.5 puck line",
      "p": 0.76556,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020388,
    "game": "CAR@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
@@ -996,13 +1028,13 @@
    "pLower": 0.14483309306170372,
    "pIndep": 0.10225269450998835,
    "breakEven": 590,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "J. Guentzel 2+ SOG",
      "p": 0.72834,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "N. Kucherov 1+ point",
@@ -1025,7 +1057,7 @@
     {
      "text": "J. Carlson 1+ point",
      "p": 0.51418,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -1033,7 +1065,7 @@
   {
    "game_id": 2026020388,
    "game": "CAR@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5A Five-on-five offensive environment",
@@ -1041,13 +1073,13 @@
    "pLower": 0.13813309306170374,
    "pIndep": 0.12265359229492691,
    "breakEven": 624,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "J. Guentzel 2+ SOG",
      "p": 0.72834,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "N. Kucherov 1+ point",
@@ -1078,7 +1110,7 @@
   {
    "game_id": 2026020388,
    "game": "CAR@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5F Game script",
@@ -1086,44 +1118,44 @@
    "pLower": 0.2441176673702255,
    "pIndep": 0.2372827661858832,
    "breakEven": 310,
-   "status": "PENDING",
+   "status": "VOID-REPRICE",
    "legs": [
     {
      "text": "S. Walker 1+ blocked shot",
      "p": 0.788,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "E. Cernak 1+ blocked shot",
      "p": 0.7845,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "J. Slavin 1+ blocked shot",
      "p": 0.78116,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "CAR +1.5 puck line",
      "p": 0.76556,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "CAR team total over 2.5",
      "p": 0.65068,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020388,
    "game": "CAR@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8F Cross-team high-event scenario",
@@ -1131,7 +1163,7 @@
    "pLower": 0.04974195177535315,
    "pIndep": 0.0422339112099801,
    "breakEven": 1910,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "N. Kucherov 2+ SOG",
@@ -1142,8 +1174,8 @@
     {
      "text": "J. Guentzel 2+ SOG",
      "p": 0.72834,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "N. Kucherov 1+ point",
@@ -1166,14 +1198,14 @@
     {
      "text": "S. Aho 1+ point",
      "p": 0.61548,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "A. Svechnikov 2+ SOG",
      "p": 0.66046,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "S. Jarvis 2+ SOG",
@@ -1186,7 +1218,7 @@
   {
    "game_id": 2026020388,
    "game": "CAR@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8D Multi-line production",
@@ -1194,37 +1226,37 @@
    "pLower": 0.05217910383622855,
    "pIndep": 0.06364150103824728,
    "breakEven": 1816,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "E. Cernak 1+ blocked shot",
      "p": 0.7845,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "R. McDonagh 1+ blocked shot",
      "p": 0.74272,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. Moser 1+ blocked shot",
      "p": 0.7428,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "A. Nikishin 1+ blocked shot",
      "p": 0.7054,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "J. Carlson 1+ blocked shot",
      "p": 0.70096,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "C. D'Astous 1+ blocked shot",
@@ -1235,21 +1267,21 @@
     {
      "text": "V. Hedman 1+ blocked shot",
      "p": 0.67908,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "A. Svechnikov 2+ SOG",
      "p": 0.66046,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020388,
    "game": "CAR@TBL",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8F Cross-team high-event scenario",
@@ -1257,7 +1289,7 @@
    "pLower": 0.01822315719088618,
    "pIndep": 0.023750757488677138,
    "breakEven": 5388,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "S. Aho 2+ SOG",
@@ -1268,14 +1300,14 @@
     {
      "text": "S. Aho 1+ point",
      "p": 0.61548,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "A. Svechnikov 2+ SOG",
      "p": 0.66046,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "S. Jarvis 2+ SOG",
@@ -1286,7 +1318,7 @@
     {
      "text": "L. Stankoven 2+ SOG",
      "p": 0.62858,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -1312,7 +1344,7 @@
   {
    "game_id": 2026020389,
    "game": "OTT@FLA",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -1320,7 +1352,7 @@
    "pLower": 0.4716045450485359,
    "pIndep": 0.5070245313571199,
    "breakEven": 112,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "T. Chabot 1+ blocked shot",
@@ -1331,21 +1363,21 @@
     {
      "text": "B. Tkachuk 2+ SOG",
      "p": 0.81756,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "FLA +1.5 puck line",
      "p": 0.7389,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020389,
    "game": "OTT@FLA",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -1353,7 +1385,7 @@
    "pLower": 0.5406536098849942,
    "pIndep": 0.56536621454208,
    "breakEven": -118,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "T. Chabot 1+ blocked shot",
@@ -1364,13 +1396,13 @@
     {
      "text": "J. Sanderson 1+ blocked shot",
      "p": 0.82862,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. Tkachuk 2+ SOG",
      "p": 0.81756,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -1378,7 +1410,7 @@
   {
    "game_id": 2026020389,
    "game": "OTT@FLA",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3E Game script",
@@ -1386,13 +1418,13 @@
    "pLower": 0.43326454504853584,
    "pIndep": 0.471858334180128,
    "breakEven": 131,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "J. Sanderson 1+ blocked shot",
      "p": 0.82862,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "A. Zub 1+ blocked shot",
@@ -1403,15 +1435,15 @@
     {
      "text": "FLA +1.5 puck line",
      "p": 0.7389,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020389,
    "game": "OTT@FLA",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
@@ -1419,7 +1451,7 @@
    "pLower": 0.15977309306170373,
    "pIndep": 0.13797995262969026,
    "breakEven": 526,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "S. Reinhart 2+ SOG",
@@ -1430,8 +1462,8 @@
     {
      "text": "M. Tkachuk 2+ SOG",
      "p": 0.71564,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "M. Tkachuk 1+ point",
@@ -1442,21 +1474,21 @@
     {
      "text": "S. Reinhart 1+ point",
      "p": 0.63456,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "S. Bennett 2+ SOG",
      "p": 0.65984,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020389,
    "game": "OTT@FLA",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -1464,7 +1496,7 @@
    "pLower": 0.31833199728406303,
    "pIndep": 0.27462775090223257,
    "breakEven": 214,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "T. Chabot 1+ blocked shot",
@@ -1475,33 +1507,33 @@
     {
      "text": "J. Sanderson 1+ blocked shot",
      "p": 0.82862,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. Tkachuk 2+ SOG",
      "p": 0.81756,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "FLA +1.5 puck line",
      "p": 0.7389,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "FLA team total over 2.5",
      "p": 0.66576,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     }
    ]
   },
   {
    "game_id": 2026020389,
    "game": "OTT@FLA",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5E Balanced cross-team structure",
@@ -1509,7 +1541,7 @@
    "pLower": 0.2220520977281403,
    "pIndep": 0.2453610577885094,
    "breakEven": 350,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "T. Kleven 1+ blocked shot",
@@ -1532,13 +1564,13 @@
     {
      "text": "A. Ekblad 1+ blocked shot",
      "p": 0.74352,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "R. Gudas 1+ blocked shot",
      "p": 0.73396,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -1546,7 +1578,7 @@
   {
    "game_id": 2026020389,
    "game": "OTT@FLA",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -1554,7 +1586,7 @@
    "pLower": 0.08723910383622854,
    "pIndep": 0.0733835052019005,
    "breakEven": 1046,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "T. Kleven 1+ blocked shot",
@@ -1577,14 +1609,14 @@
     {
      "text": "A. Ekblad 1+ blocked shot",
      "p": 0.74352,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "M. Tkachuk 2+ SOG",
      "p": 0.71564,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "S. Reinhart 2+ SOG",
@@ -1595,8 +1627,8 @@
     {
      "text": "FLA team total over 2.5",
      "p": 0.66576,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "M. Tkachuk 1+ point",
@@ -1609,7 +1641,7 @@
   {
    "game_id": 2026020389,
    "game": "OTT@FLA",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8F Cross-team high-event scenario",
@@ -1617,7 +1649,7 @@
    "pLower": 0.03480195177535315,
    "pIndep": 0.0312558492514348,
    "breakEven": 2773,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "S. Reinhart 2+ SOG",
@@ -1628,8 +1660,8 @@
     {
      "text": "M. Tkachuk 2+ SOG",
      "p": 0.71564,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "M. Tkachuk 1+ point",
@@ -1640,39 +1672,39 @@
     {
      "text": "S. Reinhart 1+ point",
      "p": 0.63456,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "S. Bennett 2+ SOG",
      "p": 0.65984,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "T. St\u00fctzle 2+ SOG",
      "p": 0.61666,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "T. St\u00fctzle 1+ point",
      "p": 0.6193,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "D. Cozens 2+ SOG",
      "p": 0.59574,
      "result": "WON",
-     "value": 4
+     "value": 6
     }
    ]
   },
   {
    "game_id": 2026020389,
    "game": "OTT@FLA",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8G Game script",
@@ -1680,25 +1712,25 @@
    "pLower": 0.08069910383622855,
    "pIndep": 0.04509535489022584,
    "breakEven": 1139,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "FLA team total over 2.5",
      "p": 0.66576,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "S. Reinhart 1+ point",
      "p": 0.63456,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "Game total over 5.5",
      "p": 0.61194,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 8
     },
     {
      "text": "T. Kleven 1+ blocked shot",
@@ -1715,27 +1747,27 @@
     {
      "text": "A. Ekblad 1+ blocked shot",
      "p": 0.74352,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "R. Gudas 1+ blocked shot",
      "p": 0.73396,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "C. Verhaeghe 1+ point",
      "p": 0.56168,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020390,
    "game": "STL@NYI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -1743,7 +1775,7 @@
    "pLower": 0.49397360988499434,
    "pIndep": 0.5152237777747201,
    "breakEven": 102,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "C. Parayko 1+ blocked shot",
@@ -1754,21 +1786,21 @@
     {
      "text": "M. Schaefer 2+ SOG",
      "p": 0.81178,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "NYI +1.5 puck line",
      "p": 0.77126,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020390,
    "game": "STL@NYI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -1776,7 +1808,7 @@
    "pLower": 0.49409360988499434,
    "pIndep": 0.5189225178950401,
    "breakEven": 102,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "C. Parayko 1+ blocked shot",
@@ -1787,8 +1819,8 @@
     {
      "text": "M. Schaefer 2+ SOG",
      "p": 0.81178,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "B. Horvat 2+ SOG",
@@ -1801,7 +1833,7 @@
   {
    "game_id": 2026020390,
    "game": "STL@NYI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3A Shot-volume structure",
@@ -1809,7 +1841,7 @@
    "pLower": 0.3428665681170497,
    "pIndep": 0.36634617916550405,
    "breakEven": 192,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "B. Horvat 2+ SOG",
@@ -1820,21 +1852,21 @@
     {
      "text": "M. Barzal 2+ SOG",
      "p": 0.68936,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "D. Holloway 2+ SOG",
      "p": 0.68202,
      "result": "WON",
-     "value": 2
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020390,
    "game": "STL@NYI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5F Game script",
@@ -1842,7 +1874,7 @@
    "pLower": 0.31117199728406303,
    "pIndep": 0.26649073365488746,
    "breakEven": 221,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "C. Parayko 1+ blocked shot",
@@ -1853,20 +1885,20 @@
     {
      "text": "M. Schaefer 2+ SOG",
      "p": 0.81178,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "NYI +1.5 puck line",
      "p": 0.77126,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "NYI team total over 2.5",
      "p": 0.66672,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "B. Horvat 2+ SOG",
@@ -1879,7 +1911,7 @@
   {
    "game_id": 2026020390,
    "game": "STL@NYI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -1887,24 +1919,24 @@
    "pLower": 0.2352720977281403,
    "pIndep": 0.20812977357092535,
    "breakEven": 325,
-   "status": "PENDING",
+   "status": "VOID-REPRICE",
    "legs": [
     {
      "text": "NYI +1.5 puck line",
      "p": 0.77126,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "NYI team total over 2.5",
      "p": 0.66672,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "B. Carlo 1+ blocked shot",
      "p": 0.7729,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
@@ -1916,15 +1948,15 @@
     {
      "text": "M. Barzal 2+ SOG",
      "p": 0.68936,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020390,
    "game": "STL@NYI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5E Balanced cross-team structure",
@@ -1932,12 +1964,12 @@
    "pLower": 0.2032920977281403,
    "pIndep": 0.22603071962235616,
    "breakEven": 392,
-   "status": "PENDING",
+   "status": "VOID-REPRICE",
    "legs": [
     {
      "text": "B. Carlo 1+ blocked shot",
      "p": 0.7729,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
@@ -1950,13 +1982,13 @@
      "text": "M. Schaefer 1+ blocked shot",
      "p": 0.73958,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "L. Stanley 1+ blocked shot",
      "p": 0.72586,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. Barron 1+ blocked shot",
@@ -1969,7 +2001,7 @@
   {
    "game_id": 2026020390,
    "game": "STL@NYI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8D Multi-line production",
@@ -1977,12 +2009,12 @@
    "pLower": 0.06391910383622855,
    "pIndep": 0.07504073827294512,
    "breakEven": 1464,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "B. Carlo 1+ blocked shot",
      "p": 0.7729,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
@@ -1995,13 +2027,13 @@
      "text": "M. Schaefer 1+ blocked shot",
      "p": 0.73958,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "L. Stanley 1+ blocked shot",
      "p": 0.72586,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. Barron 1+ blocked shot",
@@ -2012,27 +2044,27 @@
     {
      "text": "B. Hutton 1+ blocked shot",
      "p": 0.70482,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "M. Barzal 2+ SOG",
      "p": 0.68936,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "D. Holloway 2+ SOG",
      "p": 0.68202,
      "result": "WON",
-     "value": 2
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020390,
    "game": "STL@NYI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8F Cross-team high-event scenario",
@@ -2040,48 +2072,48 @@
    "pLower": 0.02174315719088618,
    "pIndep": 0.018936164545035706,
    "breakEven": 4499,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "B. Horvat 1+ point",
      "p": 0.6291,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Barzal 1+ point",
      "p": 0.60334,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "M. Schaefer 1+ point",
      "p": 0.60252,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "D. Holloway 2+ SOG",
      "p": 0.68202,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "M. Schaefer 3+ SOG",
      "p": 0.61388,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "B. Horvat 3+ SOG",
      "p": 0.55866,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 2
     },
     {
      "text": "J. Snuggerud 2+ SOG",
      "p": 0.61824,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
@@ -2095,7 +2127,7 @@
   {
    "game_id": 2026020390,
    "game": "STL@NYI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8D Multi-line production",
@@ -2103,19 +2135,19 @@
    "pLower": 0.04340195177535315,
    "pIndep": 0.04170930142415727,
    "breakEven": 2204,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Schaefer 1+ blocked shot",
      "p": 0.73958,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "L. Stanley 1+ blocked shot",
      "p": 0.72586,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. Barron 1+ blocked shot",
@@ -2126,39 +2158,39 @@
     {
      "text": "B. Horvat 1+ point",
      "p": 0.6291,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Schaefer 1+ point",
      "p": 0.60252,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "M. Barzal 1+ point",
      "p": 0.60334,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "B. Hutton 1+ blocked shot",
      "p": 0.70482,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "P. Broberg 1+ blocked shot",
      "p": 0.6905,
      "result": "WON",
-     "value": 1
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020391,
    "game": "CGY@PIT",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -2166,7 +2198,7 @@
    "pLower": 0.4534445450485358,
    "pIndep": 0.48690311113296,
    "breakEven": 121,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "Z. Whitecloud 1+ blocked shot",
@@ -2183,15 +2215,15 @@
     {
      "text": "PIT +1.5 puck line",
      "p": 0.75864,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -3
     }
    ]
   },
   {
    "game_id": 2026020391,
    "game": "CGY@PIT",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -2199,7 +2231,7 @@
    "pLower": 0.45342454504853585,
    "pIndep": 0.49095518727312,
    "breakEven": 121,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "Z. Whitecloud 1+ blocked shot",
@@ -2216,15 +2248,15 @@
     {
      "text": "J. Middleton 1+ blocked shot",
      "p": 0.76234,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020391,
    "game": "CGY@PIT",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3B Team offensive scenario",
@@ -2232,7 +2264,7 @@
    "pLower": 0.29982656811704966,
    "pIndep": 0.26565594763271994,
    "breakEven": 234,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "E. Karlsson 1+ point",
@@ -2249,7 +2281,7 @@
     {
      "text": "S. Crosby 1+ point",
      "p": 0.58202,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -2257,7 +2289,7 @@
   {
    "game_id": 2026020391,
    "game": "CGY@PIT",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
@@ -2265,7 +2297,7 @@
    "pLower": 0.14077309306170374,
    "pIndep": 0.10446378808219102,
    "breakEven": 610,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "E. Karlsson 2+ SOG",
@@ -2288,7 +2320,7 @@
     {
      "text": "S. Crosby 1+ point",
      "p": 0.58202,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -2302,7 +2334,7 @@
   {
    "game_id": 2026020391,
    "game": "CGY@PIT",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -2310,19 +2342,19 @@
    "pLower": 0.2685776673702255,
    "pIndep": 0.19973344273807409,
    "breakEven": 272,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "PIT +1.5 puck line",
      "p": 0.75864,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -3
     },
     {
      "text": "PIT team total over 2.5",
      "p": 0.6184,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "E. Karlsson 1+ point",
@@ -2347,7 +2379,7 @@
   {
    "game_id": 2026020391,
    "game": "CGY@PIT",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5F Game script",
@@ -2355,44 +2387,44 @@
    "pLower": 0.2328720977281403,
    "pIndep": 0.2148335539536457,
    "breakEven": 329,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "PIT +1.5 puck line",
      "p": 0.75864,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -3
     },
     {
      "text": "CGY team total under 3.5",
      "p": 0.67988,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 6
     },
     {
      "text": "J. Middleton 1+ blocked shot",
      "p": 0.76234,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "Y. Kuznetsov 1+ blocked shot",
      "p": 0.75614,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "K. Korczak 1+ blocked shot",
      "p": 0.72676,
      "result": "WON",
-     "value": 2
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020391,
    "game": "CGY@PIT",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -2400,13 +2432,13 @@
    "pLower": 0.07511910383622855,
    "pIndep": 0.06790983275904207,
    "breakEven": 1231,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "J. Middleton 1+ blocked shot",
      "p": 0.76234,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. Hanley 1+ blocked shot",
@@ -2418,7 +2450,7 @@
      "text": "Y. Kuznetsov 1+ blocked shot",
      "p": 0.75614,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "T. van Riemsdyk 1+ blocked shot",
@@ -2430,32 +2462,32 @@
      "text": "S. Nemec 1+ blocked shot",
      "p": 0.73358,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "CGY +1.5 puck line",
      "p": 0.66222,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "PIT team total under 3.5",
      "p": 0.60088,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "K. Korczak 1+ blocked shot",
      "p": 0.72676,
      "result": "WON",
-     "value": 2
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020391,
    "game": "CGY@PIT",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8F Cross-team high-event scenario",
@@ -2463,7 +2495,7 @@
    "pLower": 0.02174315719088618,
    "pIndep": 0.022371378268718156,
    "breakEven": 4499,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "E. Karlsson 2+ SOG",
@@ -2486,7 +2518,7 @@
     {
      "text": "S. Crosby 1+ point",
      "p": 0.58202,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -2498,8 +2530,8 @@
     {
      "text": "M. Backlund 2+ SOG",
      "p": 0.62822,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "R. Rakell 3+ SOG",
@@ -2510,7 +2542,7 @@
     {
      "text": "J. Farabee 2+ SOG",
      "p": 0.61044,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     }
    ]
@@ -2518,7 +2550,7 @@
   {
    "game_id": 2026020391,
    "game": "CGY@PIT",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8A Shot-dominant game",
@@ -2526,7 +2558,7 @@
    "pLower": 0.009583157190886182,
    "pIndep": 0.019964399650859877,
    "breakEven": 10335,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "E. Karlsson 2+ SOG",
@@ -2543,19 +2575,19 @@
     {
      "text": "M. Backlund 2+ SOG",
      "p": 0.62822,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. Farabee 2+ SOG",
      "p": 0.61044,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
      "text": "E. Chinakhov 2+ SOG",
      "p": 0.60304,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
@@ -2567,21 +2599,21 @@
     {
      "text": "M. Gridin 2+ SOG",
      "p": 0.56848,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
      "text": "B. Kindel 2+ SOG",
      "p": 0.56634,
      "result": "WON",
-     "value": 2
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020392,
    "game": "PHI@WSH",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -2589,32 +2621,32 @@
    "pLower": 0.5061136098849942,
    "pIndep": 0.534992899387912,
    "breakEven": -102,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "M. Feh\u00e9rv\u00e1ry 1+ blocked shot",
      "p": 0.8532,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "M. Roy 1+ blocked shot",
      "p": 0.82922,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "WSH +1.5 puck line",
      "p": 0.75176,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020392,
    "game": "PHI@WSH",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -2628,26 +2660,26 @@
      "text": "M. Feh\u00e9rv\u00e1ry 1+ blocked shot",
      "p": 0.8532,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "M. Roy 1+ blocked shot",
      "p": 0.82922,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "N. Seeler 1+ blocked shot",
      "p": 0.8214,
      "result": "WON",
-     "value": 2
+     "value": 3
     }
    ]
   },
   {
    "game_id": 2026020392,
    "game": "PHI@WSH",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3A Shot-volume structure",
@@ -2655,32 +2687,32 @@
    "pLower": 0.2587065681170497,
    "pIndep": 0.280704674405056,
    "breakEven": 287,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "J. Chychrun 2+ SOG",
      "p": 0.69808,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "A. Tuch 2+ SOG",
      "p": 0.63356,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "R. Leonard 2+ SOG",
      "p": 0.6331,
      "result": "WON",
-     "value": 4
+     "value": 5
     }
    ]
   },
   {
    "game_id": 2026020392,
    "game": "PHI@WSH",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
@@ -2688,44 +2720,44 @@
    "pLower": 0.10469309306170375,
    "pIndep": 0.08914895936846602,
    "breakEven": 855,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "J. Chychrun 2+ SOG",
      "p": 0.69808,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "A. Tuch 2+ SOG",
      "p": 0.63356,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. Chychrun 1+ point",
      "p": 0.58834,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "A. Tuch 1+ point",
      "p": 0.5265,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "R. Leonard 2+ SOG",
      "p": 0.6331,
      "result": "WON",
-     "value": 4
+     "value": 5
     }
    ]
   },
   {
    "game_id": 2026020392,
    "game": "PHI@WSH",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -2733,44 +2765,44 @@
    "pLower": 0.33355199728406304,
    "pIndep": 0.35682456377611466,
    "breakEven": 200,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "M. Feh\u00e9rv\u00e1ry 1+ blocked shot",
      "p": 0.8532,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "M. Roy 1+ blocked shot",
      "p": 0.82922,
      "result": "WON",
-     "value": 3
+     "value": 4
     },
     {
      "text": "N. Seeler 1+ blocked shot",
      "p": 0.8214,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "T. Sanheim 1+ blocked shot",
      "p": 0.81116,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "WSH +1.5 puck line",
      "p": 0.75176,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020392,
    "game": "PHI@WSH",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5D High-tempo matchup",
@@ -2778,25 +2810,25 @@
    "pLower": 0.09114881012198232,
    "pIndep": 0.10661229667925315,
    "breakEven": 997,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "J. Chychrun 2+ SOG",
      "p": 0.69808,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "A. Tuch 2+ SOG",
      "p": 0.63356,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "R. Leonard 2+ SOG",
      "p": 0.6331,
      "result": "WON",
-     "value": 4
+     "value": 5
     },
     {
      "text": "T. Konecny 2+ SOG",
@@ -2807,15 +2839,15 @@
     {
      "text": "A. Ovechkin 2+ SOG",
      "p": 0.60678,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020392,
    "game": "PHI@WSH",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -2823,31 +2855,31 @@
    "pLower": 0.10643910383622855,
    "pIndep": 0.08098528030965495,
    "breakEven": 840,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "N. Seeler 1+ blocked shot",
      "p": 0.8214,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "WSH +1.5 puck line",
      "p": 0.75176,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "WSH team total over 2.5",
      "p": 0.67912,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 7
     },
     {
      "text": "T. Sanheim 1+ blocked shot",
      "p": 0.81116,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "C. York 1+ blocked shot",
@@ -2858,19 +2890,19 @@
     {
      "text": "R. Ristolainen 1+ blocked shot",
      "p": 0.73922,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "J. Chychrun 1+ point",
      "p": 0.58834,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. St. Ivany 1+ blocked shot",
      "p": 0.67714,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -2878,7 +2910,7 @@
   {
    "game_id": 2026020392,
    "game": "PHI@WSH",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8F Cross-team high-event scenario",
@@ -2886,7 +2918,7 @@
    "pLower": 0.00690315719088618,
    "pIndep": 0.014976523491331975,
    "breakEven": 14386,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "T. Konecny 2+ SOG",
@@ -2897,8 +2929,8 @@
     {
      "text": "A. Ovechkin 2+ SOG",
      "p": 0.60678,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "O. Tippett 2+ SOG",
@@ -2909,8 +2941,8 @@
     {
      "text": "J. Chychrun 1+ point",
      "p": 0.58834,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "C. Hutson 2+ SOG",
@@ -2921,13 +2953,13 @@
     {
      "text": "T. Zegras 2+ SOG",
      "p": 0.58658,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "M. Michkov 2+ SOG",
      "p": 0.57562,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -2941,7 +2973,7 @@
   {
    "game_id": 2026020392,
    "game": "PHI@WSH",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8A Shot-dominant game",
@@ -2949,7 +2981,7 @@
    "pLower": 0.00486315719088618,
    "pIndep": 0.014018066471815744,
    "breakEven": 20463,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "T. Konecny 2+ SOG",
@@ -2960,8 +2992,8 @@
     {
      "text": "A. Ovechkin 2+ SOG",
      "p": 0.60678,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "O. Tippett 2+ SOG",
@@ -2972,13 +3004,13 @@
     {
      "text": "T. Zegras 2+ SOG",
      "p": 0.58658,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "M. Michkov 2+ SOG",
      "p": 0.57562,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -2991,7 +3023,7 @@
      "text": "P. Dubois 2+ SOG",
      "p": 0.55454,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "T. Foerster 2+ SOG",
@@ -3004,7 +3036,7 @@
   {
    "game_id": 2026020393,
    "game": "NJD@CBJ",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -3012,32 +3044,32 @@
    "pLower": 0.49687360988499435,
    "pIndep": 0.5192490284017199,
    "breakEven": 101,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "B. Pesce 1+ blocked shot",
      "p": 0.83476,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "J. Hughes 2+ SOG",
      "p": 0.8249,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "NJD +1.5 puck line",
      "p": 0.75778,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020393,
    "game": "NJD@CBJ",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -3045,32 +3077,32 @@
    "pLower": 0.5382536098849943,
    "pIndep": 0.56516139959868,
    "breakEven": -117,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "B. Pesce 1+ blocked shot",
      "p": 0.83476,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "J. Hughes 2+ SOG",
      "p": 0.8249,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "Z. Werenski 2+ SOG",
      "p": 0.81568,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020393,
    "game": "NJD@CBJ",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3B Team offensive scenario",
@@ -3078,24 +3110,24 @@
    "pLower": 0.3764497219347661,
    "pIndep": 0.384242297793984,
    "breakEven": 166,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "Z. Werenski 2+ SOG",
      "p": 0.81568,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "A. Fantilli 2+ SOG",
      "p": 0.72388,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "Z. Werenski 1+ point",
      "p": 0.65104,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -3103,7 +3135,7 @@
   {
    "game_id": 2026020393,
    "game": "NJD@CBJ",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5F Game script",
@@ -3111,36 +3143,36 @@
    "pLower": 0.323431997284063,
    "pIndep": 0.23015628567084565,
    "breakEven": 209,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "B. Pesce 1+ blocked shot",
      "p": 0.83476,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "J. Hughes 2+ SOG",
      "p": 0.8249,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "NJD +1.5 puck line",
      "p": 0.75778,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "NJD team total over 2.5",
      "p": 0.66552,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "J. Hughes 1+ point",
      "p": 0.66628,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -3148,7 +3180,7 @@
   {
    "game_id": 2026020393,
    "game": "NJD@CBJ",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -3156,30 +3188,30 @@
    "pLower": 0.2714576673702255,
    "pIndep": 0.21672558846072246,
    "breakEven": 268,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "Z. Werenski 2+ SOG",
      "p": 0.81568,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "NJD +1.5 puck line",
      "p": 0.75778,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "NJD team total over 2.5",
      "p": 0.66552,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "J. Hughes 1+ point",
      "p": 0.66628,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -3193,7 +3225,7 @@
   {
    "game_id": 2026020393,
    "game": "NJD@CBJ",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5E Balanced cross-team structure",
@@ -3201,7 +3233,7 @@
    "pLower": 0.2331520977281403,
    "pIndep": 0.2520687281342658,
    "breakEven": 329,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "Z. Werenski 1+ blocked shot",
@@ -3212,8 +3244,8 @@
     {
      "text": "J. Siegenthaler 1+ blocked shot",
      "p": 0.78482,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "T. Meier 2+ SOG",
@@ -3230,7 +3262,7 @@
     {
      "text": "I. Provorov 1+ blocked shot",
      "p": 0.7402,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -3238,7 +3270,7 @@
   {
    "game_id": 2026020393,
    "game": "NJD@CBJ",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -3246,7 +3278,7 @@
    "pLower": 0.10065910383622854,
    "pIndep": 0.06711257334786325,
    "breakEven": 893,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "Z. Werenski 1+ blocked shot",
@@ -3257,26 +3289,26 @@
     {
      "text": "J. Hughes 1+ point",
      "p": 0.66628,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "NJD team total over 2.5",
      "p": 0.66552,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "Game total over 5.5",
      "p": 0.59862,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 5
     },
     {
      "text": "J. Siegenthaler 1+ blocked shot",
      "p": 0.78482,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "T. Meier 2+ SOG",
@@ -3293,15 +3325,15 @@
     {
      "text": "A. Fantilli 2+ SOG",
      "p": 0.72388,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020393,
    "game": "NJD@CBJ",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8A Shot-dominant game",
@@ -3309,7 +3341,7 @@
    "pLower": 0.03146195177535315,
    "pIndep": 0.03647705641291752,
    "breakEven": 3078,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "T. Meier 2+ SOG",
@@ -3320,8 +3352,8 @@
     {
      "text": "A. Fantilli 2+ SOG",
      "p": 0.72388,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "D. Hamilton 2+ SOG",
@@ -3332,20 +3364,20 @@
     {
      "text": "L. Evangelista 2+ SOG",
      "p": 0.6552,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "J. Bratt 2+ SOG",
      "p": 0.63208,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
      "text": "J. Hughes 3+ SOG",
      "p": 0.63172,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "N. Hischier 2+ SOG",
@@ -3356,15 +3388,15 @@
     {
      "text": "L. Hughes 2+ SOG",
      "p": 0.61608,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020393,
    "game": "NJD@CBJ",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8G Game script",
@@ -3372,31 +3404,31 @@
    "pLower": 0.07395910383622854,
    "pIndep": 0.05074202229926661,
    "breakEven": 1252,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "CBJ +1.5 puck line",
      "p": 0.65056,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": -1
     },
     {
      "text": "CBJ team total over 2.5",
      "p": 0.58458,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 2
     },
     {
      "text": "Z. Werenski 1+ point",
      "p": 0.65104,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "J. Siegenthaler 1+ blocked shot",
      "p": 0.78482,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "D. Severson 1+ blocked shot",
@@ -3407,20 +3439,20 @@
     {
      "text": "I. Provorov 1+ blocked shot",
      "p": 0.7402,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "B. Dillon 1+ blocked shot",
      "p": 0.7227,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "D. Hamilton 1+ blocked shot",
      "p": 0.6982,
      "result": "WON",
-     "value": 1
+     "value": 2
     }
    ]
   }

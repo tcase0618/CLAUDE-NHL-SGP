@@ -1,33 +1,81 @@
 {
- "audited_at": "2026-11-26T02:04:21.795698+00:00",
+ "audited_at": "2026-11-26T10:48:45.221859+00:00",
  "source": "slot-0030Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 0,
-  "LOST": 0,
-  "PENDING": 9,
+  "WON": 1,
+  "LOST": 8,
+  "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 1.62574,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.5419133333333334,
+   "brier": 0.26422294199999996,
+   "logloss": 0.7218642188755577
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.67864,
+   "hit_rate": 0.0,
+   "mean_p": 0.22621333333333335,
+   "brier": 0.06014027333333333,
+   "logloss": 0.26443574388709856
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.17198,
+   "hit_rate": 0.0,
+   "mean_p": 0.057326666666666665,
+   "brier": 0.004605323333333334,
+   "logloss": 0.0597918770881799
+  }
  },
  "by_size_independence": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 1,
+   "expected_wins": 1.6219896902124162,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.5406632300708054,
+   "brier": 0.2660347216097272,
+   "logloss": 0.7255005377042077
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.6278890635851282,
+   "hit_rate": 0.0,
+   "mean_p": 0.20929635452837606,
+   "brier": 0.05483323463225492,
+   "logloss": 0.24433513550590016
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.09573195467027273,
+   "hit_rate": 0.0,
+   "mean_p": 0.031910651556757576,
+   "brier": 0.0012569900070743105,
+   "logloss": 0.03255894768101703
+  }
  },
  "legs": {
-  "n": 15,
-  "won": 15,
-  "expected": 10.5744
+  "n": 48,
+  "won": 30,
+  "expected": 33.7365
  },
  "parlays": [
   {
    "game_id": 2026020394,
    "game": "VAN@DET",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -35,13 +83,13 @@
    "pLower": 0.5178136098849943,
    "pIndep": 0.540256920036288,
    "breakEven": -107,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "A. DeBrincat 2+ SOG",
      "p": 0.8553,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "F. Hronek 1+ blocked shot",
@@ -52,15 +100,15 @@
     {
      "text": "DET +1.5 puck line",
      "p": 0.77284,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020394,
    "game": "VAN@DET",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -68,18 +116,18 @@
    "pLower": 0.5430936098849942,
    "pIndep": 0.5697417397889281,
    "breakEven": -119,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "A. DeBrincat 2+ SOG",
      "p": 0.8553,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. Chiarot 1+ blocked shot",
      "p": 0.8274,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -93,7 +141,7 @@
   {
    "game_id": 2026020394,
    "game": "VAN@DET",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3E Game script",
@@ -101,12 +149,12 @@
    "pLower": 0.4692045450485358,
    "pIndep": 0.5119910303872001,
    "breakEven": 113,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "B. Chiarot 1+ blocked shot",
      "p": 0.8274,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -118,15 +166,15 @@
     {
      "text": "DET +1.5 puck line",
      "p": 0.77284,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020394,
    "game": "VAN@DET",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
@@ -134,30 +182,30 @@
    "pLower": 0.15639309306170374,
    "pIndep": 0.1306919235975129,
    "breakEven": 539,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "V. Arvidsson 2+ SOG",
      "p": 0.75814,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "L. Raymond 2+ SOG",
      "p": 0.70276,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "A. DeBrincat 3+ SOG",
      "p": 0.67756,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 2
     },
     {
      "text": "A. DeBrincat 1+ point",
      "p": 0.61508,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -171,7 +219,7 @@
   {
    "game_id": 2026020394,
    "game": "VAN@DET",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5D High-tempo matchup",
@@ -179,25 +227,25 @@
    "pLower": 0.12345309306170375,
    "pIndep": 0.13947289245361003,
    "breakEven": 710,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "V. Arvidsson 2+ SOG",
      "p": 0.75814,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "L. Raymond 2+ SOG",
      "p": 0.70276,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "A. DeBrincat 3+ SOG",
      "p": 0.67756,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 2
     },
     {
      "text": "J. DeBrusk 2+ SOG",
@@ -208,7 +256,7 @@
     {
      "text": "B. Boeser 2+ SOG",
      "p": 0.61006,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -216,7 +264,7 @@
   {
    "game_id": 2026020394,
    "game": "VAN@DET",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5F Game script",
@@ -224,18 +272,18 @@
    "pLower": 0.333351997284063,
    "pIndep": 0.35772424753400534,
    "breakEven": 200,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "A. DeBrincat 2+ SOG",
      "p": 0.8553,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. Chiarot 1+ blocked shot",
      "p": 0.8274,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -253,15 +301,15 @@
     {
      "text": "DET +1.5 puck line",
      "p": 0.77284,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     }
    ]
   },
   {
    "game_id": 2026020394,
    "game": "VAN@DET",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8A Shot-dominant game",
@@ -269,25 +317,25 @@
    "pLower": 0.018603157190886184,
    "pIndep": 0.026216278224347057,
    "breakEven": 5275,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "V. Arvidsson 2+ SOG",
      "p": 0.75814,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "L. Raymond 2+ SOG",
      "p": 0.70276,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "A. DeBrincat 3+ SOG",
      "p": 0.67756,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 2
     },
     {
      "text": "J. DeBrusk 2+ SOG",
@@ -298,25 +346,25 @@
     {
      "text": "B. Boeser 2+ SOG",
      "p": 0.61006,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "M. Seider 2+ SOG",
      "p": 0.60082,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
      "text": "F. Chytil 2+ SOG",
      "p": 0.5641,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "M. Kasper 2+ SOG",
      "p": 0.55626,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     }
    ]
@@ -324,7 +372,7 @@
   {
    "game_id": 2026020394,
    "game": "VAN@DET",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8G Game script",
@@ -332,7 +380,7 @@
    "pLower": 0.09533910383622855,
    "pIndep": 0.05302614604579148,
    "breakEven": 949,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Seider 1+ blocked shot",
@@ -343,20 +391,20 @@
     {
      "text": "E. Pettersson 1+ blocked shot",
      "p": 0.79794,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "DET team total over 2.5",
      "p": 0.669,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "DET moneyline",
      "p": 0.58098,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "J. Faulk 1+ blocked shot",
@@ -367,13 +415,13 @@
     {
      "text": "A. DeBrincat 1+ point",
      "p": 0.61508,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "J. Oleksiak 1+ blocked shot",
      "p": 0.74332,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -387,7 +435,7 @@
   {
    "game_id": 2026020394,
    "game": "VAN@DET",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8F Cross-team high-event scenario",
@@ -395,12 +443,12 @@
    "pLower": 0.021523157190886176,
    "pIndep": 0.016489530400134202,
    "breakEven": 4546,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "A. DeBrincat 1+ point",
      "p": 0.61508,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -413,24 +461,24 @@
      "text": "M. Seider 1+ point",
      "p": 0.56612,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "V. Arvidsson 1+ point",
      "p": 0.57426,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "B. Boeser 2+ SOG",
      "p": 0.61006,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "B. Boeser 1+ point",
      "p": 0.59144,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -442,7 +490,7 @@
     {
      "text": "M. Seider 2+ SOG",
      "p": 0.60082,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     }
    ]

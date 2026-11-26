@@ -1,33 +1,81 @@
 {
- "audited_at": "2026-11-26T02:04:22.734274+00:00",
+ "audited_at": "2026-11-26T10:48:46.346207+00:00",
  "source": "slot-0230Z.json",
  "model_version": "v20261106-224110",
  "counts": {
   "WON": 0,
-  "LOST": 0,
-  "PENDING": 9,
+  "LOST": 9,
+  "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 1.4433,
+   "hit_rate": 0.0,
+   "mean_p": 0.4811,
+   "brier": 0.23365560119999998,
+   "logloss": 0.6599909048134793
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.71816,
+   "hit_rate": 0.0,
+   "mean_p": 0.23938666666666666,
+   "brier": 0.061582050933333334,
+   "logloss": 0.2774978361416454
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.28381999999999996,
+   "hit_rate": 0.0,
+   "mean_p": 0.09460666666666666,
+   "brier": 0.010221845733333332,
+   "logloss": 0.10014778737371234
+  }
  },
  "by_size_independence": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 1.4415327505328641,
+   "hit_rate": 0.0,
+   "mean_p": 0.48051091684428804,
+   "brier": 0.23329147565724373,
+   "logloss": 0.6592015096534524
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.6484868627092947,
+   "hit_rate": 0.0,
+   "mean_p": 0.21616228756976488,
+   "brier": 0.05430229799883157,
+   "logloss": 0.2499933335987842
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.14805767088787208,
+   "hit_rate": 0.0,
+   "mean_p": 0.04935255696262403,
+   "brier": 0.0028143336706567407,
+   "logloss": 0.05082211812460694
+  }
  },
  "legs": {
-  "n": 0,
-  "won": 0,
-  "expected": 0
+  "n": 48,
+  "won": 26,
+  "expected": 34.28284
  },
  "parlays": [
   {
    "game_id": 2026020397,
    "game": "MTL@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -35,32 +83,32 @@
    "pLower": 0.4648245450485359,
    "pIndep": 0.5072390260427521,
    "breakEven": 115,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "A. Carrier 1+ blocked shot",
      "p": 0.84242,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "K. Guhle 1+ blocked shot",
      "p": 0.82786,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "MTL +1.5 puck line",
      "p": 0.71196,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -6
     }
    ]
   },
   {
    "game_id": 2026020397,
    "game": "MTL@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -68,32 +116,32 @@
    "pLower": 0.49467360988499426,
    "pIndep": 0.522512084271744,
    "breakEven": 102,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "A. Carrier 1+ blocked shot",
      "p": 0.84242,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "K. Guhle 1+ blocked shot",
      "p": 0.82786,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "S. Malinski 1+ blocked shot",
      "p": 0.74586,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020397,
    "game": "MTL@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3A Shot-volume structure",
@@ -101,32 +149,32 @@
    "pLower": 0.3880497219347661,
    "pIndep": 0.411781640218368,
    "breakEven": 158,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Caufield 2+ SOG",
      "p": 0.77154,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "D. Larkin 2+ SOG",
      "p": 0.74184,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "N. Kadri 2+ SOG",
      "p": 0.71198,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020397,
    "game": "MTL@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
@@ -134,44 +182,44 @@
    "pLower": 0.1706520977281403,
    "pIndep": 0.12723825227205907,
    "breakEven": 486,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Caufield 2+ SOG",
      "p": 0.77154,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "D. Larkin 2+ SOG",
      "p": 0.74184,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "D. Larkin 1+ point",
      "p": 0.5993,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "N. Suzuki 1+ point",
      "p": 0.62564,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "C. Caufield 1+ point",
      "p": 0.58052,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020397,
    "game": "MTL@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -179,44 +227,44 @@
    "pLower": 0.306431997284063,
    "pIndep": 0.33433747980047956,
    "breakEven": 226,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "A. Carrier 1+ blocked shot",
      "p": 0.84242,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "N. Dobson 1+ blocked shot",
      "p": 0.83648,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "K. Guhle 1+ blocked shot",
      "p": 0.82786,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "L. Hutson 1+ blocked shot",
      "p": 0.7882,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "MTL +1.5 puck line",
      "p": 0.71196,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -6
     }
    ]
   },
   {
    "game_id": 2026020397,
    "game": "MTL@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5D High-tempo matchup",
@@ -224,44 +272,44 @@
    "pLower": 0.1690720977281403,
    "pIndep": 0.18691113063675605,
    "breakEven": 491,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Caufield 2+ SOG",
      "p": 0.77154,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "D. Larkin 2+ SOG",
      "p": 0.74184,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "N. Kadri 2+ SOG",
      "p": 0.71198,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "M. Necas 2+ SOG",
      "p": 0.694,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "N. Suzuki 2+ SOG",
      "p": 0.646,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020397,
    "game": "MTL@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -269,62 +317,62 @@
    "pLower": 0.10649910383622854,
    "pIndep": 0.07434027409050739,
    "breakEven": 839,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "COL +1.5 puck line",
      "p": 0.699,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 6
     },
     {
      "text": "M. Necas 1+ point",
      "p": 0.69076,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "COL team total over 2.5",
      "p": 0.60088,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 6
     },
     {
      "text": "N. Dobson 1+ blocked shot",
      "p": 0.83648,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "L. Hutson 1+ blocked shot",
      "p": 0.7882,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "S. Malinski 1+ blocked shot",
      "p": 0.74586,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "N. Kadri 2+ SOG",
      "p": 0.71198,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "D. Toews 1+ blocked shot",
      "p": 0.72434,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020397,
    "game": "MTL@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8G Game script",
@@ -332,62 +380,62 @@
    "pLower": 0.10649910383622854,
    "pIndep": 0.046843621153225844,
    "breakEven": 839,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "N. Dobson 1+ blocked shot",
      "p": 0.83648,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "L. Hutson 1+ blocked shot",
      "p": 0.7882,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "MTL +1.5 puck line",
      "p": 0.71196,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -6
     },
     {
      "text": "MTL team total over 2.5",
      "p": 0.60884,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "N. Suzuki 1+ point",
      "p": 0.62564,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "D. Larkin 1+ point",
      "p": 0.5993,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "S. Malinski 1+ blocked shot",
      "p": 0.74586,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "C. Caufield 1+ point",
      "p": 0.58052,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020397,
    "game": "MTL@COL",
-   "state": "PRE",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8F Cross-team high-event scenario",
@@ -395,55 +443,55 @@
    "pLower": 0.03260195177535315,
    "pIndep": 0.02687377564413884,
    "breakEven": 2967,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Necas 2+ SOG",
      "p": 0.694,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     },
     {
      "text": "M. Necas 1+ point",
      "p": 0.69076,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "N. Suzuki 2+ SOG",
      "p": 0.646,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "N. Suzuki 1+ point",
      "p": 0.62564,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "D. Larkin 1+ point",
      "p": 0.5993,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "C. Caufield 1+ point",
      "p": 0.58052,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "T. Hughes 2+ SOG",
      "p": 0.61852,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "B. Nelson 2+ SOG",
      "p": 0.61894,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 5
     }
    ]
   }

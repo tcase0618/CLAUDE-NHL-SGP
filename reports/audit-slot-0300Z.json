@@ -1,33 +1,81 @@
 {
- "audited_at": "2026-11-26T02:04:23.394640+00:00",
+ "audited_at": "2026-11-26T10:48:47.014746+00:00",
  "source": "slot-0300Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 0,
-  "LOST": 0,
-  "PENDING": 9,
+  "WON": 2,
+  "LOST": 7,
+  "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 2,
+   "expected_wins": 1.5084,
+   "hit_rate": 0.6666666666666666,
+   "mean_p": 0.5028,
+   "brier": 0.1917773576,
+   "logloss": 0.5757506938434914
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.9119,
+   "hit_rate": 0.0,
+   "mean_p": 0.30396666666666666,
+   "brier": 0.0929908044,
+   "logloss": 0.3629823365713129
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.24858,
+   "hit_rate": 0.0,
+   "mean_p": 0.08286,
+   "brier": 0.007343415066666667,
+   "logloss": 0.08678060972319569
+  }
  },
  "by_size_independence": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 2,
+   "expected_wins": 1.4812485871934398,
+   "hit_rate": 0.6666666666666666,
+   "mean_p": 0.49374952906447994,
+   "brier": 0.18923657759077864,
+   "logloss": 0.5702689245631187
+  },
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.8603126418916248,
+   "hit_rate": 0.0,
+   "mean_p": 0.2867708806305416,
+   "brier": 0.0838413195228543,
+   "logloss": 0.3395456077142363
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.15248286342464856,
+   "hit_rate": 0.0,
+   "mean_p": 0.05082762114154952,
+   "brier": 0.0027754767887815533,
+   "logloss": 0.052271927023883245
+  }
  },
  "legs": {
-  "n": 0,
-  "won": 0,
-  "expected": 0
+  "n": 48,
+  "won": 32,
+  "expected": 35.17882
  },
  "parlays": [
   {
    "game_id": 2026020398,
    "game": "SJS@ANA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -35,32 +83,32 @@
    "pLower": 0.49463360988499433,
    "pIndep": 0.5151505265244,
    "breakEven": 102,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "C. Gauthier 2+ SOG",
      "p": 0.84234,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "D. Nurse 1+ blocked shot",
      "p": 0.82796,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "ANA +1.5 puck line",
      "p": 0.73764,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 7
     }
    ]
   },
   {
    "game_id": 2026020398,
    "game": "SJS@ANA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -68,32 +116,32 @@
    "pLower": 0.5496536098849942,
    "pIndep": 0.5755836636482399,
    "breakEven": -122,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "C. Gauthier 2+ SOG",
      "p": 0.84234,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "D. Nurse 1+ blocked shot",
      "p": 0.82796,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "M. Celebrini 2+ SOG",
      "p": 0.81912,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020398,
    "game": "SJS@ANA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3B Team offensive scenario",
@@ -101,32 +149,32 @@
    "pLower": 0.38218972193476614,
    "pIndep": 0.3905143970208,
    "breakEven": 162,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Celebrini 2+ SOG",
      "p": 0.81912,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "M. Celebrini 1+ point",
      "p": 0.7337,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "W. Smith 2+ SOG",
      "p": 0.64428,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020398,
    "game": "SJS@ANA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5F Game script",
@@ -134,44 +182,44 @@
    "pLower": 0.312931997284063,
    "pIndep": 0.3385064969164931,
    "breakEven": 220,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Gauthier 2+ SOG",
      "p": 0.84234,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "D. Nurse 1+ blocked shot",
      "p": 0.82796,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "M. Celebrini 2+ SOG",
      "p": 0.81912,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "S. Solberg 1+ blocked shot",
      "p": 0.7935,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "ANA +1.5 puck line",
      "p": 0.73764,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 7
     }
    ]
   },
   {
    "game_id": 2026020398,
    "game": "SJS@ANA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -179,44 +227,44 @@
    "pLower": 0.24629766737022551,
    "pIndep": 0.24094707530647932,
    "breakEven": 306,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "ANA +1.5 puck line",
      "p": 0.73764,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 7
     },
     {
      "text": "SJS team total under 3.5",
      "p": 0.66038,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 0
     },
     {
      "text": "S. Solberg 1+ blocked shot",
      "p": 0.7935,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "J. LaCombe 1+ blocked shot",
      "p": 0.7875,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "E. Pohlkamp 1+ blocked shot",
      "p": 0.77624,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020398,
    "game": "SJS@ANA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5E Balanced cross-team structure",
@@ -224,44 +272,44 @@
    "pLower": 0.24163766737022552,
    "pIndep": 0.2808590696686524,
    "breakEven": 314,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "S. Solberg 1+ blocked shot",
      "p": 0.7935,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "J. LaCombe 1+ blocked shot",
      "p": 0.7875,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "E. Pohlkamp 1+ blocked shot",
      "p": 0.77624,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "P. Mintyukov 1+ blocked shot",
      "p": 0.77734,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "M. Celebrini 1+ point",
      "p": 0.7337,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020398,
    "game": "SJS@ANA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -269,62 +317,62 @@
    "pLower": 0.09835910383622855,
    "pIndep": 0.06963789699713156,
    "breakEven": 917,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Celebrini 1+ point",
      "p": 0.7337,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "SJS +1.5 puck line",
      "p": 0.68518,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -7
     },
     {
      "text": "SJS team total over 2.5",
      "p": 0.5529,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "J. LaCombe 1+ blocked shot",
      "p": 0.7875,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "P. Mintyukov 1+ blocked shot",
      "p": 0.77734,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "E. Pohlkamp 1+ blocked shot",
      "p": 0.77624,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "I. Moore 1+ blocked shot",
      "p": 0.70318,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "S. Dickinson 1+ blocked shot",
      "p": 0.70112,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020398,
    "game": "SJS@ANA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8G Game script",
@@ -332,62 +380,62 @@
    "pLower": 0.06479910383622854,
    "pIndep": 0.04618428103461069,
    "breakEven": 1443,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "P. Mintyukov 1+ blocked shot",
      "p": 0.77734,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "SJS +1.5 puck line",
      "p": 0.68518,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -7
     },
     {
      "text": "SJS team total over 2.5",
      "p": 0.5529,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "M. Celebrini 1+ assist",
      "p": 0.59558,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "T. Terry 2+ SOG",
      "p": 0.71824,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "I. Moore 1+ blocked shot",
      "p": 0.70318,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "D. Helleson 1+ blocked shot",
      "p": 0.70888,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "S. Dickinson 1+ blocked shot",
      "p": 0.70112,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020398,
    "game": "SJS@ANA",
-   "state": "FUT",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8D Multi-line production",
@@ -395,55 +443,55 @@
    "pLower": 0.04720195177535315,
    "pIndep": 0.03666068539290632,
    "breakEven": 2019,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "T. Terry 2+ SOG",
      "p": 0.71824,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "D. Helleson 1+ blocked shot",
      "p": 0.70888,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "S. Dickinson 1+ blocked shot",
      "p": 0.70112,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "C. Gauthier 3+ SOG",
      "p": 0.6604,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 2
     },
     {
      "text": "C. Gauthier 1+ point",
      "p": 0.59304,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Granlund 1+ point",
      "p": 0.59478,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "J. LaCombe 1+ point",
      "p": 0.60104,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "I. Moore 1+ blocked shot",
      "p": 0.70318,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     }
    ]
   }
