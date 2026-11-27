@@ -1,27 +1,43 @@
 {
- "audited_at": "2026-11-27T19:05:22.716654+00:00",
+ "audited_at": "2026-11-27T20:05:08.321398+00:00",
  "source": "slot-1800Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 0,
+  "WON": 1,
   "LOST": 0,
-  "PENDING": 27,
+  "PENDING": 26,
   "VOID-REPRICE": 0
  },
  "by_size": {
-  "3": null,
+  "3": {
+   "n": 1,
+   "won": 1,
+   "expected_wins": 0.55974,
+   "hit_rate": 1.0,
+   "mean_p": 0.55974,
+   "brier": 0.19382886759999998,
+   "logloss": 0.5802828887812124
+  },
   "5": null,
   "8": null
  },
  "by_size_independence": {
-  "3": null,
+  "3": {
+   "n": 1,
+   "won": 1,
+   "expected_wins": 0.5588460277632799,
+   "hit_rate": 1.0,
+   "mean_p": 0.5588460277632799,
+   "brier": 0.19461682722023685,
+   "logloss": 0.5818812860521669
+  },
   "5": null,
   "8": null
  },
  "legs": {
-  "n": 38,
-  "won": 38,
-  "expected": 26.96928
+  "n": 58,
+  "won": 58,
+  "expected": 42.38802
  },
  "parlays": [
   {
@@ -41,7 +57,7 @@
      "text": "J. McCabe 1+ blocked shot",
      "p": 0.87046,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "D. Pastrnak 2+ SOG",
@@ -74,7 +90,7 @@
      "text": "J. McCabe 1+ blocked shot",
      "p": 0.87046,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "D. Pastrnak 2+ SOG",
@@ -113,7 +129,7 @@
      "text": "D. Raddysh 2+ SOG",
      "p": 0.75198,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "A. Matthews 1+ point",
@@ -140,7 +156,7 @@
      "text": "J. McCabe 1+ blocked shot",
      "p": 0.87046,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "D. Pastrnak 2+ SOG",
@@ -191,7 +207,7 @@
      "text": "D. Raddysh 2+ SOG",
      "p": 0.75198,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "A. Matthews 1+ point",
@@ -253,8 +269,8 @@
     {
      "text": "C. McAvoy 1+ blocked shot",
      "p": 0.77766,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     }
    ]
   },
@@ -298,14 +314,14 @@
     {
      "text": "C. McAvoy 1+ blocked shot",
      "p": 0.77766,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "D. Raddysh 2+ SOG",
      "p": 0.75198,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "C. Clifton 1+ blocked shot",
@@ -343,8 +359,8 @@
     {
      "text": "C. McAvoy 1+ blocked shot",
      "p": 0.77766,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "C. Clifton 1+ blocked shot",
@@ -361,8 +377,8 @@
     {
      "text": "W. Borgen 1+ blocked shot",
      "p": 0.7492,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "TOR +1.5 puck line",
@@ -425,7 +441,7 @@
      "text": "J. Tavares 2+ SOG",
      "p": 0.6448,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "A. Matthews 3+ SOG",
@@ -437,7 +453,7 @@
      "text": "M. Geekie 2+ SOG",
      "p": 0.62084,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "E. Lindholm 2+ SOG",
@@ -463,8 +479,8 @@
     {
      "text": "J. Hughes 2+ SOG",
      "p": 0.85562,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "NJD +1.5 puck line",
@@ -491,13 +507,13 @@
    "pLower": 0.5324736098849943,
    "pIndep": 0.5588460277632799,
    "breakEven": -114,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "J. Hughes 2+ SOG",
      "p": 0.85562,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "T. Meier 2+ SOG",
@@ -508,8 +524,8 @@
     {
      "text": "Z. Whitecloud 1+ blocked shot",
      "p": 0.79944,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     }
    ]
   },
@@ -535,14 +551,14 @@
     {
      "text": "B. Pesce 1+ blocked shot",
      "p": 0.80544,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "Z. Whitecloud 1+ blocked shot",
      "p": 0.79944,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     }
    ]
   },
@@ -562,8 +578,8 @@
     {
      "text": "J. Hughes 2+ SOG",
      "p": 0.85562,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "NJD +1.5 puck line",
@@ -625,14 +641,14 @@
     {
      "text": "Z. Whitecloud 1+ blocked shot",
      "p": 0.79944,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. Pesce 1+ blocked shot",
      "p": 0.80544,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     }
    ]
   },
@@ -670,8 +686,8 @@
     {
      "text": "B. Pesce 1+ blocked shot",
      "p": 0.80544,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "Y. Kuznetsov 1+ blocked shot",
@@ -715,8 +731,8 @@
     {
      "text": "J. Siegenthaler 1+ blocked shot",
      "p": 0.75904,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. Hanley 1+ blocked shot",
@@ -727,8 +743,8 @@
     {
      "text": "J. Middleton 1+ blocked shot",
      "p": 0.74464,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "D. Hamilton 2+ SOG",
@@ -766,8 +782,8 @@
     {
      "text": "J. Siegenthaler 1+ blocked shot",
      "p": 0.75904,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. Hanley 1+ blocked shot",
@@ -778,8 +794,8 @@
     {
      "text": "J. Middleton 1+ blocked shot",
      "p": 0.74464,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "S. Nemec 1+ blocked shot",
@@ -803,7 +819,7 @@
      "text": "J. Hughes 3+ SOG",
      "p": 0.68086,
      "result": "PENDING",
-     "value": 1
+     "value": 2
     }
    ]
   },
@@ -836,7 +852,7 @@
      "text": "J. Hughes 3+ SOG",
      "p": 0.68086,
      "result": "PENDING",
-     "value": 1
+     "value": 2
     },
     {
      "text": "N. Hischier 2+ SOG",
@@ -847,8 +863,8 @@
     {
      "text": "J. Bratt 2+ SOG",
      "p": 0.6529,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "L. Hughes 2+ SOG",
@@ -865,8 +881,8 @@
     {
      "text": "M. Coronato 2+ SOG",
      "p": 0.62674,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 4
     }
    ]
   },
@@ -932,7 +948,7 @@
      "text": "B. Skjei 1+ blocked shot",
      "p": 0.74362,
      "result": "WON",
-     "value": 1
+     "value": 2
     }
    ]
   },
@@ -953,7 +969,7 @@
      "text": "D. Guenther 2+ SOG",
      "p": 0.73846,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "F. Forsberg 2+ SOG",
@@ -1031,13 +1047,13 @@
      "text": "D. Guenther 2+ SOG",
      "p": 0.73846,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "C. Keller 2+ SOG",
      "p": 0.688,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "C. Keller 1+ point",
@@ -1049,7 +1065,7 @@
      "text": "M. Sergachev 1+ point",
      "p": 0.59346,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "M. Sergachev 2+ SOG",
@@ -1121,7 +1137,7 @@
      "text": "D. Guenther 2+ SOG",
      "p": 0.73846,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "F. Forsberg 2+ SOG",
@@ -1157,7 +1173,7 @@
      "text": "C. Keller 2+ SOG",
      "p": 0.688,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "C. Keller 1+ point",
@@ -1214,7 +1230,7 @@
      "text": "A. Peeke 1+ blocked shot",
      "p": 0.77034,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "S. Stamkos 1+ point",
@@ -1247,7 +1263,7 @@
      "text": "A. Peeke 1+ blocked shot",
      "p": 0.77034,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "R. Josi 1+ blocked shot",
@@ -1259,19 +1275,19 @@
      "text": "B. Skjei 1+ blocked shot",
      "p": 0.74362,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "N. Perbix 1+ blocked shot",
      "p": 0.7273,
      "result": "WON",
-     "value": 1
+     "value": 2
     },
     {
      "text": "C. Keller 2+ SOG",
      "p": 0.688,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "S. Stamkos 2+ SOG",
@@ -1282,8 +1298,8 @@
     {
      "text": "J. Struble 1+ blocked shot",
      "p": 0.66806,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "Z. Jones 1+ blocked shot",

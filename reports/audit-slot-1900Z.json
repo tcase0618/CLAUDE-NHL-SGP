@@ -1,5 +1,5 @@
 {
- "audited_at": "2026-11-27T19:05:23.841437+00:00",
+ "audited_at": "2026-11-27T20:05:09.281706+00:00",
  "source": "slot-1900Z.json",
  "model_version": "v20261106-224110",
  "counts": {
@@ -19,15 +19,15 @@
   "8": null
  },
  "legs": {
-  "n": 0,
-  "won": 0,
-  "expected": 0
+  "n": 9,
+  "won": 9,
+  "expected": 6.76138
  },
  "parlays": [
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -41,13 +41,13 @@
      "text": "C. Parayko 1+ blocked shot",
      "p": 0.85108,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "E. Lindell 1+ blocked shot",
      "p": 0.8327,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "DAL +1.5 puck line",
@@ -60,7 +60,7 @@
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -74,26 +74,26 @@
      "text": "C. Parayko 1+ blocked shot",
      "p": 0.85108,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "E. Lindell 1+ blocked shot",
      "p": 0.8327,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "T. Harley 1+ blocked shot",
      "p": 0.8211,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 3,
    "pick": "C",
    "family": "3B Team offensive scenario",
@@ -107,26 +107,26 @@
      "text": "J. Robertson 2+ SOG",
      "p": 0.80152,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "W. Johnston 2+ SOG",
      "p": 0.7017,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "J. Robertson 1+ point",
      "p": 0.65444,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
@@ -140,38 +140,38 @@
      "text": "J. Robertson 2+ SOG",
      "p": 0.80152,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "J. Robertson 1+ point",
      "p": 0.65444,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "M. Rantanen 1+ point",
      "p": 0.6411,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "W. Johnston 2+ SOG",
      "p": 0.7017,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "W. Johnston 1+ point",
      "p": 0.58706,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -185,25 +185,25 @@
      "text": "C. Parayko 1+ blocked shot",
      "p": 0.85108,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "E. Lindell 1+ blocked shot",
      "p": 0.8327,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "T. Harley 1+ blocked shot",
      "p": 0.8211,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "J. Robertson 2+ SOG",
      "p": 0.80152,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "DAL +1.5 puck line",
@@ -216,7 +216,7 @@
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 5,
    "pick": "C",
    "family": "5A Five-on-five offensive environment",
@@ -230,38 +230,38 @@
      "text": "W. Johnston 2+ SOG",
      "p": 0.7017,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "J. Robertson 1+ point",
      "p": 0.65444,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "M. Rantanen 1+ point",
      "p": 0.6411,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "W. Johnston 1+ point",
      "p": 0.58706,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "M. Heiskanen 1+ point",
      "p": 0.61554,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -275,7 +275,7 @@
      "text": "T. Harley 1+ blocked shot",
      "p": 0.8211,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "DAL +1.5 puck line",
@@ -293,38 +293,38 @@
      "text": "M. Rantanen 1+ point",
      "p": 0.6411,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "P. Broberg 1+ blocked shot",
      "p": 0.76308,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Heiskanen 1+ point",
      "p": 0.61554,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "W. Johnston 1+ point",
      "p": 0.58706,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "J. Barron 1+ blocked shot",
      "p": 0.72372,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "B",
    "family": "8D Multi-line production",
@@ -337,57 +337,57 @@
     {
      "text": "P. Broberg 1+ blocked shot",
      "p": 0.76308,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Heiskanen 1+ blocked shot",
      "p": 0.73982,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "T. Myers 1+ blocked shot",
      "p": 0.72924,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "J. Barron 1+ blocked shot",
      "p": 0.72372,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "L. Mailloux 1+ blocked shot",
      "p": 0.67256,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "D. Holloway 2+ SOG",
      "p": 0.67096,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "C. Fowler 1+ blocked shot",
      "p": 0.6709,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "N. Lundkvist 1+ blocked shot",
      "p": 0.66264,
      "result": "PENDING",
-     "value": null
+     "value": 0
     }
    ]
   },
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "PRE",
+   "state": "LIVE",
    "size": 8,
    "pick": "C",
    "family": "8D Multi-line production",
@@ -400,50 +400,50 @@
     {
      "text": "P. Broberg 1+ blocked shot",
      "p": 0.76308,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Heiskanen 1+ blocked shot",
      "p": 0.73982,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "T. Myers 1+ blocked shot",
      "p": 0.72924,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "J. Barron 1+ blocked shot",
      "p": 0.72372,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "L. Mailloux 1+ blocked shot",
      "p": 0.67256,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "D. Holloway 2+ SOG",
      "p": 0.67096,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "N. Lundkvist 1+ blocked shot",
      "p": 0.66264,
      "result": "PENDING",
-     "value": null
+     "value": 0
     },
     {
      "text": "A. Jiricek 1+ blocked shot",
      "p": 0.62892,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   }

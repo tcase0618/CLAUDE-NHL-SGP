@@ -1,0 +1,1940 @@
+{
+ "generated_at": "2026-11-27T20:03:00.646Z",
+ "model_version": "v20261106-224110",
+ "data_through": "2026-11-26 03:00:00+00:00",
+ "sims": 50000,
+ "games": [
+  {
+   "game_id": 2026020408,
+   "start_utc": "2026-11-27 21:00:00+00:00",
+   "away": "COL",
+   "home": "MIN",
+   "sizes": {
+    "3": {
+     "evaluated": 12582,
+     "verified": 96,
+     "finalists": 96,
+     "exposureCap": 2,
+     "picks": [
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "J. Brodin 1+ blocked shot",
+         "p": 0.83864,
+         "player_id": 8476463,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Spurgeon 1+ blocked shot",
+         "p": 0.81102,
+         "player_id": 8474716,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "COL +1.5 puck line",
+         "p": 0.71524,
+         "player_id": "TEAM:COL",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.49008,
+       "pLower": 0.44898454504853585,
+       "verified": true,
+       "pIndep": 0.48799141357624803,
+       "lift": 1.004279965519159,
+       "breakEven": 123,
+       "mcHits": 24504,
+       "scenario": {
+        "n": 24504,
+        "shots": 56.85259549461313,
+        "goals": 5.975840679072804,
+        "ppg": 1.319988573294156,
+        "margin": -1.2998694090760692,
+        "pace": 0.9991706628163889
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "J. Brodin 1+ blocked shot",
+         "p": 0.83864,
+         "player_id": 8476463,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Boldy 2+ SOG",
+         "p": 0.81902,
+         "player_id": 8481557,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "S. Malinski 1+ blocked shot",
+         "p": 0.73494,
+         "player_id": 8484258,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.51866,
+       "pLower": 0.47756454504853585,
+       "verified": true,
+       "pIndep": 0.518149860452928,
+       "lift": 1.000984540547065,
+       "breakEven": 109,
+       "mcHits": 25933,
+       "scenario": {
+        "n": 25933,
+        "shots": 57.77013843365596,
+        "goals": 6.187598812324066,
+        "ppg": 1.3326649442794896,
+        "margin": 0.030424555585547373,
+        "pace": 1.0020599976864037
+       }
+      },
+      {
+       "family": "3A Shot-volume structure",
+       "legs": [
+        {
+         "text": "M. Boldy 2+ SOG",
+         "p": 0.81902,
+         "player_id": 8481557,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "K. Kaprizov 2+ SOG",
+         "p": 0.78282,
+         "player_id": 8478864,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Eriksson Ek 2+ SOG",
+         "p": 0.76246,
+         "player_id": 8478493,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.4913,
+       "pLower": 0.45020454504853585,
+       "verified": true,
+       "pIndep": 0.487481549529312,
+       "lift": 1.0078330153712995,
+       "breakEven": 122,
+       "mcHits": 24565,
+       "scenario": {
+        "n": 24565,
+        "shots": 59.21237533075514,
+        "goals": 6.337919804600041,
+        "ppg": 1.3855078363525342,
+        "margin": 0.18510075310400978,
+        "pace": 1.0052497795757391
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 18400,
+     "verified": 120,
+     "finalists": 120,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "K. Kaprizov 2+ SOG",
+         "p": 0.78282,
+         "player_id": 8478864,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Eriksson Ek 2+ SOG",
+         "p": 0.76246,
+         "player_id": 8478493,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "K. Kaprizov 1+ point",
+         "p": 0.70888,
+         "player_id": 8478864,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Boldy 1+ point",
+         "p": 0.67716,
+         "player_id": 8481557,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Eriksson Ek 1+ point",
+         "p": 0.58884,
+         "player_id": 8478493,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.2416,
+       "pLower": 0.2183120977281403,
+       "verified": true,
+       "pIndep": 0.16459544057899253,
+       "lift": 1.4678413882555361,
+       "breakEven": 358,
+       "mcHits": 12080,
+       "scenario": {
+        "n": 12080,
+        "shots": 59.91622516556291,
+        "goals": 7.464072847682119,
+        "ppg": 1.7410596026490066,
+        "margin": 1.28841059602649,
+        "pace": 1.0068001498153667
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "J. Brodin 1+ blocked shot",
+         "p": 0.83864,
+         "player_id": 8476463,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Boldy 2+ SOG",
+         "p": 0.81902,
+         "player_id": 8481557,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "K. Kaprizov 2+ SOG",
+         "p": 0.78282,
+         "player_id": 8478864,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "K. Kaprizov 1+ point",
+         "p": 0.70888,
+         "player_id": 8478864,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "MIN +1.5 puck line",
+         "p": 0.6992,
+         "player_id": "TEAM:MIN",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.31676,
+       "pLower": 0.2739576673702255,
+       "verified": true,
+       "pIndep": 0.26604151654866587,
+       "lift": 1.1906412356586322,
+       "breakEven": 265,
+       "mcHits": 15838,
+       "scenario": {
+        "n": 15838,
+        "shots": 58.62267963126657,
+        "goals": 6.527339310519005,
+        "ppg": 1.4133097613335017,
+        "margin": 1.5203939891400429,
+        "pace": 1.0039655435023578
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "K. Kaprizov 1+ point",
+         "p": 0.70888,
+         "player_id": 8478864,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "MIN +1.5 puck line",
+         "p": 0.6992,
+         "player_id": "TEAM:MIN",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "MIN team total over 2.5",
+         "p": 0.61038,
+         "player_id": "TEAM:MIN",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Boldy 1+ point",
+         "p": 0.67716,
+         "player_id": 8481557,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Spurgeon 1+ blocked shot",
+         "p": 0.81102,
+         "player_id": 8474716,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.31172,
+       "pLower": 0.2689176673702255,
+       "verified": true,
+       "pIndep": 0.16371608828925857,
+       "lift": 1.9040279013339458,
+       "breakEven": 272,
+       "mcHits": 15586,
+       "scenario": {
+        "n": 15586,
+        "shots": 58.428268959322466,
+        "goals": 7.139484152444502,
+        "ppg": 1.5590914923649428,
+        "margin": 1.8088027717182087,
+        "pace": 1.0032337564536669
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 15413,
+     "verified": 112,
+     "finalists": 112,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "J. Spurgeon 1+ blocked shot",
+         "p": 0.81102,
+         "player_id": 8474716,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "MIN +1.5 puck line",
+         "p": 0.6992,
+         "player_id": "TEAM:MIN",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "MIN team total over 2.5",
+         "p": 0.61038,
+         "player_id": "TEAM:MIN",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Boldy 1+ point",
+         "p": 0.67716,
+         "player_id": 8481557,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Faber 1+ blocked shot",
+         "p": 0.78974,
+         "player_id": 8482122,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Eriksson Ek 2+ SOG",
+         "p": 0.76246,
+         "player_id": 8478493,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Kiersted 1+ blocked shot",
+         "p": 0.74942,
+         "player_id": 8482641,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "B. Kulak 1+ blocked shot",
+         "p": 0.71934,
+         "player_id": 8476967,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.12004,
+       "pLower": 0.10671910383622854,
+       "verified": true,
+       "pIndep": 0.07478997410934483,
+       "lift": 1.6050279657069875,
+       "breakEven": 837,
+       "mcHits": 6002,
+       "scenario": {
+        "n": 6002,
+        "shots": 59.365044985005,
+        "goals": 7.053315561479507,
+        "ppg": 1.5136621126291236,
+        "margin": 1.7577474175274908,
+        "pace": 1.004840475356567
+       }
+      },
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "B. Faber 1+ blocked shot",
+         "p": 0.78974,
+         "player_id": 8482122,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "COL +1.5 puck line",
+         "p": 0.71524,
+         "player_id": "TEAM:COL",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "COL team total over 2.5",
+         "p": 0.62204,
+         "player_id": "TEAM:COL",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Necas 1+ point",
+         "p": 0.63552,
+         "player_id": 8480039,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "C. Makar 1+ point",
+         "p": 0.59762,
+         "player_id": 8480069,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Kiersted 1+ blocked shot",
+         "p": 0.74942,
+         "player_id": 8482641,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. Makar 2+ SOG",
+         "p": 0.6877,
+         "player_id": 8480069,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Malinski 1+ blocked shot",
+         "p": 0.73494,
+         "player_id": 8484258,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.10746,
+       "pLower": 0.09413910383622855,
+       "verified": true,
+       "pIndep": 0.049819109662123745,
+       "lift": 2.157003622280693,
+       "breakEven": 962,
+       "mcHits": 5373,
+       "scenario": {
+        "n": 5373,
+        "shots": 59.74148520379676,
+        "goals": 7.344314163409641,
+        "ppg": 1.711892797319933,
+        "margin": -2.000930578820026,
+        "pace": 1.0059954253473073
+       }
+      },
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "B. Faber 1+ blocked shot",
+         "p": 0.78974,
+         "player_id": 8482122,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "COL +1.5 puck line",
+         "p": 0.71524,
+         "player_id": "TEAM:COL",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "COL team total over 2.5",
+         "p": 0.62204,
+         "player_id": "TEAM:COL",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Necas 1+ point",
+         "p": 0.63552,
+         "player_id": 8480039,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "C. Makar 1+ point",
+         "p": 0.59762,
+         "player_id": 8480069,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Kiersted 1+ blocked shot",
+         "p": 0.74942,
+         "player_id": 8482641,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. Makar 2+ SOG",
+         "p": 0.6877,
+         "player_id": 8480069,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Necas 2+ SOG",
+         "p": 0.6775,
+         "player_id": 8480039,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.10692,
+       "pLower": 0.09359910383622855,
+       "verified": true,
+       "pIndep": 0.045022039915505824,
+       "lift": 2.374836862138186,
+       "breakEven": 968,
+       "mcHits": 5346,
+       "scenario": {
+        "n": 5346,
+        "shots": 60.4603441825664,
+        "goals": 7.41919191919192,
+        "ppg": 1.7579498690609803,
+        "margin": -2.046950991395436,
+        "pace": 1.007791561187094
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "game_id": 2026020409,
+   "start_utc": "2026-11-27 21:00:00+00:00",
+   "away": "LAK",
+   "home": "ANA",
+   "sizes": {
+    "3": {
+     "evaluated": 12657,
+     "verified": 96,
+     "finalists": 96,
+     "exposureCap": 2,
+     "picks": [
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "B. Clarke 1+ blocked shot",
+         "p": 0.84492,
+         "player_id": 8482730,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "C. Gauthier 2+ SOG",
+         "p": 0.82314,
+         "player_id": 8483445,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "LAK +1.5 puck line",
+         "p": 0.76206,
+         "player_id": "TEAM:LAK",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.52244,
+       "pLower": 0.4951736098849943,
+       "verified": true,
+       "pIndep": 0.5292497624268959,
+       "lift": 0.9871331781129774,
+       "breakEven": 102,
+       "mcHits": 26122,
+       "scenario": {
+        "n": 26122,
+        "shots": 56.19822371947018,
+        "goals": 6.167215374014241,
+        "ppg": 1.1971901079549805,
+        "margin": -1.4786769772605466,
+        "pace": 1.0016115908577654
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "B. Clarke 1+ blocked shot",
+         "p": 0.84492,
+         "player_id": 8482730,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "C. Gauthier 2+ SOG",
+         "p": 0.82314,
+         "player_id": 8483445,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Anderson 1+ blocked shot",
+         "p": 0.81058,
+         "player_id": 8479998,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.56802,
+       "pLower": 0.5407536098849942,
+       "verified": true,
+       "pIndep": 0.5667818620423679,
+       "lift": 1.0021845052577556,
+       "breakEven": -118,
+       "mcHits": 28401,
+       "scenario": {
+        "n": 28401,
+        "shots": 56.422485123763245,
+        "goals": 6.258019083835077,
+        "ppg": 1.2100278159219746,
+        "margin": -0.3731558747931411,
+        "pace": 1.002124170464389
+       }
+      },
+      {
+       "family": "3B Team offensive scenario",
+       "legs": [
+        {
+         "text": "A. Panarin 2+ SOG",
+         "p": 0.75152,
+         "player_id": 8478550,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Panarin 1+ point",
+         "p": 0.73298,
+         "player_id": 8478550,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Laferriere 2+ SOG",
+         "p": 0.72624,
+         "player_id": 8482155,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.41986,
+       "pLower": 0.39246972193476615,
+       "verified": true,
+       "pIndep": 0.397466426852352,
+       "lift": 1.0563407916612957,
+       "breakEven": 155,
+       "mcHits": 20993,
+       "scenario": {
+        "n": 20993,
+        "shots": 58.088315152669935,
+        "goals": 6.853951317105702,
+        "ppg": 1.345162673272043,
+        "margin": -1.1136569332634687,
+        "pace": 1.005936646137243
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 18848,
+     "verified": 104,
+     "finalists": 104,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "A. Panarin 2+ SOG",
+         "p": 0.75152,
+         "player_id": 8478550,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Panarin 1+ point",
+         "p": 0.73298,
+         "player_id": 8478550,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Laferriere 2+ SOG",
+         "p": 0.72624,
+         "player_id": 8482155,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Kempe 2+ SOG",
+         "p": 0.68554,
+         "player_id": 8477960,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "K. Fiala 2+ SOG",
+         "p": 0.65394,
+         "player_id": 8477942,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.199,
+       "pLower": 0.1757120977281403,
+       "verified": true,
+       "pIndep": 0.17982400413705424,
+       "lift": 1.1066375757506246,
+       "breakEven": 469,
+       "mcHits": 9950,
+       "scenario": {
+        "n": 9950,
+        "shots": 60.2251256281407,
+        "goals": 7.073467336683417,
+        "ppg": 1.3984924623115578,
+        "margin": -1.2798994974874371,
+        "pace": 1.0107714179832132
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "LAK +1.5 puck line",
+         "p": 0.76206,
+         "player_id": "TEAM:LAK",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Panarin 1+ point",
+         "p": 0.73298,
+         "player_id": 8478550,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "LAK team total over 2.5",
+         "p": 0.66554,
+         "player_id": "TEAM:LAK",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "B. Clarke 1+ blocked shot",
+         "p": 0.84492,
+         "player_id": 8482730,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "C. Gauthier 2+ SOG",
+         "p": 0.82314,
+         "player_id": 8483445,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.36334,
+       "pLower": 0.337911997284063,
+       "verified": true,
+       "pIndep": 0.2598189038427866,
+       "lift": 1.3984355819615528,
+       "breakEven": 196,
+       "mcHits": 18167,
+       "scenario": {
+        "n": 18167,
+        "shots": 57.473771123465625,
+        "goals": 7.0848791765288714,
+        "ppg": 1.3974789453404524,
+        "margin": -1.9369736335113117,
+        "pace": 1.004730355646415
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "M. Anderson 1+ blocked shot",
+         "p": 0.81058,
+         "player_id": 8479998,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "LAK +1.5 puck line",
+         "p": 0.76206,
+         "player_id": "TEAM:LAK",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "LAK team total over 2.5",
+         "p": 0.66554,
+         "player_id": "TEAM:LAK",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. LaCombe 1+ blocked shot",
+         "p": 0.79354,
+         "player_id": 8481605,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "P. Mintyukov 1+ blocked shot",
+         "p": 0.7769,
+         "player_id": 8483490,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.3092,
+       "pLower": 0.26639766737022547,
+       "verified": true,
+       "pIndep": 0.2582380166280742,
+       "lift": 1.1973450076691203,
+       "breakEven": 275,
+       "mcHits": 15460,
+       "scenario": {
+        "n": 15460,
+        "shots": 56.82477360931436,
+        "goals": 6.898124191461837,
+        "ppg": 1.3342173350582147,
+        "margin": -1.8560802069857698,
+        "pace": 1.003391327686791
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 14352,
+     "verified": 87,
+     "finalists": 87,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "8A Shot-dominant game",
+       "legs": [
+        {
+         "text": "A. Panarin 2+ SOG",
+         "p": 0.75152,
+         "player_id": 8478550,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Laferriere 2+ SOG",
+         "p": 0.72624,
+         "player_id": 8482155,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "T. Terry 2+ SOG",
+         "p": 0.68758,
+         "player_id": 8478873,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Kempe 2+ SOG",
+         "p": 0.68554,
+         "player_id": 8477960,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "K. Fiala 2+ SOG",
+         "p": 0.65394,
+         "player_id": 8477942,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "Q. Byfield 2+ SOG",
+         "p": 0.6257,
+         "player_id": 8482124,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "C. Gauthier 3+ SOG",
+         "p": 0.6283,
+         "player_id": 8483445,
+         "stat": "SOG",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Granlund 2+ SOG",
+         "p": 0.6208,
+         "player_id": 8475798,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.04486,
+       "pLower": 0.03328195177535315,
+       "verified": true,
+       "pIndep": 0.04149197356608192,
+       "lift": 1.0811729629720797,
+       "breakEven": 2905,
+       "mcHits": 2243,
+       "scenario": {
+        "n": 2243,
+        "shots": 64.23450735621935,
+        "goals": 7.078466339723584,
+        "ppg": 1.4186357556843514,
+        "margin": -0.6344181899242086,
+        "pace": 1.0215915302267258
+       }
+      },
+      {
+       "family": "8D Multi-line production",
+       "legs": [
+        {
+         "text": "M. Anderson 1+ blocked shot",
+         "p": 0.81058,
+         "player_id": 8479998,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. LaCombe 1+ blocked shot",
+         "p": 0.79354,
+         "player_id": 8481605,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "P. Mintyukov 1+ blocked shot",
+         "p": 0.7769,
+         "player_id": 8483490,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Edmundson 1+ blocked shot",
+         "p": 0.75906,
+         "player_id": 8476441,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Solberg 1+ blocked shot",
+         "p": 0.74936,
+         "player_id": 8484859,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Helleson 1+ blocked shot",
+         "p": 0.73674,
+         "player_id": 8481563,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. Ceci 1+ blocked shot",
+         "p": 0.71958,
+         "player_id": 8476879,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "I. Moore 1+ blocked shot",
+         "p": 0.7258,
+         "player_id": 8482178,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.1092,
+       "pLower": 0.09587910383622855,
+       "verified": true,
+       "pIndep": 0.11021575239267904,
+       "lift": 0.9907839635385322,
+       "breakEven": 943,
+       "mcHits": 5460,
+       "scenario": {
+        "n": 5460,
+        "shots": 56.40384615384615,
+        "goals": 6.274908424908425,
+        "ppg": 1.185897435897436,
+        "margin": -0.4606227106227106,
+        "pace": 1.0023399106639646
+       }
+      },
+      {
+       "family": "8F Cross-team high-event scenario",
+       "legs": [
+        {
+         "text": "T. Terry 2+ SOG",
+         "p": 0.68758,
+         "player_id": 8478873,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. Gauthier 3+ SOG",
+         "p": 0.6283,
+         "player_id": 8483445,
+         "stat": "SOG",
+         "line": 2.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. Gauthier 1+ point",
+         "p": 0.57672,
+         "player_id": 8483445,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. LaCombe 1+ point",
+         "p": 0.59662,
+         "player_id": 8481605,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Granlund 1+ point",
+         "p": 0.5796,
+         "player_id": 8475798,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "A. Kempe 2+ SOG",
+         "p": 0.68554,
+         "player_id": 8477960,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "K. Fiala 2+ SOG",
+         "p": 0.65394,
+         "player_id": 8477942,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "Q. Byfield 2+ SOG",
+         "p": 0.6257,
+         "player_id": 8482124,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.04226,
+       "pLower": 0.03068195177535315,
+       "verified": true,
+       "pIndep": 0.02420462879817614,
+       "lift": 1.7459470398151433,
+       "breakEven": 3159,
+       "mcHits": 2113,
+       "scenario": {
+        "n": 2113,
+        "shots": 63.00993847610033,
+        "goals": 8.141504969238051,
+        "ppg": 1.792238523426408,
+        "margin": 0.8135352579271179,
+        "pace": 1.0176913302428792
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "game_id": 2026020410,
+   "start_utc": "2026-11-27 21:00:00+00:00",
+   "away": "VGK",
+   "home": "SJS",
+   "sizes": {
+    "3": {
+     "evaluated": 13191,
+     "verified": 96,
+     "finalists": 96,
+     "exposureCap": 2,
+     "picks": [
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "D. Nurse 1+ blocked shot",
+         "p": 0.85982,
+         "player_id": 8477498,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "E. Pohlkamp 1+ blocked shot",
+         "p": 0.82442,
+         "player_id": 8484421,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "VGK +1.5 puck line",
+         "p": 0.80282,
+         "player_id": "TEAM:VGK",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.57826,
+       "pLower": 0.5509936098849942,
+       "verified": true,
+       "pIndep": 0.5767632386585999,
+       "lift": 1.0025951053067828,
+       "breakEven": -123,
+       "mcHits": 28913,
+       "scenario": {
+        "n": 28913,
+        "shots": 55.93093072320409,
+        "goals": 6.37183965690174,
+        "ppg": 1.3197869470480408,
+        "margin": -1.7932763808667382,
+        "pace": 1.000323416651732
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "D. Nurse 1+ blocked shot",
+         "p": 0.85982,
+         "player_id": 8477498,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "E. Pohlkamp 1+ blocked shot",
+         "p": 0.82442,
+         "player_id": 8484421,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Eichel 2+ SOG",
+         "p": 0.76806,
+         "player_id": 8478403,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.55042,
+       "pLower": 0.5231536098849943,
+       "verified": true,
+       "pIndep": 0.5483813926248,
+       "lift": 1.00371749917597,
+       "breakEven": -110,
+       "mcHits": 27521,
+       "scenario": {
+        "n": 27521,
+        "shots": 56.877402710657314,
+        "goals": 6.532684132117292,
+        "ppg": 1.36575705824643,
+        "margin": -0.9933505323207732,
+        "pace": 1.0022656583022787
+       }
+      },
+      {
+       "family": "3A Shot-volume structure",
+       "legs": [
+        {
+         "text": "M. Celebrini 2+ SOG",
+         "p": 0.81708,
+         "player_id": 8484801,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "J. Eichel 2+ SOG",
+         "p": 0.76806,
+         "player_id": 8478403,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Marner 2+ SOG",
+         "p": 0.70868,
+         "player_id": 8478483,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.44348,
+       "pLower": 0.4160897219347661,
+       "verified": true,
+       "pIndep": 0.44093264869248,
+       "lift": 1.005777189135515,
+       "breakEven": 140,
+       "mcHits": 22174,
+       "scenario": {
+        "n": 22174,
+        "shots": 58.42946694326689,
+        "goals": 6.693334535942996,
+        "ppg": 1.4181022819518354,
+        "margin": -1.0103725083431045,
+        "pace": 1.006003977016019
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 18827,
+     "verified": 101,
+     "finalists": 101,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "VGK +1.5 puck line",
+         "p": 0.80282,
+         "player_id": "TEAM:VGK",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "VGK team total over 2.5",
+         "p": 0.71852,
+         "player_id": "TEAM:VGK",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Eichel 1+ point",
+         "p": 0.71424,
+         "player_id": 8478403,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Celebrini 2+ SOG",
+         "p": 0.81708,
+         "player_id": 8484801,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Marner 1+ point",
+         "p": 0.6916,
+         "player_id": 8478483,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.36392,
+       "pLower": 0.33849199728406304,
+       "verified": true,
+       "pIndep": 0.23431741315066903,
+       "lift": 1.5531069377502682,
+       "breakEven": 195,
+       "mcHits": 18196,
+       "scenario": {
+        "n": 18196,
+        "shots": 57.97631347548912,
+        "goals": 7.5250604528467795,
+        "ppg": 1.6178280940866125,
+        "margin": -2.4081116728951417,
+        "pace": 1.0047458265444347
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "D. Nurse 1+ blocked shot",
+         "p": 0.85982,
+         "player_id": 8477498,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "VGK +1.5 puck line",
+         "p": 0.80282,
+         "player_id": "TEAM:VGK",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "VGK team total over 2.5",
+         "p": 0.71852,
+         "player_id": "TEAM:VGK",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Eichel 1+ point",
+         "p": 0.71424,
+         "player_id": 8478403,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "E. Pohlkamp 1+ blocked shot",
+         "p": 0.82442,
+         "player_id": 8484421,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.39756,
+       "pLower": 0.37213199728406304,
+       "verified": true,
+       "pIndep": 0.29605195418961516,
+       "lift": 1.3428724059202495,
+       "breakEven": 169,
+       "mcHits": 19878,
+       "scenario": {
+        "n": 19878,
+        "shots": 57.14453164302244,
+        "goals": 7.247358889224268,
+        "ppg": 1.523795150417547,
+        "margin": -2.2999798772512325,
+        "pace": 1.003429141844263
+       }
+      },
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "J. Eichel 2+ SOG",
+         "p": 0.76806,
+         "player_id": 8478403,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Eichel 1+ point",
+         "p": 0.71424,
+         "player_id": 8478403,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Marner 1+ point",
+         "p": 0.6916,
+         "player_id": 8478483,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Marner 2+ SOG",
+         "p": 0.70868,
+         "player_id": 8478483,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "T. Hertl 2+ SOG",
+         "p": 0.66468,
+         "player_id": 8476881,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.22328,
+       "pLower": 0.1999920977281403,
+       "verified": true,
+       "pIndep": 0.1794899418428649,
+       "lift": 1.2439694264064738,
+       "breakEven": 400,
+       "mcHits": 11164,
+       "scenario": {
+        "n": 11164,
+        "shots": 59.65845575062701,
+        "goals": 7.57542099605876,
+        "ppg": 1.6606055177355787,
+        "margin": -2.02221426012182,
+        "pace": 1.0090108650563994
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 14581,
+     "verified": 75,
+     "finalists": 75,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "8A Shot-dominant game",
+       "legs": [
+        {
+         "text": "M. Celebrini 2+ SOG",
+         "p": 0.81708,
+         "player_id": 8484801,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Marner 2+ SOG",
+         "p": 0.70868,
+         "player_id": 8478483,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "T. Hertl 2+ SOG",
+         "p": 0.66468,
+         "player_id": 8476881,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "T. Connelly 2+ SOG",
+         "p": 0.64572,
+         "player_id": 8484803,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "W. Smith 2+ SOG",
+         "p": 0.59796,
+         "player_id": 8484227,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "V. Olofsson 2+ SOG",
+         "p": 0.58762,
+         "player_id": 8478109,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "W. Karlsson 2+ SOG",
+         "p": 0.56488,
+         "player_id": 8476448,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Stone 2+ SOG",
+         "p": 0.56732,
+         "player_id": 8475913,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.03236,
+       "pLower": 0.02076315719088618,
+       "verified": true,
+       "pIndep": 0.028561037385324138,
+       "lift": 1.1330120668735908,
+       "breakEven": 4716,
+       "mcHits": 1618,
+       "scenario": {
+        "n": 1618,
+        "shots": 64.78553770086526,
+        "goals": 7.443757725587145,
+        "ppg": 1.569221260815822,
+        "margin": -1.3584672435105067,
+        "pace": 1.0206296052714656
+       }
+      },
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "VGK team total over 2.5",
+         "p": 0.71852,
+         "player_id": "TEAM:VGK",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Marner 1+ point",
+         "p": 0.6916,
+         "player_id": 8478483,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "Game total over 5.5",
+         "p": 0.6251,
+         "player_id": "GAME",
+         "stat": "GT",
+         "line": 5.5,
+         "side": "over",
+         "team": -1
+        },
+        {
+         "text": "B. McNabb 1+ blocked shot",
+         "p": 0.7649,
+         "player_id": 8475188,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Celebrini 1+ point",
+         "p": 0.68676,
+         "player_id": 8484801,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "R. Andersson 1+ blocked shot",
+         "p": 0.74562,
+         "player_id": 8478397,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Dickinson 1+ blocked shot",
+         "p": 0.72098,
+         "player_id": 8484806,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Stone 1+ point",
+         "p": 0.58332,
+         "player_id": 8475913,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.10686,
+       "pLower": 0.09353910383622854,
+       "verified": true,
+       "pIndep": 0.05270177779966618,
+       "lift": 2.0276355838735456,
+       "breakEven": 969,
+       "mcHits": 5343,
+       "scenario": {
+        "n": 5343,
+        "shots": 59.35747707280554,
+        "goals": 8.681452367583754,
+        "ppg": 1.9402957140183417,
+        "margin": -1.6430844095077672,
+        "pace": 1.0076975085841076
+       }
+      },
+      {
+       "family": "8D Multi-line production",
+       "legs": [
+        {
+         "text": "B. McNabb 1+ blocked shot",
+         "p": 0.7649,
+         "player_id": 8475188,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "R. Andersson 1+ blocked shot",
+         "p": 0.74562,
+         "player_id": 8478397,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "S. Dickinson 1+ blocked shot",
+         "p": 0.72098,
+         "player_id": 8484806,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "N. Allan 1+ blocked shot",
+         "p": 0.69902,
+         "player_id": 8482700,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Kesselring 1+ blocked shot",
+         "p": 0.69676,
+         "player_id": 8480891,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Orlov 1+ blocked shot",
+         "p": 0.68186,
+         "player_id": 8475200,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "T. Hertl 2+ SOG",
+         "p": 0.66468,
+         "player_id": 8476881,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Celebrini 1+ point",
+         "p": 0.68676,
+         "player_id": 8484801,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.06714,
+       "pLower": 0.05381910383622855,
+       "verified": true,
+       "pIndep": 0.06422991832304782,
+       "lift": 1.0453072610541987,
+       "breakEven": 1758,
+       "mcHits": 3357,
+       "scenario": {
+        "n": 3357,
+        "shots": 58.27941614536789,
+        "goals": 7.108132260947275,
+        "ppg": 1.5308310991957104,
+        "margin": -0.44742329460828123,
+        "pace": 1.0050354606167065
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
