@@ -1,65 +1,81 @@
 {
- "audited_at": "2026-11-27T21:34:27.729708+00:00",
+ "audited_at": "2026-11-27T23:33:31.253087+00:00",
  "source": "slot-1900Z.json",
  "model_version": "v20261106-224110",
  "counts": {
   "WON": 3,
-  "LOST": 0,
-  "PENDING": 6,
+  "LOST": 6,
+  "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
   "3": {
-   "n": 1,
+   "n": 3,
    "won": 1,
-   "expected_wins": 0.39722,
-   "hit_rate": 1.0,
-   "mean_p": 0.39722,
-   "brier": 0.36334372839999995,
-   "logloss": 0.9232649956114916
+   "expected_wins": 1.5438800000000001,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.5146266666666667,
+   "brier": 0.340317188,
+   "logloss": 0.8757615743906273
   },
   "5": {
-   "n": 2,
+   "n": 3,
    "won": 2,
-   "expected_wins": 0.39324,
-   "hit_rate": 1.0,
-   "mean_p": 0.19662,
-   "brier": 0.6455837768000001,
-   "logloss": 1.628612522940549
+   "expected_wins": 0.76572,
+   "hit_rate": 0.6666666666666666,
+   "mean_p": 0.25523999999999997,
+   "brier": 0.4766363013333334,
+   "logloss": 1.2410682606184178
   },
-  "8": null
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.24162,
+   "hit_rate": 0.0,
+   "mean_p": 0.08054,
+   "brier": 0.007248523866666666,
+   "logloss": 0.08442597801558245
+  }
  },
  "by_size_independence": {
   "3": {
-   "n": 1,
+   "n": 3,
    "won": 1,
-   "expected_wins": 0.372961620843216,
-   "hit_rate": 1.0,
-   "mean_p": 0.372961620843216,
-   "brier": 0.3931771289355668,
-   "logloss": 0.9862797578139146
+   "expected_wins": 1.52018297601288,
+   "hit_rate": 0.3333333333333333,
+   "mean_p": 0.50672765867096,
+   "brier": 0.350474945513405,
+   "logloss": 0.8972017874312469
   },
   "5": {
-   "n": 2,
+   "n": 3,
    "won": 2,
-   "expected_wins": 0.2453932583968981,
-   "hit_rate": 1.0,
-   "mean_p": 0.12269662919844905,
-   "brier": 0.7699411111080026,
-   "logloss": 2.107424379105391
+   "expected_wins": 0.6140731782973113,
+   "hit_rate": 0.6666666666666666,
+   "mean_p": 0.20469105943243712,
+   "brier": 0.5586023685179268,
+   "logloss": 1.558263681595282
   },
-  "8": null
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.16956374523102105,
+   "hit_rate": 0.0,
+   "mean_p": 0.05652124841034035,
+   "brier": 0.0032067460476998062,
+   "logloss": 0.05818821870246669
+  }
  },
  "legs": {
-  "n": 37,
-  "won": 37,
-  "expected": 26.21242
+  "n": 48,
+  "won": 38,
+  "expected": 34.62866
  },
  "parlays": [
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -67,7 +83,7 @@
    "pLower": 0.5362336098849942,
    "pIndep": 0.563882144139648,
    "breakEven": -116,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Parayko 1+ blocked shot",
@@ -84,15 +100,15 @@
     {
      "text": "DAL +1.5 puck line",
      "p": 0.7896,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -2
     }
    ]
   },
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -100,7 +116,7 @@
    "pLower": 0.5558936098849943,
    "pIndep": 0.583339211030016,
    "breakEven": -125,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Parayko 1+ blocked shot",
@@ -117,7 +133,7 @@
     {
      "text": "T. Harley 1+ blocked shot",
      "p": 0.8211,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -125,7 +141,7 @@
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3B Team offensive scenario",
@@ -158,7 +174,7 @@
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
@@ -203,7 +219,7 @@
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -211,7 +227,7 @@
    "pLower": 0.347051997284063,
    "pIndep": 0.3686799199004132,
    "breakEven": 188,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "C. Parayko 1+ blocked shot",
@@ -228,7 +244,7 @@
     {
      "text": "T. Harley 1+ blocked shot",
      "p": 0.8211,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -240,15 +256,15 @@
     {
      "text": "DAL +1.5 puck line",
      "p": 0.7896,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -2
     }
    ]
   },
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5A Five-on-five offensive environment",
@@ -293,7 +309,7 @@
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -301,25 +317,25 @@
    "pLower": 0.10623910383622855,
    "pIndep": 0.051681385744352895,
    "breakEven": 841,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "T. Harley 1+ blocked shot",
      "p": 0.8211,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "DAL +1.5 puck line",
      "p": 0.7896,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -2
     },
     {
      "text": "DAL team total over 2.5",
      "p": 0.64602,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "M. Rantanen 1+ point",
@@ -356,7 +372,7 @@
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8D Multi-line production",
@@ -364,7 +380,7 @@
    "pLower": 0.05036195177535315,
    "pIndep": 0.05969853420816078,
    "breakEven": 1886,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "P. Broberg 1+ blocked shot",
@@ -375,13 +391,13 @@
     {
      "text": "M. Heiskanen 1+ blocked shot",
      "p": 0.73982,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "T. Myers 1+ blocked shot",
      "p": 0.72924,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -419,7 +435,7 @@
   {
    "game_id": 2026020403,
    "game": "DAL@STL",
-   "state": "CRIT",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8D Multi-line production",
@@ -427,7 +443,7 @@
    "pLower": 0.04854195177535315,
    "pIndep": 0.05818382527850738,
    "breakEven": 1960,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "P. Broberg 1+ blocked shot",
@@ -438,13 +454,13 @@
     {
      "text": "M. Heiskanen 1+ blocked shot",
      "p": 0.73982,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "T. Myers 1+ blocked shot",
      "p": 0.72924,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
