@@ -1,0 +1,652 @@
+{
+ "generated_at": "2026-11-27T18:03:12.701Z",
+ "model_version": "v20261106-224110",
+ "data_through": "2026-11-26 03:00:00+00:00",
+ "sims": 50000,
+ "games": [
+  {
+   "game_id": 2026020403,
+   "start_utc": "2026-11-27 19:00:00+00:00",
+   "away": "DAL",
+   "home": "STL",
+   "sizes": {
+    "3": {
+     "evaluated": 10588,
+     "verified": 96,
+     "finalists": 96,
+     "exposureCap": 2,
+     "picks": [
+      {
+       "family": "3E Game script",
+       "legs": [
+        {
+         "text": "C. Parayko 1+ blocked shot",
+         "p": 0.85108,
+         "player_id": 8476892,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "E. Lindell 1+ blocked shot",
+         "p": 0.8327,
+         "player_id": 8476902,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "DAL +1.5 puck line",
+         "p": 0.7896,
+         "player_id": "TEAM:DAL",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.5635,
+       "pLower": 0.5362336098849942,
+       "verified": true,
+       "pIndep": 0.563882144139648,
+       "lift": 0.9993222978531603,
+       "breakEven": -116,
+       "mcHits": 28175,
+       "scenario": {
+        "n": 28175,
+        "shots": 51.285927240461405,
+        "goals": 5.727950310559006,
+        "ppg": 1.0700976042590948,
+        "margin": -1.5179059449866903,
+        "pace": 0.9998627005939263
+       }
+      },
+      {
+       "family": "3D Cross-team scenario",
+       "legs": [
+        {
+         "text": "C. Parayko 1+ blocked shot",
+         "p": 0.85108,
+         "player_id": 8476892,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "E. Lindell 1+ blocked shot",
+         "p": 0.8327,
+         "player_id": 8476902,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "T. Harley 1+ blocked shot",
+         "p": 0.8211,
+         "player_id": 8481581,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.58316,
+       "pLower": 0.5558936098849943,
+       "verified": true,
+       "pIndep": 0.583339211030016,
+       "lift": 0.9996927841869235,
+       "breakEven": -125,
+       "mcHits": 29158,
+       "scenario": {
+        "n": 29158,
+        "shots": 51.441491185952394,
+        "goals": 5.806433911790932,
+        "ppg": 1.0617669250291515,
+        "margin": -0.5719185129295562,
+        "pace": 1.0001303144762632
+       }
+      },
+      {
+       "family": "3B Team offensive scenario",
+       "legs": [
+        {
+         "text": "J. Robertson 2+ SOG",
+         "p": 0.80152,
+         "player_id": 8480027,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "W. Johnston 2+ SOG",
+         "p": 0.7017,
+         "player_id": 8482740,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Robertson 1+ point",
+         "p": 0.65444,
+         "player_id": 8480027,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.39722,
+       "pLower": 0.36982972193476615,
+       "verified": true,
+       "pIndep": 0.372961620843216,
+       "lift": 1.0650425614891394,
+       "breakEven": 170,
+       "mcHits": 19861,
+       "scenario": {
+        "n": 19861,
+        "shots": 53.49111323699713,
+        "goals": 6.50888676300287,
+        "ppg": 1.2685161875031468,
+        "margin": -1.2775288253360857,
+        "pace": 1.0050788164696998
+       }
+      }
+     ]
+    },
+    "5": {
+     "evaluated": 17466,
+     "verified": 120,
+     "finalists": 120,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "J. Robertson 2+ SOG",
+         "p": 0.80152,
+         "player_id": 8480027,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Robertson 1+ point",
+         "p": 0.65444,
+         "player_id": 8480027,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Rantanen 1+ point",
+         "p": 0.6411,
+         "player_id": 8478420,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "W. Johnston 2+ SOG",
+         "p": 0.7017,
+         "player_id": 8482740,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "W. Johnston 1+ point",
+         "p": 0.58706,
+         "player_id": 8482740,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.20944,
+       "pLower": 0.1861520977281403,
+       "verified": true,
+       "pIndep": 0.13942704127463762,
+       "lift": 1.5021476328071377,
+       "breakEven": 437,
+       "mcHits": 10472,
+       "scenario": {
+        "n": 10472,
+        "shots": 54.36210847975554,
+        "goals": 7.263273491214668,
+        "ppg": 1.5393430099312453,
+        "margin": -2.0287433155080214,
+        "pace": 1.0070434627560736
+       }
+      },
+      {
+       "family": "5F Game script",
+       "legs": [
+        {
+         "text": "C. Parayko 1+ blocked shot",
+         "p": 0.85108,
+         "player_id": 8476892,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "E. Lindell 1+ blocked shot",
+         "p": 0.8327,
+         "player_id": 8476902,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "T. Harley 1+ blocked shot",
+         "p": 0.8211,
+         "player_id": 8481581,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Robertson 2+ SOG",
+         "p": 0.80152,
+         "player_id": 8480027,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "DAL +1.5 puck line",
+         "p": 0.7896,
+         "player_id": "TEAM:DAL",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.37248,
+       "pLower": 0.347051997284063,
+       "verified": true,
+       "pIndep": 0.3686799199004132,
+       "lift": 1.0103072608364818,
+       "breakEven": 188,
+       "mcHits": 18624,
+       "scenario": {
+        "n": 18624,
+        "shots": 52.05745274914089,
+        "goals": 5.815077319587629,
+        "ppg": 1.0924613402061856,
+        "margin": -1.564647766323024,
+        "pace": 1.0013416407156186
+       }
+      },
+      {
+       "family": "5A Five-on-five offensive environment",
+       "legs": [
+        {
+         "text": "W. Johnston 2+ SOG",
+         "p": 0.7017,
+         "player_id": 8482740,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Robertson 1+ point",
+         "p": 0.65444,
+         "player_id": 8480027,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Rantanen 1+ point",
+         "p": 0.6411,
+         "player_id": 8478420,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "W. Johnston 1+ point",
+         "p": 0.58706,
+         "player_id": 8482740,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Heiskanen 1+ point",
+         "p": 0.61554,
+         "player_id": 8480036,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.1838,
+       "pLower": 0.16379309306170373,
+       "verified": true,
+       "pIndep": 0.10596621712226048,
+       "lift": 1.734515065192309,
+       "breakEven": 511,
+       "mcHits": 9190,
+       "scenario": {
+        "n": 9190,
+        "shots": 54.23144722524483,
+        "goals": 7.543525571273123,
+        "ppg": 1.6142546245919478,
+        "margin": -2.3221980413492926,
+        "pace": 1.006823762391934
+       }
+      }
+     ]
+    },
+    "8": {
+     "evaluated": 12702,
+     "verified": 48,
+     "finalists": 48,
+     "exposureCap": 3,
+     "picks": [
+      {
+       "family": "8G Game script",
+       "legs": [
+        {
+         "text": "T. Harley 1+ blocked shot",
+         "p": 0.8211,
+         "player_id": 8481581,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "DAL +1.5 puck line",
+         "p": 0.7896,
+         "player_id": "TEAM:DAL",
+         "stat": "PL",
+         "line": 1.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "DAL team total over 2.5",
+         "p": 0.64602,
+         "player_id": "TEAM:DAL",
+         "stat": "TT",
+         "line": 2.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "M. Rantanen 1+ point",
+         "p": 0.6411,
+         "player_id": 8478420,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "P. Broberg 1+ blocked shot",
+         "p": 0.76308,
+         "player_id": 8481598,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Heiskanen 1+ point",
+         "p": 0.61554,
+         "player_id": 8480036,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "W. Johnston 1+ point",
+         "p": 0.58706,
+         "player_id": 8482740,
+         "stat": "PTS",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Barron 1+ blocked shot",
+         "p": 0.72372,
+         "player_id": 8482111,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.11956,
+       "pLower": 0.10623910383622855,
+       "verified": true,
+       "pIndep": 0.051681385744352895,
+       "lift": 2.3134054607478096,
+       "breakEven": 841,
+       "mcHits": 5978,
+       "scenario": {
+        "n": 5978,
+        "shots": 53.65858146537303,
+        "goals": 7.257276681164269,
+        "ppg": 1.5168952827032451,
+        "margin": -2.4877885580461694,
+        "pace": 1.0052951450988417
+       }
+      },
+      {
+       "family": "8D Multi-line production",
+       "legs": [
+        {
+         "text": "P. Broberg 1+ blocked shot",
+         "p": 0.76308,
+         "player_id": 8481598,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Heiskanen 1+ blocked shot",
+         "p": 0.73982,
+         "player_id": 8480036,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "T. Myers 1+ blocked shot",
+         "p": 0.72924,
+         "player_id": 8474574,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Barron 1+ blocked shot",
+         "p": 0.72372,
+         "player_id": 8482111,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "L. Mailloux 1+ blocked shot",
+         "p": 0.67256,
+         "player_id": 8482733,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Holloway 2+ SOG",
+         "p": 0.67096,
+         "player_id": 8482077,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "C. Fowler 1+ blocked shot",
+         "p": 0.6709,
+         "player_id": 8475764,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "N. Lundkvist 1+ blocked shot",
+         "p": 0.66264,
+         "player_id": 8480878,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        }
+       ],
+       "pJoint": 0.06194,
+       "pLower": 0.05036195177535315,
+       "verified": true,
+       "pIndep": 0.05969853420816078,
+       "lift": 1.0375464125136395,
+       "breakEven": 1886,
+       "mcHits": 3097,
+       "scenario": {
+        "n": 3097,
+        "shots": 53.04488214401033,
+        "goals": 5.970939618986115,
+        "ppg": 1.0820148530836293,
+        "margin": -0.46948659993542136,
+        "pace": 1.0045101260961853
+       }
+      },
+      {
+       "family": "8D Multi-line production",
+       "legs": [
+        {
+         "text": "P. Broberg 1+ blocked shot",
+         "p": 0.76308,
+         "player_id": 8481598,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "M. Heiskanen 1+ blocked shot",
+         "p": 0.73982,
+         "player_id": 8480036,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "T. Myers 1+ blocked shot",
+         "p": 0.72924,
+         "player_id": 8474574,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "J. Barron 1+ blocked shot",
+         "p": 0.72372,
+         "player_id": 8482111,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "L. Mailloux 1+ blocked shot",
+         "p": 0.67256,
+         "player_id": 8482733,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "D. Holloway 2+ SOG",
+         "p": 0.67096,
+         "player_id": 8482077,
+         "stat": "SOG",
+         "line": 1.5,
+         "side": "over",
+         "team": 0
+        },
+        {
+         "text": "N. Lundkvist 1+ blocked shot",
+         "p": 0.66264,
+         "player_id": 8480878,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 1
+        },
+        {
+         "text": "A. Jiricek 1+ blocked shot",
+         "p": 0.62892,
+         "player_id": 8484790,
+         "stat": "BLK",
+         "line": 0.5,
+         "side": "over",
+         "team": 0
+        }
+       ],
+       "pJoint": 0.06012,
+       "pLower": 0.04854195177535315,
+       "verified": true,
+       "pIndep": 0.05818382527850738,
+       "lift": 1.0332768550748386,
+       "breakEven": 1960,
+       "mcHits": 3006,
+       "scenario": {
+        "n": 3006,
+        "shots": 53.05921490352628,
+        "goals": 6.029940119760479,
+        "ppg": 1.0971390552228875,
+        "margin": -0.5276114437791084,
+        "pace": 1.0047610663844202
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

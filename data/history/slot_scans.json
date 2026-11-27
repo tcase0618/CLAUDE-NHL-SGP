@@ -539,6 +539,14 @@
    ],
    "report": "reports/slots/2026-11-27/slot-1800Z.md",
    "seconds": 238.855605
+  },
+  "2026-11-27T19:00:00Z": {
+   "scanned_at": "2026-11-27T18:01:09.462502+00:00",
+   "games": [
+    2026020403
+   ],
+   "report": "reports/slots/2026-11-27/slot-1900Z.md",
+   "seconds": 191.264894
   }
  }
 }
