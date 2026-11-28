@@ -1,49 +1,81 @@
 {
- "audited_at": "2026-11-28T00:03:12.525548+00:00",
+ "audited_at": "2026-11-28T10:48:06.277155+00:00",
  "source": "slot-2230Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 1,
-  "LOST": 0,
-  "PENDING": 8,
+  "WON": 2,
+  "LOST": 7,
+  "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
   "3": {
-   "n": 1,
-   "won": 1,
-   "expected_wins": 0.31686,
-   "hit_rate": 1.0,
-   "mean_p": 0.31686,
-   "brier": 0.4666802596000001,
-   "logloss": 1.1492952430352403
+   "n": 3,
+   "won": 2,
+   "expected_wins": 1.2498399999999998,
+   "hit_rate": 0.6666666666666666,
+   "mean_p": 0.4166133333333333,
+   "brier": 0.32007476453333333,
+   "logloss": 0.8408698347090137
   },
-  "5": null,
-  "8": null
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.43110000000000004,
+   "hit_rate": 0.0,
+   "mean_p": 0.14370000000000002,
+   "brier": 0.020850983066666665,
+   "logloss": 0.15527124765378167
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.23414000000000001,
+   "hit_rate": 0.0,
+   "mean_p": 0.07804666666666667,
+   "brier": 0.0075489348000000005,
+   "logloss": 0.08211099662539346
+  }
  },
  "by_size_independence": {
   "3": {
-   "n": 1,
-   "won": 1,
-   "expected_wins": 0.25969578486833605,
-   "hit_rate": 1.0,
-   "mean_p": 0.25969578486833605,
-   "brier": 0.5480503309417089,
-   "logloss": 1.3482443912178306
+   "n": 3,
+   "won": 2,
+   "expected_wins": 1.1888001829083361,
+   "hit_rate": 0.6666666666666666,
+   "mean_p": 0.39626672763611204,
+   "brier": 0.34751158247825925,
+   "logloss": 0.9078131487648579
   },
-  "5": null,
-  "8": null
+  "5": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.30682320790399836,
+   "hit_rate": 0.0,
+   "mean_p": 0.10227440263466613,
+   "brier": 0.01066562974717767,
+   "logloss": 0.10801871970666062
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.11854635023708743,
+   "hit_rate": 0.0,
+   "mean_p": 0.039515450079029145,
+   "brier": 0.0016679184164405114,
+   "logloss": 0.040374788446159535
+  }
  },
  "legs": {
-  "n": 19,
-  "won": 19,
-  "expected": 12.46882
+  "n": 43,
+  "won": 27,
+  "expected": 28.89074
  },
  "parlays": [
   {
    "game_id": 2026020411,
    "game": "NYR@CHI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -51,19 +83,19 @@
    "pLower": 0.42976454504853584,
    "pIndep": 0.46858278297480005,
    "breakEven": 133,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "I. Cole 1+ blocked shot",
      "p": 0.78884,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "NYR +1.5 puck line",
      "p": 0.76842,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": -1
     },
     {
      "text": "A. Vlasic 1+ blocked shot",
@@ -76,7 +108,7 @@
   {
    "game_id": 2026020411,
    "game": "NYR@CHI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -84,18 +116,18 @@
    "pLower": 0.4210245450485358,
    "pIndep": 0.46052161506520006,
    "breakEven": 138,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "I. Cole 1+ blocked shot",
      "p": 0.78884,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "M. Pettersson 1+ blocked shot",
      "p": 0.75844,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
@@ -109,7 +141,7 @@
   {
    "game_id": 2026020411,
    "game": "NYR@CHI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3B Team offensive scenario",
@@ -123,7 +155,7 @@
      "text": "M. Zibanejad 2+ SOG",
      "p": 0.67648,
      "result": "WON",
-     "value": 2
+     "value": 4
     },
     {
      "text": "A. Fox 1+ point",
@@ -142,7 +174,7 @@
   {
    "game_id": 2026020411,
    "game": "NYR@CHI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5A Five-on-five offensive environment",
@@ -150,13 +182,13 @@
    "pLower": 0.13905309306170374,
    "pIndep": 0.09995213272524366,
    "breakEven": 619,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Zibanejad 2+ SOG",
      "p": 0.67648,
      "result": "WON",
-     "value": 2
+     "value": 4
     },
     {
      "text": "A. Fox 1+ point",
@@ -179,7 +211,7 @@
     {
      "text": "J. Miller 2+ SOG",
      "p": 0.65354,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     }
    ]
@@ -187,7 +219,7 @@
   {
    "game_id": 2026020411,
    "game": "NYR@CHI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5A Five-on-five offensive environment",
@@ -195,36 +227,36 @@
    "pLower": 0.12719309306170373,
    "pIndep": 0.08599077430062362,
    "breakEven": 686,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "P. Kane 2+ SOG",
      "p": 0.7101,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "P. Kane 1+ point",
      "p": 0.61174,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "F. Nazar 2+ SOG",
      "p": 0.64618,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "F. Nazar 1+ point",
      "p": 0.55368,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "R. Kantserov 1+ point",
      "p": 0.5427,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -232,7 +264,7 @@
   {
    "game_id": 2026020411,
    "game": "NYR@CHI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5D High-tempo matchup",
@@ -240,36 +272,36 @@
    "pLower": 0.10483309306170376,
    "pIndep": 0.12088030087813108,
    "breakEven": 854,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "P. Kane 2+ SOG",
      "p": 0.7101,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "J. Miller 2+ SOG",
      "p": 0.65354,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
      "text": "F. Nazar 2+ SOG",
      "p": 0.64618,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "A. Lafreni\u00e8re 2+ SOG",
      "p": 0.64628,
      "result": "WON",
-     "value": 2
+     "value": 4
     },
     {
      "text": "R. Kantserov 2+ SOG",
      "p": 0.62626,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     }
    ]
@@ -277,7 +309,7 @@
   {
    "game_id": 2026020411,
    "game": "NYR@CHI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -285,19 +317,19 @@
    "pLower": 0.10621910383622854,
    "pIndep": 0.04685163410766787,
    "breakEven": 841,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "NYR +1.5 puck line",
      "p": 0.76842,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": -1
     },
     {
      "text": "NYR team total over 2.5",
      "p": 0.65064,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "A. Fox 1+ point",
@@ -308,8 +340,8 @@
     {
      "text": "I. Cole 1+ blocked shot",
      "p": 0.78884,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "A. Vlasic 1+ blocked shot",
@@ -327,7 +359,7 @@
      "text": "M. Zibanejad 2+ SOG",
      "p": 0.67648,
      "result": "WON",
-     "value": 2
+     "value": 4
     },
     {
      "text": "J. Miller 1+ point",
@@ -340,7 +372,7 @@
   {
    "game_id": 2026020411,
    "game": "NYR@CHI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8A Shot-dominant game",
@@ -348,54 +380,54 @@
    "pLower": 0.01578315719088618,
    "pIndep": 0.02492459581508351,
    "breakEven": 6236,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "P. Kane 2+ SOG",
      "p": 0.7101,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     },
     {
      "text": "J. Miller 2+ SOG",
      "p": 0.65354,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 1
     },
     {
      "text": "F. Nazar 2+ SOG",
      "p": 0.64618,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "A. Lafreni\u00e8re 2+ SOG",
      "p": 0.64628,
      "result": "WON",
-     "value": 2
+     "value": 4
     },
     {
      "text": "R. Kantserov 2+ SOG",
      "p": 0.62626,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "A. Fox 2+ SOG",
      "p": 0.62066,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "W. Cuylle 2+ SOG",
      "p": 0.61096,
-     "result": "PENDING",
-     "value": 0
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "G. Perreault 2+ SOG",
      "p": 0.55094,
-     "result": "PENDING",
+     "result": "VOID",
      "value": null
     }
    ]
@@ -403,7 +435,7 @@
   {
    "game_id": 2026020411,
    "game": "NYR@CHI",
-   "state": "LIVE",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8G Game script",
@@ -411,37 +443,37 @@
    "pLower": 0.07389910383622855,
    "pIndep": 0.04677012031433604,
    "breakEven": 1253,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "NYR +1.5 puck line",
      "p": 0.76842,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": -1
     },
     {
      "text": "NYR team total over 2.5",
      "p": 0.65064,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "M. Pettersson 1+ blocked shot",
      "p": 0.75844,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "S. Rinzel 1+ blocked shot",
      "p": 0.72408,
-     "result": "PENDING",
+     "result": "LOST",
      "value": 0
     },
     {
      "text": "B. Schneider 1+ blocked shot",
      "p": 0.72822,
-     "result": "PENDING",
-     "value": 0
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. Miller 1+ point",

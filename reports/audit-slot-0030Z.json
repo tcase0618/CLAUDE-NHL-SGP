@@ -1,33 +1,81 @@
 {
- "audited_at": "2026-11-28T00:03:12.853230+00:00",
+ "audited_at": "2026-11-28T10:48:06.579714+00:00",
  "source": "slot-0030Z.json",
  "model_version": "v20261106-224110",
  "counts": {
-  "WON": 0,
-  "LOST": 0,
-  "PENDING": 9,
+  "WON": 2,
+  "LOST": 7,
+  "PENDING": 0,
   "VOID-REPRICE": 0
  },
  "by_size": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 1.4645,
+   "hit_rate": 0.0,
+   "mean_p": 0.48816666666666664,
+   "brier": 0.23906996093333333,
+   "logloss": 0.6712245436102914
+  },
+  "5": {
+   "n": 3,
+   "won": 2,
+   "expected_wins": 0.8302,
+   "hit_rate": 0.6666666666666666,
+   "mean_p": 0.27673333333333333,
+   "brier": 0.39669347573333336,
+   "logloss": 1.0207045623269522
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.30952,
+   "hit_rate": 0.0,
+   "mean_p": 0.10317333333333334,
+   "brier": 0.010969430133333333,
+   "logloss": 0.10909267598337653
+  }
  },
  "by_size_independence": {
-  "3": null,
-  "5": null,
-  "8": null
+  "3": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 1.4568611433600398,
+   "hit_rate": 0.0,
+   "mean_p": 0.48562038112001327,
+   "brier": 0.23677764764675469,
+   "logloss": 0.6665865540044044
+  },
+  "5": {
+   "n": 3,
+   "won": 2,
+   "expected_wins": 0.4711915370123947,
+   "hit_rate": 0.6666666666666666,
+   "mean_p": 0.15706384567079823,
+   "brier": 0.5474664506379627,
+   "logloss": 1.5658344932970263
+  },
+  "8": {
+   "n": 3,
+   "won": 0,
+   "expected_wins": 0.14699297693269275,
+   "hit_rate": 0.0,
+   "mean_p": 0.04899765897756425,
+   "brier": 0.0025903802083963104,
+   "logloss": 0.05034431256879657
+  }
  },
  "legs": {
-  "n": 0,
-  "won": 0,
-  "expected": 0
+  "n": 48,
+  "won": 30,
+  "expected": 33.79344
  },
  "parlays": [
   {
    "game_id": 2026020412,
    "game": "WPG@NYI",
-   "state": "PRE",
+   "state": "OFF",
    "size": 3,
    "pick": "A",
    "family": "3E Game script",
@@ -35,32 +83,32 @@
    "pLower": 0.4441245450485358,
    "pIndep": 0.4879701051505279,
    "breakEven": 125,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "K. Connor 2+ SOG",
      "p": 0.81288,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 9
     },
     {
      "text": "M. Schaefer 2+ SOG",
      "p": 0.80828,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "NYI +1.5 puck line",
      "p": 0.73848,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -2
     }
    ]
   },
   {
    "game_id": 2026020412,
    "game": "WPG@NYI",
-   "state": "PRE",
+   "state": "OFF",
    "size": 3,
    "pick": "B",
    "family": "3D Cross-team scenario",
@@ -68,32 +116,32 @@
    "pLower": 0.49611360988499426,
    "pIndep": 0.5221496134334479,
    "breakEven": 102,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "K. Connor 2+ SOG",
      "p": 0.81288,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 9
     },
     {
      "text": "M. Schaefer 2+ SOG",
      "p": 0.80828,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "M. Ferraro 1+ blocked shot",
      "p": 0.7944,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020412,
    "game": "WPG@NYI",
-   "state": "PRE",
+   "state": "OFF",
    "size": 3,
    "pick": "C",
    "family": "3E Game script",
@@ -101,32 +149,32 @@
    "pLower": 0.42850972193476616,
    "pIndep": 0.446741424776064,
    "breakEven": 133,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "M. Ferraro 1+ blocked shot",
      "p": 0.7944,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "B. Horvat 2+ SOG",
      "p": 0.75478,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "NYI +1.5 puck line",
      "p": 0.73848,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -2
     }
    ]
   },
   {
    "game_id": 2026020412,
    "game": "WPG@NYI",
-   "state": "PRE",
+   "state": "OFF",
    "size": 5,
    "pick": "A",
    "family": "5F Game script",
@@ -134,44 +182,44 @@
    "pLower": 0.2667576673702255,
    "pIndep": 0.2488489199727973,
    "breakEven": 275,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "K. Connor 2+ SOG",
      "p": 0.81288,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 9
     },
     {
      "text": "M. Schaefer 2+ SOG",
      "p": 0.80828,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "M. Ferraro 1+ blocked shot",
      "p": 0.7944,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "NYI +1.5 puck line",
      "p": 0.73848,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": -2
     },
     {
      "text": "NYI team total over 2.5",
      "p": 0.64104,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020412,
    "game": "WPG@NYI",
-   "state": "PRE",
+   "state": "OFF",
    "size": 5,
    "pick": "B",
    "family": "5F Game script",
@@ -179,44 +227,44 @@
    "pLower": 0.2371520977281403,
    "pIndep": 0.09632743191281043,
    "breakEven": 322,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "K. Connor 1+ point",
      "p": 0.67138,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "WPG +1.5 puck line",
      "p": 0.6693,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "WPG team total over 2.5",
      "p": 0.58446,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "M. Scheifele 1+ point",
      "p": 0.6558,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "G. Vilardi 1+ point",
      "p": 0.55958,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020412,
    "game": "WPG@NYI",
-   "state": "PRE",
+   "state": "OFF",
    "size": 5,
    "pick": "C",
    "family": "5F Game script",
@@ -224,44 +272,44 @@
    "pLower": 0.2369120977281403,
    "pIndep": 0.126015185126787,
    "breakEven": 322,
-   "status": "PENDING",
+   "status": "WON",
    "legs": [
     {
      "text": "K. Connor 1+ point",
      "p": 0.67138,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "WPG +1.5 puck line",
      "p": 0.6693,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "WPG team total over 2.5",
      "p": 0.58446,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "M. Scheifele 1+ point",
      "p": 0.6558,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "M. Schaefer 1+ blocked shot",
      "p": 0.74154,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020412,
    "game": "WPG@NYI",
-   "state": "PRE",
+   "state": "OFF",
    "size": 8,
    "pick": "A",
    "family": "8G Game script",
@@ -269,62 +317,62 @@
    "pLower": 0.10319910383622855,
    "pIndep": 0.03927894024678471,
    "breakEven": 869,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "D. Samberg 1+ blocked shot",
      "p": 0.78918,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. Horvat 2+ SOG",
      "p": 0.75478,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "B. Horvat 1+ point",
      "p": 0.6419,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "NYI team total over 2.5",
      "p": 0.64104,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "Game total over 5.5",
      "p": 0.57846,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 4
     },
     {
      "text": "M. Schaefer 1+ point",
      "p": 0.5969,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "M. Barzal 1+ point",
      "p": 0.5922,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "J. Morrissey 1+ blocked shot",
      "p": 0.76918,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   },
   {
    "game_id": 2026020412,
    "game": "WPG@NYI",
-   "state": "PRE",
+   "state": "OFF",
    "size": 8,
    "pick": "B",
    "family": "8G Game script",
@@ -332,62 +380,62 @@
    "pLower": 0.10197910383622855,
    "pIndep": 0.03924283638343481,
    "breakEven": 881,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "D. Samberg 1+ blocked shot",
      "p": 0.78918,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "B. Horvat 2+ SOG",
      "p": 0.75478,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 4
     },
     {
      "text": "B. Horvat 1+ point",
      "p": 0.6419,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "NYI team total over 2.5",
      "p": 0.64104,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 1
     },
     {
      "text": "Game total over 5.5",
      "p": 0.57846,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 4
     },
     {
      "text": "M. Schaefer 1+ point",
      "p": 0.5969,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "M. Barzal 1+ point",
      "p": 0.5922,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "A. Pelech 1+ blocked shot",
      "p": 0.76014,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     }
    ]
   },
   {
    "game_id": 2026020412,
    "game": "WPG@NYI",
-   "state": "PRE",
+   "state": "OFF",
    "size": 8,
    "pick": "C",
    "family": "8D Multi-line production",
@@ -395,55 +443,55 @@
    "pLower": 0.06437910383622855,
    "pIndep": 0.06847120030247325,
    "breakEven": 1453,
-   "status": "PENDING",
+   "status": "LOST",
    "legs": [
     {
      "text": "D. Samberg 1+ blocked shot",
      "p": 0.78918,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "J. Morrissey 1+ blocked shot",
      "p": 0.76918,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "A. Pelech 1+ blocked shot",
      "p": 0.76014,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "M. Schaefer 1+ blocked shot",
      "p": 0.74154,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "K. Connor 1+ point",
      "p": 0.67138,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 3
     },
     {
      "text": "M. Scheifele 1+ point",
      "p": 0.6558,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     },
     {
      "text": "L. Stanley 1+ blocked shot",
      "p": 0.71616,
-     "result": "PENDING",
-     "value": null
+     "result": "LOST",
+     "value": 0
     },
     {
      "text": "B. Hutton 1+ blocked shot",
      "p": 0.65088,
-     "result": "PENDING",
-     "value": null
+     "result": "WON",
+     "value": 1
     }
    ]
   }

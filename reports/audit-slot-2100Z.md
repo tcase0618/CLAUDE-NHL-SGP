@@ -1,5 +1,5 @@
 # Parlay audit — slot-2100Z.json
-Audited 2026-11-28T00:03:11.676851+00:00 against official NHL data · model v20261106-224110
+Audited 2026-11-28T10:48:05.452937+00:00 against official NHL data · model v20261106-224110
 
 **Parlays:** 6 won · 19 lost · 0 pending · 2 void/reprice (of 27)
 
@@ -13,7 +13,7 @@ Audited 2026-11-28T00:03:11.676851+00:00 against official NHL data · model v202
 
 _Small samples: a single night cannot validate or refute the model — compare against the 24,535-combination historical validation._
 
-## COL @ MIN — COL 4 @ MIN 3 · FINAL (SO)
+## COL @ MIN — COL 4 @ MIN 3 · OFF (SO)
 **3-leg A · 3E Game script** — model 49.0% · break-even +123 → **WON**
 - ✅ J. Brodin 1+ blocked shot (model 84%) — actual: 2
 - ✅ J. Spurgeon 1+ blocked shot (model 81%) — actual: 1
@@ -80,7 +80,7 @@ _Small samples: a single night cannot validate or refute the model — compare a
 - ✅ C. Makar 2+ SOG (model 69%) — actual: 3
 - ⚪ M. Necas 2+ SOG (model 68%) — actual: n/a
 
-## LAK @ ANA — LAK 5 @ ANA 3 · FINAL (REG)
+## LAK @ ANA — LAK 5 @ ANA 3 · OFF (REG)
 **3-leg A · 3E Game script** — model 52.2% · break-even +102 → **WON**
 - ✅ B. Clarke 1+ blocked shot (model 84%) — actual: 1
 - ✅ C. Gauthier 2+ SOG (model 82%) — actual: 5
@@ -147,7 +147,7 @@ _Small samples: a single night cannot validate or refute the model — compare a
 - ❌ K. Fiala 2+ SOG (model 65%) — actual: 0
 - ✅ Q. Byfield 2+ SOG (model 63%) — actual: 3
 
-## VGK @ SJS — VGK 1 @ SJS 4 · FINAL (REG)
+## VGK @ SJS — VGK 1 @ SJS 4 · OFF (REG)
 **3-leg A · 3E Game script** — model 57.8% · break-even -123 → **LOST**
 - ✅ D. Nurse 1+ blocked shot (model 86%) — actual: 1
 - ⚪ E. Pohlkamp 1+ blocked shot (model 82%) — actual: n/a
