@@ -1,5 +1,5 @@
 {
- "audited_at": "2026-11-27T23:33:33.393591+00:00",
+ "audited_at": "2026-11-28T00:03:12.525548+00:00",
  "source": "slot-2230Z.json",
  "model_version": "v20261106-224110",
  "counts": {
@@ -35,9 +35,9 @@
   "8": null
  },
  "legs": {
-  "n": 17,
-  "won": 17,
-  "expected": 11.17626
+  "n": 19,
+  "won": 19,
+  "expected": 12.46882
  },
  "parlays": [
   {
@@ -69,7 +69,7 @@
      "text": "A. Vlasic 1+ blocked shot",
      "p": 0.75844,
      "result": "WON",
-     "value": 2
+     "value": 3
     }
    ]
   },
@@ -102,7 +102,7 @@
      "text": "A. Vlasic 1+ blocked shot",
      "p": 0.75844,
      "result": "WON",
-     "value": 2
+     "value": 3
     }
    ]
   },
@@ -180,7 +180,7 @@
      "text": "J. Miller 2+ SOG",
      "p": 0.65354,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     }
    ]
   },
@@ -252,7 +252,7 @@
      "text": "J. Miller 2+ SOG",
      "p": 0.65354,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "F. Nazar 2+ SOG",
@@ -263,8 +263,8 @@
     {
      "text": "A. Lafreni\u00e8re 2+ SOG",
      "p": 0.64628,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "R. Kantserov 2+ SOG",
@@ -315,7 +315,7 @@
      "text": "A. Vlasic 1+ blocked shot",
      "p": 0.75844,
      "result": "WON",
-     "value": 2
+     "value": 3
     },
     {
      "text": "M. Zibanejad 1+ point",
@@ -360,7 +360,7 @@
      "text": "J. Miller 2+ SOG",
      "p": 0.65354,
      "result": "PENDING",
-     "value": 0
+     "value": 1
     },
     {
      "text": "F. Nazar 2+ SOG",
@@ -371,8 +371,8 @@
     {
      "text": "A. Lafreni\u00e8re 2+ SOG",
      "p": 0.64628,
-     "result": "PENDING",
-     "value": 1
+     "result": "WON",
+     "value": 2
     },
     {
      "text": "R. Kantserov 2+ SOG",
@@ -459,7 +459,7 @@
      "text": "A. Fox 1+ blocked shot",
      "p": 0.70872,
      "result": "WON",
-     "value": 1
+     "value": 2
     }
    ]
   }
